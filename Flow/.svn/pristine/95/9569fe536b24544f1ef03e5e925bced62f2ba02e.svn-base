@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<com.iri.model.sourcetargetdata:SourceTargetData xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.iri.model.sourcetargetdata="http://com/iri/model/sourcetargerdata" extractor="FACT" loader="ORACLE" sourceDSN="Oracle" sourceDTPName="Oracle" reenableFKOnPostLoad="true" targetDSN="Oracle" disableFKOnLoad="true" targetDTPName="Oracle" targetSchema="SCOTT">
-  <tables>SCOTT.DM_COMPANIES</tables>
-  <tables>SCOTT.DM_DCTA_EVALUATIONS</tables>
-  <tables>SCOTT.DM_EMPLOYEES</tables>
-  <tables>SCOTT.DM_EMPLOYEE_EVALUATIONS</tables>
-  <tables>SCOTT.DM_JOB_TYPES</tables>
-  <tables>SCOTT.DM_ORGANIZATIONAL_UNITS</tables>
-</com.iri.model.sourcetargetdata:SourceTargetData>

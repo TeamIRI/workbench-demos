@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:fieldrules="http://fieldrules/1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_d67IYHXBEeaLSPu8Z6BF_A" version="8.1.0">
-  <models xmi:type="ddf:Ddf" href="metadata/cust.ddf#/"/>
-  <models xmi:type="fieldrules:FieldRuleLibrary" href="iriLibrary.fieldrules#/"/>
-</viewpoint:DAnalysis>
