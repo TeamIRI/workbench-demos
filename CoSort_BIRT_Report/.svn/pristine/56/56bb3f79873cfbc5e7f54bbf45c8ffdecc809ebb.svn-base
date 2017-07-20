@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2014, 2017. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>CoSort/SortCL Data Preparation for the Eclipse Business
+  Intelligence Reporting Tool (BIRT)</title>
+  <style type="text/css">
+
+    h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>CoSort/SortCL Data Preparation for the Eclipse Business
+  Intelligence Reporting Tool (BIRT)</h1>
+
+  <p>This project uses a CoSort SortCL job as a Data Source in
+  custom-created BIRT reports and chart. It demonstrates seamlessly
+  integrated data preparation and advanced data presentation in
+  Eclipse.</p>
+
+  <p>SortCL prepares production data through fast data
+  transformation, and passes the data and metadata via ODA for BIRT
+  to present the data results faster, in graphical report formats.
+  This is a highly efficient, repeatable integration that uniquely
+  enables IT and BI teams to collaborate on data acquisition,
+  transformation, and visualization.</p>
+
+  <h2>Enable&nbsp;BIRT in the IRI Workbench</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Make sure BIRT is installed in
+    the&nbsp;IRI Workbench&nbsp;plug-in for Eclipse. If BIRT is not
+    installed:
+
+      <ol>
+        <li>From the Help menu, select <strong>Install New
+        Software</strong>.</li>
+
+        <li>In the <strong>Work with</strong> field, click
+        <strong>Add</strong>.</li>
+
+        <li>In the Add Repository dialog, enter<br>
+        Name: <code>Kepler</code><br>
+        Location:
+        <code>http://download.eclipse.org/releases/kepler/</code></li>
+
+        <li>Click <strong>OK</strong>.</li>
+
+        <li>On the Available Software page, select <strong>Business
+        Intelligence, Reporting and Charting</strong>. and click
+        <strong>Next</strong>.</li>
+
+        <li>On the Install Details page, click
+        <strong>Next</strong>.</li>
+
+        <li>Accept the terms of the license agreement and click
+        <strong>Next</strong>. Restart the Workbench when
+        ready.</li>
+      </ol>
+    </li>
+
+    <li style="margin-bottom: 10px;">Open the Report Design
+    perspective.
+
+      <ol>
+        <li>From the Window menu, select <strong>Open
+        Perspective</strong> -&gt; <strong>Other</strong> -&gt;
+        <strong>Report Design</strong>.</li>
+
+        <li style="margin-bottom: 5px;">Click
+        <strong>OK</strong>.</li>
+      </ol>In this perspective, the Project Explorer is now the
+      Navigator, but you can restore the:
+
+      <ul>
+        <li type="disc">Project Explorer from:
+        <strong>Window</strong> -&gt; <strong>Show View</strong>
+        -&gt; <strong>Other</strong> -&gt; <strong>General</strong>
+        -&gt; <strong>Project Explorer</strong></li>
+
+        <li type="disc">Data Source Explorer from:
+        <strong>Window</strong> -&gt; <strong>Show View</strong>
+        -&gt; <strong>Other</strong> -&gt; <strong>Data
+        Management</strong> -&gt; <strong>Data Source
+        Explorer</strong></li>
+
+        <li type="disc">Remote Systems from:
+        <strong>Window</strong> -&gt; <strong>Show View</strong>
+        -&gt; <strong>Other</strong> -&gt; <strong>Remote
+        Systems</strong> -&gt; <strong>Remote Systems</strong></li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Prepare the Data</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Create or modify your CoSort
+    SortCL data preparation job in the Workbench. Use a new job
+    wizard from the CoSort menu to create the script, or write it
+    directly in the syntax-aware editing window.</li>
+
+    <li style="margin-bottom: 10px;">Specify all your source and
+    target metadata and transformations in SortCL as usual.
+    However, you must define your first target as
+    <code>/OUTFILE=stdout</code> for BIRT to ingest this IRI Data
+    Source at reporting time. You can still specify additional
+    output files, tables, and/or procedures in subsequent target
+    layouts.</li>
+
+    <li style="margin-bottom: 10px;">Ensure all the /OUTFILE fields
+    destined for BIRT also specify supporting fields. For example,
+    any/SUMMARY fields have to be defined along with their /FIELD
+    formats so the aggregate values are passed into BIRT.</li>
+  </ol>
+
+  <h2>Design and Run the Visualization</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">From the top menu, click
+    <strong>File</strong> -&gt; <strong>New</strong> -&gt;
+    <strong>Report</strong>. Follow the wizard instructions to
+    design the BIRT report. Be sure to save your new, or move your
+    existing, template into the same folder with the SortCL script
+    so the data (IRI Data Source) gets prepared and fed to BIRT via
+    ODA at run time.</li>
+
+    <li style="margin-bottom: 10px;">From the top menu, click
+    <strong>Data</strong> -&gt; <strong>New Data Source</strong>
+    -&gt; <strong>IRI Data Source</strong>. Click
+    <strong>Next</strong>, and select the folder that contains your
+    report template and SortCL job script. Click
+    <strong>Finish</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Data</strong>
+    -&gt; <strong>New Data Set</strong> -&gt; <strong>New Data
+    Set</strong>. Select the <strong>IRI Data Source</strong>
+    again, and click <strong>Next</strong>. At the top of the next
+    dialog, select the SortCL (.scl) file defining the data
+    preparation for your report. Add and arrange the available data
+    fields as you want them displayed.</li>
+
+    <li style="margin-bottom: 10px;">Use the palette to modify
+    labels and fields, and their positions. You can specify
+    additional calculations on the data as well, and customize the
+    report or graph layout as needed.</li>
+
+    <li style="margin-bottom: 10px;">At report creation time,
+    SortCL and BIRT will run simultaneously to integrate the data
+    and display the information you need.</li>
+  </ol>
+  <hr>
+
+  <h3>Review</h3>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Examine the SortCL Data
+    Preparation job script.<br>
+    Double-click <strong><em>Moving_Average.scl</em></strong> and
+    examine the first /OUTFILE section. This is the vital part of
+    creating a BIRT report using SortCL as a Data Source. You must
+    use /OUTFILE=STDOUT to send data to ODA and BIRT, and the
+    section must contain all the fields to be included in your
+    report, and any supporting fields such as the /AVERAGE
+    declarations in our example, which create the prior two fields.
+    Any aggregate data you wish to feed BIRT must also contain
+    SortCL field statements even if you do not wish to view them in
+    the report, otherwise the information is not available to BIRT.
+    Any other outfile sections, the infile section, etc. do not
+    matter to BIRT. Note that you can take any existing SortCL
+    script and add an outfile section with /OUTFILE=STDOUT as the
+    first output file, and create a BIRT report from it.</li>
+  </ol>
+
+  <p><strong>NOTE</strong>: Running the reports below will
+  automatically run the SortCL job above. To build new reports that
+  will use more SortCL data, create the new SortCL jobs and refer
+  to "ODA steps.txt".</p>
+
+  <ol start="2">
+    <li style="margin-bottom: 10px;">Generate a basic BIRT
+    report.<br>
+      <em>Moving_Average_simple.rptdesign</em> is a basic table
+      report listing the columns with headers.
+
+      <ol>
+        <li>Click the <strong>Preview</strong> tab below the report
+        pane to see what the report will look like when you run it
+        using the <strong>View Report Icon</strong> (Earth) icon in
+        the Report Design perspective toolbar. Notice the headers
+        in bold and underlined, and the dates are all bold. The
+        font is not your typical Times New Roman.</li>
+
+        <li>Click back on <strong>Layout</strong> to close the
+        Preview, and select the <strong>Property Editor</strong>
+        -&gt; <strong>Report</strong> tab at the bottom.</li>
+
+        <li>Click on the [DATE] detail in the report and see the
+        options in the Property Editor. Every part part of a BIRT
+        report can be customized. This template is pre-configured
+        to use an ODA IRI Data Source, but you can create another
+        report using that data.</li>
+      </ol>
+    </li>
+
+    <li>Generate a BIRT graph.<br>
+    Locate and open <em>Moving_Average_graph.rptdesign</em>. This
+    is a graph created from <em>Moving_Average.scl</em>, which
+    shows the closing price, 20-day moving average, and 40-day
+    moving average for the Bank of America stock from January to
+    September 2013. Either click <strong>Preview</strong> again, or
+    on the toolbar use the <strong>View Report</strong> icon and
+    click on it to run the report. If you hover the mouse above any
+    point on one of the three lines in the graph you will notice a
+    tooltip giving you the value at that location on the graph.
+    This is a basic demonstration of chart interactivity. Other
+    options (not demonstrated) are clicking on one part of a graph
+    and having that load another graph/report for only the selected
+    portion.</li>
+  </ol>
+</body>
+</html>

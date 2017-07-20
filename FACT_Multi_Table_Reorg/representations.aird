@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:fieldrules="http://fieldrules/1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_xNXiQH77EeShQcClUUsqNw" selectedViews="_qJGBsH8QEeS3lsbTIVcyAA" version="8.1.1">
+  <models xmi:type="fieldrules:FieldRuleLibrary" href="iriLibrary.fieldrules#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_qJGBsH8QEeS3lsbTIVcyAA" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_qU3M0H8QEeS3lsbTIVcyAA" name="Mapping Diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_qU3NCX8QEeS3lsbTIVcyAA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_qU3NCn8QEeS3lsbTIVcyAA" type="Sirius" element="_qU3M0H8QEeS3lsbTIVcyAA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_qU3NDH8QEeS3lsbTIVcyAA" type="2002" element="_qU3M0X8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qU3ND38QEeS3lsbTIVcyAA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_qU3NEH8QEeS3lsbTIVcyAA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_qVA91H8QEeS3lsbTIVcyAA" type="3008" element="_qU3M138QEeS3lsbTIVcyAA">
+                <children xmi:type="notation:Node" xmi:id="_qVKu0H8QEeS3lsbTIVcyAA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_qVKu0X8QEeS3lsbTIVcyAA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_qVKu1H8QEeS3lsbTIVcyAA" type="3008" element="_qU3M3X8QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qVKu138QEeS3lsbTIVcyAA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_qVKu2H8QEeS3lsbTIVcyAA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_qVKu238QEeS3lsbTIVcyAA" type="3007" element="_qU3M438QEeS3lsbTIVcyAA">
+                        <children xmi:type="notation:Node" xmi:id="_qVKu3n8QEeS3lsbTIVcyAA" type="5003">
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_qVKu338QEeS3lsbTIVcyAA" y="5"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_qkEGcH8QEeS3lsbTIVcyAA" type="3005" element="_qU3M5H8QEeS3lsbTIVcyAA">
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_qkEGcX8QEeS3lsbTIVcyAA" fontName="Segoe UI"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkEGcn8QEeS3lsbTIVcyAA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_qVKu3H8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="7"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qVKu3X8QEeS3lsbTIVcyAA" width="180" height="16"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qVKu2X8QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qVKu2n8QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qVKu1X8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qVKu1n8QEeS3lsbTIVcyAA"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_qVKu0n8QEeS3lsbTIVcyAA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_qVKu038QEeS3lsbTIVcyAA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_qVA91X8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qVA91n8QEeS3lsbTIVcyAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_qU3NEX8QEeS3lsbTIVcyAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_qU3NEn8QEeS3lsbTIVcyAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qU3NDX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qU3NDn8QEeS3lsbTIVcyAA"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_qU3NE38QEeS3lsbTIVcyAA" type="2002" element="_qU3M538QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qVA90H8QEeS3lsbTIVcyAA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_qVA90X8QEeS3lsbTIVcyAA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_qkEGc38QEeS3lsbTIVcyAA" type="3008" element="_qU3M7X8QEeS3lsbTIVcyAA">
+                <children xmi:type="notation:Node" xmi:id="_qkEGdn8QEeS3lsbTIVcyAA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_qkEGd38QEeS3lsbTIVcyAA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_qkEGen8QEeS3lsbTIVcyAA" type="3008" element="_qU3M838QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qkEGfX8QEeS3lsbTIVcyAA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_qkEGfn8QEeS3lsbTIVcyAA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_qkEGiH8QEeS3lsbTIVcyAA" type="3007" element="_qU3M-X8QEeS3lsbTIVcyAA">
+                        <children xmi:type="notation:Node" xmi:id="_qkEGi38QEeS3lsbTIVcyAA" type="5003">
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_qkEGjH8QEeS3lsbTIVcyAA" y="5"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_qkEGjX8QEeS3lsbTIVcyAA" type="3005" element="_qU3M-n8QEeS3lsbTIVcyAA">
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_qkEGjn8QEeS3lsbTIVcyAA" fontName="Segoe UI"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkEGj38QEeS3lsbTIVcyAA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_qkEGiX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="7"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkEGin8QEeS3lsbTIVcyAA" width="180" height="16"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qkEGf38QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qkEGgH8QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qkEGe38QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkEGfH8QEeS3lsbTIVcyAA"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_qkEGgX8QEeS3lsbTIVcyAA" type="3009" element="_qU3M_X8QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qkEGhH8QEeS3lsbTIVcyAA" type="5004"/>
+                    <children xmi:type="notation:Node" xmi:id="_qkEGhX8QEeS3lsbTIVcyAA" type="7003">
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qkEGhn8QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qkEGh38QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qkEGgn8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkEGg38QEeS3lsbTIVcyAA" width="150"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_qkEGeH8QEeS3lsbTIVcyAA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_qkEGeX8QEeS3lsbTIVcyAA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_qkEGdH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkEGdX8QEeS3lsbTIVcyAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_qVA90n8QEeS3lsbTIVcyAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_qVA9038QEeS3lsbTIVcyAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qU3NFH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qU3NFX8QEeS3lsbTIVcyAA"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_qU3NC38QEeS3lsbTIVcyAA"/>
+          <edges xmi:type="notation:Edge" xmi:id="_qkztUH8QEeS3lsbTIVcyAA" type="4001" element="_qU3NA38QEeS3lsbTIVcyAA" source="_qVKu238QEeS3lsbTIVcyAA" target="_qkEGiH8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qkztVH8QEeS3lsbTIVcyAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkztVX8QEeS3lsbTIVcyAA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qkztVn8QEeS3lsbTIVcyAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkztV38QEeS3lsbTIVcyAA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qkztWH8QEeS3lsbTIVcyAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qkztWX8QEeS3lsbTIVcyAA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_qkztUX8QEeS3lsbTIVcyAA" routing="Rectilinear" jumpLinkStatus="Above"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_qkztUn8QEeS3lsbTIVcyAA" fontColor="5237244" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qkztU38QEeS3lsbTIVcyAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qlaKQH8QEeS3lsbTIVcyAA" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qlaKQX8QEeS3lsbTIVcyAA" id="(0.5,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qU3M0X8QEeS3lsbTIVcyAA" name="Input Data">
+        <target xmi:type="flow:FactProvider" href="new_batch/FlowBatch.flow#FACT_SCOTT.DATES"/>
+        <semanticElements xmi:type="flow:FactProvider" href="new_batch/FlowBatch.flow#FACT_SCOTT.DATES"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qU3M0n8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M038QEeS3lsbTIVcyAA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M1H8QEeS3lsbTIVcyAA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M1X8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M1n8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qU3M138QEeS3lsbTIVcyAA" name="localhost:Oracle DATES&#xA;Instance:XE">
+          <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract_SCOTT.DATES"/>
+          <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract_SCOTT.DATES"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qU3M2H8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M2X8QEeS3lsbTIVcyAA"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M2n8QEeS3lsbTIVcyAA"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M238QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M3H8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qU3M3X8QEeS3lsbTIVcyAA">
+            <target xmi:type="flow:DBDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@inputDatas.0/@dataInfo"/>
+            <semanticElements xmi:type="flow:DBDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@inputDatas.0/@dataInfo"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qU3M3n8QEeS3lsbTIVcyAA" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M338QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M4H8QEeS3lsbTIVcyAA" red="39" green="76" blue="114"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M4X8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M4n8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']"/>
+            <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_qU3M438QEeS3lsbTIVcyAA" name="CREATED : DATE (0)" outgoingEdges="_qU3NA38QEeS3lsbTIVcyAA" width="-1" height="-1" resizeKind="NSEW">
+              <target xmi:type="flow:FlowExtField" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@inputDatas.0/@dataInfo/@fields.0"/>
+              <semanticElements xmi:type="flow:FlowExtField" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@inputDatas.0/@dataInfo/@fields.0"/>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_qU3M5H8QEeS3lsbTIVcyAA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/item-field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+                <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M5X8QEeS3lsbTIVcyAA"/>
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+                <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M5n8QEeS3lsbTIVcyAA"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qU3M538QEeS3lsbTIVcyAA" name="Output Data">
+        <target xmi:type="flow:FactProvider" href="new_batch/FlowBatch.flow#FACT_SCOTT.DATES"/>
+        <semanticElements xmi:type="flow:FactProvider" href="new_batch/FlowBatch.flow#FACT_SCOTT.DATES"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qU3M6H8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M6X8QEeS3lsbTIVcyAA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M6n8QEeS3lsbTIVcyAA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M638QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M7H8QEeS3lsbTIVcyAA" red="204" green="242" blue="166"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qU3M7X8QEeS3lsbTIVcyAA" name="&#xA;SCOTT.DATES.dat">
+          <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract Internal_SCOTT.DATES"/>
+          <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract Internal_SCOTT.DATES"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qU3M7n8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M738QEeS3lsbTIVcyAA"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@subContainerMappings[name='BMD_OutputDataContext']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M8H8QEeS3lsbTIVcyAA"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M8X8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M8n8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@subContainerMappings[name='BMD_OutputDataContext']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qU3M838QEeS3lsbTIVcyAA">
+            <target xmi:type="flow:FileDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@outputDatas.0/@dataInfo"/>
+            <semanticElements xmi:type="flow:FileDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@outputDatas.0/@dataInfo"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qU3M9H8QEeS3lsbTIVcyAA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M9X8QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M9n8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M938QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M-H8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
+            <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_qU3M-X8QEeS3lsbTIVcyAA" name="CREATED" incomingEdges="_qU3NA38QEeS3lsbTIVcyAA" width="-1" height="-1" resizeKind="NSEW">
+              <target xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
+              <semanticElements xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_qU3M-n8QEeS3lsbTIVcyAA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/item-field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+                <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M-38QEeS3lsbTIVcyAA"/>
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+                <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M_H8QEeS3lsbTIVcyAA"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_qU3M_X8QEeS3lsbTIVcyAA" name="Transform Options" width="15">
+            <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract Internal_SCOTT.DATES"/>
+            <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract Internal_SCOTT.DATES"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qU3M_n8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3M_38QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_TransformOptions']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3NAH8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3NAX8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3NAn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_TransformOptions']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_qU3NA38QEeS3lsbTIVcyAA" sourceNode="_qU3M438QEeS3lsbTIVcyAA" targetNode="_qU3M-X8QEeS3lsbTIVcyAA">
+        <target xmi:type="flow:Field2FieldMapping" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@mappings.0"/>
+        <semanticElements xmi:type="flow:Field2FieldMapping" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.1/@mappings.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_qU3NBH8QEeS3lsbTIVcyAA" size="2" routingStyle="manhattan">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3NBX8QEeS3lsbTIVcyAA" red="114" green="159" blue="207"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_qU3NBn8QEeS3lsbTIVcyAA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qU3NB38QEeS3lsbTIVcyAA" red="252" green="233" blue="79"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_qU3NCH8QEeS3lsbTIVcyAA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer"/>
+      <target xmi:type="flow:FactProvider" href="new_batch/FlowBatch.flow#FACT_SCOTT.DATES"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_qmJxIH8QEeS3lsbTIVcyAA" name="Mapping Diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_qmJxen8QEeS3lsbTIVcyAA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_qmJxe38QEeS3lsbTIVcyAA" type="Sirius" element="_qmJxIH8QEeS3lsbTIVcyAA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_qmJxfX8QEeS3lsbTIVcyAA" type="2002" element="_qmJxIX8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qmJxgH8QEeS3lsbTIVcyAA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_qmJxgX8QEeS3lsbTIVcyAA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_qmJxkn8QEeS3lsbTIVcyAA" type="3008" element="_qmJxJ38QEeS3lsbTIVcyAA">
+                <children xmi:type="notation:Node" xmi:id="_qmJxlX8QEeS3lsbTIVcyAA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_qmJxln8QEeS3lsbTIVcyAA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_qmJxmX8QEeS3lsbTIVcyAA" type="3008" element="_qmJxLX8QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qmS7EH8QEeS3lsbTIVcyAA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_qmS7EX8QEeS3lsbTIVcyAA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_qmS7G38QEeS3lsbTIVcyAA" type="3007" element="_qmJxM38QEeS3lsbTIVcyAA">
+                        <children xmi:type="notation:Node" xmi:id="_qmS7Hn8QEeS3lsbTIVcyAA" type="5003">
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_qmS7H38QEeS3lsbTIVcyAA" y="5"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_qmS7IH8QEeS3lsbTIVcyAA" type="3005" element="_qmJxNH8QEeS3lsbTIVcyAA">
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7IX8QEeS3lsbTIVcyAA" fontName="Segoe UI"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7In8QEeS3lsbTIVcyAA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7HH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="7"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7HX8QEeS3lsbTIVcyAA" width="180" height="16"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qmS7En8QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qmS7E38QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qmJxmn8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmJxm38QEeS3lsbTIVcyAA"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_qmS7FH8QEeS3lsbTIVcyAA" type="3009" element="_qmJxN38QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qmS7F38QEeS3lsbTIVcyAA" type="5004"/>
+                    <children xmi:type="notation:Node" xmi:id="_qmS7GH8QEeS3lsbTIVcyAA" type="7003">
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qmS7GX8QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qmS7Gn8QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7FX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7Fn8QEeS3lsbTIVcyAA" width="150"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_qmJxl38QEeS3lsbTIVcyAA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_qmJxmH8QEeS3lsbTIVcyAA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_qmJxk38QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmJxlH8QEeS3lsbTIVcyAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_qmJxgn8QEeS3lsbTIVcyAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_qmJxg38QEeS3lsbTIVcyAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qmJxfn8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmJxf38QEeS3lsbTIVcyAA"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_qmJxhH8QEeS3lsbTIVcyAA" type="2002" element="_qmJxPX8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qmJxh38QEeS3lsbTIVcyAA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_qmJxiH8QEeS3lsbTIVcyAA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_qmS7I38QEeS3lsbTIVcyAA" type="3008" element="_qmJxQ38QEeS3lsbTIVcyAA">
+                <children xmi:type="notation:Node" xmi:id="_qmS7Jn8QEeS3lsbTIVcyAA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_qmS7J38QEeS3lsbTIVcyAA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_qmS7Kn8QEeS3lsbTIVcyAA" type="3008" element="_qmJxSX8QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qmS7LX8QEeS3lsbTIVcyAA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_qmS7Ln8QEeS3lsbTIVcyAA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_qmS7MX8QEeS3lsbTIVcyAA" type="3007" element="_qmJxT38QEeS3lsbTIVcyAA">
+                        <children xmi:type="notation:Node" xmi:id="_qmS7NH8QEeS3lsbTIVcyAA" type="5003">
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_qmS7NX8QEeS3lsbTIVcyAA" y="5"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_qmS7Nn8QEeS3lsbTIVcyAA" type="3005" element="_qmJxUH8QEeS3lsbTIVcyAA">
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7N38QEeS3lsbTIVcyAA" fontName="Segoe UI"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7OH8QEeS3lsbTIVcyAA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7Mn8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="7"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7M38QEeS3lsbTIVcyAA" width="180" height="16"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qmS7L38QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qmS7MH8QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7K38QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7LH8QEeS3lsbTIVcyAA"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_qmS7KH8QEeS3lsbTIVcyAA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_qmS7KX8QEeS3lsbTIVcyAA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7JH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7JX8QEeS3lsbTIVcyAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_qmJxiX8QEeS3lsbTIVcyAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_qmJxin8QEeS3lsbTIVcyAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qmJxhX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmJxhn8QEeS3lsbTIVcyAA"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_qmJxi38QEeS3lsbTIVcyAA" type="2002" element="_qmJxU38QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qmJxjn8QEeS3lsbTIVcyAA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_qmJxj38QEeS3lsbTIVcyAA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_qmS7OX8QEeS3lsbTIVcyAA" type="3008" element="_qmJxWX8QEeS3lsbTIVcyAA">
+                <children xmi:type="notation:Node" xmi:id="_qmS7PH8QEeS3lsbTIVcyAA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_qmS7PX8QEeS3lsbTIVcyAA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_qmS7QH8QEeS3lsbTIVcyAA" type="3008" element="_qmJxX38QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qmS7Q38QEeS3lsbTIVcyAA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_qmS7RH8QEeS3lsbTIVcyAA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_qmcsFH8QEeS3lsbTIVcyAA" type="3007" element="_qmJxZX8QEeS3lsbTIVcyAA">
+                        <children xmi:type="notation:Node" xmi:id="_qmcsF38QEeS3lsbTIVcyAA" type="5003">
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_qmcsGH8QEeS3lsbTIVcyAA" y="5"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_qmcsGX8QEeS3lsbTIVcyAA" type="3005" element="_qmJxZn8QEeS3lsbTIVcyAA">
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_qmcsGn8QEeS3lsbTIVcyAA" fontName="Segoe UI"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcsG38QEeS3lsbTIVcyAA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_qmcsFX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="7"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcsFn8QEeS3lsbTIVcyAA" width="180" height="16"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qmS7RX8QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qmS7Rn8QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7QX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7Qn8QEeS3lsbTIVcyAA"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_qmS7R38QEeS3lsbTIVcyAA" type="3009" element="_qmJxaX8QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qmcsEH8QEeS3lsbTIVcyAA" type="5004"/>
+                    <children xmi:type="notation:Node" xmi:id="_qmcsEX8QEeS3lsbTIVcyAA" type="7003">
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qmcsEn8QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qmcsE38QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7SH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7SX8QEeS3lsbTIVcyAA" width="150"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_qmS7Pn8QEeS3lsbTIVcyAA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_qmS7P38QEeS3lsbTIVcyAA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_qmS7On8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmS7O38QEeS3lsbTIVcyAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_qmJxkH8QEeS3lsbTIVcyAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_qmJxkX8QEeS3lsbTIVcyAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qmJxjH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmJxjX8QEeS3lsbTIVcyAA"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_qmJxfH8QEeS3lsbTIVcyAA"/>
+          <edges xmi:type="notation:Edge" xmi:id="_qmcsHH8QEeS3lsbTIVcyAA" type="4001" element="_qmJxb38QEeS3lsbTIVcyAA" source="_qmS7G38QEeS3lsbTIVcyAA" target="_qmS7MX8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qmcsIH8QEeS3lsbTIVcyAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcsIX8QEeS3lsbTIVcyAA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qmcsIn8QEeS3lsbTIVcyAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcsI38QEeS3lsbTIVcyAA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qmcsJH8QEeS3lsbTIVcyAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcsJX8QEeS3lsbTIVcyAA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_qmcsHX8QEeS3lsbTIVcyAA" routing="Rectilinear" jumpLinkStatus="Above"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_qmcsHn8QEeS3lsbTIVcyAA" fontColor="5237244" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qmcsH38QEeS3lsbTIVcyAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qmcsJn8QEeS3lsbTIVcyAA" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qmcsJ38QEeS3lsbTIVcyAA" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_qmcsKH8QEeS3lsbTIVcyAA" type="4001" element="_qmJxdH8QEeS3lsbTIVcyAA" source="_qmS7MX8QEeS3lsbTIVcyAA" target="_qmcsFH8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qmcsLH8QEeS3lsbTIVcyAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcsLX8QEeS3lsbTIVcyAA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qmcsLn8QEeS3lsbTIVcyAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcsL38QEeS3lsbTIVcyAA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qmcsMH8QEeS3lsbTIVcyAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmcsMX8QEeS3lsbTIVcyAA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_qmcsKX8QEeS3lsbTIVcyAA" routing="Rectilinear" jumpLinkStatus="Above"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_qmcsKn8QEeS3lsbTIVcyAA" fontColor="5237244" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qmcsK38QEeS3lsbTIVcyAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qmcsMn8QEeS3lsbTIVcyAA" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qmcsM38QEeS3lsbTIVcyAA" id="(0.5,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxIX8QEeS3lsbTIVcyAA" name="Input Data">
+        <target xmi:type="flow:TransformMappingBlock" href="new_batch/FlowBatch.flow#Transform_SCOTT.DATES"/>
+        <semanticElements xmi:type="flow:TransformMappingBlock" href="new_batch/FlowBatch.flow#Transform_SCOTT.DATES"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxIn8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxI38QEeS3lsbTIVcyAA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxJH8QEeS3lsbTIVcyAA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxJX8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxJn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxJ38QEeS3lsbTIVcyAA" name="&#xA;SCOTT.DATES.dat">
+          <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract Internal_SCOTT.DATES"/>
+          <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract Internal_SCOTT.DATES"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxKH8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxKX8QEeS3lsbTIVcyAA"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxKn8QEeS3lsbTIVcyAA"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxK38QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxLH8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxLX8QEeS3lsbTIVcyAA">
+            <target xmi:type="flow:FileDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@inputDatas.0/@dataInfo"/>
+            <semanticElements xmi:type="flow:FileDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@inputDatas.0/@dataInfo"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxLn8QEeS3lsbTIVcyAA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxL38QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxMH8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxMX8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxMn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
+            <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_qmJxM38QEeS3lsbTIVcyAA" name="CREATED" outgoingEdges="_qmJxb38QEeS3lsbTIVcyAA" width="-1" height="-1" resizeKind="NSEW">
+              <target xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@inputDatas.0/@dataInfo/@fields.0"/>
+              <semanticElements xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@inputDatas.0/@dataInfo/@fields.0"/>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_qmJxNH8QEeS3lsbTIVcyAA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/item-field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+                <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxNX8QEeS3lsbTIVcyAA"/>
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+                <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxNn8QEeS3lsbTIVcyAA"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_qmJxN38QEeS3lsbTIVcyAA" name="Transform Options" width="15">
+            <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract Internal_SCOTT.DATES"/>
+            <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Extract Internal_SCOTT.DATES"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxOH8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxOX8QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_TransformOptions']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxOn8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxO38QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxPH8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_TransformOptions']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxPX8QEeS3lsbTIVcyAA" name="Transform">
+        <target xmi:type="flow:TransformMappingBlock" href="new_batch/FlowBatch.flow#Transform_SCOTT.DATES"/>
+        <semanticElements xmi:type="flow:TransformMappingBlock" href="new_batch/FlowBatch.flow#Transform_SCOTT.DATES"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxPn8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxP38QEeS3lsbTIVcyAA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_TransformData']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxQH8QEeS3lsbTIVcyAA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxQX8QEeS3lsbTIVcyAA" red="184" green="196" blue="204"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxQn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_TransformData']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxQ38QEeS3lsbTIVcyAA" name="Sort">
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxRH8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxRX8QEeS3lsbTIVcyAA"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_TransformData']/@subContainerMappings[name='BMD_SortDataContext']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxRn8QEeS3lsbTIVcyAA"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxR38QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxSH8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_TransformData']/@subContainerMappings[name='BMD_SortDataContext']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxSX8QEeS3lsbTIVcyAA">
+            <target xmi:type="flow:InternalDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@transformData/@dataInfo"/>
+            <semanticElements xmi:type="flow:InternalDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@transformData/@dataInfo"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxSn8QEeS3lsbTIVcyAA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxS38QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_InternalDataInfoWithFields']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxTH8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxTX8QEeS3lsbTIVcyAA" red="209" green="209" blue="209"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxTn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_InternalDataInfoWithFields']"/>
+            <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_qmJxT38QEeS3lsbTIVcyAA" name="CREATED" outgoingEdges="_qmJxdH8QEeS3lsbTIVcyAA" incomingEdges="_qmJxb38QEeS3lsbTIVcyAA" width="-1" height="-1" resizeKind="NSEW">
+              <target xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@transformData/@dataInfo/@fields.0"/>
+              <semanticElements xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@transformData/@dataInfo/@fields.0"/>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_qmJxUH8QEeS3lsbTIVcyAA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/item-field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+                <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxUX8QEeS3lsbTIVcyAA"/>
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+                <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxUn8QEeS3lsbTIVcyAA"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+          <target xmi:type="flow:SortTransform" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@transformData"/>
+          <semanticElements xmi:type="flow:SortTransform" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@transformData"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxU38QEeS3lsbTIVcyAA" name="Output Data">
+        <target xmi:type="flow:TransformMappingBlock" href="new_batch/FlowBatch.flow#Transform_SCOTT.DATES"/>
+        <semanticElements xmi:type="flow:TransformMappingBlock" href="new_batch/FlowBatch.flow#Transform_SCOTT.DATES"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxVH8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxVX8QEeS3lsbTIVcyAA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxVn8QEeS3lsbTIVcyAA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxV38QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxWH8QEeS3lsbTIVcyAA" red="204" green="242" blue="166"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxWX8QEeS3lsbTIVcyAA" name="&#xA;SCOTT.DATES.out">
+          <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load Internal_SCOTT.DATES"/>
+          <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load Internal_SCOTT.DATES"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxWn8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxW38QEeS3lsbTIVcyAA"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@subContainerMappings[name='BMD_OutputDataContext']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxXH8QEeS3lsbTIVcyAA"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxXX8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxXn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@subContainerMappings[name='BMD_OutputDataContext']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmJxX38QEeS3lsbTIVcyAA">
+            <target xmi:type="flow:FileDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@outputDatas.0/@dataInfo"/>
+            <semanticElements xmi:type="flow:FileDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@outputDatas.0/@dataInfo"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxYH8QEeS3lsbTIVcyAA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxYX8QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxYn8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxY38QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxZH8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
+            <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_qmJxZX8QEeS3lsbTIVcyAA" name="CREATED" incomingEdges="_qmJxdH8QEeS3lsbTIVcyAA" width="-1" height="-1" resizeKind="NSEW">
+              <target xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
+              <semanticElements xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_qmJxZn8QEeS3lsbTIVcyAA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/item-field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+                <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxZ38QEeS3lsbTIVcyAA"/>
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+                <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxaH8QEeS3lsbTIVcyAA"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_qmJxaX8QEeS3lsbTIVcyAA" name="Transform Options" width="15">
+            <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load Internal_SCOTT.DATES"/>
+            <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load Internal_SCOTT.DATES"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmJxan8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxa38QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_TransformOptions']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxbH8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxbX8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxbn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_TransformOptions']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_qmJxb38QEeS3lsbTIVcyAA" sourceNode="_qmJxM38QEeS3lsbTIVcyAA" targetNode="_qmJxT38QEeS3lsbTIVcyAA">
+        <target xmi:type="flow:Field2FieldMapping" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@mappings.0"/>
+        <semanticElements xmi:type="flow:Field2FieldMapping" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@mappings.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_qmJxcH8QEeS3lsbTIVcyAA" size="2" routingStyle="manhattan">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxcX8QEeS3lsbTIVcyAA" red="114" green="159" blue="207"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_qmJxcn8QEeS3lsbTIVcyAA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxc38QEeS3lsbTIVcyAA" red="252" green="233" blue="79"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_qmJxdH8QEeS3lsbTIVcyAA" sourceNode="_qmJxT38QEeS3lsbTIVcyAA" targetNode="_qmJxZX8QEeS3lsbTIVcyAA">
+        <target xmi:type="flow:Field2FieldMapping" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@mappings.1"/>
+        <semanticElements xmi:type="flow:Field2FieldMapping" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.2/@mappings.1"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_qmJxdX8QEeS3lsbTIVcyAA" size="2" routingStyle="manhattan">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxdn8QEeS3lsbTIVcyAA" red="114" green="159" blue="207"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_qmJxd38QEeS3lsbTIVcyAA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmJxeH8QEeS3lsbTIVcyAA" red="252" green="233" blue="79"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_qmJxeX8QEeS3lsbTIVcyAA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer"/>
+      <target xmi:type="flow:TransformMappingBlock" href="new_batch/FlowBatch.flow#Transform_SCOTT.DATES"/>
+    </ownedRepresentations>
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_qmvnAH8QEeS3lsbTIVcyAA" name="Mapping Diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_qmvnOX8QEeS3lsbTIVcyAA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_qmvnOn8QEeS3lsbTIVcyAA" type="Sirius" element="_qmvnAH8QEeS3lsbTIVcyAA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_qmvnPH8QEeS3lsbTIVcyAA" type="2002" element="_qmvnAX8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qmvnP38QEeS3lsbTIVcyAA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_qmvnQH8QEeS3lsbTIVcyAA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_qm5YA38QEeS3lsbTIVcyAA" type="3008" element="_qmvnB38QEeS3lsbTIVcyAA">
+                <children xmi:type="notation:Node" xmi:id="_qm5YBn8QEeS3lsbTIVcyAA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_qm5YB38QEeS3lsbTIVcyAA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_qm5YCn8QEeS3lsbTIVcyAA" type="3008" element="_qmvnDX8QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qm5YDX8QEeS3lsbTIVcyAA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_qm5YDn8QEeS3lsbTIVcyAA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_qm5YGH8QEeS3lsbTIVcyAA" type="3007" element="_qmvnE38QEeS3lsbTIVcyAA">
+                        <children xmi:type="notation:Node" xmi:id="_qm5YG38QEeS3lsbTIVcyAA" type="5003">
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_qm5YHH8QEeS3lsbTIVcyAA" y="5"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_qm5YHX8QEeS3lsbTIVcyAA" type="3005" element="_qmvnFH8QEeS3lsbTIVcyAA">
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YHn8QEeS3lsbTIVcyAA" fontName="Segoe UI"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YH38QEeS3lsbTIVcyAA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YGX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="7"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YGn8QEeS3lsbTIVcyAA" width="180" height="16"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qm5YD38QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qm5YEH8QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YC38QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YDH8QEeS3lsbTIVcyAA"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_qm5YEX8QEeS3lsbTIVcyAA" type="3009" element="_qmvnF38QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qm5YFH8QEeS3lsbTIVcyAA" type="5004"/>
+                    <children xmi:type="notation:Node" xmi:id="_qm5YFX8QEeS3lsbTIVcyAA" type="7003">
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qm5YFn8QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qm5YF38QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YEn8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YE38QEeS3lsbTIVcyAA" width="150"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_qm5YCH8QEeS3lsbTIVcyAA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_qm5YCX8QEeS3lsbTIVcyAA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YBH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YBX8QEeS3lsbTIVcyAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_qmvnQX8QEeS3lsbTIVcyAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_qmvnQn8QEeS3lsbTIVcyAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qmvnPX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmvnPn8QEeS3lsbTIVcyAA"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_qmvnQ38QEeS3lsbTIVcyAA" type="2002" element="_qmvnHX8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qmvnRn8QEeS3lsbTIVcyAA" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_qm5YAH8QEeS3lsbTIVcyAA" type="7001">
+              <children xmi:type="notation:Node" xmi:id="_qm5YIH8QEeS3lsbTIVcyAA" type="3008" element="_qmvnI38QEeS3lsbTIVcyAA">
+                <children xmi:type="notation:Node" xmi:id="_qm5YI38QEeS3lsbTIVcyAA" type="5005"/>
+                <children xmi:type="notation:Node" xmi:id="_qm5YJH8QEeS3lsbTIVcyAA" type="7002">
+                  <children xmi:type="notation:Node" xmi:id="_qm5YJ38QEeS3lsbTIVcyAA" type="3008" element="_qmvnKX8QEeS3lsbTIVcyAA">
+                    <children xmi:type="notation:Node" xmi:id="_qm5YKn8QEeS3lsbTIVcyAA" type="5005"/>
+                    <children xmi:type="notation:Node" xmi:id="_qm5YK38QEeS3lsbTIVcyAA" type="7002">
+                      <children xmi:type="notation:Node" xmi:id="_qm5YLn8QEeS3lsbTIVcyAA" type="3007" element="_qmvnL38QEeS3lsbTIVcyAA">
+                        <children xmi:type="notation:Node" xmi:id="_qm5YMX8QEeS3lsbTIVcyAA" type="5003">
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_qm5YMn8QEeS3lsbTIVcyAA" y="5"/>
+                        </children>
+                        <children xmi:type="notation:Node" xmi:id="_qm5YM38QEeS3lsbTIVcyAA" type="3005" element="_qmvnMH8QEeS3lsbTIVcyAA">
+                          <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YNH8QEeS3lsbTIVcyAA" fontName="Segoe UI"/>
+                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YNX8QEeS3lsbTIVcyAA"/>
+                        </children>
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YL38QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="7"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YMH8QEeS3lsbTIVcyAA" width="180" height="16"/>
+                      </children>
+                      <styles xmi:type="notation:SortingStyle" xmi:id="_qm5YLH8QEeS3lsbTIVcyAA"/>
+                      <styles xmi:type="notation:FilteringStyle" xmi:id="_qm5YLX8QEeS3lsbTIVcyAA"/>
+                    </children>
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YKH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YKX8QEeS3lsbTIVcyAA"/>
+                  </children>
+                  <styles xmi:type="notation:SortingStyle" xmi:id="_qm5YJX8QEeS3lsbTIVcyAA"/>
+                  <styles xmi:type="notation:FilteringStyle" xmi:id="_qm5YJn8QEeS3lsbTIVcyAA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_qm5YIX8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YIn8QEeS3lsbTIVcyAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_qm5YAX8QEeS3lsbTIVcyAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_qm5YAn8QEeS3lsbTIVcyAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qmvnRH8QEeS3lsbTIVcyAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qmvnRX8QEeS3lsbTIVcyAA"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_qmvnO38QEeS3lsbTIVcyAA"/>
+          <edges xmi:type="notation:Edge" xmi:id="_qm5YNn8QEeS3lsbTIVcyAA" type="4001" element="_qmvnM38QEeS3lsbTIVcyAA" source="_qm5YLn8QEeS3lsbTIVcyAA" target="_qm5YGH8QEeS3lsbTIVcyAA">
+            <children xmi:type="notation:Node" xmi:id="_qm5YOn8QEeS3lsbTIVcyAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YO38QEeS3lsbTIVcyAA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qm5YPH8QEeS3lsbTIVcyAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YPX8QEeS3lsbTIVcyAA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qm5YPn8QEeS3lsbTIVcyAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qm5YP38QEeS3lsbTIVcyAA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_qm5YN38QEeS3lsbTIVcyAA" routing="Rectilinear" jumpLinkStatus="Above"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_qm5YOH8QEeS3lsbTIVcyAA" fontColor="5237244" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_qm5YOX8QEeS3lsbTIVcyAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qm5YQH8QEeS3lsbTIVcyAA" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qm5YQX8QEeS3lsbTIVcyAA" id="(0.5,0.5)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmvnAX8QEeS3lsbTIVcyAA" name="Input Data">
+        <target xmi:type="flow:OracleCTLExec" href="new_batch/FlowBatch.flow#SCOTT.DATES.ctl"/>
+        <semanticElements xmi:type="flow:OracleCTLExec" href="new_batch/FlowBatch.flow#SCOTT.DATES.ctl"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmvnAn8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnA38QEeS3lsbTIVcyAA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnBH8QEeS3lsbTIVcyAA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnBX8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnBn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmvnB38QEeS3lsbTIVcyAA" name="&#xA;SCOTT.DATES.out">
+          <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load Data File"/>
+          <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load Data File"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmvnCH8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnCX8QEeS3lsbTIVcyAA"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnCn8QEeS3lsbTIVcyAA"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnC38QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnDH8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmvnDX8QEeS3lsbTIVcyAA">
+            <target xmi:type="flow:FileDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@inputDatas.0/@dataInfo"/>
+            <semanticElements xmi:type="flow:FileDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@inputDatas.0/@dataInfo"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmvnDn8QEeS3lsbTIVcyAA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnD38QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnEH8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnEX8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnEn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
+            <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_qmvnE38QEeS3lsbTIVcyAA" name="CREATED" incomingEdges="_qmvnM38QEeS3lsbTIVcyAA" width="-1" height="-1" resizeKind="NSEW">
+              <target xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@inputDatas.0/@dataInfo/@fields.0"/>
+              <semanticElements xmi:type="ddf:Field" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@inputDatas.0/@dataInfo/@fields.0"/>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_qmvnFH8QEeS3lsbTIVcyAA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/item-field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+                <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnFX8QEeS3lsbTIVcyAA"/>
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+                <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnFn8QEeS3lsbTIVcyAA"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_qmvnF38QEeS3lsbTIVcyAA" name="Transform Options" width="15">
+            <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load Data File"/>
+            <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load Data File"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmvnGH8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnGX8QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_TransformOptions']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnGn8QEeS3lsbTIVcyAA"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnG38QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnHH8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_TransformOptions']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmvnHX8QEeS3lsbTIVcyAA" name="Output Data">
+        <target xmi:type="flow:OracleCTLExec" href="new_batch/FlowBatch.flow#SCOTT.DATES.ctl"/>
+        <semanticElements xmi:type="flow:OracleCTLExec" href="new_batch/FlowBatch.flow#SCOTT.DATES.ctl"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmvnHn8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnH38QEeS3lsbTIVcyAA"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnIH8QEeS3lsbTIVcyAA"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnIX8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnIn8QEeS3lsbTIVcyAA" red="204" green="242" blue="166"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmvnI38QEeS3lsbTIVcyAA" name="localhost:Oracle DATES&#xA;Instance:XE">
+          <target xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load_SCOTT.DATES"/>
+          <semanticElements xmi:type="flow:DataContext" href="new_batch/FlowBatch.flow#Load_SCOTT.DATES"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmvnJH8QEeS3lsbTIVcyAA" labelFormat="bold" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnJX8QEeS3lsbTIVcyAA"/>
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@subContainerMappings[name='BMD_OutputDataContext']/@style"/>
+            <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnJn8QEeS3lsbTIVcyAA"/>
+            <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnJ38QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnKH8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@subContainerMappings[name='BMD_OutputDataContext']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_qmvnKX8QEeS3lsbTIVcyAA">
+            <target xmi:type="flow:DBDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@outputDatas.0/@dataInfo"/>
+            <semanticElements xmi:type="flow:DBDataInfo" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@outputDatas.0/@dataInfo"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_qmvnKn8QEeS3lsbTIVcyAA" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+              <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnK38QEeS3lsbTIVcyAA"/>
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@style"/>
+              <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnLH8QEeS3lsbTIVcyAA" red="39" green="76" blue="114"/>
+              <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnLX8QEeS3lsbTIVcyAA" red="194" green="239" blue="255"/>
+              <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnLn8QEeS3lsbTIVcyAA" red="255" green="255" blue="255"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']"/>
+            <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_qmvnL38QEeS3lsbTIVcyAA" name="CREATED : DATE (0)" outgoingEdges="_qmvnM38QEeS3lsbTIVcyAA" width="-1" height="-1" resizeKind="NSEW">
+              <target xmi:type="flow:FlowExtField" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
+              <semanticElements xmi:type="flow:FlowExtField" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
+              <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_qmvnMH8QEeS3lsbTIVcyAA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/item-field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+                <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnMX8QEeS3lsbTIVcyAA"/>
+                <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+                <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnMn8QEeS3lsbTIVcyAA"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+            </ownedDiagramElements>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_qmvnM38QEeS3lsbTIVcyAA" sourceNode="_qmvnL38QEeS3lsbTIVcyAA" targetNode="_qmvnE38QEeS3lsbTIVcyAA">
+        <target xmi:type="flow:Field2FieldMapping" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@mappings.0"/>
+        <semanticElements xmi:type="flow:Field2FieldMapping" href="new_batch/FlowBatch.flow#//@flows.2/@blocks.3/@mappings.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_qmvnNH8QEeS3lsbTIVcyAA" size="2" routingStyle="manhattan">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnNX8QEeS3lsbTIVcyAA" red="114" green="159" blue="207"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_qmvnNn8QEeS3lsbTIVcyAA" showIcon="false">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_qmvnN38QEeS3lsbTIVcyAA" red="252" green="233" blue="79"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_qmvnOH8QEeS3lsbTIVcyAA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Mapping%20Diagram']/@defaultLayer"/>
+      <target xmi:type="flow:OracleCTLExec" href="new_batch/FlowBatch.flow#SCOTT.DATES.ctl"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

@@ -1,0 +1,19 @@
+# Generated with IRI Workbench - New Compound Data Values
+# 
+# Author: IRIDEMO
+# Created: 2014-09-09 08:16:02
+# 
+
+
+/INFILE=random
+    /PROCESS=RANDOM
+    /INCOLLECT=100
+    /FIELD=(FOO, TYPE=ALPHA_DIGIT, SIZE=5, POSITION=1, SEPARATOR="\t")
+    /FIELD=(IPA, TYPE=IP_ADDRESS, SIZE=15, POSITION=2, SEPARATOR="\t")
+
+/REPORT
+
+/OUTFILE=compound_data_values.set
+    /PROCESS=RECORD
+    /OUTCOLLECT=100
+    /FIELD=(COMPOUND_VALUE=format_strings("%s(%s", FOO, IPA), TYPE=ASCII, POSITION=1, SEPARATOR="\t")

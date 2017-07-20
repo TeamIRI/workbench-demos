@@ -1,0 +1,89 @@
+Telecom Demo
+
+This is a complicated demo involving call logs that needed to be manipulated to remove records that have incomplete data and calculate a tariff on comlete records.  
+This flow contains three Transform Mapping Blocks that sort csv files that contain data to be used as lookups, three Wait for Files to confirm that the lookup files are created before moving on to the next step, and four Transform Mapping Blocks that sort the data being added in the previous step.  
+The outputs are a report with rejected records and a report with tariff charges included for valid records (and one working file).
+You can either make this flow from scratch using the diagram or you can use wizards to add scripts to the flow, or a combination of both.
+
+Note: TMB = Transform Mapping Block
+Create New Flow file.
+Use New Sort Job (Sort_Trunk) to sort Ref-Trunk.csv and create a set file. Append to above flow.
+Use New Sort Job (Sort_Prefix) to sort Ref-Prefix.csv and create a set file. Append to flow.
+Use New Sort Job (Sort_Tariff) to sort Ref-Tariff.csv and create a set file. Append to flow.
+
+Use New Sort Job (CDR1) to sort 3 INP....csv files on Trunk_In and Trunk_Out and append to flow.
+	On Input (meta = CDR1):
+		add include: WHERE CALLING_NUMBER NE "" AND CALLED_NUMBER NE ""
+	On Output:
+		one text output (sorted_cdr.data) and one reject (reject.data) output
+		sorted_cdr.data (meta = CDR2)
+			add fields:
+		    	/FIELD=(CALLING_PRE=sub_string(CALLING_NUMBER, 1, 6), TYPE=ASCII, POSITION=10, SEPARATOR="\t")
+ 				/FIELD=(CALLED_PRE=sub_string(CALLED_NUMBER, 1, 6), TYPE=ASCII, POSITION=11, SEPARATOR="\t")
+    			/FIELD=(TRUNK_IN_CARRIER, TYPE=ASCII, POSITION=12, SET= "C:/IRI/CoSort95/workbench/workspace/Telecom/REF-TRUNK.set" [ TRUNK_IN ] DEFAULT = "ERROR", SEPARATOR="\t")
+    			/FIELD=(TRUNK_OUT_CARRIER, TYPE=ASCII, POSITION=13, SET= "C:/IRI/CoSort95/workbench/workspace/Telecom/REF-TRUNK.set" [ TRUNK_OUT ] DEFAULT = "ERROR", SEPARATOR="\t")
+ 			add omit: WHERE TRUNK_IN_CARRIER EQ "ERROR" OR TRUNK_OUT_CARRIER EQ "ERROR"
+		reject.data (meta = Reject)
+			modify field:
+    			/FIELD=(REASON="TRUNK", TYPE=ASCII, POSITION=9, SEPARATOR=",", PRECISION=0)
+			add include: WHERE TRUNK_IN_CARRIER EQ "ERROR" OR TRUNK_OUT_CARRIER EQ "ERROR"
+    			add headrec: "START_TIME\tGLOBAL_CALL_ID\tDURATION\tCDR_TYPE\tCALLING_NUMBER\tCALLED_NUMBER\tTRUNK_IN\tTRUNK_OUT\tCALL_TYPE\tREASON\tCALL_SCENARIO\n"
+    			
+Use New Sort Job (CDR2) to sort sorted_cdr.data on Calling _Pre and Called_Pre and append to flow.
+	Input is result of above (sorted_cdr.data) typed in text box since file does not exist yet.
+	Output is same as above (sorted_cdr.data and reject.data)
+		sorted_cdr.data (meta = CDR3)
+			add fields:
+    			/FIELD=(CALLING_PREFIX_CARRIER, TYPE=ASCII, POSITION=10, SEPARATOR="\t", SET= "C:/IRI/CoSort95/workbench/workspace/Telecom/REF-PREFIX.set" [ CALLING_PRE ] DEFAULT = "ERROR")
+    			/FIELD=(CALLED_PREFIX_CARRIER, TYPE=ASCII, POSITION=11, SEPARATOR="\t", SET= "C:/IRI/CoSort95/workbench/workspace/Telecom/REF-PREFIX.set" [ CALLED_PRE ] DEFAULT = "ERROR")
+			add omit: WHERE CALLING_PREFIX_CARRIER EQ "ERROR" OR CALLED_PREFIX_CARRIER EQ "ERROR"
+		reject.data (meta = Reject)
+			add Append option
+			modify field:
+   				/FIELD=(REASON="PREFIX", TYPE=ASCII, POSITION=9, SEPARATOR=",")
+ 			add include: WHERE CALLING_PREFIX_CARRIER EQ "ERROR" OR CALLED_PREFIX_CARRIER EQ "ERROR"
+ 			
+Use New Sort Job (CDR3) to sort sorted_cdr.data on Trunk_In_Carrier, Calling_Prefix_Carrier, Trunk_Out_Carrier, Called_Prefix_Carrier and append to flow.
+	Input is result of above (sorted_cdr.data) typed in text box since file does not exist yet.
+	Output is same as above (sorted_cdr.data and reject.data)
+		sorted_cdr.data (meta = CDR4)
+			add fields:
+    			/FIELD=(TARIFF_PERMINUTE_IN, TYPE=ASCII, POSITION=15, SEPARATOR="\t", SET="C:/IRI/CoSort95/workbench/workspace/Telecom/REF-TARIFF.set" [ TRUNK_IN_CARRIER , CALLING_PREFIX_CARRIER ] DEFAULT="ERROR")
+    			/FIELD=(TARIFF_PERMINUTE_OUT, TYPE=ASCII, POSITION=16, SEPARATOR="\t", SET="C:/IRI/CoSort95/workbench/workspace/Telecom/REF-TARIFF.set" [ TRUNK_OUT_CARRIER , CALLED_PREFIX_CARRIER ] DEFAULT="ERROR")
+			add omit: WHERE TARIFF_PERMINUTE_IN EQ "ERROR" OR TARIFF_PERMINUTE_OUT EQ "ERROR"
+		reject.data (meta = Reject)
+			add Append option
+			modify field:
+    			/FIELD=(REASON="TARIFF", TYPE=ASCII, POSITION=10, SEPARATOR=",")
+			add include: WHERE TARIFF_PERMINUTE_IN EQ "ERROR" OR TARIFF_PERMINUTE_OUT EQ "ERROR"
+
+Use New Sort Job (CDR4) to sort sorted_cdr.data on Global_Call_ID and append to flow.
+	Input is result of above (sorted_cdr.data) typed in text box since file does not exist yet.
+	Inrec is all fields.
+		add fields: 
+			/FIELD=(AMOUNT_IN=(TARIFF_PERMINUTE_IN * DURATION), TYPE=ASCII, POSITION=17, SEPARATOR="\t")
+    		/FIELD=(AMOUNT_OUT=(TARIFF_PERMINUTE_OUT * DURATION), TYPE=ASCII, POSITION=18, SEPARATOR="\t")
+	Output is outDetail.data (meta = Out_Detail)
+		add field:
+    		/FIELD=(AMOUNT=(AMOUNT_IN + AMOUNT_OUT), TYPE=ASCII, POSITION=14, SEPARATOR="\t")
+		add Headrec: "START_TIME\tGLOBAL_CALL_ID\tDURATION\tCALLING_NUMBER\tCALLED_NUMBER\tTRUNK_IN\tTRUNK_OUT\tCALL_TYPE\tTRUNK_IN_CARRIER\tTRUNK_OUT_CARRIER\tCALLING_PREFIX_CARRIER\tCALLED_PREFIX_CARRIER\tCALL_SCENARIO\n"
+
+Create diagram of flow file.
+Add create directory and point to project that the flow file is in.
+Connect Start to CD. 
+Connect CD to Sort_Trunk TMB.
+Add Wait Files, set seconds to 3, and add file name of output of above TMB.
+Connect Sort_Trunk to above.
+Connect Wait_Files to Sort_Prefix TMB.
+Add Wait Files, set seconds to 3, and add file name of output of above TMB.
+Connect Sort Prefix to above.
+Connect Wait_Files to Sort_Tariff TMB.
+Add Wait Files, set seconds to 3, and add file name of output of above TMB.
+Connect Sort_Tarriff to above.
+Connect Wait_Files to CDR1 TMB.
+Connect CDR1 to CDR2 TMB.
+Connect CDR2 to CDR3 TMB.
+Connect CDR3 to CDR4 TMB.
+
+Note: Each connection name must be unique so go back and add a number to the end of all connections ending in the sorted_cdr file.
+To check if any were missed, right-click white background of diagram and select Validate diagram. Look in Problems view for errors. Validation is also run automatically when the diagram is serialized.

@@ -1,0 +1,23 @@
+# Generated with IRI Workbench - New Compound Data Values
+# 
+# Author: user
+# Created: 2013-03-25 16:45:28
+# 
+
+/INFILE=placeholder
+    /PROCESS=RANDOM
+    /INCOLLECT=100
+    /FIELD=(PART1, TYPE=WHOLE, SIZE=7, POSITION=1, precision=0, SEPARATOR="\t")
+    /FIELD=(VERIFIER, TYPE=WHOLE, SIZE=1, POSITION=2, precision=0, SEPARATOR="\t")
+#    /INCLUDE WHERE PART1 GT 0
+#    /OMIT WHERE VERIFIER LT 0
+    
+/SORT
+    /KEY=(PART1)
+    /KEY=(VERIFIER)
+
+/OUTFILE=../SETs/Chilean_RUT_values.set
+    /PROCESS=RECORD
+    /OUTCOLLECT=100
+    /FIELD=(COMPOUND_VALUE=format_strings("%s-%s", PART1, VERIFIER), TYPE=ASCII, POSITION=1, SEPARATOR="\t")
+    

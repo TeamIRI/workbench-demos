@@ -1,0 +1,31 @@
+Steps for creating an ODA connection from SortCL to BIRT:
+
+1.  Create your SortCL script in the IRI Workbench
+    The first Outfile section must be /OUTFILE=stdout and must include a /FIELD declarations for
+    every column that will be used in the report (as well as supporting fields such as /SUM that 
+    will populate the field values).
+
+2.  Switch to the Report Design perspective
+    Click Window, Open Perspective, Report Design. If BIRT is not installed, see step one in the
+    Notes.txt file in this project folder.
+
+3.  Create a New Report
+    Right click on the folder you are working with in the Navigator section. Move it to the SAME
+    folder with your SortCL script. Follow the wizard instructions to create your report design.
+
+4.  Specify the IRI Data Source
+    In the Data Explorer tab, right click on Data Sources and select New Data Source. Select the
+    IRI Data Source from the available list and click Next. Under Select folder, enter or browse 
+    to specify the full path name to the folder with the report and SortCL script. Click Finish.
+
+5.  Specify the Data Set
+    Right click on Data Sets, and select New Data Set. Select the Data Source specified above and
+    click Next. At the top, select the script you wish to use for your report from that drop down
+    box. The /OUTFILE fields declared in the SortCL script will appear on the left. Highlight the
+    fields and click the middle yellow arrow to arrange them in the report. Click Finish.
+
+6.  Customize and Create the Report
+    On the next page, you can make changes to your data source and data set. Also add, remove and 
+    rearrange selected columns, add computed columns, and preview the raw data. 
+    
+For more information on BIRT reporting, visit http://www.eclipse.org/birt/phoenix/tutorial/basic/

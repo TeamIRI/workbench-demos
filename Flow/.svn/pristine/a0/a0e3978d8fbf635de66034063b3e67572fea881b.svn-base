@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2014 Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>IRI Flow</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Working with the IRI Flow and Database Models and
+  Diagrams</h1>
+
+  <p>The IRI Workbench now supports a work flow modeling tool and
+  diagrams to help you design and build your data integration jobs.
+  You will be working with the Sirius diagrams for Flow and ER
+  models.</p>
+
+  <h2>How do I create a flow model?</h2>
+
+  <p><strong>Set up your project:</strong></p>
+
+  <ol>
+    <li>In the Project Explorer, right-click on your project and
+    select <strong>Configure</strong> -&gt; <strong>Convert to
+    Modeling Project</strong>.</li>
+
+    <li>Right-click the project again and select
+    <strong>Configure</strong> -&gt; <strong>Add Xtext
+    Nature</strong>.</li>
+  </ol>
+
+  <p><strong>Create a flow model in one of these two
+  ways:</strong></p>
+
+  <ol>
+    <li>Use the "New Multi-Table Protect Job" wizard to create a
+    basic data integration flow. This will create a flow model.
+    Then just follow the steps below to add a diagram.</li>
+
+    <li>Add a diagram as described below.</li>
+  </ol>
+
+  <p>OR</p>
+
+  <ol>
+    <li>To build an empty model to build to your preferences, press
+    <code>&lt;CTRL&gt;N</code> to open the "New" wizard.</li>
+
+    <li>In the <strong>Wizards</strong> field, type
+    <code>flow</code> to select <strong>Flow Model</strong>, and
+    then click <strong>Next</strong>.</li>
+
+    <li>Select a parent folder from the list, enter a file name in
+    the field, and then click <strong>Next</strong>.</li>
+
+    <li>Select <strong>Batch</strong> from the list in the Model
+    Object field, and then click <strong>Finish</strong>.</li>
+
+    <li>Add a diagram as described below.</li>
+  </ol>
+
+  <p><strong>Complete project setup:</strong></p>
+
+  <ol>
+    <li>Right-click the project and select <strong>Viewpoints
+    Selection</strong>.</li>
+
+    <li>Select <strong>Flow</strong> in the viewpoints list. Note
+    that more of this will be automated in future releases.</li>
+  </ol>
+
+  <h2>Flow Diagram</h2>
+
+  <p>If you built an empty model:</p>
+
+  <ol>
+    <li>In the Project Explorer, expand the <code>*.flow</code>
+    model.</li>
+
+    <li>Right-click on <strong>Batch</strong> and select
+    <strong>New Representation</strong> -&gt; <strong>new Flow
+    Diagram</strong>.<br>
+    A new diagram opens.</li>
+  </ol>
+
+  <p>For a block mapping diagram:</p>
+
+  <ol>
+    <li>Expand the *.flow model and navigate to a block
+    (<code>Batch TestBatch</code>) inside of the flow.</li>
+
+    <li>Right-click on the Block and select <strong>new
+    Representation</strong> -&gt; <strong>new Flow
+    Diagram</strong>.<br>
+    The diagram opens.</li>
+  </ol><!-- ************************************** -->
+
+  <h2>ER Diagram Notes</h2>
+
+  <ul>
+    <li>First a database model must be created. To do this:
+
+      <ol>
+        <li>In the Project Explorer, select the project.</li>
+
+        <li>In the select Data Source Explorer, select the tables
+        to be included in the diagram.</li>
+
+        <li>Right-click and select <strong>Generate DB
+        Model</strong>.</li>
+      </ol>
+    </li>
+
+    <li>A database model is placed in the selected project
+    location.</li>
+
+    <li>The model has a <code>.sqlschema</code> extension and
+    contains the schema.</li>
+
+    <li>The ER diagram can be added by selecting the
+    <strong>Schema</strong> in the model file in the Project
+    Explorer and right-clicking <strong>New Representation</strong>
+    -&gt; <strong>new Entity Relationship diagram</strong>.</li>
+
+    <li>The HomePage diagram is added by selecting the
+    <strong>Database</strong> in the model file in the the Project
+    Explorer and right-clicking <strong>New Representation</strong>
+    -&gt; <strong>new HomePage</strong>.</li>
+  </ul>
+
+  <h2>The Flow popup menu</h2>
+
+  <p>By right-clicking in the Flow diagram you can get to the Flow
+  popup menu. Here you can select various useful features. Note
+  that some items are context sensitive so they will only show up
+  at certain times.</p>
+
+  <p><strong>New items are being added.</strong></p>
+
+  <h2>How to add elements to the diagrams</h2>
+
+  <p>Select an element from the Flow Creation section of the
+  Palette on the right and click in the diagram. The element is
+  placed in the diagram. Use the connections in the Flow diagram to
+  link items together.</p>
+
+  <h2>Mapping diagram</h2>
+
+  <p>The mapping diagram allows you to see the mapping and
+  transform in an aesthetically pleasing way.</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+###########################################
+#                                         #
+#  SortCL or RowGen  Data Definition File #
+#  Created 27 July 2006 by lisam@iri.com  #
+#                                         #
+###########################################
+
+/FILE=NYSE-A
+/FIELD=(NewField, POSITION=1, ASCII)
+/FIELD=(Issue, POSITION=1, SEPARATOR="\t", ASCII)
+/FIELD=(Symbol, POSITION=2, SEPARATOR="\t", ASCII)
+/FIELD=(LastTrade, POSITION=3, SIZE=5.2, SEPARATOR="\t", NUMERIC, FILL='0')
+/FIELD=(Volume, POSITION=4, SIZE=9.0, SEPARATOR="\t", NUMERIC, MILL)
+/FIELD=(Change, POSITION=5, SIZE=4.2, SEPARATOR="\t", NUMERIC, FILL='0')
+/FIELD=(Filler, POSITION=6, SEPARATOR="\t")
+/FIELD=(Percent, POSITION=7, SIZE=4.2, SEPARATOR="\t", NUMERIC, FILL='0')

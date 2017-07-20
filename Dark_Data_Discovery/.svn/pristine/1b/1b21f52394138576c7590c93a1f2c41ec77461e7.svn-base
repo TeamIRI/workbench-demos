@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<patterns:PatternLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:patterns="http://patterns/1.0">
+  <patterns name="CCN" description="credit card number" pattern="\d{4}-\d{4}-\d{4}-\d{4}"/>
+  <patterns name="SSN" description="US SSN" pattern="[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}"/>
+  <patterns name="PHONE_US" description="US Phone with Optional Extension" pattern="(?:(?:\+?(1)(?:[ .-]?)?)?(?:\(?([2-9]\d{2})\)?(?:[ .-]?)?)([2-9]\d{2})(?:[ .-]?)(\d{4})(?:[ #eExXtT]*)(\d{2,6})?)"/>
+</patterns:PatternLibrary>

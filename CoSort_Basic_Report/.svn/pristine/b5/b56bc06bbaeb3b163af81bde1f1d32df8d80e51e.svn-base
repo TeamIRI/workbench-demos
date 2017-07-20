@@ -1,0 +1,20 @@
+# CoSort Sort Control Language (SortCL) Program "mortgage.scl"    
+# Calculates payments using cross-calc and derived field logic
+
+/INFILE=../InputFiles/mortgage.dat
+    /FIELD=(PRINCIPLE, POSITION=1, SIZE=10, SEPARATOR=",")
+    /FIELD=(APR, POSITION=2, SIZE=10, SEPARATOR=",")
+    /FIELD=(MTP, POSITION=3, SIZE=10, SEPARATOR=",")
+    
+/REPORT		# bypasses sort
+
+/OUTFILE=stdout # sends output to the console (or pipe) 
+
+    /HEADREC="\n   Principle     APR     Months     Monthly Payment\n\n"
+    /FIELD=(PRINCIPLE, POSITION=1, SIZE=12, TYPE=CURRENCY)
+    /FIELD=(APR, POSITION=13, SIZE=8, PRECISION=2, TYPE=NUMERIC)
+    /FIELD=(MTP, POSITION=21, SIZE=8, PRECISION=0, TYPE=NUMERIC)
+    /FIELD=(RATE=APR / 1200, TYPE=ASCII)
+    /FIELD=(T=pow(1 /(1 + RATE), MTP))
+# Math, trig
+    /FIELD=(PRINCIPLE * RATE /(1 - T), SIZE=20, TYPE=CURRENCY)

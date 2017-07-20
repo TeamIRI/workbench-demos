@@ -1,0 +1,40 @@
+File Directory	File Name	Sheet Name	Pattern Name(s)	Pattern	Start Cell	End Cell
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	CCN	\\d{4}-\\d{4}-\\d{4}-\\d{4}	A1	A33
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A1	B33
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A38	B38
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A1	C6
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A8	C8
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A10	C10
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A10	C11
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A11	C12
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A12	C14
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A14	C15
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A15	C19
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A21	C21
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A23	C25
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A27	C33
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	buyers.xls	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A38	C38
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	CCN	\\d{4}-\\d{4}-\\d{4}-\\d{4}	A32	A37
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A2	A6
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A10	A12
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A16	A18
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A22	A24
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A27	A28
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A32	A37
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A16	A18
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A22	A23
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A27	A28
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A32	A32
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A34	A37
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	CCN	\\d{4}-\\d{4}-\\d{4}-\\d{4}	A32	A37
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A2	A6
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A10	A12
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A16	A18
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A22	A24
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A27	A28
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	SSN	[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}	A32	A37
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A16	A18
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A22	A23
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A27	A28
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A32	A32
+C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data\	xlsxTEST2.xlsx	Sheet1	PHONE_US	(?:(?:\\+?(1)(?:[ .-]?)?)?(?:\\(?([2-9]\\d{2})\\)?(?:[ .-]?)?)([2-9]\\d{2})(?:[ .-]?)(\\d{4})(?:[ #eExXtT]*)(\\d{2,6})?)	A34	A37

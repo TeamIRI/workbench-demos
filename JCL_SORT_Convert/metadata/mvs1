@@ -1,0 +1,27 @@
+//OMIT       JOB                                                        1
+//SORT1      EXEC  PGM=SORT                                             2
+//STEPLIB    DD    DSN=SORT.DIRE.CTORY,DISP=SHR                         3
+//SYSOUT     DD    SYSOUT=A                                             4
+//SORTIN     DD    DSN=pres18.dat,UNIT=2400-3,                          5
+//                 VOL=SER=112233,DISP=(OLD,KEEP),
+//                 DCB=(LRECL=47,RECFM=FB,
+//                 BLKSIZE=900),LABEL=(1,SL)
+//           DD    DSN=pres19.dat,UNIT=2400-3,
+//                 VOL=SER=223344,DISP=(OLD,KEEP),
+//                 DCB=(LRECL=47,RECFM=FB,
+//                 BLKSIZE=900),LABEL=(1,SL)
+//SORTOUT    DD    DSN=dupl1840,VOL=SER=765456,                         6
+//                 UNIT=2400-3,DISP=(NEW,KEEP),
+//                 DCB=(LRECL=47,RECFM=FB,
+//                 BLKSIZE=900),LABEL=(1,SL)
+//SORTWK01   DD    SPACE=(CYL,(20)),UNIT=SYSDA                          7
+//SORTWK02   DD    SPACE=(CYL,(20)),UNIT=SYSDA
+//SORTWK03   DD    SPACE=(CYL,(20)),UNIT=SYSDA
+//SORTWK04   DD    SPACE=(CYL,(20)),UNIT=SYSDA
+//SORTWK05   DD    SPACE=(CYL,(20)),UNIT=SYSDA
+//SYSIN      DD    *                                                    8
+    SORT     FIELDS=(23,2,A,29,3,D),FORMAT=CH,				9
+             EQUALS
+    OMIT     COND=(29,1,CH,EQ,34,1,CH,&,1,5,CH,NE,C'Tyler') 10
+     END                                                               11
+/*                                                                     12

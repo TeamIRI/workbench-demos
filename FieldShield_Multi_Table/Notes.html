@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2014, 2017. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Encrypting Like Columns to Preserve Referential
+  Integrity</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Encrypting Like Columns to Preserve Referential
+  Integrity</h1>
+
+  <p>This demonstrates the use of the FieldShield multi-table
+  protect wizard to encrypt the value of a column that is a foreign
+  key, and to preserve referential integrity between linked
+  tables.</p>
+
+  <p>This demo requires and uses the following resources:</p>
+
+  <ul>
+    <li>The DTP connection profile Oracle</li>
+
+    <li>The ODBC DSN Oracle</li>
+  </ul>
+
+  <p>After Oracle is connected via ODBC and JDBC (in DTP), prepare
+  the demo as follows:</p>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Execute
+    <em>restore-ssn-data.bat</em>, in the restore-ssn-data folder.
+    This sets the tables up to use an SSN as the primary and
+    foreign key in the tables:<br>
+
+      <ol>
+        <li>Right-click on
+        <em><strong>restore-ssn-data.bat</strong></em> and select
+        <strong>Run As</strong> -&gt; <strong>Batch
+        Program</strong>.</li>
+      </ol>
+    </li>
+
+    <li style="margin-bottom: 10px;">Check each step carefully for
+    error messages and that each table was populated.<br>
+
+      <ol>
+        <li>In the Data Source Explorer, select <strong>Database
+        Connections</strong> -&gt; <strong>Oracle</strong> -&gt;
+        <strong>XE</strong> -&gt; <strong>Schemas</strong> -&gt;
+        <strong>SCOTT</strong> -&gt; <strong>Tables</strong>.</li>
+
+        <li>Right-click on <strong>EMPLOYEES</strong>, and then
+        select <strong>Data</strong> -&gt; <strong>Sample
+        Contents</strong>.</li>
+
+        <li>In the SQL Results -&gt; Status tab, check for errors,
+        as well as in the command line window.</li>
+
+        <li>Open C:\IRI\CoSort95\etc\.cserrlog. Notify IRI if there
+        are problems.</li>
+      </ol>
+    </li>
+  </ol>
+
+  <p>Recommended steps to perform the demo in the Workbench:</p>
+
+  <h2>The Problem</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Open the Oracle connection in
+    the Data Source Explorer.</li>
+
+    <li style="margin-bottom: 10px;">Navigate to the
+    <strong>XE</strong> -&gt; <strong>Schemas</strong> -&gt;
+    <strong>SCOTT</strong> -&gt; <strong>Tables</strong>.</li>
+
+    <li style="margin-bottom: 10px;">The seven tables for the
+    example are: COUNTRIES, DEPARTMENTS, EMPLOYEES, JOBS,
+    JOB_HISTORY, LOCATIONS, and REGIONS.</li>
+
+    <li style="margin-bottom: 10px;">Open the document
+    <em>hr-er-diagram.png</em>.</li>
+
+    <li style="margin-bottom: 10px;">Explain that the employee's
+    SSN was used as the employee ID, since it was unique.</li>
+
+    <li style="margin-bottom: 10px;">Open the script
+    <em>employee-roster.sql</em> in the sql folder.</li>
+
+    <li style="margin-bottom: 10px;">Right click in the script and
+    select <strong>Execute All</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Double-click the title tab in
+    the SQL Results view to maximize.</li>
+
+    <li style="margin-bottom: 10px;">Point out how the employee's
+    and manager's SSN is exposed and this is a bad thing.</li>
+
+    <li style="margin-bottom: 10px;">Double-click the title tab in
+    the SQL Results view to restore.</li>
+  </ol>
+
+  <h2>The Fix</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Open the "New Multi-table
+    Protection Job" wizard from the FieldShield toolbar menu.</li>
+
+    <li style="margin-bottom: 10px;">On the first page, make sure
+    that the main project folder is specified.</li>
+
+    <li style="margin-bottom: 10px;">Name the job
+    <em>protect-ssn</em>.</li>
+
+    <li style="margin-bottom: 10px;">Select <strong>ODBC</strong>
+    as the Loader.</li>
+
+    <li style="margin-bottom: 10px;">Explain that ODBC for extract
+    and load will not use any external programs.</li>
+
+    <li style="margin-bottom: 10px;">Go to the next page, Data
+    Extraction Stage.</li>
+
+    <li style="margin-bottom: 10px;">Select the Oracle DSN from the
+    <strong>Connection profile</strong> drop down.</li>
+
+    <li style="margin-bottom: 10px;">Select the tables:
+    <strong>DEPARTMENTS</strong>, <strong>EMPLOYEES</strong>, and
+    <strong>JOB_HISTORY</strong></li>
+
+    <li style="margin-bottom: 10px;">Change the Separator character
+    to a tab (\t).</li>
+
+    <li style="margin-bottom: 10px;">Go to the next page, Field
+    Modification Rules.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Create</strong>
+    to open the Field Rule Matcher page.</li>
+
+    <li style="margin-bottom: 10px;">In the <strong>Matcher
+    Name</strong> field, enter SID. Click <strong>Add</strong>. The
+    Field Rule Matcher Details page opens.</li>
+
+    <li style="margin-bottom: 10px;">Fill dialog out with these
+    details: Type: PATTERN, Filter: blank, Details: *_SID,
+    Operator: AND. Click <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Back on the Field Rule Matcher
+    page, in <strong>Rule Name</strong> field, click
+    <strong>Create</strong> to show the <strong>New Protection
+    Field Rule Wizard Selection</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Select <strong>Encryption or
+    Decryption Functions</strong> from the list.</li>
+
+    <li style="margin-bottom: 10px;">Name the rule
+    <strong>encryptSID</strong>. If the rule already exists, check
+    the box to overwrite any existing rule.</li>
+
+    <li style="margin-bottom: 10px;">Go to the next page,
+    Encryption and Decryption Functions.</li>
+
+    <li style="margin-bottom: 10px;">From the list of Encryption
+    and Decryption Functions, find and select
+    <em><strong>enc_fp_aes256_ascii</strong></em>. This will be a
+    more obvious change to the data.<br>
+    You may point out that the alphanum variety would be more
+    realistic, but indistinguishable.</li>
+
+    <li style="margin-bottom: 10px;">In the
+    <strong>Passphrase</strong> field enter
+    <strong>secret</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Explain that you can click
+    <strong>Browse</strong> to search for a file for the
+    passphrase.</li>
+
+    <li style="margin-bottom: 10px;">Click
+    <strong>Finish</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Explain that additional
+    protection rules could be added now.</li>
+
+    <li style="margin-bottom: 10px;">Go to the next page, Data
+    Loading Stage.</li>
+
+    <li style="margin-bottom: 10px;">Select the connection profile
+    and schema for the target. If there is only one schema, the
+    wizard will auto-fill it.</li>
+
+    <li style="margin-bottom: 10px;">Select the <strong>Truncate
+    tables before insert</strong> check box.</li>
+
+    <li style="margin-bottom: 10px;">Go to the next page, Summary,
+    and review.</li>
+
+    <li style="margin-bottom: 10px;">Click
+    <strong>Finish</strong>.</li>
+
+    <li style="margin-bottom: 10px;">A new folder, protect-ssn,
+    will be created with a <code>.bat</code> file to apply the
+    protection.</li>
+
+    <li style="margin-bottom: 10px;">Run the batch file by
+    right-clicking on it and selecting <strong>Run As</strong>
+    -&gt; <strong>Batch Program</strong>.</li>
+  </ol>
+
+  <h2>The Proof</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Open the script
+    <em>employee-roster.sql</em> in the sql folder.</li>
+
+    <li style="margin-bottom: 10px;">Right-click in the script and
+    select <strong>Execute All</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Double-click the title tab in
+    the SQL Results view to maximize.</li>
+
+    <li style="margin-bottom: 10px;">Point out how the employee's
+    and manager's SSN are encrypted &mdash; this is a good
+    thing.</li>
+
+    <li style="margin-bottom: 10px;">Also note that all of the
+    relationships have been preserved &mdash; this is an important
+    fact.</li>
+
+    <li style="margin-bottom: 10px;">Double-click the title tab in
+    the SQL Results view to restore.</li>
+  </ol>
+
+  <h2>Optional Exercise</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">To address questions of
+    accessing the real SSN, run the <em>employee-list.scl</em>
+    report.</li>
+
+    <li style="margin-bottom: 10px;">Open the script
+    <em>employee-list.scl</em> in the saved-example folder.</li>
+
+    <li style="margin-bottom: 10px;">Point out the
+    dec_fp_aes256_ascii functions in the output section.</li>
+
+    <li style="margin-bottom: 10px;">Run the script.</li>
+
+    <li style="margin-bottom: 10px;">Double-click the title tab in
+    the Console view to maximize.</li>
+
+    <li style="margin-bottom: 10px;">Point out that the original
+    SSN values for employee and manager are displayed.</li>
+
+    <li style="margin-bottom: 10px;">Double-click the title tab in
+    the Console view to restore.</li>
+  </ol>
+
+  <h2>Cleanup</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Delete the protect-ssn
+    folder.</li>
+
+    <li style="margin-bottom: 10px;">Execute
+    <em>restore-ssn-data.bat</em> in the restore-ssn-data
+    folder.</li>
+  </ol>
+</body>
+</html>

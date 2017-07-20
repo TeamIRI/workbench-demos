@@ -1,0 +1,55 @@
+Message-ID: <5384FEB5.309@iri.com>
+Date: Tue, 27 May 2014 17:08:05 -0400
+From: Sharon Hewitt <sharonh@iri.com>
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Thunderbird/24.5.0
+MIME-Version: 1.0
+To: shewitt1313@gmail.com
+Subject: Conference
+Content-Type: multipart/alternative;
+ boundary="------------030601040206060808050807"
+
+This is a multi-part message in MIME format.
+--------------030601040206060808050807
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Need to add Michael Miller to the list of people calling in to the 
+conference. His SSN is 223-54-1444, phone is (321) 777-0987 
+<tel:%28321%29%20777-0987>, and his email address is mmiller@rshst.com 
+<mailto:mmiller@rshst.com>. Also Greg Bishop will attend; his info is 
+523-33-54632, (727) 254-6735 <tel:%28727%29%20254-6735>, 
+bishop@gmail.com <mailto:bishop@gmail.com>.
+
+If you need help with anything else, call (321) 777-8889 
+<tel:%28321%29%20777-8889> or (305) 555-1212 <tel:%28305%29%20555-1212>
+
+--------------030601040206060808050807
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+    Need to add Michael Miller to the list of people calling in to the
+    conference. His SSN is 223-54-1444, phone is <a
+      href="tel:%28321%29%20777-0987" value="+13217770987"
+      target="_blank">(321) 777-0987</a>, and his email address is <a
+      href="mailto:mmiller@rshst.com" target="_blank">mmiller@rshst.com</a>.
+    Also Greg Bishop will attend; his info is 523-33-54632, <a
+      href="tel:%28727%29%20254-6735" value="+17272546735"
+      target="_blank">(727) 254-6735</a>, <a
+      href="mailto:bishop@gmail.com" target="_blank">bishop@gmail.com</a>.
+    <br>
+    <br>
+    If you need help with anything else, call <a
+      href="tel:%28321%29%20777-8889" value="+13217778889"
+      target="_blank">(321) 777-8889</a> or <a
+      href="tel:%28305%29%20555-1212" value="+13055551212"
+      target="_blank">(305) 555-1212</a>
+  </body>
+</html>
+
+--------------030601040206060808050807--

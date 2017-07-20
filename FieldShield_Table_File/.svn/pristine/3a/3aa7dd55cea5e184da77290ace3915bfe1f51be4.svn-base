@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<AuditTrail>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140122-1600</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>1396</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-02-20 13:31:49</StartTime>
+<EndTime>2014-02-20 13:31:54</EndTime>
+<RunTime>00:00:05</RunTime>
+<ReturnCode>0</ReturnCode>
+<ErrorMessage>normal return</ErrorMessage>
+<RecordsProcessed>10</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET=120326134642_NAME1_pseudo.set[NAME1])
+    /FIELD=(CUSTOM_AGE=AGE + 10, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(MASK_SSN=replace_chars(SSN, &quot;*&quot;, 1, 3, &quot;*&quot;, 5, 2), ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(RAND_STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;, RANDOM)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+MOZ_PLUGIN_PATH=C:\Program Files\Foxit Software\Foxit Reader\plugins\
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\FACT;C:\IRI\CoSort95\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\system32;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 58 Stepping 9, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=3a09
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140416-1006</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>2624</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-09-09 05:21:20</StartTime>
+<EndTime>2014-09-09 05:21:44</EndTime>
+<RunTime>00:00:24</RunTime>
+<ReturnCode>0</ReturnCode>
+<ErrorMessage>normal return</ErrorMessage>
+<RecordsProcessed>10</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET=120326134642_NAME1_pseudo.set[NAME1])
+    /FIELD=(CUSTOM_AGE=AGE + 10, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(MASK_SSN=replace_chars(SSN, &quot;*&quot;, 1, 3, &quot;*&quot;, 5, 2), ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(RAND_STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;, RANDOM)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\IRI\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\IRI\CoSort95\bin;C:\IRI\FACT;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Boeing\Twister Designer;C:\Program Files\MySQL\MySQL Utilities 1.4.3\;C:\Program Files\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\IRI\CoSort95\workbench;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0601
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140416-1006</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>3680</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-09-09 05:22:02</StartTime>
+<EndTime>2014-09-09 05:22:03</EndTime>
+<RunTime>00:00:01</RunTime>
+<ReturnCode>0</ReturnCode>
+<ErrorMessage>normal return</ErrorMessage>
+<RecordsProcessed>10</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET=120326134642_NAME1_pseudo.set[NAME1])
+    /FIELD=(CUSTOM_AGE=AGE + 10, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(MASK_SSN=replace_chars(SSN, &quot;*&quot;, 1, 3, &quot;*&quot;, 5, 2), ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(RAND_STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;, RANDOM)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\IRI\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\IRI\CoSort95\bin;C:\IRI\FACT;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Boeing\Twister Designer;C:\Program Files\MySQL\MySQL Utilities 1.4.3\;C:\Program Files\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\IRI\CoSort95\workbench;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0601
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140416-1006</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>3732</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-09-09 05:22:16</StartTime>
+<EndTime>2014-09-09 05:22:17</EndTime>
+<RunTime>00:00:01</RunTime>
+<ReturnCode>0</ReturnCode>
+<ErrorMessage>normal return</ErrorMessage>
+<RecordsProcessed>10</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET=120326134642_NAME1_pseudo.set[NAME1])
+    /FIELD=(CUSTOM_AGE=AGE + 10, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(MASK_SSN=replace_chars(SSN, &quot;*&quot;, 1, 3, &quot;*&quot;, 5, 2), ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(RAND_STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;, RANDOM)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\IRI\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\IRI\CoSort95\bin;C:\IRI\FACT;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Boeing\Twister Designer;C:\Program Files\MySQL\MySQL Utilities 1.4.3\;C:\Program Files\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\IRI\CoSort95\workbench;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0601
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140416-1006</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>3124</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-09-09 06:07:59</StartTime>
+<EndTime>2014-09-09 06:08:00</EndTime>
+<RunTime>00:00:01</RunTime>
+<ReturnCode>0</ReturnCode>
+<ErrorMessage>normal return</ErrorMessage>
+<RecordsProcessed>10</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET=120326134642_NAME1_pseudo.set[NAME1])
+    /FIELD=(CUSTOM_AGE=AGE + 10, ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(MASK_SSN=replace_chars(SSN, &quot;*&quot;, 1, 3, &quot;*&quot;, 5, 2), ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(RAND_STATE, ASCII, POSITION=10, SEPARATOR=&quot;|&quot;, RANDOM)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\IRI\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\IRI\CoSort95\bin;C:\IRI\FACT;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Boeing\Twister Designer;C:\Program Files\MySQL\MySQL Utilities 1.4.3\;C:\Program Files\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\IRI\CoSort95\workbench;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0601
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140416-1006</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>2916</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-09-09 06:25:07</StartTime>
+<EndTime>2014-09-09 06:25:08</EndTime>
+<RunTime>00:00:01</RunTime>
+<ReturnCode>29</ReturnCode>
+<ErrorMessage>source unknown</ErrorMessage>
+<RecordsProcessed>0</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS=ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(MASK_PHONE=replace_chars(PHONE, &quot;#&quot;, 1, 3, &quot;^&quot;, 6, 3), TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET= 120326134642_NAME1_pseudo.set [ NAME1 ])
+    /FIELD=(CUSTOM_AGE=AGE + 10, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(MASK_SSN=replace_chars(SSN, &quot;*&quot;, 1, 3, &quot;*&quot;, 5, 2), TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(RAND_STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;, RANDOM)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\IRI\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\IRI\CoSort95\bin;C:\IRI\FACT;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Boeing\Twister Designer;C:\Program Files\MySQL\MySQL Utilities 1.4.3\;C:\Program Files\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\IRI\CoSort95\workbench;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0601
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140416-1006</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>1656</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-09-09 06:29:18</StartTime>
+<EndTime>2014-09-09 06:29:19</EndTime>
+<RunTime>00:00:01</RunTime>
+<ReturnCode>0</ReturnCode>
+<ErrorMessage>normal return</ErrorMessage>
+<RecordsProcessed>10</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS=ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)    	
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+   /FIELD=(PHONE, TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET= 120326134642_NAME1_pseudo.set [ NAME1 ])
+    /FIELD=(CUSTOM_AGE=AGE + 10, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+     /FIELD=(MASK_PHONE=replace_chars(PHONE, &quot;#&quot;, 1, 3, &quot;^&quot;, 6, 3), TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(MASK_SSN=replace_chars(SSN, &quot;*&quot;, 1, 3, &quot;*&quot;, 5, 2), TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(RAND_STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;, RANDOM)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\IRI\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\IRI\CoSort95\bin;C:\IRI\FACT;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Boeing\Twister Designer;C:\Program Files\MySQL\MySQL Utilities 1.4.3\;C:\Program Files\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\IRI\CoSort95\workbench;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0601
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140416-1006</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>1196</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-09-09 06:36:10</StartTime>
+<EndTime>2014-09-09 06:36:10</EndTime>
+<RunTime>00:00:00</RunTime>
+<ReturnCode>17</ReturnCode>
+<ErrorMessage>invalid field position</ErrorMessage>
+<RecordsProcessed>0</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS=ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET= 120326134642_NAME1_pseudo.set [ NAME1 ])
+    /FIELD=(CUSTOM_AGE=AGE + 10, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(MASK_PHONE=replace_chars(PHONE, &quot;#&quot;, 1, 3, &quot;^&quot;, 6, 3), TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_AES128_CREDIT_CARD=enc_aes128(CREDIT_CARD, &quot;secret23&quot;), POSITION=0, SIZE=0, TYPE=ASCII)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\IRI\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\IRI\CoSort95\bin;C:\IRI\FACT;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Boeing\Twister Designer;C:\Program Files\MySQL\MySQL Utilities 1.4.3\;C:\Program Files\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\IRI\CoSort95\workbench;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0601
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+<AuditRecord>
+<Product>CoSort</Product>
+<Version>9.5.3</Version>
+<VersionTag>R95140416-1006</VersionTag>
+<Serial>99999.demo</Serial>
+<OperatingSystem>Windows 7</OperatingSystem>
+<User>IRIDEMO</User>
+<ProcessId>1956</ProcessId>
+<Terminal>console</Terminal>
+<Program>sortcl</Program>
+<Command>/spec=patient_enc.scl </Command>
+<StartTime>2014-09-09 06:37:13</StartTime>
+<EndTime>2014-09-09 06:37:14</EndTime>
+<RunTime>00:00:01</RunTime>
+<ReturnCode>0</ReturnCode>
+<ErrorMessage>normal return</ErrorMessage>
+<RecordsProcessed>10</RecordsProcessed>
+<Script>
+# FieldShield Script
+# Author: kahanap
+# Date: 2/28/2012
+# Modified by davidf@iri.com on 21 March 2013
+/AUDIT=FSlog.xml
+/INFILE=&quot;PATIENT_RECORD;DSN=Oracle&quot;
+    /PROCESS = ODBC
+    /ALIAS=patient_record
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;,EXT_FIELD=&quot;NAME&quot;)
+    /FIELD=(AGE, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CREDIT_CARD, TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;)
+    /FIELD=(DRIVING_LICENSE, TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;)
+    /FIELD=(SSN, TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+	
+/REPORT
+/OUTFILE=&quot;PATIENT_RECORD_ENCRYPTED;DSN=Oracle&quot;
+    /PROCESS=ODBC
+    /CREATE
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;)
+    /FIELD=(AGE, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PHONE, TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_FP_CREDIT_CARD=enc_fp_aes256_alphanum(CREDIT_CARD, &quot;file:password&quot;), TYPE=ASCII, POSITION=6, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;CREDIT_CARD&quot;)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(SSN, TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;)
+/OUTFILE=stdout
+    /FIELD=(IDNUMBER, TYPE=ASCII, POSITION=1, SEPARATOR=&quot;|&quot;)
+    /FIELD=(PSEUDO_NAME1, TYPE=ASCII, POSITION=2, SEPARATOR=&quot;|&quot;, SET= 120326134642_NAME1_pseudo.set [ NAME1 ])
+    /FIELD=(CUSTOM_AGE=AGE + 10, TYPE=ASCII, POSITION=3, SEPARATOR=&quot;|&quot;)
+    /FIELD=(EMAIL, TYPE=ASCII, POSITION=4, SEPARATOR=&quot;|&quot;)
+    /FIELD=(MASK_PHONE=replace_chars(PHONE, &quot;#&quot;, 1, 3, &quot;^&quot;, 6, 3), TYPE=ASCII, POSITION=5, SEPARATOR=&quot;|&quot;)
+    /FIELD=(ENC_AES128_CREDIT_CARD=enc_aes128(CREDIT_CARD, &quot;secret23&quot;), POSITION=6, SEPARATOR=&quot;|&quot;, TYPE=ASCII)
+    /FIELD=(ENC_FP_DRIVING_LICENSE=enc_fp_aes256_alphanum(DRIVING_LICENSE, &quot;jayavel&quot;), TYPE=ASCII, POSITION=7, SEPARATOR=&quot;|&quot;, EXT_FIELD=&quot;DRIVING_LICENSE&quot;)
+    /FIELD=(MASK_SSN=replace_chars(SSN, &quot;*&quot;, 1, 3, &quot;*&quot;, 5, 2), TYPE=ASCII, POSITION=8, SEPARATOR=&quot;|&quot;)
+    /FIELD=(CITY, TYPE=ASCII, POSITION=9, SEPARATOR=&quot;|&quot;)
+    /FIELD=(RAND_STATE, TYPE=ASCII, POSITION=10, SEPARATOR=&quot;|&quot;, RANDOM)
+</Script>
+<Environment>
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\IRIDEMO\AppData\Roaming
+CommonProgramFiles=C:\Program Files\Common Files
+COMPUTERNAME=IRIDEMO-PC
+ComSpec=C:\Windows\system32\cmd.exe
+COSORT_HOME=C:\IRI\CoSort95\
+FACT_HOME=C:\IRI\FACT
+FP_NO_HOST_CHECK=NO
+HOMEDRIVE=C:
+HOMEPATH=\Users\IRIDEMO
+LOCALAPPDATA=C:\Users\IRIDEMO\AppData\Local
+LOGONSERVER=\\IRIDEMO-PC
+NUMBER_OF_PROCESSORS=1
+OS=Windows_NT
+Path=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\IRI\CoSort95\bin;C:\IRI\FACT;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Boeing\Twister Designer;C:\Program Files\MySQL\MySQL Utilities 1.4.3\;C:\Program Files\MySQL\MySQL Utilities 1.4.3\Doctrine extensions for PHP\;C:\Program Files\MySQL\MySQL Server 5.6\bin;C:\IRI\CoSort95\workbench;
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 1, GenuineIntel
+PROCESSOR_LEVEL=15
+PROCESSOR_REVISION=0601
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\Windows
+TEMP=C:\Users\IRIDEMO\AppData\Local\Temp
+TMP=C:\Users\IRIDEMO\AppData\Local\Temp
+USERDOMAIN=IRIDEMO-PC
+USERNAME=IRIDEMO
+USERPROFILE=C:\Users\IRIDEMO
+windir=C:\Windows
+windows_tracing_flags=3
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+</Environment>
+</AuditRecord>
+</AuditTrail>

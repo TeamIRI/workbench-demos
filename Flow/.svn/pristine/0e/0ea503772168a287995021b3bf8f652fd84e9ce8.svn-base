@@ -1,0 +1,75 @@
+### CoSort v9.5.3 Copyright 2013 IRI, Inc. ###
+### Sort Control Language (SortCL) Program ###
+
+### Job Controls Phase ###
+/MONITOR=1
+/STATISTICS=..\JobStats\tradinga.stat
+/WARNINGSOFF
+
+#### Input Source Specifications ####
+
+/INFILE=..\InputFiles\nyse-a	# tab-delimited format
+/ALIAS=nyse-a	
+    /FIELD=(Issue, POSITION=1, SEPARATOR="\t", TYPE=ASCII)
+    /FIELD=(Symbol, POSITION=2,SIZE=3, SEPARATOR="\t", TYPE=ASCII)
+    /FIELD=(LastTrade, POSITION=3,SIZE=5, PRECISION=2, SEPARATOR="\t", TYPE=NUMERIC)
+    /FIELD=(Volume, POSITION=4, SEPARATOR="\t", TYPE=NUMERIC)
+    /FIELD=(Change, POSITION=5,SIZE=4, PRECISION=2, SEPARATOR="\t", TYPE=NUMERIC)
+    /FIELD=(Percent, POSITION=6,SIZE=4, PRECISION=2, SEPARATOR="\t", TYPE=NUMERIC)
+
+/INFILE=..\InputFiles\buys.csv	# CSV format
+/ALIAS=buys       
+/INSKIP=1         # skip header record
+    /FIELD=(Shares, POSITION=1, SEPARATOR=",",FRAME='"', TYPE=ASCII)
+    /FIELD=(Symbol, POSITION=2, SEPARATOR=",",FRAME='"', TYPE=ASCII)
+    /FIELD=(Client, POSITION=3, SEPARATOR=",",FRAME='"', TYPE=ASCII)
+    
+#### Action Statement - Sort & Join ####
+/JOIN FULL_OUTER NOT_SORTED nyse-a NOT_SORTED buys WHERE nyse-a.Symbol EQ buys.Symbol
+
+#### Output File 1 - 2D BI Report with Selection ####
+#/OUTFILE=..\Targets\TradingA	# summary record format
+    /OUTFILE=stdout
+    /HEADREC="                                                    -----------\n"
+    /FIELD=(New_balance, POSITION=50,SIZE=14, PRECISION=2, TYPE=currency)
+    /SUM New_balance from (nyse-a.LastTrade * buys.Shares)  # expression
+
+#/OUTFILE=..\Targets\TradingA	# detail record format
+ /OUTFILE=stdout
+    /HEADREC="Client             Symbol         Shares  LastTrade  Shares*LT     Ln.\n\n"
+    /FIELD=(buys.Client, POSITION=1,SIZE=17)
+    /FIELD=(buys.Symbol, POSITION=20,SIZE=5)   
+    /FIELD=(nyse-a.Symbol, POSITION=28,SIZE=5)
+    /FIELD=(buys.Shares, POSITION=35,SIZE=5)
+    /FIELD=(nyse-a.LastTrade, POSITION=45,SIZE=5, PRECISION=2, TYPE=NUMERIC)
+    /FIELD=(product, POSITION=54, TYPE=NUMERIC,      IF nyse-a.Symbol NE buys.Symbol THEN "" ELSE nyse-a.LastTrade * buys.Shares)
+    /FIELD=(Sequencer, POSITION=66,SIZE=4) # discussion reference nb
+
+#### Output File 2 - Data Interchange Format ####
+/OUTFILE=..\Targets\TradingA.xml
+    /PROCESS=XML
+    /FIELD=(Client, POSITION=1, SEPARATOR="|",XDEF="/Trades/Buy@Client")
+    /FIELD=(Symbol, POSITION=2, SEPARATOR="|",XDEF="/Trades/Buy/Symbol", TYPE=ASCII)
+    /FIELD=(Shares, POSITION=3, SEPARATOR="|",XDEF="/Trades/Buy/Shares")
+    /INCLUDE WHERE nyse-a.LastTrade GT 10 AND buys.Shares GT 0
+
+#### Output File 3 - Web-ready Summary Report ####
+/OUTFILE=..\Targets\TradingA.htm  # summary record format
+    /DATA="</FONT><B></TD>\n<TD align=right><B><U><FONT SIZE=+2><FONT COLOR='GREEN'>"
+    /FIELD=(New_balance,SIZE=15, TYPE=CURRENCY)     # field derived in prior output spec!
+    /DATA="</FONT></U></B></TD>\n</TR>\n"
+    /SUM New_balance from (nyse-a.LastTrade * buys.Shares) WHERE symbol NE "RNT"
+    /FOOTREC="</TABLE><BR>\nCreated on </B>%s.\
+              <HR></BODY>\n</HTML>",AMERICAN_DATE
+
+/OUTFILE=..\Targets\TradingA.htm  # detail record format
+    /HEADREC="<HTML><HEAD>\n<TITLE>HTML produced by SORTCL \
+              </TITLE>\n</HEAD>\n<BODY> \
+ 		<H2><FONT COLOR='RED'>Trading Summary\
+                </H2>\n<TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>\n"
+    /OMIT WHERE Symbol EQ "RNT"	OR SYMBOL EQ ""     	      # selection applied in display
+    /DATA="<TR>\n<TD><I>"
+    /FIELD=(buys.Client)
+    /DATA="</B></TD>\n<TD align=right><FONT COLOR='BLUE'>"
+    /FIELD=(buys.Symbol)
+    /DATA="</TD>\n</TR>\n"

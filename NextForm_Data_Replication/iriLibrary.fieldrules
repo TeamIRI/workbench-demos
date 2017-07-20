@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fieldrules:FieldRuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:fieldrules="http://fieldrules/1.0">
+  <catalogs name="FieldEditor">
+    <matchers name="StringRule_2016-09-13 11:50:31" rule="StringRule">
+      <matcherDetails details="SSN"/>
+    </matchers>
+  </catalogs>
+  <rules name="newRule_2016-09-13">
+    <properties fieldRulePropertyType="EXPRESSION" value="STATE EQ &quot;CA&quot;"/>
+    <properties fieldRulePropertyType="NAME" value="EXPRESSION_${FIELDNAME}"/>
+  </rules>
+  <rules name="StringRule" editor="stringFunctionWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="sub_string(${FIELDNAME}, 6, 4)"/>
+    <properties fieldRulePropertyType="NAME" value="SUB_${FIELDNAME}"/>
+  </rules>
+</fieldrules:FieldRuleLibrary>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:patterns="http://patterns/1.0" xmlns:pm="http://pm/1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_wAvmkMkgEeWK487NPV-C-A" selectedViews="_w0qW0MkgEeWK487NPV-C-A" version="8.1.0">
+  <models xmi:type="patterns:PatternLibrary" href="iriLibrary.patterns#/"/>
+  <models xmi:type="ddf:Ddf" href="outputExample/outputExample.ddf#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_w0qW0MkgEeWK487NPV-C-A" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_w6fSAMkgEeWK487NPV-C-A" name="HomePage">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_w89XMMkgEeWK487NPV-C-A" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_w89XMckgEeWK487NPV-C-A" type="Sirius" element="_w6fSAMkgEeWK487NPV-C-A" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_xChMoMkgEeWK487NPV-C-A" type="2002" element="_w6fSAckgEeWK487NPV-C-A">
+            <children xmi:type="notation:Node" xmi:id="_xD5FoMkgEeWK487NPV-C-A" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_xD5FockgEeWK487NPV-C-A" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_xD5FoskgEeWK487NPV-C-A"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_xD5Fo8kgEeWK487NPV-C-A"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_xChMockgEeWK487NPV-C-A" fontName="Segoe UI" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xChMoskgEeWK487NPV-C-A" width="300" height="100"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xFY6cMkgEeWK487NPV-C-A" type="2002" element="_w6fSB8kgEeWK487NPV-C-A">
+            <children xmi:type="notation:Node" xmi:id="_xFY6c8kgEeWK487NPV-C-A" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_xFY6dMkgEeWK487NPV-C-A" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_xFY6dckgEeWK487NPV-C-A"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_xFY6dskgEeWK487NPV-C-A"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_xFY6cckgEeWK487NPV-C-A" fontName="Segoe UI" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xFY6cskgEeWK487NPV-C-A" width="300" height="100"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_xFY6d8kgEeWK487NPV-C-A" type="2002" element="_w6fSDckgEeWK487NPV-C-A">
+            <children xmi:type="notation:Node" xmi:id="_xFY6eskgEeWK487NPV-C-A" type="5006"/>
+            <children xmi:type="notation:Node" xmi:id="_xFY6e8kgEeWK487NPV-C-A" type="7001">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_xFY6fMkgEeWK487NPV-C-A"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_xFY6fckgEeWK487NPV-C-A"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_xFY6eMkgEeWK487NPV-C-A" fontName="Segoe UI" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xFY6eckgEeWK487NPV-C-A" width="300" height="100"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_w89XMskgEeWK487NPV-C-A"/>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_w6fSAckgEeWK487NPV-C-A" name="Database" width="30" height="10">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_w6fSAskgEeWK487NPV-C-A" labelSize="12" iconPath="/com.iri.model.flow.design/icons/table.png" backgroundStyle="GradientTopToBottom">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSA8kgEeWK487NPV-C-A"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='HomePage']/@defaultLayer/@containerMappings[name='HP_Database']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSBMkgEeWK487NPV-C-A"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSBckgEeWK487NPV-C-A" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSBskgEeWK487NPV-C-A" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='HomePage']/@defaultLayer/@containerMappings[name='HP_Database']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_w6fSB8kgEeWK487NPV-C-A" name="Flow" width="30" height="10">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_w6fSCMkgEeWK487NPV-C-A" labelSize="12" iconPath="/com.iri.model.flow.design/icons/flow.png" backgroundStyle="GradientTopToBottom">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSCckgEeWK487NPV-C-A"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='HomePage']/@defaultLayer/@containerMappings[name='HP_Flow']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSCskgEeWK487NPV-C-A"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSC8kgEeWK487NPV-C-A" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSDMkgEeWK487NPV-C-A" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='HomePage']/@defaultLayer/@containerMappings[name='HP_Flow']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_w6fSDckgEeWK487NPV-C-A" name="Mapping" width="30" height="10">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_w6fSDskgEeWK487NPV-C-A" labelSize="12" iconPath="/com.iri.model.flow.design/icons/mapping.png" backgroundStyle="GradientTopToBottom">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSD8kgEeWK487NPV-C-A"/>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='HomePage']/@defaultLayer/@containerMappings[name='HP_Mapping']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSEMkgEeWK487NPV-C-A"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSEckgEeWK487NPV-C-A" red="255" green="255" blue="255"/>
+          <foregroundColor xmi:type="viewpoint:RGBValues" xmi:id="_w6fSEskgEeWK487NPV-C-A" red="209" green="209" blue="209"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='HomePage']/@defaultLayer/@containerMappings[name='HP_Mapping']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='HomePage']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_w6fSE8kgEeWK487NPV-C-A"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='HomePage']/@defaultLayer"/>
+      <target xmi:type="pm:project" href="test.pm#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
+  </ownedViews>
+  <models xmi:type="pm:project" href="test.pm#/"/>
+</viewpoint:DAnalysis>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Trades>
+<Buy Client="Jack Welch"><Symbol>ABN</Symbol><Shares>2000</Shares></Buy>
+<Buy Client="Lakshmi Mittal"><Symbol>ABT</Symbol><Shares>825</Shares></Buy>
+<Buy Client="Michael Bloomberg"><Symbol>AGE</Symbol><Shares>1500</Shares></Buy>
+<Buy Client="George Soros"><Symbol>RNT</Symbol><Shares>8500</Shares></Buy>
+</Trades>

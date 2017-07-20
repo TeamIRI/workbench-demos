@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2014, 2017. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Generating Realistic Test Data in Custom File Formats
+  Reports</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Generating Realistic Test Data in Custom File Formats
+  Reports</h1>
+
+  <p>In addition to structurally and referentially correct test
+  data for databases, RowGen can create compliant, valuable test
+  data with the same format and characteristics as data in
+  production files and two-dimensional (2D) reports.</p>
+
+  <p>In the IRI Workbench (Eclispe IDE), RowGen v3 leverages
+  both:</p>
+
+  <dl>
+    <dt><strong>The CoSort Sort Control Language
+    (SortCL)</strong></dt>
+
+    <dd>data definition and manipulation/formatting program. RowGen
+    uses the simple syntax and engine to filter, transform and map
+    test data into one or more custom file and structured report
+    formats at generation time. Targets can be files, pipes, ODBC
+    or procedures. RowGen metadata is also ready for use in SortCL
+    when testing shifts to production<br>
+    <br></dd>
+
+    <dt><strong>Eclipse Facilities</strong></dt>
+
+    <dd>for project and metadata management, an IRI-built new job
+    wizard, job outline, and dialog editors for test data creation
+    and target file/report formatting in one or more RowGen (or
+    SortCL) job scripts.</dd>
+  </dl>
+
+  <p>The two technologies combine into a purpose-built wizard for
+  writing one or more test file targets in flat-file and/or
+  structured report formats.</p>
+
+  <p>This project contains set file generation scripts and a report
+  generation script. Set files are typically used in RowGen scripts
+  as randomly-selected sources of real data. They populate columns
+  in test files, or tables, ad hoc, or on a rule-specified basis.
+  The sample .rcl files show that RowGen field data is generated or
+  selected at random.</p>
+
+  <p>To create your own test files from scratch:</p>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Think about the file layout
+    you are looking for and locate existing metadata (.ddf), if
+    any. Otherwise, plan to build the new layouts one field at a
+    time.</li>
+
+    <li style="margin-bottom: 10px;">Run the &quot;New Test Data
+    Job&quot; wizard in the RowGen menu to create a new set file,
+    flat file, or custom report. Follow the instructions and
+    consult the in-context help. Or, use (and modify) an existing
+    .rcl script example.</li>
+
+    <li style="margin-bottom: 10px;">Study and run your .rcl
+    scripts (like examples already built in the script folder) and
+    see the output and set files they produce. Each time you re-run
+    these jobs different output values will be produced due to
+    random generation (or selection).</li>
+
+    <li style="margin-bottom: 10px;">Edit the scripts in the
+    editing windows or via Outline view by right-clicking on a
+    source (generation) or target field and clicking
+    <strong>Edit</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Remember, you can re-use the
+    SETs you built in previous scripts inside new scripts!</li>
+  </ol>
+
+  <p>To experiment further:</p>Use the "New Set File" wizard to
+  create real data lists for random selection and population of
+  field values in RowGen scripts. The three sub/mini-wizards
+  support:
+
+  <ul>
+    <li type="disc">data falling within numeric ranges or specified
+    directly as Literal Values</li>
+
+    <li type="disc">real data in one or more columns in a database
+    table (Set from Column)</li>
+
+    <li type="disc">real-looking data formats you construct on the
+    fly as a Compound Data Value [e.g., add the (string, then 3
+    whole numbers then ) for US tel. area codes]</li>
+  </ul>
+
+  <p><strong>NOTE</strong>: You will need to click inside the 'Set
+  File' wizard dialogs to activate the help content for each
+  screen.</p>
+
+  <p><strong>NOTE</strong>: You can choose the random selection
+  method: ANY, ALL, ONCE, PERMUTE, SUFFIX, and ROW for sets. See
+  the on-line documentation for descriptions of these options.</p>
+
+  <p>Email rowgen@iri.com for feedback and assistance.</p>
+</body>
+</html>

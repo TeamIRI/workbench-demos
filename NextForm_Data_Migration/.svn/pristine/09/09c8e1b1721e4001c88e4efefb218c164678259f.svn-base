@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2014 Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>NextForm Data Federation</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>NextForm Data Federation</h1>
+
+  <p>This demonstrates the use of the NextForm (NF) new reformat
+  job wizard to combine specific information found in two different
+  sources through the use of a pre-action (INREC). The sources are
+  a database table and a delimited file. The results are displayed
+  on the screen.<br></p>
+
+  <p>This demo uses the IRI Workbench.</p>
+
+  <p>Recommended steps to perform the demo in the Workbench:</p>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Open the &quot;New Reformat
+    Job wizard from the NextForm&quot; toolbar menu.</li>
+
+    <li style="margin-bottom: 10px;">Select the project and name
+    the job file <em>datafederation</em>.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Next</strong> to
+    go to the Data Sources page.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Add Data
+    Source</strong> on the right to open the Data Source dialog
+    screen.</li>
+
+    <li style="margin-bottom: 10px;">Select <strong>ODBC</strong>
+    and click <strong>Browse</strong>. The ODBC Table Selection
+    dialog screen opens.</li>
+
+    <li style="margin-bottom: 10px;">In the Data source name (DSN)
+    field, select <strong>Oracle</strong>.</li>
+
+    <li style="margin-bottom: 10px;">In the Table name field,
+    select <strong>JOB_HISTORY</strong>. Click
+    <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>OK</strong> on
+    the Data Source dialog.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Add Existing
+    Metadata</strong> on the right. Select
+    <strong>historytable.ddf</strong> and click
+    <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">When the Save specification
+    message opens, select <strong>Yes</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Add Data
+    Source</strong> on the right to open the Data Source dialog
+    screen to add the second source file.</li>
+
+    <li style="margin-bottom: 10px;">Select <strong>Files</strong>
+    and click <strong>Browse</strong> to find and select the file
+    if you saved it in another location, or enter the file name
+    <em>jobs.txt</em>.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>OK</strong> on
+    the Data Source dialog.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Edit Source
+    Options</strong> on the right. The Source Options page
+    opens.</li>
+
+    <li style="margin-bottom: 10px;">In the Format field, select
+    <strong>CSV</strong>. Click <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Add Existing
+    Metadata</strong> on the right, and then select
+    <strong>jobs.ddf</strong>. Click <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">When the Save specification
+    message opens, select <strong>Yes</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Pre-Action
+    Layout</strong> on the right. The Pre-Action page opens.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Edit Pre-Action
+    Layout</strong> on the right. The Pre-Action Field Layout
+    screen opens.</li>
+
+    <li style="margin-bottom: 10px;">In the Sources section at the
+    top, select the jobs tab.</li>
+
+    <li style="margin-bottom: 10px;">Click on the JOB_ID row and
+    drag it to the Targets section below.</li>
+
+    <li style="margin-bottom: 10px;">Highlight that row by clicking
+    on it.</li>
+
+    <li style="margin-bottom: 10px;">In the Delimiter section,
+    select <strong>Fixed</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Double-click on the
+    highlighted row (JOB_ID). The Pre-Action Field editor
+    opens.</li>
+
+    <li style="margin-bottom: 10px;">In the Size field, change the
+    size to 10.</li>
+
+    <li style="margin-bottom: 10px;">In the Separator field, delete
+    the comma.</li>
+
+    <li style="margin-bottom: 10px;">In the Frame field, delete the
+    quote mark.</li>
+
+    <li style="margin-bottom: 10px;">Click
+    <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">On the Pre-Action Field Layout
+    page, click <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Back on the Pre-Action page,
+    click <strong>Next</strong>. The Data Targets page opens.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>Add Data
+    Target</strong> on the right to open the Data Target dialog
+    screen.</li>
+
+    <li style="margin-bottom: 10px;">Select <strong>Standard
+    out</strong>. Click <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">To create a file in addition
+    to the screen view of standard out, click <strong>Add Data
+    Target</strong> on the right to open the Data Target dialog
+    screen again.</li>
+
+    <li style="margin-bottom: 10px;">Select <strong>Files</strong>
+    and enter the new file name <em>jobs_id_out</em>. Click
+    <strong>OK</strong>.</li>
+
+    <li style="margin-bottom: 10px;">On the Data Targets page,
+    click <strong>Finish</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Run the script by
+    right-clicking in the script and selecting <strong>Run
+    As</strong> -&gt; <strong>IRI Job</strong>.</li>
+  </ol>
+</body>
+</html>

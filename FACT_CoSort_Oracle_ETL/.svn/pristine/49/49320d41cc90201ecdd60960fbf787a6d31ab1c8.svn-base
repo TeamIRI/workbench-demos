@@ -1,0 +1,47 @@
+FACT Version 2.3.2 Build 012 for Oracle, DB2 and SQL Server
+
+[ Database Info ]
+Database         :   ORACLE
+Instance         :   XE
+UserId           :   scott
+Query            :   SELECT * FROM orders
+
+[ Extraction Info ]
+Outfile Format   :   VARIABLE
+Delimiter        :   ,
+Lob Path         :   stdout_lob
+Date Format      :   YYYY/MM/DD
+Timestamp Format :   SYYYYMMDDHHMISS.FF6
+TimestampTZ Format : SYYYYMMDDHHMISS.FF6TZHTZM
+Start User Query #1      :   
+End User Query #1        :   
+Max Rows per fetch       :   1024
+Total Records fetched    :   181
+
+[ Outfiles Info ]
+Sam File #1      :   stdout
+Write Mode       :   OVERWRITE
+Load Database    :   ORACLE
+Ctl File         :   ..\ddf\orders.ctl
+Ddf File         :   ..\ddf\orders.ddf
+
+[ Time Statistics ]
+Start Time       :   Wed Oct 01 08:50:41 2014
+End Time         :   Wed Oct 01 08:50:41 2014
+Time spent       :   0 sec.
+Overall speed    :   181 rows per sec.
+
+For more information or technical support:
+
+	CoSort Korea / Data Streams Corp.
+	http://www.datastreams.co.kr
+	Tel.  : +82-2-3473-9075
+	Fax.  : +82-2-3473-9084
+	Email : support@datastreams.co.kr
+
+	CoSort / Innovative Routines International (IRI), Inc.
+	http://www.cosort.com
+	http://www.iri.com
+	Tel.  : +1-321-777-8889
+	Fax.  : +1-321-777-8886
+	Email : fact@iri.com

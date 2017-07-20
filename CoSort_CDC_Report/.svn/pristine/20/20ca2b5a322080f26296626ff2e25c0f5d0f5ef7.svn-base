@@ -1,0 +1,119 @@
+# CoSort v9.5.2 Sort Control Language (SortCL) Program
+# 	Change Data Capture (CDC) Application
+# Copyright 2013 Innovative Routines International (IRI), Inc.
+#
+# http://www.iri.com/solutions/Business_Intelligence/CDC_Delta_Reporting
+
+#################################
+# Input (Source Definition) Phase
+#################################
+
+/INFILE=sources/previous	# unsorted
+/ALIAS=previous
+	/FIELD=(DEBT_ID, POSITION=1, SEPARATOR=",") 
+	/FIELD=(Checksum, POSITION=2, SEPARATOR=",") 
+	/FIELD=(paid, POSITION=3, SEPARATOR=",")
+
+/INFILE=sources/current		# pre-sorted over DEBT_ID
+/ALIAS=current 
+	/FIELD=(DEBT_ID, POSITION=1,SIZE=12)
+	/FIELD=(CONSUMER, POSITION=17,SIZE=10)
+	/FIELD=(Checksum, POSITION=33,SIZE=6) 
+	/FIELD=(transdate, POSITION=41,SIZE=10, TYPE=ISO_DATE)
+	/FIELD=(amount, POSITION=54,SIZE=7, PRECISION=2, TYPE=NUMERIC) 
+	/FIELD=(date_due, POSITION=63,SIZE=10, TYPE=ISO_DATE)
+	/FIELD=(paid, POSITION=76,SIZE=7, PRECISION=2, TYPE=NUMERIC)
+
+#################################
+#Action (Matching Process) Phase
+#################################
+
+/JOIN FULL_OUTER NOT_SORTED previous current WHERE previous.DEBT_ID EQ current.DEBT_ID 
+
+	# Business Logic for Target Reports
+	/CONDITION=(prev_exist,TEST=(previous.Checksum NE ""))   	 
+	/CONDITION=(prev_nonexist,TEST=(isempty(previous.Checksum)))	 
+	/CONDITION=(curr_exist,TEST=(current.Checksum NE "      "))	 
+	/CONDITION=(curr_nonexist,TEST=(isempty(current.Checksum))) 	 
+	/CONDITION=(update,TEST=(previous.Checksum NE current.Checksum)) 
+
+#################################
+# Output (Target/Reporting) Phase
+#################################
+
+/OUTFILE=targets/TestDeltas.out 
+# Layout
+/HEADREC="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta\n\r" 
+	/FIELD=(previous.DEBT_ID, POSITION=1,SIZE=13) 
+	/FIELD=(previous.Checksum, POSITION=17,SIZE=6) 
+ 	/FIELD=(current.DEBT_ID, POSITION=29,SIZE=13) 
+	/FIELD=(current.CONSUMER, POSITION=44,SIZE=10) 
+	/FIELD=(current.Checksum, POSITION=56,SIZE=6) 
+	/FIELD=(transdate, POSITION=64,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(amount, POSITION=76,SIZE=9) 
+	/FIELD=(date_due, POSITION=87,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(paid, POSITION=98,SIZE=7, PRECISION=2, TYPE=NUMERIC) 
+# Applying the Condition to Report on the Change Status
+	/FIELD=(delta_flag, POSITION=110, SIZE=10, IF update AND prev_exist AND curr_exist THEN "Update" 	ELSE IF prev_exist AND curr_nonexist THEN "Delete" 	ELSE IF prev_nonexist AND curr_exist THEN "Insert" 	ELSE "Equal")            # conditional field logic for delta flag column
+
+/OUTFILE=targets/Updates.out
+	/INCLUDE WHERE update AND prev_exist AND curr_exist	# Conditional Selection
+# Layout
+/HEADREC="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta\n\r" 
+	/FIELD=(previous.DEBT_ID, POSITION=1,SIZE=13) 
+	/FIELD=(previous.Checksum, POSITION=17,SIZE=6) 
+ 	/FIELD=(current.DEBT_ID, POSITION=29,SIZE=13) 
+	/FIELD=(current.CONSUMER, POSITION=44,SIZE=10) 
+	/FIELD=(current.Checksum, POSITION=56,SIZE=6) 
+	/FIELD=(transdate, POSITION=64,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(amount, POSITION=76,SIZE=9, PRECISION=2, TYPE=NUMERIC) 
+	/FIELD=(date_due, POSITION=87,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(paid, POSITION=98,SIZE=10, PRECISION=2, TYPE=NUMERIC) 
+	/DATA="  Update"
+
+/OUTFILE=targets/Deletes.out
+/INCLUDE WHERE prev_exist AND curr_nonexist		# Conditional Selection
+# Layout
+/HEADREC="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta\n\r" 
+	/FIELD=(previous.DEBT_ID, POSITION=1,SIZE=13) 
+	/FIELD=(previous.Checksum, POSITION=17,SIZE=6) 
+ 	/FIELD=(current.DEBT_ID, POSITION=29,SIZE=13) 
+	/FIELD=(current.CONSUMER, POSITION=44,SIZE=10) 
+	/FIELD=(current.Checksum, POSITION=56,SIZE=6) 
+	/FIELD=(transdate, POSITION=64,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(amount, POSITION=76,SIZE=9) 
+	/FIELD=(date_due, POSITION=87,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(paid, POSITION=98,SIZE=10) 
+	/DATA="  Delete"
+
+/OUTFILE=targets/Inserts.out
+	/INCLUDE WHERE prev_nonexist AND curr_exist	# Conditional Selection
+# Layout
+/HEADREC="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta\n\r" 
+	/FIELD=(previous.DEBT_ID, POSITION=1,SIZE=13) 
+	/FIELD=(previous.Checksum, POSITION=17,SIZE=6) 
+ 	/FIELD=(current.DEBT_ID, POSITION=29,SIZE=13) 
+	/FIELD=(current.CONSUMER, POSITION=44,SIZE=10) 
+	/FIELD=(current.Checksum, POSITION=56,SIZE=6) 
+	/FIELD=(transdate, POSITION=64,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(amount, POSITION=76,SIZE=9, PRECISION=2, TYPE=NUMERIC) 
+	/FIELD=(date_due, POSITION=87,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(paid, POSITION=98,SIZE=10, PRECISION=2, TYPE=NUMERIC) 
+	/DATA="  Insert"
+
+/OUTFILE=targets/Equals.out
+	/OMIT WHERE update AND prev_exist AND curr_exist	# Conditional selection
+	/OMIT WHERE prev_exist AND curr_nonexist 
+	/OMIT WHERE prev_nonexist AND curr_exist
+# Layout
+/HEADREC="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta\n\r" 
+	/FIELD=(previous.DEBT_ID, POSITION=1,SIZE=13) 
+	/FIELD=(previous.Checksum, POSITION=17,SIZE=6) 
+ 	/FIELD=(current.DEBT_ID, POSITION=29,SIZE=13) 
+	/FIELD=(current.CONSUMER, POSITION=44,SIZE=10) 
+	/FIELD=(current.Checksum, POSITION=56,SIZE=6) 
+	/FIELD=(transdate, POSITION=64,SIZE=10, TYPE=ISO_DATE) 
+	/FIELD=(amount, POSITION=76,SIZE=9, PRECISION=2, TYPE=NUMERIC) 
+	/FIELD=(date_due, POSITION=87,SIZE=10, TYPE=ISO_DATE)  
+	/FIELD=(paid, POSITION=98,SIZE=10, PRECISION=2, TYPE=NUMERIC) 
+	/DATA="  Equal"

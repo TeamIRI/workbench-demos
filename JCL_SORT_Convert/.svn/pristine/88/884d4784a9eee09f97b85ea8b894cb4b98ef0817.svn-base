@@ -1,0 +1,18 @@
+#Example SCL 
+/INFILE=chiefs 
+	/FIELD=(president,POSITION=1,SIZE=26) 
+	/FIELD=(service,POSITION=28,SIZE=9) 
+	/FIELD=(party,POSITION=40,SIZE=3) 
+	/FIELD=(state,POSITION=45,SIZE=2) 
+	/INCLUDE WHERE service GT 1900 
+	
+/SORT 
+	/KEY=party 
+	/KEY=president 
+	
+/OUTFILE=stdout 
+   /HEADREC="Presidents after 1900. \n" 
+   /FIELD=(president,POSITION=1,SIZE=26) 
+   /FIELD=(service,POSITION=28,SIZE=9) 
+   /FIELD=(party,POSITION=40,SIZE=3) 
+   /FIELD=(state,POSITION=45,SIZE=2) 

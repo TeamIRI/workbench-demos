@@ -1,0 +1,68 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed Apr 15 13:28:20 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   ORDERS.ctl
+Data File:      C:/IRI/CoSort95/workbench/workspace/Flow/ETL/setup/ORDERS.out
+  Bad File:     ORDERS.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table ORDERS_FLOW, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ORDER_ID                            FIRST     *  WHT      CHARACTER            
+    NULL if ORDER_ID = 0X7b4e554c4c7d(character '{NULL}')
+CUSTOMER_ID                          NEXT     *  WHT      CHARACTER            
+    NULL if CUSTOMER_ID = 0X7b4e554c4c7d(character '{NULL}')
+FREIGHT                              NEXT     *  WHT      CHARACTER            
+    NULL if FREIGHT = 0X7b4e554c4c7d(character '{NULL}')
+TOTAL                                NEXT     *  WHT      CHARACTER            
+    NULL if TOTAL = 0X7b4e554c4c7d(character '{NULL}')
+
+
+Referential Integrity Constraint/Trigger Information:
+NULL, UNIQUE, and PRIMARY KEY constraints are unaffected.
+
+Constraint ORDERS_FLOW.CUSTOMERS_FK was disabled and novalidated before the load.
+The following index(es) on table ORDERS_FLOW were processed:
+index SCOTT.ORDERS_PK loaded successfully with 100 keys
+ORDERS_FLOW.CUSTOMERS_FK was re-enabled.
+
+Table ORDERS_FLOW has no constraint exception table.
+Constraint ORDERS_FLOW.CUSTOMERS_FK was validated
+
+Table ORDERS_FLOW:
+  100 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           100
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        1
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Wed Apr 15 13:28:20 2015
+Run ended on Wed Apr 15 13:28:21 2015
+
+Elapsed time was:     00:00:01.67
+CPU time was:         00:00:00.06

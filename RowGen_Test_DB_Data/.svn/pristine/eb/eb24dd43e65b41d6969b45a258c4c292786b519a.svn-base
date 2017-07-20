@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flow="http://flow/1.0">
+  <flowlets name="Prep work">
+    <blocks xsi:type="flow:StartBlock" name="Start"/>
+    <blocks xsi:type="flow:ChangeDirectoryBlock" name="DFdemo" directory="C:\IRI\CoSort95\workbench\workspace\RowGen_Test_DB_Data\DFdemo"/>
+  </flowlets>
+  <flowlets name="Generate data">
+    <blocks xsi:type="flow:StartBlock" name="Start"/>
+    <blocks xsi:type="flow:Transform" name="COMPANY_NUMBER.UNIQUE.rcl" iriJob="COMPANY_NUMBER.UNIQUE.rcl"/>
+    <blocks xsi:type="flow:Transform" name="DPSID.UNIQUE.rcl" iriJob="DPSID.UNIQUE.rcl"/>
+    <blocks xsi:type="flow:Transform" name="EE_SEQ.UNIQUE.rcl" iriJob="EE_SEQ.UNIQUE.rcl"/>
+    <blocks xsi:type="flow:Transform" name="EMPLOYEE_ID.UNIQUE.rcl" iriJob="EMPLOYEE_ID.UNIQUE.rcl"/>
+    <blocks xsi:type="flow:Transform" name="JOB_CODE.UNIQUE.rcl" iriJob="JOB_CODE.UNIQUE.rcl"/>
+    <blocks xsi:type="flow:Transform" name="OU_CODE.UNIQUE.rcl" iriJob="OU_CODE.UNIQUE.rcl"/>
+    <blocks xsi:type="flow:Transform" name="SSN.UNIQUE.rcl" iriJob="SSN.UNIQUE.rcl"/>
+    <blocks xsi:type="flow:Transform" name="DM_COMPANIES.rcl" iriJob="DM_COMPANIES.rcl"/>
+    <blocks xsi:type="flow:Transform" name="DM_ORGANIZATIONAL_UNITS.rcl" iriJob="DM_ORGANIZATIONAL_UNITS.rcl"/>
+    <blocks xsi:type="flow:Transform" name="DM_JOB_TYPES.rcl" iriJob="DM_JOB_TYPES.rcl"/>
+    <blocks xsi:type="flow:Transform" name="DM_EMPLOYEES.rcl" iriJob="DM_EMPLOYEES.rcl"/>
+    <blocks xsi:type="flow:Transform" name="DM_EMPLOYEE_EVALUATIONS.rcl" iriJob="DM_EMPLOYEE_EVALUATIONS.rcl"/>
+    <blocks xsi:type="flow:Transform" name="DM_DCTA_EVALUATIONS.rcl" iriJob="DM_DCTA_EVALUATIONS.rcl"/>
+  </flowlets>
+</flow:FlowBatch>

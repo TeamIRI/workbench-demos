@@ -1,0 +1,23 @@
+# Generated with IRI Workbench - Created using UIMA Search
+# Author: IRIDEMO
+# Created: 2016-10-31 08:55:18
+# Source: C:\IRI\CoSort95\workbench\workspace\Dark_Data_Discovery\data
+# Files types: doc,docx,eml,pdf,ppt,pptx,rtf,txt,xls,xlsx,xml
+# CCN Pattern=\d{4}-\d{4}-\d{4}-\d{4}
+# SSN Pattern=[0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4}
+# PHONE_US Pattern=(?:(?:\+?(1)(?:[ .-]?)?)?(?:\(?([2-9]\d{2})\)?(?:[ .-]?)?)([2-9]\d{2})(?:[ .-]?)(\d{4})(?:[ #eExXtT]*)(\d{2,6})?)
+# 
+
+/FIELD=(RESULT, TYPE=ASCII, POSITION=1, SEPARATOR="\t")
+/FIELD=(Owner, TYPE=ASCII, POSITION=2, SEPARATOR="\t")
+/FIELD=(Regularity, TYPE=ASCII, POSITION=3, SEPARATOR="\t")
+/FIELD=(Linkage, TYPE=ASCII, POSITION=4, SEPARATOR="\t")
+/FIELD=(Readonly, TYPE=ASCII, POSITION=5, SEPARATOR="\t")
+/FIELD=(Hidden, TYPE=ASCII, POSITION=6, SEPARATOR="\t")
+/FIELD=(Filesize, TYPE=ASCII, POSITION=7, SEPARATOR="\t")
+/FIELD=(Datecreated, TYPE=ASCII, POSITION=8, SEPARATOR="\t")
+/FIELD=(Datemodified, TYPE=ASCII, POSITION=9, SEPARATOR="\t")
+/FIELD=(Dateaccessed, TYPE=ASCII, POSITION=10, SEPARATOR="\t")
+/FIELD=(Startingbyte, TYPE=ASCII, POSITION=11, SEPARATOR="\t")
+/FIELD=(Endingbyte, TYPE=ASCII, POSITION=12, SEPARATOR="\t")
+/FIELD=(Filepath, TYPE=ASCII, POSITION=13, SEPARATOR="\t")

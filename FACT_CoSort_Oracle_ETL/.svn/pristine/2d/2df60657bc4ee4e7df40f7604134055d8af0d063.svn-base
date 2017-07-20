@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2014, 2017. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Batch ETRL (Extract-Transform-Report-Load) for Big Oracle
+  Data</title>
+  <style type="text/css">
+
+    h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Batch ETRL (Extract-Transform-Report-Load) for Big Oracle
+  Data</h1>
+
+  <p>This project demonstrates a high-performance, low-cost Oracle
+  ETL and BI job (combined) using a sample table source in Oracle
+  that:</p>
+
+  <ul type="disc">
+    <li>Extracts using the IRI Fast Extract (FACT) tool for
+    Oracle</li>
+
+    <li>Transforms with (and reports from) the IRI CoSort (SortCL)
+    program</li>
+
+    <li>Loads via Oracle SQL*Loader using direct path with
+    pre-CoSorted data</li>
+  </ul>
+
+  <p>... where all these steps run in a piped batch stream for
+  maximum efficiency.</p>
+
+  <p>To prepare and perform this demo:</p>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Verify FACT operation and
+    Oracle connections.
+
+      <ol>
+        <li>From the FACT-ETL folder in the IRI Workbench Project
+        Explorer, right-click on <strong>orders.ini</strong> and
+        select <strong>Easy Shell</strong> -&gt;
+        <strong>Open</strong>.<br>
+        On the command line enter: <code>fact -v</code></li>
+
+        <li>If FACT is not found, specify its location as follows:
+
+          <ol>
+            <li>Click <strong>Window</strong> from the top menu,
+            and select <strong>Preferences</strong>.</li>
+
+            <li>Click <strong>IRI Tools</strong> -&gt;
+            <strong>FACT</strong>. Specify the
+            <strong>fact.exe</strong> installation directory. It
+            should be C:\IRI\FACT by default.</li>
+          </ol>
+        </li>
+
+        <li>If the FACT license has expired:
+
+          <ol>
+            <li>Email the FACT <em>RegForm.txt</em> file in
+            <code>%FACT_HOME%\etc</code> to fact@iri.com</li>
+
+            <li>Request a 30-day key and await the email reply with
+            instructions.</li>
+          </ol>
+        </li>
+
+        <li style="margin-bottom: 10px;">Verify your DTP (JDBC)
+        connection to Oracle in the Data Source Explorer. This is
+        for table browsing only, as FACT will connect to Oracle via
+        OCI.</li>
+      </ol>
+    </li>
+
+    <li style="margin-bottom: 10px;">Create the Source (ORDERS) and
+    Target (ORDERS_SORTED) tables.<br>
+      Create the tables in Oracle by running the .SQL files for the
+      ORDERS and ORDERS_SORTED tables as follows:
+
+      <ol>
+        <li>Go to the FACT_COSORT-ORACLE-ETL\TableOrders project
+        folder.</li>
+
+        <li>Right-click on <strong>ORDERS.SQL</strong>.</li>
+
+        <li>Select <strong>Execute SQL Files</strong></li>
+
+        <li>Repeat steps 1 and 2 for ORDERS_SORTED.SQL</li>
+      </ol>Once the tables are created, verify them in the Data
+      Source Explorer window.<br>
+      Click <strong>Oracle</strong> -&gt; <strong>XE</strong> -&gt;
+      <strong>Schemas</strong> -&gt; <strong>SCOTT</strong> (or
+      your schema) -&gt; <strong>Tables</strong>.<br>
+      If you receive an error message, examine and modify the
+      <em>orders.sql</em> file until it works.
+    </li>
+
+    <li style="margin-bottom: 10px;">Populate the Source Table
+    (ORDERS).<br>
+      Populate the ORDERS table with the orders.data (or xml) file
+      DTP load; i.e. in the Data Source Explorer window, under
+      Oracle connection:
+
+      <ol>
+        <li>Click <strong>Oracle</strong> -&gt; <strong>XE</strong>
+        -&gt; <strong>Schemas</strong> -&gt; <strong>SCOTT</strong>
+        (or your schema) -&gt; <strong>Tables</strong>.</li>
+
+        <li>Right-click <strong>ORDERS</strong>.</li>
+
+        <li>Left-click <strong>Data</strong> and then select
+        <strong>Load</strong></li>
+
+        <li>Browse to workspace's FACT-ETL\TableOrders\ORDERS.data
+        or <em>orders.xml</em> file to load the table.</li>
+      </ol>To verify it worked, select <strong>Sample
+      Contents</strong> from the ORDERS Data menu. You should see
+      50 of the 830 rows under the SQL Results' tab. This is a
+      short cut to loading that you can use for small files, but
+      obviously pre-sorted (direct path) bulk loads are faster for
+      big data, which is a CoSort benefit.
+    </li>
+
+    <li style="margin-bottom: 10px;">Review and edit the job
+    elements.<br>
+      Start with the last piece first: Right-click on the
+      <strong>RunETL.bat</strong> file (under FACT-ETL project's
+      ETL sub-folder) and select <strong>Open With</strong> -&gt;
+      <strong>Text Editor</strong> to review:
+
+      <ul type="disc">
+        <li>How FACT will run the <em>orders.ini</em> file
+        (specifying the extract from ORDERS).</li>
+
+        <li>How FACT pipes that output to CoSort's SortCL program
+        where <em>orders_sorted.scl</em> defines the transforms
+        (sort/sum/select), replication, and formatted reports.</li>
+
+        <li>That SortCL's last /OUTFILE in
+        <em>orders_sorted.scl</em> is a named pipe (pre-sorted
+        file) that SQL*Loader will use in a direct path load.</li>
+
+        <li>The individual ETL pieces to understand what's
+        happening inside the FACT .ini., SortCL .scl, and
+        SQL*Loader .ctl files.</li>
+      </ul>Make sure the .ini file connection details to Oracle
+      (including username and password), and in the .ctl file that
+      input (load) path/file are correct!
+    </li>
+
+    <li style="margin-bottom: 10px;">Run the
+    Extract-Transform-Report-Load (ETRL) Operation.<br>
+    Right-click on <strong>RunETL.bat</strong> and select
+    <strong>Run As</strong> -&gt; <strong>Batch Program</strong>.
+    Address any missing resource errors by modifying the .ini, .scl
+    or .ctl files (check paths and schema.table names).</li>
+
+    <li style="margin-bottom: 10px;">Verify the table, archive
+    file, and report targets.<br>
+      Check to see if the target table LOAD worked by viewing
+      <strong>Sample Contents</strong> of the ORDERS_SORTED table
+      via the Data Source Explorer:
+
+      <ol>
+        <li>Click <strong>Oracle</strong> -&gt; <strong>XE</strong>
+        -&gt; <strong>Schemas</strong> -&gt; <strong>SCOTT</strong>
+        -&gt; <strong>Tables</strong>.</li>
+
+        <li>Right click on <strong>ORDERS_SORTED</strong>, and
+        click <strong>Data</strong> -&gt; <strong>Sample
+        Contents</strong>.</li>
+
+        <li>Note the table extracted from ORDERS (that was
+        originally ORDER_ID order) is now in order by EMPLOYEE and
+        CUSTOMER in the ORDERS_SORTED table.</li>
+
+        <li>Check out the output files in the Project Explorer's
+        TargetFiles directory: Double click each file to view its
+        content and format, mapping its appearance to the TRANSFORM
+        and REPORT specifications in the <em>orders_sorted.scl</em>
+        script, GUI job outline, or 'output file layout editor
+        dialog' for each tabbed target.</li>
+      </ol>
+    </li>
+
+    <li style="margin-bottom: 10px;">Clean up the targets before
+    re-running this demo.<br>
+
+      <ol>
+        <li>Delete the 7 files in the TargetFiles folder.</li>
+
+        <li>Execute <em>TruncateTarget.sql</em> in the TableOrders
+        folder.</li>
+      </ol>
+    </li>
+
+    <li style="margin-bottom: 10px;">Consider the Performance and
+    Functional Benefits:<br>
+
+      <ul type="disc">
+        <li>Each piece of the ETL job - the Fast EXTRACT, CoSort's
+        multi-threaded TRANSFORMs (and REPORTs), and SQL*Loader's
+        pre-sorted direct path LOAD - was individually optimized by
+        virtue of each tool used and its runtime options.</li>
+
+        <li>The entire ETL job is further optimized by being run in
+        the file system; i.e. not in the database layer or
+        ETL/ELT/ETLT tool. Data flows in memory via pipes from E to
+        T to L through pipes (and thus no intermediate transfer
+        files).</li>
+
+        <li>This 'single pass' job is the fastest and least
+        expensive ETL method for big data, and leaves the database
+        unencumbered by transforms that degrade query
+        performance.</li>
+
+        <li>From a design perspective, the scripts are easy to
+        modify, batch and schedule, and can be expanded to any
+        number of targets in any number of formats.</li>
+
+        <li>Field-level security (data masking) functions can also
+        be specified in the job to satisfy data privacy regulations
+        applicable to the table and/or file targets.</li>
+
+        <li>IRI's approach eliminates the need for separate report
+        data sourcing, software, and I/O. It saves CPU resources,
+        learning and administration time, and money.</li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>

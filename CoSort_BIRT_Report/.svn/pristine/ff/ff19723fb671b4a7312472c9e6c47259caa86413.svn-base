@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:fieldrules="http://fieldrules/1.0" xmlns:scl="http://www.iri.com/lang/Scl" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_d6NvgDxiEeaRycD7c90nJg" selectedViews="_d_3rkDxiEeaRycD7c90nJg" version="8.1.0">
+  <models xmi:type="ddf:Ddf" href="DM_COMPANIES.ddf#/"/>
+  <models xmi:type="scl:Model" href="Moving_Average.scl#/"/>
+  <models xmi:type="fieldrules:FieldRuleLibrary" href="iriLibrary.fieldrules#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_d_3rkDxiEeaRycD7c90nJg" initialized="true">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
