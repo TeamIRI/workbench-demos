@@ -1,1 +1,4 @@
 .*.md.html
+RemoteSystemsTempFiles/
+.cserrlog
+.metadata/
