@@ -2,112 +2,6 @@
 <flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:fACTIni="http://www.iri.com/lang/base/ini/FACTIni" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="FACT_ETL.bat">
   <flowlets name="FACT_ETL">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_In_SCOTT.ORDERS"/>
-    <blocks xsi:type="flow:FactProvider" name="orders.ini" factConfig="orders.ini">
-      <inputDatas name="In_SCOTT.ORDERS" inputConnections="Start_To_In_SCOTT.ORDERS">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.ORDERS" DSN="FACT_NoDNS" DTPName="FACT_NoDTP" providerName="Oracle" database="ORACLE" hostName="FACT_NoHost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="ORDERS" delimiter=",">
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="*"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="0"/>
-            <fieldAttributes xsi:type="ddf:Size" size="0"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-        </dataInfo>
-      </inputDatas>
-      <outputDatas name="Out_stdout" outputConnections="Out_stdout_To_In_stdin">
-        <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="*"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="0"/>
-            <fieldAttributes xsi:type="ddf:Size" size="0"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-        </dataInfo>
-      </outputDatas>
-      <mappings name="*_To_*" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
-      <factOptions xsi:type="fACTIni:Query">
-        <comment>
-          <comments>unencumbered unload (faster)</comments>
-          <comments>CoSort's SortCL selects and transforms in the file system (faster)</comments>
-        </comment>
-        <query sValue="* FROM SCOTT.ORDERS"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:OutFile">
-        <comment>
-          <comments>extracted output records are streamed from FACT</comments>
-          <comments>and into SortCL, where its /INFILE=stdin</comments>
-        </comment>
-        <outFile fileName="stdout"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:OutFormat">
-        <outFormat outFormatValue="VARIABLE"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:FrameField">
-        <comment>
-          <comments>Specifes the name of the column to be framed</comments>
-        </comment>
-        <frameFieldValue columnName="EMPLOYEE"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:FrameChar">
-        <comment>
-          <comments>Framed column to be enclosed in double quotes</comments>
-        </comment>
-        <frameCharValue charValue="&quot;"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:LoadTable">
-        <loadTable sValue="orders_sorted"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:LoadType">
-        <comment>
-          <comments>sorted records from table orders will be</comments>
-          <comments>inserted into this newly-created table</comments>
-          <comments>CTLFILE=orders.ctl</comments>
-          <comments>This file must be pre-created outside an ETL shell script</comments>
-          <comments>because SQL*Loader requires a named piped (stdout.dat) that</comments>
-          <comments>FACT does not automatically assume (CoSort not always present).</comments>
-        </comment>
-        <loadTypeValue loadTypeValue="TRUNCATE"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:DdfFile">
-        <ddfFile fileName="orders.ddf"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:CtlFile">
-        <ctlFile fileName="orders.ctl"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:LogFile">
-        <logFile fileName="orders.log"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:DateFormat">
-        <dateFormatValue sValue="YYYY/MM/DD"/>
-      </factOptions>
-    </blocks>
     <blocks xsi:type="flow:CommandLine" name="SCOTT.ORDERS.ctl" inputConnections="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" command="sqlldr scott/tiger control=orders.ctl DIRECT=TRUE"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="orders_sorted.scl" iriJob="orders_sorted.scl">
       <inputDatas name="In_stdin" inputConnections="Out_stdout_To_In_stdin">
@@ -129,7 +23,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -149,7 +43,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -169,8 +63,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
+            <fieldAttributes xsi:type="ddf:Frame"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -190,7 +84,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -210,7 +104,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
         </dataInfo>
@@ -235,7 +129,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -255,7 +149,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -275,8 +169,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
+            <fieldAttributes xsi:type="ddf:Frame"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -296,7 +190,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -316,7 +210,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
         </dataInfo>
@@ -1296,7 +1190,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1316,7 +1210,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1336,8 +1230,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
+            <fieldAttributes xsi:type="ddf:Frame"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1357,7 +1251,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1377,47 +1271,47 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2"/>
-      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4"/>
-      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.2"/>
-      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.3"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.4"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.1/@dataInfo/@fields.0"/>
-      <mappings name="FREIGHT_To_total_emp" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.1/@dataInfo/@fields.1"/>
-      <mappings name="FREIGHT_To_total_freight" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.2/@dataInfo/@fields.0"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.3/@dataInfo/@fields.0"/>
-      <mappings name="FREIGHT_To_total_emp" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.3/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.4/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.4/@dataInfo/@fields.1"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.4/@dataInfo/@fields.2"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.5/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.5/@dataInfo/@fields.1"/>
-      <mappings name="FREIGHT_To_max_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.5/@dataInfo/@fields.2"/>
-      <mappings name="FREIGHT_To_min_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.5/@dataInfo/@fields.3"/>
-      <mappings name="FREIGHT_To_avg_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.5/@dataInfo/@fields.4"/>
-      <mappings name="FREIGHT_To_total_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.6/@dataInfo/@fields.0"/>
-      <mappings name="FREIGHT_To_total_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.7/@dataInfo/@fields.0"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.8/@dataInfo/@fields.0"/>
-      <mappings name="FREIGHT_To_tot_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.8/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.9/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.9/@dataInfo/@fields.1"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.9/@dataInfo/@fields.2"/>
-      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.10/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.10/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.10/@dataInfo/@fields.2"/>
-      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@outputDatas.10/@dataInfo/@fields.3"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.10/@dataInfo/@fields.4"/>
+      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.0"/>
+      <mappings name="FREIGHT_To_total_emp" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.1"/>
+      <mappings name="FREIGHT_To_total_freight" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.0"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.0"/>
+      <mappings name="FREIGHT_To_total_emp" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.1"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.0"/>
+      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.1"/>
+      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.2"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.0"/>
+      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.1"/>
+      <mappings name="FREIGHT_To_max_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.2"/>
+      <mappings name="FREIGHT_To_min_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.3"/>
+      <mappings name="FREIGHT_To_avg_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.4"/>
+      <mappings name="FREIGHT_To_total_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.6/@dataInfo/@fields.0"/>
+      <mappings name="FREIGHT_To_total_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.7/@dataInfo/@fields.0"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.8/@dataInfo/@fields.0"/>
+      <mappings name="FREIGHT_To_tot_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.8/@dataInfo/@fields.1"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.9/@dataInfo/@fields.0"/>
+      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.9/@dataInfo/@fields.1"/>
+      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.9/@dataInfo/@fields.2"/>
+      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.0"/>
+      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.1"/>
+      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.2"/>
+      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.3"/>
+      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.4"/>
       <comments>
         <comments>&#xD;</comments>
         <comments></comments>
@@ -1454,7 +1348,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1474,7 +1368,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1494,8 +1388,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
+            <fieldAttributes xsi:type="ddf:Frame"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1515,7 +1409,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1535,7 +1429,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
+            <fieldAttributes xsi:type="ddf:Separator"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
         </dataInfo>
@@ -1563,8 +1457,112 @@
         </transformAction>
       </transformData>
     </blocks>
-    <connections name="Start_To_In_SCOTT.ORDERS" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1/@inputDatas.0"/>
-    <connections name="Out_stdout_To_In_stdin" startBlock="//@flowlets.0/@blocks.1/@outputDatas.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0" pipe="true"/>
-    <connections name="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" startBlock="//@flowlets.0/@blocks.3/@outputDatas.10" endBlock="//@flowlets.0/@blocks.2"/>
+    <blocks xsi:type="flow:FactProvider" name="orders.ini" factConfig="orders.ini">
+      <inputDatas name="In_SCOTT.ORDERS" inputConnections="Start_To_In_SCOTT.ORDERS">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.ORDERS" DSN="FACT_NoDNS" DTPName="FACT_NoDTP" providerName="Oracle" database="ORACLE" hostName="FACT_NoHost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="ORDERS" delimiter=",">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="*"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:Position" number1="0"/>
+            <fieldAttributes xsi:type="ddf:Size" size="0"/>
+          </fields>
+        </dataInfo>
+      </inputDatas>
+      <outputDatas name="Out_stdout" outputConnections="Out_stdout_To_In_stdin">
+        <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="*"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:Position" number1="0"/>
+            <fieldAttributes xsi:type="ddf:Size" size="0"/>
+          </fields>
+        </dataInfo>
+      </outputDatas>
+      <mappings name="*_To_*" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
+      <factOptions xsi:type="fACTIni:Query">
+        <comment>
+          <comments>unencumbered unload (faster)</comments>
+          <comments>CoSort's SortCL selects and transforms in the file system (faster)</comments>
+        </comment>
+        <query sValue="* FROM SCOTT.ORDERS"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:OutFile">
+        <comment>
+          <comments>extracted output records are streamed from FACT</comments>
+          <comments>and into SortCL, where its /INFILE=stdin</comments>
+        </comment>
+        <outFileValue fileName="stdout"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:OutFormat">
+        <outFormatValue outFormatValue="VARIABLE"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:FrameField">
+        <comment>
+          <comments>Specifes the name of the column to be framed</comments>
+        </comment>
+        <frameFieldValue columnName="EMPLOYEE"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:FrameChar">
+        <comment>
+          <comments>Framed column to be enclosed in double quotes</comments>
+        </comment>
+        <frameCharValue charValue="&quot;"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:LoadTable">
+        <loadTableValue sValue="orders_sorted"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:LoadType">
+        <comment>
+          <comments>sorted records from table orders will be</comments>
+          <comments>inserted into this newly-created table</comments>
+          <comments>CTLFILE=orders.ctl</comments>
+          <comments>This file must be pre-created outside an ETL shell script</comments>
+          <comments>because SQL*Loader requires a named piped (stdout.dat) that</comments>
+          <comments>FACT does not automatically assume (CoSort not always present).</comments>
+        </comment>
+        <loadTypeValue loadTypeValue="TRUNCATE"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:DdfFile">
+        <ddfFileValue fileName="..\ddf\orders.ddf"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:CtlFile">
+        <ctlFileValue fileName="..\ddf\orders.ctl"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:LogFile">
+        <logFileValue fileName="..\LogFiles\orders.log"/>
+      </factOptions>
+      <factOptions xsi:type="fACTIni:DateFormat">
+        <dateFormatValue sValue="YYYY/MM/DD"/>
+      </factOptions>
+    </blocks>
+    <connections name="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" startBlock="//@flowlets.0/@blocks.2/@outputDatas.10" endBlock="//@flowlets.0/@blocks.1"/>
+    <connections name="Start_To_In_SCOTT.ORDERS" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
+    <connections name="Out_stdout_To_In_stdin" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.2/@inputDatas.0" pipe="true"/>
   </flowlets>
 </flow:FlowBatch>

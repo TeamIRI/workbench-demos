@@ -24,7 +24,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -45,7 +45,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="FIRST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -66,7 +66,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LAST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -87,7 +87,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMAIL"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -108,7 +108,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="PHONE_NUMBER"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -129,7 +129,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="HIRE_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -150,7 +150,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="7"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="JOB_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -171,7 +171,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="8"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="SALARY"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -192,7 +192,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="9"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="COMMISSION_PCT"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -213,7 +213,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="10"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="MANAGER_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -234,7 +234,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="11"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
         </dataInfo>
@@ -260,7 +260,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -347,7 +347,7 @@
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="10"/>
             <fieldAttributes xsi:type="ddf:Precision"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="FIRST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -434,7 +434,7 @@
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="15"/>
             <fieldAttributes xsi:type="ddf:Precision"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LAST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -455,7 +455,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMAIL"/>
             <comment>
               <comments>remaining fields unnecessary</comments>
@@ -499,7 +499,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -520,7 +520,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="FIRST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -541,7 +541,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LAST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -562,7 +562,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMAIL"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -583,7 +583,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="PHONE_NUMBER"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -604,7 +604,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="HIRE_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -625,7 +625,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="7"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="JOB_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -646,7 +646,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="8"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="SALARY"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -667,7 +667,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="9"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="COMMISSION_PCT"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -688,7 +688,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="10"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="MANAGER_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -709,7 +709,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="11"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
         </dataInfo>

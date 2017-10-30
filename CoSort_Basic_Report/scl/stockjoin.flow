@@ -22,7 +22,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -43,7 +43,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Size" size="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -65,7 +65,7 @@
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
             <fieldAttributes xsi:type="ddf:Size" size="5"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -85,7 +85,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -107,7 +107,7 @@
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
             <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -129,7 +129,7 @@
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
             <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
         </dataInfo>
@@ -155,8 +155,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+            <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -176,8 +176,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+            <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -197,8 +197,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+            <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <comment>
               <comments>### Action Statement - Sort &amp; Join ####&#xD;
@@ -505,7 +505,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:Xdef" string="/Trades/Buy@Client"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
@@ -526,7 +526,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:Xdef" string="/Trades/Buy/Symbol"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
@@ -547,7 +547,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="|"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
             <fieldAttributes xsi:type="ddf:Xdef" string="/Trades/Buy/Shares"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
@@ -857,7 +857,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -878,7 +878,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Size" size="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -900,7 +900,7 @@
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
             <fieldAttributes xsi:type="ddf:Size" size="5"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -920,7 +920,7 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -942,7 +942,7 @@
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
             <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -964,7 +964,7 @@
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
             <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -984,8 +984,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+            <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1005,8 +1005,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+            <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1026,8 +1026,8 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char=","/>
-            <fieldAttributes xsi:type="ddf:Frame" char="&quot;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+            <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <comment>
               <comments>### Action Statement - Sort &amp; Join ####&#xD;
