@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="ASCII"?>
-<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="saved-example">
-  <flowlets name="saved-example">
-    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_CD-new_batch"/>
-    <blocks xsi:type="flow:ChangeDirectoryBlock" name="CD-saved-example" outputConnections="CD-new_batch_To_DisableRelatedFK.sql" inputConnections="Start_To_CD-new_batch" directory="C:\IRI\CoSort95\workbench\workspace\FieldShield_Multi_Table\saved-example"/>
-    <blocks xsi:type="flow:OracleSQLExec" name="DisableRelatedFK.sql" outputConnections="DisableRelatedFK.sql_To_Transform_SCOTT_EMPLOYEES" inputConnections="CD-new_batch_To_DisableRelatedFK.sql" command="sqlplus" statementFile="DisableRelatedFK.sql" statementText="ALTER TABLE &quot;DEPARTMENTS&quot; MODIFY CONSTRAINT &quot;DEPT_MGR_FK&quot; DISABLE;&#xA;ALTER TABLE &quot;EMPLOYEES&quot; MODIFY CONSTRAINT &quot;EMP_DEPT_FK&quot; DISABLE;&#xA;ALTER TABLE &quot;EMPLOYEES&quot; MODIFY CONSTRAINT &quot;EMP_MGNR_FK&quot; DISABLE;&#xA;ALTER TABLE &quot;JOB_HISTORY&quot; MODIFY CONSTRAINT &quot;JHIST_DEPT_FK&quot; DISABLE;&#xA;ALTER TABLE &quot;JOB_HISTORY&quot; MODIFY CONSTRAINT &quot;JHIST_EMP_FK&quot; DISABLE;&#xA;exit&#xA;">
-      <dbDataInfo name="Multiple_Tables" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle">
-        <fields xsi:type="scl:AdvancedField">
-          <fieldMathStatement>
-            <compoundExpression>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="temp"/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-              </relationalExpression>
-            </compoundExpression>
-          </fieldMathStatement>
-        </fields>
-      </dbDataInfo>
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="new_batch">
+  <flowlets name="new_batch">
+    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_CD-saved-example"/>
+    <blocks xsi:type="flow:ChangeDirectoryBlock" name="CD-saved-example" outputConnections="CD-saved-example_To_DisableRelatedFK.sql" inputConnections="Start_To_CD-saved-example" directory="C:/IRI/CoSort95/workbench/workspace/FieldShield_Multi_Table/saved-example"/>
+    <blocks xsi:type="flow:OracleSQLExec" name="DisableRelatedFK.sql" outputConnections="DisableRelatedFK.sql_To_SCOTT_EMPLOYEES.fcl" inputConnections="CD-saved-example_To_DisableRelatedFK.sql" command="sqlplus" statementFile="DisableRelatedFK.sql" statementText="ALTER TABLE DEPARTMENTS DISABLE CONSTRAINT DEPT_MGR_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES DISABLE CONSTRAINT EMP_DEPT_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES DISABLE CONSTRAINT EMP_MGNR_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY DISABLE CONSTRAINT JHIST_DEPT_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY DISABLE CONSTRAINT JHIST_EMP_FK;&#xD;&#xA;exit&#xA;">
+      <dbDataInfo name="Multiple_Tables" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" delimiter="&#x9;"/>
     </blocks>
-    <blocks xsi:type="flow:TransformMappingBlock" name="Transform_SCOTT_EMPLOYEES" iriJob="SCOTT_EMPLOYEES.fcl">
-      <inputDatas name="In_SCOTT_EMPLOYEES" inputConnections="DisableRelatedFK.sql_To_Transform_SCOTT_EMPLOYEES">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.EMPLOYEES" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle" schema="SCOTT" table="EMPLOYEES" delimiter="&#x9;">
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_EMPLOYEES.fcl" iriJob="SCOTT_EMPLOYEES.fcl">
+      <inputDatas name="In_SCOTT_EMPLOYEES" inputConnections="DisableRelatedFK.sql_To_SCOTT_EMPLOYEES.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.EMPLOYEES" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="EMPLOYEES" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -45,7 +27,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -66,7 +48,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="FIRST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -87,7 +69,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LAST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -108,7 +90,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMAIL"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -129,7 +111,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="PHONE_NUMBER"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -150,7 +132,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="HIRE_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -171,7 +153,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="7"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="JOB_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -192,7 +174,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="8"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="SALARY"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -213,7 +195,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="9"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="COMMISSION_PCT"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -234,7 +216,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="10"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="MANAGER_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -255,7 +237,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="11"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
           <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0"/>
@@ -278,8 +260,8 @@
         <sectionOptions xsi:type="scl:Alias" alias="SCOTT_EMPLOYEES"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
       </inputDatas>
-      <outputDatas name="Out_SCOTT_EMPLOYEES" outputConnections="Out_SCOTT_EMPLOYEES_To_Transform_SCOTT_DEPARTMENTS">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.EMPLOYEES" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle" schema="SCOTT" table="EMPLOYEES" delimiter="&#x9;">
+      <outputDatas name="Out_SCOTT_EMPLOYEES" outputConnections="Out_SCOTT_EMPLOYEES_To_SCOTT_DEPARTMENTS.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.EMPLOYEES" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="EMPLOYEES" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <fieldName name="ENC_FP_EMPLOYEE_SID"/>
@@ -331,7 +313,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -352,7 +334,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="FIRST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -373,7 +355,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LAST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -394,7 +376,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMAIL"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -415,7 +397,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="PHONE_NUMBER"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -436,7 +418,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="HIRE_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -457,7 +439,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="7"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="JOB_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -478,7 +460,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="8"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="SALARY"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -499,7 +481,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="9"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="COMMISSION_PCT"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -553,7 +535,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="10"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="MANAGER_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -574,37 +556,37 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="11"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="scl:OutputMode"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
-        <sectionOptions xsi:type="scl:OutputWriteType"/>
       </outputDatas>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0" name="EMPLOYEE_SID_To_EMPLOYEE_SID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" name="FIRST_NAME_To_FIRST_NAME"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" name="LAST_NAME_To_LAST_NAME"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3" name="EMAIL_To_EMAIL"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" name="PHONE_NUMBER_To_PHONE_NUMBER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.5" name="HIRE_DATE_To_HIRE_DATE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.6" name="JOB_ID_To_JOB_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.7" name="SALARY_To_SALARY"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.8" name="COMMISSION_PCT_To_COMMISSION_PCT"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.9" name="MANAGER_SID_To_MANAGER_SID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.10" name="DEPARTMENT_ID_To_DEPARTMENT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0" name="EMPLOYEE_SID_To_EMPLOYEE_SID" transformsField="true"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.1" name="FIRST_NAME_To_FIRST_NAME"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.2" name="LAST_NAME_To_LAST_NAME"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.3" name="EMAIL_To_EMAIL"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.4" name="PHONE_NUMBER_To_PHONE_NUMBER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.5" name="HIRE_DATE_To_HIRE_DATE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.6" name="JOB_ID_To_JOB_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.7" name="SALARY_To_SALARY"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.8" name="COMMISSION_PCT_To_COMMISSION_PCT"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.9" name="MANAGER_SID_To_MANAGER_SID" transformsField="true"/>
-      <mappings sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.10" name="DEPARTMENT_ID_To_DEPARTMENT_ID"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_NUMBER_To_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="SALARY_To_SALARY" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="COMMISSION_PCT_To_COMMISSION_PCT" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.9"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.10"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_NUMBER_To_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="SALARY_To_SALARY" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.7"/>
+      <mappings name="COMMISSION_PCT_To_COMMISSION_PCT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.8"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.9"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.10"/>
       <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_EMPLOYEES">
-        <dataInfo xsi:type="flow:InternalDataInfo">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -623,7 +605,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -644,7 +626,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="FIRST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -665,7 +647,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LAST_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -686,7 +668,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMAIL"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -707,7 +689,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="PHONE_NUMBER"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -728,7 +710,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="HIRE_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -749,7 +731,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="7"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="JOB_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -770,7 +752,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="8"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="SALARY"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -791,7 +773,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="9"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="COMMISSION_PCT"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -812,7 +794,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="10"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="MANAGER_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -833,15 +815,15 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="11"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
         </dataInfo>
       </transformData>
     </blocks>
-    <blocks xsi:type="flow:TransformMappingBlock" name="Transform_SCOTT_DEPARTMENTS" iriJob="SCOTT_DEPARTMENTS.fcl">
-      <inputDatas name="In_SCOTT_DEPARTMENTS" inputConnections="Out_SCOTT_EMPLOYEES_To_Transform_SCOTT_DEPARTMENTS">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DEPARTMENTS" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle" schema="SCOTT" table="DEPARTMENTS" delimiter="&#x9;">
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_DEPARTMENTS.fcl" iriJob="SCOTT_DEPARTMENTS.fcl">
+      <inputDatas name="In_SCOTT_DEPARTMENTS" inputConnections="Out_SCOTT_EMPLOYEES_To_SCOTT_DEPARTMENTS.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DEPARTMENTS" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="DEPARTMENTS" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -860,7 +842,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -881,7 +863,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -902,7 +884,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="MANAGER_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -923,7 +905,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LOCATION_ID"/>
           </fields>
           <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0"/>
@@ -939,8 +921,8 @@
         <sectionOptions xsi:type="scl:Alias" alias="SCOTT_DEPARTMENTS"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
       </inputDatas>
-      <outputDatas name="Out_SCOTT_DEPARTMENTS" outputConnections="Out_SCOTT_DEPARTMENTS_To_Transform_SCOTT_JOB_HISTORY">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DEPARTMENTS" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle" schema="SCOTT" table="DEPARTMENTS" delimiter="&#x9;">
+      <outputDatas name="Out_SCOTT_DEPARTMENTS" outputConnections="Out_SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DEPARTMENTS" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="DEPARTMENTS" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -959,7 +941,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -980,7 +962,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1034,7 +1016,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="MANAGER_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1055,23 +1037,23 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LOCATION_ID"/>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="scl:OutputMode"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
-        <sectionOptions xsi:type="scl:OutputWriteType"/>
       </outputDatas>
-      <mappings sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0" name="DEPARTMENT_ID_To_DEPARTMENT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1" name="DEPARTMENT_NAME_To_DEPARTMENT_NAME"/>
-      <mappings sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2" name="MANAGER_SID_To_MANAGER_SID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3" name="LOCATION_ID_To_LOCATION_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.0" name="DEPARTMENT_ID_To_DEPARTMENT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.1" name="DEPARTMENT_NAME_To_DEPARTMENT_NAME"/>
-      <mappings sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.2" name="MANAGER_SID_To_MANAGER_SID" transformsField="true"/>
-      <mappings sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.3" name="LOCATION_ID_To_LOCATION_ID"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="DEPARTMENT_NAME_To_DEPARTMENT_NAME" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="LOCATION_ID_To_LOCATION_ID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="DEPARTMENT_NAME_To_DEPARTMENT_NAME" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="LOCATION_ID_To_LOCATION_ID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.3"/>
       <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_DEPARTMENTS">
-        <dataInfo xsi:type="flow:InternalDataInfo">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1090,7 +1072,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1111,7 +1093,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1132,7 +1114,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="MANAGER_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1153,15 +1135,15 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LOCATION_ID"/>
           </fields>
         </dataInfo>
       </transformData>
     </blocks>
-    <blocks xsi:type="flow:TransformMappingBlock" name="Transform_SCOTT_JOB_HISTORY" iriJob="SCOTT_JOB_HISTORY.fcl">
-      <inputDatas name="In_SCOTT_JOB_HISTORY" inputConnections="Out_SCOTT_DEPARTMENTS_To_Transform_SCOTT_JOB_HISTORY">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.JOB_HISTORY" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle" schema="SCOTT" table="JOB_HISTORY" delimiter="&#x9;">
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_JOB_HISTORY.fcl" iriJob="SCOTT_JOB_HISTORY.fcl">
+      <inputDatas name="In_SCOTT_JOB_HISTORY" inputConnections="Out_SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.JOB_HISTORY" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="JOB_HISTORY" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1180,7 +1162,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1201,7 +1183,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="START_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1222,7 +1204,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="END_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1243,7 +1225,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="JOB_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1264,7 +1246,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
           <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.0 //@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.1"/>
@@ -1287,8 +1269,8 @@
         <sectionOptions xsi:type="scl:Alias" alias="SCOTT_JOB_HISTORY"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
       </inputDatas>
-      <outputDatas name="Out_SCOTT_JOB_HISTORY" outputConnections="Transform_SCOTT_JOB_HISTORY_To_EnableRelatedFK.sql">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.JOB_HISTORY" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle" schema="SCOTT" table="JOB_HISTORY" delimiter="&#x9;">
+      <outputDatas name="Out_SCOTT_JOB_HISTORY" outputConnections="SCOTT_JOB_HISTORY.fcl_To_EnableRelatedFK.sql">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.JOB_HISTORY" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="JOB_HISTORY" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <fieldName name="ENC_FP_EMPLOYEE_SID"/>
@@ -1340,7 +1322,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1361,7 +1343,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="START_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1382,7 +1364,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="END_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1403,7 +1385,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="JOB_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1424,25 +1406,25 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="scl:OutputMode"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
-        <sectionOptions xsi:type="scl:OutputWriteType"/>
       </outputDatas>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0" name="EMPLOYEE_SID_To_EMPLOYEE_SID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1" name="START_DATE_To_START_DATE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2" name="END_DATE_To_END_DATE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3" name="JOB_ID_To_JOB_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4" name="DEPARTMENT_ID_To_DEPARTMENT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.0" name="EMPLOYEE_SID_To_EMPLOYEE_SID" transformsField="true"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.1" name="START_DATE_To_START_DATE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.2" name="END_DATE_To_END_DATE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.3" name="JOB_ID_To_JOB_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.4" name="DEPARTMENT_ID_To_DEPARTMENT_ID"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="START_DATE_To_START_DATE" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="END_DATE_To_END_DATE" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="START_DATE_To_START_DATE" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="END_DATE_To_END_DATE" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.4"/>
       <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_JOB_HISTORY">
-        <dataInfo xsi:type="flow:InternalDataInfo">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1461,7 +1443,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="EMPLOYEE_SID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1482,7 +1464,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="START_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1503,7 +1485,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="END_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1524,7 +1506,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="JOB_ID"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -1545,46 +1527,31 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator" char="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
         </dataInfo>
       </transformData>
     </blocks>
-    <blocks xsi:type="flow:OracleSQLExec" name="EnableRelatedFK.sql" inputConnections="Transform_SCOTT_JOB_HISTORY_To_EnableRelatedFK.sql" command="sqlplus" statementFile="EnableRelatedFK.sql" statementText="ALTER TABLE &quot;DEPARTMENTS&quot; MODIFY CONSTRAINT &quot;DEPT_MGR_FK&quot; ENABLE;&#xA;ALTER TABLE &quot;EMPLOYEES&quot; MODIFY CONSTRAINT &quot;EMP_DEPT_FK&quot; ENABLE;&#xA;ALTER TABLE &quot;EMPLOYEES&quot; MODIFY CONSTRAINT &quot;EMP_MGNR_FK&quot; ENABLE;&#xA;ALTER TABLE &quot;JOB_HISTORY&quot; MODIFY CONSTRAINT &quot;JHIST_DEPT_FK&quot; ENABLE;&#xA;ALTER TABLE &quot;JOB_HISTORY&quot; MODIFY CONSTRAINT &quot;JHIST_EMP_FK&quot; ENABLE;&#xA;exit&#xA;">
-      <dbDataInfo name="Multiple_Tables" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle">
-        <fields xsi:type="scl:AdvancedField">
-          <fieldMathStatement>
-            <compoundExpression>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="temp"/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-              </relationalExpression>
-            </compoundExpression>
-          </fieldMathStatement>
-        </fields>
-      </dbDataInfo>
+    <blocks xsi:type="flow:OracleSQLExec" name="EnableRelatedFK.sql" inputConnections="SCOTT_JOB_HISTORY.fcl_To_EnableRelatedFK.sql" command="sqlplus" statementFile="EnableRelatedFK.sql" statementText="ALTER TABLE DEPARTMENTS ENABLE CONSTRAINT DEPT_MGR_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES ENABLE CONSTRAINT EMP_DEPT_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES ENABLE CONSTRAINT EMP_MGNR_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY ENABLE CONSTRAINT JHIST_DEPT_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY ENABLE CONSTRAINT JHIST_EMP_FK;&#xD;&#xA;exit&#xA;">
+      <dbDataInfo name="Multiple_Tables" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" delimiter="&#x9;"/>
     </blocks>
-    <connections name="Start_To_CD-new_batch" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1"/>
-    <connections name="CD-new_batch_To_DisableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.1" endBlock="//@flowlets.0/@blocks.2"/>
-    <connections name="DisableRelatedFK.sql_To_Transform_SCOTT_EMPLOYEES" startBlock="//@flowlets.0/@blocks.2" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
-    <connections name="Out_SCOTT_EMPLOYEES_To_Transform_SCOTT_DEPARTMENTS" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.4/@inputDatas.0"/>
-    <connections name="Out_SCOTT_DEPARTMENTS_To_Transform_SCOTT_JOB_HISTORY" startBlock="//@flowlets.0/@blocks.4/@outputDatas.0" endBlock="//@flowlets.0/@blocks.5/@inputDatas.0"/>
-    <connections name="Transform_SCOTT_JOB_HISTORY_To_EnableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.5/@outputDatas.0" endBlock="//@flowlets.0/@blocks.6"/>
+    <connections name="Start_To_CD-saved-example" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1"/>
+    <connections name="CD-saved-example_To_DisableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.1" endBlock="//@flowlets.0/@blocks.2"/>
+    <connections name="DisableRelatedFK.sql_To_SCOTT_EMPLOYEES.fcl" startBlock="//@flowlets.0/@blocks.2" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
+    <connections name="Out_SCOTT_EMPLOYEES_To_SCOTT_DEPARTMENTS.fcl" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.4/@inputDatas.0"/>
+    <connections name="Out_SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl" startBlock="//@flowlets.0/@blocks.4/@outputDatas.0" endBlock="//@flowlets.0/@blocks.5/@inputDatas.0"/>
+    <connections name="SCOTT_JOB_HISTORY.fcl_To_EnableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.5/@outputDatas.0" endBlock="//@flowlets.0/@blocks.6"/>
   </flowlets>
   <Lineage>
-    <sourceTargetData extractor="ODBC" loader="ODBC" sourceDSN="Oracle" sourceDTPName="Oracle" separator="&#x9;" truncateTable="true" reenableFKOnPostLoad="true" targetDSN="Oracle" disableFKOnLoad="true" targetDTPName="Oracle" targetSchema="SCOTT">
+    <sourceTargetData extractor="ODBC" loader="ODBC" sourceDSN="Oracle" sourceDTPName="Oracle" separator="&#x9;" targetDSN="Oracle" targetDTPName="Oracle" targetSchema="SCOTT" outputMode="CREATE" disableFKOnLoad="true" reenableFKOnPostLoad="true">
       <tables>SCOTT.DEPARTMENTS</tables>
       <tables>SCOTT.EMPLOYEES</tables>
       <tables>SCOTT.JOB_HISTORY</tables>
-      <fieldRuleMatchers name="encryptSID" pattern=".*_SID" rule="encryptSID"/>
+      <fieldRuleMatchers name="SID" dataClassLibrary="C:/IRI/CoSort95/workbench/workspace/FieldShield_Multi_Table">
+        <rule href="../iriLibrary.fieldrules#encryptSID"/>
+        <matcherDetails details=".*_SID"/>
+      </fieldRuleMatchers>
       <fieldRules name="encryptSID" editor="cryptoWizard">
         <properties fieldRulePropertyType="EXPRESSION" value="enc_fp_aes256_ascii(${FIELDNAME}, &quot;secret&quot;)"/>
         <properties fieldRulePropertyType="NAME" value="ENC_FP_${FIELDNAME}"/>
