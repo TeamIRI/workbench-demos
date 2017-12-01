@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2017. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Subsetting</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Subsetting Demo</h1>
+
+  <p>This demo shows how to create a smaller, referentially-correct copy of a larger database.
+
+  <p>This demo requires and uses the following resources:
+
+  <ul>
+    <li>The DTP connection profile Oracle
+
+    <li>The ODBC DSN Oracle
+  </ul>
+
+  <p>After Oracle is connected via ODBC and JDBC (in DTP), execute 
+  <em>truncateTables.sql</em> in the restore folder.
+
+  <h2>Steps</h2>
+
+  <ol>
+  
+    <li style="margin-bottom: 10px;">Click the <strong>Subsetting</strong>
+    project in the <strong>Project Explorer</strong>.
+    
+    <li style="margin-bottom: 10px;">Open the Oracle connection in
+    the Data Source Explorer.
+
+    <li style="margin-bottom: 10px;">Navigate to the
+    <strong>XE</strong> -&gt; <strong>Schemas</strong> -&gt;
+    <strong>SCOTT</strong> -&gt; <strong>Tables</strong>.
+
+    <li style="margin-bottom: 10px;">Right click the source table 
+    <strong>SALE_DIM</strong> and select <strong>IRI</strong> -&gt;
+    <strong> New Subset Job</strong>.
+    
+    <li style="margin-bottom: 10px;">The defaults on the <strong>Define Destination</strong>
+    page are acceptable. Click <strong>Next</strong>.
+    
+    <li style="margin-bottom: 10px;">The <strong>SALE_DIM</strong> table is already selected
+    on the <strong>Table Selection</strong> page so click <strong>Next</strong>.
+    
+    <li style="margin-bottom: 10px;">The <strong>Sort</strong> page  is where you specify 
+    the size and sort order of the subset. For example, to get a subset of the 100 highest 
+    quantity sold levels, you would sort on the quantity sold field in descending order
+    (as in this example). If you want the rows selected randomly, however, leave the 
+    Key Fields list blank. Double click the <strong>QTY_SOLD</strong> field. Click 
+    <strong>Edit Key</strong> and select <strong>Descending</strong> next to 
+    <strong>Direction</strong>. Click <strong>OK</strong>. Click <strong>Next</strong>.
+    
+    <li style="margin-bottom: 10px;">The <strong>Data Target</strong> page has two functions.
+    The first is to name the output targets for the subset. The second allows you to view the
+    relations of your source table.
+    
+    <li style="margin-bottom: 10px;">Specify the target type by clicking 
+    <strong>Output to table</strong>.
+    
+    <li style="margin-bottom: 10px;">Under <strong>Naming options</strong> define the details 
+    of the target tables. The tables are going to be loaded back into the same 
+    schema so the default schema selection is acceptable. We want to prefix the table names so 
+    select that option. In <strong>Name entry</strong>, enter <em>SUB_</em> and click 
+    <strong>Set prefix</strong>.
+    
+    <li style="margin-bottom: 10px;">In the lower section of the page, the new names of the tables
+    have been prepended with the prefix. Selecting a different table in <strong>Original</strong>
+    will display the new table name. Click <strong>Next</strong>.
+    
+    <li style="margin-bottom: 10px;">On the <strong>Subset Targets</strong> page, you can review 
+    the details of your targets and make necessary changes. The defaults are acceptable so click
+    <strong>Finish</strong>.
+
+  </ol>
+
+  <h2>Cleanup</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Delete the <em>new_subset</em> folder.
+
+    <li style="margin-bottom: 10px;">Execute
+    <em>truncateTables.sql</em> in the restore folder.
+  </ol>
+</body>
+</html>
