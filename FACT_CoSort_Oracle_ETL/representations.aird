@@ -3,8 +3,8 @@
   <viewpoint:DAnalysis xmi:id="_e7LdQDxiEeaRycD7c90nJg" selectedViews="_fBI7UDxiEeaRycD7c90nJg" version="11.1.6.201706261600">
     <semanticResources>ETL/orders.ini</semanticResources>
     <semanticResources>ETL/orders_sorted.scl</semanticResources>
-    <semanticResources>ddf/orders.ddf</semanticResources>
     <semanticResources>Flow/FACT_ETL_Job.flow</semanticResources>
+    <semanticResources>metadata/orders.ddf</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_fBI7UDxiEeaRycD7c90nJg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_eR6tAL2gEeext88mcSUrfw" name="FACT ETL Flow Diagram" representation="_S7lXQFHOEeesgs1EntTB1w">
@@ -19,6 +19,9 @@
         <target xmi:type="flow:TransformMappingBlock" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2"/>
       </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_92xBYL2AEeexuM8mcSUrfw" name="FACT Mapping Diagram" representation="_926yYL2AEeexuM8mcSUrfw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FACT%20Mapping%20Diagram']"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_-i0yENbaEeeA96zjFoCRmQ" name="FACT Mapping Diagram" representation="_-i98ANbaEeeA96zjFoCRmQ">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FACT%20Mapping%20Diagram']"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
@@ -192,36 +195,36 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_S7nMc1HOEeesgs1EntTB1w" fontName="Segoe UI" fontHeight="8" bold="true"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S7nMdFHOEeesgs1EntTB1w" x="686" y="372" width="100" height="50"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_rWIs4L2CEeexuM8mcSUrfw" type="3008" element="_rV1K4L2CEeexuM8mcSUrfw">
-              <children xmi:type="notation:Node" xmi:id="_rWIs472CEeexuM8mcSUrfw" type="5005"/>
-              <children xmi:type="notation:Node" xmi:id="_rWIs5L2CEeexuM8mcSUrfw" type="7002">
-                <styles xmi:type="notation:SortingStyle" xmi:id="_rWIs5b2CEeexuM8mcSUrfw"/>
-                <styles xmi:type="notation:FilteringStyle" xmi:id="_rWIs5r2CEeexuM8mcSUrfw"/>
+            <children xmi:type="notation:Node" xmi:id="_EklgMNbbEeeA96zjFoCRmQ" type="3008" element="_EkSlQNbbEeeA96zjFoCRmQ">
+              <children xmi:type="notation:Node" xmi:id="_EklgM9bbEeeA96zjFoCRmQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_EklgNNbbEeeA96zjFoCRmQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_EklgNdbbEeeA96zjFoCRmQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_EklgNtbbEeeA96zjFoCRmQ"/>
               </children>
-              <children xmi:type="notation:Node" xmi:id="_rWIs572CEeexuM8mcSUrfw" type="3012" element="_rV1K4r2CEeexuM8mcSUrfw">
-                <children xmi:type="notation:Node" xmi:id="_rWIs6r2CEeexuM8mcSUrfw" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_rWIs672CEeexuM8mcSUrfw" x="21"/>
+              <children xmi:type="notation:Node" xmi:id="_EklgN9bbEeeA96zjFoCRmQ" type="3012" element="_EkSlQtbbEeeA96zjFoCRmQ">
+                <children xmi:type="notation:Node" xmi:id="_EklgOtbbEeeA96zjFoCRmQ" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_EklgO9bbEeeA96zjFoCRmQ" x="21"/>
                 </children>
-                <children xmi:type="notation:Node" xmi:id="_rWIs8b2CEeexuM8mcSUrfw" type="3005" element="_rV1K472CEeexuM8mcSUrfw">
-                  <styles xmi:type="notation:ShapeStyle" xmi:id="_rWIs8r2CEeexuM8mcSUrfw" fontName="Segoe UI"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rWIs872CEeexuM8mcSUrfw"/>
+                <children xmi:type="notation:Node" xmi:id="_EkvRNdbbEeeA96zjFoCRmQ" type="3005" element="_EkSlQ9bbEeeA96zjFoCRmQ">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_EkvRNtbbEeeA96zjFoCRmQ" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EkvRN9bbEeeA96zjFoCRmQ"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_rWIs6L2CEeexuM8mcSUrfw" fontName="Segoe UI" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rWIs6b2CEeexuM8mcSUrfw" x="-12" y="35" width="20" height="20"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_EklgONbbEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EklgOdbbEeeA96zjFoCRmQ" x="-12" y="35" width="20" height="20"/>
               </children>
-              <children xmi:type="notation:Node" xmi:id="_rWIs7L2CEeexuM8mcSUrfw" type="3012" element="_rV1K5L2CEeexuM8mcSUrfw">
-                <children xmi:type="notation:Node" xmi:id="_rWIs772CEeexuM8mcSUrfw" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_rWIs8L2CEeexuM8mcSUrfw" x="21"/>
+              <children xmi:type="notation:Node" xmi:id="_EkvRMNbbEeeA96zjFoCRmQ" type="3012" element="_EkSlRNbbEeeA96zjFoCRmQ">
+                <children xmi:type="notation:Node" xmi:id="_EkvRM9bbEeeA96zjFoCRmQ" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_EkvRNNbbEeeA96zjFoCRmQ" x="21"/>
                 </children>
-                <children xmi:type="notation:Node" xmi:id="_rWIs9L2CEeexuM8mcSUrfw" type="3005" element="_rV1K5b2CEeexuM8mcSUrfw">
-                  <styles xmi:type="notation:ShapeStyle" xmi:id="_rWIs9b2CEeexuM8mcSUrfw" fontName="Segoe UI"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rWIs9r2CEeexuM8mcSUrfw"/>
+                <children xmi:type="notation:Node" xmi:id="_EkvRONbbEeeA96zjFoCRmQ" type="3005" element="_EkSlRdbbEeeA96zjFoCRmQ">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_EkvROdbbEeeA96zjFoCRmQ" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EkvROtbbEeeA96zjFoCRmQ"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_rWIs7b2CEeexuM8mcSUrfw" fontName="Segoe UI" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rWIs7r2CEeexuM8mcSUrfw" x="-12" y="35" width="20" height="20"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_EkvRMdbbEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EkvRMtbbEeeA96zjFoCRmQ" x="-12" y="35" width="20" height="20"/>
               </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_rWIs4b2CEeexuM8mcSUrfw" fontName="Segoe UI" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rWIs4r2CEeexuM8mcSUrfw" x="162" y="53" width="150" height="100"/>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_EklgMdbbEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EklgMtbbEeeA96zjFoCRmQ" x="174" y="53" width="150" height="100"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_S7l-WFHOEeesgs1EntTB1w"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_S7l-WVHOEeesgs1EntTB1w"/>
@@ -246,37 +249,37 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S7vvYlHOEeesgs1EntTB1w" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S7vvY1HOEeesgs1EntTB1w" id="(0.0,0.5)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_tP-jYL2CEeexuM8mcSUrfw" type="4001" element="_tPh3cL2CEeexuM8mcSUrfw" source="_S7mlblHOEeesgs1EntTB1w" target="_rWIs572CEeexuM8mcSUrfw">
-          <children xmi:type="notation:Node" xmi:id="_tP-jZL2CEeexuM8mcSUrfw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tP-jZb2CEeexuM8mcSUrfw" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_H29P4NbbEeeA96zjFoCRmQ" type="4001" element="_H2qU8NbbEeeA96zjFoCRmQ" source="_S7mlblHOEeesgs1EntTB1w" target="_EklgN9bbEeeA96zjFoCRmQ">
+          <children xmi:type="notation:Node" xmi:id="_H29P5NbbEeeA96zjFoCRmQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H29P5dbbEeeA96zjFoCRmQ" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_tP-jZr2CEeexuM8mcSUrfw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tP-jZ72CEeexuM8mcSUrfw" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_H29P5tbbEeeA96zjFoCRmQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H29P59bbEeeA96zjFoCRmQ" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_tP-jaL2CEeexuM8mcSUrfw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tP-jab2CEeexuM8mcSUrfw" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_H29P6NbbEeeA96zjFoCRmQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H29P6dbbEeeA96zjFoCRmQ" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_tP-jYb2CEeexuM8mcSUrfw" routing="Rectilinear" avoidObstructions="true"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_tP-jYr2CEeexuM8mcSUrfw" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tP-jY72CEeexuM8mcSUrfw" points="[0, 0, -60, 0]$[60, 0, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tP-jar2CEeexuM8mcSUrfw" id="(1.0,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tP-ja72CEeexuM8mcSUrfw" id="(0.0,0.35)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_H29P4dbbEeeA96zjFoCRmQ" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_H29P4tbbEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H29P49bbEeeA96zjFoCRmQ" points="[0, 0, -72, 0]$[72, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H29P6tbbEeeA96zjFoCRmQ" id="(1.0,0.55)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_H29P69bbEeeA96zjFoCRmQ" id="(0.0,0.5)"/>
         </edges>
-        <edges xmi:type="notation:Edge" xmi:id="_t4mCkL2CEeexuM8mcSUrfw" type="4001" element="_t4THoL2CEeexuM8mcSUrfw" source="_rWIs7L2CEeexuM8mcSUrfw" target="_S7oak1HOEeesgs1EntTB1w">
-          <children xmi:type="notation:Node" xmi:id="_t4mClL2CEeexuM8mcSUrfw" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t4mClb2CEeexuM8mcSUrfw" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_IcSxkNbbEeeA96zjFoCRmQ" type="4001" element="_Ib_2oNbbEeeA96zjFoCRmQ" source="_EkvRMNbbEeeA96zjFoCRmQ" target="_S7oak1HOEeesgs1EntTB1w">
+          <children xmi:type="notation:Node" xmi:id="_IcSxlNbbEeeA96zjFoCRmQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IcSxldbbEeeA96zjFoCRmQ" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_t4mClr2CEeexuM8mcSUrfw" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t4mCl72CEeexuM8mcSUrfw" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_IcSxltbbEeeA96zjFoCRmQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IcSxl9bbEeeA96zjFoCRmQ" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_t4mCmL2CEeexuM8mcSUrfw" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t4mCmb2CEeexuM8mcSUrfw" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_IcSxmNbbEeeA96zjFoCRmQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IcSxmdbbEeeA96zjFoCRmQ" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_t4mCkb2CEeexuM8mcSUrfw" routing="Rectilinear" avoidObstructions="true"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_t4mCkr2CEeexuM8mcSUrfw" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_t4mCk72CEeexuM8mcSUrfw" points="[0, 0, -68, 0]$[68, 0, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t4vMgL2CEeexuM8mcSUrfw" id="(1.0,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_t4vMgb2CEeexuM8mcSUrfw" id="(0.0,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_IcSxkdbbEeeA96zjFoCRmQ" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_IcSxktbbEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IcSxk9bbEeeA96zjFoCRmQ" points="[0, 0, -56, 0]$[56, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IcSxmtbbEeeA96zjFoCRmQ" id="(1.0,0.35)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IcSxm9bbEeeA96zjFoCRmQ" id="(0.0,0.35)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -294,7 +297,7 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_S7lXVVHOEeesgs1EntTB1w" name="orders_sorted.scl" width="15" height="10">
         <target xmi:type="flow:TransformMappingBlock" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2"/>
         <semanticElements xmi:type="flow:TransformMappingBlock" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_S7lXVlHOEeesgs1EntTB1w" name="In_stdin" incomingEdges="_t4THoL2CEeexuM8mcSUrfw" width="2" height="2">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_S7lXVlHOEeesgs1EntTB1w" name="In_stdin" incomingEdges="_Ib_2oNbbEeeA96zjFoCRmQ" width="2" height="2">
           <target xmi:type="flow:DataContext" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0"/>
           <semanticElements xmi:type="flow:DataContext" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0"/>
           <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_S7lXV1HOEeesgs1EntTB1w" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file_16.png">
@@ -399,7 +402,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_S7lXi1HOEeesgs1EntTB1w" name="Start" outgoingEdges="_tPh3cL2CEeexuM8mcSUrfw" width="6" height="6" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_S7lXi1HOEeesgs1EntTB1w" name="Start" outgoingEdges="_H2qU8NbbEeeA96zjFoCRmQ" width="6" height="6" resizeKind="NSEW">
         <target xmi:type="flow:StartBlock" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.0"/>
         <semanticElements xmi:type="flow:StartBlock" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -423,21 +426,21 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_CommandLine']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_rV1K4L2CEeexuM8mcSUrfw" name="orders.ini" width="15" height="10">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_EkSlQNbbEeeA96zjFoCRmQ" name="orders.ini" width="15" height="10">
         <target xmi:type="flow:FactProvider" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.3"/>
         <semanticElements xmi:type="flow:FactProvider" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.3"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_rV1K4r2CEeexuM8mcSUrfw" name="In_SCOTT.ORDERS" incomingEdges="_tPh3cL2CEeexuM8mcSUrfw" width="2" height="2">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_EkSlQtbbEeeA96zjFoCRmQ" name="In_SCOTT.ORDERS" incomingEdges="_H2qU8NbbEeeA96zjFoCRmQ" width="2" height="2">
           <target xmi:type="flow:DataContext" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.3/@inputDatas.0"/>
           <semanticElements xmi:type="flow:DataContext" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.3/@inputDatas.0"/>
-          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_rV1K472CEeexuM8mcSUrfw" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/odbc_16.png">
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_EkSlQ9bbEeeA96zjFoCRmQ" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/odbc_16.png">
             <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.0/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_rV1K5L2CEeexuM8mcSUrfw" name="Out_stdout" outgoingEdges="_t4THoL2CEeexuM8mcSUrfw" width="2" height="2">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_EkSlRNbbEeeA96zjFoCRmQ" name="Out_stdout" outgoingEdges="_Ib_2oNbbEeeA96zjFoCRmQ" width="2" height="2">
           <target xmi:type="flow:DataContext" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.3/@outputDatas.0"/>
           <semanticElements xmi:type="flow:DataContext" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.3/@outputDatas.0"/>
-          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_rV1K5b2CEeexuM8mcSUrfw" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file_16.png">
+          <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_EkSlRdbbEeeA96zjFoCRmQ" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file_16.png">
             <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
@@ -445,7 +448,7 @@
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_rV1K4b2CEeexuM8mcSUrfw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="214,197,66" backgroundStyle="GradientTopToBottom" foregroundColor="255,245,181">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_EkSlQdbbEeeA96zjFoCRmQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="214,197,66" backgroundStyle="GradientTopToBottom" foregroundColor="255,245,181">
           <labelFormat>bold</labelFormat>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_FACT']/@style"/>
         </ownedStyle>
@@ -461,21 +464,21 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_tPh3cL2CEeexuM8mcSUrfw" sourceNode="_S7lXi1HOEeesgs1EntTB1w" targetNode="_rV1K4r2CEeexuM8mcSUrfw">
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_H2qU8NbbEeeA96zjFoCRmQ" sourceNode="_S7lXi1HOEeesgs1EntTB1w" targetNode="_EkSlQtbbEeeA96zjFoCRmQ">
       <target xmi:type="flow:Connection" href="Flow/FACT_ETL_Job.flow#Start_To_In_SCOTT.ORDERS"/>
       <semanticElements xmi:type="flow:Connection" href="Flow/FACT_ETL_Job.flow#Start_To_In_SCOTT.ORDERS"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_tPh3cb2CEeexuM8mcSUrfw" size="2" routingStyle="manhattan">
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_H2qU8dbbEeeA96zjFoCRmQ" size="2" routingStyle="manhattan">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_tPh3cr2CEeexuM8mcSUrfw" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_H2qU8tbbEeeA96zjFoCRmQ" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_t4THoL2CEeexuM8mcSUrfw" sourceNode="_rV1K5L2CEeexuM8mcSUrfw" targetNode="_S7lXVlHOEeesgs1EntTB1w">
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Ib_2oNbbEeeA96zjFoCRmQ" sourceNode="_EkSlRNbbEeeA96zjFoCRmQ" targetNode="_S7lXVlHOEeesgs1EntTB1w">
       <target xmi:type="flow:Connection" href="Flow/FACT_ETL_Job.flow#Out_stdout_To_In_stdin"/>
       <semanticElements xmi:type="flow:Connection" href="Flow/FACT_ETL_Job.flow#Out_stdout_To_In_stdin"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_t4THob2CEeexuM8mcSUrfw" size="2" routingStyle="manhattan">
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_IcJnoNbbEeeA96zjFoCRmQ" size="2" routingStyle="manhattan">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_t4THor2CEeexuM8mcSUrfw" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_IcJnodbbEeeA96zjFoCRmQ" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
     </ownedDiagramElements>
@@ -966,9 +969,9 @@
                       <children xmi:type="notation:Node" xmi:id="_6IkUIFHOEeesgs1EntTB1w" type="5003">
                         <layoutConstraint xmi:type="notation:Location" xmi:id="_6IkUIVHOEeesgs1EntTB1w" y="5"/>
                       </children>
-                      <children xmi:type="notation:Node" xmi:id="_6Ik7MFHOEeesgs1EntTB1w" type="3005" element="_6IFzrlHOEeesgs1EntTB1w">
-                        <styles xmi:type="notation:ShapeStyle" xmi:id="_6Ik7MVHOEeesgs1EntTB1w" fontName="Segoe UI"/>
-                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Ik7MlHOEeesgs1EntTB1w"/>
+                      <children xmi:type="notation:Node" xmi:id="_ooMGwNbaEeeA96zjFoCRmQ" type="3005" element="_onJk8NbaEeeA96zjFoCRmQ">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_ooMGwdbaEeeA96zjFoCRmQ" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ooMGwtbaEeeA96zjFoCRmQ"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6IjtFlHOEeesgs1EntTB1w" fontName="Segoe UI" fontHeight="7"/>
                       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6IjtF1HOEeesgs1EntTB1w" y="32" width="180" height="16"/>
@@ -982,14 +985,6 @@
                 <children xmi:type="notation:Node" xmi:id="_6Iie_1HOEeesgs1EntTB1w" type="3009" element="_6IFzsVHOEeesgs1EntTB1w">
                   <children xmi:type="notation:Node" xmi:id="_6IjGAFHOEeesgs1EntTB1w" type="5004"/>
                   <children xmi:type="notation:Node" xmi:id="_6IjGAVHOEeesgs1EntTB1w" type="7003">
-                    <children xmi:type="notation:Node" xmi:id="_6Ik7M1HOEeesgs1EntTB1w" type="3010" element="_6IFzt1HOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd1L2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6Ik7NFHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6Ik7NVHOEeesgs1EntTB1w" type="3010" element="_6IFzvFHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd1b2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6Ik7NlHOEeesgs1EntTB1w"/>
-                    </children>
                     <children xmi:type="notation:Node" xmi:id="_6Ik7N1HOEeesgs1EntTB1w" type="3010" element="_6IFzwVHOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd1r2gEeext88mcSUrfw"/>
                       <layoutConstraint xmi:type="notation:Location" xmi:id="_6Ik7OFHOEeesgs1EntTB1w"/>
@@ -1039,14 +1034,6 @@
                     <children xmi:type="notation:Node" xmi:id="_6ImJU1HOEeesgs1EntTB1w" type="3010" element="_6IFz4VHOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd2L2gEeext88mcSUrfw"/>
                       <layoutConstraint xmi:type="notation:Location" xmi:id="_6ImJVFHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6ImJVVHOEeesgs1EntTB1w" type="3010" element="_6IFz5lHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd2b2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6ImJVlHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6ImJV1HOEeesgs1EntTB1w" type="3010" element="_6IFz61HOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd2r2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6ImJWFHOEeesgs1EntTB1w"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6ImJWVHOEeesgs1EntTB1w" type="3010" element="_6IFz8FHOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd272gEeext88mcSUrfw"/>
@@ -1109,25 +1096,9 @@
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd3b2gEeext88mcSUrfw"/>
                       <layoutConstraint xmi:type="notation:Location" xmi:id="_6In-h1HOEeesgs1EntTB1w"/>
                     </children>
-                    <children xmi:type="notation:Node" xmi:id="_6In-iFHOEeesgs1EntTB1w" type="3010" element="_6IF0GVHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd3r2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6In-iVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6IolkFHOEeesgs1EntTB1w" type="3010" element="_6IF0HlHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd372gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6IolkVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6IolklHOEeesgs1EntTB1w" type="3010" element="_6IF0I1HOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd4L2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6Iolk1HOEeesgs1EntTB1w"/>
-                    </children>
                     <children xmi:type="notation:Node" xmi:id="_6IollFHOEeesgs1EntTB1w" type="3010" element="_6IF0KFHOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd4b2gEeext88mcSUrfw"/>
                       <layoutConstraint xmi:type="notation:Location" xmi:id="_6IollVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6IolllHOEeesgs1EntTB1w" type="3010" element="_6IF0LVHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd4r2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6Ioll1HOEeesgs1EntTB1w"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6IolmFHOEeesgs1EntTB1w" type="3010" element="_6IF0MlHOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd472gEeext88mcSUrfw"/>
@@ -1356,10 +1327,6 @@
                 <children xmi:type="notation:Node" xmi:id="_6Iv6U1HOEeesgs1EntTB1w" type="3009" element="_6IF0t1HOEeesgs1EntTB1w">
                   <children xmi:type="notation:Node" xmi:id="_6Iv6VlHOEeesgs1EntTB1w" type="5004"/>
                   <children xmi:type="notation:Node" xmi:id="_6Iv6V1HOEeesgs1EntTB1w" type="7003">
-                    <children xmi:type="notation:Node" xmi:id="_6IwhY1HOEeesgs1EntTB1w" type="3010" element="_6IF0vVHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd7L2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6IwhZFHOEeesgs1EntTB1w"/>
-                    </children>
                     <children xmi:type="notation:Node" xmi:id="_6IwhZVHOEeesgs1EntTB1w" type="3010" element="_6IF0wlHOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd7b2gEeext88mcSUrfw"/>
                       <layoutConstraint xmi:type="notation:Location" xmi:id="_6IwhZlHOEeesgs1EntTB1w"/>
@@ -1406,26 +1373,6 @@
                 <children xmi:type="notation:Node" xmi:id="_6IxId1HOEeesgs1EntTB1w" type="3009" element="_6IF03FHOEeesgs1EntTB1w">
                   <children xmi:type="notation:Node" xmi:id="_6IxIelHOEeesgs1EntTB1w" type="5004"/>
                   <children xmi:type="notation:Node" xmi:id="_6IxIe1HOEeesgs1EntTB1w" type="7003">
-                    <children xmi:type="notation:Node" xmi:id="_6IxvhVHOEeesgs1EntTB1w" type="3010" element="_6IF04lHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd772gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6IxvhlHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6Ixvh1HOEeesgs1EntTB1w" type="3010" element="_6IF051HOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd8L2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6IxviFHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6IyWkFHOEeesgs1EntTB1w" type="3010" element="_6IF07FHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd8b2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6IyWkVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6IyWklHOEeesgs1EntTB1w" type="3010" element="_6IF08VHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd8r2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6IyWk1HOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6IyWlFHOEeesgs1EntTB1w" type="3010" element="_6IF09lHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd872gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6IyWlVHOEeesgs1EntTB1w"/>
-                    </children>
                     <children xmi:type="notation:Node" xmi:id="_6IyWllHOEeesgs1EntTB1w" type="3010" element="_6IF0-1HOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd9L2gEeext88mcSUrfw"/>
                       <layoutConstraint xmi:type="notation:Location" xmi:id="_6IyWl1HOEeesgs1EntTB1w"/>
@@ -1483,26 +1430,6 @@
                 <children xmi:type="notation:Node" xmi:id="_6Iy9oFHOEeesgs1EntTB1w" type="3009" element="_6IF1GVHOEeesgs1EntTB1w">
                   <children xmi:type="notation:Node" xmi:id="_6Iy9o1HOEeesgs1EntTB1w" type="5004"/>
                   <children xmi:type="notation:Node" xmi:id="_6Iy9pFHOEeesgs1EntTB1w" type="7003">
-                    <children xmi:type="notation:Node" xmi:id="_6I0LxlHOEeesgs1EntTB1w" type="3010" element="_6IF1H1HOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd9r2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I0Lx1HOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I0LyFHOEeesgs1EntTB1w" type="3010" element="_6IF1JFHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd972gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I0LyVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I0LylHOEeesgs1EntTB1w" type="3010" element="_6IF1KVHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd-L2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I0Ly1HOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I0LzFHOEeesgs1EntTB1w" type="3010" element="_6IF1LlHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd-b2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I0LzVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I0y0FHOEeesgs1EntTB1w" type="3010" element="_6IF1M1HOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd-r2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I0y0VHOEeesgs1EntTB1w"/>
-                    </children>
                     <children xmi:type="notation:Node" xmi:id="_6I0y0lHOEeesgs1EntTB1w" type="3010" element="_6IF1OFHOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd-72gEeext88mcSUrfw"/>
                       <layoutConstraint xmi:type="notation:Location" xmi:id="_6I0y01HOEeesgs1EntTB1w"/>
@@ -1578,26 +1505,6 @@
                     <children xmi:type="notation:Node" xmi:id="_6I3PEFHOEeesgs1EntTB1w" type="3010" element="_6IF1ZVHOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzd_r2gEeext88mcSUrfw"/>
                       <layoutConstraint xmi:type="notation:Location" xmi:id="_6I3PEVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I3PElHOEeesgs1EntTB1w" type="3010" element="_6IF1alHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzd_72gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I3PE1HOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I3PFFHOEeesgs1EntTB1w" type="3010" element="_6IF1b1HOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzeAL2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I3PFVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I3PFlHOEeesgs1EntTB1w" type="3010" element="_6IF1dFHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzeAb2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I3PF1HOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I3PGFHOEeesgs1EntTB1w" type="3010" element="_6IF1eVHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzeAr2gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I3PGVHOEeesgs1EntTB1w"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_6I3PGlHOEeesgs1EntTB1w" type="3010" element="_6IF1flHOEeesgs1EntTB1w">
-                      <styles xmi:type="notation:FontStyle" xmi:id="_eSzeA72gEeext88mcSUrfw"/>
-                      <layoutConstraint xmi:type="notation:Location" xmi:id="_6I3PG1HOEeesgs1EntTB1w"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6I3PHFHOEeesgs1EntTB1w" type="3010" element="_6IF1g1HOEeesgs1EntTB1w">
                       <styles xmi:type="notation:FontStyle" xmi:id="_eSzeBL2gEeext88mcSUrfw"/>
@@ -2299,7 +2206,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzE1HOEeesgs1EntTB1w" name="ORDER_ID:ASCII (,)" outgoingEdges="_6IF1s1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzE1HOEeesgs1EntTB1w" name="ORDER_ID:ASCII (0)" outgoingEdges="_6IF1s1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzFFHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2307,7 +2214,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzF1HOEeesgs1EntTB1w" name="CUSTOMER:ASCII (,)" outgoingEdges="_6IF1uFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzF1HOEeesgs1EntTB1w" name="CUSTOMER:ASCII (0)" outgoingEdges="_6IF1uFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzGFHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2315,7 +2222,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzG1HOEeesgs1EntTB1w" name="EMPLOYEE:ASCII (,)" outgoingEdges="_6IF1vVHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzG1HOEeesgs1EntTB1w" name="EMPLOYEE:ASCII (0)" outgoingEdges="_6IF1vVHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzHFHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2323,7 +2230,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzH1HOEeesgs1EntTB1w" name="SHIP_DATE:ASCII (,)" outgoingEdges="_6IF1wlHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzH1HOEeesgs1EntTB1w" name="SHIP_DATE:ASCII (0)" outgoingEdges="_6IF1wlHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.3"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzIFHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2331,7 +2238,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzI1HOEeesgs1EntTB1w" name="FREIGHT:NUMERIC (,)" outgoingEdges="_6IF1x1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzI1HOEeesgs1EntTB1w" name="FREIGHT:NUMERIC (0)" outgoingEdges="_6IF1x1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.4"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.4"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzJFHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2385,7 +2292,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_InternalDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_InternalDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzRFHOEeesgs1EntTB1w" name="ORDER_ID:ASCII (,)" outgoingEdges="_6IF1zFHOEeesgs1EntTB1w _6IGaZFHOEeesgs1EntTB1w" incomingEdges="_6IF1s1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzRFHOEeesgs1EntTB1w" name="ORDER_ID:ASCII (0)" outgoingEdges="_6IF1zFHOEeesgs1EntTB1w _6IGaZFHOEeesgs1EntTB1w" incomingEdges="_6IF1s1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzRVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2393,7 +2300,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzSFHOEeesgs1EntTB1w" name="CUSTOMER:ASCII (,)" outgoingEdges="_6IF10VHOEeesgs1EntTB1w _6IGaHlHOEeesgs1EntTB1w _6IGaLVHOEeesgs1EntTB1w _6IGaWlHOEeesgs1EntTB1w _6IGaaVHOEeesgs1EntTB1w" incomingEdges="_6IF1uFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzSFHOEeesgs1EntTB1w" name="CUSTOMER:ASCII (0)" outgoingEdges="_6IF10VHOEeesgs1EntTB1w _6IGaHlHOEeesgs1EntTB1w _6IGaLVHOEeesgs1EntTB1w _6IGaWlHOEeesgs1EntTB1w _6IGaaVHOEeesgs1EntTB1w" incomingEdges="_6IF1uFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzSVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2401,7 +2308,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzTFHOEeesgs1EntTB1w" name="EMPLOYEE:ASCII (,)" outgoingEdges="_6IF11lHOEeesgs1EntTB1w _6IF15VHOEeesgs1EntTB1w _6IF19FHOEeesgs1EntTB1w _6IGaGVHOEeesgs1EntTB1w _6IGaKFHOEeesgs1EntTB1w _6IGaS1HOEeesgs1EntTB1w _6IGaVVHOEeesgs1EntTB1w _6IGablHOEeesgs1EntTB1w" incomingEdges="_6IF1vVHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzTFHOEeesgs1EntTB1w" name="EMPLOYEE:ASCII (0)" outgoingEdges="_6IF11lHOEeesgs1EntTB1w _6IF15VHOEeesgs1EntTB1w _6IF19FHOEeesgs1EntTB1w _6IGaGVHOEeesgs1EntTB1w _6IGaKFHOEeesgs1EntTB1w _6IGaS1HOEeesgs1EntTB1w _6IGaVVHOEeesgs1EntTB1w _6IGablHOEeesgs1EntTB1w" incomingEdges="_6IF1vVHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzTVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2409,7 +2316,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzUFHOEeesgs1EntTB1w" name="SHIP_DATE:ASCII (,)" outgoingEdges="_6IF121HOEeesgs1EntTB1w _6IGac1HOEeesgs1EntTB1w" incomingEdges="_6IF1wlHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzUFHOEeesgs1EntTB1w" name="SHIP_DATE:ASCII (0)" outgoingEdges="_6IF121HOEeesgs1EntTB1w _6IGac1HOEeesgs1EntTB1w" incomingEdges="_6IF1wlHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzUVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2417,7 +2324,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzVFHOEeesgs1EntTB1w" name="FREIGHT:NUMERIC (,)" outgoingEdges="_6IF14FHOEeesgs1EntTB1w _6IF16lHOEeesgs1EntTB1w _6IF171HOEeesgs1EntTB1w _6IGaFFHOEeesgs1EntTB1w _6IGaI1HOEeesgs1EntTB1w _6IGaMlHOEeesgs1EntTB1w _6IGaN1HOEeesgs1EntTB1w _6IGaPFHOEeesgs1EntTB1w _6IGaQVHOEeesgs1EntTB1w _6IGaRlHOEeesgs1EntTB1w _6IGaUFHOEeesgs1EntTB1w _6IGaX1HOEeesgs1EntTB1w _6IGaeFHOEeesgs1EntTB1w" incomingEdges="_6IF1x1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzVFHOEeesgs1EntTB1w" name="FREIGHT:NUMERIC (0)" outgoingEdges="_6IF14FHOEeesgs1EntTB1w _6IF16lHOEeesgs1EntTB1w _6IF171HOEeesgs1EntTB1w _6IGaFFHOEeesgs1EntTB1w _6IGaI1HOEeesgs1EntTB1w _6IGaMlHOEeesgs1EntTB1w _6IGaN1HOEeesgs1EntTB1w _6IGaPFHOEeesgs1EntTB1w _6IGaQVHOEeesgs1EntTB1w _6IGaRlHOEeesgs1EntTB1w _6IGaUFHOEeesgs1EntTB1w _6IGaX1HOEeesgs1EntTB1w _6IGaeFHOEeesgs1EntTB1w" incomingEdges="_6IF1x1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzVVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2476,7 +2383,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzelHOEeesgs1EntTB1w" name="ORDER_ID:ASCII (,)" incomingEdges="_6IF1zFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzelHOEeesgs1EntTB1w" name="ORDER_ID:ASCII (0)" incomingEdges="_6IF1zFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFze1HOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2484,7 +2391,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzflHOEeesgs1EntTB1w" name="CUSTOMER:ASCII (,)" incomingEdges="_6IF10VHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzflHOEeesgs1EntTB1w" name="CUSTOMER:ASCII (0)" incomingEdges="_6IF10VHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzf1HOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2492,7 +2399,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzglHOEeesgs1EntTB1w" name="EMPLOYEE:ASCII (,)" incomingEdges="_6IF11lHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzglHOEeesgs1EntTB1w" name="EMPLOYEE:ASCII (0)" incomingEdges="_6IF11lHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzg1HOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2500,7 +2407,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzhlHOEeesgs1EntTB1w" name="SHIP_DATE:ASCII (,)" incomingEdges="_6IF121HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzhlHOEeesgs1EntTB1w" name="SHIP_DATE:ASCII (0)" incomingEdges="_6IF121HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzh1HOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2508,7 +2415,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzilHOEeesgs1EntTB1w" name="FREIGHT:NUMERIC (,)" incomingEdges="_6IF14FHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzilHOEeesgs1EntTB1w" name="FREIGHT:NUMERIC (0)" incomingEdges="_6IF14FHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzi1HOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -2569,8 +2476,8 @@
           <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IFzrVHOEeesgs1EntTB1w" name="star:ASCII (0)" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.2"/>
-            <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IFzrlHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
-              <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+            <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_onJk8NbaEeeA96zjFoCRmQ" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field-derived_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+              <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@conditionnalStyles.0/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
@@ -2583,22 +2490,6 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IFzt1HOEeesgs1EntTB1w" name="&quot;GrandTotal for &quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.1/@sectionOptions.0"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.1/@sectionOptions.0"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IFzuFHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IFzvFHOEeesgs1EntTB1w" name="&quot;--->&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.1/@sectionOptions.1"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.1/@sectionOptions.1"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IFzvVHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
           <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IFzwVHOEeesgs1EntTB1w" name="Sum total_emp">
             <target xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.1/@sectionOptions.2"/>
             <semanticElements xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.1/@sectionOptions.2"/>
@@ -2656,22 +2547,6 @@
             <target xmi:type="scl:Include" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.2/@sectionOptions.0"/>
             <semanticElements xmi:type="scl:Include" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.2/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_6IFz4lHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IFz5lHOEeesgs1EntTB1w" name="&quot;----------------------------------------------------->&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.2/@sectionOptions.1"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.2/@sectionOptions.1"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IFz51HOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IFz61HOEeesgs1EntTB1w" name="&quot;\n&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.2/@sectionOptions.2"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.2/@sectionOptions.2"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IFz7FHOEeesgs1EntTB1w" labelAlignment="LEFT">
               <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
@@ -2745,42 +2620,10 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
           </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0GVHOEeesgs1EntTB1w" name="&quot;\nGrandTotal for &quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.1"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.1"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF0GlHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0HlHOEeesgs1EntTB1w" name="&quot;--------------------->&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.2"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.2"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF0H1HOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0I1HOEeesgs1EntTB1w" name="&quot;\n&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.3"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.3"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF0JFHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
           <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0KFHOEeesgs1EntTB1w" name="Sum total_emp">
             <target xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.4"/>
             <semanticElements xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.4"/>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF0KVHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0LVHOEeesgs1EntTB1w" name="&quot;\n&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.5"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.3/@sectionOptions.5"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF0LlHOEeesgs1EntTB1w" labelAlignment="LEFT">
               <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
@@ -2939,7 +2782,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0iVHOEeesgs1EntTB1w" name="Headrec &quot;Employee           Customer                            Max      Min    Avg  Ct\n------------------------------------------------------------------------------\n&quot;">
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0iVHOEeesgs1EntTB1w" name="Headrec: &quot;Employee           Customer                            Max      Min    Avg  Ct\n------------------------------------------------------------------------------\n&quot;">
             <target xmi:type="scl:Headrec" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.5/@sectionOptions.0"/>
             <semanticElements xmi:type="scl:Headrec" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.5/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF0ilHOEeesgs1EntTB1w" labelAlignment="LEFT">
@@ -3024,14 +2867,6 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0vVHOEeesgs1EntTB1w" name="&quot;\nTotal Freight Charges: \$&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.6/@sectionOptions.0"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.6/@sectionOptions.0"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF0vlHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
           <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0wlHOEeesgs1EntTB1w" name="Sum total_FREIGHT">
             <target xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.6/@sectionOptions.1"/>
             <semanticElements xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.6/@sectionOptions.1"/>
@@ -3085,46 +2920,6 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF04lHOEeesgs1EntTB1w" name="&quot;&lt;TR>&lt;TD>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.0"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.0"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF041HOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF051HOEeesgs1EntTB1w" name="&quot;&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.1"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.1"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF06FHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF07FHOEeesgs1EntTB1w" name="&quot;&lt;/TD>\n&lt;TD align=right>&lt;B>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.2"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.2"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF07VHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF08VHOEeesgs1EntTB1w" name="&quot;Subtotal&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.3"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.3"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF08lHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF09lHOEeesgs1EntTB1w" name="&quot;&lt;FONT>&lt;/B>&lt;/TD>\n&lt;TD align=right>&lt;B>&lt;U>&lt;FONT SIZE=+1>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.4"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.4"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF091HOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
           <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF0-1HOEeesgs1EntTB1w" name="Sum total_FREIGHT">
             <target xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.5"/>
             <semanticElements xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.7/@sectionOptions.5"/>
@@ -3186,46 +2981,6 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1H1HOEeesgs1EntTB1w" name="&quot;&lt;TR>&lt;/TD>\n&lt;TD>&lt;B>&lt;FONT COLOR=\'BLUE\'>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.0"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.0"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1IFHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1JFHOEeesgs1EntTB1w" name="&quot;Grand Total for &quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.1"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.1"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1JVHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1KVHOEeesgs1EntTB1w" name="&quot;&lt;TD>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.2"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.2"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1KlHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1LlHOEeesgs1EntTB1w" name="&quot;&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.3"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.3"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1L1HOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1M1HOEeesgs1EntTB1w" name="&quot;&lt;/FONT>&lt;/B>&lt;/TD>\n&lt;TD align=right>&lt;B>&lt;U>&lt;FONT SIZE=+2>&lt;FONT COLOR=\'BLUE\'>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.4"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.4"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1NFHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
           <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1OFHOEeesgs1EntTB1w" name="Sum tot_FREIGHT">
             <target xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.5"/>
             <semanticElements xmi:type="scl:Summary" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.5"/>
@@ -3234,7 +2989,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
           </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1PVHOEeesgs1EntTB1w" name="Footrec &quot;&lt;/TABLE>&lt;BR>\nBy &lt;B>%s&lt;/B> as of %s.&lt;HR>&lt;/BODY>\n&lt;/HTML>&quot;, USER, AMERICAN_TIMESTAMP">
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1PVHOEeesgs1EntTB1w" name="Footrec: &quot;&lt;/TABLE>&lt;BR>\nBy &lt;B>%s&lt;/B> as of %s.&lt;HR>&lt;/BODY>\n&lt;/HTML>&quot;, USER, AMERICAN_TIMESTAMP">
             <target xmi:type="scl:Footrec" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.6"/>
             <semanticElements xmi:type="scl:Footrec" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.8/@sectionOptions.6"/>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1PlHOEeesgs1EntTB1w" labelAlignment="LEFT">
@@ -3303,50 +3058,10 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1ZVHOEeesgs1EntTB1w" name="Headrec &quot;&lt;HTML>&lt;HEAD>\n&lt;TITLE>HTML produced by CoSort's SortCL Transform 4GL Program &lt;/TITLE>\n&lt;/HEAD>\n&lt;BODY>&lt;H2>Employee Freight Summary&lt;/H2>&lt;FONT COLOR='RED'>Employee transactions, by customer; charges above \\$100 are shown in green.&lt;/FONT>\n\r&lt;TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>&lt;TR>&lt;TH>Employee&lt;/TH>&lt;TH>Customer&lt;/TH>&lt;TH>Freight&lt;/TH>&lt;/TR>&quot;">
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1ZVHOEeesgs1EntTB1w" name="Headrec: &quot;&lt;HTML>&lt;HEAD>\n&lt;TITLE>HTML produced by CoSort's SortCL Transform 4GL Program &lt;/TITLE>\n&lt;/HEAD>\n&lt;BODY>&lt;H2>Employee Freight Summary&lt;/H2>&lt;FONT COLOR='RED'>Employee transactions, by customer; charges above \\$100 are shown in green.&lt;/FONT>\n\r&lt;TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>&lt;TR>&lt;TH>Employee&lt;/TH>&lt;TH>Customer&lt;/TH>&lt;TH>Freight&lt;/TH>&lt;/TR>&quot;">
             <target xmi:type="scl:Headrec" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.0"/>
             <semanticElements xmi:type="scl:Headrec" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1ZlHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1alHOEeesgs1EntTB1w" name="&quot;&lt;TR>&lt;TD>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.1"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.1"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1a1HOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1b1HOEeesgs1EntTB1w" name="&quot;&lt;/TD>\n&lt;TD>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.2"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.2"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1cFHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1dFHOEeesgs1EntTB1w" name="&quot;&lt;/B>&lt;/TD>\n&lt;TD align=right>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.3"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.3"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1dVHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1eVHOEeesgs1EntTB1w" name="IF FREIGHT GT 100 THEN &quot;&lt;FONT COLOR=\'GREEN\'>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.4"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.4"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1elHOEeesgs1EntTB1w" labelAlignment="LEFT">
-              <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
-            </ownedStyle>
-            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
-          </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6IF1flHOEeesgs1EntTB1w" name="IF FREIGHT GT 100 THEN &quot;&lt;/FONT>&quot;">
-            <target xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.5"/>
-            <semanticElements xmi:type="scl:Data" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.9/@sectionOptions.5"/>
-            <ownedStyle xmi:type="diagram:Square" xmi:id="_6IF1f1HOEeesgs1EntTB1w" labelAlignment="LEFT">
               <description xmi:type="style:SquareDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']/@style"/>
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
@@ -3379,7 +3094,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1lFHOEeesgs1EntTB1w" name="ORDER_ID:ASCII (,)" incomingEdges="_6IGaZFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1lFHOEeesgs1EntTB1w" name="ORDER_ID:ASCII (0)" incomingEdges="_6IGaZFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IF1lVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -3387,7 +3102,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1mFHOEeesgs1EntTB1w" name="CUSTOMER:ASCII (,)" incomingEdges="_6IGaaVHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1mFHOEeesgs1EntTB1w" name="CUSTOMER:ASCII (0)" incomingEdges="_6IGaaVHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IF1mVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -3395,7 +3110,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1nFHOEeesgs1EntTB1w" name="EMPLOYEE:ASCII (,)" incomingEdges="_6IGablHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1nFHOEeesgs1EntTB1w" name="EMPLOYEE:ASCII (0)" incomingEdges="_6IGablHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IF1nVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -3403,7 +3118,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1oFHOEeesgs1EntTB1w" name="SHIP_DATE:ASCII (,)" incomingEdges="_6IGac1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1oFHOEeesgs1EntTB1w" name="SHIP_DATE:ASCII (0)" incomingEdges="_6IGac1HOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.3"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IF1oVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -3411,7 +3126,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1pFHOEeesgs1EntTB1w" name="FREIGHT:NUMERIC (,)" incomingEdges="_6IGaeFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6IF1pFHOEeesgs1EntTB1w" name="FREIGHT:NUMERIC (0)" incomingEdges="_6IGaeFHOEeesgs1EntTB1w" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.4"/>
             <semanticElements xmi:type="scl:AdvancedField" href="Flow/FACT_ETL_Job.flow#//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.4"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6IF1pVHOEeesgs1EntTB1w" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -3921,6 +3636,170 @@
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FACT%20Mapping%20Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_926ydr2AEeexuM8mcSUrfw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FACT%20Mapping%20Diagram']/@defaultLayer"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_-i98ANbaEeeA96zjFoCRmQ" name="FACT Mapping Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_-i98AdbaEeeA96zjFoCRmQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_-i98AtbaEeeA96zjFoCRmQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_-i98F9baEeeA96zjFoCRmQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_-i98GNbaEeeA96zjFoCRmQ" type="Sirius" element="_-i98ANbaEeeA96zjFoCRmQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_-i98GtbaEeeA96zjFoCRmQ" type="2002" element="_-i98A9baEeeA96zjFoCRmQ">
+          <children xmi:type="notation:Node" xmi:id="_-i98HdbaEeeA96zjFoCRmQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_-i98HtbaEeeA96zjFoCRmQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_-i98KNbaEeeA96zjFoCRmQ" type="3008" element="_-i98BdbaEeeA96zjFoCRmQ">
+              <children xmi:type="notation:Node" xmi:id="_-i98K9baEeeA96zjFoCRmQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_-i98LNbaEeeA96zjFoCRmQ" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_-i98L9baEeeA96zjFoCRmQ" type="3008" element="_-i98B9baEeeA96zjFoCRmQ">
+                  <children xmi:type="notation:Node" xmi:id="_-i98MtbaEeeA96zjFoCRmQ" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_-i98M9baEeeA96zjFoCRmQ" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_-i98NtbaEeeA96zjFoCRmQ" type="3007" element="_-i98CdbaEeeA96zjFoCRmQ">
+                      <children xmi:type="notation:Node" xmi:id="_-i98OdbaEeeA96zjFoCRmQ" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_-i98OtbaEeeA96zjFoCRmQ" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-jHtANbaEeeA96zjFoCRmQ" type="3005" element="_-i98CtbaEeeA96zjFoCRmQ">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_-jHtAdbaEeeA96zjFoCRmQ" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jHtAtbaEeeA96zjFoCRmQ"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_-i98N9baEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="7"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-i98ONbaEeeA96zjFoCRmQ" width="180" height="16"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_-i98NNbaEeeA96zjFoCRmQ"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_-i98NdbaEeeA96zjFoCRmQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_-i98MNbaEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-i98MdbaEeeA96zjFoCRmQ" x="25" y="23"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_-i98LdbaEeeA96zjFoCRmQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_-i98LtbaEeeA96zjFoCRmQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-i98KdbaEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-i98KtbaEeeA96zjFoCRmQ" x="18" y="29"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_-i98H9baEeeA96zjFoCRmQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_-i98INbaEeeA96zjFoCRmQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_-i98G9baEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-i98HNbaEeeA96zjFoCRmQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_-i98IdbaEeeA96zjFoCRmQ" type="2002" element="_-i98C9baEeeA96zjFoCRmQ">
+          <children xmi:type="notation:Node" xmi:id="_-i98JNbaEeeA96zjFoCRmQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_-i98JdbaEeeA96zjFoCRmQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_-jHtA9baEeeA96zjFoCRmQ" type="3008" element="_-i98DdbaEeeA96zjFoCRmQ">
+              <children xmi:type="notation:Node" xmi:id="_-jHtBtbaEeeA96zjFoCRmQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_-jHtB9baEeeA96zjFoCRmQ" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_-jHtCtbaEeeA96zjFoCRmQ" type="3008" element="_-i98D9baEeeA96zjFoCRmQ">
+                  <children xmi:type="notation:Node" xmi:id="_-jHtDdbaEeeA96zjFoCRmQ" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_-jHtDtbaEeeA96zjFoCRmQ" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_-jHtEdbaEeeA96zjFoCRmQ" type="3007" element="_-i98EdbaEeeA96zjFoCRmQ">
+                      <children xmi:type="notation:Node" xmi:id="_-jHtFNbaEeeA96zjFoCRmQ" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_-jHtFdbaEeeA96zjFoCRmQ" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_-jHtFtbaEeeA96zjFoCRmQ" type="3005" element="_-i98EtbaEeeA96zjFoCRmQ">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_-jHtF9baEeeA96zjFoCRmQ" fontName="Segoe UI"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jHtGNbaEeeA96zjFoCRmQ"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_-jHtEtbaEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="7"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jHtE9baEeeA96zjFoCRmQ" width="180" height="16"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_-jHtD9baEeeA96zjFoCRmQ"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_-jHtENbaEeeA96zjFoCRmQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_-jHtC9baEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jHtDNbaEeeA96zjFoCRmQ" x="25" y="23"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_-jHtCNbaEeeA96zjFoCRmQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_-jHtCdbaEeeA96zjFoCRmQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-jHtBNbaEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jHtBdbaEeeA96zjFoCRmQ" x="18" y="29"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_-i98JtbaEeeA96zjFoCRmQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_-i98J9baEeeA96zjFoCRmQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_-i98ItbaEeeA96zjFoCRmQ" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-i98I9baEeeA96zjFoCRmQ" x="288"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_-i98GdbaEeeA96zjFoCRmQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_-jHtGdbaEeeA96zjFoCRmQ" type="4001" element="_-i98E9baEeeA96zjFoCRmQ" source="_-i98NtbaEeeA96zjFoCRmQ" target="_-jHtEdbaEeeA96zjFoCRmQ">
+          <children xmi:type="notation:Node" xmi:id="_-jHtHdbaEeeA96zjFoCRmQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jHtHtbaEeeA96zjFoCRmQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-jHtH9baEeeA96zjFoCRmQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jHtINbaEeeA96zjFoCRmQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-jHtIdbaEeeA96zjFoCRmQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jHtItbaEeeA96zjFoCRmQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_-jHtGtbaEeeA96zjFoCRmQ" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_-jHtG9baEeeA96zjFoCRmQ" fontColor="5237244" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-jHtHNbaEeeA96zjFoCRmQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-jQ28NbaEeeA96zjFoCRmQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-jQ28dbaEeeA96zjFoCRmQ" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_-i98A9baEeeA96zjFoCRmQ" name="Input Data">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-i98BNbaEeeA96zjFoCRmQ" showIcon="false" borderSize="2" borderSizeComputationExpression="2" backgroundColor="217,196,215" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_-i98BdbaEeeA96zjFoCRmQ" name="SCOTT.ORDERS">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-i98BtbaEeeA96zjFoCRmQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="173,127,168" foregroundColor="255,255,255">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_-i98B9baEeeA96zjFoCRmQ">
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-i98CNbaEeeA96zjFoCRmQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="114,159,207" backgroundStyle="GradientTopToBottom" backgroundColor="194,239,255" foregroundColor="255,255,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-i98CdbaEeeA96zjFoCRmQ" name="*:ASCII (0)" outgoingEdges="_-i98E9baEeeA96zjFoCRmQ" width="-1" height="-1" resizeKind="NSEW">
+            <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_-i98CtbaEeeA96zjFoCRmQ" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+              <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_-i98C9baEeeA96zjFoCRmQ" name="Output Data">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-i98DNbaEeeA96zjFoCRmQ" showIcon="false" borderSize="2" borderSizeComputationExpression="2" foregroundColor="204,242,166">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_-i98DdbaEeeA96zjFoCRmQ" name="&#xA;stdout">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-i98DtbaEeeA96zjFoCRmQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" foregroundColor="255,255,255">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@subContainerMappings[name='BMD_OutputDataContext']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_OutputDatas']/@subContainerMappings[name='BMD_OutputDataContext']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_-i98D9baEeeA96zjFoCRmQ">
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-i98ENbaEeeA96zjFoCRmQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="114,159,207" backgroundStyle="GradientTopToBottom" backgroundColor="194,239,255" foregroundColor="255,255,255">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-i98EdbaEeeA96zjFoCRmQ" name="*:ASCII (0)" incomingEdges="_-i98E9baEeeA96zjFoCRmQ" width="-1" height="-1" resizeKind="NSEW">
+            <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_-i98EtbaEeeA96zjFoCRmQ" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+              <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_-i98E9baEeeA96zjFoCRmQ" sourceNode="_-i98CdbaEeeA96zjFoCRmQ" targetNode="_-i98EdbaEeeA96zjFoCRmQ">
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_-i98FNbaEeeA96zjFoCRmQ" size="2" routingStyle="manhattan" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_-i98FdbaEeeA96zjFoCRmQ" showIcon="false" labelColor="252,233,79"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@edgeMappings[name='BMD_F2FMapConnection']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FACT%20Mapping%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_-i98FtbaEeeA96zjFoCRmQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FACT%20Mapping%20Diagram']/@defaultLayer"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

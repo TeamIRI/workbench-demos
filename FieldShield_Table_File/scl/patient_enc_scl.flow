@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="ASCII"?>
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="patient_enc">
+  <flowlets name="patient_enc">
+    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_In_SCOTT.PATIENT_RECORD"/>
+    <blocks xsi:type="flow:TransformMappingBlock" name="patient_enc.scl" iriJob="patient_enc.scl">
+      <inputDatas name="In_SCOTT.PATIENT_RECORD" inputConnections="Start_To_In_SCOTT.PATIENT_RECORD">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.PATIENT_RECORD" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="PATIENT_RECORD" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="IDNUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="IDNUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="NAME1"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="AGE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="AGE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="PHONE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DRIVING_LICENSE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DRIVING_LICENSE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="scl:Alias" alias="patient_record"/>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+      </inputDatas>
+      <outputDatas name="Out_SCOTT.PATIENT_RECORD_ENCRYPTED">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.PATIENT_RECORD_ENCRYPTED" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="PATIENT_RECORD_ENCRYPTED" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="IDNUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="IDNUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="NAME1"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="AGE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="AGE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="PHONE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_CREDIT_CARD"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="file:password.txt"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_DRIVING_LICENSE"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="DRIVING_LICENSE"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DRIVING_LICENSE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+        <sectionOptions xsi:type="scl:OutputMode"/>
+      </outputDatas>
+      <outputDatas name="Out_stdout">
+        <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="IDNUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="IDNUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="PSEUDO_NAME1"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:Set">
+              <value xsi:type="ddf:FileSet" fileName="&quot;120326134642_NAME1_pseudo.set&quot;">
+                <values>NAME1</values>
+              </value>
+            </fieldAttributes>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="CUSTOM_AGE"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="AGE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                    <plusMinusExpressions>
+                      <rValue>
+                        <lValue>
+                          <expr xsi:type="scl:Unary">
+                            <value xsi:type="scl:LongValue" value="10"/>
+                          </expr>
+                        </lValue>
+                      </rValue>
+                    </plusMinusExpressions>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CUSTOM_AGE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_PHONE"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="PHONE"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="#"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="1"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="3"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="^"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="6"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="3"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_AES128_CREDIT_CARD"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_aes128">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret23"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_DRIVING_LICENSE"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="DRIVING_LICENSE"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DRIVING_LICENSE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_SSN"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="1"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="3"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="5"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="2"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="RAND_STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:Random" value="true"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="RAND_STATE"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
+      </outputDatas>
+      <mappings name="IDNUMBER_To_patient_record.IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="NAME1_To_patient_record.NAME1" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="AGE_To_patient_record.AGE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_patient_record.EMAIL" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_To_patient_record.PHONE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="CREDIT_CARD_To_patient_record.CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="DRIVING_LICENSE_To_patient_record.DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="SSN_To_patient_record.SSN" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="CITY_To_patient_record.CITY" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="STATE_To_patient_record.STATE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9"/>
+      <mappings name="patient_record.IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="patient_record.NAME1_To_NAME1" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="patient_record.AGE_To_AGE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="patient_record.EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="patient_record.PHONE_To_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="patient_record.CREDIT_CARD_To_ENC_FP_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="patient_record.CREDIT_CARD_To_ENC_FP_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="patient_record.DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="patient_record.DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="patient_record.SSN_To_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.7"/>
+      <mappings name="patient_record.CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.8"/>
+      <mappings name="patient_record.STATE_To_STATE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.9"/>
+      <mappings name="patient_record.IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.0"/>
+      <mappings name="patient_record.NAME1_To_PSEUDO_NAME1" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.1"/>
+      <mappings name="patient_record.AGE_To_CUSTOM_AGE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.2"/>
+      <mappings name="patient_record.EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.3"/>
+      <mappings name="patient_record.PHONE_To_MASK_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
+      <mappings name="patient_record.PHONE_To_MASK_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
+      <mappings name="patient_record.CREDIT_CARD_To_ENC_AES128_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="patient_record.CREDIT_CARD_To_ENC_AES128_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="patient_record.DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.6"/>
+      <mappings name="patient_record.DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.6"/>
+      <mappings name="patient_record.SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.7"/>
+      <mappings name="patient_record.SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.7"/>
+      <mappings name="patient_record.CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.8"/>
+      <jobControlOptions xsi:type="scl:Audit" fileName="FSlog.xml"/>
+      <comments>
+        <comments>FieldShield Script&#xD;
+</comments>
+        <comments>Author: kahanap&#xD;
+</comments>
+        <comments>Date: 2/28/2014&#xD;
+</comments>
+        <comments>Modified by davidf@iri.com on 18 March 2017&#xD;
+</comments>
+      </comments>
+      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Sort">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.IDNUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="IDNUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.NAME1"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.AGE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="AGE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.EMAIL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.PHONE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.CREDIT_CARD"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.DRIVING_LICENSE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DRIVING_LICENSE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="patient_record.STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="scl:Key">
+          <key>
+            <key name="EMAIL"/>
+          </key>
+        </sectionOptions>
+        <transformAction>
+          <keys xsi:type="scl:Key">
+            <key>
+              <key name="EMAIL"/>
+            </key>
+          </keys>
+        </transformAction>
+      </transformData>
+    </blocks>
+    <connections name="Start_To_In_SCOTT.PATIENT_RECORD" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1/@inputDatas.0"/>
+  </flowlets>
+</flow:FlowBatch>
+

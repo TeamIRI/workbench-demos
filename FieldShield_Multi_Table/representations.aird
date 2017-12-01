@@ -8,14 +8,14 @@
     <semanticResources>HR.sqlschema</semanticResources>
     <semanticResources>iriLibrary.fieldrules</semanticResources>
     <semanticResources>saved-example/employee-list.scl</semanticResources>
-    <semanticResources>saved-example/metadata/departments.ddf</semanticResources>
-    <semanticResources>saved-example/metadata/employees.ddf</semanticResources>
-    <semanticResources>saved-example/metadata/job_history.ddf</semanticResources>
     <semanticResources>saved-example/SCOTT_DEPARTMENTS.fcl</semanticResources>
     <semanticResources>saved-example/SCOTT_EMPLOYEES.fcl</semanticResources>
     <semanticResources>saved-example/SCOTT_JOB_HISTORY.fcl</semanticResources>
     <semanticResources>saved-example/new_batch.flow</semanticResources>
     <semanticResources>saved-example/new_batch_ODBCToODBC.sourcetargetdata</semanticResources>
+    <semanticResources>metadata/departments.ddf</semanticResources>
+    <semanticResources>metadata/employees.ddf</semanticResources>
+    <semanticResources>metadata/job_history.ddf</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_Qg7UsH8QEeS3lsbTIVcyAA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_3aWEob2NEeeQBNBNXzfXGw" name="Employees Transform Mapping Diagram" representation="_3aZWsCV3EeWPL6uQpjLhZA">

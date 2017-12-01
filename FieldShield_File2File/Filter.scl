@@ -7,12 +7,12 @@
 
 
 /INFILE=EligData_PREM_1404021501.txt
-    /PROCESS=RECORD
-    /ALIAS=EligData_PREM_1404021501
-    /SPECIFICATION=metadata/Field1EP.ddf
+	/PROCESS=RECORD
+	/ALIAS=EligData_PREM_1404021501
+	/SPECIFICATION=metadata/Field1EP.ddf
 
 /SORT
 
-/OUTFILE=EPrecs
-    /PROCESS=RECORD
-    /INCLUDE WHERE ispattern("EP.*")
+/OUTFILE=EPrecs.txt
+	/PROCESS=RECORD
+	/INCLUDE WHERE ispattern("EP.*")

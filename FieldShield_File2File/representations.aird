@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:scl="http://www.iri.com/lang/Scl" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_gG4bYDxiEeaRycD7c90nJg" version="8.1.0">
-  <models xmi:type="scl:Model" href="MaskEPs.fcl#/"/>
-  <models xmi:type="ddf:Ddf" href="metadata/EP_metadata.ddf#/"/>
-  <models xmi:type="ddf:Ddf" href="metadata/Field1EP.ddf#/"/>
-  <models xmi:type="scl:Model" href="new_job.scl#/"/>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_gG4bYDxiEeaRycD7c90nJg" version="11.1.6.201706261600">
+  <semanticResources>MaskEPs.fcl</semanticResources>
+  <semanticResources>metadata/EP_metadata.ddf</semanticResources>
+  <semanticResources>metadata/Field1EP.ddf</semanticResources>
+  <semanticResources>Filter.scl</semanticResources>
 </viewpoint:DAnalysis>

@@ -1549,10 +1549,10 @@
         <loadTypeValue loadTypeValue="TRUNCATE"/>
       </factOptions>
       <factOptions xsi:type="fACTIni:DdfFile">
-        <ddfFileValue fileName="..\ddf\orders.ddf"/>
+        <ddfFileValue fileName="..\metadata\orders.ddf"/>
       </factOptions>
       <factOptions xsi:type="fACTIni:CtlFile">
-        <ctlFileValue fileName="..\ddf\orders.ctl"/>
+        <ctlFileValue fileName="orders.ctl"/>
       </factOptions>
       <factOptions xsi:type="fACTIni:LogFile">
         <logFileValue fileName="..\LogFiles\orders.log"/>

@@ -3,8 +3,8 @@
   <flowlets name="stockjoin.scl">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_In_..\InputFiles\nyse-a"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="stockjoin.scl" iriJob="stockjoin.scl">
-      <inputDatas name="In_..\InputFiles\nyse-a" inputConnections="Start_To_In_..\InputFiles\nyse-a">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\InputFiles\nyse-a" fileName="..\InputFiles\nyse-a">
+      <inputDatas name="In_..\InputFiles\nyse-a.txt" inputConnections="Start_To_In_..\InputFiles\nyse-a">
+        <dataInfo xsi:type="flow:FileDataInfo" name="..\InputFiles\nyse-a.txt" fileName="..\InputFiles\nyse-a.txt">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -506,7 +506,6 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
-            <fieldAttributes xsi:type="ddf:Xdef" string="/Trades/Buy@Client"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -527,7 +526,6 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
-            <fieldAttributes xsi:type="ddf:Xdef" string="/Trades/Buy/Symbol"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -548,7 +546,6 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
-            <fieldAttributes xsi:type="ddf:Xdef" string="/Trades/Buy/Shares"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
         </dataInfo>
