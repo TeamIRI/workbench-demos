@@ -4,7 +4,6 @@
     <semanticResources>JoinExamples/CDC.scl</semanticResources>
     <semanticResources>JoinExamples/FlowBatch.flow</semanticResources>
     <semanticResources>JoinExamples/SCOTT.DM_JOB_TYPES.fcl</semanticResources>
-    <semanticResources>JoinExamples/stockjoin.scl</semanticResources>
     <semanticResources>iriFieldRuleLibrary.fieldrules</semanticResources>
     <semanticResources>Batch2/FlowBatch.flow</semanticResources>
     <semanticResources>Batch2/SCOTT.DM_COMPANIES.fcl</semanticResources>

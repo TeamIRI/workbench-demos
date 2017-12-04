@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:scl="http://www.iri.com/lang/Scl" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_TObFwDxjEeaRycD7c90nJg" selectedViews="_TXN1YDxjEeaRycD7c90nJg" version="8.1.0">
-  <models xmi:type="scl:Model" href="graphs/grades.rcl#/"/>
-  <models xmi:type="ddf:Ddf" href="metadata/report.ddf#/"/>
-  <models xmi:type="scl:Model" href="script/ChileRUT.rcl#/"/>
-  <models xmi:type="scl:Model" href="script/MexicoIFE.rcl#/"/>
-  <models xmi:type="scl:Model" href="script/USTelNo.rcl#/"/>
-  <models xmi:type="scl:Model" href="script/newCreateSet.rcl#/"/>
-  <models xmi:type="scl:Model" href="script/test-report.rcl#/"/>
-  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_TXN1YDxjEeaRycD7c90nJg" initialized="true">
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_TObFwDxjEeaRycD7c90nJg" selectedViews="_TXN1YDxjEeaRycD7c90nJg" version="11.1.6.201706261600">
+  <semanticResources>metadata/report.ddf</semanticResources>
+  <semanticResources>script/ChileRUT.rcl</semanticResources>
+  <semanticResources>script/MexicoIFE.rcl</semanticResources>
+  <semanticResources>script/USTelNo.rcl</semanticResources>
+  <semanticResources>script/newCreateSet.rcl</semanticResources>
+  <semanticResources>script/test-report.rcl</semanticResources>
+  <semanticResources>grades/grades.rcl</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_TXN1YDxjEeaRycD7c90nJg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
   </ownedViews>
 </viewpoint:DAnalysis>

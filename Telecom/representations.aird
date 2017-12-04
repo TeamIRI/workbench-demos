@@ -784,7 +784,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MA-ppm1VEeeMydmI8OdBow" name="Change_Directory" outgoingEdges="_MA-psW1VEeeMydmI8OdBow" incomingEdges="_MA-prm1VEeeMydmI8OdBow" width="6" height="6" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MA-ppm1VEeeMydmI8OdBow" name="Change-Directory" outgoingEdges="_MA-psW1VEeeMydmI8OdBow" incomingEdges="_MA-prm1VEeeMydmI8OdBow" width="6" height="6" resizeKind="NSEW">
         <target xmi:type="flow:ChangeDirectoryBlock" href="Telecom.flow#//@flowlets.0/@blocks.1"/>
         <semanticElements xmi:type="flow:ChangeDirectoryBlock" href="Telecom.flow#//@flowlets.0/@blocks.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -796,7 +796,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_ChangeDirectory']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MA-pqG1VEeeMydmI8OdBow" name="Wait_for_Files" outgoingEdges="_MA-pt21VEeeMydmI8OdBow" incomingEdges="_MA-ptG1VEeeMydmI8OdBow" width="-1" height="-1" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MA-pqG1VEeeMydmI8OdBow" name="Wait-for-Files" outgoingEdges="_MA-pt21VEeeMydmI8OdBow" incomingEdges="_MA-ptG1VEeeMydmI8OdBow" width="-1" height="-1" resizeKind="NSEW">
         <target xmi:type="flow:WaitFiles" href="Telecom.flow#//@flowlets.0/@blocks.3"/>
         <semanticElements xmi:type="flow:WaitFiles" href="Telecom.flow#//@flowlets.0/@blocks.3"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -808,7 +808,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Wait']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MA-pqm1VEeeMydmI8OdBow" name="Wait_for_Files" outgoingEdges="_MA-pvW1VEeeMydmI8OdBow" incomingEdges="_MA-pum1VEeeMydmI8OdBow" width="-1" height="-1" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MA-pqm1VEeeMydmI8OdBow" name="Wait-for-Files" outgoingEdges="_MA-pvW1VEeeMydmI8OdBow" incomingEdges="_MA-pum1VEeeMydmI8OdBow" width="-1" height="-1" resizeKind="NSEW">
         <target xmi:type="flow:WaitFiles" href="Telecom.flow#//@flowlets.0/@blocks.7"/>
         <semanticElements xmi:type="flow:WaitFiles" href="Telecom.flow#//@flowlets.0/@blocks.7"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -820,7 +820,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Wait']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MA-prG1VEeeMydmI8OdBow" name="Wait_for_Files" outgoingEdges="_MA-pw21VEeeMydmI8OdBow" incomingEdges="_MA-pwG1VEeeMydmI8OdBow" width="-1" height="-1" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_MA-prG1VEeeMydmI8OdBow" name="Wait-for-Files" outgoingEdges="_MA-pw21VEeeMydmI8OdBow" incomingEdges="_MA-pwG1VEeeMydmI8OdBow" width="-1" height="-1" resizeKind="NSEW">
         <target xmi:type="flow:WaitFiles" href="Telecom.flow#//@flowlets.0/@blocks.9"/>
         <semanticElements xmi:type="flow:WaitFiles" href="Telecom.flow#//@flowlets.0/@blocks.9"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

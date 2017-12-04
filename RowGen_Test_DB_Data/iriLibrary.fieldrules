@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <fieldrules:FieldRuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:fieldrules="http://fieldrules/1.0">
   <catalogs name="RowGenFlowWizard">
-    <matchers name="CoName" rule="Companies" dataClassLibrary="C:/IRI/CoSort95/workbench/workspace/RowGen_Test_DB_Data">
+    <matchers name="CoName" dataClassLibrary="C:/IRI/CoSort95/workbench/workspace/RowGen_Test_DB_Data">
       <matcherDetails details=".*COMPANY_NAME"/>
     </matchers>
   </catalogs>
@@ -12,25 +12,8 @@
     <properties fieldRulePropertyType="NAME" value="PSEUDO_${FIELDNAME}"/>
     <properties fieldRulePropertyType="SET" value="C:\IRI\CoSort95\sets\names\names_male_first.set"/>
   </rules>
-  <rules name="sdfsdf" editor="randomWizard">
-    <properties fieldRulePropertyType="NAME" value="RAND_${FIELDNAME}"/>
-    <properties fieldRulePropertyType="RANDOM" value="true"/>
-    <properties fieldRulePropertyType="MINSIZE" value="0"/>
-    <properties fieldRulePropertyType="MAXSIZE" value="0"/>
-    <properties fieldRulePropertyType="DATATYPE" value="ASCII"/>
-  </rules>
-  <rules name="Companies" editor="setFileWizard">
-    <properties fieldRulePropertyType="SET" value="ANY &quot;C:/IRI/CoSort95/workbench/workspace/RowGen_Test_DB_Data/RowGen.SETfiles/companynames.set&quot; DEFAULT = &quot;&quot;"/>
-  </rules>
-  <rules name="coname" editor="setFileWizard">
-    <properties fieldRulePropertyType="SET" value="ANY &quot;C:/IRI/CoSort95/workbench/workspace/RowGen_Test_DB_Data/RowGen.SETfiles/companynames.set&quot; DEFAULT = &quot;&quot;"/>
-  </rules>
-  <rules name="CoName2" editor="setFileWizard">
-    <properties fieldRulePropertyType="SET" value="ANY &quot;C:/IRI/CoSort95/workbench/workspace/RowGen_Test_DB_Data/RowGen.SETfiles/companynames.set&quot; DEFAULT = &quot;&quot;"/>
-  </rules>
   <rules name="SetRule" editor="setFileWizard">
     <properties fieldRulePropertyType="SET" value="&quot;compound_data_values.set&quot; SELECT=ANY"/>
     <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
   </rules>
 </fieldrules:FieldRuleLibrary>
-

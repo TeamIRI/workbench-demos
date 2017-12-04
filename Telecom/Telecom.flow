@@ -2,7 +2,7 @@
 <flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="Telecom.bat">
   <flowlets name="Telecom">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_Change_Directory"/>
-    <blocks xsi:type="flow:ChangeDirectoryBlock" name="Change_Directory" outputConnections="Change_Directory_To_In_REF-TRUNK.csv" inputConnections="Start_To_Change_Directory" directory="C:\IRI\CoSort95\workbench\workspace\Telecom"/>
+    <blocks xsi:type="flow:ChangeDirectoryBlock" name="Change-Directory" outputConnections="Change_Directory_To_In_REF-TRUNK.csv" inputConnections="Start_To_Change_Directory" directory="C:/IRI/CoSort95/workbench/workspace/Telecom"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="Sort_CDR1.scl" iriJob="Sort_CDR1.scl">
       <inputDatas name="In_INP-MSC1-2015032001.csv" inputConnections="Wait_for_Files_To_In_INP-MSC1-2015032001.csv">
         <dataInfo xsi:type="flow:FileDataInfo" name="Multi" fileName="C:/IRI/CoSort95/workbench/workspace/Telecom/inputs/INP-MSC1-2015032000.csv, C:/IRI/CoSort95/workbench/workspace/Telecom/inputs/INP-MSC2-2015032000.csv, C:/IRI/CoSort95/workbench/workspace/Telecom/inputs/INP-MSC1-2015032001.csv">
@@ -1197,7 +1197,7 @@
         </transformAction>
       </transformData>
     </blocks>
-    <blocks xsi:type="flow:WaitFiles" name="Wait_for_Files" outputConnections="Wait_for_Files_To_In_REF-PREFIX.csv" inputConnections="Out_REF-TRUNK.set_To_Wait_for_Files" waitInSeconds="3">
+    <blocks xsi:type="flow:WaitFiles" name="Wait-for-Files" outputConnections="Wait_for_Files_To_In_REF-PREFIX.csv" inputConnections="Out_REF-TRUNK.set_To_Wait_for_Files" waitInSeconds="3">
       <fileNames>REF-TRUNK.set</fileNames>
     </blocks>
     <blocks xsi:type="flow:TransformMappingBlock" name="Sort_CDR2.scl" iriJob="Sort_CDR2.scl">
@@ -2059,8 +2059,8 @@
           </fields>
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
-       <sectionOptions xsi:type="scl:OutputMode" scl:outputModeType="/APPEND"/>
-       <sectionOptions xsi:type="scl:Include">
+        <sectionOptions xsi:type="scl:OutputMode" outputModeType="/APPEND"/>
+        <sectionOptions xsi:type="scl:Include">
           <compoundExpression>
             <relationalExpression>
               <lValue>
@@ -2770,7 +2770,7 @@
         </transformAction>
       </transformData>
     </blocks>
-    <blocks xsi:type="flow:WaitFiles" name="Wait_for_Files" outputConnections="Wait_for_Files_To_In_REF-TARIFF.csv" inputConnections="Out_REF-PREFIX.set_To_Wait_for_Files" waitInSeconds="3">
+    <blocks xsi:type="flow:WaitFiles" name="Wait-for-Files" outputConnections="Wait_for_Files_To_In_REF-TARIFF.csv" inputConnections="Out_REF-PREFIX.set_To_Wait_for_Files" waitInSeconds="3">
       <fileNames>REF-PREFIX.set</fileNames>
     </blocks>
     <blocks xsi:type="flow:TransformMappingBlock" name="Sort_Tariff.scl" iriJob="Sort_Tariff.scl">
@@ -3002,7 +3002,7 @@
         </transformAction>
       </transformData>
     </blocks>
-    <blocks xsi:type="flow:WaitFiles" name="Wait_for_Files" outputConnections="Wait_for_Files_To_In_INP-MSC1-2015032001.csv" inputConnections="Out_REF-TARIFF.set_To_Wait_for_Files" waitInSeconds="3">
+    <blocks xsi:type="flow:WaitFiles" name="Wait-for-Files" outputConnections="Wait_for_Files_To_In_INP-MSC1-2015032001.csv" inputConnections="Out_REF-TARIFF.set_To_Wait_for_Files" waitInSeconds="3">
       <fileNames>REF-TARIFF.set</fileNames>
     </blocks>
     <blocks xsi:type="flow:TransformMappingBlock" name="Sort_CDR3.scl" iriJob="Sort_CDR3.scl">
@@ -3906,7 +3906,7 @@
           </fields>
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
-        <sectionOptions xsi:type="scl:OutputMode" scl:outputModeType="/APPEND"/>
+        <sectionOptions xsi:type="scl:OutputMode" outputModeType="/APPEND"/>
         <sectionOptions xsi:type="scl:Include">
           <compoundExpression>
             <relationalExpression>
