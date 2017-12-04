@@ -13,7 +13,6 @@
 
 
 /OUTFILE=stdout # sends output to the console (or pipe) 
-
 	/PROCESS=RECORD
 	/HEADREC="\n   Principle     APR     Months     Monthly Payment\n\n"
 	/FIELD=(PRINCIPLE, TYPE=CURRENCY, POSITION=1, SIZE=12)

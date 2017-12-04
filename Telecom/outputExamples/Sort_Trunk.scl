@@ -5,7 +5,7 @@
 # 
 
 
-/INFILE=C:/IRI/CoSort95/workbench/workspace/Telecom/inputs/REF-TRUNK.csv
+/INFILE=../inputs/REF-TRUNK.csv
 	/ALIAS=REF_TRUNK
 	/PROCESS=CSV
 	/FIELD=(TRUNK_NAME, TYPE=ASCII, POSITION=1, SEPARATOR=",")

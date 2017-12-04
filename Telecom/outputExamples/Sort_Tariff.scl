@@ -5,7 +5,7 @@
 # 
 
 
-/INFILE=C:/IRI/CoSort95/workbench/workspace/Telecom/inputs/REF-TARIFF.csv
+/INFILE=../inputs/REF-TARIFF.csv
 	/ALIAS=REF_TARIFF
 	/PROCESS=CSV
 	/FIELD=(TRUNK_CARRIER, TYPE=ASCII, POSITION=1, SEPARATOR=",")

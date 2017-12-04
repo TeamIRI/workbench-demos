@@ -1,6 +1,5 @@
 @echo off
 C:
-cd "C:/IRI/CoSort95/workbench/workspace/Flow/DM_project"
 sqlplus scott/tiger@localhost < DisableRelatedFK.sql
 fact SCOTT_DM_COMPANIES.ini
 sortcl /SPECIFICATION=SCOTT_DM_COMPANIES.scl

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="new_batch">
   <flowlets name="new_batch">
-    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_CD-saved-example"/>
-    <blocks xsi:type="flow:ChangeDirectoryBlock" name="CD-saved-example" outputConnections="CD-saved-example_To_DisableRelatedFK.sql" inputConnections="Start_To_CD-saved-example" directory="C:/IRI/CoSort95/workbench/workspace/FieldShield_Multi_Table/saved-example"/>
-    <blocks xsi:type="flow:OracleSQLExec" name="DisableRelatedFK.sql" outputConnections="DisableRelatedFK.sql_To_SCOTT_EMPLOYEES.fcl" inputConnections="CD-saved-example_To_DisableRelatedFK.sql" command="sqlplus" statementFile="DisableRelatedFK.sql" statementText="ALTER TABLE DEPARTMENTS DISABLE CONSTRAINT DEPT_MGR_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES DISABLE CONSTRAINT EMP_DEPT_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES DISABLE CONSTRAINT EMP_MGNR_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY DISABLE CONSTRAINT JHIST_DEPT_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY DISABLE CONSTRAINT JHIST_EMP_FK;&#xD;&#xA;exit&#xA;">
+    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_DisableRelatedFK.sql"/>
+    <blocks xsi:type="flow:OracleSQLExec" name="DisableRelatedFK.sql" outputConnections="DisableRelatedFK.sql_To_SCOTT_EMPLOYEES.fcl" inputConnections="Start_To_DisableRelatedFK.sql" command="sqlplus" statementFile="DisableRelatedFK.sql" statementText="ALTER TABLE DEPARTMENTS DISABLE CONSTRAINT DEPT_MGR_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES DISABLE CONSTRAINT EMP_DEPT_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES DISABLE CONSTRAINT EMP_MGNR_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY DISABLE CONSTRAINT JHIST_DEPT_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY DISABLE CONSTRAINT JHIST_EMP_FK;&#xD;&#xA;exit&#xA;">
       <dbDataInfo name="Multiple_Tables" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" delimiter="&#x9;"/>
     </blocks>
     <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_EMPLOYEES.fcl" iriJob="SCOTT_EMPLOYEES.fcl">
@@ -240,18 +239,18 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
-          <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0"/>
-          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.6" refTableName="JOBS">
+          <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0"/>
+          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.6" refTableName="JOBS">
             <refFieldNames>DEPARTMENT_ID</refFieldNames>
             <refFieldNames>EMPLOYEE_SID</refFieldNames>
             <refFieldNames>JOB_ID</refFieldNames>
           </constraints>
-          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.6" refTableName="JOBS">
+          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.6" refTableName="JOBS">
             <refFieldNames>DEPARTMENT_ID</refFieldNames>
             <refFieldNames>EMPLOYEE_SID</refFieldNames>
             <refFieldNames>JOB_ID</refFieldNames>
           </constraints>
-          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.6" refTableName="JOBS">
+          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.6" refTableName="JOBS">
             <refFieldNames>DEPARTMENT_ID</refFieldNames>
             <refFieldNames>EMPLOYEE_SID</refFieldNames>
             <refFieldNames>JOB_ID</refFieldNames>
@@ -563,28 +562,28 @@
         <sectionOptions xsi:type="scl:OutputMode"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
       </outputDatas>
-      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0"/>
-      <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1"/>
-      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2"/>
-      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3"/>
-      <mappings name="PHONE_NUMBER_To_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4"/>
-      <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.5"/>
-      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.6"/>
-      <mappings name="SALARY_To_SALARY" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.7"/>
-      <mappings name="COMMISSION_PCT_To_COMMISSION_PCT" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.8"/>
-      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.9"/>
-      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.10"/>
-      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
-      <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.1"/>
-      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.2"/>
-      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.3"/>
-      <mappings name="PHONE_NUMBER_To_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.4"/>
-      <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.5"/>
-      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.6"/>
-      <mappings name="SALARY_To_SALARY" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.7"/>
-      <mappings name="COMMISSION_PCT_To_COMMISSION_PCT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.8"/>
-      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.9"/>
-      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.10"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_NUMBER_To_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="SALARY_To_SALARY" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="COMMISSION_PCT_To_COMMISSION_PCT" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.10"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_NUMBER_To_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="SALARY_To_SALARY" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.7"/>
+      <mappings name="COMMISSION_PCT_To_COMMISSION_PCT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.8"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.9"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.10"/>
       <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_EMPLOYEES">
         <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
           <fields xsi:type="scl:AdvancedField">
@@ -908,12 +907,12 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="LOCATION_ID"/>
           </fields>
-          <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0"/>
-          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" refTableName="LOCATIONS">
+          <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0"/>
+          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.3" refTableName="LOCATIONS">
             <refFieldNames>EMPLOYEE_SID</refFieldNames>
             <refFieldNames>LOCATION_ID</refFieldNames>
           </constraints>
-          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" refTableName="LOCATIONS">
+          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.3" refTableName="LOCATIONS">
             <refFieldNames>EMPLOYEE_SID</refFieldNames>
             <refFieldNames>LOCATION_ID</refFieldNames>
           </constraints>
@@ -1044,14 +1043,14 @@
         <sectionOptions xsi:type="scl:OutputMode"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
       </outputDatas>
-      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0"/>
-      <mappings name="DEPARTMENT_NAME_To_DEPARTMENT_NAME" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1"/>
-      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2"/>
-      <mappings name="LOCATION_ID_To_LOCATION_ID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3"/>
-      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.0"/>
-      <mappings name="DEPARTMENT_NAME_To_DEPARTMENT_NAME" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.1"/>
-      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.2"/>
-      <mappings name="LOCATION_ID_To_LOCATION_ID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="DEPARTMENT_NAME_To_DEPARTMENT_NAME" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="LOCATION_ID_To_LOCATION_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="DEPARTMENT_NAME_To_DEPARTMENT_NAME" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="LOCATION_ID_To_LOCATION_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.3"/>
       <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_DEPARTMENTS">
         <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
           <fields xsi:type="scl:AdvancedField">
@@ -1249,18 +1248,18 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:ExtField" string="DEPARTMENT_ID"/>
           </fields>
-          <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.0 //@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.1"/>
-          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.3" refTableName="JOBS">
+          <constraints xsi:type="flow:PrimaryKey" fields="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0 //@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.1"/>
+          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" refTableName="JOBS">
             <refFieldNames>DEPARTMENT_ID</refFieldNames>
             <refFieldNames>EMPLOYEE_SID</refFieldNames>
             <refFieldNames>JOB_ID</refFieldNames>
           </constraints>
-          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.3" refTableName="JOBS">
+          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" refTableName="JOBS">
             <refFieldNames>DEPARTMENT_ID</refFieldNames>
             <refFieldNames>EMPLOYEE_SID</refFieldNames>
             <refFieldNames>JOB_ID</refFieldNames>
           </constraints>
-          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.3" refTableName="JOBS">
+          <constraints xsi:type="flow:ForeignKey" field="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" refTableName="JOBS">
             <refFieldNames>DEPARTMENT_ID</refFieldNames>
             <refFieldNames>EMPLOYEE_SID</refFieldNames>
             <refFieldNames>JOB_ID</refFieldNames>
@@ -1413,16 +1412,16 @@
         <sectionOptions xsi:type="scl:OutputMode"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
       </outputDatas>
-      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0"/>
-      <mappings name="START_DATE_To_START_DATE" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1"/>
-      <mappings name="END_DATE_To_END_DATE" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2"/>
-      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3"/>
-      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4"/>
-      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.0"/>
-      <mappings name="START_DATE_To_START_DATE" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.1"/>
-      <mappings name="END_DATE_To_END_DATE" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.2"/>
-      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.3"/>
-      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="START_DATE_To_START_DATE" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="END_DATE_To_END_DATE" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="START_DATE_To_START_DATE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="END_DATE_To_END_DATE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.4"/>
       <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_JOB_HISTORY">
         <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
           <fields xsi:type="scl:AdvancedField">
@@ -1536,12 +1535,11 @@
     <blocks xsi:type="flow:OracleSQLExec" name="EnableRelatedFK.sql" inputConnections="SCOTT_JOB_HISTORY.fcl_To_EnableRelatedFK.sql" command="sqlplus" statementFile="EnableRelatedFK.sql" statementText="ALTER TABLE DEPARTMENTS ENABLE CONSTRAINT DEPT_MGR_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES ENABLE CONSTRAINT EMP_DEPT_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES ENABLE CONSTRAINT EMP_MGNR_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY ENABLE CONSTRAINT JHIST_DEPT_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY ENABLE CONSTRAINT JHIST_EMP_FK;&#xD;&#xA;exit&#xA;">
       <dbDataInfo name="Multiple_Tables" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" delimiter="&#x9;"/>
     </blocks>
-    <connections name="Start_To_CD-saved-example" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1"/>
-    <connections name="CD-saved-example_To_DisableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.1" endBlock="//@flowlets.0/@blocks.2"/>
-    <connections name="DisableRelatedFK.sql_To_SCOTT_EMPLOYEES.fcl" startBlock="//@flowlets.0/@blocks.2" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
-    <connections name="Out_SCOTT_EMPLOYEES_To_SCOTT_DEPARTMENTS.fcl" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.4/@inputDatas.0"/>
-    <connections name="Out_SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl" startBlock="//@flowlets.0/@blocks.4/@outputDatas.0" endBlock="//@flowlets.0/@blocks.5/@inputDatas.0"/>
-    <connections name="SCOTT_JOB_HISTORY.fcl_To_EnableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.5/@outputDatas.0" endBlock="//@flowlets.0/@blocks.6"/>
+    <connections name="DisableRelatedFK.sql_To_SCOTT_EMPLOYEES.fcl" startBlock="//@flowlets.0/@blocks.1" endBlock="//@flowlets.0/@blocks.2/@inputDatas.0"/>
+    <connections name="Out_SCOTT_EMPLOYEES_To_SCOTT_DEPARTMENTS.fcl" startBlock="//@flowlets.0/@blocks.2/@outputDatas.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
+    <connections name="Out_SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.4/@inputDatas.0"/>
+    <connections name="SCOTT_JOB_HISTORY.fcl_To_EnableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.4/@outputDatas.0" endBlock="//@flowlets.0/@blocks.5"/>
+    <connections name="Start_To_DisableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1"/>
   </flowlets>
   <Lineage>
     <sourceTargetData extractor="ODBC" loader="ODBC" sourceDSN="Oracle" sourceDTPName="Oracle" separator="&#x9;" targetDSN="Oracle" targetDTPName="Oracle" targetSchema="SCOTT" outputMode="CREATE" disableFKOnLoad="true" reenableFKOnPostLoad="true">

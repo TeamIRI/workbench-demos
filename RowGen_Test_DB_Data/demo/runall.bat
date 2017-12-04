@@ -1,4 +1,3 @@
-cd "C:\IRI\CoSort95\workbench\workspace\RowGen_Test_DB_Data\DFdemo"
 sortcl /spec=COMPANY_NUMBER.UNIQUE.rcl
 sortcl /spec=DPSID.UNIQUE.rcl
 sortcl /spec=EE_SEQ.UNIQUE.rcl

@@ -1,6 +1,5 @@
 @echo off
 C:
-cd "C:\IRI\CoSort95\workbench\workspace\Subsetting\saved-example"
 sqlplus scott/tiger@XE < DisableRelatedFK.sql
 sortcl /SPECIFICATION=saved-example_script0.scl
 sortcl /SPECIFICATION=saved-example_script1.scl
