@@ -1,6 +1,6 @@
 rem @echo off
 C:
-cd "C:\IRI\CoSort95\workbench\workspace\FieldShield_Multi_Table\restore-ssn-data"
+rem cd "C:\IRI\CoSort95\workbench\workspace\FieldShield_Multi_Table\restore-ssn-data"
 sqlplus scott/tiger@localhost < DisableRelatedFK.sql
 sortcl /SPECIFICATION=HR.REGIONS.scl
 sortcl /SPECIFICATION=HR.LOCATIONS.scl
