@@ -13,22 +13,24 @@
     <semanticResources>Demo/JOB_CODE.UNIQUE.rcl</semanticResources>
     <semanticResources>Demo/OU_CODE.UNIQUE.rcl</semanticResources>
     <semanticResources>Demo/TestDataFlow.flow</semanticResources>
-    <semanticResources>iriLibrary.fieldrules</semanticResources>
     <semanticResources>iriLibrary.patterns</semanticResources>
     <semanticResources>ERD/DM.sqlschema</semanticResources>
-    <semanticResources>demo/COMPANY_NUMBER.UNIQUE.rcl</semanticResources>
-    <semanticResources>demo/DM_COMPANIES.rcl</semanticResources>
-    <semanticResources>demo/DM_DCTA_EVALUATIONS.rcl</semanticResources>
-    <semanticResources>demo/DM_EMPLOYEES.rcl</semanticResources>
-    <semanticResources>demo/DM_EMPLOYEE_EVALUATIONS.rcl</semanticResources>
-    <semanticResources>demo/DM_JOB_TYPES.rcl</semanticResources>
-    <semanticResources>demo/DM_ORGANIZATIONAL_UNITS.rcl</semanticResources>
-    <semanticResources>demo/DPSID.UNIQUE.rcl</semanticResources>
-    <semanticResources>demo/EE_SEQ.UNIQUE.rcl</semanticResources>
-    <semanticResources>demo/EMPLOYEE_ID.UNIQUE.rcl</semanticResources>
-    <semanticResources>demo/JOB_CODE.UNIQUE.rcl</semanticResources>
-    <semanticResources>demo/OU_CODE.UNIQUE.rcl</semanticResources>
-    <semanticResources>demo/SSN.UNIQUE.rcl</semanticResources>
+    <semanticResources>iriLibrary.fieldrules</semanticResources>
+    <semanticResources>saved-example/COMPANY_NUMBER_UNIQUE.rcl</semanticResources>
+    <semanticResources>saved-example/DPSID_UNIQUE.rcl</semanticResources>
+    <semanticResources>saved-example/EE_SEQ_UNIQUE.rcl</semanticResources>
+    <semanticResources>saved-example/EMPLOYEE_ID_UNIQUE.rcl</semanticResources>
+    <semanticResources>saved-example/JOB_CODE_UNIQUE.rcl</semanticResources>
+    <semanticResources>saved-example/OU_CODE_UNIQUE.rcl</semanticResources>
+    <semanticResources>saved-example/SCOTT_DM_COMPANIES.rcl</semanticResources>
+    <semanticResources>saved-example/SCOTT_DM_EMPLOYEES.rcl</semanticResources>
+    <semanticResources>saved-example/SCOTT_DM_JOB_TYPES.rcl</semanticResources>
+    <semanticResources>saved-example/SCOTT_DM_ORGANIZATIONAL_UNITS.rcl</semanticResources>
+    <semanticResources>saved-example/SSN_UNIQUE.rcl</semanticResources>
+    <semanticResources>saved-example/saved-example.flow</semanticResources>
+    <semanticResources>saved-example/saved-exampleRandom_ToOracle%20-%20sqlldr.sourcetargetdata</semanticResources>
+    <semanticResources>saved-example/SCOTT_DM_DCTA_EVALUATIONS.rcl</semanticResources>
+    <semanticResources>saved-example/SCOTT_DM_EMPLOYEE_EVALUATIONS.rcl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_Flfv0DhtEeSeTeh9ww4VJw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_NOdc8L2pEeeQA9BNXzfXGw" name="Block Mapping Diagram" representation="_Fm-WgDhtEeSeTeh9ww4VJw">
