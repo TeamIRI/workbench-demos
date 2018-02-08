@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_-wSYkFA1EeaOzfOC6l9bJA" version="8.1.0">
-  <models xmi:type="ddf:Ddf" href="metadata/persons.ddf#/"/>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Ddf="http://www.iri.com/lang/Ddf" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_-wSYkFA1EeaOzfOC6l9bJA" version="11.1.6.201706261600">
+  <models xmi:type="Ddf:Ddf" href="metadata/persons.ddf#/"/>
 </viewpoint:DAnalysis>
