@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
-<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="patient_enc">
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="patient_enc">
   <flowlets name="patient_enc">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_In_SCOTT.PATIENT_RECORD"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="patient_enc.scl" iriJob="patient_enc.scl">
-      <inputDatas name="In_SCOTT.PATIENT_RECORD" inputConnections="Start_To_In_SCOTT.PATIENT_RECORD">
+      <inputDatas name="SCOTT.PATIENT_RECORD" inputConnections="Start_To_In_SCOTT.PATIENT_RECORD">
         <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.PATIENT_RECORD" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="PATIENT_RECORD" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -219,7 +219,7 @@
         <sectionOptions xsi:type="scl:Alias" alias="patient_record"/>
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
       </inputDatas>
-      <outputDatas name="Out_SCOTT.PATIENT_RECORD_ENCRYPTED">
+      <outputDatas name="SCOTT.PATIENT_RECORD_ENCRYPTED">
         <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.PATIENT_RECORD_ENCRYPTED" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="PATIENT_RECORD_ENCRYPTED" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -501,7 +501,7 @@
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
         <sectionOptions xsi:type="scl:OutputMode"/>
       </outputDatas>
-      <outputDatas name="Out_stdout">
+      <outputDatas name="stdout">
         <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1300,4 +1300,3 @@
     <connections name="Start_To_In_SCOTT.PATIENT_RECORD" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1/@inputDatas.0"/>
   </flowlets>
 </flow:FlowBatch>
-

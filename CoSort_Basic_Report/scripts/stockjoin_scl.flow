@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="stockjoin">
-  <flowlets name="stockjoin.scl">
-    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_In_..\InputFiles\nyse-a"/>
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="stockjoin">
+  <flowlets name="stockjoin">
+    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_..\InputFiles\nyse-a.txt"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="stockjoin.scl" iriJob="stockjoin.scl">
-      <inputDatas name="In_..\InputFiles\nyse-a.txt" inputConnections="Start_To_In_..\InputFiles\nyse-a">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\InputFiles\nyse-a.txt" fileName="..\InputFiles\nyse-a.txt">
+      <inputDatas name="nyse-a.txt" inputConnections="Start_To_..\InputFiles\nyse-a.txt">
+        <dataInfo xsi:type="flow:FileDataInfo" name="nyse-a.txt" fileName="../InputFiles/nyse-a.txt">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -13,7 +13,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Issue"/>
+                          <value xsi:type="ddf:FieldName" name="ISSUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -21,9 +21,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -33,7 +33,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="SYMBOL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -41,10 +41,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Size" size="3"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -54,7 +53,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="LastTrade"/>
+                          <value xsi:type="ddf:FieldName" name="LASTTRADE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -62,11 +61,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Size" size="5"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -76,7 +74,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Volume"/>
+                          <value xsi:type="ddf:FieldName" name="VOLUME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -84,9 +82,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -96,7 +94,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Change"/>
+                          <value xsi:type="ddf:FieldName" name="CHANGE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -104,11 +102,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -118,7 +115,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Percent"/>
+                          <value xsi:type="ddf:FieldName" name="PERCENT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -126,18 +123,17 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
-            <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
         <sectionOptions xsi:type="scl:Alias" alias="nyse-a"/>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </inputDatas>
-      <inputDatas name="In_..\InputFiles\buys.csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\InputFiles\buys.csv" fileName="..\InputFiles\buys.csv">
+      <inputDatas name="buys.csv">
+        <dataInfo xsi:type="flow:FileDataInfo" name="buys.csv" fileName="../InputFiles/buys.csv">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -146,7 +142,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Shares"/>
+                          <value xsi:type="ddf:FieldName" name="SHARES"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -154,10 +150,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
             <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -167,7 +163,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="SYMBOL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -175,10 +171,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
             <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -188,7 +184,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Client"/>
+                          <value xsi:type="ddf:FieldName" name="CLIENT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -196,16 +192,17 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
             <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <comment>
               <comments>### Action Statement - Sort &amp; Join ####&#xD;
 </comments>
             </comment>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="CSV"/>
         <sectionOptions xsi:type="scl:Alias" alias="buys"/>
         <sectionOptions xsi:type="scl:Inskip" number="1">
           <comment>
@@ -213,9 +210,8 @@
 </comments>
           </comment>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </inputDatas>
-      <outputDatas name="Out_stdout">
+      <outputDatas name="stdout">
         <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -225,7 +221,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="New_balance"/>
+                          <value xsi:type="ddf:FieldName" name="NEW_BALANCE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -233,34 +229,35 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="currency"/>
             <fieldAttributes xsi:type="ddf:Position" number1="50"/>
             <fieldAttributes xsi:type="ddf:Size" size="14"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="currency"/>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Headrec" headrec="                                                    -----------&#xA;"/>
         <sectionOptions xsi:type="scl:Summary">
+          <fieldName name="NEW_BALANCE"/>
           <comment>
             <comments>expression&#xD;
 </comments>
             <comments>/OUTFILE=..\Targets\TradingA	# detail record format&#xD;
 </comments>
           </comment>
-          <fieldName name="New_balance"/>
           <expression>
             <relationalExpression>
               <lValue>
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="nyse-a.LastTrade"/>
+                      <value xsi:type="ddf:FieldName" name="NYSE-A.LASTTRADE"/>
                     </expr>
                   </lValue>
                   <multiplicationUnaryExpression>
                     <rValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="buys.Shares"/>
+                        <value xsi:type="ddf:FieldName" name="BUYS.SHARES"/>
                       </expr>
                     </rValue>
                   </multiplicationUnaryExpression>
@@ -269,9 +266,8 @@
             </relationalExpression>
           </expression>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_stdout">
+      <outputDatas name="stdout">
         <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -281,7 +277,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="buys.Client"/>
+                          <value xsi:type="ddf:FieldName" name="BUYS.CLIENT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -289,9 +285,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="17"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -301,7 +297,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="buys.Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="BUYS.SYMBOL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -309,9 +305,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="20"/>
             <fieldAttributes xsi:type="ddf:Size" size="5"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -321,7 +317,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="NYSE-A.SYMBOL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -329,9 +325,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="28"/>
             <fieldAttributes xsi:type="ddf:Size" size="5"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -341,7 +337,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="buys.Shares"/>
+                          <value xsi:type="ddf:FieldName" name="BUYS.SHARES"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -349,9 +345,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="35"/>
             <fieldAttributes xsi:type="ddf:Size" size="5"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -361,7 +357,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.LastTrade"/>
+                          <value xsi:type="ddf:FieldName" name="NYSE-A.LASTTRADE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -369,10 +365,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="45"/>
             <fieldAttributes xsi:type="ddf:Size" size="5"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -382,7 +378,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="product"/>
+                          <value xsi:type="ddf:FieldName" name="PRODUCT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -390,8 +386,8 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="54"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="54"/>
             <fieldAttributes xsi:type="scl:IfStatement">
               <condition>
                 <relationalExpression>
@@ -399,7 +395,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="NYSE-A.SYMBOL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -409,7 +405,7 @@
                       <lValue>
                         <lValue>
                           <expr xsi:type="scl:Unary">
-                            <value xsi:type="ddf:FieldName" name="buys.Symbol"/>
+                            <value xsi:type="ddf:FieldName" name="BUYS.SYMBOL"/>
                           </expr>
                         </lValue>
                       </lValue>
@@ -439,13 +435,13 @@
                       <lValue>
                         <lValue>
                           <expr xsi:type="scl:Unary">
-                            <value xsi:type="ddf:FieldName" name="nyse-a.LastTrade"/>
+                            <value xsi:type="ddf:FieldName" name="NYSE-A.LASTTRADE"/>
                           </expr>
                         </lValue>
                         <multiplicationUnaryExpression>
                           <rValue>
                             <expr xsi:type="scl:Unary">
-                              <value xsi:type="ddf:FieldName" name="buys.Shares"/>
+                              <value xsi:type="ddf:FieldName" name="BUYS.SHARES"/>
                             </expr>
                           </rValue>
                         </multiplicationUnaryExpression>
@@ -464,7 +460,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Sequencer"/>
+                          <value xsi:type="ddf:FieldName" name="SEQUENCER"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -472,22 +468,20 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="66"/>
             <fieldAttributes xsi:type="ddf:Size" size="4"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <comment>
-              <comments>discussion reference nb&#xD;
-</comments>
               <comments>### Output File 2 - Data Interchange Format ####&#xD;
 </comments>
             </comment>
           </fields>
         </dataInfo>
-        <sectionOptions xsi:type="scl:Headrec" headrec="Client             Symbol         Shares  LastTrade  Shares*LT     Ln.&#xA;&#xA;"/>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
+        <sectionOptions xsi:type="scl:Headrec" headrec="Client             Symbol         Shares  LastTrade  Shares*LT     Ln.&#xA;&#xA;"/>
       </outputDatas>
-      <outputDatas name="Out_..\Targets\TradingA.xml">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\Targets\TradingA.xml" fileName="..\Targets\TradingA.xml">
+      <outputDatas name="TradingA.xml">
+        <dataInfo xsi:type="flow:FileDataInfo" name="TradingA.xml" fileName="../Targets/TradingA.xml">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -496,7 +490,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Client"/>
+                          <value xsi:type="ddf:FieldName" name="BUYS.CLIENT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -504,9 +498,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="XDEF" string="/Trades/Buy@Client"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -516,7 +511,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="BUYS.SYMBOL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -524,9 +519,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="XDEF" string="/Trades/Buy/Symbol"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -536,7 +532,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Shares"/>
+                          <value xsi:type="ddf:FieldName" name="BUYS.SHARES"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -544,9 +540,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="XDEF" string="/Trades/Buy/Shares"/>
           </fields>
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="XML"/>
@@ -557,7 +554,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="nyse-a.LastTrade"/>
+                      <value xsi:type="ddf:FieldName" name="NYSE-A.LASTTRADE"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -580,7 +577,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="buys.Shares"/>
+                        <value xsi:type="ddf:FieldName" name="BUYS.SHARES"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -602,11 +599,18 @@
           <comment>
             <comments>### Output File 3 - Web-ready Summary Report ####&#xD;
 </comments>
+            <comments>### Output File 3 - HTML Format ####&#xD;
+</comments>
           </comment>
         </sectionOptions>
       </outputDatas>
-      <outputDatas name="Out_..\Targets\TradingA.htm">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\Targets\TradingA.htm" fileName="..\Targets\TradingA.htm">
+      <outputDatas name="TradingA.htm">
+        <dataInfo xsi:type="flow:FileDataInfo" name="TradingA.htm" fileName="../Targets/TradingA.htm">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;/FONT>&lt;B>&lt;/TD>&#xA;&lt;TD align=right>&lt;B>&lt;U>&lt;FONT SIZE=+2>&lt;FONT COLOR='GREEN'>"/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -615,7 +619,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="New_balance"/>
+                          <value xsi:type="ddf:FieldName" name="NEW_BALANCE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -623,32 +627,29 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Size" size="15"/>
             <fieldAttributes xsi:type="ddf:DataType" name="CURRENCY"/>
+            <fieldAttributes xsi:type="ddf:Size" size="15"/>
             <comment>
               <comments>field derived in prior output spec!&#xD;
 </comments>
             </comment>
           </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;/FONT>&lt;/U>&lt;/B>&lt;/TD>&#xA;&lt;/TR>&#xA;"/>
+            </data>
+          </fields>
         </dataInfo>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;/FONT>&lt;B>&lt;/TD>&#xA;&lt;TD align=right>&lt;B>&lt;U>&lt;FONT SIZE=+2>&lt;FONT COLOR='GREEN'>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;/FONT>&lt;/U>&lt;/B>&lt;/TD>&#xA;&lt;/TR>&#xA;"/>
-          </data>
-        </sectionOptions>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Summary">
+          <fieldName name="NEW_BALANCE"/>
           <where>
             <relationalExpression>
               <lValue>
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="symbol"/>
+                      <value xsi:type="ddf:FieldName" name="SYMBOL"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -666,20 +667,19 @@
               </additiveExpressionX>
             </relationalExpression>
           </where>
-          <fieldName name="New_balance"/>
           <expression>
             <relationalExpression>
               <lValue>
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="nyse-a.LastTrade"/>
+                      <value xsi:type="ddf:FieldName" name="NYSE-A.LASTTRADE"/>
                     </expr>
                   </lValue>
                   <multiplicationUnaryExpression>
                     <rValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="buys.Shares"/>
+                        <value xsi:type="ddf:FieldName" name="BUYS.SHARES"/>
                       </expr>
                     </rValue>
                   </multiplicationUnaryExpression>
@@ -688,30 +688,16 @@
             </relationalExpression>
           </expression>
         </sectionOptions>
-        <sectionOptions xsi:type="scl:Footrec" footrec="&lt;/TABLE>&lt;BR>&#xA;Created on &lt;/B>%s.&#xD;              &lt;HR>&lt;/BODY>&#xA;&lt;/HTML>">
+        <sectionOptions xsi:type="scl:Footrec" footrec="&lt;/TABLE>&lt;BR>&#xA;Created on &lt;/B>%s.              &lt;HR>&lt;/BODY>&#xA;&lt;/HTML>">
           <variables>AMERICAN_DATE</variables>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\Targets\TradingA.htm">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\Targets\TradingA.htm" fileName="..\Targets\TradingA.htm">
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="buys.Client"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <outputDatas name="TradingA.htm">
+        <dataInfo xsi:type="flow:FileDataInfo" name="TradingA.htm" fileName="../Targets/TradingA.htm">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;TR>&#xA;&lt;TD>&lt;I>"/>
+            </data>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -721,7 +707,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="buys.Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="BUYS.CLIENT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -730,9 +716,40 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;/B>&lt;/TD>&#xA;&lt;TD align=right>&lt;FONT COLOR='BLUE'>"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="BUYS.SYMBOL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;/TD>&#xA;&lt;/TR>&#xA;"/>
+            </data>
           </fields>
         </dataInfo>
-        <sectionOptions xsi:type="scl:Headrec" headrec="&lt;HTML>&lt;HEAD>&#xA;&lt;TITLE>HTML produced by SORTCL &#xD;              &lt;/TITLE>&#xA;&lt;/HEAD>&#xA;&lt;BODY> &#xD; &#x9;&#x9;&lt;H2>&lt;FONT COLOR='RED'>Trading Summary&#xD;                &lt;/H2>&#xA;&lt;TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>&#xA;"/>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
+        <sectionOptions xsi:type="scl:Headrec" headrec="&lt;HTML>&lt;HEAD>&#xA;&lt;TITLE>HTML produced by SORTCL               &lt;/TITLE>&#xA;&lt;/HEAD>&#xA;&lt;BODY> &#xD; &#x9;&#x9;&lt;H2>&lt;FONT COLOR='RED'>Trading Summary                &lt;/H2>&#xA;&lt;TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>&#xA;"/>
         <sectionOptions xsi:type="scl:Omit">
           <compoundExpression>
             <relationalExpression>
@@ -740,7 +757,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="Symbol"/>
+                      <value xsi:type="ddf:FieldName" name="SYMBOL"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -787,46 +804,30 @@
 </comments>
           </comment>
         </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;TR>&#xA;&lt;TD>&lt;I>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;/B>&lt;/TD>&#xA;&lt;TD align=right>&lt;FONT COLOR='BLUE'>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;/TD>&#xA;&lt;/TR>&#xA;"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <mappings name="Issue_To_nyse-a.Issue" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
-      <mappings name="Symbol_To_nyse-a.Symbol" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
-      <mappings name="LastTrade_To_nyse-a.LastTrade" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
-      <mappings name="Volume_To_nyse-a.Volume" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
-      <mappings name="Change_To_nyse-a.Change" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
-      <mappings name="Percent_To_nyse-a.Percent" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
-      <mappings name="Shares_To_buys.Shares" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
-      <mappings name="Symbol_To_buys.Symbol" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7"/>
-      <mappings name="Client_To_buys.Client" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8"/>
-      <mappings name="buys.Client_To_buys.Client" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.0"/>
-      <mappings name="nyse-a.Symbol_To_buys.Symbol" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.1"/>
-      <mappings name="buys.Symbol_To_buys.Symbol" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.1"/>
-      <mappings name="nyse-a.Symbol_To_nyse-a.Symbol" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.2"/>
-      <mappings name="buys.Symbol_To_nyse-a.Symbol" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.2"/>
-      <mappings name="buys.Shares_To_buys.Shares" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.3"/>
-      <mappings name="nyse-a.LastTrade_To_nyse-a.LastTrade" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
-      <mappings name="buys.Client_To_Client" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.0"/>
-      <mappings name="nyse-a.Symbol_To_Symbol" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.1"/>
-      <mappings name="buys.Symbol_To_Symbol" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.1"/>
-      <mappings name="buys.Shares_To_Shares" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.2"/>
-      <mappings name="buys.Client_To_buys.Client" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.0"/>
-      <mappings name="nyse-a.Symbol_To_buys.Symbol" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.1"/>
-      <mappings name="buys.Symbol_To_buys.Symbol" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.1"/>
+      <mappings name="ISSUE_To_nyse-a.ISSUE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="SYMBOL_To_nyse-a.SYMBOL" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="LASTTRADE_To_nyse-a.LASTTRADE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="VOLUME_To_nyse-a.VOLUME" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="CHANGE_To_nyse-a.CHANGE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="PERCENT_To_nyse-a.PERCENT" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="SHARES_To_buys.SHARES" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="SYMBOL_To_buys.SYMBOL" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="CLIENT_To_buys.CLIENT" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="buys.CLIENT_To_BUYS.CLIENT" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.0"/>
+      <mappings name="buys.SYMBOL_To_BUYS.SYMBOL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.1"/>
+      <mappings name="nyse-a.SYMBOL_To_NYSE-A.SYMBOL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.2"/>
+      <mappings name="buys.SHARES_To_BUYS.SHARES" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.3"/>
+      <mappings name="nyse-a.LASTTRADE_To_NYSE-A.LASTTRADE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
+      <mappings name="nyse-a.SYMBOL_To_PRODUCT" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="nyse-a.LASTTRADE_To_PRODUCT" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="buys.SHARES_To_PRODUCT" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="buys.SYMBOL_To_PRODUCT" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="buys.CLIENT_To_BUYS.CLIENT" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.0"/>
+      <mappings name="buys.SYMBOL_To_BUYS.SYMBOL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.1"/>
+      <mappings name="buys.SHARES_To_BUYS.SHARES" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.2"/>
+      <mappings name="buys.CLIENT_To_BUYS.CLIENT" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.1"/>
+      <mappings name="buys.SYMBOL_To_BUYS.SYMBOL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.3"/>
       <jobControlOptions xsi:type="scl:Monitor" number="1"/>
       <jobControlOptions xsi:type="scl:Statistics" statisticsOn="true" filename="..\JobStats\tradinga.stat"/>
       <jobControlOptions xsi:type="scl:WarningsOff" warningsOff="true">
@@ -835,8 +836,16 @@
 </comments>
         </comment>
       </jobControlOptions>
+      <comments>
+        <comments>## CoSort Copyright 2013 IRI, Inc. ###&#xD;
+</comments>
+        <comments>## Sort Control Language (SortCL) Program ###&#xD;
+</comments>
+        <comments>## Job Controls Phase ###&#xD;
+</comments>
+      </comments>
       <transformData xsi:type="flow:JoinAction" name="Join" transformActionType="/JOIN">
-        <dataInfo xsi:type="flow:InternalDataInfo">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Join">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -845,7 +854,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.Issue"/>
+                          <value xsi:type="ddf:FieldName" name="nyse-a.ISSUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -853,9 +862,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -865,7 +874,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="nyse-a.SYMBOL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -873,10 +882,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Size" size="3"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -886,7 +894,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.LastTrade"/>
+                          <value xsi:type="ddf:FieldName" name="nyse-a.LASTTRADE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -894,11 +902,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Size" size="5"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -908,7 +915,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.Volume"/>
+                          <value xsi:type="ddf:FieldName" name="nyse-a.VOLUME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -916,9 +923,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -928,7 +935,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.Change"/>
+                          <value xsi:type="ddf:FieldName" name="nyse-a.CHANGE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -936,11 +943,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -950,7 +956,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="nyse-a.Percent"/>
+                          <value xsi:type="ddf:FieldName" name="nyse-a.PERCENT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -958,11 +964,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="6"/>
-            <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -972,7 +977,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="buys.Shares"/>
+                          <value xsi:type="ddf:FieldName" name="buys.SHARES"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -980,10 +985,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
             <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -993,7 +998,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="buys.Symbol"/>
+                          <value xsi:type="ddf:FieldName" name="buys.SYMBOL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1001,10 +1006,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
             <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1014,7 +1019,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="buys.Client"/>
+                          <value xsi:type="ddf:FieldName" name="buys.CLIENT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1022,10 +1027,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
             <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <comment>
               <comments>### Action Statement - Sort &amp; Join ####&#xD;
 </comments>
@@ -1038,7 +1043,7 @@
               <lValue>
                 <lValue>
                   <expr xsi:type="scl:Unary">
-                    <value xsi:type="ddf:FieldName" name="nyse-a.Symbol"/>
+                    <value xsi:type="ddf:FieldName" name="NYSE-A.SYMBOL"/>
                   </expr>
                 </lValue>
               </lValue>
@@ -1048,7 +1053,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="buys.Symbol"/>
+                      <value xsi:type="ddf:FieldName" name="BUYS.SYMBOL"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -1063,7 +1068,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="nyse-a.Symbol"/>
+                      <value xsi:type="ddf:FieldName" name="NYSE-A.SYMBOL"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -1073,7 +1078,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="buys.Symbol"/>
+                        <value xsi:type="ddf:FieldName" name="BUYS.SYMBOL"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -1090,6 +1095,6 @@
         </transformAction>
       </transformData>
     </blocks>
-    <connections name="Start_To_In_..\InputFiles\nyse-a" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1/@inputDatas.0"/>
+    <connections name="Start_To_..\InputFiles\nyse-a.txt" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1/@inputDatas.0"/>
   </flowlets>
 </flow:FlowBatch>

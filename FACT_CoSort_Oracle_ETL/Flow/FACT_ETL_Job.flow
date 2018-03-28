@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:fACTIni="http://www.iri.com/lang/base/ini/FACTIni" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="FACT_ETL.bat">
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="FACT_ETL.bat">
   <flowlets name="FACT_ETL">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_In_SCOTT.ORDERS"/>
     <blocks xsi:type="flow:CommandLine" name="SCOTT.ORDERS.ctl" inputConnections="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" command="sqlldr scott/tiger control=orders.ctl DIRECT=TRUE"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="orders_sorted.scl" iriJob="orders_sorted.scl">
-      <inputDatas name="In_stdin" inputConnections="Out_stdout_To_In_stdin">
+      <inputDatas name="stdin" inputConnections="Out_stdout_To_In_stdin">
         <dataInfo xsi:type="flow:FileDataInfo" name="stdin" fileName="stdin">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -110,7 +110,7 @@
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </inputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders1.csv">
+      <outputDatas name="orders1.csv">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders1.csv" fileName="..\TargetFiles\orders1.csv">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -216,7 +216,7 @@
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders2.out">
+      <outputDatas name="orders2.out">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders2.out" fileName="..\TargetFiles\orders2.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -346,6 +346,7 @@
           </data>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Summary">
+          <fieldName name="total_emp"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -359,12 +360,11 @@
               </lValue>
             </relationalExpression>
           </break>
-          <fieldName name="total_emp"/>
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders3.out">
+      <outputDatas name="orders3.out">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -425,6 +425,7 @@
           </data>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Summary">
+          <fieldName name="total_freight"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -438,12 +439,11 @@
               </lValue>
             </relationalExpression>
           </break>
-          <fieldName name="total_freight"/>
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders3.out">
+      <outputDatas name="orders3.out">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -537,7 +537,7 @@
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders3.out">
+      <outputDatas name="orders3.out">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -629,7 +629,7 @@
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders4.out">
+      <outputDatas name="orders4.out">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders4.out" fileName="..\TargetFiles\orders4.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -754,6 +754,7 @@
         </dataInfo>
         <sectionOptions xsi:type="scl:Headrec" headrec="Employee           Customer                            Max      Min    Avg  Ct&#xA;------------------------------------------------------------------------------&#xA;"/>
         <sectionOptions xsi:type="scl:Summary" summaryType="/MAXIMUM">
+          <fieldName name="max_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -767,10 +768,10 @@
               </lValue>
             </relationalExpression>
           </break>
-          <fieldName name="max_FREIGHT"/>
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Summary" summaryType="/MINIMUM">
+          <fieldName name="min_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -784,10 +785,10 @@
               </lValue>
             </relationalExpression>
           </break>
-          <fieldName name="min_FREIGHT"/>
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Summary" summaryType="/AVERAGE">
+          <fieldName name="avg_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -801,10 +802,10 @@
               </lValue>
             </relationalExpression>
           </break>
-          <fieldName name="avg_FREIGHT"/>
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Count">
+          <fieldName name="ct_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -818,11 +819,10 @@
               </lValue>
             </relationalExpression>
           </break>
-          <fieldName name="ct_FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders5.out">
+      <outputDatas name="orders5.out">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders5.out" fileName="..\TargetFiles\orders5.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -855,7 +855,7 @@
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders6.html">
+      <outputDatas name="orders6.html">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -903,6 +903,7 @@
           </data>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Summary">
+          <fieldName name="total_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -916,12 +917,11 @@
               </lValue>
             </relationalExpression>
           </break>
-          <fieldName name="total_FREIGHT"/>
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders6.html">
+      <outputDatas name="orders6.html">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -987,6 +987,7 @@
           </data>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Summary">
+          <fieldName name="tot_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -1000,7 +1001,6 @@
               </lValue>
             </relationalExpression>
           </break>
-          <fieldName name="tot_FREIGHT"/>
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Footrec" footrec="&lt;/TABLE>&lt;BR>&#xA;By &lt;B>%s&lt;/B> as of %s.&lt;HR>&lt;/BODY>&#xA;&lt;/HTML>">
@@ -1009,7 +1009,7 @@
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\orders6.html">
+      <outputDatas name="orders6.html">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1171,7 +1171,7 @@
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="Out_..\TargetFiles\table_output.dat" outputConnections="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl">
+      <outputDatas name="table_output.dat" outputConnections="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl">
         <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\table_output.dat" fileName="..\TargetFiles\table_output.dat">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1458,7 +1458,7 @@
       </transformData>
     </blocks>
     <blocks xsi:type="flow:FactProvider" name="orders.ini" factConfig="orders.ini">
-      <inputDatas name="In_SCOTT.ORDERS" inputConnections="Start_To_In_SCOTT.ORDERS">
+      <inputDatas name="SCOTT.ORDERS" inputConnections="Start_To_In_SCOTT.ORDERS">
         <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.ORDERS" DSN="FACT_NoDNS" DTPName="FACT_NoDTP" providerName="Oracle" database="ORACLE" hostName="FACT_NoHost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="ORDERS" delimiter=",">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1481,7 +1481,7 @@
           </fields>
         </dataInfo>
       </inputDatas>
-      <outputDatas name="Out_stdout" outputConnections="Out_stdout_To_In_stdin">
+      <outputDatas name="stdout" outputConnections="Out_stdout_To_In_stdin">
         <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1505,61 +1505,6 @@
         </dataInfo>
       </outputDatas>
       <mappings name="*_To_*" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
-      <factOptions xsi:type="fACTIni:Query">
-        <comment>
-          <comments>unencumbered unload (faster)</comments>
-          <comments>CoSort's SortCL selects and transforms in the file system (faster)</comments>
-        </comment>
-        <query sValue="* FROM SCOTT.ORDERS"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:OutFile">
-        <comment>
-          <comments>extracted output records are streamed from FACT</comments>
-          <comments>and into SortCL, where its /INFILE=stdin</comments>
-        </comment>
-        <outFileValue fileName="stdout"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:OutFormat">
-        <outFormatValue outFormatValue="VARIABLE"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:FrameField">
-        <comment>
-          <comments>Specifes the name of the column to be framed</comments>
-        </comment>
-        <frameFieldValue columnName="EMPLOYEE"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:FrameChar">
-        <comment>
-          <comments>Framed column to be enclosed in double quotes</comments>
-        </comment>
-        <frameCharValue charValue="&quot;"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:LoadTable">
-        <loadTableValue sValue="orders_sorted"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:LoadType">
-        <comment>
-          <comments>sorted records from table orders will be</comments>
-          <comments>inserted into this newly-created table</comments>
-          <comments>CTLFILE=orders.ctl</comments>
-          <comments>This file must be pre-created outside an ETL shell script</comments>
-          <comments>because SQL*Loader requires a named piped (stdout.dat) that</comments>
-          <comments>FACT does not automatically assume (CoSort not always present).</comments>
-        </comment>
-        <loadTypeValue loadTypeValue="TRUNCATE"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:DdfFile">
-        <ddfFileValue fileName="..\metadata\orders.ddf"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:CtlFile">
-        <ctlFileValue fileName="orders.ctl"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:LogFile">
-        <logFileValue fileName="..\LogFiles\orders.log"/>
-      </factOptions>
-      <factOptions xsi:type="fACTIni:DateFormat">
-        <dateFormatValue sValue="YYYY/MM/DD"/>
-      </factOptions>
     </blocks>
     <connections name="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" startBlock="//@flowlets.0/@blocks.2/@outputDatas.10" endBlock="//@flowlets.0/@blocks.1"/>
     <connections name="Start_To_In_SCOTT.ORDERS" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>

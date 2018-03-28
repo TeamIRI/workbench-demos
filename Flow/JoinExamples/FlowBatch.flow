@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/Scl" name="TestBatch" description="Comment&#xA;">
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="TestBatch" description="Comment&#xA;">
   <flowlets name="Join_Example">
     <blocks xsi:type="flow:StartBlock" name="Start"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT.DM_JOB_TYPES.fcl" iriJob="SCOTT.DM_JOB_TYPES.fcl">
