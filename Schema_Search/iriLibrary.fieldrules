@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fieldrules:FieldRuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:fieldrules="http://fieldrules/1.0">
+  <rules name="MaskingRule" editor="charReplWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="replace_chars(${FIELDNAME}, &quot;*&quot;, 5, 6)"/>
+    <properties fieldRulePropertyType="NAME" value="MASK_${FIELDNAME}"/>
+  </rules>
+</fieldrules:FieldRuleLibrary>
+

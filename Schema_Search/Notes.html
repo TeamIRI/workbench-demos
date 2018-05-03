@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2018. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Schema Pattern Search</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Schema Pattern Search</h1>
+
+  <p>This demonstrates the use of the schema pattern search and 
+  pattern search data class association.</p>
+
+  <h2>Schema Pattern Search Wizard:</h2>
+  
+  <p>The Schema Pattern Search will create three text files. 
+  One is <em>tableSearchResults.log</em> that records all tables that
+  are successfully searched. The <em>columnSearchResults.csr</em>
+  records all columns that contain data that match the patterns.
+  The <em>schema_pattern_search.txt</em> (or custom named file on the setup 
+  page) contains the column name and data that matched.
+
+  <ol>
+    <li style="margin-bottom: 10px;">Right-click on the 
+    <strong>SCOTT</strong>
+    schema in the Data Source Explorer(DSE) and select
+    <strong>IRI</strong> &gt; <strong>Schema Pattern Search
+    </strong>.</li>
+
+    <li style="margin-bottom: 10px;">On the Setup page, enter the
+    location to save the result files. Click
+    <strong>Next</strong>.</li>
+
+    <li style="margin-bottom: 10px;">The Schema Selection page 
+    shows that one schema is selected. Click
+    <strong>Next</strong>. 
+    
+    <li style="margin-bottom: 10px;">The Data Type Selection page 
+    is where you select the type of data to search.
+    The text-type data types are pre-selected. Leave the defaults. 
+    Click <strong>Next</strong>. 
+    
+    <li style="margin-bottom: 10px;">The Pattern page is where the
+    patterns to be used are added. Click <strong>Create</strong>
+    and then <strong>Browse Common Patterns</strong>. Double-click
+    <strong>CREDIT_CARD</strong> at the top and then <strong>OK</strong>.
+    
+    <li style="margin-bottom: 10px;">Click <strong>Finish</strong>.
+    
+    <li style="margin-bottom: 10px;">The search results are displayed.
+    
+  </ol>
+      
+  <h2>Associate Pattern Search to Data Class Wizard:</h2>
+  
+  <ol>  
+    <li style="margin-bottom: 10px;">        
+	Right-click on <em>columnSearchResults.csr</em> and select
+	<strong>IRI</strong> &gt; <strong>Associate Pattern Search 
+	to Data Class</strong>.
+	
+    <li style="margin-bottom: 10px;">        
+	On the Setup page, leave the defaults. Click <strong>Next</strong>.
+	
+    <li style="margin-bottom: 10px;">        
+	The Data Class Selection page is where the data classes are assigned.
+	In the Data Class drop down next to SCOTT.PERSONS.CREDIT_CARD, 
+	select <strong>CREDIT_CARD</strong>. Click <strong>Finish</strong>.
+
+  </ol>
+  
+  <h2>Form Editor:</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">        
+    This will create/append a data class library
+    with the selected sources included. The form editor that opens
+    also includes the data class and map for the selection in the wizard.</li>
+    
+    <li style="margin-bottom: 10px;">        
+	Next to <strong>CREDIT_CARD</strong> in the Field Rule drop down,  
+	select the <strong>MaskingRule</strong>. Now, this rule will be available 
+	every time this data source is used in the Multi Table wizards.   
+  </ol>
+
+</body>
+</html>
