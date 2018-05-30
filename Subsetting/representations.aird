@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:SQLTables="http:///org/eclipse/datatools/modelbase/sql/tables.ecore" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis xmi:id="_WoVQgIQ8EeecbplobMQj_w" selectedViews="_ZMTrIIaXEeevGO0_4Jhhkw _pJHzUIjrEeeHL91KJjfxIg" version="11.1.6.201706261600">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:SQLTables="http:///org/eclipse/datatools/modelbase/sql/tables.ecore" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_WoVQgIQ8EeecbplobMQj_w" selectedViews="_ZMTrIIaXEeevGO0_4Jhhkw _pJHzUIjrEeeHL91KJjfxIg" version="12.1.0.201708031200">
     <semanticResources>saved-example/saved-example_script0.scl</semanticResources>
     <semanticResources>saved-example/saved-example_script1.scl</semanticResources>
     <semanticResources>saved-example/saved-example_script2.scl</semanticResources>
@@ -10,18 +10,23 @@
     <semanticResources>saved-example/saved-example_script6.scl</semanticResources>
     <semanticResources>saved-example/saved-example_script7.scl</semanticResources>
     <semanticResources>SALE_DIM.sqlschema</semanticResources>
+    <semanticResources>saved-example/saved-example.flow</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_ZMTrIIaXEeevGO0_4Jhhkw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_aBBXwGQhEeii-dnmMp7mlg" name="saved-example" repPath=".representations/FlowDiagram__ZfsMUGQhEeii-dnmMp7mlg.srm#_ZfsMUGQhEeii-dnmMp7mlg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
+        <target xmi:type="flow:FlowBatch" href="saved-example/saved-example.flow#saved-example"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_pJHzUIjrEeeHL91KJjfxIg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_rrsdwIjrEeeHL91KJjfxIg" name="Entity Relational Diagram" representation="_rrsdwYjrEeeHL91KJjfxIg">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_rrsdwIjrEeeHL91KJjfxIg" name="Entity Relational Diagram" repPath="#_1RD28GQgEeii-dnmMp7mlg">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']"/>
         <target xmi:type="SQLSchema:Schema" href="SALE_DIM.sqlschema#/10"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <diagram:DSemanticDiagram xmi:id="_rrsdwYjrEeeHL91KJjfxIg" name="Entity Relational Diagram">
+  <diagram:DSemanticDiagram xmi:id="_rrsdwYjrEeeHL91KJjfxIg" name="Entity Relational Diagram" uid="_1RD28GQgEeii-dnmMp7mlg">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rrsdwojrEeeHL91KJjfxIg" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_rrsdw4jrEeeHL91KJjfxIg"/>
     </ownedAnnotationEntries>
