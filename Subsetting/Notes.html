@@ -53,40 +53,51 @@
     <strong>SALE_DIM</strong> and select <strong>IRI</strong> -&gt;
     <strong> New Subset Job</strong>.
     
-    <li style="margin-bottom: 10px;">The defaults on the <strong>Define Destination</strong>
-    page are acceptable. Click <strong>Next</strong>.
+    <li style="margin-bottom: 10px;">On the <strong>Define Destination</strong>
+    page, select the <strong>Loader</strong>. To output to a tab delimited file,
+    leave the Loader blank. Click <strong>Next</strong>.
     
     <li style="margin-bottom: 10px;">The <strong>SALE_DIM</strong> table is already selected
-    on the <strong>Table Selection</strong> page so click <strong>Next</strong>.
+    on the <strong>Data Extraction Stage</strong> page so click <strong>Next</strong>.
     
-    <li style="margin-bottom: 10px;">The <strong>Sort</strong> page  is where you specify 
-    the size and sort order of the subset. For example, to get a subset of the 100 highest 
+    <li style="margin-bottom: 10px;">The <strong>Sort</strong> page is where you specify 
+    the sort order of the subset. For example, to get a subset of the highest 
     quantity sold levels, you would sort on the quantity sold field in descending order
     (as in this example). If you want the rows selected randomly, however, leave the 
     Key Fields list blank. Double click the <strong>QTY_SOLD</strong> field. Click 
     <strong>Edit Key</strong> and select <strong>Descending</strong> next to 
     <strong>Direction</strong>. Click <strong>OK</strong>. Click <strong>Next</strong>.
     
-    <li style="margin-bottom: 10px;">The <strong>Data Target</strong> page has two functions.
-    The first is to name the output targets for the subset. The second allows you to view the
-    relations of your source table.
+    <li style="margin-bottom: 10px;">
+    The <strong>Options</strong> page is where you specify the size of the subset and 
+    any filters. The size and filter is applied to the source table.
     
-    <li style="margin-bottom: 10px;">Specify the target type by clicking 
-    <strong>Output to table</strong>.
+    <li style="margin-bottom: 10px;">
+    The <strong>Data Loading</strong> page will display if you have selected a loader. It 
+    has two functions. The first is to name the output targets for the subset. 
+    The second allows you to view the relations of your source table.
+    
+    <li style="margin-bottom: 10px;">Specify the Oracle <strong>Connection Profile</strong> and
+    the SCOTT <strong>Schema Name</strong>. The <strong>Output mode</strong> remains CREATE
+    because the tables are truncated if they already exist.
     
     <li style="margin-bottom: 10px;">Under <strong>Naming options</strong> define the details 
     of the target tables. The tables are going to be loaded back into the same 
-    schema so the default schema selection is acceptable. We want to prefix the table names so 
-    select that option. In <strong>Name entry</strong>, enter <em>SUB_</em> and click 
-    <strong>Set prefix</strong>.
+    schema so we need to change the table names so the source table is not overwritten. 
+    We want to prefix the table names so select that option. In textbox, enter <em>SUB_</em> 
+    and click <strong>Set</strong>.
     
     <li style="margin-bottom: 10px;">In the lower section of the page, the new names of the tables
     have been prepended with the prefix. Selecting a different table in <strong>Original</strong>
     will display the new table name. Click <strong>Next</strong>.
     
-    <li style="margin-bottom: 10px;">On the <strong>Subset Targets</strong> page, you can review 
-    the details of your targets and make necessary changes. The defaults are acceptable so click
-    <strong>Finish</strong>.
+    <li style="margin-bottom: 10px;">
+	On the <strong>Field Modifications Rules</strong> page, you can enter rules to apply to the
+	tables. Care must be taken not to apply a rule to a foreign key which would impact 
+	the results. 
+    
+    <li style="margin-bottom: 10px;">On the <strong>Summary</strong> page, you can review 
+    the details of your job. Click <strong>Finish</strong>.
 
   </ol>
 
