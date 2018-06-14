@@ -844,7 +844,7 @@
         <comments>## Job Controls Phase ###&#xD;
 </comments>
       </comments>
-      <transformData xsi:type="flow:JoinAction" name="Join" transformActionType="/JOIN">
+      <transformData xsi:type="flow:JoinAction" name="Join">
         <dataInfo xsi:type="flow:InternalDataInfo" name="Join">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>

@@ -4,7 +4,7 @@
     <blocks xsi:type="flow:StartBlock" name="Start"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT.DM_JOB_TYPES.fcl" iriJob="SCOTT.DM_JOB_TYPES.fcl">
       <inputDatas name="In_SCOTT.DM_COMPANIES">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DM_COMPANIES" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle" schema="SCOTT" table="DM_COMPANIES">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DM_COMPANIES" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="DM_COMPANIES">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -52,7 +52,7 @@
         <sectionOptions xsi:type="scl:Alias" alias="DM_COMPANIES"/>
       </inputDatas>
       <inputDatas name="In_SCOTT.DM_JOB_TYPES">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DM_JOB_TYPES" DSN="Oracle" DTPName="Oracle" hostName="localhost" providerName="Oracle" instanceName="XE" userName="scott" password="tiger" database="Oracle" schema="SCOTT" table="DM_JOB_TYPES">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DM_JOB_TYPES" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="DM_JOB_TYPES">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -398,25 +398,25 @@
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process"/>
       </outputDatas>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" name="COMPANY_NUMBER_To_DM_COMPANIES.COMPANY_NUMBER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" name="COMPANY_NAME_To_DM_COMPANIES.COMPANY_NAME"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" name="COMPANY_NUMBER_To_DM_JOB_TYPES.COMPANY_NUMBER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" name="JOB_CODE_To_DM_JOB_TYPES.JOB_CODE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" name="DESCRIPTION_To_DM_JOB_TYPES.DESCRIPTION"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" name="JOB_CLASS_CODE_To_DM_JOB_TYPES.JOB_CLASS_CODE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" name="BIGGER_JOB_COMPANY_To_DM_JOB_TYPES.BIGGER_JOB_COMPANY"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" name="BIGGER_JOB_CODE_To_DM_JOB_TYPES.BIGGER_JOB_CODE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" name="SUPER_JOB_COMPANY_To_DM_JOB_TYPES.SUPER_JOB_COMPANY"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9" name="SUPER_JOB_CODE_To_DM_JOB_TYPES.SUPER_JOB_CODE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.10" name="CREATED_BY_To_DM_JOB_TYPES.CREATED_BY"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.11" name="CREATION_DATE_To_DM_JOB_TYPES.CREATION_DATE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.12" name="UPDATED_BY_To_DM_JOB_TYPES.UPDATED_BY"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.11" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.13" name="LAST_UPDATE_DATE_To_DM_JOB_TYPES.LAST_UPDATE_DATE"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0" name="DM_COMPANIES.COMPANY_NUMBER_To_COMPANY_NUMBER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0" name="DM_JOB_TYPES.COMPANY_NUMBER_To_COMPANY_NUMBER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.1" name="DM_COMPANIES.COMPANY_NAME_To_COMPANY_NAME"/>
-      <mappings sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.2" name="DM_JOB_TYPES.JOB_CODE_To_JOB_CODE"/>
-      <transformData xsi:type="flow:JoinAction" name="Join" transformActionType="/JOIN">
+      <mappings name="COMPANY_NUMBER_To_DM_COMPANIES.COMPANY_NUMBER" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="COMPANY_NAME_To_DM_COMPANIES.COMPANY_NAME" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="COMPANY_NUMBER_To_DM_JOB_TYPES.COMPANY_NUMBER" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="JOB_CODE_To_DM_JOB_TYPES.JOB_CODE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="DESCRIPTION_To_DM_JOB_TYPES.DESCRIPTION" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="JOB_CLASS_CODE_To_DM_JOB_TYPES.JOB_CLASS_CODE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="BIGGER_JOB_COMPANY_To_DM_JOB_TYPES.BIGGER_JOB_COMPANY" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="BIGGER_JOB_CODE_To_DM_JOB_TYPES.BIGGER_JOB_CODE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="SUPER_JOB_COMPANY_To_DM_JOB_TYPES.SUPER_JOB_COMPANY" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="SUPER_JOB_CODE_To_DM_JOB_TYPES.SUPER_JOB_CODE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9"/>
+      <mappings name="CREATED_BY_To_DM_JOB_TYPES.CREATED_BY" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.10"/>
+      <mappings name="CREATION_DATE_To_DM_JOB_TYPES.CREATION_DATE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.11"/>
+      <mappings name="UPDATED_BY_To_DM_JOB_TYPES.UPDATED_BY" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.12"/>
+      <mappings name="LAST_UPDATE_DATE_To_DM_JOB_TYPES.LAST_UPDATE_DATE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.11" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.13"/>
+      <mappings name="DM_COMPANIES.COMPANY_NUMBER_To_COMPANY_NUMBER" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="DM_JOB_TYPES.COMPANY_NUMBER_To_COMPANY_NUMBER" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="DM_COMPANIES.COMPANY_NAME_To_COMPANY_NAME" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="DM_JOB_TYPES.JOB_CODE_To_JOB_CODE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.2"/>
+      <transformData xsi:type="flow:JoinAction" name="Join">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -774,8 +774,8 @@
       </transformData>
     </blocks>
     <blocks xsi:type="flow:TransformMappingBlock" name="CDC.scl" iriJob="CDC.scl">
-      <inputDatas name="In_previous">
-        <dataInfo xsi:type="flow:FileDataInfo" name="sources/previous" fileName="sources/previous">
+      <inputDatas name="previous.txt">
+        <dataInfo xsi:type="flow:FileDataInfo" name="previous.txt" fileName="sources/previous.txt">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -792,6 +792,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
           </fields>
@@ -803,7 +804,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -811,6 +812,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
           </fields>
@@ -822,7 +824,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="paid"/>
+                          <value xsi:type="ddf:FieldName" name="PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -830,15 +832,17 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
         <sectionOptions xsi:type="scl:Alias" alias="previous"/>
-        <sectionOptions xsi:type="ddf:Process"/>
       </inputDatas>
-      <inputDatas name="In_current">
-        <dataInfo xsi:type="flow:FileDataInfo" name="sources/current" fileName="sources/current">
+      <inputDatas name="current.txt">
+        <dataInfo xsi:type="flow:FileDataInfo" name="current.txt" fileName="sources/current.txt">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -855,6 +859,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="12"/>
           </fields>
@@ -874,6 +879,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="17"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
           </fields>
@@ -885,7 +891,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -893,6 +899,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="33"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -904,7 +911,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="transdate"/>
+                          <value xsi:type="ddf:FieldName" name="TRANSDATE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -912,9 +919,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="41"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -924,7 +931,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="amount"/>
+                          <value xsi:type="ddf:FieldName" name="AMOUNT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -932,10 +939,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="54"/>
             <fieldAttributes xsi:type="ddf:Size" size="7"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -945,7 +952,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="date_due"/>
+                          <value xsi:type="ddf:FieldName" name="DATE_DUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -953,9 +960,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="63"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -965,7 +972,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="paid"/>
+                          <value xsi:type="ddf:FieldName" name="PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -973,25 +980,170 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="76"/>
             <fieldAttributes xsi:type="ddf:Size" size="7"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
-            <comment>
-              <comments>################################&#xD;
-</comments>
-              <comments>Action (Matching Process) Phase&#xD;
-</comments>
-              <comments>################################&#xD;
-</comments>
-            </comment>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Alias" alias="current"/>
-        <sectionOptions xsi:type="ddf:Process"/>
+        <sectionOptions xsi:type="scl:Condition">
+          <fieldName name="PREV_EXIST"/>
+          <compoundExpression>
+            <relationalExpression>
+              <lValue>
+                <lValue>
+                  <lValue>
+                    <expr xsi:type="scl:Unary">
+                      <value xsi:type="ddf:FieldName" name="PREVIOUS.CHECKSUM"/>
+                    </expr>
+                  </lValue>
+                </lValue>
+              </lValue>
+              <additiveExpressionX relationalOperator="NE">
+                <rValue>
+                  <lValue>
+                    <lValue>
+                      <expr xsi:type="scl:Unary">
+                        <value xsi:type="scl:RepeatNumberString" string=""/>
+                      </expr>
+                    </lValue>
+                  </lValue>
+                </rValue>
+              </additiveExpressionX>
+            </relationalExpression>
+          </compoundExpression>
+        </sectionOptions>
+        <sectionOptions xsi:type="scl:Condition">
+          <fieldName name="PREV_NONEXIST"/>
+          <compoundExpression>
+            <relationalExpression>
+              <lValue>
+                <lValue>
+                  <lValue>
+                    <expr xsi:type="scl:Unary">
+                      <value xsi:type="scl:Function" name="isempty">
+                        <argumentList>
+                          <firstArg>
+                            <relationalExpression>
+                              <lValue>
+                                <lValue>
+                                  <lValue>
+                                    <expr xsi:type="scl:Unary">
+                                      <value xsi:type="ddf:FieldName" name="PREVIOUS.CHECKSUM"/>
+                                    </expr>
+                                  </lValue>
+                                </lValue>
+                              </lValue>
+                            </relationalExpression>
+                          </firstArg>
+                        </argumentList>
+                      </value>
+                    </expr>
+                  </lValue>
+                </lValue>
+              </lValue>
+            </relationalExpression>
+          </compoundExpression>
+        </sectionOptions>
+        <sectionOptions xsi:type="scl:Condition">
+          <fieldName name="CURR_EXIST"/>
+          <compoundExpression>
+            <relationalExpression>
+              <lValue>
+                <lValue>
+                  <lValue>
+                    <expr xsi:type="scl:Unary">
+                      <value xsi:type="ddf:FieldName" name="CURRENT.CHECKSUM"/>
+                    </expr>
+                  </lValue>
+                </lValue>
+              </lValue>
+              <additiveExpressionX relationalOperator="NE">
+                <rValue>
+                  <lValue>
+                    <lValue>
+                      <expr xsi:type="scl:Unary">
+                        <value xsi:type="scl:RepeatNumberString" string="      "/>
+                      </expr>
+                    </lValue>
+                  </lValue>
+                </rValue>
+              </additiveExpressionX>
+            </relationalExpression>
+          </compoundExpression>
+        </sectionOptions>
+        <sectionOptions xsi:type="scl:Condition">
+          <fieldName name="CURR_NONEXIST"/>
+          <compoundExpression>
+            <relationalExpression>
+              <lValue>
+                <lValue>
+                  <lValue>
+                    <expr xsi:type="scl:Unary">
+                      <value xsi:type="scl:Function" name="isempty">
+                        <argumentList>
+                          <firstArg>
+                            <relationalExpression>
+                              <lValue>
+                                <lValue>
+                                  <lValue>
+                                    <expr xsi:type="scl:Unary">
+                                      <value xsi:type="ddf:FieldName" name="CURRENT.CHECKSUM"/>
+                                    </expr>
+                                  </lValue>
+                                </lValue>
+                              </lValue>
+                            </relationalExpression>
+                          </firstArg>
+                        </argumentList>
+                      </value>
+                    </expr>
+                  </lValue>
+                </lValue>
+              </lValue>
+            </relationalExpression>
+          </compoundExpression>
+        </sectionOptions>
+        <sectionOptions xsi:type="scl:Condition">
+          <fieldName name="UPDATE"/>
+          <compoundExpression>
+            <relationalExpression>
+              <lValue>
+                <lValue>
+                  <lValue>
+                    <expr xsi:type="scl:Unary">
+                      <value xsi:type="ddf:FieldName" name="PREVIOUS.CHECKSUM"/>
+                    </expr>
+                  </lValue>
+                </lValue>
+              </lValue>
+              <additiveExpressionX relationalOperator="NE">
+                <rValue>
+                  <lValue>
+                    <lValue>
+                      <expr xsi:type="scl:Unary">
+                        <value xsi:type="ddf:FieldName" name="CURRENT.CHECKSUM"/>
+                      </expr>
+                    </lValue>
+                  </lValue>
+                </rValue>
+              </additiveExpressionX>
+            </relationalExpression>
+          </compoundExpression>
+          <comment>
+            <comments>################################&#xD;
+</comments>
+            <comments>Action (Matching Process) Phase&#xD;
+</comments>
+            <comments>################################&#xD;
+</comments>
+          </comment>
+        </sectionOptions>
       </inputDatas>
-      <outputDatas name="Out_testdeltas.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="testdeltas.out" fileName="testdeltas.out">
+      <outputDatas name="TestDeltas.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="TestDeltas.out" fileName="targets/TestDeltas.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1000,7 +1152,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1008,6 +1160,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -1019,7 +1172,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1027,6 +1180,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="17"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -1038,7 +1192,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1046,6 +1200,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="29"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -1057,7 +1212,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.CONSUMER"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CONSUMER"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1065,6 +1220,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="44"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
           </fields>
@@ -1076,7 +1232,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1084,6 +1240,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="56"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -1095,7 +1252,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="transdate"/>
+                          <value xsi:type="ddf:FieldName" name="TRANSDATE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1115,7 +1272,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="amount"/>
+                          <value xsi:type="ddf:FieldName" name="AMOUNT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1123,8 +1280,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="76"/>
             <fieldAttributes xsi:type="ddf:Size" size="9"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1134,7 +1293,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="date_due"/>
+                          <value xsi:type="ddf:FieldName" name="DATE_DUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1142,9 +1301,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="87"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1154,7 +1313,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="paid"/>
+                          <value xsi:type="ddf:FieldName" name="PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1162,14 +1321,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="98"/>
-            <fieldAttributes xsi:type="ddf:Size" size="7"/>
-            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
-            <comment>
-              <comments>Applying the Condition to Report on the Change Status&#xD;
-</comments>
-            </comment>
+            <fieldAttributes xsi:type="ddf:Position" number1="98"/>
+            <fieldAttributes xsi:type="ddf:Size" size="10"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1179,7 +1334,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="delta_flag"/>
+                          <value xsi:type="ddf:FieldName" name="DELTA_FLAG"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1187,6 +1342,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="110"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
             <fieldAttributes xsi:type="scl:IfStatement">
@@ -1196,7 +1352,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="update"/>
+                          <value xsi:type="ddf:FieldName" name="UPDATE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1208,7 +1364,7 @@
                       <lValue>
                         <lValue>
                           <expr xsi:type="scl:Unary">
-                            <value xsi:type="ddf:FieldName" name="prev_exist"/>
+                            <value xsi:type="ddf:FieldName" name="PREV_EXIST"/>
                           </expr>
                         </lValue>
                       </lValue>
@@ -1221,7 +1377,7 @@
                       <lValue>
                         <lValue>
                           <expr xsi:type="scl:Unary">
-                            <value xsi:type="ddf:FieldName" name="curr_exist"/>
+                            <value xsi:type="ddf:FieldName" name="CURR_EXIST"/>
                           </expr>
                         </lValue>
                       </lValue>
@@ -1252,7 +1408,7 @@
                         <lValue>
                           <lValue>
                             <expr xsi:type="scl:Unary">
-                              <value xsi:type="ddf:FieldName" name="prev_exist"/>
+                              <value xsi:type="ddf:FieldName" name="PREV_EXIST"/>
                             </expr>
                           </lValue>
                         </lValue>
@@ -1264,7 +1420,7 @@
                           <lValue>
                             <lValue>
                               <expr xsi:type="scl:Unary">
-                                <value xsi:type="ddf:FieldName" name="curr_nonexist"/>
+                                <value xsi:type="ddf:FieldName" name="CURR_NONEXIST"/>
                               </expr>
                             </lValue>
                           </lValue>
@@ -1295,7 +1451,7 @@
                             <lValue>
                               <lValue>
                                 <expr xsi:type="scl:Unary">
-                                  <value xsi:type="ddf:FieldName" name="prev_nonexist"/>
+                                  <value xsi:type="ddf:FieldName" name="PREV_NONEXIST"/>
                                 </expr>
                               </lValue>
                             </lValue>
@@ -1307,7 +1463,7 @@
                               <lValue>
                                 <lValue>
                                   <expr xsi:type="scl:Unary">
-                                    <value xsi:type="ddf:FieldName" name="curr_exist"/>
+                                    <value xsi:type="ddf:FieldName" name="CURR_EXIST"/>
                                   </expr>
                                 </lValue>
                               </lValue>
@@ -1351,16 +1507,16 @@
               </elseStatement>
             </fieldAttributes>
             <comment>
-              <comments>conditional field logic for delta flag column&#xD;
+              <comments>Applying the Condition to Report on the Change Status&#xD;
 </comments>
             </comment>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Headrec" headrec="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta&#xA;&#xD;"/>
-        <sectionOptions xsi:type="ddf:Process"/>
       </outputDatas>
-      <outputDatas name="Out_targets/Updates.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="targets/Updates.out" fileName="targets/Updates.out">
+      <outputDatas name="Updates.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="Updates.out" fileName="targets/Updates.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1369,7 +1525,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1377,6 +1533,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -1388,7 +1545,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1396,6 +1553,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="17"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -1407,7 +1565,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1415,6 +1573,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="29"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -1426,7 +1585,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.CONSUMER"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CONSUMER"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1434,6 +1593,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="44"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
           </fields>
@@ -1445,7 +1605,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1453,6 +1613,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="56"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -1464,7 +1625,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="transdate"/>
+                          <value xsi:type="ddf:FieldName" name="TRANSDATE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1484,7 +1645,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="amount"/>
+                          <value xsi:type="ddf:FieldName" name="AMOUNT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1492,10 +1653,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="76"/>
             <fieldAttributes xsi:type="ddf:Size" size="9"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1505,7 +1666,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="date_due"/>
+                          <value xsi:type="ddf:FieldName" name="DATE_DUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1513,9 +1674,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="87"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1525,7 +1686,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="paid"/>
+                          <value xsi:type="ddf:FieldName" name="PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1533,12 +1694,18 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="98"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="  Update"/>
+            </data>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Include">
           <compoundExpression>
             <relationalExpression>
@@ -1546,7 +1713,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="update"/>
+                      <value xsi:type="ddf:FieldName" name="UPDATE"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -1558,7 +1725,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="prev_exist"/>
+                        <value xsi:type="ddf:FieldName" name="PREV_EXIST"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -1571,7 +1738,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="curr_exist"/>
+                        <value xsi:type="ddf:FieldName" name="CURR_EXIST"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -1582,20 +1749,12 @@
           <comment>
             <comments>Conditional Selection&#xD;
 </comments>
-            <comments>Layout&#xD;
-</comments>
           </comment>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Headrec" headrec="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta&#xA;&#xD;"/>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="  Update"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process"/>
       </outputDatas>
-      <outputDatas name="Out_targets/Deletes.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="targets/Deletes.out" fileName="targets/Deletes.out">
+      <outputDatas name="Deletes.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="Deletes.out" fileName="targets/Deletes.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1604,7 +1763,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1612,6 +1771,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -1623,7 +1783,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1631,6 +1791,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="17"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -1642,7 +1803,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1650,6 +1811,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="29"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -1661,7 +1823,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.CONSUMER"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CONSUMER"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1669,6 +1831,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="44"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
           </fields>
@@ -1680,7 +1843,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1688,6 +1851,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="56"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -1699,7 +1863,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="transdate"/>
+                          <value xsi:type="ddf:FieldName" name="TRANSDATE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1719,7 +1883,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="amount"/>
+                          <value xsi:type="ddf:FieldName" name="AMOUNT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1727,8 +1891,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="76"/>
             <fieldAttributes xsi:type="ddf:Size" size="9"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1738,7 +1904,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="date_due"/>
+                          <value xsi:type="ddf:FieldName" name="DATE_DUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1746,9 +1912,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="87"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1758,7 +1924,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="paid"/>
+                          <value xsi:type="ddf:FieldName" name="PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1766,10 +1932,18 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="98"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="  Delete"/>
+            </data>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Include">
           <compoundExpression>
             <relationalExpression>
@@ -1777,7 +1951,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="prev_exist"/>
+                      <value xsi:type="ddf:FieldName" name="PREV_EXIST"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -1789,7 +1963,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="curr_nonexist"/>
+                        <value xsi:type="ddf:FieldName" name="CURR_NONEXIST"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -1800,20 +1974,12 @@
           <comment>
             <comments>Conditional Selection&#xD;
 </comments>
-            <comments>Layout&#xD;
-</comments>
           </comment>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Headrec" headrec="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta&#xA;&#xD;"/>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="  Delete"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process"/>
       </outputDatas>
-      <outputDatas name="Out_targets/Inserts.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="targets/Inserts.out" fileName="targets/Inserts.out">
+      <outputDatas name="Inserts.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="Inserts.out" fileName="targets/Inserts.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1822,7 +1988,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1830,6 +1996,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -1841,7 +2008,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1849,6 +2016,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="17"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -1860,7 +2028,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1868,6 +2036,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="29"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -1879,7 +2048,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.CONSUMER"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CONSUMER"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1887,6 +2056,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="44"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
           </fields>
@@ -1898,7 +2068,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1906,6 +2076,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="56"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -1917,7 +2088,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="transdate"/>
+                          <value xsi:type="ddf:FieldName" name="TRANSDATE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1937,7 +2108,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="amount"/>
+                          <value xsi:type="ddf:FieldName" name="AMOUNT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1945,10 +2116,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="76"/>
             <fieldAttributes xsi:type="ddf:Size" size="9"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1958,7 +2129,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="date_due"/>
+                          <value xsi:type="ddf:FieldName" name="DATE_DUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1966,9 +2137,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="87"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1978,7 +2149,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="paid"/>
+                          <value xsi:type="ddf:FieldName" name="PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1986,12 +2157,18 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="98"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="  Insert"/>
+            </data>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Include">
           <compoundExpression>
             <relationalExpression>
@@ -1999,7 +2176,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="prev_nonexist"/>
+                      <value xsi:type="ddf:FieldName" name="PREV_NONEXIST"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -2011,7 +2188,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="curr_exist"/>
+                        <value xsi:type="ddf:FieldName" name="CURR_EXIST"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -2022,20 +2199,12 @@
           <comment>
             <comments>Conditional Selection&#xD;
 </comments>
-            <comments>Layout&#xD;
-</comments>
           </comment>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Headrec" headrec="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta&#xA;&#xD;"/>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="  Insert"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process"/>
       </outputDatas>
-      <outputDatas name="Out_targets/Equals.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="targets/Equals.out" fileName="targets/Equals.out">
+      <outputDatas name="Equals.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="Equals.out" fileName="targets/Equals.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -2044,7 +2213,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2052,6 +2221,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -2063,7 +2233,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="PREVIOUS.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2071,6 +2241,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="17"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -2082,7 +2253,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.DEBT_ID"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.DEBT_ID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2090,6 +2261,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="29"/>
             <fieldAttributes xsi:type="ddf:Size" size="13"/>
           </fields>
@@ -2101,7 +2273,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.CONSUMER"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CONSUMER"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2109,6 +2281,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="44"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
           </fields>
@@ -2120,7 +2293,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="CURRENT.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2128,6 +2301,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="56"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -2139,7 +2313,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="transdate"/>
+                          <value xsi:type="ddf:FieldName" name="TRANSDATE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2147,9 +2321,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="64"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2159,7 +2333,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="amount"/>
+                          <value xsi:type="ddf:FieldName" name="AMOUNT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2167,10 +2341,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="76"/>
             <fieldAttributes xsi:type="ddf:Size" size="9"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2180,7 +2354,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="date_due"/>
+                          <value xsi:type="ddf:FieldName" name="DATE_DUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2188,9 +2362,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="87"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2200,7 +2374,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="paid"/>
+                          <value xsi:type="ddf:FieldName" name="PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2208,12 +2382,18 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="98"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="  Equal"/>
+            </data>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Omit">
           <compoundExpression>
             <relationalExpression>
@@ -2221,7 +2401,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="update"/>
+                      <value xsi:type="ddf:FieldName" name="UPDATE"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -2233,7 +2413,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="prev_exist"/>
+                        <value xsi:type="ddf:FieldName" name="PREV_EXIST"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -2246,7 +2426,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="curr_exist"/>
+                        <value xsi:type="ddf:FieldName" name="CURR_EXIST"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -2266,7 +2446,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="prev_exist"/>
+                      <value xsi:type="ddf:FieldName" name="PREV_EXIST"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -2278,7 +2458,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="curr_nonexist"/>
+                        <value xsi:type="ddf:FieldName" name="CURR_NONEXIST"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -2294,7 +2474,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="prev_nonexist"/>
+                      <value xsi:type="ddf:FieldName" name="PREV_NONEXIST"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -2306,7 +2486,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="curr_exist"/>
+                        <value xsi:type="ddf:FieldName" name="CURR_EXIST"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -2320,95 +2500,85 @@
           </comment>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Headrec" headrec="Prev: DebtID    Cksum       Curr: DebtID   Consumer    Cksum   TransDate      Amount  DueDate        Paid    Delta&#xA;&#xD;"/>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="  Equal"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process"/>
       </outputDatas>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" name="DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" name="Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" name="paid_To_previous.paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" name="DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" name="CONSUMER_To_current.CONSUMER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" name="Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" name="transdate_To_current.transdate"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" name="amount_To_current.amount"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" name="date_due_To_current.date_due"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" name="paid_To_current.paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0" name="previous.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0" name="current.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1" name="previous.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1" name="current.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2" name="previous.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2" name="current.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3" name="current.CONSUMER_To_current.CONSUMER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4" name="previous.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4" name="current.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.5" name="current.transdate_To_transdate"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.6" name="current.amount_To_amount"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.7" name="current.date_due_To_date_due"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.8" name="previous.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.8" name="current.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.0" name="previous.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.0" name="current.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.1" name="previous.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.1" name="current.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.2" name="previous.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.2" name="current.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.3" name="current.CONSUMER_To_current.CONSUMER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.4" name="previous.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.4" name="current.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.5" name="current.transdate_To_transdate"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.6" name="current.amount_To_amount"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.7" name="current.date_due_To_date_due"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.8" name="previous.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.8" name="current.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.0" name="previous.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.0" name="current.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.1" name="previous.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.1" name="current.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.2" name="previous.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.2" name="current.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.3" name="current.CONSUMER_To_current.CONSUMER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.4" name="previous.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.4" name="current.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.5" name="current.transdate_To_transdate"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.6" name="current.amount_To_amount"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.7" name="current.date_due_To_date_due"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.8" name="previous.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.8" name="current.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.0" name="previous.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.0" name="current.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.1" name="previous.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.1" name="current.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.2" name="previous.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.2" name="current.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.3" name="current.CONSUMER_To_current.CONSUMER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.4" name="previous.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.4" name="current.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.5" name="current.transdate_To_transdate"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.6" name="current.amount_To_amount"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.7" name="current.date_due_To_date_due"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.8" name="previous.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.8" name="current.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.0" name="previous.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.0" name="current.DEBT_ID_To_previous.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.1" name="previous.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.1" name="current.Checksum_To_previous.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.2" name="previous.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.2" name="current.DEBT_ID_To_current.DEBT_ID"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.3" name="current.CONSUMER_To_current.CONSUMER"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.4" name="previous.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.4" name="current.Checksum_To_current.Checksum"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.5" name="current.transdate_To_transdate"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.6" name="current.amount_To_amount"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.7" name="current.date_due_To_date_due"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.8" name="previous.paid_To_paid"/>
-      <mappings sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.8" name="current.paid_To_paid"/>
-      <transformData xsi:type="flow:JoinAction" name="Join" transformActionType="/JOIN">
-        <dataInfo xsi:type="flow:InternalDataInfo">
+      <mappings name="DEBT_ID_To_previous.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="CHECKSUM_To_previous.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="PAID_To_previous.PAID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="DEBT_ID_To_current.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="CONSUMER_To_current.CONSUMER" sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="CHECKSUM_To_current.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="TRANSDATE_To_current.TRANSDATE" sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="AMOUNT_To_current.AMOUNT" sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="DATE_DUE_To_current.DATE_DUE" sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="PAID_To_current.PAID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.1/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9"/>
+      <mappings name="previous.DEBT_ID_To_PREVIOUS.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="previous.CHECKSUM_To_PREVIOUS.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="current.DEBT_ID_To_CURRENT.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="current.CONSUMER_To_CURRENT.CONSUMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="current.CHECKSUM_To_CURRENT.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="current.TRANSDATE_To_TRANSDATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="current.AMOUNT_To_AMOUNT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="current.DATE_DUE_To_DATE_DUE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.7"/>
+      <mappings name="previous.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.8"/>
+      <mappings name="current.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.8"/>
+      <mappings name="previous.DEBT_ID_To_PREVIOUS.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.0"/>
+      <mappings name="previous.CHECKSUM_To_PREVIOUS.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.1"/>
+      <mappings name="current.DEBT_ID_To_CURRENT.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.2"/>
+      <mappings name="current.CONSUMER_To_CURRENT.CONSUMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.3"/>
+      <mappings name="current.CHECKSUM_To_CURRENT.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.4"/>
+      <mappings name="current.TRANSDATE_To_TRANSDATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="current.AMOUNT_To_AMOUNT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.6"/>
+      <mappings name="current.DATE_DUE_To_DATE_DUE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.7"/>
+      <mappings name="previous.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.8"/>
+      <mappings name="current.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.8"/>
+      <mappings name="previous.DEBT_ID_To_PREVIOUS.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.0"/>
+      <mappings name="previous.CHECKSUM_To_PREVIOUS.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.1"/>
+      <mappings name="current.DEBT_ID_To_CURRENT.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.2"/>
+      <mappings name="current.CONSUMER_To_CURRENT.CONSUMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.3"/>
+      <mappings name="current.CHECKSUM_To_CURRENT.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.4"/>
+      <mappings name="current.TRANSDATE_To_TRANSDATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.5"/>
+      <mappings name="current.AMOUNT_To_AMOUNT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.6"/>
+      <mappings name="current.DATE_DUE_To_DATE_DUE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.7"/>
+      <mappings name="previous.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.8"/>
+      <mappings name="current.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.8"/>
+      <mappings name="previous.DEBT_ID_To_PREVIOUS.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.0"/>
+      <mappings name="previous.CHECKSUM_To_PREVIOUS.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.1"/>
+      <mappings name="current.DEBT_ID_To_CURRENT.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.2"/>
+      <mappings name="current.CONSUMER_To_CURRENT.CONSUMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.3"/>
+      <mappings name="current.CHECKSUM_To_CURRENT.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.4"/>
+      <mappings name="current.TRANSDATE_To_TRANSDATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.5"/>
+      <mappings name="current.AMOUNT_To_AMOUNT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.6"/>
+      <mappings name="current.DATE_DUE_To_DATE_DUE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.7"/>
+      <mappings name="previous.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.8"/>
+      <mappings name="current.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.8"/>
+      <mappings name="previous.DEBT_ID_To_PREVIOUS.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.0"/>
+      <mappings name="previous.CHECKSUM_To_PREVIOUS.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.1"/>
+      <mappings name="current.DEBT_ID_To_CURRENT.DEBT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.2"/>
+      <mappings name="current.CONSUMER_To_CURRENT.CONSUMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.3"/>
+      <mappings name="current.CHECKSUM_To_CURRENT.CHECKSUM" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.4"/>
+      <mappings name="current.TRANSDATE_To_TRANSDATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.5"/>
+      <mappings name="current.AMOUNT_To_AMOUNT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.6"/>
+      <mappings name="current.DATE_DUE_To_DATE_DUE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.7"/>
+      <mappings name="previous.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.8"/>
+      <mappings name="current.PAID_To_PAID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.8"/>
+      <comments>
+        <comments>CoSort Sort Control Language (SortCL) Program&#xD;
+</comments>
+        <comments>	Change Data Capture (CDC) Application&#xD;
+</comments>
+        <comments>Copyright 2013 Innovative Routines International (IRI), Inc.&#xD;
+</comments>
+        <comments>&#xD;
+</comments>
+        <comments>################################&#xD;
+</comments>
+        <comments>Input (Source Definition) Phase&#xD;
+</comments>
+        <comments>################################&#xD;
+</comments>
+      </comments>
+      <transformData xsi:type="flow:JoinAction" name="Join">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Join">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -2425,6 +2595,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
           </fields>
@@ -2436,7 +2607,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="previous.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2444,6 +2615,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
           </fields>
@@ -2455,7 +2627,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="previous.paid"/>
+                          <value xsi:type="ddf:FieldName" name="previous.PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2463,7 +2635,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -2482,6 +2656,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="12"/>
           </fields>
@@ -2501,6 +2676,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="17"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
           </fields>
@@ -2512,7 +2688,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.Checksum"/>
+                          <value xsi:type="ddf:FieldName" name="current.CHECKSUM"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2520,6 +2696,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="33"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
           </fields>
@@ -2531,7 +2708,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.transdate"/>
+                          <value xsi:type="ddf:FieldName" name="current.TRANSDATE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2539,9 +2716,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="41"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2551,7 +2728,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.amount"/>
+                          <value xsi:type="ddf:FieldName" name="current.AMOUNT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2559,10 +2736,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="54"/>
             <fieldAttributes xsi:type="ddf:Size" size="7"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2572,7 +2749,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.date_due"/>
+                          <value xsi:type="ddf:FieldName" name="current.DATE_DUE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2580,9 +2757,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
             <fieldAttributes xsi:type="ddf:Position" number1="63"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2592,7 +2769,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.paid"/>
+                          <value xsi:type="ddf:FieldName" name="current.PAID"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -2600,180 +2777,19 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="76"/>
             <fieldAttributes xsi:type="ddf:Size" size="7"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
-            <comment>
-              <comments>################################&#xD;
-</comments>
-              <comments>Action (Matching Process) Phase&#xD;
-</comments>
-              <comments>################################&#xD;
-</comments>
-            </comment>
           </fields>
         </dataInfo>
-        <sectionOptions xsi:type="scl:Condition">
-          <fieldName name="prev_exist"/>
-          <compoundExpression>
-            <relationalExpression>
-              <lValue>
-                <lValue>
-                  <lValue>
-                    <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
-                    </expr>
-                  </lValue>
-                </lValue>
-              </lValue>
-              <additiveExpressionX relationalOperator="NE">
-                <rValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="scl:RepeatNumberString" string=""/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </rValue>
-              </additiveExpressionX>
-            </relationalExpression>
-          </compoundExpression>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Condition">
-          <fieldName name="prev_nonexist"/>
-          <compoundExpression>
-            <relationalExpression>
-              <lValue>
-                <lValue>
-                  <lValue>
-                    <expr xsi:type="scl:Unary">
-                      <value xsi:type="scl:Function" name="isempty">
-                        <argumentList>
-                          <firstArg>
-                            <relationalExpression>
-                              <lValue>
-                                <lValue>
-                                  <lValue>
-                                    <expr xsi:type="scl:Unary">
-                                      <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
-                                    </expr>
-                                  </lValue>
-                                </lValue>
-                              </lValue>
-                            </relationalExpression>
-                          </firstArg>
-                        </argumentList>
-                      </value>
-                    </expr>
-                  </lValue>
-                </lValue>
-              </lValue>
-            </relationalExpression>
-          </compoundExpression>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Condition">
-          <fieldName name="curr_exist"/>
-          <compoundExpression>
-            <relationalExpression>
-              <lValue>
-                <lValue>
-                  <lValue>
-                    <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="current.Checksum"/>
-                    </expr>
-                  </lValue>
-                </lValue>
-              </lValue>
-              <additiveExpressionX relationalOperator="NE">
-                <rValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="scl:RepeatNumberString" string="      "/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </rValue>
-              </additiveExpressionX>
-            </relationalExpression>
-          </compoundExpression>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Condition">
-          <fieldName name="curr_nonexist"/>
-          <compoundExpression>
-            <relationalExpression>
-              <lValue>
-                <lValue>
-                  <lValue>
-                    <expr xsi:type="scl:Unary">
-                      <value xsi:type="scl:Function" name="isempty">
-                        <argumentList>
-                          <firstArg>
-                            <relationalExpression>
-                              <lValue>
-                                <lValue>
-                                  <lValue>
-                                    <expr xsi:type="scl:Unary">
-                                      <value xsi:type="ddf:FieldName" name="current.Checksum"/>
-                                    </expr>
-                                  </lValue>
-                                </lValue>
-                              </lValue>
-                            </relationalExpression>
-                          </firstArg>
-                        </argumentList>
-                      </value>
-                    </expr>
-                  </lValue>
-                </lValue>
-              </lValue>
-            </relationalExpression>
-          </compoundExpression>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Condition">
-          <fieldName name="update"/>
-          <compoundExpression>
-            <relationalExpression>
-              <lValue>
-                <lValue>
-                  <lValue>
-                    <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
-                    </expr>
-                  </lValue>
-                </lValue>
-              </lValue>
-              <additiveExpressionX relationalOperator="NE">
-                <rValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="current.Checksum"/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </rValue>
-              </additiveExpressionX>
-            </relationalExpression>
-          </compoundExpression>
-          <comment>
-            <comments>################################&#xD;
-</comments>
-            <comments>Output (Target/Reporting) Phase&#xD;
-</comments>
-            <comments>################################&#xD;
-</comments>
-          </comment>
-        </sectionOptions>
         <sectionOptions xsi:type="scl:CompoundExpression">
           <relationalExpression>
             <lValue>
               <lValue>
                 <lValue>
                   <expr xsi:type="scl:Unary">
-                    <value xsi:type="ddf:FieldName" name="previous.DEBT_ID"/>
+                    <value xsi:type="ddf:FieldName" name="PREVIOUS.DEBT_ID"/>
                   </expr>
                 </lValue>
               </lValue>
@@ -2783,7 +2799,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="current.DEBT_ID"/>
+                      <value xsi:type="ddf:FieldName" name="CURRENT.DEBT_ID"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -2798,7 +2814,7 @@
                 <lValue>
                   <lValue>
                     <expr xsi:type="scl:Unary">
-                      <value xsi:type="ddf:FieldName" name="previous.DEBT_ID"/>
+                      <value xsi:type="ddf:FieldName" name="PREVIOUS.DEBT_ID"/>
                     </expr>
                   </lValue>
                 </lValue>
@@ -2808,7 +2824,7 @@
                   <lValue>
                     <lValue>
                       <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="current.DEBT_ID"/>
+                        <value xsi:type="ddf:FieldName" name="CURRENT.DEBT_ID"/>
                       </expr>
                     </lValue>
                   </lValue>
@@ -2819,160 +2835,13 @@
           <comment>
             <comments>Business Logic for Target Reports&#xD;
 </comments>
+            <comments>################################&#xD;
+</comments>
+            <comments>Output (Target/Reporting) Phase&#xD;
+</comments>
+            <comments>################################&#xD;
+</comments>
           </comment>
-          <actionOptions xsi:type="scl:Condition">
-            <fieldName name="prev_exist"/>
-            <compoundExpression>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-                <additiveExpressionX relationalOperator="NE">
-                  <rValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="scl:RepeatNumberString" string=""/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </rValue>
-                </additiveExpressionX>
-              </relationalExpression>
-            </compoundExpression>
-          </actionOptions>
-          <actionOptions xsi:type="scl:Condition">
-            <fieldName name="prev_nonexist"/>
-            <compoundExpression>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="scl:Function" name="isempty">
-                          <argumentList>
-                            <firstArg>
-                              <relationalExpression>
-                                <lValue>
-                                  <lValue>
-                                    <lValue>
-                                      <expr xsi:type="scl:Unary">
-                                        <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
-                                      </expr>
-                                    </lValue>
-                                  </lValue>
-                                </lValue>
-                              </relationalExpression>
-                            </firstArg>
-                          </argumentList>
-                        </value>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-              </relationalExpression>
-            </compoundExpression>
-          </actionOptions>
-          <actionOptions xsi:type="scl:Condition">
-            <fieldName name="curr_exist"/>
-            <compoundExpression>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="current.Checksum"/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-                <additiveExpressionX relationalOperator="NE">
-                  <rValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="scl:RepeatNumberString" string="      "/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </rValue>
-                </additiveExpressionX>
-              </relationalExpression>
-            </compoundExpression>
-          </actionOptions>
-          <actionOptions xsi:type="scl:Condition">
-            <fieldName name="curr_nonexist"/>
-            <compoundExpression>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="scl:Function" name="isempty">
-                          <argumentList>
-                            <firstArg>
-                              <relationalExpression>
-                                <lValue>
-                                  <lValue>
-                                    <lValue>
-                                      <expr xsi:type="scl:Unary">
-                                        <value xsi:type="ddf:FieldName" name="current.Checksum"/>
-                                      </expr>
-                                    </lValue>
-                                  </lValue>
-                                </lValue>
-                              </relationalExpression>
-                            </firstArg>
-                          </argumentList>
-                        </value>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-              </relationalExpression>
-            </compoundExpression>
-          </actionOptions>
-          <actionOptions xsi:type="scl:Condition">
-            <fieldName name="update"/>
-            <compoundExpression>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="previous.Checksum"/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-                <additiveExpressionX relationalOperator="NE">
-                  <rValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="current.Checksum"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </rValue>
-                </additiveExpressionX>
-              </relationalExpression>
-            </compoundExpression>
-            <comment>
-              <comments>################################&#xD;
-</comments>
-              <comments>Output (Target/Reporting) Phase&#xD;
-</comments>
-              <comments>################################&#xD;
-</comments>
-            </comment>
-          </actionOptions>
         </transformAction>
       </transformData>
     </blocks>

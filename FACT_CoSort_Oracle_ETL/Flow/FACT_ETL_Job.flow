@@ -1329,7 +1329,7 @@
         <comments></comments>
         <comments>&#xD;</comments>
       </comments>
-      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+      <transformData xsi:type="flow:SortAction" name="Sort">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>

@@ -965,7 +965,7 @@
       <mappings name="INP_MSC.TRUNK_OUT_To_TRUNK_OUT" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.7"/>
       <mappings name="INP_MSC.CALL_TYPE_To_CALL_TYPE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.8"/>
       <mappings name="INP_MSC.CALL_SCENARIO_To_CALL_SCENARIO" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.10"/>
-      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+      <transformData xsi:type="flow:SortAction" name="Sort">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2148,7 +2148,7 @@
       <mappings name="sorted_cdr.TRUNK_OUT_To_TRUNK_OUT" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.3/@outputDatas.1/@dataInfo/@fields.7"/>
       <mappings name="sorted_cdr.CALL_TYPE_To_CALL_TYPE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.3/@outputDatas.1/@dataInfo/@fields.8"/>
       <mappings name="sorted_cdr.CALL_SCENARIO_To_CALL_SCENARIO" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.13" targetField="//@flowlets.0/@blocks.3/@outputDatas.1/@dataInfo/@fields.10"/>
-      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+      <transformData xsi:type="flow:SortAction" name="Sort">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2555,7 +2555,7 @@
       <mappings name="CARRIER_To_REF_TRUNK.CARRIER" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1"/>
       <mappings name="REF_TRUNK.TRUNK_NAME_To_TRUNK_NAME" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.0"/>
       <mappings name="REF_TRUNK.CARRIER_To_CARRIER" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.1"/>
-      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+      <transformData xsi:type="flow:SortAction" name="Sort">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2710,7 +2710,7 @@
       <mappings name="CARRIER_To_REF_PREFIX.CARRIER" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1"/>
       <mappings name="REF_PREFIX.PREFIX_To_PREFIX" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.0"/>
       <mappings name="REF_PREFIX.CARRIER_To_CARRIER" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.1"/>
-      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+      <transformData xsi:type="flow:SortAction" name="Sort">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -2910,7 +2910,7 @@
       <mappings name="REF_TARIFF.TRUNK_CARRIER_To_TRUNK_CARRIER" sourceField="//@flowlets.0/@blocks.7/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.7/@outputDatas.0/@dataInfo/@fields.0"/>
       <mappings name="REF_TARIFF.PREFIX_CARRIER_To_PREFIX_CARRIER" sourceField="//@flowlets.0/@blocks.7/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.7/@outputDatas.0/@dataInfo/@fields.1"/>
       <mappings name="REF_TARIFF.TARIFF_PERMINUTE_To_TARIFF_PERMINUTE" sourceField="//@flowlets.0/@blocks.7/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.7/@outputDatas.0/@dataInfo/@fields.2"/>
-      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+      <transformData xsi:type="flow:SortAction" name="Sort">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -3999,7 +3999,7 @@
       <mappings name="sorted_cdr.TRUNK_OUT_To_TRUNK_OUT" sourceField="//@flowlets.0/@blocks.9/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.9/@outputDatas.1/@dataInfo/@fields.7"/>
       <mappings name="sorted_cdr.CALL_TYPE_To_CALL_TYPE" sourceField="//@flowlets.0/@blocks.9/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.9/@outputDatas.1/@dataInfo/@fields.8"/>
       <mappings name="sorted_cdr.CALL_SCENARIO_To_CALL_SCENARIO" sourceField="//@flowlets.0/@blocks.9/@transformData/@dataInfo/@fields.13" targetField="//@flowlets.0/@blocks.9/@outputDatas.1/@dataInfo/@fields.10"/>
-      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+      <transformData xsi:type="flow:SortAction" name="Sort">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -5008,7 +5008,7 @@
       <mappings name="AMOUNT_IN_To_AMOUNT" sourceField="//@flowlets.0/@blocks.10/@transformData/@dataInfo/@fields.16" targetField="//@flowlets.0/@blocks.10/@outputDatas.0/@dataInfo/@fields.12" transformsField="true"/>
       <mappings name="AMOUNT_OUT_To_AMOUNT" sourceField="//@flowlets.0/@blocks.10/@transformData/@dataInfo/@fields.17" targetField="//@flowlets.0/@blocks.10/@outputDatas.0/@dataInfo/@fields.12" transformsField="true"/>
       <mappings name="CALL_SCENARIO_To_CALL_SCENARIO" sourceField="//@flowlets.0/@blocks.10/@transformData/@dataInfo/@fields.13" targetField="//@flowlets.0/@blocks.10/@outputDatas.0/@dataInfo/@fields.13"/>
-      <transformData xsi:type="flow:SortAction" name="Sort" transformActionType="/SORT">
+      <transformData xsi:type="flow:SortAction" name="Sort">
         <dataInfo xsi:type="flow:InternalDataInfo">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
