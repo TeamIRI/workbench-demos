@@ -15,4 +15,4 @@
 
 /OUTFILE=EPrecs.txt
 	/PROCESS=RECORD
-	/INCLUDE WHERE ispattern("EP.*")
+	/INCLUDE WHERE ispattern(field1,"EP.*")
