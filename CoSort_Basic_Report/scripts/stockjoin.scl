@@ -48,7 +48,7 @@
 	/FIELD=(SEQUENCER, TYPE=ASCII, POSITION=66, SIZE=4)
 
 ##### Output File 2 - Data Interchange Format ####
-/OUTFILE=..\Targets\TradingA2.xml
+/OUTFILE=..\Targets\TradingA.xml
 	/PROCESS=XML
 	/FIELD=(BUYS.CLIENT, TYPE=ASCII, POSITION=1, SEPARATOR="|", XDEF="/Trades/Buy@Client")
 	/FIELD=(BUYS.SYMBOL, TYPE=ASCII, POSITION=2, SEPARATOR="|", XDEF="/Trades/Buy/Symbol")
@@ -56,21 +56,22 @@
 	/INCLUDE WHERE NYSE-A.LASTTRADE GT 10 AND BUYS.SHARES GT 0 
 
 #### Output File 3 - HTML Format ####
-/OUTFILE=..\Targets\TradingA2.htm # summary record format
+/OUTFILE=..\Targets\TradingA.htm # summary record format
 	/PROCESS=RECORD
 	/DATA="</FONT><B></TD>\n<TD align=right><B><U><FONT SIZE=+2><FONT COLOR='GREEN'>"
-	/FIELD=(NEW_BALANCE, TYPE=CURRENCY, SIZE=15)
+	/FIELD=(NEW_BALANCE, TYPE=CURRENCY, SIZE=15, SEPARATOR="")
 	/DATA="</FONT></U></B></TD>\n</TR>\n"
 	/SUM NEW_BALANCE from (NYSE-A.LASTTRADE * BUYS.SHARES) WHERE SYMBOL NE "RNT"
 	/FOOTREC="</TABLE><BR>\nCreated on </B>%s.              <HR></BODY>\n</HTML>", AMERICAN_DATE
 
-/OUTFILE=..\Targets\TradingA2.htm # detail record format
+/OUTFILE=..\Targets\TradingA.htm # detail record format
 	/PROCESS=RECORD
 	/HEADREC="<HTML><HEAD>\n<TITLE>HTML produced by SORTCL               </TITLE>\n</HEAD>\n<BODY> \
  		<H2><FONT COLOR='RED'>Trading Summary                </H2>\n<TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>\n"
-	/OMIT WHERE SYMBOL EQ "RNT" OR SYMBOL EQ "" # selection applied in display
 	/DATA="<TR>\n<TD><I>"
-	/FIELD=(BUYS.CLIENT, TYPE=ASCII, POSITION=1)
+	/FIELD=(BUYS.CLIENT, TYPE=ASCII, POSITION=1, SEPARATOR="")
 	/DATA="</B></TD>\n<TD align=right><FONT COLOR='BLUE'>"
-	/FIELD=(BUYS.SYMBOL, TYPE=ASCII, POSITION=2)
+	/FIELD=(BUYS.SYMBOL, TYPE=ASCII, POSITION=2, SEPARATOR="")
 	/DATA="</TD>\n</TR>\n"
+	/OMIT WHERE SYMBOL EQ "RNT" OR SYMBOL EQ "" # selection applied in display
+	
