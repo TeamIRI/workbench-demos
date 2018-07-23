@@ -29,13 +29,13 @@
   file formats, and databases.</p>
 
   <p>This project demonstrates NextForm's capability of migrating
-  multiple tables from MySQL to Oracle database using the
+  multiple tables from Oracle to MySQL database using the
   Multi-Table Migration Job wizard.</p>
 
-  <p><strong>IMPORTANT:</strong> Before running this demo, execute
-  <strong>Reset_demo.sql</strong> in the
-  NextForm_Multi_Table_Migration project folder. If it exists,
-  delete the folder named new_batch.</p>
+  <p><strong>IMPORTANT:</strong> Before running this demo, right-click
+  <strong>Setup -&gt; Reset_demo.bat</strong> in the
+  NextForm_Multi_Table_Migration project folder. Select 
+  <strong>Run As -&gt; Batch Program</strong>.</p>
 
   <p>To perform this demo:</p>
 
@@ -49,16 +49,16 @@
     bar.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Loader</strong>
-    field, select the loader type <strong>Oracle - sqlldr</strong>,
+    field, select the loader type <strong>MySQL - mysql LOAD DATA</strong>,
     and then click <strong>Next</strong>.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Connection
     profile</strong> field, select the connection of the source
-    tables - <strong>MySQL</strong>.</li>
+    tables - <strong>Oracle</strong>.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Tables</strong>
-    list, select the tables <strong>customers_nf</strong> and
-    <strong>orders_nf</strong>.</li>
+    list, select the tables <strong>CUSTOMERS_NF</strong> and
+    <strong>ORDERS_NF</strong>.</li>
 
     <li style="margin-bottom: 10px;">The next page, Field
     Modification Rules, is used for transforming the tables, when
@@ -66,10 +66,10 @@
 
     <li style="margin-bottom: 10px;">On the Data Loading Stage
     page, select the connection profile of the target location -
-    <strong>Oracle</strong>.</li>
+    <strong>MySQL</strong>.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Schema
-    name</strong> field, select the <strong>SCOTT</strong> schema
+    name</strong> field, select the <strong>test</strong> schema
     if it is not already selected.</li>
 
     <li style="margin-bottom: 10px;">The Summary page shows the
