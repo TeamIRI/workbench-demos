@@ -2281,25 +2281,25 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO2FkjJ5Eei-h6jx05T6BA" width="508"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_zO2FjzJ5Eei-h6jx05T6BA"/>
-        <edges xmi:type="notation:Edge" xmi:id="_zPJAYzJ5Eei-h6jx05T6BA" type="4001" element="_zO2FiDJ5Eei-h6jx05T6BA" source="_zO_PazJ5Eei-h6jx05T6BA" target="_zO_PcDJ5Eei-h6jx05T6BA">
-          <children xmi:type="notation:Node" xmi:id="_zPJAZzJ5Eei-h6jx05T6BA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zPJAaDJ5Eei-h6jx05T6BA" y="-10"/>
+        <edges xmi:type="notation:Edge" xmi:id="_ek4X8ItGEeiKLeCryzNT5Q" type="4001" element="_ek17sItGEeiKLeCryzNT5Q" source="_zO_PazJ5Eei-h6jx05T6BA" target="_zO_PcDJ5Eei-h6jx05T6BA">
+          <children xmi:type="notation:Node" xmi:id="_ek4X9ItGEeiKLeCryzNT5Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ek4X9YtGEeiKLeCryzNT5Q" y="-10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_zPJAaTJ5Eei-h6jx05T6BA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zPJAajJ5Eei-h6jx05T6BA" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_ek4X9otGEeiKLeCryzNT5Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ek4X94tGEeiKLeCryzNT5Q" y="10"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_zPJAazJ5Eei-h6jx05T6BA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zPJAbDJ5Eei-h6jx05T6BA" y="10"/>
+          <children xmi:type="notation:Node" xmi:id="_ek4X-ItGEeiKLeCryzNT5Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ek4X-YtGEeiKLeCryzNT5Q" y="10"/>
           </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zPJAZDJ5Eei-h6jx05T6BA" routing="Rectilinear" avoidObstructions="true"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_zPJAZTJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zPJAZjJ5Eei-h6jx05T6BA" points="[6, 7, -32, -25]$[31, 7, -7, -25]$[31, 25, -7, -7]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zPJAbTJ5Eei-h6jx05T6BA" id="(1.0,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zPJAbjJ5Eei-h6jx05T6BA" id="(0.5,0.5)"/>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ek4X8YtGEeiKLeCryzNT5Q" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ek4X8otGEeiKLeCryzNT5Q" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ek4X84tGEeiKLeCryzNT5Q" points="[30, 0, -64, -25]$[58, 0, -36, -25]$[58, 25, -36, 0]$[86, 25, -8, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ek4_AItGEeiKLeCryzNT5Q" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ek4_AYtGEeiKLeCryzNT5Q" id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_zO2FdDJ5Eei-h6jx05T6BA" name="stockjoin" width="40" height="20">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_zO2FdDJ5Eei-h6jx05T6BA" name="stockjoin" width="10" height="20">
       <target xmi:type="flow:Flowlet" href="scripts/stockjoin_scl.flow#//@flowlets.0"/>
       <semanticElements xmi:type="flow:Flowlet" href="scripts/stockjoin_scl.flow#//@flowlets.0"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_zO2FdTJ5Eei-h6jx05T6BA" showIcon="false" borderSize="2" borderSizeComputationExpression="2" borderColor="69,69,69" backgroundStyle="GradientTopToBottom">
@@ -2310,7 +2310,7 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_zO2FdjJ5Eei-h6jx05T6BA" name="stockjoin.scl" width="15" height="10">
         <target xmi:type="flow:TransformMappingBlock" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1"/>
         <semanticElements xmi:type="flow:TransformMappingBlock" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_zO2FdzJ5Eei-h6jx05T6BA" name="nyse-a.txt" incomingEdges="_zO2FiDJ5Eei-h6jx05T6BA" width="-1" height="-1">
+        <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_zO2FdzJ5Eei-h6jx05T6BA" name="nyse-a.txt" incomingEdges="_ek17sItGEeiKLeCryzNT5Q" width="-1" height="-1">
           <target xmi:type="flow:DataContext" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0"/>
           <semanticElements xmi:type="flow:DataContext" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0"/>
           <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_zO2FeDJ5Eei-h6jx05T6BA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
@@ -2372,7 +2372,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_zO2FhjJ5Eei-h6jx05T6BA" name="Start" outgoingEdges="_zO2FiDJ5Eei-h6jx05T6BA" width="6" height="6" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_zO2FhjJ5Eei-h6jx05T6BA" name="Start" outgoingEdges="_ek17sItGEeiKLeCryzNT5Q" width="6" height="6" resizeKind="NSEW">
         <target xmi:type="flow:StartBlock" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.0"/>
         <semanticElements xmi:type="flow:StartBlock" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.0"/>
         <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_zO2FhzJ5Eei-h6jx05T6BA" showIcon="false" labelColor="69,69,69" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
@@ -2382,12 +2382,12 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_zO2FiDJ5Eei-h6jx05T6BA" sourceNode="_zO2FhjJ5Eei-h6jx05T6BA" targetNode="_zO2FdzJ5Eei-h6jx05T6BA">
-      <target xmi:type="flow:Connection" href="scripts/stockjoin_scl.flow#Start_To_..\InputFiles\nyse-a.txt"/>
-      <semanticElements xmi:type="flow:Connection" href="scripts/stockjoin_scl.flow#Start_To_..\InputFiles\nyse-a.txt"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_zO2FiTJ5Eei-h6jx05T6BA" size="2" routingStyle="manhattan">
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ek17sItGEeiKLeCryzNT5Q" sourceNode="_zO2FhjJ5Eei-h6jx05T6BA" targetNode="_zO2FdzJ5Eei-h6jx05T6BA">
+      <target xmi:type="flow:Connection" href="scripts/stockjoin_scl.flow#Start_To_nyse-a.txt"/>
+      <semanticElements xmi:type="flow:Connection" href="scripts/stockjoin_scl.flow#Start_To_nyse-a.txt"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ek2iwItGEeiKLeCryzNT5Q" size="2" routingStyle="manhattan">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_zO2FijJ5Eei-h6jx05T6BA" showIcon="false"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ek2iwYtGEeiKLeCryzNT5Q" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
     </ownedDiagramElements>
@@ -2971,7 +2971,7 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-fDJ5Eei-h6jx05T6BA"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6k0NpzJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="7"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k0NqDJ5Eei-h6jx05T6BA" width="180" height="16"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k0NqDJ5Eei-h6jx05T6BA" width="281" height="34"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6k9-cDJ5Eei-h6jx05T6BA" type="3007" element="_6jVAODJ5Eei-h6jx05T6BA">
                       <children xmi:type="notation:Node" xmi:id="_6k9-czJ5Eei-h6jx05T6BA" type="5003">
@@ -2982,7 +2982,7 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-fzJ5Eei-h6jx05T6BA"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6k9-cTJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="7"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-cjJ5Eei-h6jx05T6BA" y="16" width="180" height="16"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-cjJ5Eei-h6jx05T6BA" y="35" width="180" height="16"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6k9-dTJ5Eei-h6jx05T6BA" type="3007" element="_6jVAOjJ5Eei-h6jx05T6BA">
                       <children xmi:type="notation:Node" xmi:id="_6k9-eDJ5Eei-h6jx05T6BA" type="5003">
@@ -2993,13 +2993,13 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-gjJ5Eei-h6jx05T6BA"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6k9-djJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="7"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-dzJ5Eei-h6jx05T6BA" y="32" width="180" height="16"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-dzJ5Eei-h6jx05T6BA" y="57" width="281" height="23"/>
                     </children>
                     <styles xmi:type="notation:SortingStyle" xmi:id="_6k0NnTJ5Eei-h6jx05T6BA"/>
                     <styles xmi:type="notation:FilteringStyle" xmi:id="_6k0NnjJ5Eei-h6jx05T6BA"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_6k0NmTJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k0NmjJ5Eei-h6jx05T6BA" x="32" y="32"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k0NmjJ5Eei-h6jx05T6BA" x="32" y="32" width="300" height="98"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_6k0NnzJ5Eei-h6jx05T6BA" type="3009" element="_6jVAPDJ5Eei-h6jx05T6BA">
                   <children xmi:type="notation:Node" xmi:id="_6k0NojJ5Eei-h6jx05T6BA" type="5004"/>
@@ -3043,7 +3043,7 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lQ5YjJ5Eei-h6jx05T6BA"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6k9-mzJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="7"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-nDJ5Eei-h6jx05T6BA" width="180" height="16"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-nDJ5Eei-h6jx05T6BA" width="285" height="26"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6lHIYjJ5Eei-h6jx05T6BA" type="3007" element="_6jVASjJ5Eei-h6jx05T6BA">
                       <children xmi:type="notation:Node" xmi:id="_6lHIZTJ5Eei-h6jx05T6BA" type="5003">
@@ -3054,7 +3054,7 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lQ5ZTJ5Eei-h6jx05T6BA"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6lHIYzJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="7"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lHIZDJ5Eei-h6jx05T6BA" y="16" width="180" height="16"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lHIZDJ5Eei-h6jx05T6BA" y="25" width="180" height="16"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6lHIZzJ5Eei-h6jx05T6BA" type="3007" element="_6jVATDJ5Eei-h6jx05T6BA">
                       <children xmi:type="notation:Node" xmi:id="_6lHIajJ5Eei-h6jx05T6BA" type="5003">
@@ -3065,7 +3065,7 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lQ5aDJ5Eei-h6jx05T6BA"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6lHIaDJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="7"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lHIaTJ5Eei-h6jx05T6BA" y="32" width="180" height="16"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lHIaTJ5Eei-h6jx05T6BA" y="41" width="285" height="28"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6lHIbDJ5Eei-h6jx05T6BA" type="3007" element="_6jVATjJ5Eei-h6jx05T6BA">
                       <children xmi:type="notation:Node" xmi:id="_6lHIbzJ5Eei-h6jx05T6BA" type="5003">
@@ -3076,7 +3076,7 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lQ5azJ5Eei-h6jx05T6BA"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6lHIbTJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="7"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lHIbjJ5Eei-h6jx05T6BA" y="48" width="180" height="16"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lHIbjJ5Eei-h6jx05T6BA" y="68" width="180" height="16"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="_6lHIcTJ5Eei-h6jx05T6BA" type="3007" element="_6jVAUDJ5Eei-h6jx05T6BA">
                       <children xmi:type="notation:Node" xmi:id="_6lHIdDJ5Eei-h6jx05T6BA" type="5003">
@@ -3087,13 +3087,13 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lQ5bjJ5Eei-h6jx05T6BA"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_6lHIcjJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="7"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lHIczJ5Eei-h6jx05T6BA" y="64" width="180" height="16"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6lHIczJ5Eei-h6jx05T6BA" y="84" width="285" height="31"/>
                     </children>
                     <styles xmi:type="notation:SortingStyle" xmi:id="_6k9-kTJ5Eei-h6jx05T6BA"/>
                     <styles xmi:type="notation:FilteringStyle" xmi:id="_6k9-kjJ5Eei-h6jx05T6BA"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_6k9-jTJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-jjJ5Eei-h6jx05T6BA" x="32" y="32"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-jjJ5Eei-h6jx05T6BA" x="32" y="32" width="307" height="132"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_6k9-kzJ5Eei-h6jx05T6BA" type="3009" element="_6jVAUjJ5Eei-h6jx05T6BA">
                   <children xmi:type="notation:Node" xmi:id="_6k9-ljJ5Eei-h6jx05T6BA" type="5004"/>
@@ -3114,7 +3114,7 @@
                     <styles xmi:type="notation:FilteringStyle" xmi:id="_6k9-mTJ5Eei-h6jx05T6BA"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_6k9-lDJ5Eei-h6jx05T6BA" fontName="Segoe UI" fontHeight="8" bold="true"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-lTJ5Eei-h6jx05T6BA" x="32" y="158" width="553" height="115"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6k9-lTJ5Eei-h6jx05T6BA" x="32" y="193" width="553" height="115"/>
                 </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_6kXhvzJ5Eei-h6jx05T6BA"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_6kXhwDJ5Eei-h6jx05T6BA"/>
@@ -3467,33 +3467,33 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_6laDsjJ5Eei-h6jx05T6BA" type="4001" element="_6jVAmTJ5Eei-h6jx05T6BA" source="_6kOXrjJ5Eei-h6jx05T6BA" target="_6lHIYjJ5Eei-h6jx05T6BA">
           <children xmi:type="notation:Node" xmi:id="_6laDtjJ5Eei-h6jx05T6BA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDtzJ5Eei-h6jx05T6BA" x="59" y="-3"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDtzJ5Eei-h6jx05T6BA" x="54" y="-4"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6laDuDJ5Eei-h6jx05T6BA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDuTJ5Eei-h6jx05T6BA" x="18" y="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDuTJ5Eei-h6jx05T6BA" x="17" y="12"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6laDujJ5Eei-h6jx05T6BA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDuzJ5Eei-h6jx05T6BA" x="99" y="21"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDuzJ5Eei-h6jx05T6BA" x="91" y="20"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_6laDszJ5Eei-h6jx05T6BA" routing="Rectilinear" avoidObstructions="true"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_6laDtDJ5Eei-h6jx05T6BA" fontColor="5237244" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6laDtTJ5Eei-h6jx05T6BA" points="[90, 0, -238, -985]$[120, 0, -208, -985]$[218, 985, -110, 0]$[238, 985, -90, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6laDtTJ5Eei-h6jx05T6BA" points="[90, 0, -238, -994]$[120, 0, -208, -994]$[218, 994, -110, 0]$[238, 994, -90, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6laDvDJ5Eei-h6jx05T6BA" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6laDvTJ5Eei-h6jx05T6BA" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_6laDvjJ5Eei-h6jx05T6BA" type="4001" element="_6jVAnDJ5Eei-h6jx05T6BA" source="_6kOXqTJ5Eei-h6jx05T6BA" target="_6lHIbDJ5Eei-h6jx05T6BA">
           <children xmi:type="notation:Node" xmi:id="_6laDwjJ5Eei-h6jx05T6BA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDwzJ5Eei-h6jx05T6BA" x="59" y="-3"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDwzJ5Eei-h6jx05T6BA" x="48" y="6"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6laDxDJ5Eei-h6jx05T6BA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDxTJ5Eei-h6jx05T6BA" x="18" y="13"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDxTJ5Eei-h6jx05T6BA" x="13" y="34"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_6laDxjJ5Eei-h6jx05T6BA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDxzJ5Eei-h6jx05T6BA" x="100" y="20"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6laDxzJ5Eei-h6jx05T6BA" x="82" y="30"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_6laDvzJ5Eei-h6jx05T6BA" routing="Rectilinear" avoidObstructions="true"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_6laDwDJ5Eei-h6jx05T6BA" fontColor="5237244" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6laDwTJ5Eei-h6jx05T6BA" points="[90, 0, -238, -1033]$[120, 0, -208, -1033]$[218, 1033, -110, 0]$[238, 1033, -90, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6laDwTJ5Eei-h6jx05T6BA" points="[90, 0, -238, -1053]$[120, 0, -208, -1053]$[218, 1053, -110, 0]$[238, 1053, -90, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6laDyDJ5Eei-h6jx05T6BA" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6laDyTJ5Eei-h6jx05T6BA" id="(0.5,0.5)"/>
         </edges>
@@ -3941,7 +3941,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
           </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6jVAIDJ5Eei-h6jx05T6BA" name="Headrec: &quot;Client             Symbol         Shares  LastTrade  Shares*LT     Ln.\n\n&quot;">
+          <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_6jVAIDJ5Eei-h6jx05T6BA" name="Headrec: &quot;Client             Symbol  NYSE   Shares  LastTrade  Shares*LT     Ln.\n\n&quot;">
             <target xmi:type="scl:Headrec" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@sectionOptions.1"/>
             <semanticElements xmi:type="scl:Headrec" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@sectionOptions.1"/>
             <ownedStyle xmi:type="diagram:Square" xmi:id="_6jVAITJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -4049,6 +4049,9 @@
           <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6jVAODJ5Eei-h6jx05T6BA" name="NEW_BALANCE:CURRENCY (15)" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@dataInfo/@fields.1"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6jVAOTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
               <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
             </ownedStyle>
@@ -4057,6 +4060,9 @@
           <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6jVAOjJ5Eei-h6jx05T6BA" name="Data: &lt;/FONT>&lt;/U>&lt;/B>&lt;/TD>&#xA;&lt;/TR>&#xA;" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:Data" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:Data" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@dataInfo/@fields.2"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6jVAOzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
               <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
             </ownedStyle>
@@ -4126,6 +4132,9 @@
           <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6jVASjJ5Eei-h6jx05T6BA" name="BUYS.CLIENT:ASCII (0)" incomingEdges="_6jVAmTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.1"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6jVASzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
               <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
             </ownedStyle>
@@ -4134,6 +4143,9 @@
           <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6jVATDJ5Eei-h6jx05T6BA" name="Data: &lt;/B>&lt;/TD>&#xA;&lt;TD align=right>&lt;FONT COLOR='BLUE'>" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:Data" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:Data" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.2"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6jVATTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
               <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
             </ownedStyle>
@@ -4142,6 +4154,9 @@
           <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6jVATjJ5Eei-h6jx05T6BA" name="BUYS.SYMBOL:ASCII (0)" incomingEdges="_6jVAnDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.3"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6jVATzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
               <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
             </ownedStyle>
@@ -4150,6 +4165,9 @@
           <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6jVAUDJ5Eei-h6jx05T6BA" name="Data: &lt;/TD>&#xA;&lt;/TR>&#xA;" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:Data" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.4"/>
             <semanticElements xmi:type="scl:Data" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.4"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6jVAUTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
               <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']/@style"/>
             </ownedStyle>
@@ -4159,6 +4177,9 @@
         <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_6jVAUjJ5Eei-h6jx05T6BA" name="Section Options" width="15">
           <target xmi:type="flow:DataContext" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4"/>
           <semanticElements xmi:type="flow:DataContext" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4"/>
+          <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+          <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+          <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
           <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_6jVAUzJ5Eei-h6jx05T6BA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="214,197,66" backgroundStyle="GradientTopToBottom" backgroundColor="255,245,181" foregroundColor="255,255,255">
             <labelFormat>bold</labelFormat>
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>

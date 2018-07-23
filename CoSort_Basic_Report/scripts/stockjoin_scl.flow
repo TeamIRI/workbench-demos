@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="stockjoin">
   <flowlets name="stockjoin">
-    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_..\InputFiles\nyse-a.txt"/>
+    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_nyse-a.txt"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="stockjoin.scl" iriJob="stockjoin.scl">
-      <inputDatas name="nyse-a.txt" inputConnections="Start_To_..\InputFiles\nyse-a.txt">
+      <inputDatas name="nyse-a.txt" inputConnections="Start_To_nyse-a.txt">
         <dataInfo xsi:type="flow:FileDataInfo" name="nyse-a.txt" fileName="../InputFiles/nyse-a.txt">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -197,8 +197,7 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
             <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
             <comment>
-              <comments>### Action Statement - Sort &amp; Join ####&#xD;
-</comments>
+              <comments>### Action Statement - Sort &amp; Join ####</comments>
             </comment>
           </fields>
         </dataInfo>
@@ -206,8 +205,7 @@
         <sectionOptions xsi:type="scl:Alias" alias="buys"/>
         <sectionOptions xsi:type="scl:Inskip" number="1">
           <comment>
-            <comments>skip header record&#xD;
-</comments>
+            <comments>skip header record</comments>
           </comment>
         </sectionOptions>
       </inputDatas>
@@ -240,10 +238,7 @@
         <sectionOptions xsi:type="scl:Summary">
           <fieldName name="NEW_BALANCE"/>
           <comment>
-            <comments>expression&#xD;
-</comments>
-            <comments>/OUTFILE=..\Targets\TradingA	# detail record format&#xD;
-</comments>
+            <comments>expression</comments>
           </comment>
           <expression>
             <relationalExpression>
@@ -472,13 +467,12 @@
             <fieldAttributes xsi:type="ddf:Position" number1="66"/>
             <fieldAttributes xsi:type="ddf:Size" size="4"/>
             <comment>
-              <comments>### Output File 2 - Data Interchange Format ####&#xD;
-</comments>
+              <comments>#### Output File 2 - Data Interchange Format ####</comments>
             </comment>
           </fields>
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
-        <sectionOptions xsi:type="scl:Headrec" headrec="Client             Symbol         Shares  LastTrade  Shares*LT     Ln.&#xA;&#xA;"/>
+        <sectionOptions xsi:type="scl:Headrec" headrec="Client             Symbol  NYSE   Shares  LastTrade  Shares*LT     Ln.&#xA;&#xA;"/>
       </outputDatas>
       <outputDatas name="TradingA.xml">
         <dataInfo xsi:type="flow:FileDataInfo" name="TradingA.xml" fileName="../Targets/TradingA.xml">
@@ -597,10 +591,7 @@
             </logicalExpressions>
           </compoundExpression>
           <comment>
-            <comments>### Output File 3 - Web-ready Summary Report ####&#xD;
-</comments>
-            <comments>### Output File 3 - HTML Format ####&#xD;
-</comments>
+            <comments>### Output File 3 - HTML Format ####</comments>
           </comment>
         </sectionOptions>
       </outputDatas>
@@ -629,10 +620,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="CURRENCY"/>
             <fieldAttributes xsi:type="ddf:Size" size="15"/>
-            <comment>
-              <comments>field derived in prior output spec!&#xD;
-</comments>
-            </comment>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=""/>
           </fields>
           <fields xsi:type="scl:Data">
             <data xsi:type="scl:DataValue">
@@ -717,6 +705,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=""/>
           </fields>
           <fields xsi:type="scl:Data">
             <data xsi:type="scl:DataValue">
@@ -741,6 +730,7 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue=""/>
           </fields>
           <fields xsi:type="scl:Data">
             <data xsi:type="scl:DataValue">
@@ -800,8 +790,7 @@
             </logicalExpressions>
           </compoundExpression>
           <comment>
-            <comments>selection applied in display&#xD;
-</comments>
+            <comments>selection applied in display</comments>
           </comment>
         </sectionOptions>
       </outputDatas>
@@ -832,17 +821,13 @@
       <jobControlOptions xsi:type="scl:Statistics" statisticsOn="true" filename="..\JobStats\tradinga.stat"/>
       <jobControlOptions xsi:type="scl:WarningsOff" warningsOff="true">
         <comment>
-          <comments>### Input Source Specifications ####&#xD;
-</comments>
+          <comments>### Input Source Specifications ####</comments>
         </comment>
       </jobControlOptions>
       <comments>
-        <comments>## CoSort Copyright 2013 IRI, Inc. ###&#xD;
-</comments>
-        <comments>## Sort Control Language (SortCL) Program ###&#xD;
-</comments>
-        <comments>## Job Controls Phase ###&#xD;
-</comments>
+        <comments>## CoSort Copyright 2013 IRI, Inc. ###</comments>
+        <comments>## Sort Control Language (SortCL) Program ###</comments>
+        <comments>## Job Controls Phase ###</comments>
       </comments>
       <transformData xsi:type="flow:JoinAction" name="Join">
         <dataInfo xsi:type="flow:InternalDataInfo" name="Join">
@@ -1032,8 +1017,7 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
             <fieldAttributes xsi:type="ddf:Frame" frameValue="&quot;"/>
             <comment>
-              <comments>### Action Statement - Sort &amp; Join ####&#xD;
-</comments>
+              <comments>### Action Statement - Sort &amp; Join ####</comments>
             </comment>
           </fields>
         </dataInfo>
@@ -1087,14 +1071,12 @@
             </relationalExpression>
           </compoundExpression>
           <comment>
-            <comments>### Output File 1 - 2D BI Report with Selection ####&#xD;
-</comments>
-            <comments>/OUTFILE=..\Targets\TradingA	# summary record format&#xD;
-</comments>
+            <comments>### Output File 1 - 2D BI Report with Selection ####</comments>
           </comment>
         </transformAction>
       </transformData>
     </blocks>
-    <connections name="Start_To_..\InputFiles\nyse-a.txt" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1/@inputDatas.0"/>
+    <connections name="Start_To_nyse-a.txt" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1/@inputDatas.0"/>
   </flowlets>
 </flow:FlowBatch>
+
