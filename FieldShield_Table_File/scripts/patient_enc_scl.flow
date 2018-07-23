@@ -34,7 +34,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="NAME1"/>
+                          <value xsi:type="ddf:FieldName" name="NAME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -250,7 +250,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="NAME1"/>
+                          <value xsi:type="ddf:FieldName" name="NAME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -532,7 +532,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="PSEUDO_NAME1"/>
+                          <value xsi:type="ddf:FieldName" name="PSEUDO_NAME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -543,12 +543,12 @@
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="|"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
             <fieldAttributes xsi:type="ddf:Set">
-              <value xsi:type="ddf:FileSet" fileName="&quot;120326134642_NAME1_pseudo.set&quot;">
-                <values>NAME1</values>
+              <value xsi:type="ddf:FileSet" fileName="&quot;120326134642_NAME_pseudo.set&quot;">
+                <values>NAME</values>
               </value>
             </fieldAttributes>
-            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1024,41 +1024,41 @@
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
       </outputDatas>
-      <mappings name="IDNUMBER_To_patient_record.IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
-      <mappings name="NAME1_To_patient_record.NAME1" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
-      <mappings name="AGE_To_patient_record.AGE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
-      <mappings name="EMAIL_To_patient_record.EMAIL" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
-      <mappings name="PHONE_To_patient_record.PHONE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
-      <mappings name="CREDIT_CARD_To_patient_record.CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
-      <mappings name="DRIVING_LICENSE_To_patient_record.DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
-      <mappings name="SSN_To_patient_record.SSN" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7"/>
-      <mappings name="CITY_To_patient_record.CITY" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8"/>
-      <mappings name="STATE_To_patient_record.STATE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9"/>
-      <mappings name="patient_record.IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
-      <mappings name="patient_record.NAME1_To_NAME1" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.1"/>
-      <mappings name="patient_record.AGE_To_AGE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.2"/>
-      <mappings name="patient_record.EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.3"/>
-      <mappings name="patient_record.PHONE_To_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.4"/>
-      <mappings name="patient_record.CREDIT_CARD_To_ENC_FP_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.5"/>
-      <mappings name="patient_record.CREDIT_CARD_To_ENC_FP_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.5"/>
-      <mappings name="patient_record.DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.6"/>
-      <mappings name="patient_record.DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.6"/>
-      <mappings name="patient_record.SSN_To_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.7"/>
-      <mappings name="patient_record.CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.8"/>
-      <mappings name="patient_record.STATE_To_STATE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.9"/>
-      <mappings name="patient_record.IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.0"/>
-      <mappings name="patient_record.NAME1_To_PSEUDO_NAME1" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.1"/>
-      <mappings name="patient_record.AGE_To_CUSTOM_AGE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.2"/>
-      <mappings name="patient_record.EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.3"/>
-      <mappings name="patient_record.PHONE_To_MASK_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
-      <mappings name="patient_record.PHONE_To_MASK_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
-      <mappings name="patient_record.CREDIT_CARD_To_ENC_AES128_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
-      <mappings name="patient_record.CREDIT_CARD_To_ENC_AES128_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
-      <mappings name="patient_record.DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.6"/>
-      <mappings name="patient_record.DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.6"/>
-      <mappings name="patient_record.SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.7"/>
-      <mappings name="patient_record.SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.7"/>
-      <mappings name="patient_record.CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.8"/>
+      <mappings name="IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="NAME_To_NAME" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="AGE_To_AGE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_To_PHONE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="CREDIT_CARD_To_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="DRIVING_LICENSE_To_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="SSN_To_SSN" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9"/>
+      <mappings name="IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="NAME_To_NAME" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="AGE_To_AGE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_To_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="CREDIT_CARD_To_ENC_FP_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="CREDIT_CARD_To_ENC_FP_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="SSN_To_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.7"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.8"/>
+      <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.9"/>
+      <mappings name="IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.0"/>
+      <mappings name="NAME_To_NAME" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.1"/>
+      <mappings name="AGE_To_CUSTOM_AGE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_To_MASK_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
+      <mappings name="PHONE_To_MASK_PHONE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
+      <mappings name="CREDIT_CARD_To_ENC_AES128_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="CREDIT_CARD_To_ENC_AES128_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
+      <mappings name="DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.6"/>
+      <mappings name="DRIVING_LICENSE_To_ENC_FP_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.6"/>
+      <mappings name="SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.7"/>
+      <mappings name="SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.7"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.8"/>
       <jobControlOptions xsi:type="scl:Audit" fileName="FSlog.xml"/>
       <comments>
         <comments>FieldShield Script&#xD;
@@ -1080,7 +1080,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.IDNUMBER"/>
+                          <value xsi:type="ddf:FieldName" name="IDNUMBER"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1101,7 +1101,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.NAME1"/>
+                          <value xsi:type="ddf:FieldName" name="NAME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1122,7 +1122,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.AGE"/>
+                          <value xsi:type="ddf:FieldName" name="AGE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1143,7 +1143,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.EMAIL"/>
+                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1164,7 +1164,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.PHONE"/>
+                          <value xsi:type="ddf:FieldName" name="PHONE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1185,7 +1185,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.CREDIT_CARD"/>
+                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1206,7 +1206,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.DRIVING_LICENSE"/>
+                          <value xsi:type="ddf:FieldName" name="DRIVING_LICENSE"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1227,7 +1227,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.SSN"/>
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1248,7 +1248,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.CITY"/>
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -1269,7 +1269,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="patient_record.STATE"/>
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
                         </expr>
                       </lValue>
                     </lValue>

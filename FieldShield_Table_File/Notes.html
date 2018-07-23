@@ -41,6 +41,7 @@
     target table.
 
       <ol>
+      	<li>Open the <strong>setup</strong> folder.
         <li>Right click on <strong>FS-Tables.SQL</strong></li>
 
         <li>Click <strong>Execute SQL Files</strong> to create the
@@ -53,7 +54,6 @@
 
     <li style="margin-bottom: 10px;">Populate the source table.<br>
 
-
       <ol>
         <li>Go to the Data Source Explorer and drill down to the
         PATIENT_RECORD table.</li>
@@ -62,7 +62,7 @@
         <strong>Data&gt;Load ...</strong></li>
 
         <li>Browse to the Project Explorer directory and select the
-        patient_record.data file to load 10 rows into the
+        setup>patient_record.data file to load 10 rows into the
         table.</li>
 
         <li>For this example, be sure the <strong>Column
@@ -78,9 +78,8 @@
   </ol>
 
   <p>Remember that this is a convenient method for populating small
-  tables. SortCL inserts via ODBC, and especially pre-sorted loads
-  into the DB load utility, are much faster big table load
-  methods.</p>
+  tables. In this example. SortCL inserts via ODBC. Using the DB load 
+  utility on large tables is generally a much faster load method.</p>
 
   <ol start="3">
     <li style="margin-bottom: 10px;">Examine the
