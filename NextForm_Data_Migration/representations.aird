@@ -2,12 +2,11 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:scl="http://www.iri.com/lang/scl/Scl" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis xmi:id="_uCuyQH77EeShQcClUUsqNw" selectedViews="_XUViMH8QEeS3lsbTIVcyAA" version="12.1.0.201708031200">
     <semanticResources>Column%20Rule/My.flow</semanticResources>
-    <semanticResources>Column%20Rule/SCOTT.EMPLOYEES.fcl</semanticResources>
     <semanticResources>Data%20Federation/datafederation.ncl</semanticResources>
-    <semanticResources>Column%20Rule/Employees.flow</semanticResources>
     <semanticResources>metadata/historytable.ddf</semanticResources>
     <semanticResources>metadata/jobs.ddf</semanticResources>
     <semanticResources>metadata/chiefs.ddf</semanticResources>
+    <semanticResources>Column%20Rule/SCOTT.EMPLOYEES.ncl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_XUViMH8QEeS3lsbTIVcyAA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Lnv7YNkUEeeq-fWz0JrMwQ" name="Employees Flow Diagram" repPath="#_hpq-gDJ5Eei-h6jx05T6BA">
