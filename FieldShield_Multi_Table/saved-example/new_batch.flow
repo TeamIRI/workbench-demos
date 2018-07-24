@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="new_batch">
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:rules="http://rules/1.0" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="new_batch">
   <flowlets name="new_batch">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_DisableRelatedFK.sql"/>
     <blocks xsi:type="flow:OracleSQLExec" name="DisableRelatedFK.sql" outputConnections="DisableRelatedFK.sql_To_SCOTT_EMPLOYEES.fcl" inputConnections="Start_To_DisableRelatedFK.sql" command="sqlplus" statementFile="DisableRelatedFK.sql" statementText="ALTER TABLE DEPARTMENTS DISABLE CONSTRAINT DEPT_MGR_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES DISABLE CONSTRAINT EMP_DEPT_FK;&#xD;&#xA;ALTER TABLE EMPLOYEES DISABLE CONSTRAINT EMP_MGNR_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY DISABLE CONSTRAINT JHIST_DEPT_FK;&#xD;&#xA;ALTER TABLE JOB_HISTORY DISABLE CONSTRAINT JHIST_EMP_FK;&#xD;&#xA;exit&#xA;">
@@ -1546,14 +1546,14 @@
       <tables>SCOTT.DEPARTMENTS</tables>
       <tables>SCOTT.EMPLOYEES</tables>
       <tables>SCOTT.JOB_HISTORY</tables>
-      <fieldRuleMatchers name="SID" dataClassLibrary="C:/IRI/CoSort95/workbench/workspace/FieldShield_Multi_Table">
-        <rule href="../iriLibrary.fieldrules#encryptSID"/>
+      <ruleMatchers name="SID" dataClassLibrary="C:/IRI/CoSort95/workbench/workspace/FieldShield_Multi_Table">
+        <rule href="../iriLibrary.rules#encryptSID"/>
         <matcherDetails details=".*_SID"/>
-      </fieldRuleMatchers>
-      <fieldRules name="encryptSID" editor="cryptoWizard">
+      </ruleMatchers>
+      <rules xsi:type="rules:FieldRule" name="encryptSID" editor="cryptoWizard">
         <properties fieldRulePropertyType="EXPRESSION" value="enc_fp_aes256_ascii(${FIELDNAME}, &quot;secret&quot;)"/>
         <properties fieldRulePropertyType="NAME" value="ENC_FP_${FIELDNAME}"/>
-      </fieldRules>
+      </rules>
     </sourceTargetData>
   </Lineage>
 </flow:FlowBatch>

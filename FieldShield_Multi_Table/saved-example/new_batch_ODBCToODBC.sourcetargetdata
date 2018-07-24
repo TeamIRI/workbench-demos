@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ASCII"?>
-<com.iri.model.sourcetargetdata:SourceTargetData xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.iri.model.sourcetargetdata="http://com/iri/model/sourcetargetdata" extractor="ODBC" loader="ODBC" sourceDSN="Oracle" sourceDTPName="Oracle" separator="&#x9;" targetDSN="Oracle" targetDTPName="Oracle" targetSchema="SCOTT" outputMode="CREATE" disableFKOnLoad="true" reenableFKOnPostLoad="true">
+<sourcetargetdata:SourceTargetData xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:rules="http://rules/1.0" xmlns:sourcetargetdata="http://sourcetargetdata/1.0" extractor="ODBC" loader="ODBC" sourceDSN="Oracle" sourceDTPName="Oracle" separator="&#x9;" targetDSN="Oracle" targetDTPName="Oracle" targetSchema="SCOTT" outputMode="CREATE" disableFKOnLoad="true" reenableFKOnPostLoad="true">
   <tables>SCOTT.DEPARTMENTS</tables>
   <tables>SCOTT.EMPLOYEES</tables>
   <tables>SCOTT.JOB_HISTORY</tables>
-  <fieldRuleMatchers name="SID" dataClassLibrary="C:/IRI/CoSort95/workbench/workspace/FieldShield_Multi_Table">
-    <rule href="../iriLibrary.fieldrules#encryptSID"/>
+  <ruleMatchers name="SID" dataClassLibrary="C:/IRI/CoSort95/workbench/workspace/FieldShield_Multi_Table">
+    <rule href="../iriLibrary.rules#encryptSID"/>
     <matcherDetails details=".*_SID"/>
-  </fieldRuleMatchers>
-  <fieldRules name="encryptSID" editor="cryptoWizard">
+  </ruleMatchers>
+  <rules xsi:type="rules:FieldRule" name="encryptSID" editor="cryptoWizard">
     <properties fieldRulePropertyType="EXPRESSION" value="enc_fp_aes256_ascii(${FIELDNAME}, &quot;secret&quot;)"/>
     <properties fieldRulePropertyType="NAME" value="ENC_FP_${FIELDNAME}"/>
-  </fieldRules>
-</com.iri.model.sourcetargetdata:SourceTargetData>
+  </rules>
+</sourcetargetdata:SourceTargetData>
 
