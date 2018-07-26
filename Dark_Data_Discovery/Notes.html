@@ -41,11 +41,11 @@
   demo are located in:<br>
   <code>C:\Documents\data</code></p>
 
-  <p>Recommended steps to perform the demo in the Workbench:</p>
+  <p>Recommended steps to perform the demo in IRI Workbench:</p>
 
   <ol>
     <li style="margin-bottom: 10px;">Open the &quot;New Dark Data
-    Discovery&quot; wizard from the Data Discovery Menu.</li>
+    Discovery&quot; wizard from the Discovery Menu.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Folder</strong>
     field, make sure Dark Data Discovery is the selected project
@@ -66,54 +66,41 @@
     continue to the next page.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Search
-    directories</strong> section, select the check box for
-    <strong>My Computer</strong> since the files to be searched
-    reside on this computer.</li>
+    directories</strong> section, navigate to the folder in the 
+    workspace called <em>data</em>.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>File type
     extensions</strong> section, select the check boxes for all the
-    extensions, or click <strong>Select All</strong>.</li>
+    extensions. For this example, <strong>Select All</strong>.</li>
+
+    <li style="margin-bottom: 10px;">In the <strong>Metadata
+    display</strong> field, select the type of information to be
+    displayed in the report. For this example, <strong>Select All</strong>.
 
     <li style="margin-bottom: 10px;">Click <strong>Next</strong> to
     continue to the next page.</li>
 
-    <li style="margin-bottom: 10px;">In the <strong>Matcher
-    name</strong> field, enter CCN. This is used as the field name
-    in the ddf.</li>
-
-    <li style="margin-bottom: 10px;">In the <strong>Search
-    pattern/Keyword</strong> field, enter the following regular
-    expression for credit card numbers:<br>
-    \b\d{4}-\d{4}-\d{4}-\d{4}\b</li>
+    <li style="margin-bottom: 10px;">Click <strong>Browse</strong>
+    and double click <em>CCN</em> to add a credit card number pattern.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>Add to
     table</strong> to add the header and expression to the table
     below.</li>
 
-    <li style="margin-bottom: 10px;">Return to the <strong>Matcher
-    name</strong> field to add the next search item: SSN.</li>
-
-    <li style="margin-bottom: 10px;">In the <strong>Search
-    pattern/keyword</strong> field, enter the following regular
-    expression for social security numbers:<br>
-    \b\d{3}-\d{2}-\d{4}\b</li>
+    <li style="margin-bottom: 10px;">Click <strong>Browse</strong> 
+    and double click <em>SSN</em> to add a social security number pattern.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>Add to
     table.</strong>.</li>
 
-    <li style="margin-bottom: 10px;">Return again to the
-    <strong>Matcher name</strong> field to add the next search
-    item: Phone.</li>
-
-    <li style="margin-bottom: 10px;">In the <strong>Search
-    pattern/keyword</strong> field, enter the following regular
-    expression for telephone numbers:<br>
-    \b(?:(?:\+?(1)(?:[ .-]?)?)?(?:\(?([2-9]\d{2})\)?(?:[
-    .-]?)?)([2-9]\d{2})(?:[ .-]?)(\d{4})(?:[
-    #eExXtT]*)(\d{2,6})?)\b</li>
+    <li style="margin-bottom: 10px;">Click <strong>Browse</strong> 
+    and double click <em>PHONE_US</em> to add a phone number pattern.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>Add to
     table.</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Click
+    <strong>Finish</strong>.</li>
   </ol>
 
   <p><strong>NOTE</strong>: To find and use regular expressions in
@@ -124,34 +111,5 @@
   To select a set file for a values search, click <strong>Values
   Search</strong>.</p>
 
-  <ol start="19">
-    <li style="margin-bottom: 10px;">In the <strong>Match
-    Options</strong> field, select <strong>Any Pattern</strong> to
-    include all the matches found for each of the patterns listed,
-    or select <strong>Specified Order</strong> to combine the
-    patterns into a regular expression and include the exact
-    matches of the combined expression.</li>
-
-    <li style="margin-bottom: 10px;">In the
-    <strong>Delimiter</strong> field, enter: \t</li>
-
-    <li style="margin-bottom: 10px;">In the <strong>Number of
-    results to preview</strong> field, enter: 20</li>
-
-    <li style="margin-bottom: 10px;">In the <strong>Metadata
-    display</strong> field, select the type of information to be
-    displayed in the report. For this example, select all.</li>
-
-    <li style="margin-bottom: 10px;">Click <strong>Next</strong>.
-    The preview page displays</li>
-
-    <li style="margin-bottom: 10px;">View the preview page to see
-    that results of the search returned the credit card numbers,
-    social security numbers, and phone numbers, and provided the
-    information selected.</li>
-
-    <li style="margin-bottom: 10px;">Click
-    <strong>Finish</strong>.</li>
-  </ol>
 </body>
 </html>
