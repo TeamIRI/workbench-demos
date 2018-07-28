@@ -653,7 +653,7 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="COMPANY_NAME"/>
             <fieldAttributes xsi:type="ddf:Set">
-              <value xsi:type="ddf:FileSet" fileName="&quot;C:/IRI/CoSort95/sets/american_companies.set&quot;">
+              <value xsi:type="ddf:FileSet" fileName="&quot;C:/IRI/cosort100/sets/american_companies.set&quot;">
                 <setOption xsi:type="ddf:SetSelect"/>
               </value>
             </fieldAttributes>
@@ -810,7 +810,7 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="COMPANY_NAME"/>
             <fieldAttributes xsi:type="ddf:Set">
-              <value xsi:type="ddf:FileSet" fileName="&quot;C:/IRI/CoSort95/sets/american_companies.set&quot;">
+              <value xsi:type="ddf:FileSet" fileName="&quot;C:/IRI/cosort100/sets/american_companies.set&quot;">
                 <setOption xsi:type="ddf:SetSelect"/>
               </value>
             </fieldAttributes>
@@ -7980,12 +7980,12 @@
       <tables>SCOTT.DM_EMPLOYEE_EVALUATIONS</tables>
       <tables>SCOTT.DM_JOB_TYPES</tables>
       <tables>SCOTT.DM_ORGANIZATIONAL_UNITS</tables>
-      <ruleMatchers name="CoName" dataClassLibrary="C:/IRI/CoSort95/workbench/workspace/RowGen_Test_DB_Data">
+      <ruleMatchers name="CoName" dataClassLibrary="C:/IRI/workspace-demos/RowGen_Test_DB_Data">
         <rule href="../iriLibrary.fieldrules#SetRule"/>
         <matcherDetails details=".*COMPANY_NAME"/>
       </ruleMatchers>
       <rules xsi:type="rules:FieldRule" name="SetRule" editor="setFileWizard">
-        <properties fieldRulePropertyType="SET" value="&quot;C:/IRI/CoSort95/sets/american_companies.set&quot; SELECT=ANY"/>
+        <properties fieldRulePropertyType="SET" value="&quot;C:/IRI/cosort100/sets/american_companies.set&quot; SELECT=ANY"/>
         <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
       </rules>
     </sourceTargetData>

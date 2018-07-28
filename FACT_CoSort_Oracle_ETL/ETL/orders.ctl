@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE 'C:\IRI\CoSort95\workbench\workspace\FACT_CoSort_Oracle_ETL\TargetFiles\table_output.dat'
+INFILE 'C:\IRI\workspace-demos\FACT_CoSort_Oracle_ETL\TargetFiles\table_output.dat'
 TRUNCATE
 INTO TABLE orders_sorted
 FIELDS TERMINATED BY ','

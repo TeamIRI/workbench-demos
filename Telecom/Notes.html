@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!--
-   - Copyright (c) 2016, 2017. Innovative Routines International (IRI), Inc.   -->
+- Copyright (c) 2016,2018 Innovative Routines International (IRI), Inc.
+-->
 
 <html lang="en-US">
 <head>
@@ -70,9 +71,9 @@
 		    <li>/FIELD=(CALLING_PRE=sub_string(CALLING_NUMBER, 1, 6), TYPE=ASCII, POSITION=10, SEPARATOR="\t")</li>
  			<li>/FIELD=(CALLED_PRE=sub_string(CALLED_NUMBER, 1, 6), TYPE=ASCII, POSITION=11, SEPARATOR="\t")</li>
     		<li>/FIELD=(TRUNK_IN_CARRIER, TYPE=ASCII, POSITION=12, 
-    			SET="C:/IRI/CoSort95/workbench/workspace/Telecom/REF-TRUNK.set" [ TRUNK_IN ] DEFAULT = "ERROR", SEPARATOR="\t")</li>
+    			SET="REF-TRUNK.set" [ TRUNK_IN ] DEFAULT = "ERROR", SEPARATOR="\t")</li>
     		<li>/FIELD=(TRUNK_OUT_CARRIER, TYPE=ASCII, POSITION=13, 
-    			SET="C:/IRI/CoSort95/workbench/workspace/Telecom/REF-TRUNK.set" [ TRUNK_OUT ] DEFAULT = "ERROR", SEPARATOR="\t")</li></ul>
+    			SET="REF-TRUNK.set" [ TRUNK_OUT ] DEFAULT = "ERROR", SEPARATOR="\t")</li></ul>
  		add omit: WHERE TRUNK_IN_CARRIER EQ "ERROR" OR TRUNK_OUT_CARRIER EQ "ERROR"<br><br>
 		reject.data (meta = Reject)<br>
 		modify field:<br>
@@ -95,9 +96,9 @@
 		add fields:<br>
    		<ul style="list-style: none;">
 		    <li>/FIELD=(CALLING_PREFIX_CARRIER, TYPE=ASCII, POSITION=10, SEPARATOR="\t", 
-		    	SET="C:/IRI/CoSort95/workbench/workspace/Telecom/REF-PREFIX.set" [ CALLING_PRE ] DEFAULT = "ERROR")</li>
+		    	SET="REF-PREFIX.set" [ CALLING_PRE ] DEFAULT = "ERROR")</li>
     		<li>/FIELD=(CALLED_PREFIX_CARRIER, TYPE=ASCII, POSITION=11, SEPARATOR="\t", 
-    			SET="C:/IRI/CoSort95/workbench/workspace/Telecom/REF-PREFIX.set" [ CALLED_PRE ] DEFAULT = "ERROR")</li></ul>
+    			SET="REF-PREFIX.set" [ CALLED_PRE ] DEFAULT = "ERROR")</li></ul>
 		add omit: WHERE CALLING_PREFIX_CARRIER EQ "ERROR" OR CALLED_PREFIX_CARRIER EQ "ERROR"<br><br>
 		reject.data (meta = Reject)<br>
 		add Append option<br>
@@ -120,9 +121,9 @@
 		add fields:<br>
     		<ul style="list-style: none;">
    			<li>/FIELD=(TARIFF_PERMINUTE_IN, TYPE=ASCII, POSITION=15, SEPARATOR="\t", 
-   			SET="C:/IRI/CoSort95/workbench/workspace/Telecom/REF-TARIFF.set" [ TRUNK_IN_CARRIER , CALLING_PREFIX_CARRIER ] DEFAULT="ERROR")</li>
+   			SET="REF-TARIFF.set" [ TRUNK_IN_CARRIER , CALLING_PREFIX_CARRIER ] DEFAULT="ERROR")</li>
     		<li>/FIELD=(TARIFF_PERMINUTE_OUT, TYPE=ASCII, POSITION=16, SEPARATOR="\t", 
-    			SET="C:/IRI/CoSort95/workbench/workspace/Telecom/REF-TARIFF.set" [ TRUNK_OUT_CARRIER , CALLED_PREFIX_CARRIER ] DEFAULT="ERROR")</li></ul>
+    			SET="REF-TARIFF.set" [ TRUNK_OUT_CARRIER , CALLED_PREFIX_CARRIER ] DEFAULT="ERROR")</li></ul>
 		add omit: WHERE TARIFF_PERMINUTE_IN EQ "ERROR" OR TARIFF_PERMINUTE_OUT EQ "ERROR"</li><br><br>
 		reject.data (meta = Reject)<br>
 		add Append option<br>

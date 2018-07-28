@@ -4,7 +4,7 @@ SQL*Loader: Release 11.2.0.2.0 - Production on Wed Apr 15 13:28:20 2015
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 
 Control File:   ORDERS.ctl
-Data File:      C:/IRI/CoSort95/workbench/workspace/Flow/ETL/setup/ORDERS.out
+Data File:      C:/IRI/workspace-demos/Flow/ETL/setup/ORDERS.out
   Bad File:     ORDERS.bad
   Discard File:  none specified
  
