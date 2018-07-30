@@ -1,0 +1,35 @@
+Name|Result|Span|Owner|Regularity|Linkage|Read Only|Hidden|File Size|Date Created|Date Modified|Date Accessed|File Path|File Type
+EMAIL|jpenddreth0@census.gov|104:126|POX6022\iridemo|true|false|false|false|834|2018-07-18T12:33:32Z|2018-07-24T14:54:58.1859Z|2018-07-18T12:33:32Z|C:\git\workbench-demos\DarkShield\data\example.json|json
+EMAIL|jpenddreth0@census.gov|335:357|POX6022\iridemo|true|false|false|false|834|2018-07-18T12:33:32Z|2018-07-24T14:54:58.1859Z|2018-07-18T12:33:32Z|C:\git\workbench-demos\DarkShield\data\example.json|json
+EMAIL|gfrediani1@senate.gov|457:478|POX6022\iridemo|true|false|false|false|834|2018-07-18T12:33:32Z|2018-07-24T14:54:58.1859Z|2018-07-18T12:33:32Z|C:\git\workbench-demos\DarkShield\data\example.json|json
+EMAIL|gfrediani1personal@gmail.com|496:524|POX6022\iridemo|true|false|false|false|834|2018-07-18T12:33:32Z|2018-07-24T14:54:58.1859Z|2018-07-18T12:33:32Z|C:\git\workbench-demos\DarkShield\data\example.json|json
+EMAIL|gfrediani1@senate.gov|570:591|POX6022\iridemo|true|false|false|false|834|2018-07-18T12:33:32Z|2018-07-24T14:54:58.1859Z|2018-07-18T12:33:32Z|C:\git\workbench-demos\DarkShield\data\example.json|json
+EMAIL|gfrediani1personal@gmail.com|595:623|POX6022\iridemo|true|false|false|false|834|2018-07-18T12:33:32Z|2018-07-24T14:54:58.1859Z|2018-07-18T12:33:32Z|C:\git\workbench-demos\DarkShield\data\example.json|json
+EMAIL|nbea2@imageshack.us|753:772|POX6022\iridemo|true|false|false|false|834|2018-07-18T12:33:32Z|2018-07-24T14:54:58.1859Z|2018-07-18T12:33:32Z|C:\git\workbench-demos\DarkShield\data\example.json|json
+PIN_US|161-23-4923|175:186|POX6022\iridemo|true|false|false|false|685|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2015Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\NATID.txt|txt
+PIN_US|656-75-8962|207:218|POX6022\iridemo|true|false|false|false|685|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2015Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\NATID.txt|txt
+PIN_US|224-23-4923|220:231|POX6022\iridemo|true|false|false|false|685|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2015Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\NATID.txt|txt
+PIN_US|194-67-0943|247:258|POX6022\iridemo|true|false|false|false|685|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2015Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\NATID.txt|txt
+PIN_US|367-54-2323|275:286|POX6022\iridemo|true|false|false|false|685|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2015Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\NATID.txt|txt
+PIN_US|123456789|357:366|POX6022\iridemo|true|false|false|false|685|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2015Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\NATID.txt|txt
+PIN_US|987654321|381:390|POX6022\iridemo|true|false|false|false|685|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2015Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\NATID.txt|txt
+PIN_US|103812364|405:414|POX6022\iridemo|true|false|false|false|685|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2015Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\NATID.txt|txt
+PIN_US|225-65-4783|72:83|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|444-55-8989|101:112|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|332-56-7890|128:139|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|213-67-3211|156:167|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|225-76-9832|273:284|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|123456789|736:745|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|987654321|760:769|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|103812364|784:793|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|457812963|915:924|POX6022\iridemo|true|false|false|false|1246|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2327Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\SocialSecurityNumber.txt|txt
+PIN_US|64106-3686|Page 1, Word 5|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|12345-6789|Page 1, Word 14|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|000009752|Page 1, Word 18|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|000009752|Page 1, Word 46|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|000009752|Page 1, Word 51|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|000009752|Page 1, Word 97|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|130012345|Page 1, Word 105|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|000009752|Page 1, Word 120|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|000009752|Page 1, Word 150|POX6022\iridemo|true|false|false|false|55071|2018-07-18T12:33:34Z|2018-07-24T14:54:58.2795Z|2018-07-18T12:33:34Z|C:\git\workbench-demos\DarkShield\data\statement_sample1.PDF|PDF
+PIN_US|161-23-4923|169:180|POX6022\iridemo|true|false|false|false|2700|2018-07-18T12:33:36Z|2018-07-24T14:54:58.2483Z|2018-07-18T12:33:36Z|C:\git\workbench-demos\DarkShield\data\TestXML.xml|xml

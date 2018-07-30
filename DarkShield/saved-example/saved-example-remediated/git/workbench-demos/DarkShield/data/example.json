@@ -1,0 +1,38 @@
+[{
+  "id": 1,
+  "first_name": "Jeanette",
+  "last_name": "Penddreth",
+  "gender": "Female",
+  "email": "**********************",
+  "ip_address": "26.58.193.2",
+  "phone_numbers": [
+	{
+		"type" : "personal",
+		"number": "(321) 444-4444"
+	},
+	{
+		"type" : "office",
+		"number": "(321) 555-5555"
+	}
+  ],
+  "transcript": "Hey, email me at **********************" 
+}, {
+  "id": 2,
+  "first_name": "Giavani",
+  "last_name": "Frediani",
+  "emails": [
+	{ "email": "*********************" },
+	{ "email": "****************************" }
+  ],
+  "data": "You can reach Giavanni at ********************* or ****************************",
+  "gender": "Male",
+  "ip_address": "229.179.4.212"
+}, {
+  "id": 3,
+  "first_name": "Noell",
+  "last_name": "Bea",
+  "email": "*******************",
+  "gender": "Female",
+  "ip_address": "180.66.162.255"
+}]
+

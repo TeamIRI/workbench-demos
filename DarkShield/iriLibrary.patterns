@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<patterns:PatternLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:patterns="http://patterns/1.0">
+  <patterns name="EMAIL" description="Email" pattern="\b[\w._%+-]+@[\w.-]+\.[A-Za-z]{2,4}\b"/>
+  <patterns name="PIN_US" description="US SSN" pattern="\b(\d{3}[-]?\d{2}[-]?\d{4})\b"/>
+</patterns:PatternLibrary>
