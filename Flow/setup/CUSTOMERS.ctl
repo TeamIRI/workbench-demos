@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE 'C:/IRI/workspace-demos/Flow/setup/CUSTOMERS.out'
+INFILE 'C:/git/workbench-demos/Flow/setup/CUSTOMERS.out'
 APPEND INTO TABLE CUSTOMERS_FLOW
 REENABLE
 FIELDS TERMINATED BY "	"

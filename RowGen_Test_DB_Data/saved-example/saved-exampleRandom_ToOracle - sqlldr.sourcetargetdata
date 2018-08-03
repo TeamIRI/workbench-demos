@@ -6,7 +6,7 @@
   <tables>SCOTT.DM_EMPLOYEE_EVALUATIONS</tables>
   <tables>SCOTT.DM_JOB_TYPES</tables>
   <tables>SCOTT.DM_ORGANIZATIONAL_UNITS</tables>
-  <ruleMatchers name="CoName" dataClassLibrary="C:/IRI/workspace-demos/RowGen_Test_DB_Data">
+  <ruleMatchers name="CoName" dataClassLibrary="C:/git/workbench-demos/RowGen_Test_DB_Data">
     <rule href="../iriLibrary.rules#SetRule"/>
     <matcherDetails details=".*COMPANY_NAME"/>
   </ruleMatchers>

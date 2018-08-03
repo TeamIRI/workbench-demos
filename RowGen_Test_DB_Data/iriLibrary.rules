@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <rules:RuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0">
   <catalogs name="RowGenFlowWizard">
-    <matchers name="CoName" dataClassLibrary="C:/IRI/workspace-demos/RowGen_Test_DB_Data">
+    <matchers name="CoName" dataClassLibrary="C:/git/workbench-demos/RowGen_Test_DB_Data">
       <rule href="#SetRule"/>
       <matcherDetails details=".*COMPANY_NAME"/>
     </matchers>

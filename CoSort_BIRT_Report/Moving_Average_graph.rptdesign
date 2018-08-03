@@ -7,7 +7,7 @@
     <property name="imageDPI">96</property>
     <data-sources>
         <oda-data-source extensionID="com.iri.pelican.oda" name="Data Source" id="7">
-            <property name="Folder">C:\IRI\workspace-demos\CoSort_BIRT_Report</property>
+            <property name="Folder">C:\git\workbench-demos\CoSort_BIRT_Report</property>
         </oda-data-source>
     </data-sources>
     <data-sets>

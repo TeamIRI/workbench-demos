@@ -1546,7 +1546,7 @@
       <tables>SCOTT.DEPARTMENTS</tables>
       <tables>SCOTT.EMPLOYEES</tables>
       <tables>SCOTT.JOB_HISTORY</tables>
-      <ruleMatchers name="SID" dataClassLibrary="C:/IRI/workspace-demos/FieldShield_Multi_Table">
+      <ruleMatchers name="SID" dataClassLibrary="C:/git/workbench-demos/FieldShield_Multi_Table">
         <rule href="../iriLibrary.rules#encryptSID"/>
         <matcherDetails details=".*_SID"/>
       </ruleMatchers>

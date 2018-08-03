@@ -1169,7 +1169,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_XDnQdW1VEeeMydmI8OdBow" name="&#xA;C:/IRI/workspace-demos/Telecom/inputs/REF-TRUNK.csv">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_XDnQdW1VEeeMydmI8OdBow" name="&#xA;C:/git/workbench-demos/Telecom/inputs/REF-TRUNK.csv">
         <target xmi:type="flow:DataContext" href="Telecom.flow#//@flowlets.0/@blocks.4/@inputDatas.0"/>
         <semanticElements xmi:type="flow:DataContext" href="Telecom.flow#//@flowlets.0/@blocks.4/@inputDatas.0"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_XDnQdm1VEeeMydmI8OdBow" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="173,127,168" foregroundColor="255,255,255">
@@ -1658,7 +1658,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_eUCKFW1VEeeMydmI8OdBow" name="&#xA;C:/IRI/workspace-demos/Telecom/inputs/REF-PREFIX.csv">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_eUCKFW1VEeeMydmI8OdBow" name="&#xA;C:/git/workbench-demos/Telecom/inputs/REF-PREFIX.csv">
         <target xmi:type="flow:DataContext" href="Telecom.flow#//@flowlets.0/@blocks.5/@inputDatas.0"/>
         <semanticElements xmi:type="flow:DataContext" href="Telecom.flow#//@flowlets.0/@blocks.5/@inputDatas.0"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_eUCKFm1VEeeMydmI8OdBow" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="173,127,168" foregroundColor="255,255,255">
@@ -2216,7 +2216,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_gAym1W1VEeeMydmI8OdBow" name="&#xA;C:/IRI/workspace-demos/Telecom/inputs/REF-TARIFF.csv">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_gAym1W1VEeeMydmI8OdBow" name="&#xA;C:/git/workbench-demos/Telecom/inputs/REF-TARIFF.csv">
         <target xmi:type="flow:DataContext" href="Telecom.flow#//@flowlets.0/@blocks.7/@inputDatas.0"/>
         <semanticElements xmi:type="flow:DataContext" href="Telecom.flow#//@flowlets.0/@blocks.7/@inputDatas.0"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_gAym1m1VEeeMydmI8OdBow" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="173,127,168" foregroundColor="255,255,255">
