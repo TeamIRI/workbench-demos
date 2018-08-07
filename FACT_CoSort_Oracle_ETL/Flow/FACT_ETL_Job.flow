@@ -2,10 +2,10 @@
 <flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="FACT_ETL.bat">
   <flowlets name="FACT_ETL">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_In_SCOTT.ORDERS"/>
-    <blocks xsi:type="flow:CommandLine" name="SCOTT.ORDERS.ctl" inputConnections="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" command="sqlldr scott/tiger control=orders.ctl DIRECT=TRUE"/>
-    <blocks xsi:type="flow:TransformMappingBlock" name="orders_sorted.scl" iriJob="orders_sorted.scl">
-      <inputDatas name="stdin" inputConnections="Out_stdout_To_In_stdin">
-        <dataInfo xsi:type="flow:FileDataInfo" name="stdin" fileName="stdin">
+    <blocks xsi:type="flow:CommandLine" name="SCOTT.ORDERS.ctl" inputConnections="stdout.dat_To_SCOTT.ORDERS.ctl" command="sqlldr scott/tiger control=orders.ctl DIRECT=TRUE"/>
+    <blocks xsi:type="flow:FactProvider" name="orders.ini" factConfig="orders.ini">
+      <inputDatas name="SCOTT.ORDERS" inputConnections="Start_To_In_SCOTT.ORDERS">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.ORDERS" DSN="FACT_NoDNS" DTPName="FACT_NoDTP" providerName="Oracle" database="ORACLE" hostName="FACT_NoHost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="ORDERS" delimiter=",">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -14,7 +14,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="ORDER_ID"/>
+                          <value xsi:type="ddf:FieldName" name="*"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -22,202 +22,53 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="CUSTOMER"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="EMPLOYEE"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:Frame"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="SHIP_DATE"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="FREIGHT"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="0"/>
+            <fieldAttributes xsi:type="ddf:Size" size="0"/>
           </fields>
         </dataInfo>
+      </inputDatas>
+      <outputDatas name="stdout" outputConnections="stdout_To_stdin">
+        <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="*"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:Position" number1="0"/>
+            <fieldAttributes xsi:type="ddf:Size" size="0"/>
+          </fields>
+        </dataInfo>
+      </outputDatas>
+      <mappings name="*_To_*" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
+    </blocks>
+    <blocks xsi:type="flow:TransformMappingBlock" name="orders_sorted.scl" iriJob="orders_sorted.scl">
+      <inputDatas name="stdin" inputConnections="stdout_To_stdin">
+        <dataInfo xsi:type="flow:FileDataInfo" name="stdin" fileName="stdin"/>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
+        <sectionOptions xsi:type="scl:Alias" alias="stdin"/>
       </inputDatas>
       <outputDatas name="orders1.csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders1.csv" fileName="..\TargetFiles\orders1.csv">
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="ORDER_ID"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="CUSTOMER"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="EMPLOYEE"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:Frame"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="SHIP_DATE"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="FREIGHT"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
-          </fields>
-        </dataInfo>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders1.csv" fileName="../TargetFiles/orders1.csv"/>
+        <sectionOptions xsi:type="ddf:Process" name="CSV"/>
       </outputDatas>
       <outputDatas name="orders2.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders2.out" fileName="..\TargetFiles\orders2.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders2.out" fileName="../TargetFiles/orders2.out">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="GrandTotal for "/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -234,9 +85,14 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="17"/>
             <fieldAttributes xsi:type="ddf:Size" size="20"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="--->"/>
+            </data>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -246,7 +102,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="total_emp"/>
+                          <value xsi:type="ddf:FieldName" name="TOTAL_EMP"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -254,10 +110,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="42"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -267,7 +123,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="star"/>
+                          <value xsi:type="ddf:FieldName" name="STAR"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -275,6 +131,7 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="55"/>
             <fieldAttributes xsi:type="scl:IfStatement">
               <condition>
@@ -283,7 +140,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="total_emp"/>
+                          <value xsi:type="ddf:FieldName" name="TOTAL_EMP"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -332,21 +189,11 @@
                 </elseStatement>
               </elseStatement>
             </fieldAttributes>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
         </dataInfo>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="GrandTotal for "/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="--->"/>
-          </data>
-        </sectionOptions>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Summary">
-          <fieldName name="total_emp"/>
+          <fieldName name="TOTAL_EMP"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -362,10 +209,14 @@
           </break>
           <field name="FREIGHT"/>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders3.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders3.out" fileName="../TargetFiles/orders3.out">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="----------------------------------------------------->"/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -374,7 +225,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="total_freight"/>
+                          <value xsi:type="ddf:FieldName" name="TOTAL_FREIGHT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -382,12 +233,18 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="57"/>
             <fieldAttributes xsi:type="ddf:Size" size="8"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&#xA;"/>
+            </data>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Include">
           <compoundExpression>
             <relationalExpression>
@@ -414,18 +271,8 @@
             </relationalExpression>
           </compoundExpression>
         </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="----------------------------------------------------->"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&#xA;"/>
-          </data>
-        </sectionOptions>
         <sectionOptions xsi:type="scl:Summary">
-          <fieldName name="total_freight"/>
+          <fieldName name="TOTAL_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -441,10 +288,14 @@
           </break>
           <field name="FREIGHT"/>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders3.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders3.out" fileName="../TargetFiles/orders3.out">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&#xA;GrandTotal for "/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -462,6 +313,13 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Size" size="55"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="--------------------->"/>
+            </data>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -471,7 +329,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="total_emp"/>
+                          <value xsi:type="ddf:FieldName" name="TOTAL_EMP"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -479,12 +337,23 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="56"/>
             <fieldAttributes xsi:type="ddf:Size" size="10"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&#xA;"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&#xA;"/>
+            </data>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Include">
           <compoundExpression>
             <relationalExpression>
@@ -511,34 +380,13 @@
             </relationalExpression>
           </compoundExpression>
         </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&#xA;GrandTotal for "/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="--------------------->"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&#xA;"/>
-          </data>
-        </sectionOptions>
         <sectionOptions xsi:type="scl:Summary">
-          <fieldName name="total_emp"/>
+          <fieldName name="TOTAL_EMP"/>
           <field name="FREIGHT"/>
         </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&#xA;"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders3.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders3.out" fileName="../TargetFiles/orders3.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -555,9 +403,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="20"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -575,9 +423,9 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
             <fieldAttributes xsi:type="ddf:Position" number1="21"/>
             <fieldAttributes xsi:type="ddf:Size" size="37"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -595,12 +443,13 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="59"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Include">
           <compoundExpression>
             <relationalExpression>
@@ -627,10 +476,9 @@
             </relationalExpression>
           </compoundExpression>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders4.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders4.out" fileName="..\TargetFiles\orders4.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders4.out" fileName="../TargetFiles/orders4.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -647,8 +495,8 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -666,8 +514,8 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="20"/>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="20"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -677,7 +525,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="max_FREIGHT"/>
+                          <value xsi:type="ddf:FieldName" name="MAX_FREIGHT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -685,10 +533,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="55"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -698,7 +546,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="min_FREIGHT"/>
+                          <value xsi:type="ddf:FieldName" name="MIN_FREIGHT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -706,10 +554,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="63"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -719,7 +567,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="avg_FREIGHT"/>
+                          <value xsi:type="ddf:FieldName" name="AVG_FREIGHT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -727,10 +575,10 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="70"/>
             <fieldAttributes xsi:type="ddf:Size" size="6"/>
             <fieldAttributes xsi:type="ddf:Precision" number="2"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -740,7 +588,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="ct_FREIGHT"/>
+                          <value xsi:type="ddf:FieldName" name="CT_FREIGHT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -748,13 +596,14 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
             <fieldAttributes xsi:type="ddf:Position" number1="78"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
         </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Headrec" headrec="Employee           Customer                            Max      Min    Avg  Ct&#xA;------------------------------------------------------------------------------&#xA;"/>
         <sectionOptions xsi:type="scl:Summary" summaryType="/MAXIMUM">
-          <fieldName name="max_FREIGHT"/>
+          <fieldName name="MAX_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -771,7 +620,7 @@
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Summary" summaryType="/MINIMUM">
-          <fieldName name="min_FREIGHT"/>
+          <fieldName name="MIN_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -788,7 +637,7 @@
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Summary" summaryType="/AVERAGE">
-          <fieldName name="avg_FREIGHT"/>
+          <fieldName name="AVG_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -805,7 +654,7 @@
           <field name="FREIGHT"/>
         </sectionOptions>
         <sectionOptions xsi:type="scl:Count">
-          <fieldName name="ct_FREIGHT"/>
+          <fieldName name="CT_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -820,10 +669,14 @@
             </relationalExpression>
           </break>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders5.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders5.out" fileName="..\TargetFiles\orders5.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders5.out" fileName="../TargetFiles/orders5.out">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&#xA;Total Freight Charges: \$"/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -832,7 +685,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="total_FREIGHT"/>
+                          <value xsi:type="ddf:FieldName" name="TOTAL_FREIGHT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -840,23 +693,44 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Mill" mill="true"/>
             <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Mill" mill="true"/>
           </fields>
         </dataInfo>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&#xA;Total Freight Charges: \$"/>
-          </data>
-        </sectionOptions>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Summary">
-          <fieldName name="total_FREIGHT"/>
+          <fieldName name="TOTAL_FREIGHT"/>
           <field name="FREIGHT"/>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders6.html">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders6.html" fileName="../TargetFiles/orders6.html">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;TR>&lt;TD>"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&amp;nbsp;"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;/TD>&#xA;&lt;TD align=right>&lt;B>"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="Subtotal"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;FONT>&lt;/B>&lt;/TD>&#xA;&lt;TD align=right>&lt;B>&lt;U>&lt;FONT SIZE=+1>"/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -865,7 +739,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="total_FREIGHT"/>
+                          <value xsi:type="ddf:FieldName" name="TOTAL_FREIGHT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -873,37 +747,13 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="CURRENCY"/>
             <fieldAttributes xsi:type="ddf:Size" size="15"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="currency"/>
           </fields>
         </dataInfo>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;TR>&lt;TD>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string=""/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;/TD>&#xA;&lt;TD align=right>&lt;B>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="Subtotal"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;FONT>&lt;/B>&lt;/TD>&#xA;&lt;TD align=right>&lt;B>&lt;U>&lt;FONT SIZE=+1>"/>
-          </data>
-        </sectionOptions>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Summary">
-          <fieldName name="total_FREIGHT"/>
+          <fieldName name="TOTAL_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -919,10 +769,19 @@
           </break>
           <field name="FREIGHT"/>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders6.html">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders6.html" fileName="../TargetFiles/orders6.html">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;TR>&lt;/TD>&#xA;&lt;TD>&lt;B>&lt;FONT COLOR='BLUE'>"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="Grand Total for "/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -941,6 +800,21 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;TD>"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string=""/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;/FONT>&lt;/B>&lt;/TD>&#xA;&lt;TD align=right>&lt;B>&lt;U>&lt;FONT SIZE=+2>&lt;FONT COLOR='BLUE'>"/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -949,7 +823,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="tot_FREIGHT"/>
+                          <value xsi:type="ddf:FieldName" name="TOT_FREIGHT"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -957,37 +831,13 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="CURRENCY"/>
             <fieldAttributes xsi:type="ddf:Size" size="15"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="currency"/>
           </fields>
         </dataInfo>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;TR>&lt;/TD>&#xA;&lt;TD>&lt;B>&lt;FONT COLOR='BLUE'>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="Grand Total for "/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;TD>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string=""/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;/FONT>&lt;/B>&lt;/TD>&#xA;&lt;TD align=right>&lt;B>&lt;U>&lt;FONT SIZE=+2>&lt;FONT COLOR='BLUE'>"/>
-          </data>
-        </sectionOptions>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
         <sectionOptions xsi:type="scl:Summary">
-          <fieldName name="tot_FREIGHT"/>
+          <fieldName name="TOT_FREIGHT"/>
           <break>
             <relationalExpression>
               <lValue>
@@ -1007,10 +857,14 @@
           <variables>USER</variables>
           <variables>AMERICAN_TIMESTAMP</variables>
         </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders6.html">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
+        <dataInfo xsi:type="flow:FileDataInfo" name="orders6.html" fileName="../TargetFiles/orders6.html">
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;TR>&lt;TD>"/>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1028,6 +882,11 @@
               </compoundExpression>
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;/TD>&#xA;&lt;TD>"/>
+            </data>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1047,6 +906,54 @@
             </fieldMathStatement>
             <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
           </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:DataValue">
+              <repeatNumberString string="&lt;/B>&lt;/TD>&#xA;&lt;TD align=right>"/>
+            </data>
+          </fields>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:IfStatement">
+              <condition>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FREIGHT"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                  <additiveExpressionX relationalOperator="GT">
+                    <rValue>
+                      <lValue>
+                        <lValue>
+                          <expr xsi:type="scl:Unary">
+                            <value xsi:type="scl:LongValue" value="100"/>
+                          </expr>
+                        </lValue>
+                      </lValue>
+                    </rValue>
+                  </additiveExpressionX>
+                </relationalExpression>
+              </condition>
+              <thenStatement>
+                <thenStatement xsi:type="scl:CompoundExpression">
+                  <relationalExpression>
+                    <lValue>
+                      <lValue>
+                        <lValue>
+                          <expr xsi:type="scl:Unary">
+                            <value xsi:type="scl:RepeatNumberString" string="&lt;FONT COLOR='GREEN'>"/>
+                          </expr>
+                        </lValue>
+                      </lValue>
+                    </lValue>
+                  </relationalExpression>
+                </thenStatement>
+              </thenStatement>
+            </data>
+          </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1063,200 +970,12 @@
                 </relationalExpression>
               </compoundExpression>
             </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="CURRENCY"/>
             <fieldAttributes xsi:type="ddf:Size" size="15"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="currency"/>
           </fields>
-        </dataInfo>
-        <sectionOptions xsi:type="scl:Headrec" headrec="&lt;HTML>&lt;HEAD>&#xA;&lt;TITLE>HTML produced by CoSort's SortCL Transform 4GL Program &lt;/TITLE>&#xA;&lt;/HEAD>&#xA;&lt;BODY>&lt;H2>Employee Freight Summary&lt;/H2>&lt;FONT COLOR='RED'>Employee transactions, by customer; charges above \$100 are shown in green.&lt;/FONT>&#xA;&#xD;&lt;TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>&lt;TR>&lt;TH>Employee&lt;/TH>&lt;TH>Customer&lt;/TH>&lt;TH>Freight&lt;/TH>&lt;/TR>"/>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;TR>&lt;TD>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;/TD>&#xA;&lt;TD>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:DataValue">
-            <repeatNumberString string="&lt;/B>&lt;/TD>&#xA;&lt;TD align=right>"/>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:IfStatement">
-            <condition>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="FREIGHT"/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-                <additiveExpressionX relationalOperator="GT">
-                  <rValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="scl:LongValue" value="100"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </rValue>
-                </additiveExpressionX>
-              </relationalExpression>
-            </condition>
-            <thenStatement>
-              <thenStatement xsi:type="scl:CompoundExpression">
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="scl:RepeatNumberString" string="&lt;FONT COLOR='GREEN'>"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </thenStatement>
-            </thenStatement>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="scl:Data">
-          <data xsi:type="scl:IfStatement">
-            <condition>
-              <relationalExpression>
-                <lValue>
-                  <lValue>
-                    <lValue>
-                      <expr xsi:type="scl:Unary">
-                        <value xsi:type="ddf:FieldName" name="FREIGHT"/>
-                      </expr>
-                    </lValue>
-                  </lValue>
-                </lValue>
-                <additiveExpressionX relationalOperator="GT">
-                  <rValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="scl:LongValue" value="100"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </rValue>
-                </additiveExpressionX>
-              </relationalExpression>
-            </condition>
-            <thenStatement>
-              <thenStatement xsi:type="scl:CompoundExpression">
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="scl:RepeatNumberString" string="&lt;/FONT>"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </thenStatement>
-            </thenStatement>
-          </data>
-        </sectionOptions>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
-      </outputDatas>
-      <outputDatas name="table_output.dat" outputConnections="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\table_output.dat" fileName="..\TargetFiles\table_output.dat">
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="ORDER_ID"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="CUSTOMER"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="EMPLOYEE"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:Frame"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="SHIP_DATE"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
+          <fields xsi:type="scl:Data">
+            <data xsi:type="scl:IfStatement">
+              <condition>
                 <relationalExpression>
                   <lValue>
                     <lValue>
@@ -1267,172 +986,56 @@
                       </lValue>
                     </lValue>
                   </lValue>
+                  <additiveExpressionX relationalOperator="GT">
+                    <rValue>
+                      <lValue>
+                        <lValue>
+                          <expr xsi:type="scl:Unary">
+                            <value xsi:type="scl:LongValue" value="100"/>
+                          </expr>
+                        </lValue>
+                      </lValue>
+                    </rValue>
+                  </additiveExpressionX>
                 </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+              </condition>
+              <thenStatement>
+                <thenStatement xsi:type="scl:CompoundExpression">
+                  <relationalExpression>
+                    <lValue>
+                      <lValue>
+                        <lValue>
+                          <expr xsi:type="scl:Unary">
+                            <value xsi:type="scl:RepeatNumberString" string="&lt;/FONT>"/>
+                          </expr>
+                        </lValue>
+                      </lValue>
+                    </lValue>
+                  </relationalExpression>
+                </thenStatement>
+              </thenStatement>
+            </data>
           </fields>
         </dataInfo>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
+        <sectionOptions xsi:type="scl:Headrec" headrec="&lt;HTML>&lt;HEAD>&#xA;&lt;TITLE>HTML produced by CoSort's SortCL Transform 4GL Program &lt;/TITLE>&#xA;&lt;/HEAD>&#xA;&lt;BODY>&lt;H2>Employee Freight Summary&lt;/H2>&lt;FONT COLOR='RED'>Employee transactions, by customer; charges above \$100 are shown in green.&lt;/FONT>&#xA;&#xD;&lt;TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>&lt;TR>&lt;TH>Employee&lt;/TH>&lt;TH>Customer&lt;/TH>&lt;TH>Freight&lt;/TH>&lt;/TR>"/>
       </outputDatas>
-      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2"/>
-      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4"/>
-      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2"/>
-      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.0"/>
-      <mappings name="FREIGHT_To_total_emp" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.1/@dataInfo/@fields.1"/>
-      <mappings name="FREIGHT_To_total_freight" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.2/@dataInfo/@fields.0"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.0"/>
-      <mappings name="FREIGHT_To_total_emp" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.3/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.1"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.4/@dataInfo/@fields.2"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.1"/>
-      <mappings name="FREIGHT_To_max_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.2"/>
-      <mappings name="FREIGHT_To_min_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.3"/>
-      <mappings name="FREIGHT_To_avg_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.5/@dataInfo/@fields.4"/>
-      <mappings name="FREIGHT_To_total_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.6/@dataInfo/@fields.0"/>
-      <mappings name="FREIGHT_To_total_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.7/@dataInfo/@fields.0"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.8/@dataInfo/@fields.0"/>
-      <mappings name="FREIGHT_To_tot_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.8/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.9/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.9/@dataInfo/@fields.1"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.9/@dataInfo/@fields.2"/>
-      <mappings name="ORDER_ID_To_ORDER_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.0"/>
-      <mappings name="CUSTOMER_To_CUSTOMER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.1"/>
-      <mappings name="EMPLOYEE_To_EMPLOYEE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.2"/>
-      <mappings name="SHIP_DATE_To_SHIP_DATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.3"/>
-      <mappings name="FREIGHT_To_FREIGHT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.10/@dataInfo/@fields.4"/>
+      <outputDatas name="stdout.dat" outputConnections="stdout.dat_To_SCOTT.ORDERS.ctl">
+        <dataInfo xsi:type="flow:FileDataInfo" name="stdout.dat" fileName="C:/IRI/workspace-demos/FACT_CoSort_Oracle_ETL/ETL/stdout.dat"/>
+        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
+      </outputDatas>
       <comments>
-        <comments>&#xD;</comments>
-        <comments></comments>
-        <comments>CoSort Sort Control Language (SortCL) Program &quot;orders_sorted.scl&quot;&#xD;</comments>
-        <comments></comments>
-        <comments>Copyright 2012 Innovative Routines International (IRI), Inc.&#xD;</comments>
-        <comments></comments>
-        <comments>&#xD;</comments>
-        <comments></comments>
-        <comments>This program accepts sequential data in an unamed pipe from FACT,&#xD;</comments>
-        <comments></comments>
-        <comments>performs a two-key sort, and generates multiple output files for&#xD;</comments>
-        <comments></comments>
-        <comments>replication/archive, detail and summary reports, and SQL*Loader.&#xD;</comments>
-        <comments></comments>
-        <comments>&#xD;</comments>
+        <comments xsi:nil="true"/>
+        <comments>CoSort Sort Control Language (SortCL) Program &quot;orders_sorted.scl&quot;</comments>
+        <comments>Copyright 2012 Innovative Routines International (IRI), Inc.</comments>
+        <comments xsi:nil="true"/>
+        <comments>This program accepts sequential data in an unamed pipe from FACT,</comments>
+        <comments>performs a two-key sort, and generates multiple output files for</comments>
+        <comments>replication/archive, detail and summary reports, and SQL*Loader.</comments>
+        <comments xsi:nil="true"/>
       </comments>
       <transformData xsi:type="flow:SortAction" name="Sort">
-        <dataInfo xsi:type="flow:InternalDataInfo">
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="ORDER_ID"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="CUSTOMER"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="EMPLOYEE"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:Frame"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="SHIP_DATE"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
-          </fields>
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="FREIGHT"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
-            <fieldAttributes xsi:type="ddf:Separator"/>
-            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
-          </fields>
-        </dataInfo>
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Sort"/>
         <sectionOptions xsi:type="scl:Key">
           <key>
             <key name="EMPLOYEE"/>
@@ -1444,6 +1047,9 @@
           </key>
         </sectionOptions>
         <transformAction>
+          <comment>
+            <comments>Action section</comments>
+          </comment>
           <keys xsi:type="scl:Key">
             <key>
               <key name="EMPLOYEE"/>
@@ -1457,57 +1063,8 @@
         </transformAction>
       </transformData>
     </blocks>
-    <blocks xsi:type="flow:FactProvider" name="orders.ini" factConfig="orders.ini">
-      <inputDatas name="SCOTT.ORDERS" inputConnections="Start_To_In_SCOTT.ORDERS">
-        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.ORDERS" DSN="FACT_NoDNS" DTPName="FACT_NoDTP" providerName="Oracle" database="ORACLE" hostName="FACT_NoHost" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="ORDERS" delimiter=",">
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="*"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="0"/>
-            <fieldAttributes xsi:type="ddf:Size" size="0"/>
-          </fields>
-        </dataInfo>
-      </inputDatas>
-      <outputDatas name="stdout" outputConnections="Out_stdout_To_In_stdin">
-        <dataInfo xsi:type="flow:FileDataInfo" name="stdout" fileName="stdout">
-          <fields xsi:type="scl:AdvancedField">
-            <fieldMathStatement>
-              <compoundExpression>
-                <relationalExpression>
-                  <lValue>
-                    <lValue>
-                      <lValue>
-                        <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="*"/>
-                        </expr>
-                      </lValue>
-                    </lValue>
-                  </lValue>
-                </relationalExpression>
-              </compoundExpression>
-            </fieldMathStatement>
-            <fieldAttributes xsi:type="ddf:Position" number1="0"/>
-            <fieldAttributes xsi:type="ddf:Size" size="0"/>
-          </fields>
-        </dataInfo>
-      </outputDatas>
-      <mappings name="*_To_*" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
-    </blocks>
-    <connections name="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" startBlock="//@flowlets.0/@blocks.2/@outputDatas.10" endBlock="//@flowlets.0/@blocks.1"/>
-    <connections name="Start_To_In_SCOTT.ORDERS" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
-    <connections name="Out_stdout_To_In_stdin" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.2/@inputDatas.0" pipe="true"/>
+    <connections name="Start_To_In_SCOTT.ORDERS" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.2/@inputDatas.0"/>
+    <connections name="stdout_To_stdin" startBlock="//@flowlets.0/@blocks.2/@outputDatas.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0" pipe="true"/>
+    <connections name="stdout.dat_To_SCOTT.ORDERS.ctl" startBlock="//@flowlets.0/@blocks.3/@outputDatas.10" endBlock="//@flowlets.0/@blocks.1"/>
   </flowlets>
 </flow:FlowBatch>

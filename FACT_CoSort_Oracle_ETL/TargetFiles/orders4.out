@@ -1,155 +1,466 @@
 Employee           Customer                            Max      Min    Avg  Ct
 ------------------------------------------------------------------------------
-Buchanan, Steven   Berglunds snabbkop                  55.00   55.00  55.00  1
-Buchanan, Steven   Familia Arquibaldo                 177.00  177.00 177.00  1
-Buchanan, Steven   Frankenversand                      32.00   32.00  32.00  1
-Buchanan, Steven   Maison Dewey                        67.00    6.00  36.50  2
-Buchanan, Steven   Morgenstern Gesundkost             127.00  127.00 127.00  1
-Buchanan, Steven   QUICK-Stop                         171.00  171.00 171.00  1
-Buchanan, Steven   Rattlesnake Canyon Grocery          59.00   59.00  59.00  1
-Buchanan, Steven   Ricardo Adocicados                  14.00   14.00  14.00  1
-Buchanan, Steven   Save-a-lot Markets                 200.00  200.00 200.00  1
-Callahan, Laura    Blauer See Delikatessen              2.00    2.00   2.00  1
-Callahan, Laura    Blondel pe et fils                  28.00   28.00  28.00  1
-Callahan, Laura    Cactus Comidas para llevar          17.00   17.00  17.00  1
-Callahan, Laura    Die Wandernde Kuh                   41.00   21.00  31.00  2
-Callahan, Laura    Ernst Handel                        26.00   26.00  26.00  1
-Callahan, Laura    Folk och faB                       188.00  188.00 188.00  1
-Callahan, Laura    Frankenversand                      97.00   37.00  67.00  2
-Callahan, Laura    Great Lakes Food Market              4.00    4.00   4.00  1
-Callahan, Laura    Hungry Coyote Import Store         111.00  111.00 111.00  1
-Callahan, Laura    LILA-Supermercado                   48.00   48.00  48.00  1
-Callahan, Laura    La maison dAsie                     27.00    1.00  14.00  2
-Callahan, Laura    Lazy K Kountry Store                12.00   12.00  12.00  1
-Callahan, Laura    Lehmanns Marktstand                 28.00   28.00  28.00  1
-Callahan, Laura    Magazzini Alimentari Riuniti        47.00   47.00  47.00  1
-Callahan, Laura    Me Paillarde                         7.00    7.00   7.00  1
-Callahan, Laura    Save-a-lot Markets                 107.00   49.00  78.00  2
-Callahan, Laura    Vaffeljernet                         3.00    3.00   3.00  1
-Callahan, Laura    White Clover Markets                16.00   16.00  16.00  1
-Davolio, Nancy     Antonio Moreno Taqueria              4.00    4.00   4.00  1
-Davolio, Nancy     Around the Horn                     73.00   73.00  73.00  1
-Davolio, Nancy     Berglunds snabbkop                 245.00  139.00 192.00  2
-Davolio, Nancy     Bon app                             11.00   11.00  11.00  1
-Davolio, Nancy     Die Wandernde Kuh                   47.00   47.00  47.00  1
-Davolio, Nancy     France restauration                 30.00   30.00  30.00  1
-Davolio, Nancy     Frankenversand                      93.00   93.00  93.00  1
-Davolio, Nancy     Furia Bacalhau e Frutos do Mar       7.00    1.00   4.00  2
-Davolio, Nancy     Great Lakes Food Market            117.00  117.00 117.00  1
-Davolio, Nancy     Hungry Owl All-Night Grocers        34.00   34.00  34.00  1
-Davolio, Nancy     Kolich Essen                        32.00   11.00  21.50  2
-Davolio, Nancy     Lets Stop N Shop                    14.00   14.00  14.00  1
-Davolio, Nancy     Lonesome Pine Restaurant            26.00   26.00  26.00  1
-Davolio, Nancy     Me Paillarde                       379.00  155.00 267.00  2
-Davolio, Nancy     Ottilies Kaladen                     5.00    5.00   5.00  1
-Davolio, Nancy     Que Delia                           63.00   63.00  63.00  1
-Davolio, Nancy     Rattlesnake Canyon Grocery          44.00   44.00  44.00  1
-Davolio, Nancy     Reggiani Caseifici                  23.00    4.00  13.50  2
-Davolio, Nancy     Richter Supermarkt                  79.00   79.00  79.00  1
-Davolio, Nancy     Save-a-lot Markets                 544.00  544.00 544.00  1
-Davolio, Nancy     Vaffeljernet                        56.00   56.00  56.00  1
-Davolio, Nancy     Victuailles en stock               195.00  195.00 195.00  1
-Dodsworth, Anne    Berglunds snabbkop                  96.00   96.00  96.00  1
-Dodsworth, Anne    Blauer See Delikatessen              9.00    9.00   9.00  1
-Dodsworth, Anne    Blondel pe et fils                  88.00   88.00  88.00  1
-Dodsworth, Anne    Bs Beverages                         5.00    5.00   5.00  1
-Dodsworth, Anne    Hungry Owl All-Night Grocers       142.00  142.00 142.00  1
-Dodsworth, Anne    Kolich Essen                        21.00   21.00  21.00  1
-Dodsworth, Anne    Lehmanns Marktstand                 97.00   97.00  97.00  1
-Dodsworth, Anne    Reggiani Caseifici                   0.00    0.00   0.00  1
-Dodsworth, Anne    Trails Head Gourmet Provisioners    25.00   25.00  25.00  1
-Fuller, Andrew     Bon app                            113.00  113.00 113.00  1
-Fuller, Andrew     Ernst Handel                        97.00   97.00  97.00  1
-Fuller, Andrew     Folk och faB                       242.00  242.00 242.00  1
-Fuller, Andrew     HILARIO-Abastos                     83.00   83.00  83.00  1
-Fuller, Andrew     Hanari Carnes                       69.00   69.00  69.00  1
-Fuller, Andrew     Hungry Owl All-Night Grocers        63.00   63.00  63.00  1
-Fuller, Andrew     Laughing Bacchus Wine Cellars        1.00    1.00   1.00  1
-Fuller, Andrew     Pericles Comidas clacas             69.00   69.00  69.00  1
-Fuller, Andrew     QUICK-Stop                         204.00  195.00 199.50  2
-Fuller, Andrew     Ricardo Adocicados                  60.00   60.00  60.00  1
-Fuller, Andrew     Save-a-lot Markets                 353.00  353.00 353.00  1
-Fuller, Andrew     Simons bistro                       24.00   10.00  17.00  2
-Fuller, Andrew     Tortuga Restaurante                  2.00    2.00   2.00  1
-Fuller, Andrew     Wartian Herkku                     149.00    7.00  78.00  2
-Fuller, Andrew     Wilman Kala                         23.00    1.00  12.00  2
-King, Robert       Antonio Moreno Taqueria             85.00   47.00  66.00  2
-King, Robert       Die Wandernde Kuh                  106.00  106.00 106.00  1
-King, Robert       Du monde entier                      2.00    2.00   2.00  1
-King, Robert       Eastern Connection                  74.00   74.00  74.00  1
-King, Robert       Ernst Handel                       478.00   78.00 278.00  2
-King, Robert       Familia Arquibaldo                   4.00    4.00   4.00  1
-King, Robert       Godos Cocina Tica                    4.00    4.00   4.00  1
-King, Robert       HILARIO-Abastos                     58.00   58.00  58.00  1
-King, Robert       Hungry Owl All-Night Grocers        18.00   18.00  18.00  1
-King, Robert       Lehmanns Marktstand                174.00  174.00 174.00  1
-King, Robert       Oceo Atlaico Ltda.                   8.00    8.00   8.00  1
-King, Robert       Piccolo und mehr                    35.00   35.00  35.00  1
-King, Robert       QUICK-Stop                          42.00   42.00  42.00  1
-King, Robert       Queen Cozinha                      106.00  106.00 106.00  1
-King, Robert       Richter Supermarkt                 232.00  232.00 232.00  1
-King, Robert       Santeourmet                         39.00   13.00  26.00  2
-King, Robert       Save-a-lot Markets                 389.00  389.00 389.00  1
-King, Robert       Seven Seas Imports                  78.00   78.00  78.00  1
-King, Robert       Simons bistro                       42.00   42.00  42.00  1
-King, Robert       Wellington Importadora              13.00   13.00  13.00  1
-Leverling, Janet   Ana Trujillo Emparedados y helados  44.00   44.00  44.00  1
-Leverling, Janet   Berglunds snabbkop                 116.00  116.00 116.00  1
-Leverling, Janet   Blauer See Delikatessen             28.00   28.00  28.00  1
-Leverling, Janet   Ernst Handel                       790.00  790.00 790.00  1
-Leverling, Janet   Familia Arquibaldo                   3.00    3.00   3.00  1
-Leverling, Janet   Galeridel gastroo                    7.00    7.00   7.00  1
-Leverling, Janet   LINO-Delicateses                   158.00  158.00 158.00  1
-Leverling, Janet   Lehmanns Marktstand                 59.00   32.00  45.50  2
-Leverling, Janet   Lonesome Pine Restaurant             1.00    1.00   1.00  1
-Leverling, Janet   Me Paillarde                       189.00    7.00  95.67  3
-Leverling, Janet   North/South                         32.00   32.00  32.00  1
-Leverling, Janet   Old World Delicatessen               5.00    5.00   5.00  1
-Leverling, Janet   Piccolo und mehr                   339.00  339.00 339.00  1
-Leverling, Janet   QUICK-Stop                         ******  ****** ******  1
-Leverling, Janet   Seven Seas Imports                 178.00  178.00 178.00  1
-Leverling, Janet   Toms Spezialitan                     1.00    1.00   1.00  1
-Leverling, Janet   Tortuga Restaurante                 19.00   19.00  19.00  1
-Leverling, Janet   Wellington Importadora               0.00    0.00   0.00  1
-Peacock, Margaret  Antonio Moreno Taqueria             16.00   16.00  16.00  1
-Peacock, Margaret  Blauer See Delikatessen              0.00    0.00   0.00  1
-Peacock, Margaret  Blondel pe et fils                  59.00   30.00  44.50  2
-Peacock, Margaret  Bon app                            351.00  351.00 351.00  1
-Peacock, Margaret  Bs Beverages                        30.00   30.00  30.00  1
-Peacock, Margaret  Die Wandernde Kuh                   24.00   24.00  24.00  1
-Peacock, Margaret  Folies gourmandes                  487.00  487.00 487.00  1
-Peacock, Margaret  Frankenversand                     203.00  203.00 203.00  1
-Peacock, Margaret  Furia Bacalhau e Frutos do Mar      73.00   73.00  73.00  1
-Peacock, Margaret  Godos Cocina Tica                   85.00   85.00  85.00  1
-Peacock, Margaret  Gourmet Lanchonetes                  7.00    7.00   7.00  1
-Peacock, Margaret  Great Lakes Food Market             19.00   19.00  19.00  1
-Peacock, Margaret  HILARIO-Abastos                    180.00    8.00  94.00  2
-Peacock, Margaret  Hanari Carnes                       12.00   12.00  12.00  1
-Peacock, Margaret  Hungry Coyote Import Store          45.00   45.00  45.00  1
-Peacock, Margaret  Island Trading                      24.00    1.00  12.50  2
-Peacock, Margaret  LILA-Supermercado                  102.00  102.00 102.00  1
-Peacock, Margaret  Lehmanns Marktstand                 45.00   45.00  45.00  1
-Peacock, Margaret  Lonesome Pine Restaurant            25.00   25.00  25.00  1
-Peacock, Margaret  Me Paillarde                        45.00   45.00  45.00  1
-Peacock, Margaret  Ottilies Kaladen                   121.00   76.00  98.50  2
-Peacock, Margaret  QUICK-Stop                         364.00  364.00 364.00  1
-Peacock, Margaret  Que Delia                           46.00   46.00  46.00  1
-Peacock, Margaret  Rattlesnake Canyon Grocery          14.00   14.00  14.00  1
-Peacock, Margaret  Ricardo Adocicados                  51.00   51.00  51.00  1
-Peacock, Margaret  The Cracker Box                     95.00   95.00  95.00  1
-Peacock, Margaret  Toms Spezialitan                    28.00   28.00  28.00  1
-Peacock, Margaret  Tortuga Restaurante                218.00  218.00 218.00  1
-Peacock, Margaret  Tradic Hipermercados                79.00   79.00  79.00  1
-Peacock, Margaret  Trails Head Gourmet Provisioners    38.00   38.00  38.00  1
-Peacock, Margaret  Wartian Herkku                      59.00    1.00  30.00  2
-Peacock, Margaret  White Clover Markets                59.00   59.00  59.00  1
-Suyama, Michael    Alfreds Futterkiste                 29.00   29.00  29.00  1
-Suyama, Michael    Blondel pe et fils                   8.00    8.00   8.00  1
-Suyama, Michael    Bs Beverages                        30.00   12.00  21.00  2
-Suyama, Michael    Chop-suey Chinese                   92.00   92.00  92.00  1
-Suyama, Michael    Great Lakes Food Market             57.00    3.00  30.00  2
-Suyama, Michael    Hungry Owl All-Night Grocers        17.00   17.00  17.00  1
-Suyama, Michael    La maison dAsie                     43.00   43.00  43.00  1
-Suyama, Michael    Queen Cozinha                      201.00  201.00 201.00  1
-Suyama, Michael    Save-a-lot Markets                 368.00  252.00 310.00  2
-Suyama, Michael    Wolski  Zajazd                      81.00   81.00  81.00  1
+Buchanan, Steven   Berglunds snabbkop                 109.00   55.00  82.00  2.00
+Buchanan, Steven   Blondel pe et fils                   6.00    6.00   6.00  1.00
+Buchanan, Steven   Bon app                             20.00   20.00  20.00  1.00
+Buchanan, Steven   Chop-suey Chinese                   23.00   23.00  23.00  1.00
+Buchanan, Steven   Familia Arquibaldo                 177.00  177.00 177.00  1.00
+Buchanan, Steven   Folk och faB                         5.00    5.00   5.00  1.00
+Buchanan, Steven   Frankenversand                      32.00   32.00  32.00  1.00
+Buchanan, Steven   Godos Cocina Tica                  175.00   20.00  97.50  2.00
+Buchanan, Steven   Hanari Carnes                       63.00   63.00  63.00  1.00
+Buchanan, Steven   LILA-Supermercado                  164.00    1.00  82.50  2.00
+Buchanan, Steven   LINO-Delicateses                    28.00   28.00  28.00  1.00
+Buchanan, Steven   La maison dAsie                     20.00   20.00  20.00  1.00
+Buchanan, Steven   Maison Dewey                        67.00    6.00  36.50  2.00
+Buchanan, Steven   Morgenstern Gesundkost             127.00  127.00 127.00  1.00
+Buchanan, Steven   Pericles Comidas clacas             83.00   83.00  83.00  1.00
+Buchanan, Steven   Princesa Isabel Vinhos              60.00   13.00  36.50  2.00
+Buchanan, Steven   QUICK-Stop                         171.00   49.00 110.00  2.00
+Buchanan, Steven   Queen Cozinha                      891.00  891.00 891.00  1.00
+Buchanan, Steven   Rattlesnake Canyon Grocery          59.00   19.00  39.00  2.00
+Buchanan, Steven   Reggiani Caseifici                  60.00   60.00  60.00  1.00
+Buchanan, Steven   Ricardo Adocicados                 161.00   14.00  87.50  2.00
+Buchanan, Steven   Save-a-lot Markets                 200.00   24.00  92.00  3.00
+Buchanan, Steven   Seven Seas Imports                 288.00  143.00 215.50  2.00
+Buchanan, Steven   Spealitedu monde                     9.00    9.00   9.00  1.00
+Buchanan, Steven   Supres deces                       424.00   15.00 219.50  2.00
+Buchanan, Steven   Vins et alcools Chevalier           32.00   32.00  32.00  1.00
+Buchanan, Steven   Wartian Herkku                      35.00    1.00  18.00  2.00
+Buchanan, Steven   White Clover Markets                 5.00    5.00   5.00  1.00
+Buchanan, Steven   Wolski  Zajazd                      12.00   12.00  12.00  1.00
+Callahan, Laura    Around the Horn                     34.00   34.00  34.00  1.00
+Callahan, Laura    Berglunds snabbkop                 189.00   93.00 141.00  2.00
+Callahan, Laura    Blauer See Delikatessen              2.00    2.00   2.00  1.00
+Callahan, Laura    Blondel pe et fils                  28.00   28.00  28.00  1.00
+Callahan, Laura    Bon app                            135.00   20.00  77.50  2.00
+Callahan, Laura    Cactus Comidas para llevar          17.00    0.00   8.50  2.00
+Callahan, Laura    Comeio Mineiro                      80.00   80.00  80.00  1.00
+Callahan, Laura    Consolidated Holdings                9.00    9.00   9.00  1.00
+Callahan, Laura    Die Wandernde Kuh                   72.00   21.00  44.75  4.00
+Callahan, Laura    Drachenblut Delikatessen           149.00  149.00 149.00  1.00
+Callahan, Laura    Eastern Connection                 279.00  185.00 232.00  2.00
+Callahan, Laura    Ernst Handel                       353.00   26.00 143.50  4.00
+Callahan, Laura    Folies gourmandes                   11.00   11.00  11.00  1.00
+Callahan, Laura    Folk och faB                       209.00    1.00  79.33  6.00
+Callahan, Laura    Frankenversand                      97.00    5.00  46.33  3.00
+Callahan, Laura    Furia Bacalhau e Frutos do Mar      17.00   17.00  17.00  1.00
+Callahan, Laura    GROSELLA-Restaurante                66.00   66.00  66.00  1.00
+Callahan, Laura    Galeridel gastroo                   10.00    1.00   5.50  2.00
+Callahan, Laura    Great Lakes Food Market              4.00    4.00   4.00  1.00
+Callahan, Laura    HILARIO-Abastos                    105.00    4.00  46.33  3.00
+Callahan, Laura    Hanari Carnes                        5.00    5.00   5.00  1.00
+Callahan, Laura    Hungry Coyote Import Store         111.00  111.00 111.00  1.00
+Callahan, Laura    Hungry Owl All-Night Grocers        35.00   35.00  35.00  1.00
+Callahan, Laura    Island Trading                       5.00    5.00   5.00  1.00
+Callahan, Laura    Kolich Essen                         8.00    8.00   8.00  1.00
+Callahan, Laura    LILA-Supermercado                   74.00   13.00  45.00  3.00
+Callahan, Laura    LINO-Delicateses                   141.00   31.00  86.00  2.00
+Callahan, Laura    La maison dAsie                     27.00    1.00  14.00  2.00
+Callahan, Laura    Lazy K Kountry Store                12.00   12.00  12.00  1.00
+Callahan, Laura    Lehmanns Marktstand                 53.00   26.00  35.67  3.00
+Callahan, Laura    Lets Stop N Shop                    51.00   51.00  51.00  1.00
+Callahan, Laura    Lonesome Pine Restaurant             1.00    1.00   1.00  1.00
+Callahan, Laura    Magazzini Alimentari Riuniti        47.00    5.00  26.00  2.00
+Callahan, Laura    Me Paillarde                        58.00    7.00  32.50  2.00
+Callahan, Laura    Oceo Atlaico Ltda.                 218.00  218.00 218.00  1.00
+Callahan, Laura    Old World Delicatessen             258.00   40.00 144.67  3.00
+Callahan, Laura    Pericles Comidas clacas             54.00   54.00  54.00  1.00
+Callahan, Laura    Piccolo und mehr                    25.00   25.00  25.00  1.00
+Callahan, Laura    Princesa Isabel Vinhos             202.00  202.00 202.00  1.00
+Callahan, Laura    QUICK-Stop                         398.00  213.00 279.00  4.00
+Callahan, Laura    Que Delia                           99.00   10.00  54.50  2.00
+Callahan, Laura    Queen Cozinha                      111.00   82.00  99.00  3.00
+Callahan, Laura    Rattlesnake Canyon Grocery         174.00   48.00 111.00  2.00
+Callahan, Laura    Reggiani Caseifici                  14.00   14.00  14.00  1.00
+Callahan, Laura    Ricardo Adocicados                  64.00   13.00  38.50  2.00
+Callahan, Laura    Richter Supermarkt                   6.00    6.00   6.00  1.00
+Callahan, Laura    Save-a-lot Markets                 140.00   49.00  92.75  4.00
+Callahan, Laura    Seven Seas Imports                   4.00    4.00   4.00  1.00
+Callahan, Laura    Split Rail Beer & Ale              196.00   73.00 134.50  2.00
+Callahan, Laura    The Big Cheese                      18.00   18.00  18.00  1.00
+Callahan, Laura    Tortuga Restaurante                 14.00   14.00  14.00  1.00
+Callahan, Laura    Vaffeljernet                        27.00    3.00  15.00  2.00
+Callahan, Laura    Victuailles en stock                 9.00    7.00   8.00  2.00
+Callahan, Laura    Wartian Herkku                     180.00    4.00  56.75  4.00
+Callahan, Laura    White Clover Markets               103.00   16.00  59.50  2.00
+Callahan, Laura    Wolski  Zajazd                      20.00   20.00  20.00  1.00
+Davolio, Nancy     Alfreds Futterkiste                 70.00   40.00  55.00  2.00
+Davolio, Nancy     Antonio Moreno Taqueria              4.00    4.00   4.00  1.00
+Davolio, Nancy     Around the Horn                     73.00   24.00  40.67  3.00
+Davolio, Nancy     Berglunds snabbkop                 245.00   13.00 126.75  4.00
+Davolio, Nancy     Bon app                            166.00   11.00  80.33  3.00
+Davolio, Nancy     Bottom-Dollar Markets               53.00   32.00  42.50  2.00
+Davolio, Nancy     Bs Beverages                       124.00  124.00 124.00  1.00
+Davolio, Nancy     Chop-suey Chinese                   31.00   31.00  31.00  1.00
+Davolio, Nancy     Comeio Mineiro                       0.00    0.00   0.00  1.00
+Davolio, Nancy     Die Wandernde Kuh                   47.00   47.00  47.00  1.00
+Davolio, Nancy     Drachenblut Delikatessen            79.00    8.00  43.50  2.00
+Davolio, Nancy     Du monde entier                     25.00   25.00  25.00  1.00
+Davolio, Nancy     Eastern Connection                  84.00   72.00  78.00  2.00
+Davolio, Nancy     Ernst Handel                       352.00   75.00 165.20  5.00
+Davolio, Nancy     Folies gourmandes                  101.00  101.00 101.00  1.00
+Davolio, Nancy     Folk och faB                        44.00   44.00  44.00  1.00
+Davolio, Nancy     France restauration                 30.00   30.00  30.00  1.00
+Davolio, Nancy     Franchi S.p.A.                       5.00    5.00   5.00  1.00
+Davolio, Nancy     Frankenversand                     243.00   59.00 121.20  5.00
+Davolio, Nancy     Furia Bacalhau e Frutos do Mar       7.00    1.00   4.00  2.00
+Davolio, Nancy     GROSELLA-Restaurante                 2.00    2.00   2.00  1.00
+Davolio, Nancy     Galeridel gastroo                    1.00    1.00   1.00  1.00
+Davolio, Nancy     Godos Cocina Tica                   52.00   52.00  52.00  1.00
+Davolio, Nancy     Gourmet Lanchonetes                211.00  211.00 211.00  1.00
+Davolio, Nancy     Great Lakes Food Market            117.00  117.00 117.00  1.00
+Davolio, Nancy     HILARIO-Abastos                     38.00   31.00  34.50  2.00
+Davolio, Nancy     Hanari Carnes                      193.00    5.00  71.33  3.00
+Davolio, Nancy     Hungry Coyote Import Store          30.00   30.00  30.00  1.00
+Davolio, Nancy     Hungry Owl All-Night Grocers        34.00   34.00  34.00  1.00
+Davolio, Nancy     Island Trading                      16.00   16.00  16.00  1.00
+Davolio, Nancy     Kolich Essen                       171.00   11.00  69.75  4.00
+Davolio, Nancy     LILA-Supermercado                  149.00    1.00  61.67  3.00
+Davolio, Nancy     LINO-Delicateses                    65.00   35.00  50.00  2.00
+Davolio, Nancy     La maison dAsie                      0.00    0.00   0.00  1.00
+Davolio, Nancy     Lazy K Kountry Store                 7.00    7.00   7.00  1.00
+Davolio, Nancy     Lets Stop N Shop                    14.00   14.00  14.00  1.00
+Davolio, Nancy     Lonesome Pine Restaurant            26.00   26.00  26.00  1.00
+Davolio, Nancy     Magazzini Alimentari Riuniti        27.00    3.00  15.00  2.00
+Davolio, Nancy     Me Paillarde                       379.00   20.00 184.67  3.00
+Davolio, Nancy     Old World Delicatessen              27.00   27.00  27.00  1.00
+Davolio, Nancy     Ottilies Kaladen                     5.00    5.00   5.00  1.00
+Davolio, Nancy     Pericles Comidas clacas             46.00   46.00  46.00  1.00
+Davolio, Nancy     QUICK-Stop                         183.00   39.00  85.50  4.00
+Davolio, Nancy     Que Delia                           63.00   63.00  63.00  1.00
+Davolio, Nancy     Rancho grande                       64.00   64.00  64.00  1.00
+Davolio, Nancy     Rattlesnake Canyon Grocery         150.00    9.00  58.00  5.00
+Davolio, Nancy     Reggiani Caseifici                  23.00    4.00  13.50  2.00
+Davolio, Nancy     Ricardo Adocicados                  47.00   38.00  42.50  2.00
+Davolio, Nancy     Richter Supermarkt                  79.00   79.00  79.00  1.00
+Davolio, Nancy     Romero y tomillo                     8.00    8.00   8.00  1.00
+Davolio, Nancy     Santeourmet                         94.00   53.00  73.50  2.00
+Davolio, Nancy     Save-a-lot Markets                 544.00   30.00 199.17  6.00
+Davolio, Nancy     Seven Seas Imports                 137.00   22.00  79.50  2.00
+Davolio, Nancy     Split Rail Beer & Ale               37.00   31.00  34.00  2.00
+Davolio, Nancy     Supres deces                        30.00   30.00  30.00  1.00
+Davolio, Nancy     The Big Cheese                       4.00    4.00   4.00  1.00
+Davolio, Nancy     Tortuga Restaurante                 64.00   16.00  38.75  4.00
+Davolio, Nancy     Tradic Hipermercados                30.00    1.00  15.50  2.00
+Davolio, Nancy     Vaffeljernet                       176.00   27.00 101.00  4.00
+Davolio, Nancy     Victuailles en stock               195.00   49.00 122.00  2.00
+Davolio, Nancy     Wartian Herkku                     137.00  137.00 137.00  1.00
+Davolio, Nancy     Wellington Importadora               2.00    2.00   2.00  1.00
+Davolio, Nancy     White Clover Markets                60.00   60.00  60.00  1.00
+Davolio, Nancy     Wilman Kala                         38.00   38.00  38.00  1.00
+Davolio, Nancy     Wolski  Zajazd                      24.00    4.00  14.00  2.00
+Dodsworth, Anne    Around the Horn                     34.00   24.00  29.00  2.00
+Dodsworth, Anne    Berglunds snabbkop                  96.00   13.00  54.50  2.00
+Dodsworth, Anne    Blauer See Delikatessen             54.00    9.00  31.33  3.00
+Dodsworth, Anne    Blondel pe et fils                  88.00   88.00  88.00  1.00
+Dodsworth, Anne    Bon app                            112.00   10.00  61.00  2.00
+Dodsworth, Anne    Boo Comidas preparadas              16.00   16.00  16.00  1.00
+Dodsworth, Anne    Bottom-Dollar Markets               24.00   24.00  24.00  1.00
+Dodsworth, Anne    Bs Beverages                         5.00    5.00   5.00  1.00
+Dodsworth, Anne    Cactus Comidas para llevar           1.00    1.00   1.00  1.00
+Dodsworth, Anne    Ernst Handel                       754.00   11.00 303.67  3.00
+Dodsworth, Anne    Familia Arquibaldo                  14.00   14.00  14.00  1.00
+Dodsworth, Anne    Furia Bacalhau e Frutos do Mar       3.00    3.00   3.00  1.00
+Dodsworth, Anne    HILARIO-Abastos                      4.00    4.00   4.00  1.00
+Dodsworth, Anne    Hanari Carnes                        6.00    6.00   6.00  1.00
+Dodsworth, Anne    Hungry Owl All-Night Grocers       296.00   44.00 160.67  3.00
+Dodsworth, Anne    Island Trading                     155.00  155.00 155.00  1.00
+Dodsworth, Anne    Kolich Essen                        78.00    1.00  32.75  4.00
+Dodsworth, Anne    Lehmanns Marktstand                 97.00   97.00  97.00  1.00
+Dodsworth, Anne    Maison Dewey                        33.00   33.00  33.00  1.00
+Dodsworth, Anne    QUICK-Stop                           4.00    4.00   4.00  1.00
+Dodsworth, Anne    Rancho grande                       91.00   91.00  91.00  1.00
+Dodsworth, Anne    Rattlesnake Canyon Grocery         281.00  281.00 281.00  1.00
+Dodsworth, Anne    Reggiani Caseifici                  18.00    0.00   9.00  2.00
+Dodsworth, Anne    Richter Supermarkt                 148.00   31.00  89.50  2.00
+Dodsworth, Anne    Save-a-lot Markets                 214.00  214.00 214.00  1.00
+Dodsworth, Anne    Supres deces                        69.00   69.00  69.00  1.00
+Dodsworth, Anne    Trails Head Gourmet Provisioners    25.00   25.00  25.00  1.00
+Dodsworth, Anne    Wartian Herkku                      79.00   79.00  79.00  1.00
+Dodsworth, Anne    Wellington Importadora              14.00   14.00  14.00  1.00
+Fuller, Andrew     Berglunds snabbkop                   9.00    9.00   9.00  1.00
+Fuller, Andrew     Blondel pe et fils                  55.00   55.00  55.00  1.00
+Fuller, Andrew     Bon app                            113.00  113.00 113.00  1.00
+Fuller, Andrew     Bottom-Dollar Markets               74.00   14.00  44.00  2.00
+Fuller, Andrew     Bs Beverages                        46.00   46.00  46.00  1.00
+Fuller, Andrew     Cactus Comidas para llevar          20.00   20.00  20.00  1.00
+Fuller, Andrew     Comeio Mineiro                      30.00   30.00  30.00  1.00
+Fuller, Andrew     Consolidated Holdings                6.00    6.00   6.00  1.00
+Fuller, Andrew     Die Wandernde Kuh                   40.00   40.00  40.00  1.00
+Fuller, Andrew     Du monde entier                      4.00    4.00   4.00  1.00
+Fuller, Andrew     Ernst Handel                       118.00   97.00 105.67  3.00
+Fuller, Andrew     Familia Arquibaldo                  21.00   21.00  21.00  1.00
+Fuller, Andrew     Folk och faB                       242.00   63.00 167.33  3.00
+Fuller, Andrew     France restauration                122.00  122.00 122.00  1.00
+Fuller, Andrew     Franchi S.p.A.                      11.00    3.00   7.00  2.00
+Fuller, Andrew     Godos Cocina Tica                   59.00   59.00  59.00  1.00
+Fuller, Andrew     Gourmet Lanchonetes                  2.00    2.00   2.00  1.00
+Fuller, Andrew     HILARIO-Abastos                     83.00   83.00  83.00  1.00
+Fuller, Andrew     Hanari Carnes                       69.00   69.00  69.00  1.00
+Fuller, Andrew     Hungry Owl All-Night Grocers       581.00   63.00 245.33  3.00
+Fuller, Andrew     Island Trading                       2.00    2.00   2.00  1.00
+Fuller, Andrew     Kolich Essen                        30.00   12.00  21.00  2.00
+Fuller, Andrew     LILA-Supermercado                   42.00   42.00  42.00  1.00
+Fuller, Andrew     LINO-Delicateses                    24.00   20.00  22.00  2.00
+Fuller, Andrew     La corne dabondance                 53.00   53.00  53.00  1.00
+Fuller, Andrew     La maison dAsie                    250.00   43.00 146.50  2.00
+Fuller, Andrew     Laughing Bacchus Wine Cellars        4.00    1.00   2.50  2.00
+Fuller, Andrew     Lehmanns Marktstand                136.00  136.00 136.00  1.00
+Fuller, Andrew     Lonesome Pine Restaurant             1.00    1.00   1.00  1.00
+Fuller, Andrew     Magazzini Alimentari Riuniti       156.00   18.00  83.33  3.00
+Fuller, Andrew     Me Paillarde                        16.00   16.00  16.00  1.00
+Fuller, Andrew     Morgenstern Gesundkost             126.00  126.00 126.00  1.00
+Fuller, Andrew     North/South                          1.00    1.00   1.00  1.00
+Fuller, Andrew     Old World Delicatessen              46.00   46.00  46.00  1.00
+Fuller, Andrew     Ottilies Kaladen                    91.00   43.00  67.00  2.00
+Fuller, Andrew     Pericles Comidas clacas             69.00   25.00  47.00  2.00
+Fuller, Andrew     Piccolo und mehr                   122.00   53.00  90.67  3.00
+Fuller, Andrew     QUICK-Stop                         810.00    2.00 301.33  6.00
+Fuller, Andrew     Que Delia                           45.00   35.00  40.00  2.00
+Fuller, Andrew     Queen Cozinha                       71.00   71.00  71.00  1.00
+Fuller, Andrew     Rattlesnake Canyon Grocery          55.00   55.00  55.00  1.00
+Fuller, Andrew     Reggiani Caseifici                  90.00   29.00  59.50  2.00
+Fuller, Andrew     Ricardo Adocicados                  86.00   60.00  73.00  2.00
+Fuller, Andrew     Romero y tomillo                    33.00   33.00  33.00  1.00
+Fuller, Andrew     Santeourmet                          5.00    5.00   5.00  1.00
+Fuller, Andrew     Save-a-lot Markets                 658.00   15.00 278.75  4.00
+Fuller, Andrew     Seven Seas Imports                  35.00   35.00  35.00  1.00
+Fuller, Andrew     Simons bistro                       24.00   10.00  17.00  2.00
+Fuller, Andrew     Spealitedu monde                     3.00    3.00   3.00  1.00
+Fuller, Andrew     Supres deces                        56.00    0.00  28.00  2.00
+Fuller, Andrew     The Big Cheese                     237.00  237.00 237.00  1.00
+Fuller, Andrew     Toms Spezialitan                    62.00   62.00  62.00  1.00
+Fuller, Andrew     Tortuga Restaurante                  4.00    2.00   3.00  2.00
+Fuller, Andrew     Vaffeljernet                        66.00   66.00  66.00  1.00
+Fuller, Andrew     Victuailles en stock                 5.00    5.00   5.00  1.00
+Fuller, Andrew     Vins et alcools Chevalier            8.00    1.00   4.50  2.00
+Fuller, Andrew     Wartian Herkku                     149.00    7.00  76.33  3.00
+Fuller, Andrew     White Clover Markets               606.00  606.00 606.00  1.00
+Fuller, Andrew     Wilman Kala                         23.00    1.00   8.33  3.00
+King, Robert       Ana Trujillo Emparedados y helados   2.00    2.00   2.00  1.00
+King, Robert       Antonio Moreno Taqueria             85.00   47.00  66.00  2.00
+King, Robert       Bon app                             60.00   60.00  60.00  1.00
+King, Robert       Bottom-Dollar Markets               24.00   24.00  24.00  1.00
+King, Robert       Bs Beverages                        23.00   23.00  23.00  1.00
+King, Robert       Cactus Comidas para llevar          32.00   32.00  32.00  1.00
+King, Robert       Chop-suey Chinese                   97.00   97.00  97.00  1.00
+King, Robert       Consolidated Holdings               38.00   38.00  38.00  1.00
+King, Robert       Die Wandernde Kuh                  106.00  106.00 106.00  1.00
+King, Robert       Drachenblut Delikatessen            33.00   33.00  33.00  1.00
+King, Robert       Du monde entier                     33.00    2.00  17.50  2.00
+King, Robert       Eastern Connection                  74.00   47.00  60.50  2.00
+King, Robert       Ernst Handel                       478.00   78.00 261.75  4.00
+King, Robert       Familia Arquibaldo                   4.00    4.00   4.00  1.00
+King, Robert       Folk och faB                        88.00    9.00  48.50  2.00
+King, Robert       Godos Cocina Tica                  108.00    3.00  38.33  3.00
+King, Robert       Gourmet Lanchonetes                  3.00    3.00   3.00  1.00
+King, Robert       HILARIO-Abastos                    210.00   58.00 129.67  3.00
+King, Robert       Hungry Owl All-Night Grocers        42.00   18.00  30.00  2.00
+King, Robert       La maison dAsie                     68.00    3.00  35.50  2.00
+King, Robert       Lehmanns Marktstand                174.00   20.00  76.67  3.00
+King, Robert       Magazzini Alimentari Riuniti        65.00   65.00  65.00  1.00
+King, Robert       Maison Dewey                        32.00   32.00  32.00  1.00
+King, Robert       Me Paillarde                       371.00  371.00 371.00  1.00
+King, Robert       Oceo Atlaico Ltda.                  50.00    8.00  29.00  2.00
+King, Robert       Pericles Comidas clacas              0.00    0.00   0.00  1.00
+King, Robert       Piccolo und mehr                   361.00   35.00 198.00  2.00
+King, Robert       Princesa Isabel Vinhos              16.00   16.00  16.00  1.00
+King, Robert       QUICK-Stop                          42.00   42.00  42.00  1.00
+King, Robert       Queen Cozinha                      191.00  106.00 135.00  3.00
+King, Robert       Reggiani Caseifici                  11.00   11.00  11.00  1.00
+King, Robert       Richter Supermarkt                 232.00   85.00 158.50  2.00
+King, Robert       Santeourmet                         39.00   13.00  26.00  2.00
+King, Robert       Save-a-lot Markets                 831.00  389.00 540.33  3.00
+King, Robert       Seven Seas Imports                  78.00   78.00  78.00  1.00
+King, Robert       Simons bistro                       42.00   18.00  29.00  3.00
+King, Robert       Split Rail Beer & Ale                9.00    9.00   9.00  1.00
+King, Robert       Supres deces                       147.00  147.00 147.00  1.00
+King, Robert       The Cracker Box                     20.00   20.00  20.00  1.00
+King, Robert       Tortuga Restaurante                 65.00   65.00  65.00  1.00
+King, Robert       Tradic Hipermercados                47.00   47.00  47.00  1.00
+King, Robert       Vaffeljernet                        14.00   14.00  14.00  1.00
+King, Robert       Wellington Importadora              13.00    5.00   9.00  2.00
+King, Robert       White Clover Markets                45.00   15.00  30.00  2.00
+King, Robert       Wilman Kala                         17.00   17.00  17.00  1.00
+Leverling, Janet   Alfreds Futterkiste                  1.00    1.00   1.00  1.00
+Leverling, Janet   Ana Trujillo Emparedados y helados  44.00   12.00  28.00  2.00
+Leverling, Janet   Antonio Moreno Taqueria             58.00   22.00  38.67  3.00
+Leverling, Janet   Around the Horn                    146.00    5.00  75.50  2.00
+Leverling, Janet   Berglunds snabbkop                 169.00    4.00  76.17  6.00
+Leverling, Janet   Blauer See Delikatessen             28.00   28.00  28.00  1.00
+Leverling, Janet   Blondel pe et fils                 157.00   53.00 105.00  2.00
+Leverling, Janet   Bon app                             96.00   17.00  58.67  3.00
+Leverling, Janet   Bottom-Dollar Markets              244.00    2.00  89.50  4.00
+Leverling, Janet   Bs Beverages                         7.00    3.00   5.00  2.00
+Leverling, Janet   Chop-suey Chinese                   48.00   48.00  48.00  1.00
+Leverling, Janet   Drachenblut Delikatessen             5.00    5.00   5.00  1.00
+Leverling, Janet   Ernst Handel                       790.00   48.00 275.25  4.00
+Leverling, Janet   Familia Arquibaldo                   3.00    3.00   3.00  1.00
+Leverling, Janet   Folies gourmandes                   37.00   37.00  37.00  1.00
+Leverling, Janet   Folk och faB                       329.00   18.00 173.50  2.00
+Leverling, Janet   France restauration                 19.00   19.00  19.00  1.00
+Leverling, Janet   Franchi S.p.A.                       8.00    8.00   8.00  1.00
+Leverling, Janet   Furia Bacalhau e Frutos do Mar       1.00    1.00   1.00  1.00
+Leverling, Janet   Galeridel gastroo                    7.00    7.00   7.00  1.00
+Leverling, Janet   Godos Cocina Tica                   38.00   23.00  30.50  2.00
+Leverling, Janet   Gourmet Lanchonetes                  8.00    8.00   8.00  1.00
+Leverling, Janet   Great Lakes Food Market             76.00   25.00  45.00  3.00
+Leverling, Janet   HILARIO-Abastos                     27.00    2.00  14.50  2.00
+Leverling, Janet   Hanari Carnes                       67.00    2.00  41.00  4.00
+Leverling, Janet   Hungry Coyote Import Store          20.00    0.00  10.00  2.00
+Leverling, Janet   Hungry Owl All-Night Grocers       604.00   47.00 176.00  5.00
+Leverling, Janet   Island Trading                       3.00    3.00   3.00  1.00
+Leverling, Janet   Kolich Essen                       306.00   44.00 175.00  2.00
+Leverling, Janet   LILA-Supermercado                   85.00    8.00  35.33  3.00
+Leverling, Janet   LINO-Delicateses                   158.00   46.00  87.67  3.00
+Leverling, Janet   La maison dAsie                     96.00   96.00  96.00  1.00
+Leverling, Janet   Laughing Bacchus Wine Cellars        5.00    5.00   5.00  1.00
+Leverling, Janet   Lehmanns Marktstand                 91.00   32.00  53.50  4.00
+Leverling, Janet   Lonesome Pine Restaurant             1.00    1.00   1.00  1.00
+Leverling, Janet   Maison Dewey                        45.00   45.00  45.00  1.00
+Leverling, Janet   Me Paillarde                       189.00    7.00  85.00  4.00
+Leverling, Janet   Morgenstern Gesundkost              58.00    1.00  29.50  2.00
+Leverling, Janet   North/South                         32.00    4.00  18.00  2.00
+Leverling, Janet   Oceo Atlaico Ltda.                  30.00   30.00  30.00  1.00
+Leverling, Janet   Old World Delicatessen             171.00    5.00  83.00  3.00
+Leverling, Janet   Ottilies Kaladen                   146.00  146.00 146.00  1.00
+Leverling, Janet   Piccolo und mehr                   339.00  339.00 339.00  1.00
+Leverling, Janet   Princesa Isabel Vinhos              74.00   74.00  74.00  1.00
+Leverling, Janet   QUICK-Stop                         ******   32.00 291.20  5.00
+Leverling, Janet   Rattlesnake Canyon Grocery         709.00   38.00 237.50  4.00
+Leverling, Janet   Richter Supermarkt                 138.00  131.00 134.50  2.00
+Leverling, Janet   Santeourmet                         72.00   72.00  72.00  1.00
+Leverling, Janet   Save-a-lot Markets                 233.00   65.00 149.00  2.00
+Leverling, Janet   Seven Seas Imports                 178.00  178.00 178.00  1.00
+Leverling, Janet   Spealitedu monde                    87.00   87.00  87.00  1.00
+Leverling, Janet   Split Rail Beer & Ale               13.00    4.00   8.50  2.00
+Leverling, Janet   The Cracker Box                     15.00   15.00  15.00  1.00
+Leverling, Janet   Toms Spezialitan                     8.00    1.00   4.50  2.00
+Leverling, Janet   Tortuga Restaurante                 19.00   19.00  19.00  1.00
+Leverling, Janet   Tradic Hipermercados                35.00   35.00  35.00  1.00
+Leverling, Janet   Vaffeljernet                        65.00   65.00  65.00  1.00
+Leverling, Janet   Victuailles en stock               131.00   22.00  64.67  3.00
+Leverling, Janet   Vins et alcools Chevalier           11.00   11.00  11.00  1.00
+Leverling, Janet   Wartian Herkku                      26.00   26.00  26.00  1.00
+Leverling, Janet   Wellington Importadora              44.00    0.00  19.33  3.00
+Leverling, Janet   White Clover Markets               163.00   22.00 108.00  3.00
+Leverling, Janet   Wilman Kala                          9.00    9.00   9.00  1.00
+Peacock, Margaret  Alfreds Futterkiste                 61.00   24.00  42.50  2.00
+Peacock, Margaret  Ana Trujillo Emparedados y helados  40.00   40.00  40.00  1.00
+Peacock, Margaret  Antonio Moreno Taqueria             16.00   16.00  16.00  1.00
+Peacock, Margaret  Around the Horn                     30.00    3.00  16.50  4.00
+Peacock, Margaret  Berglunds snabbkop                  32.00   32.00  32.00  1.00
+Peacock, Margaret  Blauer See Delikatessen              0.00    0.00   0.00  1.00
+Peacock, Margaret  Blondel pe et fils                 132.00   30.00  73.67  3.00
+Peacock, Margaret  Bon app                            351.00   17.00 117.75  4.00
+Peacock, Margaret  Boo Comidas preparadas              97.00   78.00  87.50  2.00
+Peacock, Margaret  Bottom-Dollar Markets               47.00   44.00  45.50  2.00
+Peacock, Margaret  Bs Beverages                        30.00    2.00  16.00  2.00
+Peacock, Margaret  Cactus Comidas para llevar           3.00    3.00   3.00  1.00
+Peacock, Margaret  Centro comercial Moctezuma           3.00    3.00   3.00  1.00
+Peacock, Margaret  Chop-suey Chinese                   48.00   27.00  37.50  2.00
+Peacock, Margaret  Comeio Mineiro                      66.00   12.00  39.00  2.00
+Peacock, Margaret  Die Wandernde Kuh                   24.00    1.00  12.50  2.00
+Peacock, Margaret  Drachenblut Delikatessen            31.00   31.00  31.00  1.00
+Peacock, Margaret  Eastern Connection                  74.00   17.00  45.50  2.00
+Peacock, Margaret  Ernst Handel                       459.00   74.00 231.80  5.00
+Peacock, Margaret  Familia Arquibaldo                  11.00    3.00   7.00  2.00
+Peacock, Margaret  Folies gourmandes                  487.00  487.00 487.00  1.00
+Peacock, Margaret  Folk och faB                        48.00    1.00  24.50  2.00
+Peacock, Margaret  Franchi S.p.A.                      47.00    1.00  24.00  2.00
+Peacock, Margaret  Frankenversand                     209.00   55.00 143.75  4.00
+Peacock, Margaret  Furia Bacalhau e Frutos do Mar      89.00   73.00  83.00  3.00
+Peacock, Margaret  Galeridel gastroo                   19.00   19.00  19.00  1.00
+Peacock, Margaret  Godos Cocina Tica                   85.00   85.00  85.00  1.00
+Peacock, Margaret  Gourmet Lanchonetes                 34.00    7.00  20.50  2.00
+Peacock, Margaret  Great Lakes Food Market            720.00   14.00 193.00  4.00
+Peacock, Margaret  HILARIO-Abastos                    180.00    8.00  72.40  5.00
+Peacock, Margaret  Hanari Carnes                      125.00   12.00  67.67  3.00
+Peacock, Margaret  Hungry Coyote Import Store          45.00   45.00  45.00  1.00
+Peacock, Margaret  Hungry Owl All-Night Grocers       124.00  124.00 124.00  1.00
+Peacock, Margaret  Island Trading                      62.00    1.00  32.25  4.00
+Peacock, Margaret  Kolich Essen                         5.00    5.00   5.00  1.00
+Peacock, Margaret  LILA-Supermercado                  102.00  102.00 102.00  1.00
+Peacock, Margaret  LINO-Delicateses                    64.00    3.00  33.50  2.00
+Peacock, Margaret  La corne dabondance                 20.00    0.00  10.00  2.00
+Peacock, Margaret  La maison dAsie                     11.00    3.00   7.00  2.00
+Peacock, Margaret  Lehmanns Marktstand                110.00   45.00  77.33  3.00
+Peacock, Margaret  Lets Stop N Shop                    91.00   91.00  91.00  1.00
+Peacock, Margaret  Lonesome Pine Restaurant            25.00   12.00  18.50  2.00
+Peacock, Margaret  Magazzini Alimentari Riuniti        70.00   70.00  70.00  1.00
+Peacock, Margaret  Maison Dewey                       156.00  120.00 138.00  2.00
+Peacock, Margaret  Me Paillarde                        45.00   45.00  45.00  1.00
+Peacock, Margaret  Morgenstern Gesundkost              10.00   10.00  10.00  1.00
+Peacock, Margaret  Oceo Atlaico Ltda.                   1.00    1.00   1.00  1.00
+Peacock, Margaret  Old World Delicatessen              84.00   84.00  84.00  1.00
+Peacock, Margaret  Ottilies Kaladen                   158.00   55.00 102.50  4.00
+Peacock, Margaret  Piccolo und mehr                    31.00   31.00  31.00  1.00
+Peacock, Margaret  QUICK-Stop                         364.00    1.00 123.80  5.00
+Peacock, Margaret  Que Delia                           46.00    3.00  24.50  2.00
+Peacock, Margaret  Queen Cozinha                       58.00   33.00  45.50  2.00
+Peacock, Margaret  Rancho grande                       39.00   23.00  31.00  2.00
+Peacock, Margaret  Rattlesnake Canyon Grocery         147.00   14.00  80.50  2.00
+Peacock, Margaret  Reggiani Caseifici                  33.00    7.00  23.33  3.00
+Peacock, Margaret  Ricardo Adocicados                  69.00   30.00  50.00  3.00
+Peacock, Margaret  Richter Supermarkt                 137.00   14.00  75.50  2.00
+Peacock, Margaret  Romero y tomillo                    13.00    3.00   8.00  3.00
+Peacock, Margaret  Save-a-lot Markets                 488.00   23.00 184.75  4.00
+Peacock, Margaret  Simons bistro                      257.00   70.00 163.50  2.00
+Peacock, Margaret  Split Rail Beer & Ale              192.00  192.00 192.00  1.00
+Peacock, Margaret  Supres deces                        51.00    2.00  18.75  4.00
+Peacock, Margaret  The Cracker Box                     95.00   95.00  95.00  1.00
+Peacock, Margaret  Toms Spezialitan                    28.00   28.00  28.00  1.00
+Peacock, Margaret  Tortuga Restaurante                218.00  218.00 218.00  1.00
+Peacock, Margaret  Tradic Hipermercados                82.00   79.00  80.50  2.00
+Peacock, Margaret  Trails Head Gourmet Provisioners    38.00   38.00  38.00  1.00
+Peacock, Margaret  Vaffeljernet                       299.00  299.00 299.00  1.00
+Peacock, Margaret  Victuailles en stock                25.00    9.00  17.00  2.00
+Peacock, Margaret  Wartian Herkku                      59.00    1.00  30.00  2.00
+Peacock, Margaret  Wellington Importadora              55.00   48.00  51.50  2.00
+Peacock, Margaret  White Clover Markets                82.00   15.00  44.75  4.00
+Peacock, Margaret  Wilman Kala                          1.00    1.00   1.00  1.00
+Peacock, Margaret  Wolski  Zajazd                      26.00    9.00  17.50  2.00
+Suyama, Michael    Alfreds Futterkiste                 29.00   29.00  29.00  1.00
+Suyama, Michael    Around the Horn                     42.00   42.00  42.00  1.00
+Suyama, Michael    Blauer See Delikatessen             45.00   45.00  45.00  1.00
+Suyama, Michael    Blondel pe et fils                   8.00    7.00   7.50  2.00
+Suyama, Michael    Bottom-Dollar Markets               71.00   53.00  62.00  2.00
+Suyama, Michael    Bs Beverages                        30.00   12.00  21.00  2.00
+Suyama, Michael    Chop-suey Chinese                   92.00    1.00  46.50  2.00
+Suyama, Michael    Die Wandernde Kuh                   37.00   37.00  37.00  1.00
+Suyama, Michael    Ernst Handel                       145.00  126.00 135.50  2.00
+Suyama, Michael    Folies gourmandes                    1.00    1.00   1.00  1.00
+Suyama, Michael    Folk och faB                       152.00    4.00  78.00  2.00
+Suyama, Michael    Frankenversand                      34.00   17.00  25.50  2.00
+Suyama, Michael    Gourmet Lanchonetes                 28.00    5.00  19.33  3.00
+Suyama, Michael    Great Lakes Food Market             57.00    3.00  30.00  2.00
+Suyama, Michael    HILARIO-Abastos                    184.00  184.00 184.00  1.00
+Suyama, Michael    Hungry Owl All-Night Grocers       220.00   17.00 135.00  3.00
+Suyama, Michael    Island Trading                      54.00   54.00  54.00  1.00
+Suyama, Michael    LILA-Supermercado                    0.00    0.00   0.00  1.00
+Suyama, Michael    La corne dabondance                 15.00   15.00  15.00  1.00
+Suyama, Michael    La maison dAsie                     64.00    8.00  38.33  3.00
+Suyama, Michael    Lets Stop N Shop                    46.00   46.00  46.00  1.00
+Suyama, Michael    Lonesome Pine Restaurant            13.00    2.00   7.50  2.00
+Suyama, Michael    Magazzini Alimentari Riuniti         2.00    2.00   2.00  1.00
+Suyama, Michael    Me Paillarde                         4.00    4.00   4.00  1.00
+Suyama, Michael    Old World Delicatessen             144.00  144.00 144.00  1.00
+Suyama, Michael    Ottilies Kaladen                    96.00   71.00  83.50  2.00
+Suyama, Michael    Piccolo und mehr                   117.00    5.00  61.00  2.00
+Suyama, Michael    Que Delia                           21.00    6.00  13.50  2.00
+Suyama, Michael    Queen Cozinha                      201.00    5.00  75.67  3.00
+Suyama, Michael    Rancho grande                        3.00    3.00   3.00  1.00
+Suyama, Michael    Rattlesnake Canyon Grocery          98.00   98.00  98.00  1.00
+Suyama, Michael    Save-a-lot Markets                 368.00    8.00 213.75  4.00
+Suyama, Michael    Seven Seas Imports                  27.00   27.00  27.00  1.00
+Suyama, Michael    Spealitedu monde                     9.00    9.00   9.00  1.00
+Suyama, Michael    Split Rail Beer & Ale                5.00    5.00   5.00  1.00
+Suyama, Michael    Supres deces                         6.00    6.00   6.00  1.00
+Suyama, Michael    The Big Cheese                       3.00    3.00   3.00  1.00
+Suyama, Michael    Toms Spezialitan                    15.00   12.00  13.50  2.00
+Suyama, Michael    Trails Head Gourmet Provisioners     7.00    7.00   7.00  1.00
+Suyama, Michael    Vaffeljernet                        69.00   69.00  69.00  1.00
+Suyama, Michael    Vins et alcools Chevalier            6.00    6.00   6.00  1.00
+Suyama, Michael    Wartian Herkku                      29.00   29.00  29.00  1.00
+Suyama, Michael    Wolski  Zajazd                      81.00   81.00  81.00  1.00

@@ -1,10 +1,10 @@
-FACT Version 2.3.2 Build 012 for Oracle, DB2 and SQL Server
+FACT Version 2.3.2 Build 016 for Oracle, DB2 and SQL Server
 
 [ Database Info ]
 Database         :   ORACLE
-Instance         :   XE
+Instance         :   eclipse:1521/XE
 UserId           :   scott
-Query            :   SELECT * FROM orders
+Query            :   SELECT * FROM SCOTT.ORDERS
 
 [ Extraction Info ]
 Outfile Format   :   VARIABLE
@@ -16,21 +16,18 @@ TimestampTZ Format : SYYYYMMDDHHMISS.FF6TZHTZM
 Start User Query #1      :   
 End User Query #1        :   
 Max Rows per fetch       :   1024
-Total Records fetched    :   181
+Total Records fetched    :   830
 
 [ Outfiles Info ]
 Sam File #1      :   stdout
 Write Mode       :   OVERWRITE
 Load Database    :   ORACLE
-Ctl File         :   ..\ddf\orders.ctl
-Ddf File         :   ..\ddf\orders.ddf
+Ctl File         :   orders.ctl
+Ddf File         :   ..\metadata\orders.ddf
 
 [ Time Statistics ]
-Start Time       :   Wed Oct 01 08:50:41 2014
-End Time         :   Wed Oct 01 08:50:41 2014
-Time spent       :   0 sec.
-Overall speed    :   181 rows per sec.
-
+Start Time       :   Tue Aug 07 13:02:37 2018
+End Time         :   Tue Aug 07 13:02:38 2018
 For more information or technical support:
 
 	CoSort Korea / Data Streams Corp.
