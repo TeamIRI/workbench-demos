@@ -79,7 +79,7 @@
 /OUTFILE=..\TargetFiles\orders6.html # Web report sub-totals
 	/PROCESS=RECORD
 	/DATA="<TR><TD>"
-	/DATA=""
+	/DATA="&nbsp;"
 	/DATA="</TD>\n<TD align=right><B>"
 	/DATA="Subtotal"
 	/DATA="<FONT></B></TD>\n<TD align=right><B><U><FONT SIZE=+1>"
