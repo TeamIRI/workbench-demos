@@ -30,7 +30,8 @@
   <p>The Schema Pattern Search will create three text files. 
   One is <em>tableSearchResults.log</em> that records all tables that
   are successfully searched. The <em>columnSearchResults.csr</em>
-  records all columns that contain data that match the patterns.
+  records all columns that contain data that match the patterns or 
+  columns that matched the column name patterns.
   The <em>schema_pattern_search.txt</em> (or custom named file on the setup 
   page) contains the column name and data that matched.
 
@@ -54,8 +55,15 @@
     The text-type data types are pre-selected. Leave the defaults. 
     Click <strong>Next</strong>. 
     
+    <li style="margin-bottom: 10px;">The Exclude Items page is where 
+    patterns can be entered to exclude items.    
+    Click <strong>Next</strong>. 
+    
     <li style="margin-bottom: 10px;">The Pattern page is where the
-    patterns to be used are added. Click <strong>Create</strong>
+    patterns to be used are added. The top section is for matching on 
+    column names. It is disabled because that option was not selected
+    on the setup page. In the <strong>Data Matching</strong> section, 
+    click <strong>Add</strong>
     and then <strong>Browse Common Patterns</strong>. Double-click
     <strong>CREDIT_CARD</strong> at the top and then <strong>OK</strong>.
     
