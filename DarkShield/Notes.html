@@ -13,132 +13,174 @@
   h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
   h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
   h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
-
-   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
-
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+  li {margin-bottom: 10px;}
   </style>
 </head>
 
 <body>
-  <h1>Finding and Masking PII in Unstructured Text Files</h1>
+  <h1>Finding and Masking PII in Unstructured Text Files using DarkShield</h1>
 
-  <p>This project demonstrates most of the DarkShield's capabilities 
-  by taking you through the steps of searching for Personally Identifiable 
-  Information (PII) in unstructured file formats, recording the results
-  and file metadata for further analysis using IRI's structured data tools
-  (CoSort/sortCL), and remediating the PII from the original document.</p>
+  <p>This project demonstrates DarkShield's capabilities by taking you through the 
+  steps of creating and modifying a new Dark Data Discovery job to search for and 
+  remediate names, emails, and SSNs in unstructured file formats using regular 
+  expression pattern matching and Named Entity Recognition (NER). 
+  <a href="Notes2.html">Notes2</a> of this project covers training a custom NER 
+  model, and is considered optional depending on the requirements and time
+  constraints.</p>
 
-  <p>To take full advantage of IRI Workbench's data reporting capabilities,
-  this demo requires the installation of CoSort/SortCL (which runs .scl
-  scripts) and the Business Intelligence Reporting Tool (BIRT), which is
-  available through their Eclipse 
-  <a href="http://download.eclipse.org/birt/update-site/4.4/">update site</a>.
-  </p>
+  <p>To use the DarkShield remediation capabilities, this demo requires a 
+  licensed installation of CoSort/SortCL.</p>
   
-  <p> Recommended steps to perform the demo in IRI Workbench:</p>
-
-  <h2>Wizard:</h2>
+  <p>Recommended steps to perform the demo in IRI Workbench:</p>
+  
+  <h2>NER Model:</h2>
+  
+  <p>For the following example, you will use a NER model downloaded from the
+  OpenNLP website.</p>
+  
   <ol>
-    <li style="margin-bottom: 10px;">Open the "Dark Data Discovery" wizard from 
-    the Discovery menu.</li>
+    <li>Navigate to the <a href="http://opennlp.sourceforge.net/models-1.5/">
+    OpenNLP models</a> website in your browser.</li>
+    
+    <li>Explain the different NER models that can be downloaded and used,
+    including ones for persons, organizations, and locations, and for different
+    languages. Valid NER models have the <em>Name Finder</em> Component listed
+    next to them.</li>
+    
+    <li>Explain that IRI provides additional means of training your own NER
+    models if the pre-trained models provided on the OpenNLP website are not
+    accurate for the client's documents.</li>
+    
+    <li>Download the <em>en-ner-person.bin</em> English Person Name Finder, and 
+    save it in a location where it can be easily found.</li>
+  </ol>
+  
+  <h2>Data Class:</h2>
+  
+  <p>To use the downloaded NER model, you must create a new Data Class with
+  a NER model matcher.</p>
+  
+  <ol>
+    <li>Open the <strong>Data Classes and Groups</strong> dialog by clicking on
+    <strong>IRI Menu -&gt; IRI Preferences</strong> from the dropdown menu and
+    selecting the <strong>Data Classes and Groups</strong> tab from the
+    sidebar.</li>
+    
+    <li>Click <strong>Add</strong> to open the <strong>Data Class or Group
+    </strong> dialog.</li>
+    
+    <li>In the <strong>Type</strong> field, keep the default <em>Data Class</em>
+    dropdown option selected.</li>
+    
+    <li>In the <strong>Name</strong> field, type "NAMES_NLP".</li>
+    
+    <li>Click <strong>Add</strong> to open the <strong>Data Class Matcher
+    </strong> dialog.</li>
+    
+    <li>In the <strong>Type</strong> field, select <em>MODEL</em>.
+    
+    <li>Click <strong>Browse</strong> to navigate to the <em>en-ner-person.bin
+    </em>model file downloaded in the previous section.</li>
+    
+    <li>Click <strong>OK</strong> to create the matcher.</li>
+    
+    <li>Click <strong>OK</strong> to create the <em>NAMES_NLP</em> Data Class.</li>
+  </ol>
 
-    <li style="margin-bottom: 10px;">In the <strong>Folder</strong> field, make 
-    sure DarkShield is the selected project folder.</li>
+  <h2>Dark Data Discovery Wizard</h2>
+  <ol>
+    <li>Open the <strong>New Dark Data Discovery Job</strong> wizard from the 
+    Discovery menu.</li>
 
-    <li style="margin-bottom: 10px;">Select the check box to create a new folder 
-    using the name in the next field. The output files will be put into this 
-    folder.</li>
+    <li>In the <strong>Folder</strong> field, make sure DarkShield is the selected 
+    project folder.</li>
+
+    <li>Select the check box to create a new folder using the name in the next 
+    field. The output files will be placed into this folder.</li>
         
-	<li style="margin-bottom: 10px;">In the <strong>Name</strong> field, 
-	leave the default name of 
+	<li>In the <strong>Name</strong> field, leave the default name of 
 	<em>search_output</em> for this example.</li>
         
-    <li style="margin-bottom: 10px;">Select the check box to create a DDF. This 
-    file will be put in the metadata folder.</li>
+    <li>Select the check box to create a DDF. This file will be put in the 
+    metadata folder.</li>
         
-    <li style="margin-bottom: 10px;">Select the check box to remediate. This 
-    will create a remediated copy in the output folder.</li>
+    <li>Select the check box to remediate. This will create a remediated copy in 
+    the output folder.</li>
         
-    <li style="margin-bottom: 10px;">Click <strong>Next</strong> to continue to the 
-    next page.</li>
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
         
-    <li style="margin-bottom: 10px;">In the <strong>Search directories</strong> section, 
-    click on the <strong>Select</strong> button and navigate to the folder in the 
-    workspace called <em>data</em>.</li>
+    <li>In the <strong>Search directories</strong> field, click on the 
+    <strong>Select</strong> button and navigate to the folder in the 
+    workspace called <em>Darkshield\data</em>.</li>
         
-    <li style="margin-bottom: 10px;">Select the following file extensions in the 
-    <strong>File type extensions</strong> sections: <em>txt, json, pdf, xml</em>. 
-    At this time only those file types are able to be remediated.</li>
+    <li>Select the following file extensions in the <strong>File type extensions
+    </strong> sections: <em>txt, json, pdf, xml</em>. At this time only those 
+    file types are able to be remediated.</li>
         
-    <li style="margin-bottom: 10px;"><strong>Select All</strong> for the 
-    <strong>Metadata display</strong> sections.</li>
+    <li><strong>Select All</strong> for the <strong>Metadata display</strong> 
+    sections.</li>
         
-    <li style="margin-bottom: 10px;">Click <strong>Next</strong> to continue to the next 
-    page.</li>
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
         
-    <li style="margin-bottom: 10px;">Select <strong>Create...</strong> -&gt; 
-    <strong>Browse Common Patterns</strong>
-    and double click on <strong>Email</strong> from the table to select the pattern. </li>
+    <li>Click <strong>Add</strong> to open the <strong>Data Rule Matcher
+    </strong> dialog.</li>
     
-    <li style="margin-bottom: 10px;">Click <strong>Ok</strong>.</li>
+    <li>In the <strong>Matcher Name</strong> field, type "NamesMatcher".</li>
     
-    <li style="margin-bottom: 10px;">Repeat the previous two steps, this time selecting
-    the <strong>PIN US</strong> pattern.</li>
+    <li>Click <strong>Browse</strong> to select the <em>EncryptNamesRule</em></li>
     
-    <li style="margin-bottom: 10px;">Optionally, click <strong>Browse...</strong> to add 
-    patterns from the <strong>IRI Patterns Library</strong> for the project.</li>
+    <li>Click <strong>Add</strong> to open the <strong>Data Rule Matcher
+    Details</strong> dialog.
     
-    <li style="margin-bottom: 10px;">Click <strong>Finish</strong>.</li>
+    <li>In the <strong>Type</strong> field, select <em>Data Class</em>.</li>
     
-    <li style="margin-bottom: 10px;">The wizard will generate a new file
-    called <strong>new_search.search</strong> in the <strong>new_search</strong>
-    folder of the DarkShield project.</li>
+    <li>In the <strong>Details</strong> field, select <em>NAMES_NLP</em>.</li>
     
-    <li style="margin-bottom: 10px;">To run the remediation, right click on new_search.search
-    and select <strong>run as</strong> -&gt; <strong>IRI Search and Remediate Job</strong>.</li>
+    <li>Click <strong>OK</strong> to add the Data Rule Matcher Details.</li> 
     
+    <li>Click <strong>Ok</strong> to create the Data Rule Matcher.</li>
+    
+    <li>Click <strong>Browse</strong> and select the <em>EmailsMatcher</em>
+    <em>PinUSMatcher</em>.</li>
+    
+    <li>Explain that these matchers were saved from a previous job, and can be
+    created by following the previous steps, and selecting the <em>RedactPinsRule
+    </em> and a <em>Pin_US</em> common pattern matcher for PinUSMatcher, and
+    selecting the <em>HashEmailsRule</em> and an <em>EMAILS</em> common pattern
+    matcher for EmailsMatcher.</li>
+    
+    <li>Click <strong>Finish</strong>.</li>
+    
+    <li>The wizard will generate a new file called <strong>new_search.search
+    </strong> in the <strong>new_search</strong> folder of the DarkShield 
+    project.</li>
   </ol>
   
   <h2>Results:</h2>
   <ol>
-    <li style="margin-bottom: 10px;">In the <strong>Project Explorer</strong> view, 
-    navigate to the <strong>DarkShield</strong> -&gt; <strong>search_output</strong> folder.</li>
+    <li>To run the search & remediation, right click on new_search.search 
+    and select <strong>run as -&gt; IRI Search and Remediate Job</strong>.</li>
     
-    <li style="margin-bottom: 10px;">Double click on the <em>search_output.txt</em>
-    file to open the results file in the Workspace.</li>
+    <li>In the <strong>Project Explorer</strong> view, navigate to the 
+    <strong>DarkShield -&gt; search_output</strong> folder.</li>
     
-    <li style="margin-bottom: 10px;">In the <strong>Project Explorer</strong> view,
-    navigate to the <em>saved-example-remediated\git\workbench-demos\DarkShield\data</em>
+    <li>Double click on the <em>search_output.txt</em> file to open the results 
+    file in the Workspace.</li>
+    
+    <li>In the <strong>Project Explorer</strong> view, navigate to the 
+    <em>new_search-remediated\path\to\workbench-demos\DarkShield\data</em>
     folder.</li>
     
-    <li style="margin-bottom: 10px;">Double click on any of the files within the folder
-    to open up the remediated file in the Workspace.</li>
+    <li>Double click on any of the files within the folder to open up the 
+    remediated file in the Workspace.</li>
     
-    <li style="margin-bottom: 10px;">For formats with no built-in Workbench editors (like
-    pdfs), right click on the file and select <strong>Open with</strong> -&gt; 
-    <strong>System Editor</strong>
-    to open the file in a separate application.</li>
-  </ol>
-  
-  <h2>Report:</h2>
-
-      <ol>
-        <li style="margin-bottom: 10px;">
-        From the Window menu, select <strong>Open
-        Perspective</strong> -&gt; <strong>Other</strong> -&gt;
-        <strong>Report Design</strong>.</li>
-
-        <li style="margin-bottom: 10px;">Click <strong>OK</strong>.</li>
-        
-        <li style="margin-bottom: 10px;">
-        Locate and open <em>DarkDataResults.rptdesign</em>. This
-    	is a graph created from <em>DarkDataReport.scl</em>, which
-    	counts the number of file types scanned during the discovery
-    	process.
-  
-    	<li style="margin-bottom: 10px;">On the toolbar, click 
-		the <strong>View Report</strong> icon to run the report.</li>
+    <li>For formats with no built-in Workbench editors (like pdfs), right click 
+    on the file and select <strong>Open with</strong> -&gt; <strong>System Editor
+    </strong> to open the file in a separate application.</li>
     
+    <li>When opening a remediated pdf file, explain that DarkShield currently only
+    supports full text redaction regardless of the specified rule.</li>
   </ol>
 </body>
 </html>

@@ -1,0 +1,31 @@
+[{
+  "id": 1,
+  "first_name": "Henry",
+  "last_name": "Ford",
+  "gender": "Male",
+  "email": "hford21@census.gov",
+  "ip_address": "26.58.193.3",
+  "phone_numbers": [
+	{
+		"type" : "personal",
+		"number": "(321) 444-4444"
+	},
+	{
+		"type" : "office",
+		"number": "(321) 555-5555"
+	}
+  ],
+  "transcript": "You can reach me at hford21@census.gov" 
+}, {
+  "id": 2,
+  "first_name": "Michael",
+  "last_name": "Johns",
+  "emails": [
+	{ "email": "mjohns@senate.gov" },
+	{ "email": "michaelj1personal@gmail.com" }
+  ],
+  "data": "Michael is a co-worker of Mr. Ford.",
+  "gender": "Male",
+  "ip_address": "229.179.4.213"
+}]
+

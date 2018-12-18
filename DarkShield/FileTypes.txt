@@ -1,9 +1,0 @@
-PDF|9
-doc|5
-eml|8
-json|7
-ppt|3
-pptx|3
-rtf|8
-txt|17
-xml|1
