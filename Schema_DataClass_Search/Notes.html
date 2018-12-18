@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2018 Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Schema Data Class Search</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Schema Data Class Search</h1>
+
+  <p>This demonstrates the use of the schema data class search and 
+  use of the classes for masking.</p>
+  
+  <h2>Data Class Preferences:</h2>
+  
+  <ol>
+    <li style="margin-bottom: 10px;">
+	Open the <strong>Data Classes and Groups</strong> preference page
+  	in <strong>Windows</strong> &gt; <strong>Preferences</strong> 
+  	&gt; <strong>IRI</strong>. Confirm that the data classes 
+  	<em>EMAIL</em> and <em>PHONE_US</em> exist. If not,
+  	click <strong>Restore Defaults</strong>.
+  	
+  </ol>
+  
+  <h2>Rule Library:</h2>
+  
+  <ol>
+    <li style="margin-bottom: 10px;">
+	Create a rule by clicking <strong>IRI Menu</strong> &gt;
+  	<strong>New Rule</strong> &gt; <strong>Field Rule</strong>. 
+  	Select <strong>Redaction Function</strong>.
+  	Click <strong>Next</strong>. Leave the defaults and click
+  	<strong>Finish</strong>.
+
+	<li style="margin-bottom: 10px;">
+	Create another rule by clicking <strong>IRI Menu</strong> &gt;
+  	<strong>New Rule</strong> &gt; <strong>Field Rule</strong>. 
+  	Select <strong>Encryption or
+  	Decryption Functions</strong>. Click <strong>Next</strong>. 
+  	Select <strong>enc_fp_aes256_alphanum</strong> and type
+  	<em>secret</em> as the passphrase. Click <strong>Finish</strong>.
+
+  </ol>
+
+  <h2>Schema Data Class Search Wizard:</h2>
+  
+  <p>The Schema Pattern Search will create three files. 
+  One is <em>tableSearchResults.log</em> that records all tables that
+  are successfully searched. The <em>columnSearchResults.csr</em>
+  records all columns that contain data that match the data classes or 
+  columns that matched the column name patterns.
+  The <em>iriLibrary.dataclass</em> contains the tables and classes 
+  that matched as well as a map of the matching items.
+
+  <ol>
+    <li style="margin-bottom: 10px;">
+    Right-click on the <strong>SCOTT</strong>
+    schema in the Data Source Explorer (DSE) and select
+    <strong>IRI</strong> &gt; <strong>Schema Data Class Search</strong>.</li>
+
+    <li style="margin-bottom: 10px;">
+    On the Setup page, enter the
+    location to save the result files. Select <strong>Include
+    matching on column names</strong>. Leave <strong>Depth of 
+    Matching</strong> on the default full scan.  
+    Click <strong>Next</strong>.</li>
+
+    <li style="margin-bottom: 10px;">
+    The Schema Selection page 
+    shows that one schema is selected. Click
+    <strong>Next</strong>. 
+    
+    <li style="margin-bottom: 10px;">
+    The Data Type Selection page 
+    is where you select the type of data to search.
+    The text-type data types are pre-selected. Leave the defaults. 
+    Click <strong>Next</strong>. 
+    
+    <li style="margin-bottom: 10px;">
+    The Exclude Items page is where 
+    patterns can be entered to exclude items.    
+    Click <strong>Next</strong>. 
+    
+    <li style="margin-bottom: 10px;">
+    The Data Classes page is where the
+    data classes to be used are selected. Click <strong>Select None</strong>
+    and then select <strong>EMAIL</strong> and <strong>PHONE_US</strong>.
+	Click <strong>Finish</strong>.
+    
+    <li style="margin-bottom: 10px;">
+    The data class library is displayed.
+    
+  </ol>
+      
+  <h2>Data Class Library Form Editor:</h2>
+  
+  <ol>  
+    <li style="margin-bottom: 10px;">        
+	Click on <em>SCOTT.PATIENT_RECORD</em>. On the right, the columns
+	in the table are displayed. The <em>EMAIL</em> field has the 
+	<em>EMAIL</em> data class assigned. Under <em>Field Rule</em>,
+	select the encryption rule. <em>PHONE</em> has the
+	<em>PHONE_US</em> data class assigned. Under <em>Field Rule</em>,
+	select the redaction rule.
+	
+  </ol>
+  
+  <h2>Multi Table Masking Wizard:</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">        
+    In the Data Source Explorer (DSE) in the lower left, expand
+    <em>Oracle</em> and select the <em>PATIENT_RECORD</em> table
+    under the <em>SCOTT</em> schema. Right-click and select
+    <strong>IRI</strong> &gt; <strong>New Multi Table Masking Job</strong>.
+    
+    <li style="margin-bottom: 10px;">
+	On the setup page, leave the defaults and click <strong>Next</strong>.
+	Leaving the loader blank will produce a flat file output.
+	
+	<li style="margin-bottom: 10px;">
+	The table has been pre-selected on the Data Extraction page
+	so click <strong>Next</strong>.
+	
+	<li style="margin-bottom: 10px;">
+	On the rules page, select <strong>Include rules associated with
+	data classes in the above library location</strong>. This will
+	use the two rules that were assigned in the data class library.
+	Click <strong>Next</strong>. Click <strong>Finish</strong>.
+	   
+  </ol>
+  
+  <h2>Execution:</h2>
+  
+  <ol>
+	<li style="margin-bottom: 10px;">
+  	Open the <strong>new_batch</strong> folder. Right-click on
+  	<em>new_batch.bat</em> and <strong>Run As</strong> &gt; 
+  	<strong>Batch Program</strong>.
+  
+	<li style="margin-bottom: 10px;">
+	Open <em>SCOTT_PATIENT_RECORD.out</em>. Observe that 
+	<em>EMAIL</em> is encrypted but still appears to be an email
+	address. <em>PHONE</em> has all characters replaced with an
+	asterisk.
+
+  </ol>
+
+</body>
+</html>
