@@ -6,4 +6,7 @@
   <rules xsi:type="rules:DataRule" name="HashEmailsRule" editor="hashFunctionWizard">
     <properties value="hash_sha2(${FIELDNAME})"/>
   </rules>
+  <rules xsi:type="rules:DataRule" name="EncryptNamesRule" editor="cryptoWizard">
+    <properties value="enc_fp_aes256_alphanum(${FIELDNAME}, &quot;pass&quot;)"/>
+  </rules>
 </rules:RuleLibrary>
