@@ -33,11 +33,13 @@
   <p><strong>Set up your project:</strong></p>
 
   <ol>
-    <li>In the Project Explorer, right-click on your project and
+    <li>In the Project Explorer, right-click on your project. If this
+    option is available,
     select <strong>Configure</strong> -&gt; <strong>Convert to
     Modeling Project</strong>.</li>
 
-    <li>Right-click the project again and select
+    <li>Right-click the project again. If this option is
+    availalbe, select
     <strong>Configure</strong> -&gt; <strong>Add Xtext
     Nature</strong>.</li>
   </ol>
@@ -47,70 +49,27 @@
 
   <ol>
     <li>Use the "New Multi-Table Protect Job" wizard to create a
-    basic data integration flow. This will create a flow model.
-    Then just follow the steps below to add a diagram.</li>
-
-    <li>Add a diagram as described below.</li>
+    basic data integration flow. This will create a flow model
+    and open the diagram.</li>
   </ol>
 
   <p>OR</p>
 
   <ol>
-    <li>To build an empty model to build to your preferences, press
-    <code>&lt;CTRL&gt;N</code> to open the "New" wizard.</li>
-
-    <li>In the <strong>Wizards</strong> field, type
-    <code>flow</code> to select <strong>Flow Model</strong>, and
-    then click <strong>Next</strong>.</li>
-
-    <li>Select a parent folder from the list, enter a file name in
-    the field, and then click <strong>Next</strong>.</li>
-
-    <li>Select <strong>Batch</strong> from the list in the Model
-    Object field, and then click <strong>Finish</strong>.</li>
-
-    <li>Add a diagram as described below.</li>
+    <li>To build an empty model to build to your preferences, select
+    <strong>File &gt; New &gt; Flow</strong>.
+    
+    <li>Select a project and click <strong>Finish</strong> This will open
+    the diagram.
   </ol>
 
-  <p><strong>Complete project setup:</strong></p>
-
-  <ol>
-    <li>Right-click the project and select <strong>Viewpoints
-    Selection</strong>.</li>
-
-    <li>Select <strong>Flow</strong> in the viewpoints list. Note
-    that more of this will be automated in future releases.</li>
-  </ol>
-
-  <h2>Flow Diagram</h2>
-
-  <p>If you built an empty model:</p>
-
-  <ol>
-    <li>In the Project Explorer, expand the <code>*.flow</code>
-    model.</li>
-
-    <li>Right-click on <strong>Batch</strong> and select
-    <strong>New Representation</strong> -&gt; <strong>new Flow
-    Diagram</strong>.<br>
-    A new diagram opens.</li>
-  </ol>
-
-  <p>For a block mapping diagram:</p>
-
-  <ol>
-    <li>Expand the *.flow model and navigate to a block
-    (<code>Batch TestBatch</code>) inside of the flow.</li>
-
-    <li>Right-click on the Block and select <strong>new
-    Representation</strong> -&gt; <strong>new Flow
-    Diagram</strong>.<br>
-    The diagram opens.</li>
   </ol><!-- ************************************** -->
 
-  <h2>ER Diagram Notes</h2>
+  <h2>How do I create an ER Diagram</h2>
 
   <ul>
+  
+  	<li>Follow the setup instructions above.
     <li>First a database model must be created. To do this:
 
       <ol>
@@ -125,20 +84,8 @@
     </li>
 
     <li>A database model is placed in the selected project
-    location.</li>
+    location and the diagram is opened.</li>
 
-    <li>The model has a <code>.sqlschema</code> extension and
-    contains the schema.</li>
-
-    <li>The ER diagram can be added by selecting the
-    <strong>Schema</strong> in the model file in the Project
-    Explorer and right-clicking <strong>New Representation</strong>
-    -&gt; <strong>new Entity Relationship diagram</strong>.</li>
-
-    <li>The HomePage diagram is added by selecting the
-    <strong>Database</strong> in the model file in the the Project
-    Explorer and right-clicking <strong>New Representation</strong>
-    -&gt; <strong>new HomePage</strong>.</li>
   </ul>
 
   <h2>The Flow popup menu</h2>
@@ -147,8 +94,6 @@
   popup menu. Here you can select various useful features. Note
   that some items are context sensitive so they will only show up
   at certain times.</p>
-
-  <p><strong>New items are being added.</strong></p>
 
   <h2>How to add elements to the diagrams</h2>
 
