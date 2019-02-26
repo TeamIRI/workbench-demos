@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram:DSemanticDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_AvUB0DobEemJ9aopXhOI7w" uid="_Am9-IDobEemJ9aopXhOI7w" name="saved-example Flow Diagram">
+  <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_AvUB0TobEemJ9aopXhOI7w" uid="_AvFYUDobEemJ9aopXhOI7w" source="DANNOTATION_CUSTOMIZATION_KEY">
+    <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_AvUB0jobEemJ9aopXhOI7w" uid="_AvFYUTobEemJ9aopXhOI7w"/>
+  </ownedAnnotationEntries>
+  <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_AwftkTobEemJ9aopXhOI7w" uid="_AwftkDobEemJ9aopXhOI7w" source="GMF_DIAGRAMS">
+    <data xmi:type="notation:Diagram" xmi:id="_AwftkjobEemJ9aopXhOI7w" type="Sirius" element="_AvUB0DobEemJ9aopXhOI7w" measurementUnit="Pixel">
+      <children xmi:type="notation:Node" xmi:id="_AxXQQDobEemJ9aopXhOI7w" type="2002" element="_AvUB1DobEemJ9aopXhOI7w">
+        <children xmi:type="notation:Node" xmi:id="_AxvDsDobEemJ9aopXhOI7w" type="5006"/>
+        <children xmi:type="notation:Node" xmi:id="_AxvqwDobEemJ9aopXhOI7w" type="7001">
+          <children xmi:type="notation:Node" xmi:id="_AzEgcDobEemJ9aopXhOI7w" type="3008" element="_AvUB1jobEemJ9aopXhOI7w">
+            <children xmi:type="notation:Node" xmi:id="_AzFHgDobEemJ9aopXhOI7w" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_AzFHgTobEemJ9aopXhOI7w" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_AzFHgjobEemJ9aopXhOI7w"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_AzFHgzobEemJ9aopXhOI7w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A1Y0oDobEemJ9aopXhOI7w" type="3012" element="_AvUB1zobEemJ9aopXhOI7w">
+              <children xmi:type="notation:Node" xmi:id="_A1Y0ozobEemJ9aopXhOI7w" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_A1Y0pDobEemJ9aopXhOI7w" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_A17nMDobEemJ9aopXhOI7w" type="3005" element="_AvUB2DobEemJ9aopXhOI7w">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_A17nMTobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A17nMjobEemJ9aopXhOI7w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A1Y0oTobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A1Y0ojobEemJ9aopXhOI7w" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A1380DobEemJ9aopXhOI7w" type="3012" element="_AvUB2TobEemJ9aopXhOI7w">
+              <children xmi:type="notation:Node" xmi:id="_A14j4DobEemJ9aopXhOI7w" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_A14j4TobEemJ9aopXhOI7w" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_A18OQDobEemJ9aopXhOI7w" type="3005" element="_AvUB2jobEemJ9aopXhOI7w">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_A18OQTobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A18OQjobEemJ9aopXhOI7w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A1380TobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A1380jobEemJ9aopXhOI7w" y="35" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AzEgcTobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AzEgcjobEemJ9aopXhOI7w" x="320" y="32"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AzFukDobEemJ9aopXhOI7w" type="3008" element="_AvUB3DobEemJ9aopXhOI7w">
+            <children xmi:type="notation:Node" xmi:id="_AzFukzobEemJ9aopXhOI7w" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_AzFulDobEemJ9aopXhOI7w" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_AzFulTobEemJ9aopXhOI7w"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_AzFuljobEemJ9aopXhOI7w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A181UDobEemJ9aopXhOI7w" type="3012" element="_AvUB3TobEemJ9aopXhOI7w">
+              <children xmi:type="notation:Node" xmi:id="_A181UzobEemJ9aopXhOI7w" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_A181VDobEemJ9aopXhOI7w" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_A1-DcDobEemJ9aopXhOI7w" type="3005" element="_AvUB3jobEemJ9aopXhOI7w">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_A1-DcTobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A1-DcjobEemJ9aopXhOI7w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A181UTobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A181UjobEemJ9aopXhOI7w" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A19cYDobEemJ9aopXhOI7w" type="3012" element="_AvUB3zobEemJ9aopXhOI7w">
+              <children xmi:type="notation:Node" xmi:id="_A19cYzobEemJ9aopXhOI7w" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_A19cZDobEemJ9aopXhOI7w" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_A1-qgDobEemJ9aopXhOI7w" type="3005" element="_AvUB4DobEemJ9aopXhOI7w">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_A1-qgTobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A1-qgjobEemJ9aopXhOI7w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A19cYTobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A19cYjobEemJ9aopXhOI7w" y="35" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AzFukTobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AzFukjobEemJ9aopXhOI7w" x="534" y="32"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AzFulzobEemJ9aopXhOI7w" type="3008" element="_AvUB4jobEemJ9aopXhOI7w">
+            <children xmi:type="notation:Node" xmi:id="_AzGVoDobEemJ9aopXhOI7w" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_AzGVoTobEemJ9aopXhOI7w" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_AzGVojobEemJ9aopXhOI7w"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_AzGVozobEemJ9aopXhOI7w"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A1-qgzobEemJ9aopXhOI7w" type="3012" element="_AvUB4zobEemJ9aopXhOI7w">
+              <children xmi:type="notation:Node" xmi:id="_A1-qhjobEemJ9aopXhOI7w" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_A1-qhzobEemJ9aopXhOI7w" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_A2AfsDobEemJ9aopXhOI7w" type="3005" element="_AvUB5DobEemJ9aopXhOI7w">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_A2AfsTobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A2AfsjobEemJ9aopXhOI7w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A1-qhDobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A1-qhTobEemJ9aopXhOI7w" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A1_RkDobEemJ9aopXhOI7w" type="3012" element="_AvUB5TobEemJ9aopXhOI7w">
+              <children xmi:type="notation:Node" xmi:id="_A1_4oDobEemJ9aopXhOI7w" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_A1_4oTobEemJ9aopXhOI7w" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_A2AfszobEemJ9aopXhOI7w" type="3005" element="_AvUB5jobEemJ9aopXhOI7w">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_A2AftDobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A2AftTobEemJ9aopXhOI7w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A1_RkTobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A1_RkjobEemJ9aopXhOI7w" y="35" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AzFumDobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AzFumTobEemJ9aopXhOI7w" x="748" y="32"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AzG8sDobEemJ9aopXhOI7w" type="3007" element="_AvUB6DobEemJ9aopXhOI7w">
+            <children xmi:type="notation:Node" xmi:id="_AzIK0DobEemJ9aopXhOI7w" type="5003">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_AzIK0TobEemJ9aopXhOI7w" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A2BGwDobEemJ9aopXhOI7w" type="3016" element="_AvUB6TobEemJ9aopXhOI7w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A2BGwTobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A2BGwjobEemJ9aopXhOI7w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AzG8sTobEemJ9aopXhOI7w" fontColor="4539717" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AzG8sjobEemJ9aopXhOI7w" x="32" y="20" width="60" height="60"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AzKnEDobEemJ9aopXhOI7w" type="3007" element="_AvUB6jobEemJ9aopXhOI7w">
+            <children xmi:type="notation:Node" xmi:id="_AzLOIDobEemJ9aopXhOI7w" type="5003">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_AzLOITobEemJ9aopXhOI7w" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A2BGwzobEemJ9aopXhOI7w" type="3005" element="_AvUB6zobEemJ9aopXhOI7w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A2BGxDobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A2BGxTobEemJ9aopXhOI7w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_AzKnETobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AzKnEjobEemJ9aopXhOI7w" x="156" y="25" width="100" height="50"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_A1YNkDobEemJ9aopXhOI7w" type="3007" element="_AvUB7DobEemJ9aopXhOI7w">
+            <children xmi:type="notation:Node" xmi:id="_A1YNkzobEemJ9aopXhOI7w" type="5003">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_A1YNlDobEemJ9aopXhOI7w" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A2Bt0DobEemJ9aopXhOI7w" type="3005" element="_AvUB7TobEemJ9aopXhOI7w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A2Bt0TobEemJ9aopXhOI7w" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A2Bt0jobEemJ9aopXhOI7w"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_A1YNkTobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A1YNkjobEemJ9aopXhOI7w" x="962" y="25" width="100" height="50"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_AxvqwTobEemJ9aopXhOI7w"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_AxvqwjobEemJ9aopXhOI7w"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_AxXQQTobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8" bold="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AxXQQjobEemJ9aopXhOI7w" width="1200" height="200"/>
+      </children>
+      <styles xmi:type="notation:DiagramStyle" xmi:id="_AwftkzobEemJ9aopXhOI7w"/>
+      <edges xmi:type="notation:Edge" xmi:id="_A2u4cDobEemJ9aopXhOI7w" type="4001" element="_AvUB7jobEemJ9aopXhOI7w" source="_AzG8sDobEemJ9aopXhOI7w" target="_AzKnEDobEemJ9aopXhOI7w">
+        <children xmi:type="notation:Node" xmi:id="_A2wGkDobEemJ9aopXhOI7w" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A2wGkTobEemJ9aopXhOI7w" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A2wtoDobEemJ9aopXhOI7w" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A2wtoTobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A2wtojobEemJ9aopXhOI7w" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A2wtozobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_A2u4cTobEemJ9aopXhOI7w" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_A2u4cjobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A2u4czobEemJ9aopXhOI7w" points="[0, 0, -64, 0]$[64, 0, 0, 0]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3DokDobEemJ9aopXhOI7w" id="(1.0,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3DokTobEemJ9aopXhOI7w" id="(0.0,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_A3EPoDobEemJ9aopXhOI7w" type="4001" element="_AvUB8TobEemJ9aopXhOI7w" source="_AzKnEDobEemJ9aopXhOI7w" target="_A1Y0oDobEemJ9aopXhOI7w">
+        <children xmi:type="notation:Node" xmi:id="_A3EPpDobEemJ9aopXhOI7w" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3EPpTobEemJ9aopXhOI7w" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A3EPpjobEemJ9aopXhOI7w" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3EPpzobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A3EPqDobEemJ9aopXhOI7w" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3EPqTobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_A3EPoTobEemJ9aopXhOI7w" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_A3EPojobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A3EPozobEemJ9aopXhOI7w" points="[5, 7, -65, -25]$[34, 7, -36, -25]$[34, 28, -36, -4]$[63, 28, -7, -4]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3E2sDobEemJ9aopXhOI7w" id="(1.0,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3E2sTobEemJ9aopXhOI7w" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_A3E2sjobEemJ9aopXhOI7w" type="4001" element="_AvUB9DobEemJ9aopXhOI7w" source="_A1380DobEemJ9aopXhOI7w" target="_A181UDobEemJ9aopXhOI7w">
+        <children xmi:type="notation:Node" xmi:id="_A3E2tjobEemJ9aopXhOI7w" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3E2tzobEemJ9aopXhOI7w" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A3FdwDobEemJ9aopXhOI7w" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3FdwTobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A3FdwjobEemJ9aopXhOI7w" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3FdwzobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_A3E2szobEemJ9aopXhOI7w" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_A3E2tDobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A3E2tTobEemJ9aopXhOI7w" points="[2, 7, -64, 7]$[66, 7, 0, 7]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3FdxDobEemJ9aopXhOI7w" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3FdxTobEemJ9aopXhOI7w" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_A3FdxjobEemJ9aopXhOI7w" type="4001" element="_AvUB9zobEemJ9aopXhOI7w" source="_A19cYDobEemJ9aopXhOI7w" target="_A1-qgzobEemJ9aopXhOI7w">
+        <children xmi:type="notation:Node" xmi:id="_A3FdyjobEemJ9aopXhOI7w" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3FdyzobEemJ9aopXhOI7w" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A3FdzDobEemJ9aopXhOI7w" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3FdzTobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A3FdzjobEemJ9aopXhOI7w" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3FdzzobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_A3FdxzobEemJ9aopXhOI7w" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_A3FdyDobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A3FdyTobEemJ9aopXhOI7w" points="[2, 7, -64, 7]$[66, 7, 0, 7]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3GE0DobEemJ9aopXhOI7w" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3GE0TobEemJ9aopXhOI7w" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_A3GE0jobEemJ9aopXhOI7w" type="4001" element="_AvUB-jobEemJ9aopXhOI7w" source="_A1_RkDobEemJ9aopXhOI7w" target="_A1YNkDobEemJ9aopXhOI7w">
+        <children xmi:type="notation:Node" xmi:id="_A3GE1jobEemJ9aopXhOI7w" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3GE1zobEemJ9aopXhOI7w" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A3GE2DobEemJ9aopXhOI7w" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3GE2TobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_A3GE2jobEemJ9aopXhOI7w" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A3GE2zobEemJ9aopXhOI7w" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_A3GE0zobEemJ9aopXhOI7w" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_A3GE1DobEemJ9aopXhOI7w" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_A3GE1TobEemJ9aopXhOI7w" points="[7, -4, -59, 21]$[36, -4, -30, 21]$[36, -25, -30, 0]$[66, -25, 0, 0]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3IhEDobEemJ9aopXhOI7w" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_A3IhETobEemJ9aopXhOI7w" id="(0.0,0.5)"/>
+      </edges>
+    </data>
+  </ownedAnnotationEntries>
+  <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_AvUB1DobEemJ9aopXhOI7w" uid="_ApOn8DobEemJ9aopXhOI7w" name="saved-example" width="120" height="20">
+    <target xmi:type="flow:Flowlet" href="../saved-example/saved-example.flow#//@flowlets.0"/>
+    <semanticElements xmi:type="flow:Flowlet" href="../saved-example/saved-example.flow#//@flowlets.0"/>
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_AvUB1TobEemJ9aopXhOI7w" uid="_ApREMDobEemJ9aopXhOI7w" showIcon="false" borderSize="2" borderSizeComputationExpression="2" borderColor="69,69,69" backgroundStyle="GradientTopToBottom">
+      <labelFormat>bold</labelFormat>
+      <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@style"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_AvUB1jobEemJ9aopXhOI7w" uid="_Aum3MDobEemJ9aopXhOI7w" name="SCOTT_DEPARTMENTS.fcl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.2"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.2"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_AvUB1zobEemJ9aopXhOI7w" uid="_AuoFUDobEemJ9aopXhOI7w" name="SCOTT_DEPARTMENTS" incomingEdges="_AvUB8TobEemJ9aopXhOI7w" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.2/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.2/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AvUB2DobEemJ9aopXhOI7w" uid="_Aup6gDobEemJ9aopXhOI7w" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/odbc-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_AvUB2TobEemJ9aopXhOI7w" uid="_Aup6gjobEemJ9aopXhOI7w" name="SCOTT_DEPARTMENTS" outgoingEdges="_AvUB9DobEemJ9aopXhOI7w" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.2/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.2/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AvUB2jobEemJ9aopXhOI7w" uid="_AuqhkDobEemJ9aopXhOI7w" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/odbc-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_AvUB2zobEemJ9aopXhOI7w" uid="_Aum3MTobEemJ9aopXhOI7w" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_AvUB3DobEemJ9aopXhOI7w" uid="_AuneQDobEemJ9aopXhOI7w" name="SCOTT_JOB_HISTORY.fcl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.3"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.3"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_AvUB3TobEemJ9aopXhOI7w" uid="_AuqhkjobEemJ9aopXhOI7w" name="SCOTT_JOB_HISTORY" incomingEdges="_AvUB9DobEemJ9aopXhOI7w" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.3/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.3/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AvUB3jobEemJ9aopXhOI7w" uid="_AurIoDobEemJ9aopXhOI7w" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/odbc-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_AvUB3zobEemJ9aopXhOI7w" uid="_AurIojobEemJ9aopXhOI7w" name="SCOTT_JOB_HISTORY" outgoingEdges="_AvUB9zobEemJ9aopXhOI7w" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.3/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.3/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AvUB4DobEemJ9aopXhOI7w" uid="_AurIozobEemJ9aopXhOI7w" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/odbc-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_AvUB4TobEemJ9aopXhOI7w" uid="_AuneQTobEemJ9aopXhOI7w" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_AvUB4jobEemJ9aopXhOI7w" uid="_AuneQzobEemJ9aopXhOI7w" name="SCOTT_EMPLOYEES.fcl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.4"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.4"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_AvUB4zobEemJ9aopXhOI7w" uid="_AurvsDobEemJ9aopXhOI7w" name="SCOTT_EMPLOYEES" incomingEdges="_AvUB9zobEemJ9aopXhOI7w" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.4/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.4/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AvUB5DobEemJ9aopXhOI7w" uid="_AurvsTobEemJ9aopXhOI7w" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/odbc-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_AvUB5TobEemJ9aopXhOI7w" uid="_AurvszobEemJ9aopXhOI7w" name="SCOTT_EMPLOYEES" outgoingEdges="_AvUB-jobEemJ9aopXhOI7w" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.4/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.4/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AvUB5jobEemJ9aopXhOI7w" uid="_AurvtDobEemJ9aopXhOI7w" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/odbc-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_AvUB5zobEemJ9aopXhOI7w" uid="_AuneRDobEemJ9aopXhOI7w" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AvUB6DobEemJ9aopXhOI7w" uid="_Aus90DobEemJ9aopXhOI7w" name="Start" outgoingEdges="_AvUB7jobEemJ9aopXhOI7w" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="flow:StartBlock" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.0"/>
+      <semanticElements xmi:type="flow:StartBlock" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_AvUB6TobEemJ9aopXhOI7w" uid="_Aus90TobEemJ9aopXhOI7w" showIcon="false" labelColor="69,69,69" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AvUB6jobEemJ9aopXhOI7w" uid="_AuvaEDobEemJ9aopXhOI7w" name="DisableRelatedFK.sql" outgoingEdges="_AvUB8TobEemJ9aopXhOI7w" incomingEdges="_AvUB7jobEemJ9aopXhOI7w" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="flow:OracleSQLExec" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.1"/>
+      <semanticElements xmi:type="flow:OracleSQLExec" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AvUB6zobEemJ9aopXhOI7w" uid="_AuvaETobEemJ9aopXhOI7w" showIcon="false" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/cmd.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_CommandLine']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_CommandLine']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AvUB7DobEemJ9aopXhOI7w" uid="_AuvaEzobEemJ9aopXhOI7w" name="EnableRelatedFK.sql" incomingEdges="_AvUB-jobEemJ9aopXhOI7w" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="flow:OracleSQLExec" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.5"/>
+      <semanticElements xmi:type="flow:OracleSQLExec" href="../saved-example/saved-example.flow#//@flowlets.0/@blocks.5"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_AvUB7TobEemJ9aopXhOI7w" uid="_AuvaFDobEemJ9aopXhOI7w" showIcon="false" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/cmd.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_CommandLine']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_CommandLine']"/>
+    </ownedDiagramElements>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AvUB7jobEemJ9aopXhOI7w" uid="_AvAf0DobEemJ9aopXhOI7w" sourceNode="_AvUB6DobEemJ9aopXhOI7w" targetNode="_AvUB6jobEemJ9aopXhOI7w">
+    <target xmi:type="flow:Connection" href="../saved-example/saved-example.flow#Start_To_DisableRelatedFK.sql"/>
+    <semanticElements xmi:type="flow:Connection" href="../saved-example/saved-example.flow#Start_To_DisableRelatedFK.sql"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AvUB7zobEemJ9aopXhOI7w" uid="_AvDjIDobEemJ9aopXhOI7w" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AvUB8DobEemJ9aopXhOI7w" uid="_AvDjITobEemJ9aopXhOI7w" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AvUB8TobEemJ9aopXhOI7w" uid="_AvEKMjobEemJ9aopXhOI7w" sourceNode="_AvUB6jobEemJ9aopXhOI7w" targetNode="_AvUB1zobEemJ9aopXhOI7w">
+    <target xmi:type="flow:Connection" href="../saved-example/saved-example.flow#DisableRelatedFK.sql_To_SCOTT_DEPARTMENTS.fcl"/>
+    <semanticElements xmi:type="flow:Connection" href="../saved-example/saved-example.flow#DisableRelatedFK.sql_To_SCOTT_DEPARTMENTS.fcl"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AvUB8jobEemJ9aopXhOI7w" uid="_AvEKMzobEemJ9aopXhOI7w" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AvUB8zobEemJ9aopXhOI7w" uid="_AvEKNDobEemJ9aopXhOI7w" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AvUB9DobEemJ9aopXhOI7w" uid="_AvExQDobEemJ9aopXhOI7w" sourceNode="_AvUB2TobEemJ9aopXhOI7w" targetNode="_AvUB3TobEemJ9aopXhOI7w">
+    <target xmi:type="flow:Connection" href="../saved-example/saved-example.flow#SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl"/>
+    <semanticElements xmi:type="flow:Connection" href="../saved-example/saved-example.flow#SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AvUB9TobEemJ9aopXhOI7w" uid="_AvExQTobEemJ9aopXhOI7w" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AvUB9jobEemJ9aopXhOI7w" uid="_AvExQjobEemJ9aopXhOI7w" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AvUB9zobEemJ9aopXhOI7w" uid="_AvExRTobEemJ9aopXhOI7w" sourceNode="_AvUB3zobEemJ9aopXhOI7w" targetNode="_AvUB4zobEemJ9aopXhOI7w">
+    <target xmi:type="flow:Connection" href="../saved-example/saved-example.flow#SCOTT_JOB_HISTORY_To_SCOTT_EMPLOYEES.fcl"/>
+    <semanticElements xmi:type="flow:Connection" href="../saved-example/saved-example.flow#SCOTT_JOB_HISTORY_To_SCOTT_EMPLOYEES.fcl"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AvUB-DobEemJ9aopXhOI7w" uid="_AvExRjobEemJ9aopXhOI7w" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AvUB-TobEemJ9aopXhOI7w" uid="_AvExRzobEemJ9aopXhOI7w" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_AvUB-jobEemJ9aopXhOI7w" uid="_AvExSjobEemJ9aopXhOI7w" sourceNode="_AvUB5TobEemJ9aopXhOI7w" targetNode="_AvUB7DobEemJ9aopXhOI7w">
+    <target xmi:type="flow:Connection" href="../saved-example/saved-example.flow#SCOTT_EMPLOYEES.fcl_To_EnableRelatedFK.sql"/>
+    <semanticElements xmi:type="flow:Connection" href="../saved-example/saved-example.flow#SCOTT_EMPLOYEES.fcl_To_EnableRelatedFK.sql"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_AvUB-zobEemJ9aopXhOI7w" uid="_AvExSzobEemJ9aopXhOI7w" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_AvUB_DobEemJ9aopXhOI7w" uid="_AvExTDobEemJ9aopXhOI7w" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
+  <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_AvUB_TobEemJ9aopXhOI7w" uid="_AnGhADobEemJ9aopXhOI7w"/>
+  <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer"/>
+  <target xmi:type="flow:FlowBatch" href="../saved-example/saved-example.flow#saved-example"/>
+</diagram:DSemanticDiagram>
