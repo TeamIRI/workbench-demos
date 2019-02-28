@@ -1,6 +1,4 @@
 rem @echo off
-C:
-rem cd "C:\git\workbench-demos\FieldShield_Multi_Table\restore-ssn-data"
 sqlplus scott/tiger@localhost < DisableRelatedFK.sql
 sortcl /SPECIFICATION=REGIONS.scl
 sortcl /SPECIFICATION=LOCATIONS.scl
