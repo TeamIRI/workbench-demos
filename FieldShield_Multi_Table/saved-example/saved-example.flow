@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="ASCII"?>
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:rules="http://rules/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="saved-example" exportDescription="true">
+  <flowlets name="saved-example">
+    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_DisableRelatedFK.sql"/>
+    <blocks xsi:type="flow:OracleSQLExec" name="DisableRelatedFK.sql" outputConnections="DisableRelatedFK.sql_To_SCOTT_DEPARTMENTS.fcl" inputConnections="Start_To_DisableRelatedFK.sql" command="sqlplus" statementFile="DisableRelatedFK.sql" statementText="ALTER TABLE SCOTT.DEPARTMENTS DISABLE CONSTRAINT D_L_ID_FK;&#xD;&#xA;ALTER TABLE SCOTT.EMPLOYEES DISABLE CONSTRAINT E_J_ID_FK;&#xD;&#xA;ALTER TABLE SCOTT.JOB_HISTORY DISABLE CONSTRAINT JH_J_ID_FK;&#xD;&#xA;ALTER TABLE SCOTT.EMPLOYEES DISABLE CONSTRAINT E_D_ID_FK;&#xD;&#xA;ALTER TABLE SCOTT.JOB_HISTORY DISABLE CONSTRAINT JH_D_ID_FK;&#xD;&#xA;exit&#xA;">
+      <dbDataInfo name="Multiple_Tables" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="eclipse.iri.com" port="1521" instanceName="XE" userName="scott" password="tiger" delimiter="&#x9;"/>
+    </blocks>
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_DEPARTMENTS.fcl" iriJob="SCOTT_DEPARTMENTS.fcl">
+      <inputDatas name="SCOTT_DEPARTMENTS" inputConnections="DisableRelatedFK.sql_To_SCOTT_DEPARTMENTS.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DEPARTMENTS" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="eclipse.iri.com" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="DEPARTMENTS" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DEPARTMENT_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DEPARTMENT_ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+          <constraints xsi:type="flow:PrimaryKey" name="D_D_ID_PK">
+            <fields>DEPARTMENT_ID</fields>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="D_L_ID_FK" refTableName="LOCATIONS">
+            <refFieldNames>LOCATION_ID</refFieldNames>
+          </constraints>
+          <indexes name="D_D_ID_PK" isUnique="true">
+            <fields>DEPARTMENT_ID</fields>
+          </indexes>
+        </dataInfo>
+        <sectionOptions xsi:type="scl:Alias" alias="SCOTT_DEPARTMENTS"/>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+      </inputDatas>
+      <outputDatas name="SCOTT_DEPARTMENTS" outputConnections="SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.DEPARTMENTS" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="eclipse.iri.com" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="DEPARTMENTS" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_MANAGER_SID"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_ascii">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+          <constraints xsi:type="flow:ForeignKey" name="D_L_ID_FK" refTableName="LOCATIONS">
+            <refFieldNames>LOCATION_ID</refFieldNames>
+          </constraints>
+          <indexes name="D_D_ID_PK" isUnique="true"/>
+        </dataInfo>
+        <sectionOptions xsi:type="scl:OutputMode" outputModeType="/UPDATE">
+          <value name="DEPARTMENT_ID"/>
+        </sectionOptions>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+      </outputDatas>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
+      <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_DEPARTMENTS">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DEPARTMENT_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DEPARTMENT_ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+        </dataInfo>
+      </transformData>
+    </blocks>
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_JOB_HISTORY.fcl" iriJob="SCOTT_JOB_HISTORY.fcl">
+      <inputDatas name="SCOTT_JOB_HISTORY" inputConnections="SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.JOB_HISTORY" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="eclipse.iri.com" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="JOB_HISTORY" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <constraints xsi:type="flow:PrimaryKey" name="JH_ID_PK">
+            <fields>ID</fields>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="JH_D_ID_FK" refTableName="DEPARTMENTS">
+            <refFieldNames>DEPARTMENT_ID</refFieldNames>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="JH_J_ID_FK" refTableName="JOBS">
+            <refFieldNames>JOB_ID</refFieldNames>
+          </constraints>
+          <indexes name="JH_E_SID_SD_UK" isUnique="true">
+            <fields>EMPLOYEE_SID</fields>
+          </indexes>
+          <indexes name="JH_ID_PK" isUnique="true">
+            <fields>ID</fields>
+          </indexes>
+        </dataInfo>
+        <sectionOptions xsi:type="scl:Alias" alias="SCOTT_JOB_HISTORY"/>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+      </inputDatas>
+      <outputDatas name="SCOTT_JOB_HISTORY" outputConnections="SCOTT_JOB_HISTORY_To_SCOTT_EMPLOYEES.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.JOB_HISTORY" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="eclipse.iri.com" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="JOB_HISTORY" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_EMPLOYEE_SID"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_ascii">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <constraints xsi:type="flow:ForeignKey" name="JH_D_ID_FK" refTableName="DEPARTMENTS">
+            <refFieldNames>DEPARTMENT_ID</refFieldNames>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="JH_J_ID_FK" refTableName="JOBS">
+            <refFieldNames>JOB_ID</refFieldNames>
+          </constraints>
+          <indexes name="JH_E_SID_SD_UK" isUnique="true">
+            <fields>EMPLOYEE_SID</fields>
+          </indexes>
+          <indexes name="JH_ID_PK" isUnique="true"/>
+        </dataInfo>
+        <sectionOptions xsi:type="scl:OutputMode" outputModeType="/UPDATE">
+          <value name="ID"/>
+        </sectionOptions>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+      </outputDatas>
+      <mappings name="ID_To_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
+      <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_JOB_HISTORY">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+        </dataInfo>
+      </transformData>
+    </blocks>
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_EMPLOYEES.fcl" iriJob="SCOTT_EMPLOYEES.fcl">
+      <inputDatas name="SCOTT_EMPLOYEES" inputConnections="SCOTT_JOB_HISTORY_To_SCOTT_EMPLOYEES.fcl">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.EMPLOYEES" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="eclipse.iri.com" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="EMPLOYEES" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+          <constraints xsi:type="flow:PrimaryKey" name="E_ID_PK">
+            <fields>ID</fields>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="E_D_ID_FK" refTableName="DEPARTMENTS">
+            <refFieldNames>DEPARTMENT_ID</refFieldNames>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="E_J_ID_FK" refTableName="JOBS">
+            <refFieldNames>JOB_ID</refFieldNames>
+          </constraints>
+          <indexes name="E_E_SID_UK" isUnique="true">
+            <fields>EMPLOYEE_SID</fields>
+          </indexes>
+          <indexes name="E_ID_PK" isUnique="true">
+            <fields>ID</fields>
+          </indexes>
+        </dataInfo>
+        <sectionOptions xsi:type="scl:Alias" alias="SCOTT_EMPLOYEES"/>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+      </inputDatas>
+      <outputDatas name="SCOTT_EMPLOYEES" outputConnections="SCOTT_EMPLOYEES.fcl_To_EnableRelatedFK.sql">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.EMPLOYEES" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="eclipse.iri.com" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="EMPLOYEES" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_EMPLOYEE_SID"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_ascii">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_MANAGER_SID"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_ascii">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+          <constraints xsi:type="flow:ForeignKey" name="E_D_ID_FK" refTableName="DEPARTMENTS">
+            <refFieldNames>DEPARTMENT_ID</refFieldNames>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="E_J_ID_FK" refTableName="JOBS">
+            <refFieldNames>JOB_ID</refFieldNames>
+          </constraints>
+          <indexes name="E_E_SID_UK" isUnique="true">
+            <fields>EMPLOYEE_SID</fields>
+          </indexes>
+          <indexes name="E_ID_PK" isUnique="true"/>
+        </dataInfo>
+        <sectionOptions xsi:type="scl:OutputMode" outputModeType="/UPDATE">
+          <value name="ID"/>
+        </sectionOptions>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+      </outputDatas>
+      <mappings name="ID_To_ID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.1"/>
+      <transformData xsi:type="flow:ReportAction" name="Report_SCOTT_EMPLOYEES">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+        </dataInfo>
+      </transformData>
+    </blocks>
+    <blocks xsi:type="flow:OracleSQLExec" name="EnableRelatedFK.sql" inputConnections="SCOTT_EMPLOYEES.fcl_To_EnableRelatedFK.sql" command="sqlplus" statementFile="EnableRelatedFK.sql" statementText="ALTER TABLE SCOTT.DEPARTMENTS ENABLE CONSTRAINT D_L_ID_FK;&#xD;&#xA;ALTER TABLE SCOTT.EMPLOYEES ENABLE CONSTRAINT E_J_ID_FK;&#xD;&#xA;ALTER TABLE SCOTT.JOB_HISTORY ENABLE CONSTRAINT JH_J_ID_FK;&#xD;&#xA;ALTER TABLE SCOTT.EMPLOYEES ENABLE CONSTRAINT E_D_ID_FK;&#xD;&#xA;ALTER TABLE SCOTT.JOB_HISTORY ENABLE CONSTRAINT JH_D_ID_FK;&#xD;&#xA;exit&#xA;">
+      <dbDataInfo name="Multiple_Tables" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="eclipse.iri.com" port="1521" instanceName="XE" userName="scott" password="tiger" delimiter="&#x9;"/>
+    </blocks>
+    <connections name="Start_To_DisableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1"/>
+    <connections name="DisableRelatedFK.sql_To_SCOTT_DEPARTMENTS.fcl" startBlock="//@flowlets.0/@blocks.1" endBlock="//@flowlets.0/@blocks.2/@inputDatas.0"/>
+    <connections name="SCOTT_DEPARTMENTS_To_SCOTT_JOB_HISTORY.fcl" startBlock="//@flowlets.0/@blocks.2/@outputDatas.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
+    <connections name="SCOTT_JOB_HISTORY_To_SCOTT_EMPLOYEES.fcl" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.4/@inputDatas.0"/>
+    <connections name="SCOTT_EMPLOYEES.fcl_To_EnableRelatedFK.sql" startBlock="//@flowlets.0/@blocks.4/@outputDatas.0" endBlock="//@flowlets.0/@blocks.5"/>
+  </flowlets>
+  <Lineage>
+    <sourceTargetData extractor="ODBC" loader="ODBC" sourceDSN="Oracle" sourceDTPName="Oracle" separator="&#x9;" targetDSN="Oracle" targetDTPName="Oracle" targetSchema="SCOTT" outputMode="UPDATE" disableFKOnLoad="true" reenableFKOnPostLoad="true">
+      <tables>SCOTT.DEPARTMENTS</tables>
+      <tables>SCOTT.EMPLOYEES</tables>
+      <tables>SCOTT.JOB_HISTORY</tables>
+      <ruleMatchers name="SID" dataClassLibrary="C:/IRI/workspace-demos/FieldShield_Multi_Table">
+        <rule href="../iriLibrary.rules#encSID"/>
+        <matcherDetails details=".*_SID"/>
+      </ruleMatchers>
+      <rules xsi:type="rules:FieldRule" name="encSID" editor="cryptoWizard">
+        <properties fieldRulePropertyType="EXPRESSION" value="enc_fp_aes256_ascii(${FIELDNAME}, &quot;secret&quot;)"/>
+        <properties fieldRulePropertyType="NAME" value="ENC_FP_${FIELDNAME}"/>
+      </rules>
+    </sourceTargetData>
+  </Lineage>
+</flow:FlowBatch>
+
