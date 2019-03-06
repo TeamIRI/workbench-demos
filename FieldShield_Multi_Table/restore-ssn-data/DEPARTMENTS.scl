@@ -5,8 +5,8 @@
 # 
 
 
-/INFILE=../data/new-departments.data
-	/ALIAS=new_departments
+/INFILE=../data/departments.data
+	/ALIAS=departments
 	/PROCESS=RECORD
 	/FIELD=(DEPARTMENT_ID, TYPE=ASCII, POSITION=1, SEPARATOR="\t", ODEF="DEPARTMENT_ID")
 	/FIELD=(DEPARTMENT_NAME, TYPE=ASCII, POSITION=2, SEPARATOR="\t", ODEF="DEPARTMENT_NAME")
