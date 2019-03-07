@@ -42,9 +42,8 @@
 
   <ol>
     <li style="margin-bottom: 10px;">Execute
-    <em>restore-ssn-data.bat</em>, in the restore-ssn-data folder.
-    This sets the tables up to use an SSN as the primary and
-    foreign key in the tables:<br>
+    <em>restore-ssn-data.bat</em>, in the setup/restore-ssn-data folder.
+    This sets the tables up to use an SSN as a foreign key in the tables:<br>
 
       <ol>
         <li>Right-click on
@@ -70,8 +69,7 @@
         <li>In the SQL Results -&gt; Status tab, check for errors,
         as well as in the command line window.</li>
 
-        <li>Open C:\IRI\cosort100\etc\.cserrlog. Notify IRI if there
-        are problems.</li>
+        <li>Open the .cserrlog file. Notify IRI if there are problems.</li>
       </ol>
     </li>
   </ol>
@@ -93,10 +91,10 @@
     JOB_HISTORY, LOCATIONS, and REGIONS.</li>
 
     <li style="margin-bottom: 10px;">Open the document
-    <em>hr-er-diagram.png</em>.</li>
+    <em>er-diagram.png</em>.</li>
 
     <li style="margin-bottom: 10px;">Explain that the employee's
-    SSN was used as the employee ID, since it was unique.</li>
+    SSN was used as the employee identifier, since it was unique. </li>
 
     <li style="margin-bottom: 10px;">Open the script
     <em>employee-roster.sql</em> in the sql folder.</li>
@@ -278,7 +276,7 @@
     folder.</li>
 
     <li style="margin-bottom: 10px;">Execute
-    <em>restore-ssn-data.bat</em> in the restore-ssn-data
+    <em>restore-ssn-data.bat</em> in the setup/restore-ssn-data
     folder.</li>
   </ol>
 </body>
