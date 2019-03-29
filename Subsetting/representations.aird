@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description" uid="_hbodcC7rEemr54MyhIz_Vg" selectedViews="_kYSb0C7rEemr54MyhIz_Vg" version="14.1.0.201810161215">
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description" uid="_hbodcC7rEemr54MyhIz_Vg" selectedViews="_kYSb0C7rEemr54MyhIz_Vg _DcpQkFIeEemJ6qLo0DJVVA" version="14.1.0.201810161215">
   <semanticResources>SALE_DIM.sqlschema</semanticResources>
   <semanticResources>saved-example/saved-example.flow</semanticResources>
   <semanticResources>saved-example/saved-example_script0.scl</semanticResources>
@@ -16,5 +16,8 @@
       <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']"/>
       <target xmi:type="SQLSchema:Schema" href="SALE_DIM.sqlschema#/10"/>
     </ownedRepresentationDescriptors>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" uid="_DcpQkFIeEemJ6qLo0DJVVA">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
   </ownedViews>
 </viewpoint:DAnalysis>
