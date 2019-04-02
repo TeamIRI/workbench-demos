@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <!--
-   - Copyright (c) 2014, 2017, 2018. Innovative Routines International (IRI), Inc.   -->
+   - Copyright (c) 2014, 2017, 2018, 2019. Innovative Routines International (IRI), Inc.   -->
 
 <html lang="en-US">
 <head>
@@ -14,7 +14,7 @@
   h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
   h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
 
-   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;}
 
   </style>
 </head>
@@ -22,27 +22,32 @@
 <body>
   <h1>Dark Data Discovery</h1>
 
-  <p>This demonstrates the use of the Dark Data Discovery wizard.
-  This wizard searches information with specified formats based on
-  criteria consisting of patterns, expressions, or string literals.
-  You can enter a new pattern, select one from a pattern library,
+  <p>This demonstrates the use of the Dark Data Discovery wizard
+  for discovery. For discovery and remediation, along with an overview
+  of the Named Entity Recognition (NER) capabilities, please refer to the
+  DarkShield demo</p>
+
+  <p>This wizard searches information with specified formats using
+  any combination of regular expression patterns and data classes.
+  You can select an existing pattern from a pattern library,
   or create a new pattern to be stored in the library. A list of
-  common patterns is available. The results of the search are
-  organized into a usable format and a metadata file (ddf) can be
-  created. If you include xls and/or xlsx document types in the
+  common patterns is available. You can also select Data Classes that
+  are stored in your IRI preferences, which can be loaded with patterns,
+  lookup set files, or NER models. The results of the search are
+  organized into a usable format which can be loaded into a CoSort process
+  with the help of a metadata file (ddf) that can be created in this
+  wizard. If you include xls and/or xlsx document types in the
   search, an Excel&reg; Interchange file (.eif), which can be
   opened and manipulated in Excel using CellShield&reg;, is also
   created.</p>
 
-  <p>This demo uses the IRI Workbench.</p>
-
   <p>Before starting this demo, place all the documents to be
   searched in a single folder on your computer. The files for this
-  demo are located in:<br>
-  <code>C:\Documents\data</code></p>
+  demo are located in <em>data</em> folder.</p>
 
   <p>Recommended steps to perform the demo in IRI Workbench:</p>
 
+  <h2>Setup Page:</h2>
   <ol>
     <li style="margin-bottom: 10px;">Open the &quot;New Dark Data
     Discovery&quot; wizard from the Discovery Menu.</li>
@@ -64,49 +69,100 @@
 
     <li style="margin-bottom: 10px;">Click <strong>Next</strong> to
     continue to the next page.</li>
+  </ol>
 
-    <li style="margin-bottom: 10px;">In the <strong>Search
-    directories</strong> section, navigate to the folder in the 
-    workspace called <em>data</em>.</li>
+  <h2>Folder Selection Page:</h2>
+  <ol>
+    <li style="margin-bottom: 10px;">Click <strong>Select</strong> and
+    use the directory tree view to navigate to the folder in the workspace
+    called <em>data</em>.</li>
 
-    <li style="margin-bottom: 10px;">In the <strong>File type
-    extensions</strong> section, select the check boxes for all the
-    extensions. For this example, <strong>Select All</strong>.</li>
+    <li style="margin-bottom: 10px;">Click <strong>OK</strong> to add the
+    folder to the list of search directories, and click <strong>Next</strong>
+    to continue to the next page.</li>
+  </ol>
 
-    <li style="margin-bottom: 10px;">In the <strong>Metadata
-    display</strong> field, select the type of information to be
-    displayed in the report. For this example, <strong>Select All</strong>.
+  <h2>File Type Selection Page:</h2>
+  <ol>
+    <li style="margin-bottom: 10px;">In the <strong>File types</strong>
+    section, click <strong>Select All</strong> or select the checkboxes
+    for the file types which you wish to include in the search.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>Next</strong> to
     continue to the next page.</li>
+  </ol>
 
-    <li style="margin-bottom: 10px;">Click <strong>Browse...</strong>
-    and double click <em>CCN</em> to add a credit card number pattern.</li>
+  <h2>Metadata Selection Page:</h2>
+  <ol>
+    <li style="margin-bottom: 10px;">In the <strong>Metadata
+    display</strong> field, select the type of information to be
+    displayed in the report. For this example, <strong>Select All</strong>.</li>
 
-    <li style="margin-bottom: 10px;">Click <strong>Browse...</strong> 
-    and double click <em>SSN</em> to add a social security number pattern.</li>
+    <li style="margin-bottom: 10px;">In the <strong>Report Delimiter</strong>
+    field, type the delimiter used to separate the fields of the metadata information
+    in the generated report. You may leave the default.</li>
 
-    <li style="margin-bottom: 10px;">Click <strong>Browse...</strong> 
-    and double click <em>PHONE_US</em> to add a phone number pattern.</li>
+    <li style="margin-bottom: 10px;">Click <strong>Next</strong> to
+    continue to the next page.</li>
+  </ol>
 
-    <li style="margin-bottom: 10px;">Click
-    <strong>Finish</strong>.</li>
-    
+  <h2>Data Rules Page:</h2>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Phone Number</strong></p>
+  <ol>
+    <li style="margin-bottom: 10px;">Click <strong>Add</strong> to add a new
+    Data Rule Matcher.</li>
+
+    <li style="margin-bottom: 10px;">In the <strong>Matcher Name</strong> field,
+    set the name you want to use for your matcher.</li>
+
+    <li style="margin-bottom: 10px;">In the <strong>Rule Name</strong> Field,
+    click <strong>Browse</strong> and double-click on the <em>DataRedactionRule</em>
+    to select it.</li>
+
+    <li style="margin-bottom: 10px;">In the <strong>Matchers</strong> field,
+    click <strong>Add</strong> to open the <strong>Data Rule Matcher Details</strong>
+    dialog.</li>
+
+	<li style="margin-bottom: 10px;">In the <strong>Details</strong> field, click
+	<strong>Browse</strong> and double click on the <em>PHONE_US</em> pattern
+	to add a US phone number pattern.</li>
+
+	<li style="margin-bottom: 10px;">Click <strong>OK</strong> to return to the
+	Data Rule Matcher dialog, and click <strong>OK</strong> again to generate the
+	new Data Rule Matcher.</li>
+  </ol>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Emails</strong></p>
+  <ol start="7">
+
+    <li style="margin-bottom: 10px;">Repeat steps 1-4.</li>
+
+    <li style="margin-bottom: 10px;">In the <strong>Type</strong> field, select
+    <em>Data Class</em> from the dropdown.</li>
+
+    <li style="margin-bottom: 10px;">In the <strong>Details</strong> field,
+    select <em>EMAIL</em> from the dropdown.</li>
+
+    <li style="margin-bottom: 10px;">In the <strong>Rule Name</strong> Field,
+    click <strong>Browse</strong> and select the data rule you've created
+    for the previous matcher.</li>
+
+    <li style="margin-bottom: 10px;">Click <strong>OK</strong> to return to the
+	Data Rule Matcher dialog, and click <strong>OK</strong> again to generate the
+	new Data Rule Matcher.</li>
+
+	<li style="margin-bottom: 10px;">Click <strong>Finish</strong>.</li>
+  </ol>
+
+  <h2>Execution:</h2>
+  <ol>
     <li style="margin-bottom: 10px;">The wizard will generate a new file
     called <strong>new_search.search</strong> in the <strong>new_search</strong>
     folder of the Dark Data Discovery project.</li>
-    
+
     <li style="margin-bottom: 10px;">To run the search, right click on new_search.search
     and select <strong>run as -> IRI Search Job</strong>.</li>
   </ol>
-
-  <p><strong>NOTE</strong>: To find and use regular expressions in
-  the pattern library, click <strong>Browse...</strong> in the Search
-  pattern/keyword field.<br>
-  To create and save a regular expression in the pattern library,
-  click <strong>Create...</strong>.<br>
-  To select a set file for a values search, click <strong>Values...
-  </strong>.</p>
-
 </body>
 </html>
