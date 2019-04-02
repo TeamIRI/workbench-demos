@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Ddf="http://www.iri.com/lang/Ddf" xmlns:fieldrules_1.0="http://fieldrules/1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_d67IYHXBEeaLSPu8Z6BF_A" version="12.1.0.201708031200">
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="__q4M4FVDEemV8bbHV-MoVw" version="14.1.0.201810161215">
   <semanticResources>iriLibrary.rules</semanticResources>
-  <models xmi:type="Ddf:Ddf" href="metadata/cust.ddf#/"/>
-  <models xmi:type="fieldrules_1.0:FieldRuleLibrary" href="iriLibrary.fieldrules#/"/>
+  <semanticResources>metadata/cust.ddf</semanticResources>
 </viewpoint:DAnalysis>

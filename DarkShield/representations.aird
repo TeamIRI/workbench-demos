@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_g0bvgGpnEei54cMumsBh-w" selectedViews="_zHyLAGsrEei54cMumsBh-w" version="13.0.0.201804031646">
-  <semanticResources>metadata/search_output2.ddf</semanticResources>
-  <semanticResources>metadata/saved-example.ddf</semanticResources>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_6J_ekFVAEemF6rsK5i8rpg" version="14.1.0.201810161215">
   <semanticResources>iriLibrary.rules</semanticResources>
-  <semanticResources>new_search/new_search.search</semanticResources>
-  <semanticResources>new_search/new_search.darkdata</semanticResources>
-  <ownedViews xmi:type="viewpoint:DView" xmi:id="_zHyLAGsrEei54cMumsBh-w">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
-  </ownedViews>
 </viewpoint:DAnalysis>

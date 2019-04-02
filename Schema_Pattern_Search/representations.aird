@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_TPqlYE78EeiDMcd_zmT2GQ" version="13.0.0.201804031646">
-  <semanticResources>iriLibrary.fieldrules</semanticResources>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_07O94FVEEemV8bbHV-MoVw" version="14.1.0.201810161215">
   <semanticResources>iriLibrary.rules</semanticResources>
 </viewpoint:DAnalysis>

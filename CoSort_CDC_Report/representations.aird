@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:scl="http://www.iri.com/lang/Scl" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_L5idQKgCEeWC1KLMrzf9TQ" selectedViews="_M0HPIKgCEeWC1KLMrzf9TQ" version="8.1.0">
-  <models xmi:type="scl:Model" href="CDC.scl#/"/>
-  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_M0HPIKgCEeWC1KLMrzf9TQ" initialized="true">
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Scl="http://www.iri.com/lang/Scl" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="_L5idQKgCEeWC1KLMrzf9TQ" selectedViews="_M0HPIKgCEeWC1KLMrzf9TQ" version="14.1.0.201810161215">
+  <semanticResources>CDC.scl</semanticResources>
+  <semanticResources>metadata/current.ddf</semanticResources>
+  <semanticResources>metadata/previous.ddf</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" uid="_M0HPIKgCEeWC1KLMrzf9TQ">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
   </ownedViews>
+  <models xmi:type="Scl:Model" href="CDC.scl#/"/>
 </viewpoint:DAnalysis>

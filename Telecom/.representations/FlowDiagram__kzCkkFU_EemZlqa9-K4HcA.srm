@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram:DSemanticDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_k6WGcFU_EemZlqa9-K4HcA" uid="_kzCkkFU_EemZlqa9-K4HcA" name="Telecom">
+  <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_k6WGcVU_EemZlqa9-K4HcA" uid="_k6DLilU_EemZlqa9-K4HcA" source="DANNOTATION_CUSTOMIZATION_KEY">
+    <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_k6WGclU_EemZlqa9-K4HcA" uid="_k6DLi1U_EemZlqa9-K4HcA"/>
+  </ownedAnnotationEntries>
+  <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_k678UVU_EemZlqa9-K4HcA" uid="_k678UFU_EemZlqa9-K4HcA" source="GMF_DIAGRAMS">
+    <data xmi:type="notation:Diagram" xmi:id="_k678UlU_EemZlqa9-K4HcA" type="Sirius" element="_k6WGcFU_EemZlqa9-K4HcA" measurementUnit="Pixel">
+      <children xmi:type="notation:Node" xmi:id="_k7PeUFU_EemZlqa9-K4HcA" type="2002" element="_k6WGdFU_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k7iZQFU_EemZlqa9-K4HcA" type="5006"/>
+        <children xmi:type="notation:Node" xmi:id="_k7iZQVU_EemZlqa9-K4HcA" type="7001">
+          <children xmi:type="notation:Node" xmi:id="_k7rjMFU_EemZlqa9-K4HcA" type="3008" element="_k6WGdlU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k7rjM1U_EemZlqa9-K4HcA" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_k7rjNFU_EemZlqa9-K4HcA" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_k7rjNVU_EemZlqa9-K4HcA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_k7rjNlU_EemZlqa9-K4HcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8SAJVU_EemZlqa9-K4HcA" type="3012" element="_k6WGd1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8SAKFU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8SAKVU_EemZlqa9-K4HcA" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8k7EFU_EemZlqa9-K4HcA" type="3005" element="_k6WGeFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8k7EVU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8k7ElU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8SAJlU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8SAJ1U_EemZlqa9-K4HcA" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8bxIFU_EemZlqa9-K4HcA" type="3012" element="_k6WGeVU_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8bxI1U_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8bxJFU_EemZlqa9-K4HcA" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8k7E1U_EemZlqa9-K4HcA" type="3005" element="_k6WGelU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8k7FFU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8k7FVU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8bxIVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8bxIlU_EemZlqa9-K4HcA" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8bxJVU_EemZlqa9-K4HcA" type="3012" element="_k6WGe1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8bxKFU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8bxKVU_EemZlqa9-K4HcA" x="17" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8k7FlU_EemZlqa9-K4HcA" type="3005" element="_k6WGfFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8k7F1U_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8k7GFU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8bxJlU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8bxJ1U_EemZlqa9-K4HcA" x="17" y="65" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k7rjMVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k7rjMlU_EemZlqa9-K4HcA" x="212" y="194"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k7rjN1U_EemZlqa9-K4HcA" type="3008" element="_k6WGflU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k7rjOlU_EemZlqa9-K4HcA" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_k7rjO1U_EemZlqa9-K4HcA" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_k7rjPFU_EemZlqa9-K4HcA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_k7rjPVU_EemZlqa9-K4HcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8k7GVU_EemZlqa9-K4HcA" type="3012" element="_k6WGf1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8k7HFU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8k7HVU_EemZlqa9-K4HcA" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8k7KFU_EemZlqa9-K4HcA" type="3005" element="_k6WGgFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8k7KVU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8k7KlU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8k7GlU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8k7G1U_EemZlqa9-K4HcA" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8k7HlU_EemZlqa9-K4HcA" type="3012" element="_k6WGgVU_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8k7IVU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8k7IlU_EemZlqa9-K4HcA" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8k7K1U_EemZlqa9-K4HcA" type="3005" element="_k6WGglU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8k7LFU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8k7LVU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8k7H1U_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8k7IFU_EemZlqa9-K4HcA" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8k7I1U_EemZlqa9-K4HcA" type="3012" element="_k6WGg1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8k7JlU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8k7J1U_EemZlqa9-K4HcA" x="17" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8usEFU_EemZlqa9-K4HcA" type="3005" element="_k6WGhFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usEVU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usElU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8k7JFU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8k7JVU_EemZlqa9-K4HcA" x="17" y="65" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k7rjOFU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k7rjOVU_EemZlqa9-K4HcA" x="426" y="194"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k7rjPlU_EemZlqa9-K4HcA" type="3008" element="_k6WGhlU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k7rjQVU_EemZlqa9-K4HcA" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_k7rjQlU_EemZlqa9-K4HcA" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_k7rjQ1U_EemZlqa9-K4HcA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_k7rjRFU_EemZlqa9-K4HcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8usE1U_EemZlqa9-K4HcA" type="3012" element="_k6WGh1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8usFlU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8usF1U_EemZlqa9-K4HcA" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8usHVU_EemZlqa9-K4HcA" type="3005" element="_k6WGiFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usHlU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usH1U_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usFFU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usFVU_EemZlqa9-K4HcA" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8usGFU_EemZlqa9-K4HcA" type="3012" element="_k6WGiVU_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8usG1U_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8usHFU_EemZlqa9-K4HcA" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8usIFU_EemZlqa9-K4HcA" type="3005" element="_k6WGilU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usIVU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usIlU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usGVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usGlU_EemZlqa9-K4HcA" y="35" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k7rjP1U_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k7rjQFU_EemZlqa9-K4HcA" x="156" y="32"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k7rjRVU_EemZlqa9-K4HcA" type="3008" element="_k6WGjFU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k7rjSFU_EemZlqa9-K4HcA" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_k7rjSVU_EemZlqa9-K4HcA" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_k7rjSlU_EemZlqa9-K4HcA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_k7rjS1U_EemZlqa9-K4HcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8usI1U_EemZlqa9-K4HcA" type="3012" element="_k6WGjVU_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8usJlU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8usJ1U_EemZlqa9-K4HcA" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8usLVU_EemZlqa9-K4HcA" type="3005" element="_k6WGjlU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usLlU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usL1U_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usJFU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usJVU_EemZlqa9-K4HcA" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8usKFU_EemZlqa9-K4HcA" type="3012" element="_k6WGj1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k8usK1U_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k8usLFU_EemZlqa9-K4HcA" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k8usMFU_EemZlqa9-K4HcA" type="3005" element="_k6WGkFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usMVU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usMlU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usKVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usKlU_EemZlqa9-K4HcA" y="35" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k7rjRlU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k7rjR1U_EemZlqa9-K4HcA" x="508" y="32"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k7rjTFU_EemZlqa9-K4HcA" type="3008" element="_k6WGklU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k7rjT1U_EemZlqa9-K4HcA" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_k7rjUFU_EemZlqa9-K4HcA" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_k7rjUVU_EemZlqa9-K4HcA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_k7rjUlU_EemZlqa9-K4HcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k8usM1U_EemZlqa9-K4HcA" type="3012" element="_k6WGk1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k832AFU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k832AVU_EemZlqa9-K4HcA" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k832B1U_EemZlqa9-K4HcA" type="3005" element="_k6WGlFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k832CFU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k832CVU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k8usNFU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8usNVU_EemZlqa9-K4HcA" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k832AlU_EemZlqa9-K4HcA" type="3012" element="_k6WGlVU_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k832BVU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k832BlU_EemZlqa9-K4HcA" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k832ClU_EemZlqa9-K4HcA" type="3005" element="_k6WGllU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k832C1U_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k832DFU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k832A1U_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k832BFU_EemZlqa9-K4HcA" y="35" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k7rjTVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k7rjTlU_EemZlqa9-K4HcA" x="860" y="32"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k71UMFU_EemZlqa9-K4HcA" type="3008" element="_k6WGmFU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k71UM1U_EemZlqa9-K4HcA" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_k71UNFU_EemZlqa9-K4HcA" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_k71UNVU_EemZlqa9-K4HcA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_k71UNlU_EemZlqa9-K4HcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k832DVU_EemZlqa9-K4HcA" type="3012" element="_k6WGmVU_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k832EFU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k832EVU_EemZlqa9-K4HcA" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k9BnB1U_EemZlqa9-K4HcA" type="3005" element="_k6WGmlU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnCFU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnCVU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k832DlU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k832D1U_EemZlqa9-K4HcA" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k832ElU_EemZlqa9-K4HcA" type="3012" element="_k6WGm1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k9BnAFU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k9BnAVU_EemZlqa9-K4HcA" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k9BnClU_EemZlqa9-K4HcA" type="3005" element="_k6WGnFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnC1U_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnDFU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k832E1U_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k832FFU_EemZlqa9-K4HcA" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k9BnAlU_EemZlqa9-K4HcA" type="3012" element="_k6WGnVU_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k9BnBVU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k9BnBlU_EemZlqa9-K4HcA" x="17" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k9BnDVU_EemZlqa9-K4HcA" type="3005" element="_k6WGnlU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnDlU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnD1U_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnA1U_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnBFU_EemZlqa9-K4HcA" x="17" y="65" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k71UMVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k71UMlU_EemZlqa9-K4HcA" x="640" y="194"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k71UN1U_EemZlqa9-K4HcA" type="3008" element="_k6WGoFU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k71UOlU_EemZlqa9-K4HcA" type="5005"/>
+            <children xmi:type="notation:Node" xmi:id="_k71UO1U_EemZlqa9-K4HcA" type="7002">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_k71UPFU_EemZlqa9-K4HcA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_k71UPVU_EemZlqa9-K4HcA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k9BnEFU_EemZlqa9-K4HcA" type="3012" element="_k6WGoVU_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k9BnE1U_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k9BnFFU_EemZlqa9-K4HcA" x="-51" y="-44"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k9BnGlU_EemZlqa9-K4HcA" type="3005" element="_k6WGolU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnG1U_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnHFU_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnEVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnElU_EemZlqa9-K4HcA" x="-8" y="35" width="16" height="16"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k9BnFVU_EemZlqa9-K4HcA" type="3012" element="_k6WGo1U_EemZlqa9-K4HcA">
+              <children xmi:type="notation:Node" xmi:id="_k9BnGFU_EemZlqa9-K4HcA" type="5010">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_k9BnGVU_EemZlqa9-K4HcA" x="-50" y="-2"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_k9BnHVU_EemZlqa9-K4HcA" type="3005" element="_k6WGpFU_EemZlqa9-K4HcA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnHlU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnH1U_EemZlqa9-K4HcA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnFlU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnF1U_EemZlqa9-K4HcA" y="35" width="16" height="16"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k71UOFU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k71UOVU_EemZlqa9-K4HcA" x="854" y="194"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k71UPlU_EemZlqa9-K4HcA" type="3007" element="_k6WGplU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k71UQVU_EemZlqa9-K4HcA" type="5003">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_k71UQlU_EemZlqa9-K4HcA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k9BnIFU_EemZlqa9-K4HcA" type="3016" element="_k6WGp1U_EemZlqa9-K4HcA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnIVU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnIlU_EemZlqa9-K4HcA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k71UP1U_EemZlqa9-K4HcA" fontColor="4539717" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k71UQFU_EemZlqa9-K4HcA" x="32" y="20" width="60" height="60"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k71UQ1U_EemZlqa9-K4HcA" type="3007" element="_k6WGqFU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k71URlU_EemZlqa9-K4HcA" type="5003">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_k71UR1U_EemZlqa9-K4HcA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k9BnI1U_EemZlqa9-K4HcA" type="3005" element="_k6WGqVU_EemZlqa9-K4HcA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnJFU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnJVU_EemZlqa9-K4HcA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k71URFU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k71URVU_EemZlqa9-K4HcA" x="370" y="15" width="74" height="70"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k8IPIFU_EemZlqa9-K4HcA" type="3007" element="_k6WGqlU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k8IPI1U_EemZlqa9-K4HcA" type="5003">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_k8IPJFU_EemZlqa9-K4HcA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k9BnJlU_EemZlqa9-K4HcA" type="3005" element="_k6WGq1U_EemZlqa9-K4HcA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnJ1U_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnKFU_EemZlqa9-K4HcA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k8IPIVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8IPIlU_EemZlqa9-K4HcA" x="722" y="15" width="74" height="70"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_k8SAIFU_EemZlqa9-K4HcA" type="3007" element="_k6WGrFU_EemZlqa9-K4HcA">
+            <children xmi:type="notation:Node" xmi:id="_k8SAI1U_EemZlqa9-K4HcA" type="5003">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_k8SAJFU_EemZlqa9-K4HcA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_k9BnKVU_EemZlqa9-K4HcA" type="3005" element="_k6WGrVU_EemZlqa9-K4HcA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_k9BnKlU_EemZlqa9-K4HcA" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9BnK1U_EemZlqa9-K4HcA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_k8SAIVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k8SAIlU_EemZlqa9-K4HcA" x="74" y="177" width="74" height="70"/>
+          </children>
+          <styles xmi:type="notation:SortingStyle" xmi:id="_k7iZQlU_EemZlqa9-K4HcA"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_k7iZQ1U_EemZlqa9-K4HcA"/>
+        </children>
+        <styles xmi:type="notation:ShapeStyle" xmi:id="_k7PeUVU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k7PeUlU_EemZlqa9-K4HcA" width="2200" height="200"/>
+      </children>
+      <styles xmi:type="notation:DiagramStyle" xmi:id="_k678U1U_EemZlqa9-K4HcA"/>
+      <edges xmi:type="notation:Edge" xmi:id="_k9oD8FU_EemZlqa9-K4HcA" type="4001" element="_k6WGrlU_EemZlqa9-K4HcA" source="_k8usGFU_EemZlqa9-K4HcA" target="_k71UQ1U_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k9oD9FU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9oD9VU_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k9oD9lU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9oD91U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k9oD-FU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k9oD-VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k9oD8VU_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k9oD8lU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k9oD81U_EemZlqa9-K4HcA" points="[7, -4, -59, 21]$[44, -4, -22, 21]$[44, -25, -22, 0]$[82, -25, 16, 0]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k96-4FU_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k96-4VU_EemZlqa9-K4HcA" id="(0.0,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k96-4lU_EemZlqa9-K4HcA" type="4001" element="_k6WGsVU_EemZlqa9-K4HcA" source="_k71UQ1U_EemZlqa9-K4HcA" target="_k8usI1U_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k96-5lU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k96-51U_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k96-6FU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k96-6VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k96-6lU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k96-61U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k96-41U_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k96-5FU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k96-5VU_EemZlqa9-K4HcA" points="[-11, 7, -81, -25]$[26, 7, -44, -25]$[26, 29, -44, -3]$[63, 29, -7, -3]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k96-7FU_EemZlqa9-K4HcA" id="(1.0,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k96-7VU_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k96-7lU_EemZlqa9-K4HcA" type="4001" element="_k6WGtFU_EemZlqa9-K4HcA" source="_k8usKFU_EemZlqa9-K4HcA" target="_k8IPIFU_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k96-8lU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k96-81U_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k96-9FU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k96-9VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k96-9lU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k96-91U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k96-71U_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k96-8FU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k96-8VU_EemZlqa9-K4HcA" points="[7, -4, -59, 21]$[44, -4, -22, 21]$[44, -25, -22, 0]$[82, -25, 16, 0]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k96--FU_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k96--VU_EemZlqa9-K4HcA" id="(0.0,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k-EI0FU_EemZlqa9-K4HcA" type="4001" element="_k6WGt1U_EemZlqa9-K4HcA" source="_k8IPIFU_EemZlqa9-K4HcA" target="_k8usM1U_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k-EI1FU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI1VU_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EI1lU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI11U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EI2FU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI2VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k-EI0VU_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k-EI0lU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k-EI01U_EemZlqa9-K4HcA" points="[-11, 7, -81, -25]$[26, 7, -44, -25]$[26, 29, -44, -3]$[63, 29, -7, -3]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EI2lU_EemZlqa9-K4HcA" id="(1.0,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EI21U_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k-EI3FU_EemZlqa9-K4HcA" type="4001" element="_k6WGulU_EemZlqa9-K4HcA" source="_k832AlU_EemZlqa9-K4HcA" target="_k8SAIFU_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k-EI4FU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI4VU_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EI4lU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI41U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EI5FU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI5VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k-EI3VU_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k-EI3lU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k-EI31U_EemZlqa9-K4HcA" points="[7, -4, -59, 21]$[44, -4, -22, 21]$[44, -25, -22, 0]$[82, -25, 16, 0]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EI5lU_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EI51U_EemZlqa9-K4HcA" id="(0.0,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k-EI6FU_EemZlqa9-K4HcA" type="4001" element="_k6WGvVU_EemZlqa9-K4HcA" source="_k8SAIFU_EemZlqa9-K4HcA" target="_k8SAJVU_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k-EI7FU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI7VU_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EI7lU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI71U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EI8FU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI8VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k-EI6VU_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k-EI6lU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k-EI61U_EemZlqa9-K4HcA" points="[-11, 7, -81, -25]$[26, 7, -44, -25]$[26, 29, -44, -3]$[63, 29, -7, -3]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EI8lU_EemZlqa9-K4HcA" id="(1.0,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EI81U_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k-EI9FU_EemZlqa9-K4HcA" type="4001" element="_k6WGwFU_EemZlqa9-K4HcA" source="_k8bxIFU_EemZlqa9-K4HcA" target="_k8k7GVU_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k-EI-FU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI-VU_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EI-lU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI-1U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EI_FU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EI_VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k-EI9VU_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k-EI9lU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k-EI91U_EemZlqa9-K4HcA" points="[2, 7, -64, 7]$[66, 7, 0, 7]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EI_lU_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EI_1U_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k-EJAFU_EemZlqa9-K4HcA" type="4001" element="_k6WGw1U_EemZlqa9-K4HcA" source="_k8k7HlU_EemZlqa9-K4HcA" target="_k832DVU_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k-EJBFU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EJBVU_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EJBlU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EJB1U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-EJCFU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-EJCVU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k-EJAVU_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k-EJAlU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k-EJA1U_EemZlqa9-K4HcA" points="[2, 7, -64, 7]$[66, 7, 0, 7]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EJClU_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-EJC1U_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k-EJDFU_EemZlqa9-K4HcA" type="4001" element="_k6WGxlU_EemZlqa9-K4HcA" source="_k832ElU_EemZlqa9-K4HcA" target="_k9BnEFU_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k-N50FU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-N50VU_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-N50lU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-N501U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-N51FU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-N51VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k-EJDVU_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k-EJDlU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k-EJD1U_EemZlqa9-K4HcA" points="[2, 7, -64, 7]$[66, 7, 0, 7]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-N51lU_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-N511U_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+      </edges>
+      <edges xmi:type="notation:Edge" xmi:id="_k-N52FU_EemZlqa9-K4HcA" type="4001" element="_k6WGyVU_EemZlqa9-K4HcA" source="_k71UPlU_EemZlqa9-K4HcA" target="_k8usE1U_EemZlqa9-K4HcA">
+        <children xmi:type="notation:Node" xmi:id="_k-N53FU_EemZlqa9-K4HcA" type="6001">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-N53VU_EemZlqa9-K4HcA" y="-10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-N53lU_EemZlqa9-K4HcA" type="6002">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-N531U_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_k-N54FU_EemZlqa9-K4HcA" type="6003">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_k-N54VU_EemZlqa9-K4HcA" y="10"/>
+        </children>
+        <styles xmi:type="notation:ConnectorStyle" xmi:id="_k-N52VU_EemZlqa9-K4HcA" routing="Rectilinear" avoidObstructions="true"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_k-N52lU_EemZlqa9-K4HcA" fontName="Segoe UI" fontHeight="8"/>
+        <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k-N521U_EemZlqa9-K4HcA" points="[6, 7, -32, -25]$[31, 7, -7, -25]$[31, 25, -7, -7]"/>
+        <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-N54lU_EemZlqa9-K4HcA" id="(1.0,0.5)"/>
+        <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k-N541U_EemZlqa9-K4HcA" id="(0.5,0.5)"/>
+      </edges>
+    </data>
+  </ownedAnnotationEntries>
+  <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_k6WGdFU_EemZlqa9-K4HcA" uid="_k0YoYFU_EemZlqa9-K4HcA" name="Telecom" width="220" height="20">
+    <target xmi:type="flow:Flowlet" href="../Telecom.flow#//@flowlets.0"/>
+    <semanticElements xmi:type="flow:Flowlet" href="../Telecom.flow#//@flowlets.0"/>
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_k6WGdVU_EemZlqa9-K4HcA" uid="_k0hyUFU_EemZlqa9-K4HcA" showIcon="false" borderSize="2" borderSizeComputationExpression="2" borderColor="69,69,69" backgroundStyle="GradientTopToBottom">
+      <labelFormat>bold</labelFormat>
+      <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@style"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_k6WGdlU_EemZlqa9-K4HcA" uid="_k4jWsFU_EemZlqa9-K4HcA" name="Sort_CDR1.scl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.1"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.1"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGd1U_EemZlqa9-K4HcA" uid="_k4tHs1U_EemZlqa9-K4HcA" name="In_INP-MSC1-2015032001.csv" incomingEdges="_k6WGvVU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.1/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.1/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGeFU_EemZlqa9-K4HcA" uid="_k4tHtFU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGeVU_EemZlqa9-K4HcA" uid="_k4tHtlU_EemZlqa9-K4HcA" name="Out_sorted_cdr.data" outgoingEdges="_k6WGwFU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.1/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.1/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGelU_EemZlqa9-K4HcA" uid="_k4tHt1U_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGe1U_EemZlqa9-K4HcA" uid="_k4tHuVU_EemZlqa9-K4HcA" name="Out_reject.data" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.1/@outputDatas.1"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.1/@outputDatas.1"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGfFU_EemZlqa9-K4HcA" uid="_k4tHulU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_k6WGfVU_EemZlqa9-K4HcA" uid="_k4jWsVU_EemZlqa9-K4HcA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_k6WGflU_EemZlqa9-K4HcA" uid="_k4jWs1U_EemZlqa9-K4HcA" name="Sort_CDR2.scl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.3"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.3"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGf1U_EemZlqa9-K4HcA" uid="_k4tHvFU_EemZlqa9-K4HcA" name="In_sorted_cdr.data" incomingEdges="_k6WGwFU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.3/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.3/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGgFU_EemZlqa9-K4HcA" uid="_k4tHvVU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGgVU_EemZlqa9-K4HcA" uid="_k4tHv1U_EemZlqa9-K4HcA" name="Out_sorted_cdr.data" outgoingEdges="_k6WGw1U_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.3/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.3/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGglU_EemZlqa9-K4HcA" uid="_k4tHwFU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGg1U_EemZlqa9-K4HcA" uid="_k424sFU_EemZlqa9-K4HcA" name="Out_reject.data" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.3/@outputDatas.1"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.3/@outputDatas.1"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGhFU_EemZlqa9-K4HcA" uid="_k424sVU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_k6WGhVU_EemZlqa9-K4HcA" uid="_k4jWtFU_EemZlqa9-K4HcA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_k6WGhlU_EemZlqa9-K4HcA" uid="_k4jWtlU_EemZlqa9-K4HcA" name="Sort_Trunk.scl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.4"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.4"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGh1U_EemZlqa9-K4HcA" uid="_k424s1U_EemZlqa9-K4HcA" name="In_REF-TRUNK.csv" incomingEdges="_k6WGyVU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.4/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.4/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGiFU_EemZlqa9-K4HcA" uid="_k424tFU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGiVU_EemZlqa9-K4HcA" uid="_k424tlU_EemZlqa9-K4HcA" name="Out_REF-TRUNK.set" outgoingEdges="_k6WGrlU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.4/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.4/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGilU_EemZlqa9-K4HcA" uid="_k424t1U_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_k6WGi1U_EemZlqa9-K4HcA" uid="_k4jWt1U_EemZlqa9-K4HcA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_k6WGjFU_EemZlqa9-K4HcA" uid="_k4jWuVU_EemZlqa9-K4HcA" name="Sort_Prefix.scl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.5"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.5"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGjVU_EemZlqa9-K4HcA" uid="_k424uVU_EemZlqa9-K4HcA" name="In_REF-PREFIX.csv" incomingEdges="_k6WGsVU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.5/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.5/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGjlU_EemZlqa9-K4HcA" uid="_k424ulU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGj1U_EemZlqa9-K4HcA" uid="_k424vFU_EemZlqa9-K4HcA" name="Out_REF-PREFIX.set" outgoingEdges="_k6WGtFU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.5/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.5/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGkFU_EemZlqa9-K4HcA" uid="_k424vVU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_k6WGkVU_EemZlqa9-K4HcA" uid="_k4jWulU_EemZlqa9-K4HcA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_k6WGklU_EemZlqa9-K4HcA" uid="_k4jWvFU_EemZlqa9-K4HcA" name="Sort_Tariff.scl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.7"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.7"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGk1U_EemZlqa9-K4HcA" uid="_k424v1U_EemZlqa9-K4HcA" name="In_REF-TARIFF.csv" incomingEdges="_k6WGt1U_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.7/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.7/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGlFU_EemZlqa9-K4HcA" uid="_k424wFU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGlVU_EemZlqa9-K4HcA" uid="_k424wlU_EemZlqa9-K4HcA" name="Out_REF-TARIFF.set" outgoingEdges="_k6WGulU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.7/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.7/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGllU_EemZlqa9-K4HcA" uid="_k424w1U_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_k6WGl1U_EemZlqa9-K4HcA" uid="_k4jWvVU_EemZlqa9-K4HcA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_k6WGmFU_EemZlqa9-K4HcA" uid="_k4jWv1U_EemZlqa9-K4HcA" name="Sort_CDR3.scl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.9"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.9"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGmVU_EemZlqa9-K4HcA" uid="_k424xVU_EemZlqa9-K4HcA" name="In_sorted_cdr.data" incomingEdges="_k6WGw1U_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.9/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.9/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGmlU_EemZlqa9-K4HcA" uid="_k424xlU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGm1U_EemZlqa9-K4HcA" uid="_k424yFU_EemZlqa9-K4HcA" name="Out_sorted_cdr.data" outgoingEdges="_k6WGxlU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.9/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.9/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGnFU_EemZlqa9-K4HcA" uid="_k424yVU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGnVU_EemZlqa9-K4HcA" uid="_k424y1U_EemZlqa9-K4HcA" name="Out_reject.data" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.9/@outputDatas.1"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.9/@outputDatas.1"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGnlU_EemZlqa9-K4HcA" uid="_k5ACoFU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_k6WGn1U_EemZlqa9-K4HcA" uid="_k4jWwFU_EemZlqa9-K4HcA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_k6WGoFU_EemZlqa9-K4HcA" uid="_k4tHsFU_EemZlqa9-K4HcA" name="Sort_CDR4.scl" width="15" height="10">
+      <target xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.10"/>
+      <semanticElements xmi:type="flow:TransformMappingBlock" href="../Telecom.flow#//@flowlets.0/@blocks.10"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGoVU_EemZlqa9-K4HcA" uid="_k5AColU_EemZlqa9-K4HcA" name="In_sorted_cdr.data" incomingEdges="_k6WGxlU_EemZlqa9-K4HcA" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.10/@inputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.10/@inputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGolU_EemZlqa9-K4HcA" uid="_k5ACo1U_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_k6WGo1U_EemZlqa9-K4HcA" uid="_k5ACpVU_EemZlqa9-K4HcA" name="Out_outDetail.data" width="-1" height="-1">
+        <target xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.10/@outputDatas.0"/>
+        <semanticElements xmi:type="flow:DataContext" href="../Telecom.flow#//@flowlets.0/@blocks.10/@outputDatas.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGpFU_EemZlqa9-K4HcA" uid="_k5ACplU_EemZlqa9-K4HcA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_k6WGpVU_EemZlqa9-K4HcA" uid="_k4tHsVU_EemZlqa9-K4HcA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_k6WGplU_EemZlqa9-K4HcA" uid="_k5ACqFU_EemZlqa9-K4HcA" name="Start" outgoingEdges="_k6WGyVU_EemZlqa9-K4HcA" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="flow:StartBlock" href="../Telecom.flow#//@flowlets.0/@blocks.0"/>
+      <semanticElements xmi:type="flow:StartBlock" href="../Telecom.flow#//@flowlets.0/@blocks.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_k6WGp1U_EemZlqa9-K4HcA" uid="_k5ACqVU_EemZlqa9-K4HcA" showIcon="false" labelColor="69,69,69" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_k6WGqFU_EemZlqa9-K4HcA" uid="_k5ACq1U_EemZlqa9-K4HcA" name="Wait-for-Files" outgoingEdges="_k6WGsVU_EemZlqa9-K4HcA" incomingEdges="_k6WGrlU_EemZlqa9-K4HcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="flow:WaitFiles" href="../Telecom.flow#//@flowlets.0/@blocks.2"/>
+      <semanticElements xmi:type="flow:WaitFiles" href="../Telecom.flow#//@flowlets.0/@blocks.2"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGqVU_EemZlqa9-K4HcA" uid="_k5ACrFU_EemZlqa9-K4HcA" showIcon="false" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/waitTriangle.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Wait']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Wait']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_k6WGqlU_EemZlqa9-K4HcA" uid="_k5ACrlU_EemZlqa9-K4HcA" name="Wait-for-Files" outgoingEdges="_k6WGt1U_EemZlqa9-K4HcA" incomingEdges="_k6WGtFU_EemZlqa9-K4HcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="flow:WaitFiles" href="../Telecom.flow#//@flowlets.0/@blocks.6"/>
+      <semanticElements xmi:type="flow:WaitFiles" href="../Telecom.flow#//@flowlets.0/@blocks.6"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGq1U_EemZlqa9-K4HcA" uid="_k5ACr1U_EemZlqa9-K4HcA" showIcon="false" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/waitTriangle.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Wait']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Wait']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_k6WGrFU_EemZlqa9-K4HcA" uid="_k5ACsVU_EemZlqa9-K4HcA" name="Wait-for-Files" outgoingEdges="_k6WGvVU_EemZlqa9-K4HcA" incomingEdges="_k6WGulU_EemZlqa9-K4HcA" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="flow:WaitFiles" href="../Telecom.flow#//@flowlets.0/@blocks.8"/>
+      <semanticElements xmi:type="flow:WaitFiles" href="../Telecom.flow#//@flowlets.0/@blocks.8"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_k6WGrVU_EemZlqa9-K4HcA" uid="_k5ACslU_EemZlqa9-K4HcA" showIcon="false" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/waitTriangle.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Wait']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Wait']"/>
+    </ownedDiagramElements>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGrlU_EemZlqa9-K4HcA" uid="_k5vpgFU_EemZlqa9-K4HcA" sourceNode="_k6WGiVU_EemZlqa9-K4HcA" targetNode="_k6WGqFU_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Out_REF-TRUNK.set_To_Wait_for_Files"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Out_REF-TRUNK.set_To_Wait_for_Files"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGr1U_EemZlqa9-K4HcA" uid="_k55agFU_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGsFU_EemZlqa9-K4HcA" uid="_k55agVU_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGsVU_EemZlqa9-K4HcA" uid="_k55ahFU_EemZlqa9-K4HcA" sourceNode="_k6WGqFU_EemZlqa9-K4HcA" targetNode="_k6WGjVU_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Wait_for_Files_To_In_REF-PREFIX.csv"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Wait_for_Files_To_In_REF-PREFIX.csv"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGslU_EemZlqa9-K4HcA" uid="_k55ahVU_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGs1U_EemZlqa9-K4HcA" uid="_k55ahlU_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGtFU_EemZlqa9-K4HcA" uid="_k55aiVU_EemZlqa9-K4HcA" sourceNode="_k6WGj1U_EemZlqa9-K4HcA" targetNode="_k6WGqlU_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Out_REF-PREFIX.set_To_Wait_for_Files"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Out_REF-PREFIX.set_To_Wait_for_Files"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGtVU_EemZlqa9-K4HcA" uid="_k55ailU_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGtlU_EemZlqa9-K4HcA" uid="_k55ai1U_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGt1U_EemZlqa9-K4HcA" uid="_k55ajlU_EemZlqa9-K4HcA" sourceNode="_k6WGqlU_EemZlqa9-K4HcA" targetNode="_k6WGk1U_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Wait_for_Files_To_In_REF-TARIFF.csv"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Wait_for_Files_To_In_REF-TARIFF.csv"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGuFU_EemZlqa9-K4HcA" uid="_k55aj1U_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGuVU_EemZlqa9-K4HcA" uid="_k55akFU_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGulU_EemZlqa9-K4HcA" uid="_k55ak1U_EemZlqa9-K4HcA" sourceNode="_k6WGlVU_EemZlqa9-K4HcA" targetNode="_k6WGrFU_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Out_REF-TARIFF.set_To_Wait_for_Files"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Out_REF-TARIFF.set_To_Wait_for_Files"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGu1U_EemZlqa9-K4HcA" uid="_k55alFU_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGvFU_EemZlqa9-K4HcA" uid="_k55alVU_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGvVU_EemZlqa9-K4HcA" uid="_k55amFU_EemZlqa9-K4HcA" sourceNode="_k6WGrFU_EemZlqa9-K4HcA" targetNode="_k6WGd1U_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Wait_for_Files_To_In_INP-MSC1-2015032001.csv"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Wait_for_Files_To_In_INP-MSC1-2015032001.csv"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGvlU_EemZlqa9-K4HcA" uid="_k55amVU_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGv1U_EemZlqa9-K4HcA" uid="_k55amlU_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGwFU_EemZlqa9-K4HcA" uid="_k55anVU_EemZlqa9-K4HcA" sourceNode="_k6WGeVU_EemZlqa9-K4HcA" targetNode="_k6WGf1U_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Out_sorted_cdr.data_To_In_sorted_cdr.data2"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Out_sorted_cdr.data_To_In_sorted_cdr.data2"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGwVU_EemZlqa9-K4HcA" uid="_k55anlU_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGwlU_EemZlqa9-K4HcA" uid="_k55an1U_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGw1U_EemZlqa9-K4HcA" uid="_k55aolU_EemZlqa9-K4HcA" sourceNode="_k6WGgVU_EemZlqa9-K4HcA" targetNode="_k6WGmVU_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Out_sorted_cdr.data_To_In_sorted_cdr.data3"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Out_sorted_cdr.data_To_In_sorted_cdr.data3"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGxFU_EemZlqa9-K4HcA" uid="_k55ao1U_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGxVU_EemZlqa9-K4HcA" uid="_k55apFU_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGxlU_EemZlqa9-K4HcA" uid="_k6DLgFU_EemZlqa9-K4HcA" sourceNode="_k6WGm1U_EemZlqa9-K4HcA" targetNode="_k6WGoVU_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Out_sorted_cdr.data_To_In_sorted_cdr.data4"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Out_sorted_cdr.data_To_In_sorted_cdr.data4"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGx1U_EemZlqa9-K4HcA" uid="_k6DLgVU_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGyFU_EemZlqa9-K4HcA" uid="_k6DLglU_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_k6WGyVU_EemZlqa9-K4HcA" uid="_k6DLhVU_EemZlqa9-K4HcA" sourceNode="_k6WGplU_EemZlqa9-K4HcA" targetNode="_k6WGh1U_EemZlqa9-K4HcA">
+    <target xmi:type="flow:Connection" href="../Telecom.flow#Start_To_In_REF-TRUNK.csv"/>
+    <semanticElements xmi:type="flow:Connection" href="../Telecom.flow#Start_To_In_REF-TRUNK.csv"/>
+    <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_k6WGylU_EemZlqa9-K4HcA" uid="_k6DLhlU_EemZlqa9-K4HcA" size="2" routingStyle="manhattan">
+      <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+      <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_k6WGy1U_EemZlqa9-K4HcA" uid="_k6DLh1U_EemZlqa9-K4HcA" showIcon="false"/>
+    </ownedStyle>
+    <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+  </ownedDiagramElements>
+  <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
+  <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_k6WGzFU_EemZlqa9-K4HcA" uid="_kzVfgFU_EemZlqa9-K4HcA"/>
+  <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer"/>
+  <target xmi:type="flow:FlowBatch" href="../Telecom.flow#Telecom.bat"/>
+</diagram:DSemanticDiagram>
