@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<connMap>
+<dataConnMap>
     <info>
-        <entry>
-            <key>HL7</key>
-            <value>
-                <active>true</active>
-                <authorization></authorization>
-                <dsnName>HL7</dsnName>
-                <dtpName></dtpName>
-                <fileDsnPath></fileDsnPath>
-                <filterSchema></filterSchema>
-            </value>
-        </entry>
         <entry>
             <key>MySQL</key>
             <value>
@@ -34,16 +23,5 @@
                 <filterSchema></filterSchema>
             </value>
         </entry>
-        <entry>
-            <key>SS</key>
-            <value>
-                <active>true</active>
-                <authorization></authorization>
-                <dsnName>SS</dsnName>
-                <dtpName></dtpName>
-                <fileDsnPath></fileDsnPath>
-                <filterSchema></filterSchema>
-            </value>
-        </entry>
     </info>
-</connMap>
+</dataConnMap>
