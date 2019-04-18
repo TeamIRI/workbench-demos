@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="_1aVxMFVDEemV8bbHV-MoVw" selectedViews="_1dw4oFVDEemV8bbHV-MoVw" version="14.1.0.201810161215">
-  <semanticResources>script/chiefs.scl</semanticResources>
-  <semanticResources>script/mvs1.scl</semanticResources>
-  <semanticResources>script/mvs2.scl</semanticResources>
-  <ownedViews xmi:type="viewpoint:DView" uid="_1dw4oFVDEemV8bbHV-MoVw">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
-  </ownedViews>
-</viewpoint:DAnalysis>
