@@ -56,43 +56,6 @@
     save it in a location where it can be easily found.</li>
   </ol>
 
-  <h2>Data Class:</h2>
-
-  <p>To use the downloaded NER model, you must create a new Data Class with
-  a NER model matcher.</p>
-
-  <ol>
-    <li>Open the <strong>Data Classes and Groups</strong> dialog by clicking on
-    <strong>IRI Menu -&gt; IRI Preferences</strong> from the dropdown menu and
-    selecting the <strong>Data Classes and Groups</strong> tab from the
-    sidebar.</li>
-
-    <li>Explain that Data Classes allow you to classify data using any combination
-    of patterns, set lookup files for exact string matches, and NER models.
-    For the purpose of this demo, a Data Class with a single NER model matcher
-    will be created and used.</li>
-
-    <li>Click <strong>Add</strong> to open the <strong>Data Class or Group
-    </strong> dialog.</li>
-
-    <li>In the <strong>Type</strong> field, keep the default <em>Data Class</em>
-    dropdown option selected.</li>
-
-    <li>In the <strong>Name</strong> field, type "NAMES_NLP".</li>
-
-    <li>Click <strong>Add</strong> to open the <strong>Data Class Matcher
-    </strong> dialog.</li>
-
-    <li>In the <strong>Type</strong> field, select <em>MODEL</em>.
-
-    <li>Click <strong>Browse</strong> to navigate to the <em>en-ner-person.bin
-    </em>model file downloaded in the previous section.</li>
-
-    <li>Click <strong>OK</strong> to create the matcher.</li>
-
-    <li>Click <strong>OK</strong> to create the <em>NAMES_NLP</em> Data Class.</li>
-  </ol>
-
   <h2>Dark Data Discovery Wizard</h2>
   <ol>
     <li>Open the <strong>New Dark Data Discovery Job</strong> wizard from the
@@ -129,33 +92,56 @@
     be displayed in the report. For this example, <strong>Select All</strong>.</li>
 
     <li>Click <strong>Next</strong> to continue to the next page.</li>
-
-    <li>Click <strong>Add</strong> to open the <strong>Data Rule Matcher
+  </ol>
+	
+  <h2>Names Matcher</h2>
+  <ol>
+    <li>Click <strong>Add</strong> to open the <strong>Search Matcher
     </strong> dialog.</li>
 
     <li>In the <strong>Matcher Name</strong> field, type "NamesMatcher".</li>
+    
+    <li>In the <strong>Data Class Name</strong> field, click <strong>Create</strong>
+    to open the <strong>Data Class or Group</strong> dialog.</li>
+    
+    <li>In the <strong>Name</strong> field, type "NAMES_NLP".</li>
+    
+    <li>In the<strong>Matchers</strong> field, click <strong>Add</strong> to
+    open the <strong>Data Class Matcher</strong> dialog.</li>
+    
+    <li>In the <strong>Type</strong> field, select <strong>NER model</strong>.</li>
+    
+    <li>Click <strong>Browse</strong> to navigate to the downloaded NER model file
+    and click <strong>OK</strong>.</li>
+    
+    <li>Click <strong>OK</strong> to add the Data Class Matcher to the <em>NAMES_NLP</em>
+    Data Class.</li>
+    
+    <li>In the <strong>Rule Name</strong> field, click <strong>Browse</strong> and
+    select the <em>EncryptNamesRule</em> from the list.</li>
 
-    <li>Click <strong>Browse</strong> to select the <em>EncryptNamesRule</em></li>
-
-    <li>Click <strong>Add</strong> to open the <strong>Data Rule Matcher
-    Details</strong> dialog.</li>
-
-    <li>In the <strong>Type</strong> field, select <em>Data Class</em>.</li>
-
-    <li>In the <strong>Details</strong> field, select <em>NAMES_NLP</em>.</li>
-
-    <li>Click <strong>OK</strong> to add the Data Rule Matcher Details.</li>
-
-    <li>Click <strong>OK</strong> to create the Data Rule Matcher.</li>
-
-    <li>Click <strong>Browse</strong> and select the <em>EmailsMatcher</em>
-    <em>PinUSMatcher</em>.</li>
-
-    <li>Explain that these matchers were saved from a previous job, and can be
-    created by following the previous steps, and selecting the <em>RedactPinsRule
-    </em> and a <em>Pin_US</em> common pattern matcher for PinUSMatcher, and
-    selecting the <em>HashEmailsRule</em> and an <em>EMAILS</em> common pattern
-    matcher for EmailsMatcher.</li>
+    <li>Click <strong>OK</strong> to add the <em>NamesMatcher</em> to the list of
+    Search Matchers.</li>
+  </ol>
+  
+  <h2>Emails Matcher</h2>
+  <ol>
+  	<li>Click <strong>Add</strong> to open the <strong>Search Matcher
+    </strong> dialog.</li>
+    
+    <li>In the <strong>Matcher Name</strong> field, type "EmailsMatcher".</li>
+    
+    <li>In the <strong>Data Class Name</strong> field, click <strong>Browse</strong>
+    to open the <strong>Data Class Selection</strong> dialog.</li>
+    
+    <li>In the <strong>Data Class</strong> field, select the <strong>EMAILS</strong>
+    Data Class and click <strong>OK</strong>.</li>
+    
+    <li>In the <strong>Rule Name</strong> field, click <strong>Browse</strong> and
+    select the <em>HashEmailsRule</em> from the list.</li>
+    
+    <li>Click <strong>OK</strong> to add the <em>EmailsMatcher</em> to the list of
+    Search Matchers.</li>
 
     <li>Click <strong>Finish</strong>.</li>
 
