@@ -57,10 +57,14 @@
   </ol>
 
   <h2>Dark Data Discovery Wizard</h2>
+  
   <ol>
     <li>Open the <strong>New Dark Data Discovery Job</strong> wizard from the
     Discovery menu.</li>
-
+  </ol>
+  
+  <h2>Setup Page</h2>
+  <ol>
     <li>In the <strong>Folder</strong> field, make sure DarkShield is the selected
     project folder.</li>
 
@@ -74,20 +78,46 @@
     metadata folder.</li>
 
     <li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Data Sources Page</h2>
+  <ol>
+    <li>In the <strong>Source URI</strong> field, click <strong>Add</strong> to open the
+	Data Source dialog.</li>
 
-    <li>Click <strong>Select</strong> and use the directory tree view to navigate to
-    the folder in the workspace called <em>data</em>.</li>
+    <li>In the <strong>Directory</strong> field, click <strong>Browse</strong> and navigate
+    to the <em>data</em> folder.</li>
 
-    <li>Click <strong>OK</strong> to add the folder to the list of search directories,
-    and click <strong>Next</strong> to continue to the next page.</li>
-
-    <li>In the <strong>File types</strong> section, click <strong>Select All</strong> or
+	<li>In the <strong>Include</strong> and <strong>Exclude</strong> fields, you can specify
+	the regular expression pattern for matching file names to include or exclude from the
+	search respectively.</li>
+	
+	<li>Select the <strong>Recursive</strong> checkbox to recursively search through the
+	folder.</li>
+	
+	<li>Under the <strong>File Types</strong> field, click <strong>Select All</strong> or
     select the checkboxes for the file types which you wish to include in the search.
     Only a subset of these file types may be remediated depending on the formats that
     DarkShield currently supports.</li>
-
-    <li>Click <strong>Next</strong> to continue to the next page.</li>
-
+	
+	<li>Click <strong>OK</strong> to add the folder to the list of Source URIs,
+    and click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Data Targets Page</h2>
+  <ol>
+    <li>In the <strong>Target URI</strong> field, click <strong>Add</strong> to open
+	the Data Target dialog.</li>
+	
+	<li>In the <strong>Directory</strong> field, click <strong>Browse</strong> and navigate
+	to the directory where the remediated files should be stored.</li>
+	
+	<li>Click <strong>OK</strong> to add the folder to the list of Target URIs,
+	and click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Metadata Selection Page</h2>
+  <ol>
     <li>In the <strong>Metadata display</strong> field, select the type of information to
     be displayed in the report. For this example, <strong>Select All</strong>.</li>
 
@@ -106,7 +136,7 @@
     
     <li>In the <strong>Name</strong> field, type "NAMES_NLP".</li>
     
-    <li>In the<strong>Matchers</strong> field, click <strong>Add</strong> to
+    <li>In the <strong>Matchers</strong> field, click <strong>Add</strong> to
     open the <strong>Data Class Matcher</strong> dialog.</li>
     
     <li>In the <strong>Type</strong> field, select <strong>NER model</strong>.</li>
@@ -143,7 +173,12 @@
     <li>Click <strong>OK</strong> to add the <em>EmailsMatcher</em> to the list of
     Search Matchers.</li>
 
-    <li>Click <strong>Finish</strong>.</li>
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>PDF Configuration Page</h2>
+  <ol>
+    <li>Keep the default parameters and click <strong>Finish</strong>.</li>
 
     <li>The wizard will generate a new file called <strong>new_search.search
     </strong> in the <strong>new_search</strong> folder of the DarkShield
@@ -161,20 +196,6 @@
     <li>Double click on the <em>search_output.txt</em> file to open the results
     file in the Workspace.</li>
 
-    <li>In the <strong>Project Explorer</strong> view, navigate to the
-    <em>new_search-remediated\path\to\workbench-demos\DarkShield\data</em>
-    folder.</li>
-
-    <li>Double click on any of the files within the folder to open up the
-    remediated file in the Workspace.</li>
-
-    <li>For formats with no built-in Workbench editors (like pdfs), right click
-    on the file and select <strong>Open with</strong> -&gt; <strong>System Editor
-    </strong> to open the file in a separate application.</li>
-
-    <li>When opening a remediated pdf file, explain that DarkShield currently only
-    supports full text redaction regardless of the specified rule.</li>
-
     <li>Double-click on the <em>new_search.darkdata</em> file to open the
     DarkData form editor. You can click on individual documents to expand the
     list of search results found in each document.</li>
@@ -191,6 +212,11 @@
     search results, and a risk assessment from how many files are protected in
     each format category. A file is only considered protected within this chart
     if every search result within it was remediated.</li>
+	
+	<li>In the <strong>File Explorer</strong>, navigate to the <em>remediated</em> 
+	folder.</li>
+
+    <li>Open any of the files found within the remediated folder.</li>
   </ol>
 </body>
 </html>
