@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
 <rules:RuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0">
-  <catalogs name="NewDarkDataDiscoveryJob">
-    <matchers name="PinUSMatcher" dataClassLibrary="DarkShield">
-      <rule href="#RedactPinsRule"/>
-      <matcherDetails details="\b(\d{3}[-]?\d{2}[-]?\d{4})\b"/>
-    </matchers>
-    <matchers name="EmailsMatcher" dataClassLibrary="DarkShield">
-      <rule href="#HashEmailsRule"/>
-      <matcherDetails details="\b[\w._%+-]+@[\w.-]+\.[A-Za-z]{2,4}\b"/>
-    </matchers>
-  </catalogs>
-  <rules xsi:type="rules:DataRule" name="RedactPinsRule" editor="charReplWizard">
-    <properties value="replace_chars(${FIELDNAME},&quot;*&quot;)"/>
-  </rules>
   <rules xsi:type="rules:DataRule" name="HashEmailsRule" editor="hashFunctionWizard">
     <properties value="hash_sha2(${FIELDNAME})"/>
   </rules>
@@ -20,4 +7,3 @@
     <properties value="enc_fp_aes256_alphanum(${FIELDNAME}, &quot;pass&quot;)"/>
   </rules>
 </rules:RuleLibrary>
-
