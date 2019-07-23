@@ -28,16 +28,13 @@
   DarkShield demo</p>
 
   <p>This wizard searches information with specified formats using
-  any combination of regular expression patterns and data classes.
-  You can select an existing pattern from a pattern library,
-  or create a new pattern to be stored in the library. A list of
-  common patterns is available. You can also select Data Classes that
+  any combination of Data Classes. You can also select Data Classes that
   are stored in your IRI preferences, which can be loaded with patterns,
-  lookup set files, or NER models. The results of the search are
-  organized into a usable format which can be loaded into a CoSort process
-  with the help of a metadata file (ddf) that can be created in this
-  wizard. If you include xls and/or xlsx document types in the
-  search, an Excel&reg; Interchange file (.eif), which can be
+  lookup set files, NER models, Image bounding boxes or facial detection/
+  recognition models. The results of the search are organized into a usable 
+  format which can be loaded into a CoSort process with the help of a metadata file 
+  (ddf) that can be created in this wizard. If you include xls and/or xlsx document 
+  types in the search, an Excel&reg; Interchange file (.eif), which can be
   opened and manipulated in Excel using CellShield&reg;, is also
   created.</p>
 
@@ -49,47 +46,61 @@
 
   <h2>Setup Page:</h2>
   <ol>
-    <li style="margin-bottom: 10px;">Open the &quot;New Dark Data
-    Discovery&quot; wizard from the Discovery Menu.</li>
+    <li style="margin-bottom: 10px;">Open the <strong>New Dark Data
+    Discovery Job</strong> wizard from the Discovery Menu.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Folder</strong>
-    field, make sure Dark Data Discovery is the selected project
+    field, make sure <em>Dark_Data_Discovery</em> is the selected project
     folder.</li>
 
     <li style="margin-bottom: 10px;">Select the check box to create
     a new folder using the name in the next field. The output files
-    will be put into this folder.</li>
+    will be placed into this folder.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Name</strong>
     field, leave the default name of <em>new_search</em> for
     this example.</li>
 
     <li style="margin-bottom: 10px;">Select the check box to create
-    a DDF. This file will be put in the metadata folder.</li>
+    a DDF. This file will be put in the <em>metadata</em> folder.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>Next</strong> to
     continue to the next page.</li>
   </ol>
 
-  <h2>Folder Selection Page:</h2>
+  <h2>Data Sources Page:</h2>
   <ol>
-    <li style="margin-bottom: 10px;">Click <strong>Select</strong> and
-    use the directory tree view to navigate to the folder in the workspace
-    called <em>data</em>.</li>
+    <li style="margin-bottom: 10px;">Click <strong>Add</strong> to open
+    the <strong>Data Source</strong> dialog. From here, you can select
+    any folder on your file system. You can also select folders from an SMB
+    share by selecting <strong>SMB</strong> in the <strong>Type</strong>
+    field.</li>
+    
+    <li style="margin-bottom: 10px;">In the <strong>Directory</strong> field,
+    Click <strong>Browse</strong> and navigate to the <em>data</em> folder.</li>
+    
+    <li style="margin-bottom: 10px;">Explain that in the <strong>Include</strong> field
+    you can type in a regular expression pattern for which file names to include
+    in the search. Alternatively, you can exclude certain files by adding a
+    regular expression pattern in the <strong>Exclude</strong> field. Leave both
+    blank for the demo.</li>
+    
+    <li style="margin-bottom: 10px;">Select the <strong>recursive</strong> checkbox
+    to recursively search through the selected folder.</li>
+    
+    <li style="margin-bottom: 10px;">In the <strong>File Types</strong> field,
+    click <strong>Select All</strong> to include all supported file types in the
+    search.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>OK</strong> to add the
-    folder to the list of search directories, and click <strong>Next</strong>
+    folder to the list of Source URIs, and click <strong>Next</strong>
     to continue to the next page.</li>
   </ol>
 
-  <h2>File Type Selection Page:</h2>
+  <h2>Data Targets Page:</h2>
   <ol>
-    <li style="margin-bottom: 10px;">In the <strong>File types</strong>
-    section, click <strong>Select All</strong> or select the checkboxes
-    for the file types which you wish to include in the search.</li>
-
-    <li style="margin-bottom: 10px;">Click <strong>Next</strong> to
-    continue to the next page.</li>
+    <li style="margin-bottom: 10px;">Click <strong>Next</strong> to skip this
+    page, as we will not be remediating any documents.</li>
   </ol>
 
   <h2>Metadata Selection Page:</h2>
@@ -106,53 +117,54 @@
     continue to the next page.</li>
   </ol>
 
-  <h2>Data Rules Page:</h2>
+  <h2>Search Matchers Page:</h2>
 
   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Phone Number</strong></p>
   <ol>
     <li style="margin-bottom: 10px;">Click <strong>Add</strong> to add a new
-    Data Rule Matcher.</li>
+    Search Matcher.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Matcher Name</strong> field,
     set the name you want to use for your matcher.</li>
+    
+    <li style="margin-bottom: 10px;">In the <strong>Data Class Name</strong> field,
+    click <strong>Browse</strong> to select a Data Class or Data Class Group from the
+    IRI preferences. In the dropdown box, select <strong>PHONE_US</strong> and click
+    <strong>OK</strong>.</li>
 
-    <li style="margin-bottom: 10px;">In the <strong>Rule Name</strong> Field,
+    <li style="margin-bottom: 10px;">In the <strong>Rule Name</strong> field,
     click <strong>Browse</strong> and double-click on the <em>DataRedactionRule</em>
-    to select it.</li>
+    to select it. This will not be used in the search.</li>
 
-    <li style="margin-bottom: 10px;">In the <strong>Matchers</strong> field,
-    click <strong>Add</strong> to open the <strong>Data Rule Matcher Details</strong>
-    dialog.</li>
+    <li style="margin-bottom: 10px;">Explain that in the <strong>Filters</strong> field,
+    you may add filters to narrow down the search text based on file format specific
+    filter statements. Currently, JSON path filters are available for json documents.</li>
 
-	<li style="margin-bottom: 10px;">In the <strong>Details</strong> field, click
-	<strong>Browse</strong> and double click on the <em>PHONE_US</em> pattern
-	to add a US phone number pattern.</li>
-
-	<li style="margin-bottom: 10px;">Click <strong>OK</strong> to return to the
-	Data Rule Matcher dialog, and click <strong>OK</strong> again to generate the
-	new Data Rule Matcher.</li>
+	<li style="margin-bottom: 10px;">Click <strong>OK</strong> to generate the new
+	Search Matcher.</li>
   </ol>
 
   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Emails</strong></p>
   <ol start="7">
 
-    <li style="margin-bottom: 10px;">Repeat steps 1-4.</li>
+    <li style="margin-bottom: 10px;">Repeat steps 1-4 from the previous section, this time
+    selecting the <strong>EMAILS</strong> Data Class from the dropdown.</li>
 
-    <li style="margin-bottom: 10px;">In the <strong>Type</strong> field, select
-    <em>Data Class</em> from the dropdown.</li>
+	<li style="margin-bottom: 10px;">Click <strong>OK</strong> to generate the new
+	Search Matcher.</li>
 
-    <li style="margin-bottom: 10px;">In the <strong>Details</strong> field,
-    select <em>EMAIL</em> from the dropdown.</li>
+	<li style="margin-bottom: 10px;">Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <ol>
+    <li style="margin-bottom: 10px;">Click <strong>Next</strong> to skip this
+    page, as we will not be remediating any documents.</li>
+  </ol>
 
-    <li style="margin-bottom: 10px;">In the <strong>Rule Name</strong> Field,
-    click <strong>Browse</strong> and select the data rule you've created
-    for the previous matcher.</li>
-
-    <li style="margin-bottom: 10px;">Click <strong>OK</strong> to return to the
-	Data Rule Matcher dialog, and click <strong>OK</strong> again to generate the
-	new Data Rule Matcher.</li>
-
-	<li style="margin-bottom: 10px;">Click <strong>Finish</strong>.</li>
+  <h2>PDF Configuration Page:</h2>
+  <ol>
+    <li style="margin-bottom: 10px;">This page is only relevant in the DarkShield demo, and can
+    be skipped. Click <strong>Finish</strong> to generate your new search job.</li>
   </ol>
 
   <h2>Execution:</h2>
@@ -163,6 +175,10 @@
 
     <li style="margin-bottom: 10px;">To run the search, right click on new_search.search
     and select <strong>run as -> IRI Search Job</strong>.</li>
+    
+    <li style="margin-bottom: 10px;">You can examine the results of the search in the generated
+    <strong>new_search.txt</strong> file, or using a more graphical interfaces by opening the
+    <strong>new_search.darkdata</strong> file.</li>
   </ol>
 </body>
 </html>
