@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2019 Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Directory Data Class Search</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Directory Data Class Search</h1>
+
+  <p>This demonstrates the use of the directory data class search and 
+  use of the classes for masking.</p>
+  
+  <h2>Data Class Preferences:</h2>
+  
+  <ol>
+    <li style="margin-bottom: 10px;">
+	Open the <strong>Data Classes and Groups</strong> preference page
+  	in <strong>Windows</strong> &gt; <strong>Preferences</strong> 
+  	&gt; <strong>IRI</strong>. Click <strong>Restore Defaults</strong>.
+  	
+  </ol>
+  
+  <h2>Rule Library:</h2>
+  
+  <ol>
+    <li style="margin-bottom: 10px;">
+	Create a rule by clicking <strong>IRI Menu</strong> &gt;
+  	<strong>New Rule</strong> &gt; <strong>Field Rule</strong>. 
+  	Select <strong>Redaction Function</strong>.
+  	Click <strong>Next</strong>. Leave the defaults and click
+  	<strong>Finish</strong>.
+
+	<li style="margin-bottom: 10px;">
+	Create another rule by clicking <strong>IRI Menu</strong> &gt;
+  	<strong>New Rule</strong> &gt; <strong>Field Rule</strong>. 
+  	Select <strong>Encryption or
+  	Decryption Functions</strong>. Click <strong>Next</strong>. 
+  	Select <strong>enc_fp_aes256_alphanum</strong> and type
+  	<em>secret</em> as the passphrase. Click <strong>Finish</strong>.
+
+  </ol>
+
+  <h2>Directory Data Class Search Wizard:</h2>
+  
+  <p>The Directory Data Class Search will create three files. 
+  One is <em>sourceSearchResults.log</em> that records all sources that
+  are successfully searched. The <em>fieldSearchResults.fsr</em>
+  records all fields that contain data that match the data classes or 
+  fields that matched on the field name.
+  The <em>iriLibrary.dataclass</em> contains the sources and classes 
+  that matched as well as a map of the matching items.
+
+  <ol>
+    <li style="margin-bottom: 10px;">
+    Click the <strong>Discovery menu</strong> &gt; <strong>Directory 
+	Data Class Search</strong>.
+
+    <li style="margin-bottom: 10px;">
+    On the Setup page, enter the
+    location to save the result files. Select <strong>Include
+    matching on field names</strong>. Leave <strong>Depth of 
+    Matching</strong> on the default full scan. 
+    Click <strong>Next</strong>.
+
+    <li style="margin-bottom: 10px;">
+    On the Folder Selection page, select whether to include network drives.
+	Click <strong>Select</strong>. Check the directories to be included in the job.
+	In this case, select the csv folder in the project.
+	Click <strong>Next</strong>.
+    
+    <li style="margin-bottom: 10px;">
+    The Exclude Items page is where 
+    patterns can be entered to exclude items. 
+    Click <strong>Next</strong>. 
+    
+    <li style="margin-bottom: 10px;">
+    The Data Classes page is where the
+    data classes to be used are selected. Click <strong>Select None</strong>.
+	Select <strong>CREDIT_CARD</strong>, 
+    <strong>EMAIL</strong>, <strong>FIRST_NAME</strong>, <strong>FULL_NAME</strong>, 
+	<strong>LAST_NAME</strong>, <strong>PHONE_US</strong>, <strong>PIN_US</strong>, and
+	<strong>POSTAL_CODE</strong>. Click <strong>Finish</strong>.
+    
+    <li style="margin-bottom: 10px;">
+    The data class library is displayed.
+    
+  </ol>
+      
+  <h2>Data Class Library Form Editor:</h2>
+  
+  <ol>  
+    <li style="margin-bottom: 10px;">        
+	Click on the <strong>CREDIT_CARD</strong> data class. In <strong>Default rule</strong>,
+	select the encryption rule. Do the same for <strong>EMAIL</strong> and
+	<strong>POSTAL_CODE_US</strong>. For <strong>FIRST_NAME</strong>, 
+	<strong>LAST_NAME</strong>, and <strong>PIN_US</strong>, select the 
+	redaction rule.
+	
+  </ol>
+  
+  <h2>Data Class File Masking Wizard:</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">        
+    In the Project Explorer, right-click on <em>iriLibrary.dataclass</em> and select
+	<strong>IRI</strong> &gt; <strong>Mask Included File Sources</strong>.
+    
+    <li style="margin-bottom: 10px;">
+	On the setup page, leave the defaults and click <strong>Next</strong>.
+	
+    <li style="margin-bottom: 10px;">
+	On the data class page, leave all classes selected. Click <strong>Next</strong>.
+	
+    <li style="margin-bottom: 10px;">
+	On the data sources page, leave all sources selected and click <strong>Next</strong>.
+	
+	<li style="margin-bottom: 10px;">
+	On the rules page, <strong>Include rules associated with
+	data classes in the above library location</strong> is already selected. 
+	This will
+	use the two rules that were assigned in the data class library.
+	Click <strong>Next</strong>.
+
+	<li style="margin-bottom: 10px;">
+	Select a target folder and click <strong>Finish</strong>.
+	   
+  </ol>
+  
+  <h2>Execution:</h2>
+  
+  <ol>
+	<li style="margin-bottom: 10px;">
+  	Open the <strong>new_classProtection</strong> folder. Right-click on
+  	<em>new_batch.bat</em> and <strong>Run As</strong> &gt; 
+  	<strong>Batch Program</strong>.
+  
+	<li style="margin-bottom: 10px;">
+	In the target folder, open <em>persons.csv</em>. Observe that 
+	<strong>CREDIT_CARD</strong> is encrypted but still appears to be a credit card number. 
+	<strong>SSN</strong> has all characters replaced with an asterisk.
+
+  </ol>
+
+</body>
+</html>
