@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:flow="http://flow/1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description" uid="_b68UQNVsEemdfKd89EyPtw" selectedViews="_S5IN4Nh_EemXUJXqKuJUxw" version="14.1.0.201810161215">
+  <semanticResources>saved_example/employees_csv.scl</semanticResources>
+  <semanticResources>saved_example/names_csv.scl</semanticResources>
+  <semanticResources>saved_example/new_classProtection.flow</semanticResources>
+  <semanticResources>saved_example/persons_csv.scl</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" uid="_S5IN4Nh_EemXUJXqKuJUxw">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
     <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_S-w79Nh_EemXUJXqKuJUxw" name="new_classProtection" repPath=".representations/FlowDiagram__S6ccgNh_EemXUJXqKuJUxw.srm#_S6ccgNh_EemXUJXqKuJUxw">
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
+      <target xmi:type="flow:FlowBatch" href="new_classProtection/new_classProtection.flow#new_classProtection"/>
+    </ownedRepresentationDescriptors>
+    <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gqLQINl1EemquqDuTcxlhg" name="new_classProtection" repPath=".representations/FlowDiagram__gnjZ8Nl1EemquqDuTcxlhg.srm#_gnjZ8Nl1EemquqDuTcxlhg">
       <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
       <target xmi:type="flow:FlowBatch" href="new_classProtection/new_classProtection.flow#new_classProtection"/>
     </ownedRepresentationDescriptors>
