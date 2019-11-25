@@ -867,14 +867,14 @@
     <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
     <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
     <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIVVVDEemV8bbHV-MoVw" uid="_YxpSc1VDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIVVVDEemV8bbHV-MoVw" uid="_YxpSc1VDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
       <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
     </ownedStyle>
     <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIVlVDEemV8bbHV-MoVw" uid="_YxpSh1VDEemV8bbHV-MoVw" name="COUNTRY_ID : CHAR (2)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/2/COUNTRY_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/2/COUNTRY_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIV1VDEemV8bbHV-MoVw" uid="_YxpSiFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIV1VDEemV8bbHV-MoVw" uid="_YxpSiFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -882,7 +882,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIWFVDEemV8bbHV-MoVw" uid="_YxpSilVDEemV8bbHV-MoVw" name="COUNTRY_NAME : VARCHAR2 (40)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/2/COUNTRY_NAME"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/2/COUNTRY_NAME"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIWVVDEemV8bbHV-MoVw" uid="_YxpSi1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIWVVDEemV8bbHV-MoVw" uid="_YxpSi1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -890,7 +890,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIWlVDEemV8bbHV-MoVw" uid="_YxpSjVVDEemV8bbHV-MoVw" name="REGION_ID : NUMBER (22)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/2/REGION_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/2/REGION_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIW1VDEemV8bbHV-MoVw" uid="_YxpSjlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIW1VDEemV8bbHV-MoVw" uid="_YxpSjlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -898,7 +898,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIXFVDEemV8bbHV-MoVw" uid="_YxpSkFVDEemV8bbHV-MoVw" name="COUNTRY_C_ID_PK (COUNTRY_ID)">
       <target xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/2/COUNTRY_C_ID_PK"/>
       <semanticElements xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/2/COUNTRY_C_ID_PK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIXVVDEemV8bbHV-MoVw" uid="_YxpSkVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.gif" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIXVVDEemV8bbHV-MoVw" uid="_YxpSkVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']"/>
@@ -906,7 +906,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIXlVDEemV8bbHV-MoVw" uid="_YxpSk1VDEemV8bbHV-MoVw" name="COUNTRY_REG_FK (REGIONS)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/2/COUNTRY_REG_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/2/COUNTRY_REG_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIX1VDEemV8bbHV-MoVw" uid="_YxpSlFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIX1VDEemV8bbHV-MoVw" uid="_YxpSlFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -918,14 +918,14 @@
     <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
     <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
     <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIYVVDEemV8bbHV-MoVw" uid="_YxpSdlVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIYVVDEemV8bbHV-MoVw" uid="_YxpSdlVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
       <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
     </ownedStyle>
     <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIYlVDEemV8bbHV-MoVw" uid="_YxpSllVDEemV8bbHV-MoVw" name="DEPARTMENT_ID : NUMBER (4)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/4/DEPARTMENT_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/4/DEPARTMENT_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIY1VDEemV8bbHV-MoVw" uid="_YxpSl1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIY1VDEemV8bbHV-MoVw" uid="_YxpSl1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -933,7 +933,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIZFVDEemV8bbHV-MoVw" uid="_YxpSmVVDEemV8bbHV-MoVw" name="DEPARTMENT_NAME : VARCHAR2 (30)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/4/DEPARTMENT_NAME"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/4/DEPARTMENT_NAME"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIZVVDEemV8bbHV-MoVw" uid="_YxpSmlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIZVVDEemV8bbHV-MoVw" uid="_YxpSmlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -941,7 +941,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIZlVDEemV8bbHV-MoVw" uid="_YxpSnFVDEemV8bbHV-MoVw" name="MANAGER_SID : VARCHAR2 (9)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/4/MANAGER_SID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/4/MANAGER_SID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIZ1VDEemV8bbHV-MoVw" uid="_YxycYFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIZ1VDEemV8bbHV-MoVw" uid="_YxycYFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -949,7 +949,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIaFVDEemV8bbHV-MoVw" uid="_YxycYlVDEemV8bbHV-MoVw" name="LOCATION_ID : NUMBER (4)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/4/LOCATION_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/4/LOCATION_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIaVVDEemV8bbHV-MoVw" uid="_YxycY1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIaVVDEemV8bbHV-MoVw" uid="_YxycY1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -957,7 +957,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIalVDEemV8bbHV-MoVw" uid="_YxycZVVDEemV8bbHV-MoVw" name="DEPT_ID_PK (DEPARTMENT_ID)">
       <target xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/4/DEPT_ID_PK"/>
       <semanticElements xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/4/DEPT_ID_PK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIa1VDEemV8bbHV-MoVw" uid="_YxycZlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.gif" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIa1VDEemV8bbHV-MoVw" uid="_YxycZlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']"/>
@@ -965,7 +965,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIbFVDEemV8bbHV-MoVw" uid="_YxycaFVDEemV8bbHV-MoVw" name="DEPT_MGR_FK (EMPLOYEES)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/4/DEPT_MGR_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/4/DEPT_MGR_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIbVVDEemV8bbHV-MoVw" uid="_YxycaVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIbVVDEemV8bbHV-MoVw" uid="_YxycaVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -973,7 +973,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIblVDEemV8bbHV-MoVw" uid="_Yxyca1VDEemV8bbHV-MoVw" name="DEPT_LOC_FK (LOCATIONS)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/4/DEPT_LOC_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/4/DEPT_LOC_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIb1VDEemV8bbHV-MoVw" uid="_YxycbFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIb1VDEemV8bbHV-MoVw" uid="_YxycbFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -981,7 +981,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIcFVDEemV8bbHV-MoVw" uid="_YxycblVDEemV8bbHV-MoVw" name="DEPT_LOCATION_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/3"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/3"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIcVVDEemV8bbHV-MoVw" uid="_Yxycb1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIcVVDEemV8bbHV-MoVw" uid="_Yxycb1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -993,14 +993,14 @@
     <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
     <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
     <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIc1VDEemV8bbHV-MoVw" uid="_YxpSeVVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIc1VDEemV8bbHV-MoVw" uid="_YxpSeVVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
       <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
     </ownedStyle>
     <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIdFVDEemV8bbHV-MoVw" uid="_YxyccVVDEemV8bbHV-MoVw" name="EMPLOYEE_SID : VARCHAR2 (9)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/EMPLOYEE_SID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/EMPLOYEE_SID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIdVVDEemV8bbHV-MoVw" uid="_YxycclVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIdVVDEemV8bbHV-MoVw" uid="_YxycclVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1008,7 +1008,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIdlVDEemV8bbHV-MoVw" uid="_YxycdFVDEemV8bbHV-MoVw" name="FIRST_NAME : VARCHAR2 (20)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/FIRST_NAME"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/FIRST_NAME"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPId1VDEemV8bbHV-MoVw" uid="_YxycdVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPId1VDEemV8bbHV-MoVw" uid="_YxycdVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1016,7 +1016,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIeFVDEemV8bbHV-MoVw" uid="_Yxycd1VDEemV8bbHV-MoVw" name="LAST_NAME : VARCHAR2 (25)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/LAST_NAME"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/LAST_NAME"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIeVVDEemV8bbHV-MoVw" uid="_YxyceFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIeVVDEemV8bbHV-MoVw" uid="_YxyceFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1024,7 +1024,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIelVDEemV8bbHV-MoVw" uid="_YxycelVDEemV8bbHV-MoVw" name="EMAIL : VARCHAR2 (25)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/EMAIL"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/EMAIL"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIe1VDEemV8bbHV-MoVw" uid="_Yxyce1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIe1VDEemV8bbHV-MoVw" uid="_Yxyce1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1032,7 +1032,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIfFVDEemV8bbHV-MoVw" uid="_YxycfVVDEemV8bbHV-MoVw" name="PHONE_NUMBER : VARCHAR2 (20)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/PHONE_NUMBER"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/PHONE_NUMBER"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIfVVDEemV8bbHV-MoVw" uid="_YxycflVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIfVVDEemV8bbHV-MoVw" uid="_YxycflVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1040,7 +1040,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIflVDEemV8bbHV-MoVw" uid="_YxycgFVDEemV8bbHV-MoVw" name="HIRE_DATE : DATE">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/HIRE_DATE"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/HIRE_DATE"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIf1VDEemV8bbHV-MoVw" uid="_YxycgVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIf1VDEemV8bbHV-MoVw" uid="_YxycgVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1048,7 +1048,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIgFVDEemV8bbHV-MoVw" uid="_Yxycg1VDEemV8bbHV-MoVw" name="JOB_ID : VARCHAR2 (10)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/JOB_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/JOB_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIgVVDEemV8bbHV-MoVw" uid="_YxychFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIgVVDEemV8bbHV-MoVw" uid="_YxychFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1056,7 +1056,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIglVDEemV8bbHV-MoVw" uid="_YxychlVDEemV8bbHV-MoVw" name="SALARY : NUMBER (8)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/SALARY"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/SALARY"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIg1VDEemV8bbHV-MoVw" uid="_Yxych1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIg1VDEemV8bbHV-MoVw" uid="_Yxych1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1064,7 +1064,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIhFVDEemV8bbHV-MoVw" uid="_YxyciVVDEemV8bbHV-MoVw" name="COMMISSION_PCT : NUMBER (3)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/COMMISSION_PCT"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/COMMISSION_PCT"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIhVVDEemV8bbHV-MoVw" uid="_YxycilVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIhVVDEemV8bbHV-MoVw" uid="_YxycilVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1072,7 +1072,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIhlVDEemV8bbHV-MoVw" uid="_YxycjFVDEemV8bbHV-MoVw" name="MANAGER_SID : VARCHAR2 (9)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/MANAGER_SID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/MANAGER_SID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIh1VDEemV8bbHV-MoVw" uid="_YxycjVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIh1VDEemV8bbHV-MoVw" uid="_YxycjVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1080,7 +1080,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIiFVDEemV8bbHV-MoVw" uid="_Yxycj1VDEemV8bbHV-MoVw" name="DEPARTMENT_ID : NUMBER (4)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/DEPARTMENT_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/10/DEPARTMENT_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIiVVDEemV8bbHV-MoVw" uid="_YxyckFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIiVVDEemV8bbHV-MoVw" uid="_YxyckFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1088,7 +1088,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIilVDEemV8bbHV-MoVw" uid="_YxycklVDEemV8bbHV-MoVw" name="EMP_EMP_ID_PK (EMPLOYEE_SID)">
       <target xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/10/EMP_EMP_ID_PK"/>
       <semanticElements xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/10/EMP_EMP_ID_PK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIi1VDEemV8bbHV-MoVw" uid="_Yxyck1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.gif" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIi1VDEemV8bbHV-MoVw" uid="_Yxyck1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']"/>
@@ -1096,7 +1096,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIjFVDEemV8bbHV-MoVw" uid="_YxyclVVDEemV8bbHV-MoVw" name="EMP_DEPT_FK (DEPARTMENTS)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/10/EMP_DEPT_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/10/EMP_DEPT_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIjVVDEemV8bbHV-MoVw" uid="_YxycllVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIjVVDEemV8bbHV-MoVw" uid="_YxycllVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -1104,7 +1104,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIjlVDEemV8bbHV-MoVw" uid="_YxycmFVDEemV8bbHV-MoVw" name="EMP_MGNR_FK (EMPLOYEES)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/10/EMP_MGNR_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/10/EMP_MGNR_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIj1VDEemV8bbHV-MoVw" uid="_YxycmVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIj1VDEemV8bbHV-MoVw" uid="_YxycmVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -1112,7 +1112,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIkFVDEemV8bbHV-MoVw" uid="_Yxycm1VDEemV8bbHV-MoVw" name="EMP_JOB_FK (JOBS)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/10/EMP_JOB_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/10/EMP_JOB_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIkVVDEemV8bbHV-MoVw" uid="_YxycnFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIkVVDEemV8bbHV-MoVw" uid="_YxycnFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -1120,7 +1120,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIklVDEemV8bbHV-MoVw" uid="_YxycnlVDEemV8bbHV-MoVw" name="EMP_EMAIL_UK">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/5"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/5"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIk1VDEemV8bbHV-MoVw" uid="_Yxycn1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIk1VDEemV8bbHV-MoVw" uid="_Yxycn1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1128,7 +1128,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIlFVDEemV8bbHV-MoVw" uid="_YxycoVVDEemV8bbHV-MoVw" name="EMP_DEPARTMENT_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/6"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/6"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIlVVDEemV8bbHV-MoVw" uid="_YxycolVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIlVVDEemV8bbHV-MoVw" uid="_YxycolVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1136,7 +1136,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIllVDEemV8bbHV-MoVw" uid="_YxycpFVDEemV8bbHV-MoVw" name="EMP_JOB_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/7"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/7"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIl1VDEemV8bbHV-MoVw" uid="_YxycpVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIl1VDEemV8bbHV-MoVw" uid="_YxycpVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1144,7 +1144,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPImFVDEemV8bbHV-MoVw" uid="_Yxycp1VDEemV8bbHV-MoVw" name="EMP_MANAGER_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/8"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/8"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPImVVDEemV8bbHV-MoVw" uid="_YxycqFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPImVVDEemV8bbHV-MoVw" uid="_YxycqFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1152,7 +1152,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPImlVDEemV8bbHV-MoVw" uid="_YxycqlVDEemV8bbHV-MoVw" name="EMP_NAME_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/9"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/9"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIm1VDEemV8bbHV-MoVw" uid="_Yxycq1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIm1VDEemV8bbHV-MoVw" uid="_Yxycq1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1164,14 +1164,14 @@
     <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
     <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
     <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPInVVDEemV8bbHV-MoVw" uid="_YxpSfFVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPInVVDEemV8bbHV-MoVw" uid="_YxpSfFVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
       <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
     </ownedStyle>
     <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPInlVDEemV8bbHV-MoVw" uid="_YxycrVVDEemV8bbHV-MoVw" name="EMPLOYEE_SID : VARCHAR2 (9)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/EMPLOYEE_SID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/EMPLOYEE_SID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIn1VDEemV8bbHV-MoVw" uid="_YxycrlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIn1VDEemV8bbHV-MoVw" uid="_YxycrlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1179,7 +1179,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIoFVDEemV8bbHV-MoVw" uid="_YxycsFVDEemV8bbHV-MoVw" name="START_DATE : DATE">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/START_DATE"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/START_DATE"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIoVVDEemV8bbHV-MoVw" uid="_YxycsVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIoVVDEemV8bbHV-MoVw" uid="_YxycsVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1187,7 +1187,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIolVDEemV8bbHV-MoVw" uid="_Yxycs1VDEemV8bbHV-MoVw" name="END_DATE : DATE">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/END_DATE"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/END_DATE"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIo1VDEemV8bbHV-MoVw" uid="_YxyctFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIo1VDEemV8bbHV-MoVw" uid="_YxyctFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1195,7 +1195,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIpFVDEemV8bbHV-MoVw" uid="_YxyctlVDEemV8bbHV-MoVw" name="JOB_ID : VARCHAR2 (10)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/JOB_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/JOB_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIpVVDEemV8bbHV-MoVw" uid="_Yxyct1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIpVVDEemV8bbHV-MoVw" uid="_Yxyct1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1203,7 +1203,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIplVDEemV8bbHV-MoVw" uid="_YxycuVVDEemV8bbHV-MoVw" name="DEPARTMENT_ID : NUMBER (4)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/DEPARTMENT_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/13/DEPARTMENT_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIp1VDEemV8bbHV-MoVw" uid="_YxyculVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIp1VDEemV8bbHV-MoVw" uid="_YxyculVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1211,7 +1211,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIqFVDEemV8bbHV-MoVw" uid="_YxycvFVDEemV8bbHV-MoVw" name="JHIST_EMP_ID_ST_DATE_PK (EMPLOYEE_SID, START_DATE)">
       <target xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/13/JHIST_EMP_ID_ST_DATE_PK"/>
       <semanticElements xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/13/JHIST_EMP_ID_ST_DATE_PK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIqVVDEemV8bbHV-MoVw" uid="_YxycvVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.gif" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIqVVDEemV8bbHV-MoVw" uid="_YxycvVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']"/>
@@ -1219,7 +1219,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIqlVDEemV8bbHV-MoVw" uid="_Yx8NYVVDEemV8bbHV-MoVw" name="JHIST_DEPT_FK (DEPARTMENTS)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/13/JHIST_DEPT_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/13/JHIST_DEPT_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIq1VDEemV8bbHV-MoVw" uid="_Yx8NYlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIq1VDEemV8bbHV-MoVw" uid="_Yx8NYlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -1227,7 +1227,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIrFVDEemV8bbHV-MoVw" uid="_Yx8NZFVDEemV8bbHV-MoVw" name="JHIST_EMP_FK (EMPLOYEES)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/13/JHIST_EMP_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/13/JHIST_EMP_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIrVVDEemV8bbHV-MoVw" uid="_Yx8NZVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIrVVDEemV8bbHV-MoVw" uid="_Yx8NZVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -1235,7 +1235,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIrlVDEemV8bbHV-MoVw" uid="_Yx8NZ1VDEemV8bbHV-MoVw" name="JHIS_JOB_FK (JOBS)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/13/JHIS_JOB_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/13/JHIS_JOB_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIr1VDEemV8bbHV-MoVw" uid="_Yx8NaFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIr1VDEemV8bbHV-MoVw" uid="_Yx8NaFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -1243,7 +1243,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIsFVDEemV8bbHV-MoVw" uid="_Yx8NalVDEemV8bbHV-MoVw" name="JHIST_DEPARTMENT_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/11"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/11"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIsVVDEemV8bbHV-MoVw" uid="_Yx8Na1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIsVVDEemV8bbHV-MoVw" uid="_Yx8Na1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1251,7 +1251,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIslVDEemV8bbHV-MoVw" uid="_Yx8NbVVDEemV8bbHV-MoVw" name="JHIST_JOB_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/12"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/12"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIs1VDEemV8bbHV-MoVw" uid="_Yx8NblVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIs1VDEemV8bbHV-MoVw" uid="_Yx8NblVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1263,14 +1263,14 @@
     <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
     <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
     <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPItVVDEemV8bbHV-MoVw" uid="_YxpSf1VDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPItVVDEemV8bbHV-MoVw" uid="_YxpSf1VDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
       <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
     </ownedStyle>
     <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPItlVDEemV8bbHV-MoVw" uid="_Yx8NcFVDEemV8bbHV-MoVw" name="JOB_ID : VARCHAR2 (10)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/14/JOB_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/14/JOB_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIt1VDEemV8bbHV-MoVw" uid="_Yx8NcVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIt1VDEemV8bbHV-MoVw" uid="_Yx8NcVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1278,7 +1278,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIuFVDEemV8bbHV-MoVw" uid="_Yx8Nc1VDEemV8bbHV-MoVw" name="JOB_TITLE : VARCHAR2 (35)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/14/JOB_TITLE"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/14/JOB_TITLE"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIuVVDEemV8bbHV-MoVw" uid="_Yx8NdFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIuVVDEemV8bbHV-MoVw" uid="_Yx8NdFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1286,7 +1286,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIulVDEemV8bbHV-MoVw" uid="_Yx8NdlVDEemV8bbHV-MoVw" name="MIN_SALARY : NUMBER (6)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/14/MIN_SALARY"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/14/MIN_SALARY"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIu1VDEemV8bbHV-MoVw" uid="_Yx8Nd1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIu1VDEemV8bbHV-MoVw" uid="_Yx8Nd1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1294,7 +1294,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIvFVDEemV8bbHV-MoVw" uid="_Yx8NeVVDEemV8bbHV-MoVw" name="MAX_SALARY : NUMBER (6)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/14/MAX_SALARY"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/14/MAX_SALARY"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIvVVDEemV8bbHV-MoVw" uid="_Yx8NelVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIvVVDEemV8bbHV-MoVw" uid="_Yx8NelVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1302,7 +1302,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIvlVDEemV8bbHV-MoVw" uid="_Yx8NfFVDEemV8bbHV-MoVw" name="JOB_ID_PK (JOB_ID)">
       <target xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/14/JOB_ID_PK"/>
       <semanticElements xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/14/JOB_ID_PK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIv1VDEemV8bbHV-MoVw" uid="_Yx8NfVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.gif" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIv1VDEemV8bbHV-MoVw" uid="_Yx8NfVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']"/>
@@ -1314,14 +1314,14 @@
     <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
     <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
     <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIwVVDEemV8bbHV-MoVw" uid="_YxpSglVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIwVVDEemV8bbHV-MoVw" uid="_YxpSglVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
       <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
     </ownedStyle>
     <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIwlVDEemV8bbHV-MoVw" uid="_Yx8Nf1VDEemV8bbHV-MoVw" name="LOCATION_ID : NUMBER (4)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/LOCATION_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/LOCATION_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIw1VDEemV8bbHV-MoVw" uid="_Yx8NgFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIw1VDEemV8bbHV-MoVw" uid="_Yx8NgFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1329,7 +1329,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIxFVDEemV8bbHV-MoVw" uid="_Yx8NglVDEemV8bbHV-MoVw" name="STREET_ADDRESS : VARCHAR2 (40)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/STREET_ADDRESS"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/STREET_ADDRESS"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIxVVDEemV8bbHV-MoVw" uid="_Yx8Ng1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIxVVDEemV8bbHV-MoVw" uid="_Yx8Ng1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1337,7 +1337,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIxlVDEemV8bbHV-MoVw" uid="_Yx8NhVVDEemV8bbHV-MoVw" name="POSTAL_CODE : VARCHAR2 (12)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/POSTAL_CODE"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/POSTAL_CODE"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIx1VDEemV8bbHV-MoVw" uid="_Yx8NhlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIx1VDEemV8bbHV-MoVw" uid="_Yx8NhlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1345,7 +1345,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIyFVDEemV8bbHV-MoVw" uid="_Yx8NiFVDEemV8bbHV-MoVw" name="CITY : VARCHAR2 (30)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/CITY"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/CITY"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIyVVDEemV8bbHV-MoVw" uid="_Yx8NiVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIyVVDEemV8bbHV-MoVw" uid="_Yx8NiVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1353,7 +1353,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIylVDEemV8bbHV-MoVw" uid="_Yx8Ni1VDEemV8bbHV-MoVw" name="STATE_PROVINCE : VARCHAR2 (25)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/STATE_PROVINCE"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/STATE_PROVINCE"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIy1VDEemV8bbHV-MoVw" uid="_Yx8NjFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIy1VDEemV8bbHV-MoVw" uid="_Yx8NjFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1361,7 +1361,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIzFVDEemV8bbHV-MoVw" uid="_Yx8NjlVDEemV8bbHV-MoVw" name="COUNTRY_ID : CHAR (2)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/COUNTRY_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/18/COUNTRY_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIzVVDEemV8bbHV-MoVw" uid="_Yx8Nj1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPIzVVDEemV8bbHV-MoVw" uid="_Yx8Nj1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1369,7 +1369,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPIzlVDEemV8bbHV-MoVw" uid="_Yx8NkVVDEemV8bbHV-MoVw" name="LOC_ID_PK (LOCATION_ID)">
       <target xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/18/LOC_ID_PK"/>
       <semanticElements xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/18/LOC_ID_PK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIz1VDEemV8bbHV-MoVw" uid="_Yx8NklVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.gif" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPIz1VDEemV8bbHV-MoVw" uid="_Yx8NklVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']"/>
@@ -1377,7 +1377,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPI0FVDEemV8bbHV-MoVw" uid="_Yx8NlFVDEemV8bbHV-MoVw" name="LOC_C_ID_FK (COUNTRIES)">
       <target xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/18/LOC_C_ID_FK"/>
       <semanticElements xmi:type="SQLConstraints:ForeignKey" href="../HR.sqlschema#/18/LOC_C_ID_FK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI0VVDEemV8bbHV-MoVw" uid="_Yx8NlVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI0VVDEemV8bbHV-MoVw" uid="_Yx8NlVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/fk_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_ForeignKey']"/>
@@ -1385,7 +1385,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPI0lVDEemV8bbHV-MoVw" uid="_Yx8Nl1VDEemV8bbHV-MoVw" name="LOC_CITY_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/15"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/15"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI01VDEemV8bbHV-MoVw" uid="_Yx8NmFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI01VDEemV8bbHV-MoVw" uid="_Yx8NmFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1393,7 +1393,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPI1FVDEemV8bbHV-MoVw" uid="_Yx8NmlVDEemV8bbHV-MoVw" name="LOC_COUNTRY_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/16"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/16"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI1VVDEemV8bbHV-MoVw" uid="_Yx8Nm1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI1VVDEemV8bbHV-MoVw" uid="_Yx8Nm1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1401,7 +1401,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPI1lVDEemV8bbHV-MoVw" uid="_Yx8NnVVDEemV8bbHV-MoVw" name="LOC_STATE_PROVINCE_IX">
       <target xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/17"/>
       <semanticElements xmi:type="SQLConstraints:Index" href="../HR.sqlschema#/17"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI11VDEemV8bbHV-MoVw" uid="_Yx8NnlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.gif" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI11VDEemV8bbHV-MoVw" uid="_Yx8NnlVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/idx_20x16.png" labelAlignment="LEFT" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Index']"/>
@@ -1413,14 +1413,14 @@
     <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
     <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
     <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI2VVDEemV8bbHV-MoVw" uid="_YxpShVVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.gif" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+    <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI2VVDEemV8bbHV-MoVw" uid="_YxpShVVDEemV8bbHV-MoVw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
       <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
     </ownedStyle>
     <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPI2lVDEemV8bbHV-MoVw" uid="_Yx8NoFVDEemV8bbHV-MoVw" name="REGION_ID : NUMBER (22)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/19/REGION_ID"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/19/REGION_ID"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPI21VDEemV8bbHV-MoVw" uid="_Yx8NoVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPI21VDEemV8bbHV-MoVw" uid="_Yx8NoVVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1428,7 +1428,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPI3FVDEemV8bbHV-MoVw" uid="_Yx8No1VDEemV8bbHV-MoVw" name="REGION_NAME : VARCHAR2 (25)">
       <target xmi:type="SQLTables:Column" href="../HR.sqlschema#/19/REGION_NAME"/>
       <semanticElements xmi:type="SQLTables:Column" href="../HR.sqlschema#/19/REGION_NAME"/>
-      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPI3VVDEemV8bbHV-MoVw" uid="_Yx8NpFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.gif" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_YyPI3VVDEemV8bbHV-MoVw" uid="_Yx8NpFVDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_Column']"/>
@@ -1436,7 +1436,7 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YyPI3lVDEemV8bbHV-MoVw" uid="_Yx8NplVDEemV8bbHV-MoVw" name="REG_ID_PK (REGION_ID)">
       <target xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/19/REG_ID_PK"/>
       <semanticElements xmi:type="SQLConstraints:PrimaryKey" href="../HR.sqlschema#/19/REG_ID_PK"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI31VDEemV8bbHV-MoVw" uid="_Yx8Np1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.gif" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YyPI31VDEemV8bbHV-MoVw" uid="_Yx8Np1VDEemV8bbHV-MoVw" iconPath="/com.iri.model.er.design/icons/pk_20x16.png" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subContainerMappings[name='ERD_PrimaryKey']"/>
