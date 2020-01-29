@@ -22,7 +22,7 @@
 				value="scott" />
 			<property
 				name="org.eclipse.datatools.connectivity.db.driverClass"
-				value="org.mariadb.jdbc.Driver" />
+				value="com.mysql.jdbc.Driver" />
 			<property
 				name="org.eclipse.datatools.connectivity.db.databaseName"
 				value="test" />
