@@ -17,10 +17,12 @@
     <semanticResources>ER/SCOTT_DM.sqlschema</semanticResources>
     <semanticResources>JoinExamples/CDC.scl</semanticResources>
     <semanticResources>JoinExamples/SCOTT.DM_JOB_TYPES.fcl</semanticResources>
-    <semanticResources>setup/CUSTOMERS_FLOW.ddf</semanticResources>
-    <semanticResources>setup/ORDERS_FLOW.ddf</semanticResources>
     <semanticResources>iriLibrary.rules</semanticResources>
     <semanticResources>JoinExamples/JoinExamples.flow</semanticResources>
+    <semanticResources>metadada/CUSTOMERS_FLOW.ddf</semanticResources>
+    <semanticResources>metadada/ORDERS_FLOW.ddf</semanticResources>
+    <semanticResources>setup/Load_Customers_Flow.scl</semanticResources>
+    <semanticResources>setup/Load_Orders_Flow.scl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_-iJKQI5xEeiObqfbG26QhQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_-9BvcI5xEeiObqfbG26QhQ" name="FACT Mapping Diagram" repPath="#_-85zoI5xEeiObqfbG26QhQ">

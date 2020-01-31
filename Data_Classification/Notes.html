@@ -27,6 +27,14 @@
   <h2>Setup:</h2>
 
   <ol>
+  
+  	<li style="margin-bottom: 10px;">
+    Before running this demo, 
+  	expand the setup folder and 
+  	right-click <em>reset_demo.bat</em>. Select 
+  	<strong>Run As &gt; Batch Program</strong>.</p>
+  
+  
     <li style="margin-bottom: 10px;">In the Data Classes and Groups
     preferences page, confirm that these exist:<br>
       <br>
@@ -46,14 +54,16 @@
         &ldquo;\b([0-9]{3}[-]?[0-9]{2}[-]?[0-9]{4})\b&rdquo;</li>
 
         <li style="margin-bottom: 5px;">group &ldquo;NAMES&rdquo;
-        with <strong>FIRST_NAME</strong>,
-        <strong>LAST_NAME</strong>, and <strong>FULL_NAME</strong>
+        with <em>FIRST_NAME</em>,
+        <em>LAST_NAME</em>, and <em>FULL_NAME</em>
         selected</li>
       </ul>
+      
+      <br>If they do not, click <strong>Restore Defaults</strong>.
     </li>
 
     <li>Confirm that you do not have an existing
-    iriLibrary.dataclass file in the project you are using.</li>
+    <em>iriLibrary.dataclass</em> file in the project you are using.</li>
   </ol>
 
   <h2>Wizard:</h2>
@@ -61,7 +71,7 @@
   <ol>
     <li style="margin-bottom: 10px;">Right-click on the PERSONS
     table in the Data Source Explorer(DSE) and select
-    <strong>IRI</strong> &gt; <strong>New Data Classification
+    <strong>IRI &gt; New Data Classification
     Setup Job</strong>.</li>
 
     <li style="margin-bottom: 10px;">On the setup page, enter the
@@ -82,8 +92,8 @@
     <li>Click on the data source to display details about that
     source. Leave the checkbox for including match via field name
     selected. Click <strong>Auto Classify</strong> and select
-    <strong>SSN</strong>,
-    <strong>LASTNAME</strong>, and <strong>FIRSTNAME</strong>. 
+    <em>SSN</em>,
+    <em>LASTNAME</em>, and <em>FIRSTNAME</em>. 
     You should get data class
     results for those three fields (100%, 60% and 99%).
   </ol>
@@ -92,7 +102,7 @@
 
   <ol>
     <li style="margin-bottom: 10px;">Select the PERSONS table in
-    the DSE and select <strong>IRI</strong> &gt; <strong>New
+    the DSE and select <strong>IRI &gt; New
     FieldShield Multi-Table Masking Job</strong>.</li>
 
     <li>On the setup page, leave loader blank so that a flat file
@@ -106,7 +116,7 @@
     <li style="margin-bottom: 10px;">On the Field Modifications
     Rules page, click <strong>Create</strong> to open the Field
     Rule Matcher page. In the <strong>Matcher Name</strong> field,
-    enter <strong>SSN</strong>. In the <strong>Rule Name</strong>
+    enter "SSN". In the <strong>Rule Name</strong>
     field, click <strong>Create</strong> to open the field rule
     selection page.</li>
 
@@ -134,7 +144,7 @@
     <li style="margin-bottom: 10px;">On the Field Modifications
     Rules page, click <strong>Create</strong> to open the Field
     Rule Matcher page. In the <strong>Matcher Name</strong> field,
-    enter <strong>Name</strong>. In the <strong>Rule Name</strong>
+    enter "Name". In the <strong>Rule Name</strong>
     field, click <strong>Create</strong> to open the field rule
     selection page.</li>
 

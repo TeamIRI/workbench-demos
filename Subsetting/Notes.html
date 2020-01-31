@@ -32,35 +32,37 @@
     <li>The ODBC DSN Oracle
   </ul>
 
-  <p>After Oracle is connected via ODBC and JDBC (in DTP), execute 
-  <em>truncateTables.sql</em> in the <strong>restore</strong> folder.
+  <p><strong>IMPORTANT:</strong> Before running this demo, 
+  if the *_DIM tables do not exist, expand the setup folder and 
+  right-click <em>reset_demo.bat</em>. Select 
+  <strong>Run As &gt; Batch Program</strong>.
+  If they do exist, expand the setup folder and 
+  right-click <em>truncateTables.sql</em>.
 
   <h2>Steps</h2>
 
   <ol>
   
-    <li style="margin-bottom: 10px;">Click the <strong>Subsetting</strong>
-    project in the <strong>Project Explorer</strong>.
+    <li style="margin-bottom: 10px;">Select the Subsetting
+    project in g>Project Explorer.
     
-    <li style="margin-bottom: 10px;">Open the Oracle connection in
-    the Data Source Explorer.
-
-    <li style="margin-bottom: 10px;">Navigate to the
-    <strong>XE</strong> -&gt; <strong>Schemas</strong> -&gt;
-    <strong>SCOTT</strong> -&gt; <strong>Tables</strong>.
+    <li style="margin-bottom: 10px;">
+    In Data Source Explorer select
+    <strong>Oracle &gt; XE &gt; Schemas &gt;
+    SCOTT &gt; Tables</strong>.
 
     <li style="margin-bottom: 10px;">Right click the source table 
-    <strong>SALE_DIM</strong> and select <strong>IRI</strong> -&gt;
-    <strong> New Subset Job</strong>.
+    <strong>SALE_DIM</strong> and select <strong>IRI &gt;
+    New Subset Job</strong>.
     
-    <li style="margin-bottom: 10px;">On the <strong>Define Destination</strong>
-    page, select the <strong>Loader ODBC</strong>. To output to a tab delimited file,
-    leave the Loader blank. Click <strong>Next</strong>.
+    <li style="margin-bottom: 10px;">On the Define Destination
+    page, select the loader <strong>ODBC</strong>. 
+    Click <strong>Next</strong>.
     
     <li style="margin-bottom: 10px;">The <strong>SALE_DIM</strong> table is already selected
-    on the <strong>Data Extraction Stage</strong> page so click <strong>Next</strong>.
+    on the Data Extraction Stage page so click <strong>Next</strong>.
     
-    <li style="margin-bottom: 10px;">The <strong>Sort</strong> page is where you specify 
+    <li style="margin-bottom: 10px;">The Sort page is where you specify 
     the sort order of the subset. For example, to get a subset of the highest 
     quantity sold levels, you would sort on the quantity sold field in descending order
     (as in this example). If you want the rows selected randomly, however, leave the 
@@ -70,22 +72,21 @@
     <strong>Direction</strong>. Click <strong>OK</strong>. Click <strong>Next</strong>.
     
     <li style="margin-bottom: 10px;">
-    The <strong>Options</strong> page is where you specify the size of the subset and 
+    The Options page is where you specify the size of the subset and 
     any filters. The size and filter is applied to the source table. Enter 100.
     
     <li style="margin-bottom: 10px;">
-    The <strong>Data Loading</strong> page will display if you have selected a loader. It 
+    The Data Loading page will display if you have selected a loader. It 
     has two functions. The first is to name the output targets for the subset. 
     The second allows you to view the relations of your source table.
     
     <li style="margin-bottom: 10px;">Specify the Oracle <strong>Connection Profile</strong> and
-    the SCOTT <strong>Schema Name</strong>. The <strong>Output mode</strong> remains CREATE
-    because the tables are truncated if they already exist.
+    the SCOTT <strong>Schema Name</strong>..
     
     <li style="margin-bottom: 10px;">Under <strong>Naming options</strong> define the details 
-    of the target tables. The tables are going to be loaded back into the same 
-    schema so we need to change the table names so the source table is not overwritten. 
-    We want to prefix the table names so select that option. In textbox, enter <em>SUB_</em> 
+    of the target tables. The tables are loaded back into the same 
+    schema so the table names must be changed so the source table is not overwritten. 
+    Select the <strong>Prefix</strong> option, enter <em>SUB_</em> 
     and click <strong>Set</strong>.
     
     <li style="margin-bottom: 10px;">In the lower section of the page, the new names of the tables
@@ -108,7 +109,7 @@
     <li style="margin-bottom: 10px;">Delete the <em>new_subset</em> folder.
 
     <li style="margin-bottom: 10px;">Execute
-    <em>truncateTables.sql</em> in the <strong>restore</strong> folder.
+    <em>truncateTables.sql</em> in the <strong>setup</strong> folder.
   </ol>
 </body>
 </html>

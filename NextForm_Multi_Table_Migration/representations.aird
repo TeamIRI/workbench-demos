@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_LfuT8FVEEemV8bbHV-MoVw" version="14.1.0.201810161215">
-  <semanticResources>Setup/Load_Customers_NF.scl</semanticResources>
-  <semanticResources>Setup/Load_Orders_HF.scl</semanticResources>
   <semanticResources>metadata/SCOTT_CUSTOMERS_NF.ddf</semanticResources>
   <semanticResources>metadata/SCOTT_ORDERS_NF.ddf</semanticResources>
+  <semanticResources>setup/Load_Customers_NF.scl</semanticResources>
+  <semanticResources>setup/Load_Orders_NF.scl</semanticResources>
 </viewpoint:DAnalysis>

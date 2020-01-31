@@ -10,6 +10,14 @@
   <semanticResources>saved-example/saved-example_script5.scl</semanticResources>
   <semanticResources>saved-example/saved-example_script6.scl</semanticResources>
   <semanticResources>saved-example/saved-example_script7.scl</semanticResources>
+  <semanticResources>setup/Load_Category_Dim.scl</semanticResources>
+  <semanticResources>setup/Load_Dept_Dim.scl</semanticResources>
+  <semanticResources>setup/Load_Emp_Dim.scl</semanticResources>
+  <semanticResources>setup/Load_Emp_Salary_Range_Dim.scl</semanticResources>
+  <semanticResources>setup/Load_Item_Dim.scl</semanticResources>
+  <semanticResources>setup/Load_Item_Price_Range_Dim.scl</semanticResources>
+  <semanticResources>setup/Load_Project_Dim.scl</semanticResources>
+  <semanticResources>setup/Load_Sale_Dim.scl</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" uid="_kYSb0C7rEemr54MyhIz_Vg">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']"/>
     <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_kkNYcC7rEemr54MyhIz_Vg" name="SALE_DIM" repPath=".representations/EntityRelationalDiagram__kiuKMC7rEemr54MyhIz_Vg.srm#_kiuKMC7rEemr54MyhIz_Vg">

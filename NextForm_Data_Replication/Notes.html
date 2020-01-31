@@ -27,13 +27,17 @@
   table and the output is a MySQL database table and a flat
   file.</p>
 
+  <p><strong>IMPORTANT:</strong> Before running this demo, 
+  expand the setup folder and 
+  right-click <em>reset_demo.bat</em>. Select 
+  <strong>Run As &gt; Batch Program</strong>.</p>
+
   <ol>
-    <li style="margin-bottom: 10px;">Open the "New Reformat Job"
+    <li style="margin-bottom: 10px;">Open the New Reformat Job
     wizard from the NextForm toolbar menu.</li>
 
-    <li style="margin-bottom: 10px;">Select the
-    <strong>Nextform_Data_Replication</strong> project folder and
-    name the job file <code>datareplication</code>. Select
+    <li style="margin-bottom: 10px;">
+    Name the job file <em>dataReplication</em>. Select
     <strong>Create Script</strong>, and then click
     <strong>Next</strong> to go to the Data Sources page</li>
 
@@ -81,31 +85,32 @@
 
     <li style="margin-bottom: 10px;">To add the flat file target,
     click <strong>Add Data Target</strong> again. In the
-    <strong>File</strong> field, enter <em>personout.csv</em> and
+    <strong>File</strong> field, enter <em>personOut.csv</em> and
     click <strong>OK</strong>.</li>
 
     <li style="margin-bottom: 10px;">To limit the number of records
     in the target file and change the format, click <strong>Edit
     Target Options</strong>. In the <strong>Format</strong> field,
-    change RECORD to <strong>CSV</strong>. Enter 50 in the
+    select <strong>CSV</strong>. Enter 50 in the
     <strong>Outcollect</strong> field. Click
     <strong>OK</strong>.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>Target Field
     Layout</strong>. In the Targets section, select the tab for
-    personout.csv.</li>
+    <em>personOut.csv</em>.</li>
 
     <li style="margin-bottom: 10px;">Select the SSN field,
     right-click and select <strong>Apply Rule</strong>. Select
-    <strong>Create Rule</strong>, and then select <strong>Migration
-    Functions</strong> and <strong>String Functions</strong>.</li>
+    <strong>Create Rule</strong>, <strong>Field Rules</strong>, 
+    and then select
+    <strong>String Manipulation Functions</strong>.</li>
 
-    <li style="margin-bottom: 10px;">On the right,
+    <li style="margin-bottom: 10px;">On the left,
     select <strong>sub_string</strong>. In the
-    <strong>Offset</strong> field, enter 6 (the number of
+    <strong>Offset</strong> field, enter <em>6</em> (the number of
     characters from the left of the field), in the
-    <strong>Length</strong> field, enter 4 (the length of the
-    subtring). Click <strong>Finish</strong>.</li>
+    <strong>Length</strong> field, enter <em>4</em> (the length of the
+    substring). Click <strong>Finish</strong>.</li>
 	
 	<li style="margin-bottom: 10px;">
 	Drag <strong>LASTNAME</strong> to the bottom of the field list. 
@@ -123,15 +128,15 @@
     <li style="margin-bottom: 10px;">In the Expression Builder,
     select the category <strong>Relational Operators</strong> and
     the item <strong>EQ</strong>. In the
-    <strong>Expression</strong> field at the top, enter <code>STATE EQ
-    &ldquo;CA&rdquo;</code> using the tools on the toolbar, and click
+    <strong>Expression</strong> field at the top, enter <em>STATE EQ
+    &ldquo;CA&rdquo;</em> using the tools on the toolbar, and click
     <strong>Finish</strong>.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>Finish</strong>
     to complete the script.</li>
 
     <li style="margin-bottom: 10px;">Right-click in the script and
-    select <strong>Run As -&gt; IRI Job</strong> to run the
+    select <strong>Run As &gt; IRI Job</strong> to run the
     script.</li>
   </ol>
 </body>

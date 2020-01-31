@@ -32,63 +32,22 @@
   tables to make job design more convenient and to preserve
   referential integrity.</p>
 
-  <p>To prepare for and perform this demo after installing Oracle
-  and CoSort/SortCL (which run either .scl or FieldShield .fcl job
-  scripts):</p>
+  <p>This demo requires and uses the following resources:</p>
 
-  <ol>
-    <li style="margin-bottom: 10px;">Create the source and the
-    target table.
+  <ul>
+    <li>The DTP connection profile Oracle</li>
 
-      <ol>
-      	<li>Open the <strong>setup</strong> folder.
-        <li>Right click on <strong>FS-Tables.SQL</strong></li>
+    <li>The ODBC DSN Oracle</li>
+  </ul>
 
-        <li>Click <strong>Execute SQL Files</strong> to create the
-        patient_record and patient_record_encrypted tables.</li>
-
-        <li>In the Data Source Explorer, refresh the SCOTT schema
-        and verify both tables now exist.</li>
-      </ol>
-    </li>
-
-    <li style="margin-bottom: 10px;">Populate the source table.<br>
-
-      <ol>
-        <li>Go to the Data Source Explorer and drill down to the
-        PATIENT_RECORD table.</li>
-
-        <li>Right click on the PATIENT_RECORD table and click
-        <strong>Data&gt;Load ...</strong></li>
-
-        <li>Browse to the Project Explorer directory and select the
-        setup>patient_record.data file to load 10 rows into the
-        table.</li>
-
-        <li>For this example, be sure the <strong>Column
-        delimiter</strong> is <strong>Comma</strong>, and the
-        <strong>Character string delimiter</strong> is
-        <strong>"</strong> (quotes).</li>
-
-        <li>Right click on the table and click
-        <strong>Data-&gt;Sample Contents</strong> to verify table
-        population.</li>
-      </ol>
-    </li>
-  </ol>
+  <p><strong>IMPORTANT:</strong> Before running this demo, 
+  expand the setup folder and 
+  right-click <em>reset_demo.bat</em>. Select 
+  <strong>Run As &gt; Batch Program</strong>.</p>
 
   <p>Remember that this is a convenient method for populating small
   tables. In this example. SortCL inserts via ODBC. Using the DB load 
   utility on large tables is generally a much faster load method.</p>
-
-  <ol start="3">
-    <li style="margin-bottom: 10px;">Examine the
-    encryption/decryption job scripts<br>
-    The <em>patient_enc.scl</em> and <em>patient_dec.scl</em>
-    scripts must accurately specify your source and target tables
-    associated with the actual DSN defined in the ODBC
-    administrator session.</li>
-  </ol>
 
   <p><strong>Note:</strong> <em>patient_enc.scl</em> creates two
   targets; one is the PATIENT_RECORD_ENCRYPTED table, and the other
@@ -99,54 +58,51 @@
   decrypt it. The /OUTFILE=stdout /FIELD layouts contain more
   field-level, including irreversible protection functions.</p>
 
-  <ol start="4">
+  <ol>
     <li style="margin-bottom: 10px;">Run the encryption job and
-    examine the results<br>
-    In the Project Explorer, click to highlight the
-    <em>patient_enc.scl</em>. Click the play arrow in the main
-    menu, or select and run <em>patient_enc.scl</em> as an IRI
-    job.<br>
-    <br>
+    examine the results by expanding the scripts folder.
+    Right click <em>patient_enc.scl</em> and select 
+    <strong>Run as &gt; IRI Job</strong>.
+
+	<li style="margin-bottom: 10px;">
     In the Data Source Explorer, right click on the
     PATIENT_RECORD_ENCRYPTED table and click
-    <strong>Data-&gt;Sample Contents</strong> to see how the rows
+    <strong>Data &gt; Sample Contents</strong> to see how the rows
     were sorted (since CoSort/SortCL was the licensed executable in
     this case), and see how the credit card and driving license
     columns were protected with format preserving encryption. In
     the Console, see how the same sorted data were also protected
     with the other scripted functions.</li>
 
-    <li style="margin-bottom: 10px;">Try the IRI Workbench GUI job
-    design features<br>
+    <li style="margin-bottom: 10px;">
     Though these job scripts were pre-written, they could have been
-    created through the New Projection Job wizard from the top
-    FieldShield (icon) menu. The wizard steps users through the
+    created through the New Masking Job wizard from the
+    FieldShield toolbar menu. The wizard steps users through the
     identification and layouts of their sources, and the rules to
-    apply protectiopms in the target field layout editor which also
-    allows remapping and formatting. This dialog can also be
+    apply protection in the target field layout editor which also
+    allows re-mapping and formatting. This dialog can also be
     reached from the syntax-aware job script editor: right click
-    anywhere in the script and click on FieldShield, Edit Targets
-    and Protections ...</li>
+    anywhere in the script and select <strong>IRI &gt;
+    Edit Targets</strong>.</li>
 
-    <li>Discuss additional value adds<br>
+    <li>Note additional value adds<br>
       <br>
 
       <ol>
-        <li style="margin-bottom: 10px;">Functional choice<br>
+        <li style="margin-bottom: 10px;">Functional choice:<br>
         Certain FieldShield protections are reversible (i.e.
         encryption &gt; decryption, encode &gt; decode, de-ID &gt;
         re-ID, pseudonyms using source data files), while others
         are not (pseudonyms from foreign sets, masking, hashing,
-        string manipulation, and randomization).<br>
-        FieldShield gives you the choices you must be smart making.
-        Another design consideration is appearance;
+        string manipulation, and randomization).
+        Another design consideration is appearance:
         format-preserving encryption and pseudonymization are
         suitable for test data applications and to preserve
         referential integrity when applied in the same way to
         linked columns across multiple tables.</li>
 
         <li style="margin-bottom: 10px;">Encryption key
-        management<br>
+        management:<br>
         FieldShield encryption keys can be literal strings in the
         script, a referenced (and secured) file containing the
         passphrase, or an environment variable that a system
@@ -156,7 +112,7 @@
         functions for which IRI provides an API call.</li>
 
         <li style="margin-bottom: 10px;">Granularity and
-        singularity<br>
+        singularity:<br>
         Field-level protections target only the data that needs
         protecting, and is thus the most efficient way to secure
         large amounts of data. A single job script can also produce
@@ -165,7 +121,7 @@
         recipients and authorizations are in play.</li>
 
         <li style="margin-bottom: 10px;">Task and application
-        integration<br>
+        integration:<br>
         FieldShield functions can run in the same job script and
         I/O pass with data transformation, conversion, and
         reporting in the SortCL program if CoSort is licensed.
@@ -173,7 +129,7 @@
         applications. In-situ protections for SQL procedures can be
         customized by IRI for particular databases.</li>
 
-        <li style="margin-bottom: 10px;">Teamwork and audits<br>
+        <li style="margin-bottom: 10px;">Teamwork and audits:<br>
         FieldShield and all other job scripts in the IRI Workbench
         can be shared and, via version control, compared using
         <a href=

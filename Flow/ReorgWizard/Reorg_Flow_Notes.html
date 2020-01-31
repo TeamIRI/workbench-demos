@@ -27,37 +27,22 @@
   you how to customize specific task blocks in the flow. The
   sources for this demo are tables from an Oracle database.</p>
 
-  <p>If you need to create the tables that are used in this
-  demo:</p>
+  <p><strong>IMPORTANT:</strong> Before running this demo, 
+  expand the setup folder and 
+  right-click <em>reset_demo.bat</em>. Select 
+  <strong>Run As &gt; Batch Program</strong>.</p>
 
+  <p>Recommended steps to perform the demo:</p>
+
+  <h2>Create the job script using the wizard</h2>
+  
   <ol>
-    <li>Right-click on Script.sql in the Project Explorer.</li>
-
-    <li>Click on <strong>Execute SQL Files</strong>.</li>
-
-    <li>Select your Connection Profile, Name, and Database info at
-    the top.</li>
-
-    <li>Execute the run.bat file (right-click, open with system
-    editor) to populate the tables.</li>
-  </ol>
-
-  <p><strong>Recommended steps to perform the demo:</strong></p>
-
-  <ol>
-    <li style="margin-bottom: 10px;">
-      <em>Create the job script using the wizard</em>
-
-      <ol>
-        <li>In the Data Source Explorer, click
-        <strong>Oracle</strong>&rarr;<strong>XE</strong>&rarr;<strong>Schemas</strong>&rarr;<strong>SCOTT</strong>&rarr;<strong>Tables</strong>,
+        <li>In the Data Source Explorer, select
+        <strong>Oracle &gt; XE &gt; Schemas &gt; SCOTT &gt;Tables</strong>,
         and select the two tables called
-        <strong>CUSTOMERS_FLOW</strong> and
-        <strong>ORDERS_FLOW</strong>. Right click.</li>
-
-        <li>In the <strong>IRI</strong> context menu, select
-        <strong>New FACT Offline Database Reorg</strong>, or you
-        can select the &quot;New Offline Reorg Job wizard&quot;
+        CUSTOMERS_FLOW and ORDERS_FLOW. Right click and select
+	    <strong>IRI &gt; New FACT Multi Table Reorg</strong>, or you
+        can select the New FACT Multi Table Reorg Job wizard
         from the FACT menu in the top navigation bar.</li>
 
         <li>On the setup page, select the Oracle loader. Go to the
@@ -68,7 +53,7 @@
 
         <li>On the Field Modification Rules page, because we want
         to mask the TOTAL, enter
-        <code><strong>TOTAL</strong></code> in the pattern field
+        <em>TOTAL</em> in the pattern field
         and click <strong>Test for matches</strong> to confirm that
         the column is found. Click <strong>Create</strong> in the
         rule name and details line to create a new rule. If you
@@ -92,21 +77,14 @@
         page, or click <strong>Finish</strong> if you do not need
         to see the summary.</li>
       </ol>
-    </li>
 
-    <li style="margin-bottom: 10px;">
-      <em>Create the flow diagram</em>
-
+	<h2>Create the flow diagram</h2>
+	
       <ol>
         <li>In the Flow/ETL project in the Project Explorer, the
         new_batch folder contains all the scripts needed to execute
         this job. To see the visual representation of the job,
-        expand the <strong>new_batch.flow</strong> file to expose
-        <strong>Batch</strong>. Right-click and select <strong>New
-        Representation</strong>. If you want, rename the new Flow
-        Diagram, and then click <strong>OK</strong>. (Or you can
-        select the Create New Diagram from the Flow menu on the
-        toolbar.)</li>
+        double-click the <em>new_batch.flow</em></li>
 
         <li>Double-click on the Transform_SCOTT.ORDERS_FLOW block
         to open the Mapping Diagram. You can see any
@@ -123,9 +101,9 @@
         the palette and drop it in the Section Options block of the
         ORDERS_FLOW output. When the Record Filtering dialog opens,
         click the expression builder button (in the New Condition
-        field) and select <strong>Field Names&gt;FREIGHT</strong>.
-        Finish the expression by entering&nbsp;&nbsp;
-        <code><strong>&gt;10</strong></code> &nbsp;at the end.</li>
+        field) and select <strong>Field Names &gt; FREIGHT</strong>.
+        Finish the expression by entering
+        <em>&gt;10</em> at the end.</li>
 
         <li>Click <strong>OK</strong>. The include filter is added
         to the Section Options in the diagram.</li>

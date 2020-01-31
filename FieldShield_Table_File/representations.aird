@@ -7,6 +7,7 @@
     <semanticResources>scripts/patient_dec.scl</semanticResources>
     <semanticResources>scripts/patient_enc.scl</semanticResources>
     <semanticResources>scripts/patient_enc_scl.flow</semanticResources>
+    <semanticResources>setup/Load_Patient_Record.scl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_hooiADxiEeaRycD7c90nJg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_HYggsMDfEee5QrGVP5pgJQ" name="patient_enc_scl" repPath="#_HYggscDfEee5QrGVP5pgJQ">

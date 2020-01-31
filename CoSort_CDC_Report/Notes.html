@@ -24,7 +24,7 @@
 
   <p>This project demonstrates many of CoSort's data transformation
   and reporting capabilities in a single SortCL job script,
-  <em>CDC.scl</em>. IRI talks about this here:</p>
+  <em>CDC.scl</em>. See below for more information:</p>
 
   <p><a href=
   "http://www.iri.com/solutions/business-intelligence/embedded-bi/change-data-capture">
@@ -45,16 +45,16 @@
   consultants appreciate SortCL scripting for its simple job
   design, modification, deployment and sharing.</p>
 
-  <p>To demonstrate <strong><em>CDC.scl</em></strong>:</p>
+  <p>To use <em>CDC.scl</em>:</p>
 
   <ol>
-    <li style="margin-bottom: 10px;">Examine the data sources.<br>
-    Open both input files (current.txt and previous.txt) in the Project
-    Explorer's Sources folder to see the formats. See the common
+    <li style="margin-bottom: 10px;">
+    Open both input files (<em>current.txt</em> and <em>previous.txt</em>) 
+    in the sources folder to see the formats. Note the common
     fields between them.</li>
 
     <li style="margin-bottom: 10px;">Examine the job script -
-    <strong><em>CDC.scl</em></strong>:<br>
+    <em>CDC.scl</em>:<br>
 
       <ul>
         <li type="disc">input layouts</li>
@@ -65,33 +65,30 @@
 
         <li type="disc">condition logic -- this is used to display
         and select the various types of changes on the basis of the
-        checksum field value.</li>
+        checksum field value</li>
       </ul>
     </li>
 
-    <li style="margin-bottom: 10px;">Run the job.<br>
-    Right-click on <strong>CDC.scl</strong> in the project folder
-    and select <strong>Run As (IRI Job)</strong>, or click the
-    green play button in the top menu to execute the job
-    script.</li>
+    <li style="margin-bottom: 10px;">Run the job by 
+    right-clicking on <em>CDC.scl</em>
+    and selecting <strong>Run As &gt; IRI Job</strong>, or click the
+    green play button in the top menu.</li>
 
-    <li style="margin-bottom: 10px;">Examine the targets.<br>
+    <li style="margin-bottom: 10px;">
     Open the targets folder and double click on
-    <strong><em>TestDeltas.out</em></strong> to see how all forms
+    <em>TestDeltas.out</em> to see how all forms
     of the changes are displayed in that file. It is also possible
     to output only the individual changes and format them similarly
     (as you can see in the other .out files), or in a custom way
     with other layouts and calculations that produce business
     intelligence from the comparisons.</li>
 
-    <li style="margin-bottom: 10px;">Clean up.<br>
-    Delete the 5 output files in the target folder before
-    re-running the job.</li>
+    <li style="margin-bottom: 10px;">Clean up by
+    deleting the 5 output files in the target folder.</li>
   </ol>
 
   <p>As an advanced exercise, make additional output targets and/or
-  new scripts to produce additional, customized reports using your
-  knowledge of sortcl, or the IRI Workbench components.</p>
+  new scripts to produce additional, customized reports.</p>
 
   <p>IRI Workbench now includes a purpose-built wizard, in the
   Voracity menu, to create change data capture jobs. For an

@@ -26,8 +26,8 @@
 
   <p>This project demonstrates several of CoSort's data
   transformation and reporting capabilities in a single SortCL job
-  script, <strong>stockjoin.scl</strong>. A second job called
-  <strong>mortgage.scl</strong> shows two more reporting features -
+  script, <em>stockjoin.scl</em>. A second job called
+  <em>mortgage.scl</em> shows two more reporting features -
   derived field and math logic.</p>
 
   <p>Note that both of these jobs were created prior to the IRI
@@ -45,25 +45,26 @@
   maintenance, and external execution.</p>
   <hr>
 
-  <p>To demonstrate <strong><em>stockjoin.scl</em></strong>:</p>
+  <p>To use <em>stockjoin.scl</em>:</p>
 
   <ol>
     <li style="margin-bottom: 10px;">Open both data sources from
-    the project's InputFiles folder (nyse-a.txt, buys.csv) to see the
+    the project's <em>InputFiles</em> folder 
+    (nyse-a.txt, buys.csv) to see the
     formats and the field they share: the three-letter stock ticker
     symbol.</li>
 
-    <li style="margin-bottom: 10px;">Explain the
-    <strong>stockjoin.scl</strong> script, located in the 
-	<strong>scripts</strong>
+    <li style="margin-bottom: 10px;">Open the
+    <em>stockjoin.scl</em> script, located in the 
+	<em>scripts</em>
     folder. It performs a sort and join on both input files in the
     action section and generates multiple output reports. These
     reports contain target-specific transforms, such as selection
-    and aggregation. Explain also that more than two data sources
+    and aggregation. More than two data sources
     are possible, including relational tables connected via ODBC.
     Field-level protections could also be applied.</li>
 
-    <li style="margin-bottom: 10px;">Show the Targets/TradingA
+    <li style="margin-bottom: 10px;">Open the Targets/TradingA
     output file contents and layouts. They include the results of
     the full outer join, cross-calcs and the final aggregate.</li>
   </ol>
@@ -71,25 +72,28 @@
   <p>The requirement to have 2-3 different (summary and detail)
   formats in targets like TradingA and the html version are common
   in custom SortCL BI reports; however, they are not intuitive for
-  GUI users to write. Note that BIRT is a free eclipse plug-in that
+  GUI users to write. 
+  
+  <!--
+  Note that BIRT is a free eclipse plug-in that
   provides for more graphical reporting capabilities and that IRI
   Workbench users can now use a direct integration between SortCL's
   data preparation (franchising) job scripts and BIRT
   visualizations. See the CoSort_BIRT_Report demo in the project
-  folder.</p>
+  folder.
+  -->
   <hr>
 
-  <p>To demonstrate <strong>mortgage.scl</strong>:</p>
+  <p>To use <em>mortgage.scl</em>:</p>
 
   <ol>
     <li style="margin-bottom: 10px;">Open the following files:<br>
-    mortgage.dat &ndash; located in the projects's InputFiles
-    folder<br>
-    mortgage.scl &ndash; located in the project's 
-    <strong>scripts</strong> folder</li>
+    <em>InputFiles/mortgage.dat</em><br>
+    <em>scripts/mortgage.scl</em></li>
 
-    <li style="margin-bottom: 10px;">Follow the job specs in the
-    script to see the output header format and detail (payment)
+    <li style="margin-bottom: 10px;">Right click the script and select
+    <strong>Run As &gt IRI Job</strong>
+    to see the output header format and detail (payment)
     values.</li>
   </ol>
 </body>

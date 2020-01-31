@@ -45,8 +45,7 @@
   <p>To prepare and perform this demo:</p>
 
   <ol>
-    <li style="margin-bottom: 10px;">Verify FACT operation and
-    Oracle connections.
+    <li style="margin-bottom: 10px;">Verify FACT operation:
 
       <ol>
         <li>On the command line enter: <code>fact -v</code></li>
@@ -75,71 +74,19 @@
           </ol>
         </li>
 
-        <li style="margin-bottom: 10px;">Verify your DTP (JDBC)
-        connection to Oracle in the Data Source Explorer. This is
-        for table browsing only, as FACT will connect to Oracle via
-        OCI.</li>
       </ol>
     </li>
 
-    <li style="margin-bottom: 10px;">Create the Source (ORDERS) and
-    Target (ORDERS_SORTED) tables.<br>
-      Create the tables in Oracle by running the .SQL files for the
-      ORDERS and ORDERS_SORTED tables as follows:
-
-      <ol>
-        <li>Go to the FACT_COSORT_ORACLE_ETL\setup project
-        folder.</li>
-
-        <li>Right-click on <strong>ORDERS.SQL</strong>.</li>
-
-        <li>Select <strong>Execute SQL Files</strong></li>
-
-        <li>Repeat steps 1 and 2 for ORDERS_SORTED.SQL</li>
-      </ol>Once the tables are created, verify them in the Data
-      Source Explorer window.<br>
-      Click <strong>Oracle</strong> -&gt; <strong>XE</strong> -&gt;
-      <strong>Schemas</strong> -&gt; <strong>SCOTT</strong> (or
-      your schema) -&gt; <strong>Tables</strong>.<br>
-      If you receive an error message, examine and modify the
-      <em>orders.sql</em> file until it works.
-    </li>
-
-    <li style="margin-bottom: 10px;">Populate the Source Table
-    (ORDERS).<br>
-      Populate the ORDERS table with the orders.data file
-      DTP load; i.e. in the Data Source Explorer window, under
-      Oracle connection:
-
-      <ol>
-        <li>Click <strong>Oracle</strong> -&gt; <strong>XE</strong>
-        -&gt; <strong>Schemas</strong> -&gt; <strong>SCOTT</strong>
-        (or your schema) -&gt; <strong>Tables</strong>.</li>
-
-        <li>Right-click <strong>ORDERS</strong>.</li>
-
-        <li>Left-click <strong>Data</strong> and then select
-        <strong>Load</strong></li>
-
-        <li>Browse to the workspace's FACT_CoSort_Oracle_ETL\setup\ORDERS.data
-        file to load the table.</li>
-        
-        <li>Select comma and double quote for separator and frame, respectively.</li>
-        
-      </ol>To verify it worked, select <strong>Sample
-      Contents</strong> from the ORDERS Data menu. You should see
-      50 of the 830 rows under the SQL Results' tab. This is a
-      short cut to loading that you can use for small files, but
-      pre-sorted (direct path) bulk loads are faster for
-      big data, which is a CoSort benefit.
-    </li>
+    <li style="margin-bottom: 10px;">
+      	<p>Expand the setup folder and 
+  		right-click <em>reset_demo.bat</em>. Select 
+  		<strong>Run As &gt; Batch Program</strong>.</p>
+	</li>
 
     <li style="margin-bottom: 10px;">Review and edit the job
-    elements.<br>
-      Start with the last piece first: Right-click on the
-      <strong>RunETL.bat</strong> file (under FACT_CoSort_Oracle_ETL project's
-      ETL sub-folder) and select <strong>Open With</strong> -&gt;
-      <strong>Text Editor</strong> to review:
+    elements.
+    Start with the last piece first: Expand the ETL folder and 
+    double-click on the <em>RunETL.bat</em> file to review:
 
       <ul type="disc">
         <li>How FACT will run the <em>orders.ini</em> file
@@ -156,31 +103,26 @@
         <li>The individual ETL pieces to understand what's
         happening inside the FACT .ini., SortCL .scl, and
         SQL*Loader .ctl files.</li>
-      </ul>Make sure the .ini file connection details to Oracle
-      (including username and password), and in the .ctl file that
-      input (load) path/file are correct!
-    </li>
+      </ul>
 
     <li style="margin-bottom: 10px;">Run the
-    Extract-Transform-Report-Load (ETRL) Operation.<br>
-    Right-click on <strong>RunETL.bat</strong> and select
-    <strong>Run As</strong> -&gt; <strong>Batch Program</strong>.
+    Extract-Transform-Report-Load (ETRL) Operation by
+    right-clicking on <em>RunETL.bat</em> and select
+    <strong>Run As &gt; Batch Program</strong>.
     Address any missing resource errors by modifying the .ini, .scl
     or .ctl files (check paths and schema.table names).</li>
 
     <li style="margin-bottom: 10px;">Verify the table, archive
     file, and report targets.<br>
-      Check to see if the target table load worked by viewing
-      <strong>Sample Contents</strong> of the ORDERS_SORTED table
-      via the Data Source Explorer:
+      <ul type="disc">
 
-      <ol>
-        <li>Click <strong>Oracle</strong> -&gt; <strong>XE</strong>
-        -&gt; <strong>Schemas</strong> -&gt; <strong>SCOTT</strong>
-        -&gt; <strong>Tables</strong>.</li>
+      <li>Check to see if the target table load worked by using the
+      	Data Source Explorer view(DSE). Click <strong>Oracle &gt; 
+      	XE &gt; Schemas &gt; SCOTT
+        &gt; Tables</strong>.</li>
 
-        <li>Right click on <strong>ORDERS_SORTED</strong>, and
-        click <strong>Data</strong> -&gt; <strong>Sample
+        <li>Right click on the ORDERS_SORTED table and
+		select <strong>Data &gt; Sample
         Contents</strong>.</li>
 
         <li>Note the table extracted from ORDERS (that was
@@ -189,10 +131,10 @@
 
         <li>Check out the output files in the Project Explorer's
         TargetFiles directory: Double click each file to view its
-        content and format, mapping its appearance to the TRANSFORM
-        and REPORT specifications in the <em>orders_sorted.scl</em>
+        content and format, mapping its appearance to the Output 
+        Section in the <em>orders_sorted.scl</em>
         script or GUI job outline for each target.</li>
-      </ol>
+      </ul>
     </li>
 
     <li style="margin-bottom: 10px;">Clean up the targets before
@@ -201,7 +143,7 @@
       <ol>
         <li>Delete the 7 files in the TargetFiles folder.</li>
 
-        <li>Execute <em>TruncateTarget.sql</em> in the setup
+        <li>Execute <em>reset_demo.bat</em> in the setup
         folder.</li>
       </ol>
     </li>

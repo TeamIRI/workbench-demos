@@ -22,10 +22,10 @@
   <h1>Finding and Masking PII in Unstructured Text Files using DarkShield</h1>
 
   <p>This project demonstrates DarkShield's capabilities by taking you through the
-  steps of creating and modifying a new Dark Data Discovery job to search for and
+  steps of creating and modifying a new Dark Data Search/Masking job to search for and
   remediate names, emails, and SSNs in unstructured file formats using regular
   expression pattern matching and Named Entity Recognition (NER).
-  <a href="Notes2.html">Notes2</a> of this project covers training a custom NER
+  <a href="Notes-NER.html">Notes-NER</a> of this project covers training a custom NER
   model, and is considered optional depending on the requirements and time
   constraints.</p>
 
@@ -43,24 +43,24 @@
     <li>Navigate to the <a href="http://opennlp.sourceforge.net/models-1.5/">
     OpenNLP models</a> website in your browser.</li>
 
-    <li>Explain the different NER models that can be downloaded and used,
+    <li>Different NER models can be downloaded and used,
     including ones for persons, organizations, and locations, and for different
     languages. Valid NER models have the <em>Name Finder</em> Component listed
     next to them.</li>
 
-    <li>Explain that IRI provides additional means of training your own NER
+    <li>IRI provides additional means of training your own NER
     models if the pre-trained models provided on the OpenNLP website are not
-    accurate for the client's documents.</li>
+    accurate for the documents.</li>
 
     <li>Download the <em>en-ner-person.bin</em> English Person Name Finder, and
     save it in a location where it can be easily found.</li>
   </ol>
 
-  <h2>Dark Data Discovery Wizard</h2>
+  <h2>Dark Data Search/Masking Wizard</h2>
   
   <ol>
-    <li>Open the <strong>New Dark Data Discovery Job</strong> wizard from the
-    Discovery menu.</li>
+    <li>Open the <strong>New Dark Data Search/Masking Job</strong> wizard from the
+    DarkShield menu.</li>
   </ol>
   
   <h2>Setup Page</h2>
@@ -187,11 +187,11 @@
 
   <h2>Results:</h2>
   <ol>
-    <li>To run the search & remediation, right click on new_search.search
-    and select <strong>run as -&gt; IRI Search and Remediate Job</strong>.</li>
+    <li>To run the search and masking, right click on new_search.search
+    and select <strong>run as &gt; IRI Search and Masking Job</strong>.</li>
 
     <li>In the <strong>Project Explorer</strong> view, navigate to the
-    <strong>DarkShield -&gt; search_output</strong> folder.</li>
+    <strong>DarkShield &gt; search_output</strong> folder.</li>
 
     <li>Double click on the <em>search_output.txt</em> file to open the results
     file in the Workspace.</li>
@@ -201,13 +201,13 @@
     list of search results found in each document.</li>
 
     <li>Right-click on the <em>new_search.darkdata</em> file and select
-    <strong>IRI -&gt; Graph</strong> to open a graph of the results.</li>
+    <strong>IRI &gt; Graph</strong> to open a graph of the results.</li>
 
     <li>If the graph did not open up correctly, close the window, right click
     on the <em>new_search-graph.html</em> file and select <strong>Open with
-    -&gt; Web Browser</strong>.</li>
+    &gt; Web Browser</strong>.</li>
 
-    <li>Explain that this graph shows the search and remediation statistics on
+    <li>This graph shows the search and remediation statistics on
     the scanned documents, such as the distribution of file types containing the
     search results, and a risk assessment from how many files are protected in
     each format category. A file is only considered protected within this chart

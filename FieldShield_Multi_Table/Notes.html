@@ -37,42 +37,10 @@
     <li>The ODBC DSN Oracle</li>
   </ul>
 
-  <p>After Oracle is connected via ODBC and JDBC (in DTP), prepare
-  the demo as follows:</p>
-
-  <ol>
-    <li style="margin-bottom: 10px;">Execute
-    <em>restore-ssn-data.bat</em>, in the setup/restore-ssn-data folder.
-    This sets the tables up to use an SSN as a foreign key in the tables:<br>
-
-      <ol>
-        <li>Right-click on
-        <em><strong>restore-ssn-data.bat</strong></em> and select
-        <strong>Run As</strong> -&gt; <strong>Batch
-        Program</strong>.</li>
-      </ol>
-    </li>
-
-    <li style="margin-bottom: 10px;">Check each step carefully for
-    error messages and that each table was populated.<br>
-
-      <ol>
-        <li>In the Data Source Explorer, select <strong>Database
-        Connections</strong> -&gt; <strong>Oracle</strong> -&gt;
-        <strong>XE</strong> -&gt; <strong>Schemas</strong> -&gt;
-        <strong>SCOTT</strong> -&gt; <strong>Tables</strong>.</li>
-
-        <li>Right-click on <strong>EMPLOYEES</strong>, and then
-        select <strong>Data</strong> -&gt; <strong>Sample
-        Contents</strong>.</li>
-
-        <li>In the SQL Results -&gt; Status tab, check for errors,
-        as well as in the command line window.</li>
-
-        <li>Open the .cserrlog file. Notify IRI if there are problems.</li>
-      </ol>
-    </li>
-  </ol>
+  <p><strong>IMPORTANT:</strong> Before running this demo, 
+  expand the setup folder and 
+  right-click <em>reset_demo.bat</em>. Select 
+  <strong>Run As &gt; Batch Program</strong>.</p>
 
   <p>Recommended steps to perform the demo in the Workbench:</p>
 
@@ -83,8 +51,8 @@
     the Data Source Explorer.</li>
 
     <li style="margin-bottom: 10px;">Navigate to the
-    <strong>XE</strong> -&gt; <strong>Schemas</strong> -&gt;
-    <strong>SCOTT</strong> -&gt; <strong>Tables</strong>.</li>
+    <strong>XE &gt; Schemas &gt;
+    SCOTT &gt; Tables</strong>.</li>
 
     <li style="margin-bottom: 10px;">The seven tables for the
     example are: COUNTRIES, DEPARTMENTS, EMPLOYEES, JOBS,
@@ -93,7 +61,7 @@
     <li style="margin-bottom: 10px;">Open the document
     <em>er-diagram.png</em>.</li>
 
-    <li style="margin-bottom: 10px;">Explain that the employee's
+    <li style="margin-bottom: 10px;">Note that the employee's
     SSN was used as the employee identifier, since it was unique. </li>
 
     <li style="margin-bottom: 10px;">Open the script
@@ -105,8 +73,8 @@
     <li style="margin-bottom: 10px;">Double-click the title tab in
     the SQL Results view to maximize.</li>
 
-    <li style="margin-bottom: 10px;">Point out how the employee's
-    and manager's SSN is exposed and this is a bad thing.</li>
+    <li style="margin-bottom: 10px;">Note how the employee's
+    and manager's SSN is exposed and this is not good.</li>
 
     <li style="margin-bottom: 10px;">Double-click the title tab in
     the SQL Results view to restore.</li>
@@ -115,8 +83,8 @@
   <h2>The Fix</h2>
 
   <ol>
-    <li style="margin-bottom: 10px;">Open the "New Multi Table
-    Masking Job" wizard from the FieldShield toolbar menu.</li>
+    <li style="margin-bottom: 10px;">Open the New Multi Table
+    Masking Job wizard from the FieldShield toolbar menu.</li>
 
     <li style="margin-bottom: 10px;">On the first page, make sure
     that the main project folder is specified.</li>
@@ -125,29 +93,22 @@
     <em>protect-ssn</em>.</li>
 
     <li style="margin-bottom: 10px;">Select <strong>ODBC</strong>
-    as the Loader.</li>
+    as the Loader. Click <strong>Next</strong></li>
 
-    <li style="margin-bottom: 10px;">Explain that ODBC for extract
-    and load will not use any external programs.</li>
-
-    <li style="margin-bottom: 10px;">Go to the next page, Data
-    Extraction Stage.</li>
-
-    <li style="margin-bottom: 10px;">Select the Oracle DSN from the
+    <li style="margin-bottom: 10px;"> On the extraction page,
+	select the Oracle DSN from the
     <strong>Connection profile</strong> drop down.</li>
 
     <li style="margin-bottom: 10px;">Select the tables:
-    <strong>DEPARTMENTS</strong>, <strong>EMPLOYEES</strong>, and
-    <strong>JOB_HISTORY</strong></li>
+    DEPARTMENTS, EMPLOYEES, and
+    JOB_HISTORY. Click <strong>Next</strong>.</li>
 
-    <li style="margin-bottom: 10px;">Go to the next page, Field
-    Modification Rules.</li>
-
-    <li style="margin-bottom: 10px;">Click <strong>Create</strong>
+    <li style="margin-bottom: 10px;">On the Field
+    Modification Rules page, click <strong>Create</strong>
     to open the Field Rule Matcher page.</li>
 
     <li style="margin-bottom: 10px;">In the <strong>Matcher
-    Name</strong> field, enter SID. Click <strong>Add</strong>. The
+    Name</strong> field, enter <em>SID</em>. Click <strong>Add</strong>. The
     Field Rule Matcher Details page opens.</li>
 
     <li style="margin-bottom: 10px;">Fill dialog out with these
@@ -156,42 +117,32 @@
 
     <li style="margin-bottom: 10px;">Back on the Field Rule Matcher
     page, in <strong>Rule Name</strong> field, click
-    <strong>Create</strong> to show the <strong>New 
-    Field Rule Wizard Selection</strong>.</li>
+    <strong>Create</strong> to show the New 
+    Field Rule Wizard Selection page.</li>
 
     <li style="margin-bottom: 10px;">Select <strong>Encryption or
     Decryption Functions</strong> from the list.</li>
 
     <li style="margin-bottom: 10px;">Name the rule
-    <strong>encSID</strong>. If the rule already exists, check
-    the box to overwrite any existing rule.</li>
-
-    <li style="margin-bottom: 10px;">Go to the next page,
-    Encryption and Decryption Functions.</li>
+    <em>encSID</em>. If the rule already exists, check
+    the box to overwrite any existing rule.
+    Click <strong>Next</strong></li>
 
     <li style="margin-bottom: 10px;">From the list of Encryption
     and Decryption Functions, find and select
-    <em><strong>enc_fp_aes256_ascii</strong></em>. This will be a
-    more obvious change to the data.<br>
-    You may point out that the alphanum variety would be more
+    <em>enc_fp_aes256_ascii</em>. This will be a
+    more obvious change to the data. The alphanum variety would be more
     realistic, but indistinguishable.</li>
 
     <li style="margin-bottom: 10px;">In the
     <strong>Passphrase</strong> field enter
-    <strong>secret</strong>.</li>
-
-    <li style="margin-bottom: 10px;">Explain that you can click
-    <strong>Browse</strong> to search for a file for the
-    passphrase.</li>
+    <em>secret</em>.</li>
 
     <li style="margin-bottom: 10px;">Click
     <strong>Finish</strong>.</li>
 
-    <li style="margin-bottom: 10px;">Explain that additional
-    protection rules could be added now.</li>
-
     <li style="margin-bottom: 10px;">Go to the next page, Data
-    Loading Stage.</li>
+    Loading Stage by clicking <strong>Next</strong>.</li>
 
     <li style="margin-bottom: 10px;">Select the connection profile
     and schema for the target. If there is only one schema, the
@@ -199,22 +150,15 @@
 
     <li style="margin-bottom: 10px;">Select UPDATE in  
     <strong>Output mode</strong> to update only the fields
-	that are changing.
-	</li>
-
-    <li style="margin-bottom: 10px;">Go to the next page, Summary,
-    and review.</li>
-
-    <li style="margin-bottom: 10px;">Click
-    <strong>Finish</strong>.</li>
+	that are changing. Click <strong>Finish</strong>.</li>
 
     <li style="margin-bottom: 10px;">A new folder, protect-ssn,
     will be created with a <code>.bat</code> file to apply the
     protection.</li>
 
     <li style="margin-bottom: 10px;">Run the batch file by
-    right-clicking on it and selecting <strong>Run As</strong>
-    -&gt; <strong>Batch Program</strong>.</li>
+    right-clicking on it and selecting <strong>Run As
+    &gt; Batch Program</strong>.</li>
   </ol>
 
   <h2>The Proof</h2>
@@ -229,7 +173,7 @@
     <li style="margin-bottom: 10px;">Double-click the title tab in
     the SQL Results view to maximize.</li>
 
-    <li style="margin-bottom: 10px;">Point out how the employee's
+    <li style="margin-bottom: 10px;">Note how the employee's
     and manager's SSN are encrypted &mdash; this is a good
     thing.</li>
 
@@ -273,8 +217,7 @@
     folder.</li>
 
     <li style="margin-bottom: 10px;">Execute
-    <em>restore-ssn-data.bat</em> in the setup/restore-ssn-data
-    folder.</li>
+    <em>reset_demo.bat</em> in the setup folder.</li>
   </ol>
 </body>
 </html>

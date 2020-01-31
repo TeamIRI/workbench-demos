@@ -32,7 +32,7 @@
   <p>In the IRI Workbench, RowGen leverages both:</p>
 
   <dl>
-    <dt><strong>The Data Tools Plugin (DTP)</strong></dt>
+    <dt><strong>The Data Tools Platform (DTP)</strong></dt>
 
     <dd>for database viewing and work. The DTP front-end in Eclipse
     is the Data Source Explorer panel, where you connect to your
@@ -52,7 +52,7 @@
     ready for use in SortCL when testing shifts to production.</dd>
   </dl>
 
-  <p>The "New DB Test Data Job" wizard, which combines the two
+  <p>The New Database Test Data Job wizard, which combines the two
   technologies, is used to create and load multiple tables in a
   database with structurally and referentially correct test
   data.</p>
@@ -60,96 +60,82 @@
   <p>Recommended steps to perform this demo in IRI Workbench:</p>
 
   <ol>
-    <li style="margin-bottom: 10px;">Simulate the production
-    environment.<br>
+    <li style="margin-bottom: 10px;">
     Users of the RowGen Test DB job wizard are assumed to have an
-    identical SQL file that defines their customers' production
+    identical SQL file that defines their production
     database table names, layouts and relationships. You will build
-    the same, but empty, table structure and populate it with test
-    data. In this example we are providing DDL information for a
+    the same, but empty, table structure and this job will 
+    populate it with test
+    data. 
+    
+    <li style="margin-bottom: 10px;">
+    In this example, we are providing DDL information for a
     database subset, which you can see illustrated in the metadata
     folder by double-clicking on the
-    <em><strong>Six Table Relational Diagram.png</strong></em> file
-    in the <strong>ERD</strong> folder. If you do not
+    <em>ERD &gt; DM.sqlschema</em> file. If you do not
     have these tables, you can build them for RowGen to read from
-    and populate with test data: right-click
-    <strong><em>six-table-ddl.sql</em></strong> in the 
-    <strong>setup</strong> folder and select
-    <strong>Execute SQL Files</strong>. View these empty "DM_"
+    and populate with test data: open
+    <em>reset.sql</em> in the setup folder and right-click and
+    select <strong>Execute All</strong>. View these empty "DM_"
     table names in your Oracle schema connected in the Data Source
-    Explorer panel (that must be pre-connected via JDBC in DTP for
-    this wizard to work).<br>
-    <strong>IMPORTANT</strong>: Before running this demo again,
+    Explorer view.<br>
+    If the tables exist,
     execute <em>six-table-truncate.sql</em>.</li>
 
-    <li style="margin-bottom: 10px;">Run the metadata parsing and
-    script creation wizard.<br>
-    Click on the RowGen icon in the main toolbar. Select the
-    <strong>New DB Test Data Job</strong> wizard. Note that you can 
+    <li style="margin-bottom: 10px;">
+    Select the New Database Test Data Job wizard in the 
+    RowGen menu toolbar. Note that you can 
     also highlight the project folder, select the relevant tables 
-    in the DataSource Explorer and right-click 
-    <strong>New DB Test Data Job</strong>
+    in the Data Source Explorer and right-click 
+    <strong>IRI &gt; New Database Test Data Job</strong>
     to pre-select the tables.</li>
 
     <li style="margin-bottom: 10px;">Specify the project location
     (RowGen_Test_DB_Data) and the name (new_batch). Click
     <strong>Next</strong>.</li>
 
-    <li style="margin-bottom: 10px;">Specify production tables to
-    be simulated.<br>
-    Connect to Oracle and select the the six DM_ tables just
-    created. The data descriptions will be extracted and parsed by
+    <li style="margin-bottom: 10px;">
+    Select <strong>Oracle</strong> and the six DM_* tables. 
+    The metadata descriptions will be extracted and parsed by
     RowGen in order to create the test data generation scripts for
     those tables. You can also do this with the filter .*DM_.* If
     you selected the tables before starting the wizard, you will
-    see that the six tables are pre-selected on this page.<br>
+    see that the six tables are pre-selected on this page.
     Click <strong>Next</strong>.</li>
 
-    <li style="margin-bottom: 10px;">Specify the parameters for
-    generating the test data.<br>
-    On this page, you set global or table-level options. In the
+    <li style="margin-bottom: 10px;">
+    On this page, you specify the parameters by setting global or 
+    table-level options. In the
     <strong>Default rows to generate</strong> field, assign and use
     the default (/INCOLLECT value) of 100, or enter a different
-    number. In the <strong>Delimiter</strong> field, keep the
-    inter-column (field) separator default of tab.</li>
+    number.</li>
 
-    <li style="margin-bottom: 10px;">On the same wizard page,
-    select the DB load utility.<br>
+    <li style="margin-bottom: 10px;">
     From the <strong>Loader</strong> drop down menu, select the
     loader to create the loader control files (for Oracle in this
     case) so that the final batch job file will be able to populate
-    your tables automatically with pre-sorted direct path
-    loads.<br>
-    Click <strong>Next</strong>.</li>
+    the tables automatically with pre-sorted direct path
+    loads. Click <strong>Next</strong>.</li>
 
     <li style="margin-bottom: 10px;">On the Field Modification
     Rules page, specify rules for the test data.<br>
 
       <ol type="a">
-        <li style="margin-bottom: 5px;">Click
-        <strong>Create</strong> to open the Field Rule Matcher. In
-        the <strong>Rule Name</strong> field, click
-        <strong>Create</strong>.</li>
-
         <li style="margin-bottom: 5px;">Enter a name for the
-        matcher; for this demo, use Companies. In the <strong>Rule
+        matcher; for this demo, enter <em>Companies</em>. 
+        Next to the <strong>Rule
         name</strong> field, click <strong>Create</strong> to make
-        a new rule. The wizard selection opens.</li>
+        a new rule.</li>
 
         <li style="margin-bottom: 5px;">Select <strong>Set File
         Selection</strong>. In the <strong>Rule name</strong>
-        field, enter CoName. Click <strong>Next</strong>.</li>
+        field, enter <em>CoName</em>. Click <strong>Next</strong>.</li>
 
-        <li style="margin-bottom: 5px;">On the Set File Selection
-        page, click <strong>Browse</strong>. In the <strong>Rule
-        name</strong> field, enter CoName. Click
-        <strong>Next</strong>.</li>
-
-        <li style="margin-bottom: 5px;">In the <strong>Set
+        <li style="margin-bottom: 5px;">Next to the <strong>Set
         file</strong> field, click <strong>Browse</strong> to
-        locate the set file. Navigate to <strong>C:\IRI\RowGen(or
-        CoSort)\sets</strong>. Select
-        <strong><em>american_companies.set</em></strong>. Accept
+        locate the set file. Navigate to <strong>C:\IRI\CoSort(or
+        RowGen)\sets</strong>. Select
+        <strong>american_companies.set</strong>. Accept
         the default for the other fields. A description of the
         available options is available on the help page. This will
         have the effect of displaying randomly selected real
@@ -157,16 +143,15 @@
         target tables that has COMPANY_NAME as a column name. Click
         <strong>Finish</strong>.</li>
 
-        <li style="margin-bottom: 5px;">Back on the Field Rule
-        Matcher, click <strong>Add</strong> to add the details of
-        the matcher. On the Field Rule Matcher Details page, leave
+        <li style="margin-bottom: 5px;">Back on the Rule
+        Matcher page, click <strong>Add</strong> to add the details of
+        the matcher. On the Rule Matcher Details page, leave
         the default as Pattern. In the <strong>Details</strong>
-        field, enter .*COMPANY_NAME, and click
+        field, enter <em>.*COMPANY_NAME</em>, and click
         <strong>OK</strong>.</li>
 
-        <li style="margin-bottom: 5px;">Back on the Field Rule
-        Matcher, click <strong>OK</strong>. On the Field
-        Modification Rules page, click <strong>Next</strong>.</li>
+        <li style="margin-bottom: 5px;">Click <strong>OK</strong>. 
+        On the Field Modification Rules page, click <strong>Next</strong>.</li>
       </ol>
     </li>
   </ol>
@@ -179,88 +164,41 @@
 
     <li style="margin-bottom: 10px;">Examine the metadata.<br>
     When you have finished the wizard, inspect the files it created
-    in the Demo sub-folder in your RowGen project. The RowGen
-    Control Language (.rcl) job scripts and data ranging (.rng)
-    files can be modified here to change data values generated.
+    in the newBatch sub-folder in your project. The RowGen
+    Control Language (.rcl) job scripts
+    can be modified here to change data values generated.
     Referential integrity is preserved by the data generation (and
-    table loading) order since inter-script dependencies were
-    established to respect primary-foreign relationships. See the
+    table loading) order since table dependencies were
+    established to respect primary-foreign key relationships. See the
     <a href="#ri">notes</a> below for more information on
     Referential Integrity.</li>
 
     <li style="margin-bottom: 10px;">Run the data generation and
-    population job.<br>
-    In the Demo sub-folder in your RowGen project, right-click on
-    runall.bat and select <strong>Run As</strong> -&gt;
-    <strong>Batch Program</strong>. To configure, run, or schedule
-    the batch file, right-click on runall.bat and select
-    <strong>Run As</strong> -&gt; <strong>External Tools
-    Configuration</strong>.<br>
-    Note all the tables were bulk loaded with 100 rows (unless
+    loading job.<br>
+    In the newBatch sub-folder in your project, right-click on
+    <em>newBatch.bat</em> and select <strong>Run As &gt;
+    Batch Program</strong>. Note all the tables were bulk loaded 
+    with 100 rows (unless
     duplicates or row-specific changes were seen). Additional
     selection (.sel) and seed (.sed) files are added to the
     subfolder.</li>
 
     <li style="margin-bottom: 10px;">Examine the new test tables in
     the Data Source Explorer.<br>
-    Click on <strong>Oracle</strong> -&gt; <strong>XE</strong>
-    -&gt; <strong>Schema</strong> -&gt; <strong>Tables</strong>,
-    and right-click first on DM_COMPANIES. Click
-    <strong>Data</strong> -&gt; <strong>View Sample Data</strong>,
+    Click on <strong>Oracle &gt; XE &gt; Schema &gt; Tables</strong>,
+    and right-click on DM_COMPANIES. Select
+    <strong>Data &gt; Sample Contents</strong>,
     and note the company name from the <em>companynames.set</em>
     file. Open the other tables in the same way and note that
-    COMPANY_ID order is maintained when it is a primary key.</li>
+    COMPANY_ID order is maintained since it is a primary key.</li>
 
     <li style="margin-bottom: 10px;">Clean-up (to re-run).<br>
-    To re-run the demo, remove the new folder
-    AND, in the metadata folder, right-click on
-    <em><strong>six-table-truncate.sql</strong></em> and left-click
-    on <strong>Execute SQL Files</strong> to clear out those target
+    To re-run the demo, remove the newBatch folder
+    and, in the setup folder, open
+    <em>six-table-truncate.sql</em> and right-click to select
+    <strong>Execute All</strong> to truncate the target
     tables for future population.</li>
   </ol>
-
-  <h3>Data Generation Field Rule Wizards</h3>
-
-  <p>When selecting <strong><em>Set File Selection</em></strong>
-  for the rule wizard in this demo, note that additional rule
-  wizards are available for data generation, including:</p>
-
-  <ul>
-    <li>
-      <strong>Distribution</strong> Wizard provides:
-
-      <ul>
-        <li type="disc">Linear Distribution</li>
-
-        <li type="disc">Normal Distribution</li>
-
-        <li type="disc">Weighted Distribution</li>
-
-        <li type="disc">Weighted Distribution of Items</li>
-      </ul>
-    </li>
-
-    <li><strong>Percent of Nulls Value</strong> - will create the
-    specified percent of NULLs in the column(s).</li>
-
-    <li>
-      <strong>Row ID Value</strong> - assigns and displays a unique
-      incrementing or decrementing (index) value to each named or
-      pattern-name-matching column your rule dictates. RowID
-      parameters are:
-
-      <ul>
-        <li type="disc">Step: Increments the RowID counter that can
-        be forward or backward; the default is +1</li>
-
-        <li type="disc">Max: Indicates where incrementing stops,
-        applicable if the step is forward (positive)</li>
-
-        <li type="disc">Min: Indicates where decrementing stops,
-        applicable if the step is backward (negative)</li>
-      </ul>
-    </li>
-  </ul>
 
   <h3>Create set files</h3>
 
@@ -303,96 +241,22 @@
 
   <p>Primary Keys are detected and placed in the action section of
   the script to be sorted. An output section is created for each
-  key also. The output will create a <code>.set</code> set file and
+  key also. The output will create a <em>.set</em> set file and
   will contain one field. These set files are then used in the
   referencing RowGen job scripts.</p>
 
   <p>Each table is checked for references and dependencies. These
   are listed in the comments at the top of each RowGen job. This
   also determines the order of execution of the RowGen jobs in the
-  <em>runall.bat</em> file.</p>
+  <em>.bat</em> file.</p>
 
-  <p>Special SET files with the <code>.sed</code> extension are
-  also needed to preserve RI. A seed set file is created for
-  columns with a UNIQUE constraint. The seed set files are created
+  <p>Special Set files with the <em>.sed</em> extension are
+  also needed to preserve RI. This seed set file is created for
+  columns with a Unique constraint. The seed set files are created
   before the RowGen jobs are executed. This assures that the field
   corresponding to that column is unique. Self referencing foreign
   keys also need to use a seed set file since at run time the set
   does not yet exist.</p>
 
-  <p>Email rowgen@iri.com for feedback and assistance.</p><!-- 
-
-   
-
-
-    
-    
-    
-    <li style="margin-bottom: 10px;">Examine the metadata.<br>
-    When you have finished the wizard, inspect the files it created
-    in the Demo sub-folder in your RowGen project. The RowGen
-    Control Language (.rcl) job scripts and data ranging (.rng)
-    files can be modified here to change data values generated.
-    Referential integrity is preserved by the data generation (and
-    table loading) order since inter-script dependencies were
-    established to respect primary-foreign relationships. See the
-    <a href="#ri">notes</a> below for more information on
-    Referential Integrity.</li>
-
-    <li style="margin-bottom: 10px;">Run the data generation and
-    population job.<br>
-    In the Demo sub-folder in your RowGen project, open and run the
-    <em>runall.bat</em> file with the system editor, or right click
-    on <em>runall.bat</em>, then select <strong>Easy Shell</strong>
-    -&gt; <strong>Open</strong>, and then type
-    <code>runal.bat</code> on the command line.<br>
-    Note all the tables were bulk loaded with 100 rows (unless
-    duplicates or row-specific changes were seen). Additional
-    selection (.sel) and seed (.sed) files are added to the
-    subfolder.</li>
-
-    <li style="margin-bottom: 10px;">Examine the new test tables in
-    the Data Source Explorer.<br>
-    Click on <strong>Oracle</strong> -&gt; <strong>XE</strong>
-    -&gt; <strong>Schema</strong> -&gt; <strong>Tables</strong>,
-    and right-click first on DM_COMPANIES. Click
-    <strong>Data</strong> -&gt; <strong>View Sample Data</strong>,
-    and note the company name from the <em>companynames.set</em>
-    file. Open the other tables in the same way and note that
-    COMPANY_ID order is maintained when it is a primary key.</li>
-
-    <li style="margin-bottom: 10px;">Clean-up (to re-run).<br>
-    To re-run the demo, remove the files in the Demo sub-folder
-    AND, in the metadata folder, right-click on
-    <em><strong>six-table-truncate.sql</strong></em> and left-click
-    on <strong>Execute SQL Files</strong> to clear out those target
-    tables for future population.</li>
-  </ol>
-
-  <h3><a name="ri" id="ri">Notes regarding referential integrity
-  (RI)</a></h3>
-
-  <p>Primary Keys are detected and placed in the action section of
-  the script to be sorted. An output section is created for each
-  key also. The output will create a <code>.set</code> set file and
-  will contain one field. These set files are then used in the
-  referencing RowGen job scripts.</p>
-
-  <p>Each table is checked for references and dependencies. These
-  are listed in the comments at the top of each RowGen job. This
-  also determines the order of execution of the RowGen jobs in the
-  <em>runall.bat</em> file.</p>
-
-  <p>Special SET files with the <code>.sed</code> extension are
-  also needed to preserve RI. A seed set file is created for
-  columns with a UNIQUE constraint. The seed set files are created
-  before the RowGen jobs are executed. This assures that the field
-  corresponding to that column is unique. Self referencing foreign
-  keys also need to use a seed set file since at run time the set
-  does not yet exist.</p>
-
-  <p>Email rowgen@iri.com for feedback and assistance.</p>
-    </li>
-  </ol>-->
 </body>
 </html>

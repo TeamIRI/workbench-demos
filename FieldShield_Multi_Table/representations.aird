@@ -11,13 +11,13 @@
   <semanticResources>saved-example/employee-list.scl</semanticResources>
   <semanticResources>saved-example/saved-example.flow</semanticResources>
   <semanticResources>saved-example/saved-example.sourcetargetdata</semanticResources>
-  <semanticResources>setup/restore-ssn-data/COUNTRIES.scl</semanticResources>
-  <semanticResources>setup/restore-ssn-data/DEPARTMENTS.scl</semanticResources>
-  <semanticResources>setup/restore-ssn-data/EMPLOYEES.scl</semanticResources>
-  <semanticResources>setup/restore-ssn-data/JOBS.scl</semanticResources>
-  <semanticResources>setup/restore-ssn-data/JOB_HISTORY.scl</semanticResources>
-  <semanticResources>setup/restore-ssn-data/LOCATIONS.scl</semanticResources>
-  <semanticResources>setup/restore-ssn-data/REGIONS.scl</semanticResources>
+  <semanticResources>setup/COUNTRIES.scl</semanticResources>
+  <semanticResources>setup/DEPARTMENTS.scl</semanticResources>
+  <semanticResources>setup/EMPLOYEES.scl</semanticResources>
+  <semanticResources>setup/JOBS.scl</semanticResources>
+  <semanticResources>setup/JOB_HISTORY.scl</semanticResources>
+  <semanticResources>setup/LOCATIONS.scl</semanticResources>
+  <semanticResources>setup/REGIONS.scl</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" uid="_RooBUFVDEemV8bbHV-MoVw">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
     <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_TWJTPlVDEemV8bbHV-MoVw" name="saved-example" repPath=".representations/FlowDiagram__TVGxQFVDEemV8bbHV-MoVw.srm#_TVGxQFVDEemV8bbHV-MoVw">

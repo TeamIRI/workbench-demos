@@ -22,9 +22,14 @@
 <body>
   <h1>Migration of Database Table</h1>
 
-  <p>The NextForm &quot;New Single Source Migration Job&quot; wizard migrates
+  <p>The NextForm New Single Source Migration Job; wizard migrates
   a single source (file or table) to another target.
-</p>
+  </p>
+
+  <p><strong>IMPORTANT:</strong> Before running this demo, 
+  expand the setup folder and 
+  right-click <em>reset_demo.bat</em>. Select 
+  <strong>Run As &gt; Batch Program</strong>.</p>
 
   <p>Recommended steps to perform this demo in IRI Workbench:</p>
 
@@ -34,20 +39,20 @@
     view.</li>
 
     <li style="margin-bottom: 10px;">In the Data Source Explorer,
-    select <strong>Oracle</strong> -&gt; <strong>XE</strong> -&gt;
-    <strong>Schemas</strong> -&gt; <strong>SCOTT</strong> -&gt;
-	<strong>COMPANIES_TEST</strong>.</li>
+    select <strong>Oracle &gt; XE &gt;
+    Schemas &gt; SCOTT &gt;
+	COMPANIES_TEST</strong>.</li>
 
-    <li style="margin-bottom: 10px;">Click <strong>Next
-    Form</strong> menu and &quot;New 
-	Single Source Migration Job&quot;.</li>
+    <li style="margin-bottom: 10px;">Click Next
+    Form menu and New 
+	Single Source Migration Job.</li>
 	
 	<li style="margin-bottom: 10px;">
-	Click Next.
+	Enter <em>companies</em> as the file name. Click <strong>Next</strong>.
 
 	<li style="margin-bottom: 10px;">
 	Click the <strong>Browse</strong> button in <strong>Metadata</strong> and select 
-	<strong>Companies.ddf</strong> and <strong>OK</strong>.
+	<em>Companies.ddf</em> and <strong>OK</strong>.
 	When prompted, click <strong>Yes</strong> to copy the fields to the job.
 	
     <li style="margin-bottom: 10px;">
@@ -59,6 +64,10 @@
     Click <strong>Next</strong> and <strong>Next</strong> again.</li>
 
     <li style="margin-bottom: 10px;">
+    Enter <em>19</em> next to COMPANY_NUMBER and enter <em>50</em>
+    next to COMPANY_NAME. Click <strong>Next</strong>.
+     
+    <li style="margin-bottom: 10px;">
     Under <strong>Primary Key Name</strong>, enter <em>Customers_Test_PK</em>.
 	Check <strong>COMPANY_NUMBER</strong>
     Click <strong>Finish</strong></li>
@@ -69,7 +78,8 @@
 	select <em>test</em>. Right-click in the script and select <strong>Execute All</strong>.
 
     <li style="margin-bottom: 10px;">
-    Open the script and from the toolbar Run button, select <em>Run As -&gt; IRI Job</em>.
+    Right-click <em>companies.ncl</em> and 
+	select <em>Run As &gt; IRI Job</em>.
     
 
   </ol>
