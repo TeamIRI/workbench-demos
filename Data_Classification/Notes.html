@@ -39,7 +39,7 @@
     preferences page, confirm that these exist:<br>
       <br>
 
-      <ul>
+  	<ul type="disc">
         <li style="margin-bottom: 5px;">class
         &ldquo;FIRST_NAME&rdquo; that uses
         &ldquo;C:/IRI/cosort100/sets/names/names_first.set&rdquo; as
@@ -66,7 +66,7 @@
     <em>iriLibrary.dataclass</em> file in the project you are using.</li>
   </ol>
 
-  <h2>Wizard:</h2>
+  <h2>Data Classification Setup Wizard:</h2>
 
   <ol>
     <li style="margin-bottom: 10px;">Right-click on the PERSONS
@@ -80,13 +80,14 @@
     the name field. Leave the checkbox selected. Click
     <strong>Next</strong>.</li>
 
-    <li>The input page shows that one table is selected. Click
+    <li style="margin-bottom: 10px;">
+    The input page shows that one table is selected. Click
     <strong>Finish</strong>. This will create a data class library
     with the selected sources included. The form editor that opens
     allows you to classify the data in those sources.</li>
   </ol>
 
-  <h2>Form Editor:</h2>
+  <h2>Data Class Library Form Editor:</h2>
 
   <ol>
     <li>Click on the data source to display details about that
@@ -98,7 +99,7 @@
     results for those three fields (100%, 60% and 99%).
   </ol>
 
-  <h2>Wizard:</h2>
+  <h2>FieldShield Multi-Table Masking Wizard:</h2>
 
   <ol>
     <li style="margin-bottom: 10px;">Select the PERSONS table in
@@ -108,23 +109,19 @@
     <li>On the setup page, leave loader blank so that a flat file
     is produced. Click <strong>Next</strong>. Click
     <strong>Next</strong>.</li>
-  </ol>
 
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Rule 1</strong></p>
-
-  <ol start="3">
     <li style="margin-bottom: 10px;">On the Field Modifications
     Rules page, click <strong>Create</strong> to open the Field
     Rule Matcher page. In the <strong>Matcher Name</strong> field,
-    enter "SSN". In the <strong>Rule Name</strong>
+    enter <em>SSN</em>. In the <strong>Rule Name</strong>
     field, click <strong>Create</strong> to open the field rule
     selection page.</li>
 
     <li style="margin-bottom: 10px;">Select <strong>Redaction
     Function</strong> and click <strong>Next</strong>. Select the
     <strong>Define Mask</strong> radio button. Type
-    <strong>1</strong> in <strong>Start</strong> position and
-    <strong>5</strong> in <strong>Length</strong>. Click
+    <em>1</em> in <strong>Start position</strong> and
+    <em>5</em> in <strong>Length</strong>. Click
     <strong>Add to Table</strong> and <strong>Finish</strong>.</li>
 
     <li style="margin-bottom: 10px;">Click <strong>Add</strong> in
@@ -136,11 +133,7 @@
 
     <li>On the Field Rule Matcher page, click
     <strong>OK</strong>.</li>
-  </ol>
 
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Rule2</strong></p>
-
-  <ol start="7">
     <li style="margin-bottom: 10px;">On the Field Modifications
     Rules page, click <strong>Create</strong> to open the Field
     Rule Matcher page. In the <strong>Matcher Name</strong> field,

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rules:RuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0">
+  <rules xsi:type="rules:FieldRule" name="ExampleFieldRedactionRule" editor="charReplWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="replace_chars(${FIELDNAME},&quot;*&quot;)"/>
+    <properties fieldRulePropertyType="NAME" value="MASK_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="ExampleFieldRedactionRuleSSN" editor="charReplWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="replace_chars(${FIELDNAME}, &quot;*&quot;, 1, 5)"/>
+    <properties fieldRulePropertyType="NAME" value="MASK_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="ExampleFieldEncryptionRule" editor="cryptoWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="enc_fp_aes256_alphanum(${FIELDNAME}, &quot;secret&quot;)"/>
+    <properties fieldRulePropertyType="NAME" value="ENC_FP_${FIELDNAME}"/>
+  </rules>
+</rules:RuleLibrary>
+

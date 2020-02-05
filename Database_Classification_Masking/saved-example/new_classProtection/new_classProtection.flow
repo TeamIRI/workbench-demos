@@ -1,0 +1,3547 @@
+<?xml version="1.0" encoding="ASCII"?>
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="new_classProtection" description="">
+  <flowlets name="new_classProtection">
+    <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_SCOTT_CUSTOMERS_REP"/>
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_CUSTOMERS_REP" iriJob="SCOTT_CUSTOMERS_REP.scl">
+      <inputDatas name="SCOTT_CUSTOMERS_REP" inputConnections="Start_To_SCOTT_CUSTOMERS_REP">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.CUSTOMERS_REP" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="CUSTOMERS_REP" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRSTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRSTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ADDRESS"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ADDRESS"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ZIP"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ZIP"/>
+          </fields>
+          <constraints xsi:type="flow:PrimaryKey" name="CUSTOMERS_REP_SSN_PK">
+            <fields>SSN</fields>
+          </constraints>
+          <indexes name="CUSTOMERS_REP_SSN_PK" isUnique="true">
+            <fields>SSN</fields>
+          </indexes>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+        <sectionOptions xsi:type="scl:Alias" alias="SCOTT_CUSTOMERS_REP"/>
+      </inputDatas>
+      <outputDatas name="SCOTT_CUSTOMERS_REP.out" outputConnections="SCOTT_CUSTOMERS_REP_To_SCOTT_EMPLOYEES">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_CUSTOMERS_REP.out" fileName="SCOTT_CUSTOMERS_REP.out">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_SSN"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="1"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="5"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRSTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRSTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ADDRESS"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ADDRESS"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ZIP"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ZIP"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
+      </outputDatas>
+      <mappings name="SSN_To_SSN" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="LASTNAME_To_LASTNAME" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="FIRSTNAME_To_FIRSTNAME" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="ADDRESS_To_ADDRESS" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="ZIP_To_ZIP" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="LASTNAME_To_LASTNAME" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="FIRSTNAME_To_FIRSTNAME" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="ADDRESS_To_ADDRESS" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="ZIP_To_ZIP" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.6"/>
+      <transformData xsi:type="flow:ReportAction" name="Report">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRSTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRSTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ADDRESS"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ADDRESS"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ZIP"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ZIP"/>
+          </fields>
+        </dataInfo>
+      </transformData>
+    </blocks>
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_EMPLOYEES" iriJob="SCOTT_EMPLOYEES.scl">
+      <inputDatas name="SCOTT_EMPLOYEES" inputConnections="SCOTT_CUSTOMERS_REP_To_SCOTT_EMPLOYEES">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.EMPLOYEES" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="EMPLOYEES" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRST_NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRST_NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LAST_NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LAST_NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="PHONE_NUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE_NUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="HIRE_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="HIRE_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="JOB_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="JOB_ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SALARY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SALARY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="COMMISSION_PCT"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="COMMISSION_PCT"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="11"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DEPARTMENT_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="12"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DEPARTMENT_ID"/>
+          </fields>
+          <constraints xsi:type="flow:PrimaryKey" name="E_ID_PK">
+            <fields>ID</fields>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="E_D_ID_FK" refTableName="SCOTT.DEPARTMENTS">
+            <fields>DEPARTMENT_ID</fields>
+            <refFieldNames>DEPARTMENT_ID</refFieldNames>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="E_J_ID_FK" refTableName="SCOTT.JOBS">
+            <fields>JOB_ID</fields>
+            <refFieldNames>JOB_ID</refFieldNames>
+          </constraints>
+          <indexes name="E_E_SID_UK" isUnique="true">
+            <fields>EMPLOYEE_SID</fields>
+          </indexes>
+          <indexes name="E_ID_PK" isUnique="true">
+            <fields>ID</fields>
+          </indexes>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+        <sectionOptions xsi:type="scl:Alias" alias="SCOTT_EMPLOYEES"/>
+      </inputDatas>
+      <outputDatas name="SCOTT_EMPLOYEES.out" outputConnections="SCOTT_EMPLOYEES_To_SCOTT_JOB_HISTORY">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_EMPLOYEES.out" fileName="SCOTT_EMPLOYEES.out">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_EMPLOYEE_SID"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="1"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="5"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRST_NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRST_NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LAST_NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LAST_NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_EMAIL"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_PHONE_NUMBER"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="PHONE_NUMBER"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE_NUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="HIRE_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="HIRE_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="JOB_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="JOB_ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SALARY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SALARY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="COMMISSION_PCT"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="COMMISSION_PCT"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_MANAGER_SID"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="1"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="5"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="11"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DEPARTMENT_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="12"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DEPARTMENT_ID"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
+      </outputDatas>
+      <mappings name="ID_To_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="PHONE_NUMBER_To_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="SALARY_To_SALARY" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="COMMISSION_PCT_To_COMMISSION_PCT" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9"/>
+      <mappings name="MANAGER_SID_To_MANAGER_SID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.10"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.11" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.11"/>
+      <mappings name="ID_To_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="EMPLOYEE_SID_To_MASK_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="EMAIL_To_ENC_FP_EMAIL" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="PHONE_NUMBER_To_ENC_FP_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.7"/>
+      <mappings name="SALARY_To_SALARY" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.8"/>
+      <mappings name="COMMISSION_PCT_To_COMMISSION_PCT" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.9"/>
+      <mappings name="MANAGER_SID_To_MASK_MANAGER_SID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.10" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.10"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.11" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.11"/>
+      <transformData xsi:type="flow:ReportAction" name="Report">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRST_NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRST_NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LAST_NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LAST_NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="PHONE_NUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE_NUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="HIRE_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="HIRE_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="JOB_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="JOB_ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SALARY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SALARY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="COMMISSION_PCT"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision" number="2"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="COMMISSION_PCT"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="MANAGER_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="11"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="MANAGER_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DEPARTMENT_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="12"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DEPARTMENT_ID"/>
+          </fields>
+        </dataInfo>
+      </transformData>
+    </blocks>
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_JOB_HISTORY" iriJob="SCOTT_JOB_HISTORY.scl">
+      <inputDatas name="SCOTT_JOB_HISTORY" inputConnections="SCOTT_EMPLOYEES_To_SCOTT_JOB_HISTORY">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.JOB_HISTORY" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="JOB_HISTORY" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="START_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="START_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="END_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="END_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="JOB_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="JOB_ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DEPARTMENT_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DEPARTMENT_ID"/>
+          </fields>
+          <constraints xsi:type="flow:PrimaryKey" name="JH_ID_PK">
+            <fields>ID</fields>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="JH_D_ID_FK" refTableName="SCOTT.DEPARTMENTS">
+            <fields>DEPARTMENT_ID</fields>
+            <refFieldNames>DEPARTMENT_ID</refFieldNames>
+          </constraints>
+          <constraints xsi:type="flow:ForeignKey" name="JH_J_ID_FK" refTableName="SCOTT.JOBS">
+            <fields>JOB_ID</fields>
+            <refFieldNames>JOB_ID</refFieldNames>
+          </constraints>
+          <indexes name="JH_E_SID_SD_UK" isUnique="true">
+            <fields>EMPLOYEE_SID</fields>
+            <fields>START_DATE</fields>
+          </indexes>
+          <indexes name="JH_ID_PK" isUnique="true">
+            <fields>ID</fields>
+          </indexes>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+        <sectionOptions xsi:type="scl:Alias" alias="SCOTT_JOB_HISTORY"/>
+      </inputDatas>
+      <outputDatas name="SCOTT_JOB_HISTORY.out" outputConnections="SCOTT_JOB_HISTORY_To_SCOTT_PATIENT_RECORD">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_JOB_HISTORY.out" fileName="SCOTT_JOB_HISTORY.out">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_EMPLOYEE_SID"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="1"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="5"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="START_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="START_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="END_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="END_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="JOB_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="JOB_ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DEPARTMENT_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DEPARTMENT_ID"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
+      </outputDatas>
+      <mappings name="ID_To_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="EMPLOYEE_SID_To_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="START_DATE_To_START_DATE" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="END_DATE_To_END_DATE" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="ID_To_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="EMPLOYEE_SID_To_MASK_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="START_DATE_To_START_DATE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="END_DATE_To_END_DATE" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="JOB_ID_To_JOB_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="DEPARTMENT_ID_To_DEPARTMENT_ID" sourceField="//@flowlets.0/@blocks.3/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.5"/>
+      <transformData xsi:type="flow:ReportAction" name="Report">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMPLOYEE_SID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMPLOYEE_SID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="START_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="START_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="END_DATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ISO_DATE"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="END_DATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="JOB_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="JOB_ID"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DEPARTMENT_ID"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="NUMERIC"/>
+            <fieldAttributes xsi:type="ddf:Precision"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DEPARTMENT_ID"/>
+          </fields>
+        </dataInfo>
+      </transformData>
+    </blocks>
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_PATIENT_RECORD" iriJob="SCOTT_PATIENT_RECORD.scl">
+      <inputDatas name="SCOTT_PATIENT_RECORD" inputConnections="SCOTT_JOB_HISTORY_To_SCOTT_PATIENT_RECORD">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.PATIENT_RECORD" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="PATIENT_RECORD" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="IDNUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="IDNUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="AGE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="AGE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="PHONE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DRIVING_LICENSE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DRIVING_LICENSE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+        <sectionOptions xsi:type="scl:Alias" alias="SCOTT_PATIENT_RECORD"/>
+      </inputDatas>
+      <outputDatas name="SCOTT_PATIENT_RECORD.out" outputConnections="SCOTT_PATIENT_RECORD_To_SCOTT_PERSONS">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_PATIENT_RECORD.out" fileName="SCOTT_PATIENT_RECORD.out">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="IDNUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="IDNUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="AGE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="AGE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_EMAIL"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="ENC_FP_PHONE"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="PHONE"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_CREDIT_CARD"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DRIVING_LICENSE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DRIVING_LICENSE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_SSN"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="1"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="5"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
+      </outputDatas>
+      <mappings name="IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="NAME_To_NAME" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="AGE_To_AGE" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_EMAIL" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_To_PHONE" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="CREDIT_CARD_To_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="DRIVING_LICENSE_To_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="SSN_To_SSN" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.8"/>
+      <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.4/@inputDatas.0/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.9"/>
+      <mappings name="IDNUMBER_To_IDNUMBER" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="NAME_To_NAME" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="AGE_To_AGE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="EMAIL_To_ENC_FP_EMAIL" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="PHONE_To_ENC_FP_PHONE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="CREDIT_CARD_To_MASK_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="DRIVING_LICENSE_To_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.7"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.8"/>
+      <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.9" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.9"/>
+      <transformData xsi:type="flow:ReportAction" name="Report">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="IDNUMBER"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="IDNUMBER"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="NAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="NAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="AGE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="AGE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="EMAIL"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="EMAIL"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="PHONE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="PHONE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="DRIVING_LICENSE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="DRIVING_LICENSE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="9"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="10"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+        </dataInfo>
+      </transformData>
+    </blocks>
+    <blocks xsi:type="flow:TransformMappingBlock" name="SCOTT_PERSONS" iriJob="SCOTT_PERSONS.scl">
+      <inputDatas name="SCOTT_PERSONS" inputConnections="SCOTT_PATIENT_RECORD_To_SCOTT_PERSONS">
+        <dataInfo xsi:type="flow:DBDataInfo" name="SCOTT.PERSONS" DSN="Oracle" DTPName="Oracle" providerName="Oracle" database="Oracle" hostName="localhost" port="1521" instanceName="XE" userName="scott" password="tiger" schema="SCOTT" table="PERSONS" delimiter="&#x9;">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRSTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRSTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ADDRESS"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ADDRESS"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ZIP"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ZIP"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+          <constraints xsi:type="flow:PrimaryKey" name="SSN_PK">
+            <fields>SSN</fields>
+          </constraints>
+          <indexes name="SSN_PK" isUnique="true">
+            <fields>SSN</fields>
+          </indexes>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
+        <sectionOptions xsi:type="scl:Alias" alias="SCOTT_PERSONS"/>
+      </inputDatas>
+      <outputDatas name="SCOTT_PERSONS.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_PERSONS.out" fileName="SCOTT_PERSONS.out">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_SSN"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="1"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:LongValue" value="5"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRSTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRSTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ADDRESS"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ADDRESS"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ZIP"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ZIP"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <fieldName name="MASK_CREDIT_CARD"/>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="scl:Function" name="replace_chars">
+                            <argumentList>
+                              <firstArg>
+                                <relationalExpression>
+                                  <lValue>
+                                    <lValue>
+                                      <lValue>
+                                        <expr xsi:type="scl:Unary">
+                                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                                        </expr>
+                                      </lValue>
+                                    </lValue>
+                                  </lValue>
+                                </relationalExpression>
+                              </firstArg>
+                              <args>
+                                <argCommas>,</argCommas>
+                                <arg>
+                                  <relationalExpression>
+                                    <lValue>
+                                      <lValue>
+                                        <lValue>
+                                          <expr xsi:type="scl:Unary">
+                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                          </expr>
+                                        </lValue>
+                                      </lValue>
+                                    </lValue>
+                                  </relationalExpression>
+                                </arg>
+                              </args>
+                            </argumentList>
+                          </value>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+        </dataInfo>
+        <sectionOptions xsi:type="ddf:Process" name="DELIMITED"/>
+      </outputDatas>
+      <mappings name="SSN_To_SSN" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0"/>
+      <mappings name="LASTNAME_To_LASTNAME" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1"/>
+      <mappings name="FIRSTNAME_To_FIRSTNAME" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2"/>
+      <mappings name="ADDRESS_To_ADDRESS" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4"/>
+      <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.5"/>
+      <mappings name="ZIP_To_ZIP" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.6"/>
+      <mappings name="CREDIT_CARD_To_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.7"/>
+      <mappings name="SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.0"/>
+      <mappings name="LASTNAME_To_LASTNAME" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="FIRSTNAME_To_FIRSTNAME" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.2"/>
+      <mappings name="ADDRESS_To_ADDRESS" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.4"/>
+      <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="ZIP_To_ZIP" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.6"/>
+      <mappings name="CREDIT_CARD_To_MASK_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.7"/>
+      <transformData xsi:type="flow:ReportAction" name="Report">
+        <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="SSN"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="SSN"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="FIRSTNAME"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="FIRSTNAME"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ADDRESS"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ADDRESS"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CITY"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CITY"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="STATE"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="STATE"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="ZIP"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="ZIP"/>
+          </fields>
+          <fields xsi:type="scl:AdvancedField">
+            <fieldMathStatement>
+              <compoundExpression>
+                <relationalExpression>
+                  <lValue>
+                    <lValue>
+                      <lValue>
+                        <expr xsi:type="scl:Unary">
+                          <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                        </expr>
+                      </lValue>
+                    </lValue>
+                  </lValue>
+                </relationalExpression>
+              </compoundExpression>
+            </fieldMathStatement>
+            <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+            <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+            <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
+            <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="CREDIT_CARD"/>
+          </fields>
+        </dataInfo>
+      </transformData>
+    </blocks>
+    <connections name="Start_To_SCOTT_CUSTOMERS_REP" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.1/@inputDatas.0"/>
+    <connections name="SCOTT_CUSTOMERS_REP_To_SCOTT_EMPLOYEES" startBlock="//@flowlets.0/@blocks.1/@outputDatas.0" endBlock="//@flowlets.0/@blocks.2/@inputDatas.0"/>
+    <connections name="SCOTT_EMPLOYEES_To_SCOTT_JOB_HISTORY" startBlock="//@flowlets.0/@blocks.2/@outputDatas.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
+    <connections name="SCOTT_JOB_HISTORY_To_SCOTT_PATIENT_RECORD" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.4/@inputDatas.0"/>
+    <connections name="SCOTT_PATIENT_RECORD_To_SCOTT_PERSONS" startBlock="//@flowlets.0/@blocks.4/@outputDatas.0" endBlock="//@flowlets.0/@blocks.5/@inputDatas.0"/>
+  </flowlets>
+</flow:FlowBatch>
