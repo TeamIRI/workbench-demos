@@ -1,7 +1,7 @@
 # Generated with IRI Workbench - New Data Class Database Masking Job
 #
  # Author: iridemo
- # Created: 2020-02-05 11:49:46
+ # Created: 2020-02-14 14:19:04
  #
 
 /INFILES="SCOTT.JOB_HISTORY;DSN=Oracle;"

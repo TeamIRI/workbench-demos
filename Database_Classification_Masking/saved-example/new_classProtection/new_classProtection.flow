@@ -163,8 +163,8 @@
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
         <sectionOptions xsi:type="scl:Alias" alias="SCOTT_CUSTOMERS_REP"/>
       </inputDatas>
-      <outputDatas name="SCOTT_CUSTOMERS_REP.out" outputConnections="SCOTT_CUSTOMERS_REP_To_SCOTT_EMPLOYEES">
-        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_CUSTOMERS_REP.out" fileName="SCOTT_CUSTOMERS_REP.out">
+      <outputDatas name="SCOTT_CUSTOMERS_REP.data" outputConnections="SCOTT_CUSTOMERS_REP_To_SCOTT_EMPLOYEES">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_CUSTOMERS_REP.data" fileName="SCOTT_CUSTOMERS_REP.data">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <fieldName name="MASK_SSN"/>
@@ -260,7 +260,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                          <value xsi:type="ddf:FieldName" name="PSEUDO_LASTNAME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -272,6 +272,9 @@
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
+            <fieldAttributes xsi:type="ddf:Set">
+              <value xsi:type="ddf:FileSet" fileName="&quot;C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
+            </fieldAttributes>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -389,7 +392,7 @@
       <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
       <mappings name="ZIP_To_ZIP" sourceField="//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
       <mappings name="SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
-      <mappings name="LASTNAME_To_LASTNAME" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="LASTNAME_To_PSEUDO_LASTNAME" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.1"/>
       <mappings name="FIRSTNAME_To_FIRSTNAME" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.2"/>
       <mappings name="ADDRESS_To_ADDRESS" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.3"/>
       <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.4"/>
@@ -828,8 +831,8 @@
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
         <sectionOptions xsi:type="scl:Alias" alias="SCOTT_EMPLOYEES"/>
       </inputDatas>
-      <outputDatas name="SCOTT_EMPLOYEES.out" outputConnections="SCOTT_EMPLOYEES_To_SCOTT_JOB_HISTORY">
-        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_EMPLOYEES.out" fileName="SCOTT_EMPLOYEES.out">
+      <outputDatas name="SCOTT_EMPLOYEES.data" outputConnections="SCOTT_EMPLOYEES_To_SCOTT_JOB_HISTORY">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_EMPLOYEES.data" fileName="SCOTT_EMPLOYEES.data">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -967,7 +970,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="LAST_NAME"/>
+                          <value xsi:type="ddf:FieldName" name="PSEUDO_LAST_NAME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -979,6 +982,9 @@
             <fieldAttributes xsi:type="ddf:Position" number1="4"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LAST_NAME"/>
+            <fieldAttributes xsi:type="ddf:Set">
+              <value xsi:type="ddf:FileSet" fileName="&quot;C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
+            </fieldAttributes>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -1300,7 +1306,7 @@
       <mappings name="ID_To_ID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
       <mappings name="EMPLOYEE_SID_To_MASK_EMPLOYEE_SID" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.1"/>
       <mappings name="FIRST_NAME_To_FIRST_NAME" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.2"/>
-      <mappings name="LAST_NAME_To_LAST_NAME" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
+      <mappings name="LAST_NAME_To_PSEUDO_LAST_NAME" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.3"/>
       <mappings name="EMAIL_To_ENC_FP_EMAIL" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.4"/>
       <mappings name="PHONE_NUMBER_To_ENC_FP_PHONE_NUMBER" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.5"/>
       <mappings name="HIRE_DATE_To_HIRE_DATE" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.6"/>
@@ -1723,8 +1729,8 @@
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
         <sectionOptions xsi:type="scl:Alias" alias="SCOTT_JOB_HISTORY"/>
       </inputDatas>
-      <outputDatas name="SCOTT_JOB_HISTORY.out" outputConnections="SCOTT_JOB_HISTORY_To_SCOTT_PATIENT_RECORD">
-        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_JOB_HISTORY.out" fileName="SCOTT_JOB_HISTORY.out">
+      <outputDatas name="SCOTT_JOB_HISTORY.data" outputConnections="SCOTT_JOB_HISTORY_To_SCOTT_PATIENT_RECORD">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_JOB_HISTORY.data" fileName="SCOTT_JOB_HISTORY.data">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -2283,8 +2289,8 @@
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
         <sectionOptions xsi:type="scl:Alias" alias="SCOTT_PATIENT_RECORD"/>
       </inputDatas>
-      <outputDatas name="SCOTT_PATIENT_RECORD.out" outputConnections="SCOTT_PATIENT_RECORD_To_SCOTT_PERSONS">
-        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_PATIENT_RECORD.out" fileName="SCOTT_PATIENT_RECORD.out">
+      <outputDatas name="SCOTT_PATIENT_RECORD.data" outputConnections="SCOTT_PATIENT_RECORD_To_SCOTT_PERSONS">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_PATIENT_RECORD.data" fileName="SCOTT_PATIENT_RECORD.data">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -2458,14 +2464,14 @@
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
-              <fieldName name="MASK_CREDIT_CARD"/>
+              <fieldName name="ENC_FP_CREDIT_CARD"/>
               <compoundExpression>
                 <relationalExpression>
                   <lValue>
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="scl:Function" name="replace_chars">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
                             <argumentList>
                               <firstArg>
                                 <relationalExpression>
@@ -2488,7 +2494,7 @@
                                       <lValue>
                                         <lValue>
                                           <expr xsi:type="scl:Unary">
-                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
                                           </expr>
                                         </lValue>
                                       </lValue>
@@ -2677,7 +2683,7 @@
       <mappings name="AGE_To_AGE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.2"/>
       <mappings name="EMAIL_To_ENC_FP_EMAIL" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.3"/>
       <mappings name="PHONE_To_ENC_FP_PHONE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.4"/>
-      <mappings name="CREDIT_CARD_To_MASK_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.5"/>
+      <mappings name="CREDIT_CARD_To_ENC_FP_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.5"/>
       <mappings name="DRIVING_LICENSE_To_DRIVING_LICENSE" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.6"/>
       <mappings name="SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.7"/>
       <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.4/@transformData/@dataInfo/@fields.8" targetField="//@flowlets.0/@blocks.4/@outputDatas.0/@dataInfo/@fields.8"/>
@@ -3078,8 +3084,8 @@
         <sectionOptions xsi:type="ddf:Process" name="ODBC"/>
         <sectionOptions xsi:type="scl:Alias" alias="SCOTT_PERSONS"/>
       </inputDatas>
-      <outputDatas name="SCOTT_PERSONS.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_PERSONS.out" fileName="SCOTT_PERSONS.out">
+      <outputDatas name="SCOTT_PERSONS.data">
+        <dataInfo xsi:type="flow:FileDataInfo" name="SCOTT_PERSONS.data" fileName="SCOTT_PERSONS.data">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <fieldName name="MASK_SSN"/>
@@ -3174,7 +3180,7 @@
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                          <value xsi:type="ddf:FieldName" name="PSEUDO_LASTNAME"/>
                         </expr>
                       </lValue>
                     </lValue>
@@ -3186,6 +3192,9 @@
             <fieldAttributes xsi:type="ddf:Position" number1="2"/>
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
+            <fieldAttributes xsi:type="ddf:Set">
+              <value xsi:type="ddf:FileSet" fileName="&quot;C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
+            </fieldAttributes>
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
@@ -3294,14 +3303,14 @@
           </fields>
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
-              <fieldName name="MASK_CREDIT_CARD"/>
+              <fieldName name="ENC_FP_CREDIT_CARD"/>
               <compoundExpression>
                 <relationalExpression>
                   <lValue>
                     <lValue>
                       <lValue>
                         <expr xsi:type="scl:Unary">
-                          <value xsi:type="scl:Function" name="replace_chars">
+                          <value xsi:type="scl:Function" name="enc_fp_aes256_alphanum">
                             <argumentList>
                               <firstArg>
                                 <relationalExpression>
@@ -3324,7 +3333,7 @@
                                       <lValue>
                                         <lValue>
                                           <expr xsi:type="scl:Unary">
-                                            <value xsi:type="scl:RepeatNumberString" string="*"/>
+                                            <value xsi:type="scl:RepeatNumberString" string="secret"/>
                                           </expr>
                                         </lValue>
                                       </lValue>
@@ -3358,13 +3367,13 @@
       <mappings name="ZIP_To_ZIP" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.6"/>
       <mappings name="CREDIT_CARD_To_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.5/@inputDatas.0/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.7"/>
       <mappings name="SSN_To_MASK_SSN" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.0"/>
-      <mappings name="LASTNAME_To_LASTNAME" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.1"/>
+      <mappings name="LASTNAME_To_PSEUDO_LASTNAME" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.1" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.1"/>
       <mappings name="FIRSTNAME_To_FIRSTNAME" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.2" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.2"/>
       <mappings name="ADDRESS_To_ADDRESS" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.3" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.3"/>
       <mappings name="CITY_To_CITY" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.4" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.4"/>
       <mappings name="STATE_To_STATE" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.5" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.5"/>
       <mappings name="ZIP_To_ZIP" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.6" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.6"/>
-      <mappings name="CREDIT_CARD_To_MASK_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.7"/>
+      <mappings name="CREDIT_CARD_To_ENC_FP_CREDIT_CARD" sourceField="//@flowlets.0/@blocks.5/@transformData/@dataInfo/@fields.7" targetField="//@flowlets.0/@blocks.5/@outputDatas.0/@dataInfo/@fields.7"/>
       <transformData xsi:type="flow:ReportAction" name="Report">
         <dataInfo xsi:type="flow:InternalDataInfo" name="Report">
           <fields xsi:type="scl:AdvancedField">
@@ -3545,3 +3554,4 @@
     <connections name="SCOTT_PATIENT_RECORD_To_SCOTT_PERSONS" startBlock="//@flowlets.0/@blocks.4/@outputDatas.0" endBlock="//@flowlets.0/@blocks.5/@inputDatas.0"/>
   </flowlets>
 </flow:FlowBatch>
+

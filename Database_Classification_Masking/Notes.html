@@ -61,6 +61,10 @@
 		<em>\b[\w._%+-]+@[\w.-]+\.[A-Za-z]{2,4}\b</em>
 		
         <li style="margin-bottom: 5px;">
+        Class <em>LAST_NAME</em> that uses
+        <em>"C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set"</em>
+
+        <li style="margin-bottom: 5px;">
         Class <em>PHONE_US</em> that uses        
         <em>^(\+?(1)([ .-]?)?)?(\(?([2-9]\d{2})\)?([ .-]?)?)([2-9]\d{2})([ .-]?)(\d{4})([ #eExXtT]*)(\d{2,6})?&</em>
 
@@ -77,12 +81,21 @@
     level of matching required before assigning a data class. The schema
     scan will scan 4K blocks of data until it reaches this threshold. 
     If it never reaches this threshold, then no data class is assigned.
+    
+    <li style="margin-bottom: 5px;">
+    Because there are columns that contain last names but may not be 
+    named "LAST_NAME" and may not have data contained in the set file,  
+    a regular expression can be used to match on the name. For instance, 
+    there may be a column named LNAME or LASTNAME. So, the LAST_NAME 
+    data class needs to be edited. Click the row of LAST_NAME and click 
+    <b>Edit</b>. Change the name to <em>L(AST)?[_-]?NAME</em> 
+    (that is an underscore and dash in the brackets). Click <b>OK</b>.
     Click <strong>Apply and Close</strong>.
 
     <li style="margin-bottom: 10px;">
     You need to determine what the output format will be so that you can add rules.
-    In this example, there will be a full redaction, a partial redaction and 
-    a format-preserving encryption rule.
+    In this example, a partial redaction, a format-preserving encryption, and
+    a pseudonymize rule.
     
     <p><strong>Rule 1</strong></p>
 
@@ -95,13 +108,15 @@
 	    Select <strong>Field Rules</strong> and click <strong>Next</strong>.
 	
 	    <li style="margin-bottom: 10px;">
-	    Select <strong>Redaction Function</strong>
+	    Select <strong>Pseudonym Replacement</strong>
 	    and click <strong>Next</strong>. 
 	    
 	    <li style="margin-bottom: 10px;">
-		Leave
-	    <strong>Whole Field</strong> selected. Click
-	    <strong>Finish</strong>.
+		Select <b>Use your own pseudonym list</b> and click
+		<b>Browse</b>. Select 
+		<em>C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set</em> .
+		Select <b>Use random draw</b>.
+		Click <strong>Finish</strong>.
 	  </ol>
 
   	<p><strong>Rule 2</strong></p>
@@ -185,6 +200,7 @@
     This page allows you to filter the data classes that will be used
     during the scan. Select only
     <em>CREDIT_CARD</em>, <em>EMAIL</em>,
+    <em>L(AST)?[_-]?NAME</em>,
     <em>PHONE_US</em>, and <em>PIN_US</em>.
     Click <strong>Finish</strong>. Along with reports, 
     this will create (or append) a data class library
@@ -237,8 +253,9 @@
     	</ul> <br>
     	
 		In this example, click each of the following data sources and click
-		<strong>Remove</strong> since they are empty and 
+		<strong>Remove</strong> since they are empty or 
 		don't need to be masked:<br>
+		<em>SCOTT.DEMO_ROWGEN</em><br>
     	<em>SCOTT.DM_EMPLOYEES</em><br>
     	<em>SCOTT.PATIENT_RECORD_ENCRYPTED</em>
 		
@@ -265,8 +282,9 @@
     In this example, assign the following:<br>
     <em>CREDIT_CARD &gt; FieldRedactionRule</em><br>
     <em>EMAIL &gt; FieldEncryptionRule</em><br>
+    <em>L(AST)?[_-]?NAME &gt; FieldPseudonymRule</em><br>
     <em>PHONE_US &gt; FieldEncryptionRule</em><br>
-    <em>PIN_US &gt; FieldRedactionRuleSSN</em><br>
+    <em>PIN_US &gt; FieldRedactionRule</em><br>
 
     <li style="margin-bottom: 10px;">
 	You can see the rule assignments by clicking on a data source.
