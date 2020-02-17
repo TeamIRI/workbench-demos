@@ -20,7 +20,7 @@
                 <dsnName>Oracle</dsnName>
                 <dtpName>Oracle</dtpName>
                 <fileDsnPath></fileDsnPath>
-                <filterSchema></filterSchema>
+                <filterSchema>SCOTT</filterSchema>
             </value>
         </entry>
     </info>
