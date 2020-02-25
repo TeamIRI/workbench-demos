@@ -30,7 +30,7 @@ sortcl /SPECIFICATION=Load_Orders_NF.scl
 cd ..\..\Subsetting\setup
 sortcl /SPECIFICATION=Load_Sale_Dim.scl
 sortcl /SPECIFICATION=Load_Project_Dim.scl
-sortcl /SPECIFICATION=\Load_Item_Price_Range_Dim.scl
+sortcl /SPECIFICATION=Load_Item_Price_Range_Dim.scl
 sortcl /SPECIFICATION=Load_Item_Dim.scl
 sortcl /SPECIFICATION=Load_Emp_Salary_Range_Dim.scl
 sortcl /SPECIFICATION=Load_Emp_Dim.scl
