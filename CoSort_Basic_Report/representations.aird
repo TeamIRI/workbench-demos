@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:scl="http://www.iri.com/lang/scl/Scl" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_c3dSADxiEeaRycD7c90nJg" selectedViews="_dAGQoDxiEeaRycD7c90nJg" version="14.1.0.201810161215">
+  <viewpoint:DAnalysis uid="_c3dSADxiEeaRycD7c90nJg" selectedViews="_dAGQoDxiEeaRycD7c90nJg" version="14.3.0.201909031200">
     <semanticResources>metadata/nyse.ddf</semanticResources>
     <semanticResources>scripts/mortgage.scl</semanticResources>
     <semanticResources>scripts/stockjoin.scl</semanticResources>
     <semanticResources>scripts/stockjoin_scl.flow</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_dAGQoDxiEeaRycD7c90nJg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_zO2FjDJ5Eei-h6jx05T6BA" name="stockjoin_scl" repPath="#_zO2FcDJ5Eei-h6jx05T6BA">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_zO2FjDJ5Eei-h6jx05T6BA" name="stockjoin_scl" repPath="#_zO2FcDJ5Eei-h6jx05T6BA" changeId="659a25bd-35cc-47ff-a4ef-79afcdb979b0">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
         <target xmi:type="flow:FlowBatch" href="scripts/stockjoin_scl.flow#stockjoin"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6jewsDJ5Eei-h6jx05T6BA" name="stock join TMD" repPath="#_6jU_sDJ5Eei-h6jx05T6BA">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6jewsDJ5Eei-h6jx05T6BA" name="stock join TMD" repPath="#_6jU_sDJ5Eei-h6jx05T6BA" changeId="f7ab97f5-a052-42d8-8e20-34bf5630ab20">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']"/>
         <target xmi:type="flow:TransformMappingBlock" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <diagram:DSemanticDiagram uid="_zO2FcDJ5Eei-h6jx05T6BA" name="stockjoin_scl">
+  <diagram:DSemanticDiagram uid="_zO2FcDJ5Eei-h6jx05T6BA">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_zO2FcTJ5Eei-h6jx05T6BA" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_zO2FcjJ5Eei-h6jx05T6BA"/>
     </ownedAnnotationEntries>
@@ -34,7 +34,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_zO_PcDJ5Eei-h6jx05T6BA" type="3012" element="_zO2FdzJ5Eei-h6jx05T6BA">
                 <children xmi:type="notation:Node" xmi:id="_zO_PczJ5Eei-h6jx05T6BA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PdDJ5Eei-h6jx05T6BA" x="-51" y="-44"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PdDJ5Eei-h6jx05T6BA" x="-16" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_zO_PkzJ5Eei-h6jx05T6BA" type="3005" element="_zO2FeDJ5Eei-h6jx05T6BA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_zO_PlDJ5Eei-h6jx05T6BA" fontName="Segoe UI"/>
@@ -45,7 +45,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_zO_PdTJ5Eei-h6jx05T6BA" type="3012" element="_zO2FeTJ5Eei-h6jx05T6BA">
                 <children xmi:type="notation:Node" xmi:id="_zO_PeDJ5Eei-h6jx05T6BA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PeTJ5Eei-h6jx05T6BA" x="-51" y="-2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PeTJ5Eei-h6jx05T6BA" x="-13" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_zO_PljJ5Eei-h6jx05T6BA" type="3005" element="_zO2FejJ5Eei-h6jx05T6BA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_zO_PlzJ5Eei-h6jx05T6BA" fontName="Segoe UI"/>
@@ -56,7 +56,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_zO_PejJ5Eei-h6jx05T6BA" type="3012" element="_zO2FezJ5Eei-h6jx05T6BA">
                 <children xmi:type="notation:Node" xmi:id="_zO_PfTJ5Eei-h6jx05T6BA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PfjJ5Eei-h6jx05T6BA" x="17" y="-44"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PfjJ5Eei-h6jx05T6BA" x="-9" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_zO_PmTJ5Eei-h6jx05T6BA" type="3005" element="_zO2FfDJ5Eei-h6jx05T6BA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_zO_PmjJ5Eei-h6jx05T6BA" fontName="Segoe UI"/>
@@ -67,7 +67,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_zO_PfzJ5Eei-h6jx05T6BA" type="3012" element="_zO2FfTJ5Eei-h6jx05T6BA">
                 <children xmi:type="notation:Node" xmi:id="_zO_PgjJ5Eei-h6jx05T6BA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PgzJ5Eei-h6jx05T6BA" x="17" y="-2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PgzJ5Eei-h6jx05T6BA" x="-9" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_zO_PnDJ5Eei-h6jx05T6BA" type="3005" element="_zO2FfjJ5Eei-h6jx05T6BA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_zO_PnTJ5Eei-h6jx05T6BA" fontName="Segoe UI"/>
@@ -78,7 +78,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_zO_PhDJ5Eei-h6jx05T6BA" type="3012" element="_zO2FfzJ5Eei-h6jx05T6BA">
                 <children xmi:type="notation:Node" xmi:id="_zO_PhzJ5Eei-h6jx05T6BA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PiDJ5Eei-h6jx05T6BA" x="17" y="-2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PiDJ5Eei-h6jx05T6BA" x="-25" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_zO_PnzJ5Eei-h6jx05T6BA" type="3005" element="_zO2FgDJ5Eei-h6jx05T6BA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_zO_PoDJ5Eei-h6jx05T6BA" fontName="Segoe UI"/>
@@ -89,7 +89,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_zO_PiTJ5Eei-h6jx05T6BA" type="3012" element="_zO2FgTJ5Eei-h6jx05T6BA">
                 <children xmi:type="notation:Node" xmi:id="_zO_PjDJ5Eei-h6jx05T6BA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PjTJ5Eei-h6jx05T6BA" x="17" y="-2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PjTJ5Eei-h6jx05T6BA" x="-27" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_zO_PojJ5Eei-h6jx05T6BA" type="3005" element="_zO2FgjJ5Eei-h6jx05T6BA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_zO_PozJ5Eei-h6jx05T6BA" fontName="Segoe UI"/>
@@ -100,7 +100,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_zO_PjjJ5Eei-h6jx05T6BA" type="3012" element="_zO2FgzJ5Eei-h6jx05T6BA">
                 <children xmi:type="notation:Node" xmi:id="_zO_PkTJ5Eei-h6jx05T6BA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PkjJ5Eei-h6jx05T6BA" x="17" y="-2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_zO_PkjJ5Eei-h6jx05T6BA" x="-27" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_zO_PpTJ5Eei-h6jx05T6BA" type="3005" element="_zO2FhDJ5Eei-h6jx05T6BA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_zO_PpjJ5Eei-h6jx05T6BA" fontName="Segoe UI"/>
@@ -148,7 +148,7 @@
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zO2FdDJ5Eei-h6jx05T6BA" name="stockjoin" width="10" height="20">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zO2FdDJ5Eei-h6jx05T6BA" name="stockjoin" width="-1" height="20">
       <target xmi:type="flow:Flowlet" href="scripts/stockjoin_scl.flow#//@flowlets.0"/>
       <semanticElements xmi:type="flow:Flowlet" href="scripts/stockjoin_scl.flow#//@flowlets.0"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_zO2FdTJ5Eei-h6jx05T6BA" showIcon="false" borderSize="2" borderSizeComputationExpression="2" borderColor="69,69,69" backgroundStyle="GradientTopToBottom">
@@ -245,7 +245,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer"/>
     <target xmi:type="flow:FlowBatch" href="scripts/stockjoin_scl.flow#stockjoin"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_6jU_sDJ5Eei-h6jx05T6BA" name="stock join TMD">
+  <diagram:DSemanticDiagram uid="_6jU_sDJ5Eei-h6jx05T6BA">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_6jU_sTJ5Eei-h6jx05T6BA" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_6jU_sjJ5Eei-h6jx05T6BA"/>
     </ownedAnnotationEntries>
@@ -1371,7 +1371,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_ujJ5Eei-h6jx05T6BA" name="ISSUE:ASCII (\t)" outgoingEdges="_6jVAWjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_ujJ5Eei-h6jx05T6BA" name="ISSUE" outgoingEdges="_6jVAWjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_uzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1379,7 +1379,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_vDJ5Eei-h6jx05T6BA" name="SYMBOL:ASCII (\t)" outgoingEdges="_6jVAXTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_vDJ5Eei-h6jx05T6BA" name="SYMBOL" outgoingEdges="_6jVAXTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_vTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1387,7 +1387,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_vjJ5Eei-h6jx05T6BA" name="LASTTRADE:NUMERIC (\t)" outgoingEdges="_6jVAYDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_vjJ5Eei-h6jx05T6BA" name="LASTTRADE" outgoingEdges="_6jVAYDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_vzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1395,7 +1395,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_wDJ5Eei-h6jx05T6BA" name="VOLUME:NUMERIC (\t)" outgoingEdges="_6jVAYzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_wDJ5Eei-h6jx05T6BA" name="VOLUME" outgoingEdges="_6jVAYzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.3"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_wTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1403,7 +1403,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_wjJ5Eei-h6jx05T6BA" name="CHANGE:NUMERIC (\t)" outgoingEdges="_6jVAZjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_wjJ5Eei-h6jx05T6BA" name="CHANGE" outgoingEdges="_6jVAZjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.4"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.4"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_wzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1411,7 +1411,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_xDJ5Eei-h6jx05T6BA" name="PERCENT:NUMERIC (\t)" outgoingEdges="_6jVAaTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_xDJ5Eei-h6jx05T6BA" name="PERCENT" outgoingEdges="_6jVAaTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@dataInfo/@fields.5"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_xTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1428,7 +1428,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jU_yDJ5Eei-h6jx05T6BA" name="Process DELIMITED">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jU_yDJ5Eei-h6jx05T6BA" name="Process: DELIMITED">
             <target xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@sectionOptions.0"/>
             <semanticElements xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.0/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jU_yTJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -1461,7 +1461,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_0DJ5Eei-h6jx05T6BA" name="SHARES:ASCII (,)" outgoingEdges="_6jVAbDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_0DJ5Eei-h6jx05T6BA" name="SHARES" outgoingEdges="_6jVAbDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_0TJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1469,7 +1469,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_0jJ5Eei-h6jx05T6BA" name="SYMBOL:ASCII (,)" outgoingEdges="_6jVAbzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_0jJ5Eei-h6jx05T6BA" name="SYMBOL" outgoingEdges="_6jVAbzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_0zJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1477,7 +1477,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_1DJ5Eei-h6jx05T6BA" name="CLIENT:ASCII (,)" outgoingEdges="_6jVAcjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_1DJ5Eei-h6jx05T6BA" name="CLIENT" outgoingEdges="_6jVAcjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.1/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_1TJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1494,7 +1494,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jU_2DJ5Eei-h6jx05T6BA" name="Process CSV">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jU_2DJ5Eei-h6jx05T6BA" name="Process: CSV">
             <target xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.1/@sectionOptions.0"/>
             <semanticElements xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@inputDatas.1/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jU_2TJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -1544,7 +1544,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_InternalDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_InternalDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_5DJ5Eei-h6jx05T6BA" name="nyse-a.ISSUE:ASCII (\t)" incomingEdges="_6jVAWjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_5DJ5Eei-h6jx05T6BA" name="nyse-a.ISSUE" incomingEdges="_6jVAWjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_5TJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1552,7 +1552,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_5jJ5Eei-h6jx05T6BA" name="nyse-a.SYMBOL:ASCII (\t)" outgoingEdges="_6jVAezJ5Eei-h6jx05T6BA _6jVAhDJ5Eei-h6jx05T6BA" incomingEdges="_6jVAXTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_5jJ5Eei-h6jx05T6BA" name="nyse-a.SYMBOL" outgoingEdges="_6jVAezJ5Eei-h6jx05T6BA _6jVAhDJ5Eei-h6jx05T6BA" incomingEdges="_6jVAXTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_5zJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1560,7 +1560,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_6DJ5Eei-h6jx05T6BA" name="nyse-a.LASTTRADE:NUMERIC (\t)" outgoingEdges="_6jVAgTJ5Eei-h6jx05T6BA _6jVAhzJ5Eei-h6jx05T6BA" incomingEdges="_6jVAYDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_6DJ5Eei-h6jx05T6BA" name="nyse-a.LASTTRADE" outgoingEdges="_6jVAgTJ5Eei-h6jx05T6BA _6jVAhzJ5Eei-h6jx05T6BA" incomingEdges="_6jVAYDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_6TJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1568,7 +1568,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_6jJ5Eei-h6jx05T6BA" name="nyse-a.VOLUME:NUMERIC (\t)" incomingEdges="_6jVAYzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_6jJ5Eei-h6jx05T6BA" name="nyse-a.VOLUME" incomingEdges="_6jVAYzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.3"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_6zJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1576,7 +1576,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_7DJ5Eei-h6jx05T6BA" name="nyse-a.CHANGE:NUMERIC (\t)" incomingEdges="_6jVAZjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_7DJ5Eei-h6jx05T6BA" name="nyse-a.CHANGE" incomingEdges="_6jVAZjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.4"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_7TJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1584,7 +1584,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_7jJ5Eei-h6jx05T6BA" name="nyse-a.PERCENT:NUMERIC (\t)" incomingEdges="_6jVAaTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_7jJ5Eei-h6jx05T6BA" name="nyse-a.PERCENT" incomingEdges="_6jVAaTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.5"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_7zJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1592,7 +1592,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_8DJ5Eei-h6jx05T6BA" name="buys.SHARES:ASCII (,)" outgoingEdges="_6jVAfjJ5Eei-h6jx05T6BA _6jVAijJ5Eei-h6jx05T6BA _6jVAljJ5Eei-h6jx05T6BA" incomingEdges="_6jVAbDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_8DJ5Eei-h6jx05T6BA" name="buys.SHARES" outgoingEdges="_6jVAfjJ5Eei-h6jx05T6BA _6jVAijJ5Eei-h6jx05T6BA _6jVAljJ5Eei-h6jx05T6BA" incomingEdges="_6jVAbDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.6"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_8TJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1600,7 +1600,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_8jJ5Eei-h6jx05T6BA" name="buys.SYMBOL:ASCII (,)" outgoingEdges="_6jVAeDJ5Eei-h6jx05T6BA _6jVAjTJ5Eei-h6jx05T6BA _6jVAkzJ5Eei-h6jx05T6BA _6jVAnDJ5Eei-h6jx05T6BA" incomingEdges="_6jVAbzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_8jJ5Eei-h6jx05T6BA" name="buys.SYMBOL" outgoingEdges="_6jVAeDJ5Eei-h6jx05T6BA _6jVAjTJ5Eei-h6jx05T6BA _6jVAkzJ5Eei-h6jx05T6BA _6jVAnDJ5Eei-h6jx05T6BA" incomingEdges="_6jVAbzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.7"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_8zJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1608,7 +1608,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_9DJ5Eei-h6jx05T6BA" name="buys.CLIENT:ASCII (,)" outgoingEdges="_6jVAdTJ5Eei-h6jx05T6BA _6jVAkDJ5Eei-h6jx05T6BA _6jVAmTJ5Eei-h6jx05T6BA" incomingEdges="_6jVAcjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jU_9DJ5Eei-h6jx05T6BA" name="buys.CLIENT" outgoingEdges="_6jVAdTJ5Eei-h6jx05T6BA _6jVAkDJ5Eei-h6jx05T6BA _6jVAmTJ5Eei-h6jx05T6BA" incomingEdges="_6jVAcjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@transformData/@dataInfo/@fields.8"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jU_9TJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1659,7 +1659,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAADJ5Eei-h6jx05T6BA" name="NEW_BALANCE:currency (14)" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAADJ5Eei-h6jx05T6BA" name="NEW_BALANCE" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.0/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAATJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1676,7 +1676,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVABDJ5Eei-h6jx05T6BA" name="Process RECORD">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVABDJ5Eei-h6jx05T6BA" name="Process: RECORD">
             <target xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.0/@sectionOptions.0"/>
             <semanticElements xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.0/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jVABTJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -1692,7 +1692,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
           </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVACDJ5Eei-h6jx05T6BA" name="Sum NEW_BALANCE">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVACDJ5Eei-h6jx05T6BA" name="Summary">
             <target xmi:type="scl:Summary" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.0/@sectionOptions.2"/>
             <semanticElements xmi:type="scl:Summary" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.0/@sectionOptions.2"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jVACTJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -1717,7 +1717,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVADjJ5Eei-h6jx05T6BA" name="BUYS.CLIENT:ASCII (17)" incomingEdges="_6jVAdTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVADjJ5Eei-h6jx05T6BA" name="BUYS.CLIENT" incomingEdges="_6jVAdTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVADzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1725,7 +1725,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAEDJ5Eei-h6jx05T6BA" name="BUYS.SYMBOL:ASCII (5)" incomingEdges="_6jVAeDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAEDJ5Eei-h6jx05T6BA" name="BUYS.SYMBOL" incomingEdges="_6jVAeDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAETJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1733,7 +1733,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAEjJ5Eei-h6jx05T6BA" name="NYSE-A.SYMBOL:ASCII (5)" incomingEdges="_6jVAezJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAEjJ5Eei-h6jx05T6BA" name="NYSE-A.SYMBOL" incomingEdges="_6jVAezJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAEzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1741,7 +1741,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAFDJ5Eei-h6jx05T6BA" name="BUYS.SHARES:ASCII (5)" incomingEdges="_6jVAfjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAFDJ5Eei-h6jx05T6BA" name="BUYS.SHARES" incomingEdges="_6jVAfjJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.3"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAFTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1749,7 +1749,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAFjJ5Eei-h6jx05T6BA" name="NYSE-A.LASTTRADE:NUMERIC (5)" incomingEdges="_6jVAgTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAFjJ5Eei-h6jx05T6BA" name="NYSE-A.LASTTRADE" incomingEdges="_6jVAgTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.4"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAFzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1757,7 +1757,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAGDJ5Eei-h6jx05T6BA" name="PRODUCT:NUMERIC (0)" incomingEdges="_6jVAhDJ5Eei-h6jx05T6BA _6jVAhzJ5Eei-h6jx05T6BA _6jVAijJ5Eei-h6jx05T6BA _6jVAjTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAGDJ5Eei-h6jx05T6BA" name="PRODUCT" incomingEdges="_6jVAhDJ5Eei-h6jx05T6BA _6jVAhzJ5Eei-h6jx05T6BA _6jVAijJ5Eei-h6jx05T6BA _6jVAjTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.5"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAGTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field-derived_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1765,7 +1765,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAGjJ5Eei-h6jx05T6BA" name="SEQUENCER:ASCII (4)" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAGjJ5Eei-h6jx05T6BA" name="SEQUENCER" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.6"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@dataInfo/@fields.6"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAGzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1782,7 +1782,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVAHjJ5Eei-h6jx05T6BA" name="Process RECORD">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVAHjJ5Eei-h6jx05T6BA" name="Process: RECORD">
             <target xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@sectionOptions.0"/>
             <semanticElements xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.1/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jVAHzJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -1818,7 +1818,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_FileDataInfoWithFields']"/>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAJjJ5Eei-h6jx05T6BA" name="BUYS.CLIENT:ASCII (|)" incomingEdges="_6jVAkDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAJjJ5Eei-h6jx05T6BA" name="BUYS.CLIENT" incomingEdges="_6jVAkDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.0"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.0"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAJzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1826,7 +1826,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAKDJ5Eei-h6jx05T6BA" name="BUYS.SYMBOL:ASCII (|)" incomingEdges="_6jVAkzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAKDJ5Eei-h6jx05T6BA" name="BUYS.SYMBOL" incomingEdges="_6jVAkzJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.1"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAKTJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1834,7 +1834,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAKjJ5Eei-h6jx05T6BA" name="BUYS.SHARES:ASCII (|)" incomingEdges="_6jVAljJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAKjJ5Eei-h6jx05T6BA" name="BUYS.SHARES" incomingEdges="_6jVAljJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.2"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.2/@dataInfo/@fields.2"/>
             <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_6jVAKzJ5Eei-h6jx05T6BA" labelSize="7" iconPath="/com.iri.model.flow.design/icons/field_16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/rectangle.svg">
@@ -1851,7 +1851,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVALjJ5Eei-h6jx05T6BA" name="Process XML">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVALjJ5Eei-h6jx05T6BA" name="Process: XML">
             <target xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.2/@sectionOptions.0"/>
             <semanticElements xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.2/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jVALzJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -1895,7 +1895,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAODJ5Eei-h6jx05T6BA" name="NEW_BALANCE:CURRENCY (15)" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVAODJ5Eei-h6jx05T6BA" name="NEW_BALANCE" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@dataInfo/@fields.1"/>
             <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1926,7 +1926,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVAPjJ5Eei-h6jx05T6BA" name="Process RECORD">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVAPjJ5Eei-h6jx05T6BA" name="Process: RECORD">
             <target xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@sectionOptions.0"/>
             <semanticElements xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jVAPzJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -1934,7 +1934,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@subNodeMappings[name='BMD_SectionOption']"/>
           </ownedElements>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVAQDJ5Eei-h6jx05T6BA" name="Sum NEW_BALANCE">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVAQDJ5Eei-h6jx05T6BA" name="Summary">
             <target xmi:type="scl:Summary" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@sectionOptions.1"/>
             <semanticElements xmi:type="scl:Summary" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.3/@sectionOptions.1"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jVAQTJ5Eei-h6jx05T6BA" labelAlignment="LEFT">
@@ -1978,7 +1978,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVASjJ5Eei-h6jx05T6BA" name="BUYS.CLIENT:ASCII (0)" incomingEdges="_6jVAmTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVASjJ5Eei-h6jx05T6BA" name="BUYS.CLIENT" incomingEdges="_6jVAmTJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.1"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.1"/>
             <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2000,7 +2000,7 @@
             </ownedStyle>
             <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_DBDataInfoWithFields']/@subNodeMappings[name='BMD_Fields']"/>
           </ownedDiagramElements>
-          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVATjJ5Eei-h6jx05T6BA" name="BUYS.SYMBOL:ASCII (0)" incomingEdges="_6jVAnDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
+          <ownedDiagramElements xmi:type="diagram:DNode" uid="_6jVATjJ5Eei-h6jx05T6BA" name="BUYS.SYMBOL" incomingEdges="_6jVAnDJ5Eei-h6jx05T6BA" width="-1" height="-1" resizeKind="NSEW">
             <target xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.3"/>
             <semanticElements xmi:type="scl:AdvancedField" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@dataInfo/@fields.3"/>
             <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2034,7 +2034,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer/@containerMappings[name='BMD_InputDatas']/@subContainerMappings[name='BMD_InputDataContext']/@subContainerMappings[name='BMD_SectionOptions']"/>
-          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVAVDJ5Eei-h6jx05T6BA" name="Process RECORD">
+          <ownedElements xmi:type="diagram:DNodeListElement" uid="_6jVAVDJ5Eei-h6jx05T6BA" name="Process: RECORD">
             <target xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@sectionOptions.0"/>
             <semanticElements xmi:type="ddf:Process" href="scripts/stockjoin_scl.flow#//@flowlets.0/@blocks.1/@outputDatas.4/@sectionOptions.0"/>
             <ownedStyle xmi:type="diagram:Square" uid="_6jVAVTJ5Eei-h6jx05T6BA" labelAlignment="LEFT">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ddf="http://www.iri.com/lang/Ddf" xmlns:Scl="http://www.iri.com/lang/Scl" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_Jz_0gG1VEeeMydmI8OdBow" selectedViews="_J8V4MG1VEeeMydmI8OdBow" version="14.1.0.201810161215">
+  <viewpoint:DAnalysis uid="_Jz_0gG1VEeeMydmI8OdBow" selectedViews="_J8V4MG1VEeeMydmI8OdBow" version="14.3.0.201909031200">
     <semanticResources>Telecom.flow</semanticResources>
     <semanticResources>metadata/CDR1.ddf</semanticResources>
     <semanticResources>metadata/CDR2.ddf</semanticResources>
@@ -20,7 +20,7 @@
     <semanticResources>outputExamples/Sort_Trunk.scl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_J8V4MG1VEeeMydmI8OdBow">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MA-CYG1VEeeMydmI8OdBow" name="Telecom" repPath="#_MA-CYW1VEeeMydmI8OdBow">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MA-CYG1VEeeMydmI8OdBow" name="Telecom" repPath="#_MA-CYW1VEeeMydmI8OdBow" changeId="57b12ef1-ee38-41f5-b242-8a9cc6e827f7">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
         <target xmi:type="flow:FlowBatch" href="Telecom.flow#Telecom.bat"/>
       </ownedRepresentationDescriptors>
@@ -58,7 +58,7 @@
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <diagram:DSemanticDiagram uid="_MA-CYW1VEeeMydmI8OdBow" name="Telecom">
+  <diagram:DSemanticDiagram uid="_MA-CYW1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MA-pcG1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_MA-pcW1VEeeMydmI8OdBow"/>
     </ownedAnnotationEntries>
@@ -75,7 +75,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_ME6HMG1VEeeMydmI8OdBow" type="3012" element="_MA-pdW1VEeeMydmI8OdBow">
                 <children xmi:type="notation:Node" xmi:id="_ME6HM21VEeeMydmI8OdBow" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_ME6HNG1VEeeMydmI8OdBow" x="-15" y="-19"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_ME6HNG1VEeeMydmI8OdBow" x="-65" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_MFFtYG1VEeeMydmI8OdBow" type="3005" element="_MA-pdm1VEeeMydmI8OdBow">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_MFFtYW1VEeeMydmI8OdBow" fontName="Segoe UI"/>
@@ -117,7 +117,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_MFGUc21VEeeMydmI8OdBow" type="3012" element="_MA-pfW1VEeeMydmI8OdBow">
                 <children xmi:type="notation:Node" xmi:id="_MFG7gG1VEeeMydmI8OdBow" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFG7gW1VEeeMydmI8OdBow" x="-15" y="-19"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFG7gW1VEeeMydmI8OdBow" x="-39" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_MFJXwG1VEeeMydmI8OdBow" type="3005" element="_MA-pfm1VEeeMydmI8OdBow">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_MFJXwW1VEeeMydmI8OdBow" fontName="Segoe UI"/>
@@ -159,7 +159,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_MFJ-0G1VEeeMydmI8OdBow" type="3012" element="_MA-phW1VEeeMydmI8OdBow">
                 <children xmi:type="notation:Node" xmi:id="_MFJ-021VEeeMydmI8OdBow" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFJ-1G1VEeeMydmI8OdBow" x="-15" y="-19"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFJ-1G1VEeeMydmI8OdBow" x="-37" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_MFKl5W1VEeeMydmI8OdBow" type="3005" element="_MA-phm1VEeeMydmI8OdBow">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_MFKl5m1VEeeMydmI8OdBow" fontName="Segoe UI"/>
@@ -190,7 +190,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_MFLM821VEeeMydmI8OdBow" type="3012" element="_MA-pi21VEeeMydmI8OdBow">
                 <children xmi:type="notation:Node" xmi:id="_MFLM9m1VEeeMydmI8OdBow" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFLM921VEeeMydmI8OdBow" x="-15" y="-19"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFLM921VEeeMydmI8OdBow" x="-37" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_MFMbEG1VEeeMydmI8OdBow" type="3005" element="_MA-pjG1VEeeMydmI8OdBow">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_MFMbEW1VEeeMydmI8OdBow" fontName="Segoe UI"/>
@@ -221,7 +221,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_MFNCIG1VEeeMydmI8OdBow" type="3012" element="_MA-pkW1VEeeMydmI8OdBow">
                 <children xmi:type="notation:Node" xmi:id="_MFNpMG1VEeeMydmI8OdBow" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFNpMW1VEeeMydmI8OdBow" x="-15" y="-19"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFNpMW1VEeeMydmI8OdBow" x="-37" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_MFO3UG1VEeeMydmI8OdBow" type="3005" element="_MA-pkm1VEeeMydmI8OdBow">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_MFO3UW1VEeeMydmI8OdBow" fontName="Segoe UI"/>
@@ -252,7 +252,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_MFO3Vm1VEeeMydmI8OdBow" type="3012" element="_MA-pl21VEeeMydmI8OdBow">
                 <children xmi:type="notation:Node" xmi:id="_MFPeYG1VEeeMydmI8OdBow" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFPeYW1VEeeMydmI8OdBow" x="-15" y="-19"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFPeYW1VEeeMydmI8OdBow" x="-39" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_MFQsgG1VEeeMydmI8OdBow" type="3005" element="_MA-pmG1VEeeMydmI8OdBow">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_MFQsgW1VEeeMydmI8OdBow" fontName="Segoe UI"/>
@@ -294,7 +294,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_MFRTk21VEeeMydmI8OdBow" type="3012" element="_MA-pn21VEeeMydmI8OdBow">
                 <children xmi:type="notation:Node" xmi:id="_MFR6oG1VEeeMydmI8OdBow" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFR6oW1VEeeMydmI8OdBow" x="-15" y="-19"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MFR6oW1VEeeMydmI8OdBow" x="-39" y="-14"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_MFTIwG1VEeeMydmI8OdBow" type="3005" element="_MA-poG1VEeeMydmI8OdBow">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_MFTIwW1VEeeMydmI8OdBow" fontName="Segoe UI"/>
@@ -530,7 +530,7 @@
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_MA-pcm1VEeeMydmI8OdBow" name="Telecom" width="220" height="20">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_MA-pcm1VEeeMydmI8OdBow" name="Telecom" width="-1" height="20">
       <target xmi:type="flow:Flowlet" href="Telecom.flow#//@flowlets.0"/>
       <semanticElements xmi:type="flow:Flowlet" href="Telecom.flow#//@flowlets.0"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MA-pc21VEeeMydmI8OdBow" showIcon="false" borderSize="2" borderSizeComputationExpression="2" borderColor="69,69,69" backgroundStyle="GradientTopToBottom">
@@ -902,7 +902,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer"/>
     <target xmi:type="flow:FlowBatch" href="Telecom.flow#Telecom.bat"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_XDnQcG1VEeeMydmI8OdBow" name="Sort_Trunk">
+  <diagram:DSemanticDiagram uid="_XDnQcG1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_XDnQcW1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_XDnQcm1VEeeMydmI8OdBow"/>
     </ownedAnnotationEntries>
@@ -1391,7 +1391,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer"/>
     <target xmi:type="flow:TransformMappingBlock" href="Telecom.flow#//@flowlets.0/@blocks.4"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_eUCKEG1VEeeMydmI8OdBow" name="Sort_Prefix">
+  <diagram:DSemanticDiagram uid="_eUCKEG1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_eUCKEW1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_eUCKEm1VEeeMydmI8OdBow"/>
     </ownedAnnotationEntries>
@@ -1880,7 +1880,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer"/>
     <target xmi:type="flow:TransformMappingBlock" href="Telecom.flow#//@flowlets.0/@blocks.5"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_gAym0G1VEeeMydmI8OdBow" name="Sort_Tariff">
+  <diagram:DSemanticDiagram uid="_gAym0G1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_gAym0W1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_gAym0m1VEeeMydmI8OdBow"/>
     </ownedAnnotationEntries>
@@ -2488,7 +2488,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer"/>
     <target xmi:type="flow:TransformMappingBlock" href="Telecom.flow#//@flowlets.0/@blocks.7"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_izeJ0G1VEeeMydmI8OdBow" name="Sort_CDR1">
+  <diagram:DSemanticDiagram uid="_izeJ0G1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_izeJ0W1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_izeJ0m1VEeeMydmI8OdBow"/>
     </ownedAnnotationEntries>
@@ -4581,7 +4581,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer"/>
     <target xmi:type="flow:TransformMappingBlock" href="Telecom.flow#//@flowlets.0/@blocks.1"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_p15DsG1VEeeMydmI8OdBow" name="Sort_CDR2">
+  <diagram:DSemanticDiagram uid="_p15DsG1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_p15DsW1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_p15Dsm1VEeeMydmI8OdBow"/>
     </ownedAnnotationEntries>
@@ -6926,7 +6926,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer"/>
     <target xmi:type="flow:TransformMappingBlock" href="Telecom.flow#//@flowlets.0/@blocks.3"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_sTd5YG1VEeeMydmI8OdBow" name="Sort_CDR3">
+  <diagram:DSemanticDiagram uid="_sTd5YG1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_sTd5YW1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_sTd5Ym1VEeeMydmI8OdBow"/>
     </ownedAnnotationEntries>
@@ -9433,7 +9433,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']/@defaultLayer"/>
     <target xmi:type="flow:TransformMappingBlock" href="Telecom.flow#//@flowlets.0/@blocks.9"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_wa8FEG1VEeeMydmI8OdBow" name="Sort_CDR4">
+  <diagram:DSemanticDiagram uid="_wa8FEG1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_wa8FEW1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_wa8FEm1VEeeMydmI8OdBow"/>
     </ownedAnnotationEntries>
