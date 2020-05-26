@@ -9,4 +9,5 @@ sortcl /SPECIFICATION=Load_Emp_Salary_Range_Dim.scl
 sortcl /SPECIFICATION=Load_Emp_Dim.scl
 sortcl /SPECIFICATION=Load_Dept_Dim.scl
 sortcl /SPECIFICATION=Load_Category_Dim.scl
+sortcl /SPECIFICATION=Load_Sale_Dim.scl
 sqlplus scott/tiger@localhost/XE < EnableFK_Multiple_Tables.sql
