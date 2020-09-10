@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2020 Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Increment Job</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Increment Job</h1>
+
+  <p>This demonstrates the use of a timestamp to 
+  determine which records should be loaded into 
+  another database. Only Oracle records that are new
+  or updated since the last run of the job will
+  be copied into the MySQL database.</p>
+  
+  <p><strong>IMPORTANT:</strong> Before running this demo, 
+  expand the setup folder and 
+  right-click <em>reset_demo.bat</em>. Select 
+  <strong>Run As &gt; Batch Program</strong>.</p>
+
+  <p>Recommended steps to perform the demo in the Workbench:</p>
+  
+  <ol>
+    <li style="margin-bottom: 10px;">
+    In Data Source Explorer, right-click 
+    <strong>MySQL &gt test &gt client &gt Data &gt Sample Contents</strong>
+    to see that the table contains no data.
+    
+    <li style="margin-bottom: 10px;">
+	Open <strong>Increment.flow</strong>.
+	The job performs the follow actions:
+	
+	<ol>
+	    <li style="margin-bottom: 10px;">
+		Changes the working directory.
+		
+   		<li style="margin-bottom: 10px;">
+		Sets the <em>LASTTIME</em> environment variable
+		with the timestamp in the <em>LastTime</em> file
+		(which is the last time this job was run).
+		
+		<li style="margin-bottom: 10px;">
+		Runs the <em>Timestamp</em> script to retrieve
+		the current timestamp from the database
+		and saves it to the <em>LastTimeTemp</em> file.
+		
+		<li style="margin-bottom: 10px;">
+		Runs the <em>Changes</em> script to take the Oracle records
+		that are created or updated after the environment variable
+		timestamp and appends
+		them into the MySQL database.
+		
+		<li style="margin-bottom: 10px;">
+		If the previous steps result in an error,
+		the job ends.
+		If not, the file <em>LastTimeTemp</em> is renamed 
+		to <em>LastTime</em> to update the timestamp
+		to the last time this job was run.
+  	
+  	</ol>
+  	
+    <li style="margin-bottom: 10px;">
+	In Project Explorer, right-click 
+	<strong>Increment.bat</strong>. Select 
+  	<strong>Run As &gt; Batch Program</strong>.
+
+	<li style="margin-bottom: 10px;">
+    In Data Source Explorer, right-click 
+    <strong>MySQL &gt test &gt client &gt Data &gt Edit</strong>
+    to see that the table is loaded with 122 records instead of
+    the 1000 records in the Oracle table. This example picks an 
+    arbitrary starting point that purposely skips some "previous" 
+    records just to show that the filter works.
+	
+  </ol>
+
+</body>
+</html>

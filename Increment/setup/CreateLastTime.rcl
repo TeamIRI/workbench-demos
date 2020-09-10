@@ -1,0 +1,16 @@
+# Generated with IRI Workbench - New Test Data Job
+#
+ # Author: iridemo
+ # Created: 2020-09-10 11:52:17
+ #
+
+/INFILE=random_file_placeholder
+	/PROCESS=RANDOM
+	/INCOLLECT=1
+	/FIELD=(LAST_TIME, TYPE=ALPHA_DIGIT, POSITION=1, SIZE=1, SEPARATOR=",")
+
+/REPORT
+
+/OUTFILE=C:/git/workbench-demos/Increment/LastTime.txt
+	/PROCESS=RECORD
+	/FIELD=(LAST_TIME="2008-09-10 09:39:23.5", TYPE=ALPHA_DIGIT, POSITION=1, SEPARATOR=",")
