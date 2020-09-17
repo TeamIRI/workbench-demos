@@ -26,8 +26,19 @@
   determine which records should be loaded into 
   another database. Only Oracle records that are new
   or updated since the last run of the job will
-  be copied into the MySQL database.</p>
+  be copied into the MySQL database.
+  Additionally, the SSN number field will be partially redacted
+  and emails ending in <em>.edu</em> will be fully redacted
+  in the target.</p>
   
+  <p>This demo requires and uses the following resources:</p>
+
+  <ul type="disc">
+    <li>The DTP connection profile Oracle</li>
+
+    <li>The ODBC DSN Oracle</li>
+  </ul>
+
   <p><strong>IMPORTANT:</strong> Before running this demo, 
   expand the setup folder and 
   right-click <em>reset_demo.bat</em>. Select 
@@ -63,7 +74,8 @@
 		Runs the <em>Changes</em> script to take the Oracle records
 		that are created or updated after the environment variable
 		timestamp and appends
-		them into the MySQL database.
+		them into the MySQL database. It also partially redacts the 
+		SSN field and fully redacts emails ending in <em>.edu</em>.
 		
 		<li style="margin-bottom: 10px;">
 		If the previous steps result in an error,
