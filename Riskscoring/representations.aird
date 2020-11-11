@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="_XQyioCN_EeuxishcAZgqLg" selectedViews="_XVPk0CN_EeuxishcAZgqLg" version="14.3.0.201909031200">
+  <semanticResources>metadata/DATA_CSV.ddf</semanticResources>
+  <semanticResources>iriLibrary.rules</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" uid="_XVPk0CN_EeuxishcAZgqLg">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

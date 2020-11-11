@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2020. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Risk Scoring</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;}
+  li {margin-bottom: 10px;}
+  </style>
+</head>
+
+<body>
+  <h1>Generating and Improving the Risk Score for a Structured Data File</h1>
+
+  <p>This demonstrates a simple example of producing a risk score compliant with
+  HIPAA's <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html">Expert Determination</a> 
+  methodology.</p>
+
+  <p>Recommended steps to perform the demo in IRI Workbench:</p>
+
+  <h2>Data:</h2>
+
+  <ol>
+    <li>In the <strong>data</strong> folder, open <strong>data.csv</strong> and observe its contents.
+    Note that the data represents a realistic but non-real data set of people's information
+    and their salary. The <strong>age</strong> field does not contain ages over 90, which complies with
+    HIPAA's Safe Harbor provision.</li>
+  </ol>
+
+  <h2 id="wizard">Risk Scoring Wizard</h2>
+  
+  <ol>
+    <li>Open the <strong>New Re-ID Risk Scoring</strong> wizard from the
+    <strong>FieldShield</strong> menu.</li>
+  </ol>
+  
+  <h2>Setup Page</h2>
+  <ol>
+    <li>In the <strong>Folder</strong> field, make sure <strong>Riskscoring</strong> is the selected
+    project folder.</li>
+
+    <li>Select the <strong>Create a new folder using the name below</strong> checkbox. 
+    The output files will be placed into a new folder.</li>
+
+	<li>In the <strong>Name</strong> field, leave the default name of
+	<strong>riskscorer_output</strong> for this example.</li>
+
+    <li>Select the <strong>Create HTML report</strong> checkbox to generate a portable
+    HTML report of the risk score.</li>
+
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Data Source Page</h2>
+  <ol>
+    <li>Select the <strong>Flat file</strong> checkbox and click <strong>Next</strong>
+    to continue to the next page.</li>
+  </ol>
+  
+  <h2>Flat File Page</h2>
+  <ol>
+    <li>In the <strong>File name</strong> field, click <strong>Browse</strong> and
+    navigate to the <strong>data.csv</strong> file.</li>
+    
+    <li>In the <strong>Superset region</strong> field, select <strong>USA</strong>.</li>
+	
+	<li>In the <strong>Separator</strong> field, enter <strong>;</strong>.</li>
+	
+	<li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Preview Page</h2>
+  <ol>
+    <li>Select the <strong>First line is header row</strong> checkbox.</li>
+
+    <li>Confirm that the preview matches the data and click <strong>Next</strong> 
+    to continue to the next page.</li>
+  </ol>
+	
+  <h2>Attributes Page</h2>
+  <ol>
+    <li>In the <strong>Type</strong> column, select <strong>Quasi-Identifying</strong>
+    for the following attributes: sex, age, race, marital-status, education, 
+    native-country, workclass, occupation.</li>
+
+    <li>Select <strong>Sensitive</strong> for the <strong>salary-class</strong> attribute.</li>
+    
+    <li>Select <strong>Identifying</strong> for the <strong>ldl</strong> attribute.</li>
+    
+    <li>Click <strong>Finish</strong>.</li>
+  </ol>
+  
+  <h2>Risk Score</h2>
+  <ol>
+  	<li>Double-click on the <strong>Risk Score</strong> tab to maximize it. If no tab
+  	is present, right-click on <strong>riskscorer_output.riskscorer</strong> file
+  	inside of the <strong>riskscorer_output</strong> folder and select <strong>IRI &gt; 
+  	Show Risk Score</strong>.</li>
+  	
+  	<li>Observe the estimated risks associated with the three different attacker
+  	models: <strong>Prosecutor</strong>, <strong>Journalist</strong>, and <strong>
+  	Marketer</strong>.</li>
+  	
+  	<li>Observe the record numbers in the different Equivalence Classes by hovering
+  	over the bars. An equivalence class <strong>k</strong> represents the number of records
+  	that are indistinguishable from <strong>k-1</strong> other records (an equivalence class of
+  	1 contains unique records).</li>
+  	
+  	<li>Click on the <strong>Quasi-Identifiers</strong> tab. The effect of Quasi-Identifiers
+  	on the risk score is calculated from their <strong>Distinction</strong> and <strong>Separation
+  	</strong> metrics. The distinction value represents the ratio of unique values for the
+  	quasi-identifier/s relative to the total number of records, while the separation value represents
+  	the ratio of record pairs that are different from one another based on one or more Quasi-Identifiers
+  	compared to the total number of record pairings that can be observed.</li>
+
+  	<li>Click on the dropdowns on the right-side table to observe the effect of
+  	multiple quasi-identifiers taken in conjunction. Zoom in and out of the <strong>
+  	Quasi-Identifiers</strong> chart to identify the quasi-identifier combinations
+  	with the highest distinction and separation values.</li>
+  	
+  	<li>Right-click on the <strong>riskscorer-output.html</strong> file and select
+  	<strong>Open with &gt; Web Browser</strong> to view the report inside Workbench.</li>
+  	
+  	<li>Click on the <strong>Uniqueness</strong> tab to view the statistical estimates of
+  	uniqueness of the dataset if combined with a theoretical superset population (in this case, the
+  	US census).</li>
+  </ol>
+  
+  <h2>Anonymization</h2>
+  
+  <p>To Anonymize the dataset and improve our risk score, we will categorize/generalize
+  the marital-status and education Quasi-Identifiers and add random noise to the age. Note
+  that other techniques can be used and the other quasi-identifiers should also be anonymized
+  for better scores.</p>
+  
+  <ol>
+    <li>Open the <strong>New Masking Job</strong> from the <strong>FieldShield</strong> menu.</li>
+  </ol>
+  
+  <h2>Setup Page</h2>
+  <ol>
+    <li>In the <strong>Folder</strong> field, make sure <strong>Riskscoring</strong> is the selected
+    project folder.</li>
+    
+    <li>In the <strong>File name</strong> field, leave the default name of
+	<strong>new_job</strong> for this example.</li>
+  	
+  	<li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Data Sources Page</h2>
+  <ol>
+    <li>Click on <strong>Add Data Source</strong>.</li>
+    
+    <li>In the <strong>File</strong> field, click <strong>Browse</strong> and
+    navigate to the <strong>data.csv</strong> file. Click <strong>OK</strong>.</li>
+    
+    <li>Click <strong>Add Existing Metadata</strong> and select <strong>DATA_CSV.ddf</strong>
+    from the list. Click <strong>OK</strong>. Click <strong>Yes</strong> for the 
+    <strong>Save specification</strong> popup.</li>
+    
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Data Targets Page</h2>
+  <ol>
+    <li>Click on <strong>Add Data Target</strong>.</li>
+    
+    <li>In the <strong>File</strong> field, enter <strong>masked.csv</strong>.
+    Click <strong>OK</strong>.</li>
+    
+    <li>Click on <strong>Add Existing Metadata</strong> and select <strong>DATA_CSV.ddf</strong>
+    from the list. Click <strong>OK</strong>. Click <strong>Yes</strong> for the 
+    <strong>Save specification</strong> popup.</li>
+    
+    <li>Click on <strong>Target Field Layout</strong>.</li>
+  </ol>
+  
+  <h2>Age Blurring</h2>
+  <ol>
+    <li>In the <strong>Targets</strong> table, right-click on <strong>AGE</strong>
+    and select <strong>Apply Rule &gt; Create Rule</strong>.</li>
+    
+    <li>Under <strong>Masking Rules</strong>, select <strong>Blur Functions</strong>.</li>
+    
+    <li>In the <strong>Rule Name</strong> field, enter <strong>BlurAgeRule</strong>.</li>
+    
+    <li>Click <strong>Next</strong>.</li>
+    
+    <li>Make sure the <strong>blur_age</strong> expression is selected.</li>
+    
+    <li>In the <strong>Minimum</strong> field, enter <strong>18</strong>. Blurred ages will never
+    go under this value.</li>
+    
+    <li>In the <strong>Maximum</strong> field, enter <strong>90</strong>. Blurred ages will never
+    go over this value.</li>
+    
+    <li>In the <strong>Blur</strong> field, enter <strong>10</strong>. This will generate a random value
+    in the range of -10 <= n <=10 for every new age and apply it to the original.</li>
+  
+  	<li>Click <strong>Finish</strong>.</li>
+  </ol>
+  
+  <h2 id="marital-status">Marital Status Bucketing</h2>
+  <ol>
+    <li>In the <strong>Targets</strong> table, right-click on <strong>MARITAL_STATUS</strong>
+    and select <strong>Apply Rule &gt; Create Rule</strong>.</li>
+    
+    <li>Under <strong>Masking Rules</strong>, select <strong>Generalization via Bucketing</strong>.</li>
+    
+    <li>In the <strong>Rule Name</strong> field, enter <strong>BucketMaritalStatusRule</strong>.</li>
+    
+    <li>Click <strong>Next</strong>.</li>
+    
+    <li>In the <strong>File name</strong> field, enter <strong>marital_bucket</strong>.</li>
+    
+    <li>Click <strong>Next</strong>.</li>
+    
+    <li>In the <strong>Source</strong> field, click <strong>Browse</strong>.</li>
+    
+    <li>In the <strong>File</strong> field, click <strong>Browse</strong> and
+    navigate to the <strong>data.csv</strong> file. Click <strong>OK</strong>.</li>
+    
+    <li>In the <strong>Format</strong> dropdown, select CSV.</li>
+    
+    <li>In the <strong>Metadata</strong> field, select <strong>Browse</strong>.
+    Select <strong>DATA_CSV.ddf</strong> from the list and click <strong>OK</strong>.</li>
+    
+    <li>In the <strong>Field</strong> dropdown, select <strong>MARITAL_STATUS</strong>.</li>
+    
+    <li>Click <strong>Next</strong>.</li>
+    
+    <li>From the <strong>Source values</strong> table, click and drag the following entries
+    into the <strong>Values</strong> field under <strong>Group Details</strong>: Divorced,
+    Never-Married, Separated, Widowed.</li>
+    
+    <li>In the <strong>Replacement</strong> field, enter <strong>Not-Married</strong>.</li>
+    
+    <li>Click <strong>Add group to results</strong>.</li>
+    
+    <li>From the <strong>Source values</strong> table, click and drag the remaining values
+    into the <strong>Values</strong> field under <strong>Group Details</strong>.</li>
+    
+    <li>In the <strong>Replacement</strong> field, enter <strong>Married</strong>.</li>
+    
+    <li>Click <strong>Finish</strong>.</li>
+  </ol>
+  
+  <h2>Education Bucketing</h2>
+  <ol>
+    <li>In the <strong>Targets</strong> table, right-click on <strong>MARITAL_STATUS</strong>
+    and select <strong>Apply Rule &gt; Browse Rule</strong>.</li>
+    
+    <li>Select <strong>BucketEducationRule</strong> and click <strong>OK</strong>.</li>
+    
+    <li>Note that if you don't see the rule in the list, you can re-create it using
+    the process described in <a href="#marital-status">Marital Status Bucketing</a> or
+    skip this rule entirely.></li>
+    
+    <li>Click <strong>OK</strong> and then click </strong>Finish</strong>.</li>
+  </ol>
+  
+  <h2>Masking</h2>
+  <ol>
+    <li>In the <strong>Project Explorer</strong>, right-click on <strong>new_job.fcl</strong>
+    and select <strong>Run As &gt; IRI Job</strong>.</li>
+    
+    <li>Select the generated <strong>masked.csv</strong> file, and then ctrl-right-click
+    <strong>data.csv</strong> and select <strong>Compare With &gt; Each Other</strong>. Note
+    the differences in the values.
+  </ol>
+  
+  <h2>Second Risk Score</h2>
+  <ol>
+    <li>Follow the steps outlined in the <a href="#wizard">Risk Scoring Wizard</a> section,
+    this time using <strong>riskscorer_output2</strong> as the name and <strong>masked.csv</strong> 
+    as the source. Instead of setting <strong> age</strong> as a <strong>Quasi-Identifying</strong> 
+    attribute, it should now be left as <strong>Insensitive</strong> since it no longer represents 
+    the original value due to the addition of random noise.</li>
+    
+    <li>Double-click on the <strong>Risk Score</strong> tab to maximize it. If no tab
+  	is present, right-click on <strong>riskscorer_output2.riskscorer</strong> file
+  	inside of the <strong>riskscorer_output2</strong> folder and select <strong>IRI &gt; 
+  	Show Risk Score</strong>.</li>
+    
+    <li>Under the <strong>Risk Score</strong> tab, note the decrease in the estimated marketer risk.</li>
+    
+    <li>In the <strong>Equivalence Class Chart</strong>, note the decrease in the number of records
+    for the red equivalence classes.</li>
+    
+    <li>Under the <strong>Quasi-Identifiers</strong> tab, note the decrease in the distinction and
+    separation values for <strong>education</strong> and <strong></strong></li>
+  </ol>
+  
+  <h2>Resetting Demo</h2>
+  <ol>
+  	<li>In the <strong>Project Explorer</strong>, right-click on <strong>Riskscoring</strong> and
+  	select <strong>Replace With &gt; Index</strong>. Click <strong>Discard Changes</strong>.</li>
+  	
+  	<li>Inside the <strong>Riskscoring</strong> project, delete the following folders and files:
+  	riskscorer_output, riskscorer_output2, marital_bucket.set, masked.csv, new_job.fcl.</li>
+  </ol>
+</body>
+</html>
