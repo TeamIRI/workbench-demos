@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:SQLTables="http:///org/eclipse/datatools/modelbase/sql/tables.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLConstraints="http:///com/iri/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///com/iri/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLSchema="http:///com/iri/datatools/modelbase/sql/schema.ecore" xmlns:SQLTables="http:///com/iri/datatools/modelbase/sql/tables.ecore">
   <SQLSchema:Catalog name="" Database="/1" schemas="/10"/>
   <SQLSchema:Database name="XE" catalogs="/0"/>
   <SQLTables:PersistentTable name="SALE_DIM" schema="/10">
