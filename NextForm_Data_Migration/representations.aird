@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_7afVwFVDEemV8bbHV-MoVw" version="14.1.0.201810161215">
-  <semanticResources>Column%20Rule/SCOTT.EMPLOYEES.ncl</semanticResources>
-  <semanticResources>Data%20Federation/datafederation.ncl</semanticResources>
-  <semanticResources>File%20Conversion/ascii_to_unicode.scl</semanticResources>
-  <semanticResources>File%20Conversion/delimited_to_fixed.scl</semanticResources>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_7afVwFVDEemV8bbHV-MoVw" version="14.3.0.201909031200">
   <semanticResources>metadata/chiefs.ddf</semanticResources>
   <semanticResources>metadata/historytable.ddf</semanticResources>
   <semanticResources>metadata/jobs.ddf</semanticResources>
+  <semanticResources>column_rule/SCOTT.EMPLOYEES.ncl</semanticResources>
+  <semanticResources>data_federation/datafederation.ncl</semanticResources>
+  <semanticResources>file_conversion/ascii_to_unicode.scl</semanticResources>
+  <semanticResources>file_conversion/delimited_to_fixed.scl</semanticResources>
 </viewpoint:DAnalysis>
