@@ -110,7 +110,8 @@
 	the Data Target dialog.</li>
 	
 	<li>In the <strong>Directory</strong> field, click <strong>Browse</strong> and navigate
-	to the directory where the remediated files should be stored.</li>
+	to the directory where the remediated files should be stored. In this example,
+	create a <strong>remediated</strong> folder.</li>
 	
 	<li>Click <strong>OK</strong> to add the folder to the list of Target URIs,
 	and click <strong>Next</strong> to continue to the next page.</li>
@@ -131,7 +132,7 @@
 
     <li>In the <strong>Matcher Name</strong> field, type "NamesMatcher".</li>
     
-    <li>In the <strong>Data Class Name</strong> field, click <strong>Create</strong>
+    <li>In the <strong>Data Class Name</strong> row, click <strong>Create</strong>
     to open the <strong>Data Class or Group</strong> dialog.</li>
     
     <li>In the <strong>Name</strong> field, type "NAMES_NLP".</li>
@@ -147,7 +148,7 @@
     <li>Click <strong>OK</strong> to add the Data Class Matcher to the <em>NAMES_NLP</em>
     Data Class.</li>
     
-    <li>In the <strong>Rule Name</strong> field, click <strong>Browse</strong> and
+    <li>In the <strong>Rule Name</strong> row, click <strong>Browse</strong> and
     select the <em>EncryptNamesRule</em> from the list.</li>
 
     <li>Click <strong>OK</strong> to add the <em>NamesMatcher</em> to the list of
@@ -164,7 +165,7 @@
     <li>In the <strong>Data Class Name</strong> field, click <strong>Browse</strong>
     to open the <strong>Data Class Selection</strong> dialog.</li>
     
-    <li>In the <strong>Data Class</strong> field, select the <strong>EMAILS</strong>
+    <li>In the <strong>Data Class</strong> field, select the <strong>EMAIL</strong>
     Data Class and click <strong>OK</strong>.</li>
     
     <li>In the <strong>Rule Name</strong> field, click <strong>Browse</strong> and
@@ -179,21 +180,21 @@
   <h2>PDF Configuration Page</h2>
   <ol>
     <li>Keep the default parameters and click <strong>Finish</strong>.</li>
-
-    <li>The wizard will generate a new file called <strong>new_search.search
-    </strong> in the <strong>new_search</strong> folder of the DarkShield
-    project.</li>
   </ol>
 
   <h2>Results:</h2>
   <ol>
+    <li>The wizard will generate a new file called <strong>new_search.search
+    </strong> in the <strong>new_search</strong> folder of the DarkShield
+    project.</li>
+
     <li>To run the search and masking, right click on new_search.search
     and select <strong>run as &gt; IRI Search and Masking Job</strong>.</li>
 
     <li>In the <strong>Project Explorer</strong> view, navigate to the
-    <strong>DarkShield &gt; search_output</strong> folder.</li>
+    <strong>DarkShield &gt; new_search</strong> folder.</li>
 
-    <li>Double click on the <em>search_output.txt</em> file to open the results
+    <li>Double click on the <em>new_search.txt</em> file to open the results
     file in the Workspace.</li>
 
     <li>Double-click on the <em>new_search.darkdata</em> file to open the
