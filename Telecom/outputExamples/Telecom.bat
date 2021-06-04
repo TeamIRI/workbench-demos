@@ -40,6 +40,3 @@ sortcl /SPECIFICATION=Sort_CDR1.scl
 sortcl /SPECIFICATION=Sort_CDR2.scl
 sortcl /SPECIFICATION=Sort_CDR3.scl
 sortcl /SPECIFICATION=Sort_CDR4.scl
-)
-)
-)
