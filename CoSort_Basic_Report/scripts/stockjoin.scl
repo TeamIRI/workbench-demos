@@ -4,11 +4,11 @@
 
 ### Job Controls Phase ###
 /MONITOR=1
-/STATISTICS=..\JobStats\tradinga.stat
+/STATISTICS=../JobStats/tradinga.stat
 /WARNINGSOFF 
 
 #### Input Source Specifications ####
-/INFILE=..\InputFiles\nyse-a.txt # tab-delimited format
+/INFILE=../InputFiles/nyse-a.txt # tab-delimited format
 	/PROCESS=DELIMITED
 	/ALIAS=nyse-a
 	/FIELD=(ISSUE, TYPE=ASCII, POSITION=1, SEPARATOR="\t")
@@ -18,7 +18,7 @@
 	/FIELD=(CHANGE, TYPE=NUMERIC, POSITION=5, PRECISION=2, SEPARATOR="\t")
 	/FIELD=(PERCENT, TYPE=NUMERIC, POSITION=6, PRECISION=2, SEPARATOR="\t")
 
-/INFILE=..\InputFiles\buys.csv # CSV format
+/INFILE=../InputFiles/buys.csv # CSV format
 	/PROCESS=CSV
 	/ALIAS=buys
 	/INSKIP=1 # skip header record
@@ -51,7 +51,7 @@
 	
 # #### Output File 2 - Data Interchange Format ####
 
-/OUTFILE=..\Targets\TradingA.xml
+/OUTFILE=../Targets/TradingA.xml
 	/PROCESS=XML
 	/FIELD=(BUYS.CLIENT, TYPE=ASCII, POSITION=1, SEPARATOR="|", XDEF="/Trades/Buy@Client")
 	/FIELD=(BUYS.SYMBOL, TYPE=ASCII, POSITION=2, SEPARATOR="|", XDEF="/Trades/Buy/Symbol")
@@ -61,7 +61,7 @@
 
 # ### Output File 3 - HTML Format ####
 
-/OUTFILE=..\Targets\TradingA.htm # summary record format
+/OUTFILE=../Targets/TradingA.htm # summary record format
 	/PROCESS=RECORD
 	/DATA="</FONT><B></TD>\n<TD align=right><B><U><FONT SIZE=+2><FONT COLOR=\'GREEN\'>"
 	/FIELD=(NEW_BALANCE, TYPE=CURRENCY, SIZE=15, SEPARATOR="")
@@ -69,7 +69,7 @@
 	/SUM NEW_BALANCE FROM(NYSE-A.LASTTRADE * BUYS.SHARES)WHERE SYMBOL NE "RNT"
 	/FOOTREC="</TABLE><BR>\nCreated on </B>%s.              <HR></BODY>\n</HTML>", AMERICAN_DATE
 
-/OUTFILE=..\Targets\TradingA.htm # detail record format
+/OUTFILE=../Targets/TradingA.htm # detail record format
 	/PROCESS=RECORD
 	/HEADREC="<HTML><HEAD>\n<TITLE>HTML produced by SORTCL               </TITLE>\n</HEAD>\n<BODY> \n \t\t<H2><FONT COLOR=\'RED\'>Trading Summary                </H2>\n<TABLE CELLPADDING=4 CELLSPACING=1 BORDER COLS=5>\n"
 	/DATA="<TR>\n<TD><I>"
