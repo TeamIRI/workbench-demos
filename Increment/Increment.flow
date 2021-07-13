@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="Increment.bat">
+<flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="Increment.sh">
   <flowlets name="Increment">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_Change_Directory"/>
-    <blocks xsi:type="flow:CommandLine" name="Set-LASTTIME" outputConnections="Set-LASTTIME_To_SCOTT.CLIENT" inputConnections="Change_Directory_To_Set-LASTTIME" command="SET">
-      <parameters>/p LASTTIME=&lt;LastTime.txt</parameters>
+    <blocks xsi:type="flow:CommandLine" name="Set-LASTTIME" outputConnections="Set-LASTTIME_To_SCOTT.CLIENT" inputConnections="Change_Directory_To_Set-LASTTIME" command="export">
+      <parameters>LASTTIME=$(cat LastTime.txt)</parameters>
     </blocks>
     <blocks xsi:type="flow:TransformMappingBlock" name="Timestamp.scl" iriJob="Timestamp.scl">
       <inputDatas name="SCOTT.CLIENT" inputConnections="Set-LASTTIME_To_SCOTT.CLIENT">
@@ -35,7 +35,7 @@
         <sectionOptions xsi:type="scl:Query" value="SELECT TO_CHAR(CURRENT_TIMESTAMP, 'YYYY-MM-DD HH24:MI:SS.FF1') FROM DUAL;"/>
       </inputDatas>
       <outputDatas name="LastTimeTemp.txt" outputConnections="LastTimeTemp.txt_To_SCOTT.CLIENT">
-        <dataInfo xsi:type="flow:FileDataInfo" name="LastTimeTemp.txt" fileName="C:/git/workbench-demos/Increment/LastTimeTemp.txt">
+        <dataInfo xsi:type="flow:FileDataInfo" name="LastTimeTemp.txt" fileName="/home/iridemo/git/workbench-demos/Increment/LastTimeTemp.txt">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -93,15 +93,14 @@
         </dataInfo>
       </transformData>
     </blocks>
-    <blocks xsi:type="flow:EndBlock" name="End" inputConnections="Decision_To_End" return="ERROR"/>
-    <blocks xsi:type="flow:CommandLine" name="Rename-LastTimeTemp" outputConnections="Rename-LastTimeTemp_To_End" inputConnections="Decision_To_Rename-LastTimeTemp" command="copy">
-      <parameters>/Y</parameters>
-      <parameters>LastTimeTemp.txt LastTime.txt</parameters>
+    <blocks xsi:type="flow:EndBlock" name="End" inputConnections="Decision_To_End" return="echo ERROR"/>
+    <blocks xsi:type="flow:CommandLine" name="Rename-LastTimeTemp" outputConnections="Rename-LastTimeTemp_To_End" inputConnections="Decision_To_Rename-LastTimeTemp" command="cp">
+      <parameters> LastTimeTemp.txt LastTime.txt</parameters>
     </blocks>
     <blocks xsi:type="flow:Decision" name="Decision" outputConnections="Decision_To_End Decision_To_Rename-LastTimeTemp" inputConnections="test.client_To_Decision" trueConnection="Decision_To_End" falseConnection="Decision_To_Rename-LastTimeTemp">
-      <criteria name="not %ERRORLEVEL% == 0" condition="not %ERRORLEVEL% == 0"/>
+      <criteria name="! $? == 0" condition="! $? == 0"/>
     </blocks>
-    <blocks xsi:type="flow:ChangeDirectoryBlock" name="Change_Directory" outputConnections="Change_Directory_To_Set-LASTTIME" inputConnections="Start_To_Change_Directory" directory="C:/git/workbench-demos/Increment"/>
+    <blocks xsi:type="flow:ChangeDirectoryBlock" name="Change_Directory" outputConnections="Change_Directory_To_Set-LASTTIME" inputConnections="Start_To_Change_Directory" directory="/home/iridemo/git/workbench-demos/Increment"/>
     <blocks xsi:type="flow:EndBlock" name="End" inputConnections="Rename-LastTimeTemp_To_End" return="echo Job Finished"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="Changes.scl" iriJob="Changes.scl">
       <inputDatas name="SCOTT.CLIENT" inputConnections="LastTimeTemp.txt_To_SCOTT.CLIENT">
@@ -441,8 +440,8 @@
           </compoundExpression>
         </sectionOptions>
       </inputDatas>
-      <outputDatas name="test.client" outputConnections="test.client_To_Decision">
-        <dataInfo xsi:type="flow:DBDataInfo" name="MySQL.test.client" DSN="MySQL" DTPName="MySQL" providerName="MySQL" database="MySql" hostName="localhost" instanceName="test" userName="scott" password="tiger" schema="test" table="client" delimiter="&#x9;">
+      <outputDatas name="test.CLIENT" outputConnections="test.client_To_Decision">
+        <dataInfo xsi:type="flow:DBDataInfo" name="MySQL.test.CLIENT" DSN="MySQL" DTPName="MySQL" providerName="MySQL" database="MySql" hostName="localhost" instanceName="test" userName="scott" password="tiger" schema="test" table="client" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>

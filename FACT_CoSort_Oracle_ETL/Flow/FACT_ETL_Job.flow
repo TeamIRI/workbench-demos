@@ -2,7 +2,7 @@
 <flow:FlowBatch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl" name="FACT_ETL.bat">
   <flowlets name="FACT_ETL">
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_In_SCOTT.ORDERS"/>
-    <blocks xsi:type="flow:CommandLine" name="SCOTT.ORDERS.ctl" inputConnections="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" command="sqlldr scott/tiger control=orders.ctl DIRECT=TRUE"/>
+    <blocks xsi:type="flow:CommandLine" name="SCOTT.ORDERS.ctl" inputConnections="Out_../TargetFiles/table_output.dat_To_SCOTT.ORDERS.ctl" command="sqlldr scott/tiger control=orders.ctl DIRECT=TRUE"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="orders_sorted.scl" iriJob="orders_sorted.scl">
       <inputDatas name="stdin" inputConnections="Out_stdout_To_In_stdin">
         <dataInfo xsi:type="flow:FileDataInfo" name="stdin" fileName="stdin">
@@ -111,7 +111,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </inputDatas>
       <outputDatas name="orders1.csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders1.csv" fileName="..\TargetFiles\orders1.csv">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders1.csv" fileName="../TargetFiles/orders1.csv">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -217,7 +217,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders2.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders2.out" fileName="..\TargetFiles\orders2.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders2.out" fileName="../TargetFiles/orders2.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -365,7 +365,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders3.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders3.out" fileName="../TargetFiles/orders3.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -444,7 +444,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders3.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders3.out" fileName="../TargetFiles/orders3.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -538,7 +538,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders3.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders3.out" fileName="..\TargetFiles\orders3.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders3.out" fileName="../TargetFiles/orders3.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -630,7 +630,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders4.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders4.out" fileName="..\TargetFiles\orders4.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders4.out" fileName="../TargetFiles/orders4.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -823,7 +823,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders5.out">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders5.out" fileName="..\TargetFiles\orders5.out">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders5.out" fileName="../TargetFiles/orders5.out">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -856,7 +856,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders6.html">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders6.html" fileName="../TargetFiles/orders6.html">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -922,7 +922,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders6.html">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders6.html" fileName="../TargetFiles/orders6.html">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1010,7 +1010,7 @@
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
       <outputDatas name="orders6.html">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\orders6.html" fileName="..\TargetFiles\orders6.html">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/orders6.html" fileName="../TargetFiles/orders6.html">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1171,8 +1171,8 @@
         </sectionOptions>
         <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
       </outputDatas>
-      <outputDatas name="table_output.dat" outputConnections="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl">
-        <dataInfo xsi:type="flow:FileDataInfo" name="..\TargetFiles\table_output.dat" fileName="..\TargetFiles\table_output.dat">
+      <outputDatas name="table_output.dat" outputConnections="Out_../TargetFiles/table_output.dat_To_SCOTT.ORDERS.ctl">
+        <dataInfo xsi:type="flow:FileDataInfo" name="../TargetFiles/able_output.dat" fileName="../TargetFiles/table_output.dat">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1506,7 +1506,7 @@
       </outputDatas>
       <mappings name="*_To_*" sourceField="//@flowlets.0/@blocks.3/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.3/@outputDatas.0/@dataInfo/@fields.0"/>
     </blocks>
-    <connections name="Out_..\TargetFiles\table_output.dat_To_SCOTT.ORDERS.ctl" startBlock="//@flowlets.0/@blocks.2/@outputDatas.10" endBlock="//@flowlets.0/@blocks.1"/>
+    <connections name="Out_../TargetFiles/table_output.dat_To_SCOTT.ORDERS.ctl" startBlock="//@flowlets.0/@blocks.2/@outputDatas.10" endBlock="//@flowlets.0/@blocks.1"/>
     <connections name="Start_To_In_SCOTT.ORDERS" startBlock="//@flowlets.0/@blocks.0" endBlock="//@flowlets.0/@blocks.3/@inputDatas.0"/>
     <connections name="Out_stdout_To_In_stdin" startBlock="//@flowlets.0/@blocks.3/@outputDatas.0" endBlock="//@flowlets.0/@blocks.2/@inputDatas.0" pipe="true"/>
   </flowlets>

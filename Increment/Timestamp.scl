@@ -12,7 +12,7 @@
 
 /REPORT
 
-/OUTFILE=C:/git/workbench-demos/Increment/LastTimeTemp.txt
+/OUTFILE=/home/iridemo/git/workbench-demos/Increment/LastTimeTemp.txt
 	/PROCESS=RECORD
 	/FIELD=(LAST_TIME, TYPE=ASCII, POSITION=1, SEPARATOR="\t")
 

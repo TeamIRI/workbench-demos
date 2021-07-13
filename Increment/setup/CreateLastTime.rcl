@@ -11,6 +11,6 @@
 
 /REPORT
 
-/OUTFILE=C:/git/workbench-demos/Increment/LastTime.txt
+/OUTFILE=/home/iridemo/git/workbench-demos/Increment/LastTime.txt
 	/PROCESS=RECORD
 	/FIELD=(LAST_TIME="2008-09-10 09:39:23.5", TYPE=ALPHA_DIGIT, POSITION=1, SEPARATOR=",")

@@ -4,11 +4,11 @@
 
 ### Job Controls Phase ###
 /MONITOR=1
-/STATISTICS=..\JobStats\tradinga.stat
+/STATISTICS=../JobStats/tradinga.stat
 /WARNINGSOFF 
 
 #### Input Source Specifications ####
-/INFILE=..\InputFiles\nyse-a.txt # tab-delimited format
+/INFILE=../InputFiles/nyse-a.txt # tab-delimited format
 	/PROCESS=DELIMITED
 	/ALIAS=nyse-a
 	/FIELD=(ISSUE, TYPE=ASCII, POSITION=1, SEPARATOR="\t")
@@ -18,7 +18,7 @@
 	/FIELD=(CHANGE, TYPE=NUMERIC, POSITION=5, PRECISION=2, SEPARATOR="\t")
 	/FIELD=(PERCENT, TYPE=NUMERIC, POSITION=6, PRECISION=2, SEPARATOR="\t")
 
-/INFILE=..\InputFiles\buys.csv # CSV format
+/INFILE=../InputFiles/buys.csv # CSV format
 	/PROCESS=CSV
 	/ALIAS=buys
 	/INSKIP=1 # skip header record
@@ -44,7 +44,7 @@
 
 	/PROCESS=RECORD
 	/HEADREC="Client             Symbol  NYSE   Shares  LastTrade  Shares*LT     Ln.\n\n"
-	/FIELD=(BUYS.PSEUDO_CLIENT, TYPE=ASCII, POSITION=1, SIZE=17, SET="C:/IRI/cosort100/sets/names/names_last.set" SELECT=ANY)
+	/FIELD=(BUYS.PSEUDO_CLIENT, TYPE=ASCII, POSITION=1, SIZE=17, SET="/home/iridemo/iri/cosort100/sets/names/names_last.set" SELECT=ANY)
 	/FIELD=(BUYS.SYMBOL, TYPE=ASCII, POSITION=20, SIZE=5)
 	/FIELD=(NYSE-A.SYMBOL, TYPE=ASCII, POSITION=28, SIZE=5)
 	/FIELD=(BUYS.SHARES, TYPE=ASCII, POSITION=35, SIZE=5)
@@ -53,7 +53,7 @@
 	/FIELD=(SEQUENCER, TYPE=ASCII, POSITION=116, SIZE=4) # #### Output File 2 - Data Interchange Format ####
 
 
-/OUTFILE=..\Targets\TradingA.xml
+/OUTFILE=../Targets/TradingA.xml
 #	/PROCESS=XML
 #	/FIELD=(BUYS.CLIENT, TYPE=ASCII, POSITION=1, SEPARATOR="|", XDEF="/Trades/Buy@Client")
 #	/FIELD=(BUYS.SYMBOL, TYPE=ASCII, POSITION=2, SEPARATOR="|", XDEF="/Trades/Buy/Symbol")
@@ -61,7 +61,7 @@
 #	/INCLUDE WHERE NYSE-A.LASTTRADE GT 10 AND BUYS.SHARES GT 0 # ### Output File 3 - HTML Format ####
 #
 #
-#/OUTFILE=..\Targets\TradingA.htm
+#/OUTFILE=../Targets/TradingA.htm
 #	# summary record format
 #
 #	/PROCESS=RECORD
@@ -71,7 +71,7 @@
 #	/SUM NEW_BALANCE FROM(NYSE-A.LASTTRADE * BUYS.SHARES)WHERE SYMBOL NE "RNT"
 #	/FOOTREC="</TABLE><BR>\nCreated on </B>%s.              <HR></BODY>\n</HTML>", AMERICAN_DATE
 #
-#/OUTFILE=..\Targets\TradingA.htm
+#/OUTFILE=../Targets/TradingA.htm
 #	# detail record format
 #
 #	/PROCESS=RECORD
