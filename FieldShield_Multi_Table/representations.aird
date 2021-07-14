@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLSchema="http:///com/iri/datatools/modelbase/sql/schema.ecore" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_Rg3zgFVDEemV8bbHV-MoVw" selectedViews="_RooBUFVDEemV8bbHV-MoVw _YqfhkFVDEemV8bbHV-MoVw" version="14.3.0.201909031200">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLSchema="http:///com/iri/datatools/modelbase/sql/schema.ecore" xmlns:SQLTables="http:///com/iri/datatools/modelbase/sql/tables.ecore" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_Rg3zgFVDEemV8bbHV-MoVw" selectedViews="_RooBUFVDEemV8bbHV-MoVw _YqfhkFVDEemV8bbHV-MoVw" version="14.5.1.202106111100">
     <semanticResources>HR.sqlschema</semanticResources>
     <semanticResources>iriLibrary.rules</semanticResources>
     <semanticResources>metadata/departments.ddf</semanticResources>
@@ -21,18 +21,14 @@
     <semanticResources>setup/REGIONS.scl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_RooBUFVDEemV8bbHV-MoVw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_TWJTPlVDEemV8bbHV-MoVw" name="saved-example" repPath=".representations/FlowDiagram__TVGxQFVDEemV8bbHV-MoVw.srm#_TVGxQFVDEemV8bbHV-MoVw">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
-        <target xmi:type="flow:FlowBatch" href="saved-example/saved-example.flow#saved-example"/>
-      </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_tPnXHYMxEeqE2-8kNhPTwA" name="saved-example" repPath="#_tMyFgIMxEeqE2-8kNhPTwA" changeId="5b797217-d638-4ac1-85ea-9ebc4fdb7a95">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_tPnXHYMxEeqE2-8kNhPTwA" name="saved-example" repPath="#_tMyFgIMxEeqE2-8kNhPTwA" changeId="43f8e4ac-62ae-49a7-89a3-89d70afbb588">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
         <target xmi:type="flow:FlowBatch" href="saved-example/saved-example.flow#saved-example"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_YqfhkFVDEemV8bbHV-MoVw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YyPI_1VDEemV8bbHV-MoVw" name="HR" repPath=".representations/EntityRelationalDiagram__YxpScFVDEemV8bbHV-MoVw.srm#_YxpScFVDEemV8bbHV-MoVw">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_me5_EOTAEeurLudZ64otiw" name="HR_ER" repPath="#_me4J4OTAEeurLudZ64otiw" changeId="d059b6a6-3e3f-4b76-a51c-468b1c697946">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']"/>
         <target xmi:type="SQLSchema:Schema" href="HR.sqlschema#/20"/>
       </ownedRepresentationDescriptors>
@@ -55,7 +51,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_tPwhJ4MxEeqE2-8kNhPTwA" type="3012" element="_tPKrIIMxEeqE2-8kNhPTwA">
                 <children xmi:type="notation:Node" xmi:id="_tPwhKoMxEeqE2-8kNhPTwA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_tPwhK4MxEeqE2-8kNhPTwA" x="-49" y="-56"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_tPwhK4MxEeqE2-8kNhPTwA" x="-49"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_tP6SAIMxEeqE2-8kNhPTwA" type="3005" element="_tPKrIYMxEeqE2-8kNhPTwA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_tP6SAYMxEeqE2-8kNhPTwA" fontName="Segoe UI"/>
@@ -86,7 +82,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_tP6SBoMxEeqE2-8kNhPTwA" type="3012" element="_tPKrJoMxEeqE2-8kNhPTwA">
                 <children xmi:type="notation:Node" xmi:id="_tP6SCYMxEeqE2-8kNhPTwA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_tP6SCoMxEeqE2-8kNhPTwA" x="-45" y="-56"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_tP6SCoMxEeqE2-8kNhPTwA" x="-45"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_tP6SEIMxEeqE2-8kNhPTwA" type="3005" element="_tPKrJ4MxEeqE2-8kNhPTwA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_tP6SEYMxEeqE2-8kNhPTwA" fontName="Segoe UI"/>
@@ -117,7 +113,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_tP6SFoMxEeqE2-8kNhPTwA" type="3012" element="_tPKrLIMxEeqE2-8kNhPTwA">
                 <children xmi:type="notation:Node" xmi:id="_tP6SGYMxEeqE2-8kNhPTwA" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_tP6SGoMxEeqE2-8kNhPTwA" x="-41" y="-56"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_tP6SGoMxEeqE2-8kNhPTwA" x="-41"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_tP6SIIMxEeqE2-8kNhPTwA" type="3005" element="_tPKrLYMxEeqE2-8kNhPTwA">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_tP6SIYMxEeqE2-8kNhPTwA" fontName="Segoe UI"/>
@@ -138,7 +134,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tP6SHYMxEeqE2-8kNhPTwA" y="35" width="16" height="16"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_tPwhEoMxEeqE2-8kNhPTwA" fontName="Segoe UI" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPwhE4MxEeqE2-8kNhPTwA" x="820" y="40"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPwhE4MxEeqE2-8kNhPTwA" x="197" y="173"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_tPwhGIMxEeqE2-8kNhPTwA" type="3007" element="_tPKrMoMxEeqE2-8kNhPTwA">
               <children xmi:type="notation:Node" xmi:id="_tPwhG4MxEeqE2-8kNhPTwA" type="5003">
@@ -149,7 +145,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tP6SKIMxEeqE2-8kNhPTwA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_tPwhGYMxEeqE2-8kNhPTwA" fontColor="4539717" fontName="Segoe UI" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPwhGoMxEeqE2-8kNhPTwA" x="40" y="20" width="60" height="60"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPwhGoMxEeqE2-8kNhPTwA" x="40" y="59" width="60" height="60"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_tPwhHYMxEeqE2-8kNhPTwA" type="3007" element="_tPKrNYMxEeqE2-8kNhPTwA">
               <children xmi:type="notation:Node" xmi:id="_tPwhIIMxEeqE2-8kNhPTwA" type="5003">
@@ -160,7 +156,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDAoMxEeqE2-8kNhPTwA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_tPwhHoMxEeqE2-8kNhPTwA" fontName="Segoe UI" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPwhH4MxEeqE2-8kNhPTwA" x="180" y="25" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPwhH4MxEeqE2-8kNhPTwA" x="180" y="64" width="100" height="50"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_tPwhIoMxEeqE2-8kNhPTwA" type="3007" element="_tPKrOIMxEeqE2-8kNhPTwA">
               <children xmi:type="notation:Node" xmi:id="_tPwhJYMxEeqE2-8kNhPTwA" type="5003">
@@ -171,13 +167,13 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDBYMxEeqE2-8kNhPTwA"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_tPwhI4MxEeqE2-8kNhPTwA" fontName="Segoe UI" fontHeight="8" bold="true"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPwhJIMxEeqE2-8kNhPTwA" x="50" y="195" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPwhJIMxEeqE2-8kNhPTwA" x="430" y="197" width="100" height="50"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_tPwhAYMxEeqE2-8kNhPTwA"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_tPwhAoMxEeqE2-8kNhPTwA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_tPnXIoMxEeqE2-8kNhPTwA" fontName="Segoe UI" fontHeight="8" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPnXI4MxEeqE2-8kNhPTwA" height="200"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tPnXI4MxEeqE2-8kNhPTwA" height="312"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_tPnXIIMxEeqE2-8kNhPTwA"/>
         <edges xmi:type="notation:Edge" xmi:id="_tQEDBoMxEeqE2-8kNhPTwA" type="4001" element="_tPdmEIMxEeqE2-8kNhPTwA" source="_tPwhGIMxEeqE2-8kNhPTwA" target="_tPwhHYMxEeqE2-8kNhPTwA">
@@ -198,17 +194,17 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_tQEDEoMxEeqE2-8kNhPTwA" type="4001" element="_tPdmFYMxEeqE2-8kNhPTwA" source="_tPwhHYMxEeqE2-8kNhPTwA" target="_tPwhJ4MxEeqE2-8kNhPTwA">
           <children xmi:type="notation:Node" xmi:id="_tQEDFoMxEeqE2-8kNhPTwA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDF4MxEeqE2-8kNhPTwA" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDF4MxEeqE2-8kNhPTwA" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_tQEDGIMxEeqE2-8kNhPTwA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDGYMxEeqE2-8kNhPTwA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDGYMxEeqE2-8kNhPTwA" x="3" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_tQEDGoMxEeqE2-8kNhPTwA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDG4MxEeqE2-8kNhPTwA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDG4MxEeqE2-8kNhPTwA" x="-3" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_tQEDE4MxEeqE2-8kNhPTwA" routing="Rectilinear" avoidObstructions="true"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_tQEDFIMxEeqE2-8kNhPTwA" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tQEDFYMxEeqE2-8kNhPTwA" points="[5, 7, -81, -33]$[42, 7, -44, -33]$[42, 36, -44, -4]$[79, 36, -7, -4]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tQEDFYMxEeqE2-8kNhPTwA" points="[-1, 0, -81, 6]$[36, 0, -44, 6]$[36, -10, -44, -4]$[73, -10, -7, -4]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tQEDHIMxEeqE2-8kNhPTwA" id="(1.0,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tQEDHYMxEeqE2-8kNhPTwA" id="(0.5,0.5)"/>
         </edges>
@@ -230,33 +226,33 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_tQEDKoMxEeqE2-8kNhPTwA" type="4001" element="_tPnXEIMxEeqE2-8kNhPTwA" source="_tP6SC4MxEeqE2-8kNhPTwA" target="_tP6SFoMxEeqE2-8kNhPTwA">
           <children xmi:type="notation:Node" xmi:id="_tQEDLoMxEeqE2-8kNhPTwA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDL4MxEeqE2-8kNhPTwA" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDL4MxEeqE2-8kNhPTwA" x="1" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_tQEDMIMxEeqE2-8kNhPTwA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDMYMxEeqE2-8kNhPTwA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDMYMxEeqE2-8kNhPTwA" x="-1" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_tQEDMoMxEeqE2-8kNhPTwA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDM4MxEeqE2-8kNhPTwA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDM4MxEeqE2-8kNhPTwA" x="-5" y="-10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_tQEDK4MxEeqE2-8kNhPTwA" routing="Rectilinear" avoidObstructions="true"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_tQEDLIMxEeqE2-8kNhPTwA" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tQEDLYMxEeqE2-8kNhPTwA" points="[2, 7, -80, 7]$[82, 7, 0, 7]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tQEDNIMxEeqE2-8kNhPTwA" id="(0.5,0.5)"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tQEDLYMxEeqE2-8kNhPTwA" points="[6, 4, 548, -136]$[10, 4, 552, -136]$[10, 87, 552, -53]$[-544, 87, -2, -53]$[-544, 132, -2, -8]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tQEDNIMxEeqE2-8kNhPTwA" id="(0.9375,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tQEDNYMxEeqE2-8kNhPTwA" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_tQEDNoMxEeqE2-8kNhPTwA" type="4001" element="_tPnXFYMxEeqE2-8kNhPTwA" source="_tP6SG4MxEeqE2-8kNhPTwA" target="_tPwhIoMxEeqE2-8kNhPTwA">
           <children xmi:type="notation:Node" xmi:id="_tQEDOoMxEeqE2-8kNhPTwA" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDO4MxEeqE2-8kNhPTwA" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDO4MxEeqE2-8kNhPTwA" x="-23" y="55"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_tQEDPIMxEeqE2-8kNhPTwA" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDPYMxEeqE2-8kNhPTwA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDPYMxEeqE2-8kNhPTwA" x="-132" y="20"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_tQEDPoMxEeqE2-8kNhPTwA" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDP4MxEeqE2-8kNhPTwA" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tQEDP4MxEeqE2-8kNhPTwA" x="44" y="-54"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_tQEDN4MxEeqE2-8kNhPTwA" routing="Rectilinear" avoidObstructions="true"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_tQEDOIMxEeqE2-8kNhPTwA" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tQEDOYMxEeqE2-8kNhPTwA" points="[6, 8, 924, -130]$[6, 67, 924, -71]$[11, 67, 929, -71]$[11, 103, 929, -35]$[-928, 103, -10, -35]$[-928, 138, -10, 0]$[-918, 138, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tQEDOYMxEeqE2-8kNhPTwA" points="[0, -5, -79, -5]$[39, -5, -40, -5]$[39, 0, -40, 0]$[79, 0, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tQEDQIMxEeqE2-8kNhPTwA" id="(0.875,0.875)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tQEDQYMxEeqE2-8kNhPTwA" id="(0.0,0.5)"/>
         </edges>
@@ -339,6 +335,9 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
         </ownedBorderedNodes>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_tPA6J4MxEeqE2-8kNhPTwA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
           <labelFormat>bold</labelFormat>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
@@ -348,6 +347,9 @@
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_tPKrMoMxEeqE2-8kNhPTwA" name="Start" outgoingEdges="_tPdmEIMxEeqE2-8kNhPTwA" width="6" height="6" resizeKind="NSEW">
         <target xmi:type="flow:StartBlock" href="saved-example/saved-example.flow#//@flowlets.0/@blocks.0"/>
         <semanticElements xmi:type="flow:StartBlock" href="saved-example/saved-example.flow#//@flowlets.0/@blocks.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:Ellipse" uid="_tPKrM4MxEeqE2-8kNhPTwA" showIcon="false" labelColor="69,69,69" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
           <labelFormat>bold</labelFormat>
           <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']/@style"/>
@@ -357,6 +359,9 @@
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_tPKrNYMxEeqE2-8kNhPTwA" name="DisableRelatedFK.sql" outgoingEdges="_tPdmFYMxEeqE2-8kNhPTwA" incomingEdges="_tPdmEIMxEeqE2-8kNhPTwA" width="-1" height="-1" resizeKind="NSEW">
         <target xmi:type="flow:OracleSQLExec" href="saved-example/saved-example.flow#//@flowlets.0/@blocks.1"/>
         <semanticElements xmi:type="flow:OracleSQLExec" href="saved-example/saved-example.flow#//@flowlets.0/@blocks.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_tPKrNoMxEeqE2-8kNhPTwA" showIcon="false" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/cmd.png">
           <labelFormat>bold</labelFormat>
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_CommandLine']/@style"/>
@@ -366,6 +371,9 @@
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_tPKrOIMxEeqE2-8kNhPTwA" name="EnableRelatedFK.sql" incomingEdges="_tPnXFYMxEeqE2-8kNhPTwA" width="-1" height="-1" resizeKind="NSEW">
         <target xmi:type="flow:OracleSQLExec" href="saved-example/saved-example.flow#//@flowlets.0/@blocks.5"/>
         <semanticElements xmi:type="flow:OracleSQLExec" href="saved-example/saved-example.flow#//@flowlets.0/@blocks.5"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_tPKrOYMxEeqE2-8kNhPTwA" showIcon="false" labelPosition="node" workspacePath="/com.iri.model.flow.design/icons/cmd.png">
           <labelFormat>bold</labelFormat>
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_CommandLine']/@style"/>
@@ -422,5 +430,823 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_tMyFgYMxEeqE2-8kNhPTwA"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer"/>
     <target xmi:type="flow:FlowBatch" href="saved-example/saved-example.flow#saved-example"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_me4J4OTAEeurLudZ64otiw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_mfBT0OTAEeurLudZ64otiw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_mfBT0eTAEeurLudZ64otiw" type="Sirius" element="_me4J4OTAEeurLudZ64otiw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_mhDUIOTAEeurLudZ64otiw" type="2003" element="_mfB64OTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhLP8OTAEeurLudZ64otiw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_mhLP8eTAEeurLudZ64otiw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_mhQvgOTAEeurLudZ64otiw" type="3010" element="_mfE-MuTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhQvgeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhQvguTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhRWkOTAEeurLudZ64otiw" type="3010" element="_mgodYeTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhRWkeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhRWkuTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhRWk-TAEeurLudZ64otiw" type="3010" element="_mgpEcOTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhRWlOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhRWleTAEeurLudZ64otiw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mhLP8uTAEeurLudZ64otiw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mhLP8-TAEeurLudZ64otiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mhDUIeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhDUIuTAEeurLudZ64otiw" x="22" y="128"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mhL3AOTAEeurLudZ64otiw" type="2003" element="_mfDJAeTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhMeEOTAEeurLudZ64otiw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_mhMeEeTAEeurLudZ64otiw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_mhR9oOTAEeurLudZ64otiw" type="3010" element="_mgprgOTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhR9oeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhR9ouTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhR9o-TAEeurLudZ64otiw" type="3010" element="_mgprguTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhR9pOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhR9peTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhR9puTAEeurLudZ64otiw" type="3010" element="_mgprhOTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhR9p-TAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhR9qOTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhR9qeTAEeurLudZ64otiw" type="3010" element="_mgqSkeTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhR9quTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhR9q-TAEeurLudZ64otiw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mhMeEuTAEeurLudZ64otiw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mhMeE-TAEeurLudZ64otiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mhL3AeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhL3AuTAEeurLudZ64otiw" x="260" y="312"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mhNFIOTAEeurLudZ64otiw" type="2003" element="_mfDwEeTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhNFI-TAEeurLudZ64otiw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_mhNFJOTAEeurLudZ64otiw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_mhSksOTAEeurLudZ64otiw" type="3010" element="_mgqSk-TAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhSkseTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhSksuTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhSks-TAEeurLudZ64otiw" type="3010" element="_mgqSleTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhSktOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhSkteTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhSktuTAEeurLudZ64otiw" type="3010" element="_mgq5oeTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhSkt-TAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhSkuOTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhSkueTAEeurLudZ64otiw" type="3010" element="_mgq5o-TAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhSkuuTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhSku-TAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhTLwOTAEeurLudZ64otiw" type="3010" element="_mgq5peTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhTLweTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhTLwuTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhTLw-TAEeurLudZ64otiw" type="3010" element="_mgq5p-TAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhTLxOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhTLxeTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhTLxuTAEeurLudZ64otiw" type="3010" element="_mgrgsOTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhTLx-TAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhTLyOTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhTLyeTAEeurLudZ64otiw" type="3010" element="_mgrgsuTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhTLyuTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhTLy-TAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhTy0OTAEeurLudZ64otiw" type="3010" element="_mgrgtOTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhTy0eTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhTy0uTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhUZ4OTAEeurLudZ64otiw" type="3010" element="_mgsHweTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhUZ4eTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhUZ4uTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhUZ4-TAEeurLudZ64otiw" type="3010" element="_mgsHw-TAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhUZ5OTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhUZ5eTAEeurLudZ64otiw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mhNFJeTAEeurLudZ64otiw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mhNFJuTAEeurLudZ64otiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mhNFIeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhNFIuTAEeurLudZ64otiw" x="296" y="32"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mhNFJ-TAEeurLudZ64otiw" type="2003" element="_mfDwFOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhNsMOTAEeurLudZ64otiw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_mhNsMeTAEeurLudZ64otiw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_mhUZ5uTAEeurLudZ64otiw" type="3010" element="_mgsu0OTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhUZ5-TAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhUZ6OTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhUZ6eTAEeurLudZ64otiw" type="3010" element="_mgsu0uTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhUZ6uTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhUZ6-TAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhVA8OTAEeurLudZ64otiw" type="3010" element="_mgsu1OTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVA8eTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVA8uTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhVA8-TAEeurLudZ64otiw" type="3010" element="_mgsu1uTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVA9OTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVA9eTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhVA9uTAEeurLudZ64otiw" type="3010" element="_mgtV4eTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVA9-TAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVA-OTAEeurLudZ64otiw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mhNsMuTAEeurLudZ64otiw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mhNsM-TAEeurLudZ64otiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mhNFKOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhNFKeTAEeurLudZ64otiw" x="584" y="296"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mhNsNOTAEeurLudZ64otiw" type="2003" element="_mfEXIeTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhNsN-TAEeurLudZ64otiw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_mhOTQOTAEeurLudZ64otiw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_mhVA-eTAEeurLudZ64otiw" type="3010" element="_mgtV4-TAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVA-uTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVA--TAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhVoAOTAEeurLudZ64otiw" type="3010" element="_mgtV5eTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVoAeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVoAuTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhVoA-TAEeurLudZ64otiw" type="3010" element="_mgtV5-TAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVoBOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVoBeTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhVoBuTAEeurLudZ64otiw" type="3010" element="_mgt88OTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVoB-TAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVoCOTAEeurLudZ64otiw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mhOTQeTAEeurLudZ64otiw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mhOTQuTAEeurLudZ64otiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mhNsNeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhNsNuTAEeurLudZ64otiw" x="560" y="20"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mhOTQ-TAEeurLudZ64otiw" type="2003" element="_mfEXJOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhO6UOTAEeurLudZ64otiw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_mhO6UeTAEeurLudZ64otiw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_mhVoCeTAEeurLudZ64otiw" type="3010" element="_mgt88uTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVoCuTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVoC-TAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhVoDOTAEeurLudZ64otiw" type="3010" element="_mgt89OTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhVoDeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhVoDuTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhWPEOTAEeurLudZ64otiw" type="3010" element="_mgt89uTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhWPEeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhWPEuTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhWPE-TAEeurLudZ64otiw" type="3010" element="_mgt8-OTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhWPFOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhWPFeTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhWPFuTAEeurLudZ64otiw" type="3010" element="_mgukAOTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhWPF-TAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhWPGOTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhWPGeTAEeurLudZ64otiw" type="3010" element="_mgukAuTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhWPGuTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhWPG-TAEeurLudZ64otiw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mhO6UuTAEeurLudZ64otiw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mhO6U-TAEeurLudZ64otiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mhOTROTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhOTReTAEeurLudZ64otiw" x="20" y="272"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_mhPhYOTAEeurLudZ64otiw" type="2003" element="_mfEXJ-TAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhPhY-TAEeurLudZ64otiw" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_mhQIcOTAEeurLudZ64otiw" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_mhWPHOTAEeurLudZ64otiw" type="3010" element="_mgukBOTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhWPHeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhWPHuTAEeurLudZ64otiw"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_mhW2IOTAEeurLudZ64otiw" type="3010" element="_mgvLEeTAEeurLudZ64otiw">
+              <styles xmi:type="notation:FontStyle" xmi:id="_mhW2IeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_mhW2IuTAEeurLudZ64otiw"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_mhQIceTAEeurLudZ64otiw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_mhQIcuTAEeurLudZ64otiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_mhPhYeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhPhYuTAEeurLudZ64otiw" x="26" y="20"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_mfBT0uTAEeurLudZ64otiw"/>
+        <edges xmi:type="notation:Edge" xmi:id="_mhYEQOTAEeurLudZ64otiw" type="4001" element="_mg6xQOTAEeurLudZ64otiw" source="_mhDUIOTAEeurLudZ64otiw" target="_mhPhYOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhZSYOTAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhZSYeTAEeurLudZ64otiw" x="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhZ5cOTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhZ5ceTAEeurLudZ64otiw" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhZ5cuTAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhaggOTAEeurLudZ64otiw" x="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhYEQeTAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhYEQuTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhYEQ-TAEeurLudZ64otiw" points="[0, 0, 1, 50]$[0, -50, 1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhdj0OTAEeurLudZ64otiw" id="(0.5049019607843137,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhdj0eTAEeurLudZ64otiw" id="(0.5025641025641026,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mheK4OTAEeurLudZ64otiw" type="4001" element="_mg8mcOTAEeurLudZ64otiw" source="_mhL3AOTAEeurLudZ64otiw" target="_mhNFIOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhex8OTAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhex8eTAEeurLudZ64otiw" x="8" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhex8uTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhex8-TAEeurLudZ64otiw" x="13" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhex9OTAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhex9eTAEeurLudZ64otiw" x="3" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mheK4eTAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mheK4uTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mheK4-TAEeurLudZ64otiw" points="[0, 0, -29, 78]$[0, -45, -29, 33]$[29, -45, 0, 33]$[29, -78, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhex9uTAEeurLudZ64otiw" id="(0.5022421524663677,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhex9-TAEeurLudZ64otiw" id="(0.5023923444976076,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mhex-OTAEeurLudZ64otiw" type="4001" element="_mg9NgOTAEeurLudZ64otiw" source="_mhL3AOTAEeurLudZ64otiw" target="_mhOTQ-TAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhex_OTAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhex_eTAEeurLudZ64otiw" x="-3" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhfZAOTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhfZAeTAEeurLudZ64otiw" x="8" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhfZAuTAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhfZA-TAEeurLudZ64otiw" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhex-eTAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhex-uTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhex--TAEeurLudZ64otiw" points="[-3, -5, 135, -51]$[-35, -5, 103, -51]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhfZBOTAEeurLudZ64otiw" id="(0.013452914798206279,0.4)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhfZBeTAEeurLudZ64otiw" id="(0.5048076923076923,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mhfZBuTAEeurLudZ64otiw" type="4001" element="_mg9NheTAEeurLudZ64otiw" source="_mhNFIOTAEeurLudZ64otiw" target="_mhL3AOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhfZCuTAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhfZC-TAEeurLudZ64otiw" x="-8" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhfZDOTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhfZDeTAEeurLudZ64otiw" x="-2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhfZDuTAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhfZD-TAEeurLudZ64otiw" x="-14" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhfZB-TAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhfZCOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhfZCeTAEeurLudZ64otiw" points="[-1, 1, 25, -81]$[-1, 40, 25, -42]$[-26, 40, 0, -42]$[-26, 79, 0, -3]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhgAEOTAEeurLudZ64otiw" id="(0.24401913875598086,0.995049504950495)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhgAEeTAEeurLudZ64otiw" id="(0.273542600896861,0.03333333333333333)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mhgAEuTAEeurLudZ64otiw" type="4001" element="_mg9NiuTAEeurLudZ64otiw" source="_mhNFIOTAEeurLudZ64otiw" target="_mhNFIOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhgAFuTAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgAF-TAEeurLudZ64otiw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhgAGOTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgAGeTAEeurLudZ64otiw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhgAGuTAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgAG-TAEeurLudZ64otiw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhgAE-TAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhgAFOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhgAFeTAEeurLudZ64otiw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhgAHOTAEeurLudZ64otiw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhgAHeTAEeurLudZ64otiw" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mhgAHuTAEeurLudZ64otiw" type="4001" element="_mg-boOTAEeurLudZ64otiw" source="_mhNFIOTAEeurLudZ64otiw" target="_mhNsNOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhgnI-TAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgnJOTAEeurLudZ64otiw" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhgnJeTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgnJuTAEeurLudZ64otiw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhgnJ-TAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgnKOTAEeurLudZ64otiw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhgnIOTAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhgnIeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhgnIuTAEeurLudZ64otiw" points="[2, 0, -145, -41]$[29, 0, -118, -41]$[29, 16, -118, -25]$[57, 16, -90, -25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhgnKeTAEeurLudZ64otiw" id="(0.9904306220095693,0.18316831683168316)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhgnKuTAEeurLudZ64otiw" id="(0.5027932960893855,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mhgnK-TAEeurLudZ64otiw" type="4001" element="_mg-bpeTAEeurLudZ64otiw" source="_mhNFJ-TAEeurLudZ64otiw" target="_mhL3AOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhgnL-TAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgnMOTAEeurLudZ64otiw" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhgnMeTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgnMuTAEeurLudZ64otiw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhgnM-TAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhgnNOTAEeurLudZ64otiw" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhgnLOTAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhgnLeTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhgnLuTAEeurLudZ64otiw" points="[-1, -1, 212, -51]$[-52, -1, 161, -51]$[-52, 23, 161, -27]$[-102, 23, 111, -27]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhhOMOTAEeurLudZ64otiw" id="(0.005025125628140704,0.5283018867924528)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhhOMeTAEeurLudZ64otiw" id="(0.5022421524663677,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mhhOMuTAEeurLudZ64otiw" type="4001" element="_mg_CsuTAEeurLudZ64otiw" source="_mhNFJ-TAEeurLudZ64otiw" target="_mhNFIOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhhONuTAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhhON-TAEeurLudZ64otiw" x="-40" y="-136"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhhOOOTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhhOOeTAEeurLudZ64otiw" x="157" y="-13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhhOOuTAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhhOO-TAEeurLudZ64otiw" x="24" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhhOM-TAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhhONOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhhONeTAEeurLudZ64otiw" points="[-16, -6, 162, 62]$[-16, -37, 162, 31]$[-176, -37, 2, 31]$[-176, -68, 2, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhhOPOTAEeurLudZ64otiw" id="(0.11557788944723618,0.05660377358490566)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhhOPeTAEeurLudZ64otiw" id="(0.6363636363636364,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mhhOPuTAEeurLudZ64otiw" type="4001" element="_mg_Ct-TAEeurLudZ64otiw" source="_mhNFJ-TAEeurLudZ64otiw" target="_mhNsNOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhh1QOTAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhh1QeTAEeurLudZ64otiw" x="18"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhh1QuTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhh1Q-TAEeurLudZ64otiw" x="230" y="29"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhh1ROTAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhh1ReTAEeurLudZ64otiw" x="-8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhhOP-TAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhhOQOTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhhOQeTAEeurLudZ64otiw" points="[0, 0, 34, 186]$[0, -99, 34, 87]$[-34, -99, 0, 87]$[-34, -186, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhh1RuTAEeurLudZ64otiw" id="(0.5025125628140703,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhh1R-TAEeurLudZ64otiw" id="(0.5027932960893855,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mhh1SOTAEeurLudZ64otiw" type="4001" element="_mg_CvOTAEeurLudZ64otiw" source="_mhOTQ-TAEeurLudZ64otiw" target="_mhDUIOTAEeurLudZ64otiw">
+          <children xmi:type="notation:Node" xmi:id="_mhh1TOTAEeurLudZ64otiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhh1TeTAEeurLudZ64otiw" x="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhh1TuTAEeurLudZ64otiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhh1T-TAEeurLudZ64otiw" x="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mhh1UOTAEeurLudZ64otiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mhh1UeTAEeurLudZ64otiw" x="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mhh1SeTAEeurLudZ64otiw" routing="Rectilinear" avoidObstructions="true"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mhh1SuTAEeurLudZ64otiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mhh1S-TAEeurLudZ64otiw" points="[2, -61, 2, 107]$[2, -131, 2, 37]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhicUOTAEeurLudZ64otiw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mhicUeTAEeurLudZ64otiw" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_mg_pwuTAEeurLudZ64otiw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_mg_pw-TAEeurLudZ64otiw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mfB64OTAEeurLudZ64otiw" name="COUNTRIES" outgoingEdges="_mg6xQOTAEeurLudZ64otiw" incomingEdges="_mg_CvOTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/2"/>
+      <semanticElements xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_mfCh8OTAEeurLudZ64otiw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mfE-MuTAEeurLudZ64otiw" name="COUNTRY_ID : CHAR (2)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/2/COUNTRY_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/2/COUNTRY_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgodYOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgodYeTAEeurLudZ64otiw" name="COUNTRY_NAME : VARCHAR2 (40)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/2/COUNTRY_NAME"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/2/COUNTRY_NAME"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgodYuTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgpEcOTAEeurLudZ64otiw" name="REGION_ID : NUMBER (22, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/2/REGION_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/2/REGION_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgpEceTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mfDJAeTAEeurLudZ64otiw" name="DEPARTMENTS" outgoingEdges="_mg8mcOTAEeurLudZ64otiw _mg9NgOTAEeurLudZ64otiw" incomingEdges="_mg9NheTAEeurLudZ64otiw _mg-bpeTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/4"/>
+      <semanticElements xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_mfDJAuTAEeurLudZ64otiw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgprgOTAEeurLudZ64otiw" name="DEPARTMENT_ID : NUMBER (4, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/4/DEPARTMENT_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/4/DEPARTMENT_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgprgeTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgprguTAEeurLudZ64otiw" name="DEPARTMENT_NAME : VARCHAR2 (30)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/4/DEPARTMENT_NAME"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/4/DEPARTMENT_NAME"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgprg-TAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgprhOTAEeurLudZ64otiw" name="MANAGER_SID : VARCHAR2 (9)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/4/MANAGER_SID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/4/MANAGER_SID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgqSkOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgqSkeTAEeurLudZ64otiw" name="LOCATION_ID : NUMBER (4, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/4/LOCATION_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/4/LOCATION_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgqSkuTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mfDwEeTAEeurLudZ64otiw" name="EMPLOYEES" outgoingEdges="_mg9NheTAEeurLudZ64otiw _mg9NiuTAEeurLudZ64otiw _mg-boOTAEeurLudZ64otiw" incomingEdges="_mg8mcOTAEeurLudZ64otiw _mg9NiuTAEeurLudZ64otiw _mg_CsuTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/10"/>
+      <semanticElements xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/10"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_mfDwEuTAEeurLudZ64otiw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgqSk-TAEeurLudZ64otiw" name="EMPLOYEE_SID : VARCHAR2 (9)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/EMPLOYEE_SID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/EMPLOYEE_SID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgqSlOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgqSleTAEeurLudZ64otiw" name="FIRST_NAME : VARCHAR2 (20)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/FIRST_NAME"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/FIRST_NAME"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgq5oOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgq5oeTAEeurLudZ64otiw" name="LAST_NAME : VARCHAR2 (25)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/LAST_NAME"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/LAST_NAME"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgq5ouTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgq5o-TAEeurLudZ64otiw" name="EMAIL : VARCHAR2 (25)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/EMAIL"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/EMAIL"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgq5pOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgq5peTAEeurLudZ64otiw" name="PHONE_NUMBER : VARCHAR2 (20)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/PHONE_NUMBER"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/PHONE_NUMBER"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgq5puTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgq5p-TAEeurLudZ64otiw" name="HIRE_DATE : DATE">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/HIRE_DATE"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/HIRE_DATE"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgq5qOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgrgsOTAEeurLudZ64otiw" name="JOB_ID : VARCHAR2 (10)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/JOB_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/JOB_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgrgseTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgrgsuTAEeurLudZ64otiw" name="SALARY : NUMBER (8, 2)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/SALARY"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/SALARY"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgrgs-TAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgrgtOTAEeurLudZ64otiw" name="COMMISSION_PCT : NUMBER (3, 2)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/COMMISSION_PCT"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/COMMISSION_PCT"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgsHwOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgsHweTAEeurLudZ64otiw" name="MANAGER_SID : VARCHAR2 (9)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/MANAGER_SID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/MANAGER_SID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgsHwuTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgsHw-TAEeurLudZ64otiw" name="DEPARTMENT_ID : NUMBER (4, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/10/DEPARTMENT_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/10/DEPARTMENT_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgsHxOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mfDwFOTAEeurLudZ64otiw" name="JOB_HISTORY" outgoingEdges="_mg-bpeTAEeurLudZ64otiw _mg_CsuTAEeurLudZ64otiw _mg_Ct-TAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/13"/>
+      <semanticElements xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/13"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_mfDwFeTAEeurLudZ64otiw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgsu0OTAEeurLudZ64otiw" name="EMPLOYEE_SID : VARCHAR2 (9)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/13/EMPLOYEE_SID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/13/EMPLOYEE_SID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgsu0eTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgsu0uTAEeurLudZ64otiw" name="START_DATE : DATE">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/13/START_DATE"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/13/START_DATE"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgsu0-TAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgsu1OTAEeurLudZ64otiw" name="END_DATE : DATE">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/13/END_DATE"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/13/END_DATE"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgsu1eTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgsu1uTAEeurLudZ64otiw" name="JOB_ID : VARCHAR2 (10)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/13/JOB_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/13/JOB_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgtV4OTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgtV4eTAEeurLudZ64otiw" name="DEPARTMENT_ID : NUMBER (4, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/13/DEPARTMENT_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/13/DEPARTMENT_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgtV4uTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mfEXIeTAEeurLudZ64otiw" name="JOBS" incomingEdges="_mg-boOTAEeurLudZ64otiw _mg_Ct-TAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/14"/>
+      <semanticElements xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/14"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_mfEXIuTAEeurLudZ64otiw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgtV4-TAEeurLudZ64otiw" name="JOB_ID : VARCHAR2 (10)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/14/JOB_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/14/JOB_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgtV5OTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgtV5eTAEeurLudZ64otiw" name="JOB_TITLE : VARCHAR2 (35)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/14/JOB_TITLE"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/14/JOB_TITLE"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgtV5uTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgtV5-TAEeurLudZ64otiw" name="MIN_SALARY : NUMBER (6, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/14/MIN_SALARY"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/14/MIN_SALARY"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgtV6OTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgt88OTAEeurLudZ64otiw" name="MAX_SALARY : NUMBER (6, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/14/MAX_SALARY"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/14/MAX_SALARY"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgt88eTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mfEXJOTAEeurLudZ64otiw" name="LOCATIONS" outgoingEdges="_mg_CvOTAEeurLudZ64otiw" incomingEdges="_mg9NgOTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/18"/>
+      <semanticElements xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/18"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_mfEXJeTAEeurLudZ64otiw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgt88uTAEeurLudZ64otiw" name="LOCATION_ID : NUMBER (4, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/18/LOCATION_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/18/LOCATION_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgt88-TAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgt89OTAEeurLudZ64otiw" name="STREET_ADDRESS : VARCHAR2 (40)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/18/STREET_ADDRESS"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/18/STREET_ADDRESS"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgt89eTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgt89uTAEeurLudZ64otiw" name="POSTAL_CODE : VARCHAR2 (12)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/18/POSTAL_CODE"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/18/POSTAL_CODE"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgt89-TAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgt8-OTAEeurLudZ64otiw" name="CITY : VARCHAR2 (30)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/18/CITY"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/18/CITY"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgt8-eTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgukAOTAEeurLudZ64otiw" name="STATE_PROVINCE : VARCHAR2 (25)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/18/STATE_PROVINCE"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/18/STATE_PROVINCE"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgukAeTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgukAuTAEeurLudZ64otiw" name="COUNTRY_ID : CHAR (2)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/18/COUNTRY_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/18/COUNTRY_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgukA-TAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_mfEXJ-TAEeurLudZ64otiw" name="REGIONS" incomingEdges="_mg6xQOTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/19"/>
+      <semanticElements xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/19"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_mfE-MOTAEeurLudZ64otiw" showIcon="false" iconPath="/com.iri.model.er.design/icons/table_16.png" borderSize="1" borderSizeComputationExpression="1" borderColor="39,76,114" backgroundColor="194,239,255" foregroundColor="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgukBOTAEeurLudZ64otiw" name="REGION_ID : NUMBER (22, 0)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/19/REGION_ID"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/19/REGION_ID"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgvLEOTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_mgvLEeTAEeurLudZ64otiw" name="REGION_NAME : VARCHAR2 (25)">
+        <target xmi:type="SQLTables:Column" href="HR.sqlschema#/19/REGION_NAME"/>
+        <semanticElements xmi:type="SQLTables:Column" href="HR.sqlschema#/19/REGION_NAME"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_mgvLEuTAEeurLudZ64otiw" iconPath="/com.iri.model.er.design/icons/col_20x16.png" labelAlignment="LEFT" labelPosition="node" workspacePath="/com.iri.model.er.design/icons/rectangle.svg">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@containerMappings[name='ERD_Table']/@subNodeMappings[name='ERD_Column']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg6xQOTAEeurLudZ64otiw" sourceNode="_mfB64OTAEeurLudZ64otiw" targetNode="_mfEXJ-TAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg7YUOTAEeurLudZ64otiw" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg7_YOTAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg8mcOTAEeurLudZ64otiw" sourceNode="_mfDJAeTAEeurLudZ64otiw" targetNode="_mfDwEeTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg8mceTAEeurLudZ64otiw" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg8mcuTAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg9NgOTAEeurLudZ64otiw" sourceNode="_mfDJAeTAEeurLudZ64otiw" targetNode="_mfEXJOTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/4"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg9NgeTAEeurLudZ64otiw" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg9NguTAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg9NheTAEeurLudZ64otiw" sourceNode="_mfDwEeTAEeurLudZ64otiw" targetNode="_mfDJAeTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/10"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg9NhuTAEeurLudZ64otiw" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg9Nh-TAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg9NiuTAEeurLudZ64otiw" sourceNode="_mfDwEeTAEeurLudZ64otiw" targetNode="_mfDwEeTAEeurLudZ64otiw" beginLabel="MANAGER_SID&#xA;">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/10"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg90kOTAEeurLudZ64otiw" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg90keTAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg-boOTAEeurLudZ64otiw" sourceNode="_mfDwEeTAEeurLudZ64otiw" targetNode="_mfEXIeTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/10"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg-boeTAEeurLudZ64otiw" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@conditionnalStyles.0/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg-bouTAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg-bpeTAEeurLudZ64otiw" sourceNode="_mfDwFOTAEeurLudZ64otiw" targetNode="_mfDJAeTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/13"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg-bpuTAEeurLudZ64otiw" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg-bp-TAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg_CsuTAEeurLudZ64otiw" sourceNode="_mfDwFOTAEeurLudZ64otiw" targetNode="_mfDwEeTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/13"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg_Cs-TAEeurLudZ64otiw" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@conditionnalStyles.0/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg_CtOTAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg_Ct-TAEeurLudZ64otiw" sourceNode="_mfDwFOTAEeurLudZ64otiw" targetNode="_mfEXIeTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/13"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg_CuOTAEeurLudZ64otiw" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@conditionnalStyles.0/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg_CueTAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mg_CvOTAEeurLudZ64otiw" sourceNode="_mfEXJOTAEeurLudZ64otiw" targetNode="_mfB64OTAEeurLudZ64otiw">
+      <target xmi:type="SQLTables:PersistentTable" href="HR.sqlschema#/18"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mg_CveTAEeurLudZ64otiw" lineStyle="dash" targetArrow="InputFillClosedArrow" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']/@style"/>
+        <beginLabelStyle xmi:type="diagram:BeginLabelStyle" uid="_mg_CvuTAEeurLudZ64otiw" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer/@edgeMappings[name='ERD_ForeignKeyLink']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_me4w8OTAEeurLudZ64otiw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.er.design/description/er.odesign#//@ownedViewpoints[name='ER']/@ownedRepresentations[name='EntityRelationalDiagram']/@defaultLayer"/>
+    <target xmi:type="SQLSchema:Schema" href="HR.sqlschema#/20"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
