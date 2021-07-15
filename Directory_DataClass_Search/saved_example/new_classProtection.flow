@@ -4,7 +4,7 @@
     <blocks xsi:type="flow:StartBlock" name="Start" outputConnections="Start_To_employees_csv"/>
     <blocks xsi:type="flow:TransformMappingBlock" name="employees_csv" iriJob="employees_csv.scl">
       <inputDatas name="employees_csv" inputConnections="Start_To_employees_csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="employees.csv" fileName="C:/Users/claudiai/git/workbench-demos/Directory_DataClass_Search/csv/employees.csv" type="CSV">
+        <dataInfo xsi:type="flow:FileDataInfo" name="employees.csv" fileName="/home/iridemo/git/workbench-demos/Directory_DataClass_Search/csv/employees.csv" type="CSV">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -241,7 +241,7 @@
         <sectionOptions xsi:type="scl:Alias" alias="EMPLOYEES_CSV"/>
       </inputDatas>
       <outputDatas name="employees_csv" outputConnections="employees_csv_To_names_csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="employees.csv" fileName="C:/Users/claudiai/git/workbench-demos/Directory_DataClass_Search/output/employees.csv" type="CSV">
+        <dataInfo xsi:type="flow:FileDataInfo" name="employees.csv" fileName="/home/iridemo/git/workbench-demos/Directory_DataClass_Search/output/employees.csv" type="CSV">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -835,7 +835,7 @@
     </blocks>
     <blocks xsi:type="flow:TransformMappingBlock" name="names_csv" iriJob="names_csv.scl">
       <inputDatas name="names_csv" inputConnections="employees_csv_To_names_csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="names.csv" fileName="C:/Users/claudiai/git/workbench-demos/Directory_DataClass_Search/csv/names.csv" type="CSV">
+        <dataInfo xsi:type="flow:FileDataInfo" name="names.csv" fileName="/home/iridemo/git/workbench-demos/Directory_DataClass_Search/csv/names.csv" type="CSV">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -967,7 +967,7 @@
         <sectionOptions xsi:type="scl:Alias" alias="NAMES_CSV"/>
       </inputDatas>
       <outputDatas name="names_csv" outputConnections="names_csv_To_persons_csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="names.csv" fileName="C:/Users/claudiai/git/workbench-demos/Directory_DataClass_Search/output/names.csv" type="CSV">
+        <dataInfo xsi:type="flow:FileDataInfo" name="names.csv" fileName="/home/iridemo/git/workbench-demos/Directory_DataClass_Search/output/names.csv" type="CSV">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <fieldName name="MASK_LAST_NAME"/>
@@ -1374,7 +1374,7 @@
     </blocks>
     <blocks xsi:type="flow:TransformMappingBlock" name="persons_csv" iriJob="persons_csv.scl">
       <inputDatas name="persons_csv" inputConnections="names_csv_To_persons_csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="persons.csv" fileName="C:/Users/claudiai/git/workbench-demos/Directory_DataClass_Search/csv/persons.csv" type="CSV">
+        <dataInfo xsi:type="flow:FileDataInfo" name="persons.csv" fileName="/home/iridemo/git/workbench-demos/Directory_DataClass_Search/csv/persons.csv" type="CSV">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
@@ -1548,7 +1548,7 @@
         <sectionOptions xsi:type="scl:Alias" alias="PERSONS_CSV"/>
       </inputDatas>
       <outputDatas name="persons_csv">
-        <dataInfo xsi:type="flow:FileDataInfo" name="persons.csv" fileName="C:/Users/claudiai/git/workbench-demos/Directory_DataClass_Search/output/persons.csv" type="CSV">
+        <dataInfo xsi:type="flow:FileDataInfo" name="persons.csv" fileName="/home/iridemo/git/workbench-demos/Directory_DataClass_Search/output/persons.csv" type="CSV">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <fieldName name="MASK_SSN"/>

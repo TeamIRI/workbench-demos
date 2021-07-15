@@ -6,12 +6,12 @@
   <tables>SCOTT.DM_EMPLOYEE_EVALUATIONS</tables>
   <tables>SCOTT.DM_JOB_TYPES</tables>
   <tables>SCOTT.DM_ORGANIZATIONAL_UNITS</tables>
-  <ruleMatchers name="CoName" dataClassLibrary="C:/git/workbench-demos/RowGen_Test_DB_Data">
+  <ruleMatchers name="CoName" dataClassLibrary="/home/iridemo/git/workbench-demos/RowGen_Test_DB_Data">
     <rule href="../iriLibrary.rules#SetRule"/>
     <matcherDetails details=".*COMPANY_NAME"/>
   </ruleMatchers>
   <rules xsi:type="rules:FieldRule" name="SetRule" editor="setFileWizard">
-    <properties fieldRulePropertyType="SET" value="&quot;C:/IRI/cosort100/sets/american_companies.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="SET" value="&quot;/home/iridemo/iri/cosort100/sets/american_companies.set&quot; SELECT=ANY"/>
     <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
   </rules>
 </sourcetargetdata:SourceTargetData>

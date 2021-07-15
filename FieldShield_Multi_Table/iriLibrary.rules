@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <rules:RuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0">
   <catalogs name="NewMultiTableMaskingJob">
-    <matchers name="SID" dataClassLibrary="C:/IRI/workspace-demos/FieldShield_Multi_Table">
+    <matchers name="SID" dataClassLibrary="/home/iridemo/git/workspace-demos/FieldShield_Multi_Table">
       <rule href="#encSID"/>
       <matcherDetails details=".*_SID"/>
     </matchers>

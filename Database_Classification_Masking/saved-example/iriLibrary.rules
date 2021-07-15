@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="ASCII"?>
 <rules:RuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0">
   <catalogs name="NewMultiTableMaskingJob">
-    <matchers name="PIN_US_matcher" dataClassLibrary="C:/IRI/workspace-demos/Database_Classification_Masking">
+    <matchers name="PIN_US_matcher" dataClassLibrary="/home/iridemo/git/workspace-demos/Database_Classification_Masking">
       <rule href="#FieldRedactionRule"/>
       <matcherDetails type="DATACLASS" filter="SCOTT.PERSONS;DSN=Oracle;" details="PIN_US"/>
     </matchers>
-    <matchers name="L(AST)?[_-]?NAME_matcher" dataClassLibrary="C:/IRI/workspace-demos/Database_Classification_Masking">
+    <matchers name="L(AST)?[_-]?NAME_matcher" dataClassLibrary="/home/iridemo/git/workspace-demos/Database_Classification_Masking">
       <rule href="#FieldPseudonymRule"/>
       <matcherDetails type="DATACLASS" filter="SCOTT.PERSONS;DSN=Oracle;" details="L(AST)?[_-]?NAME"/>
     </matchers>
-    <matchers name="CREDIT_CARD_matcher" dataClassLibrary="C:/IRI/workspace-demos/Database_Classification_Masking">
+    <matchers name="CREDIT_CARD_matcher" dataClassLibrary="/home/iridemo/git/workspace-demos/Database_Classification_Masking">
       <rule href="#FieldEncryptionRule"/>
       <matcherDetails type="DATACLASS" filter="SCOTT.PERSONS;DSN=Oracle;" details="CREDIT_CARD"/>
     </matchers>
   </catalogs>
   <rules xsi:type="rules:FieldRule" name="FieldPseudonymRule" editor="pseudoWizard">
     <properties fieldRulePropertyType="NAME" value="PSEUDO_${FIELDNAME}"/>
-    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;[LASTNAME] DEFAULT=&quot;MISSING&quot;"/>
+    <properties fieldRulePropertyType="SET" value="&quot;/home/iridemo/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;[LASTNAME] DEFAULT=&quot;MISSING&quot;"/>
   </rules>
   <rules xsi:type="rules:FieldRule" name="FieldRedactionRule" editor="charReplWizard">
     <properties fieldRulePropertyType="EXPRESSION" value="replace_chars(${FIELDNAME}, &quot;*&quot;, 1, 5)"/>

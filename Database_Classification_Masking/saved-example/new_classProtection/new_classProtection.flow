@@ -273,7 +273,7 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
             <fieldAttributes xsi:type="ddf:Set">
-              <value xsi:type="ddf:FileSet" fileName="&quot;C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
+              <value xsi:type="ddf:FileSet" fileName="&quot;/home/iridemo/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
             </fieldAttributes>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -983,7 +983,7 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LAST_NAME"/>
             <fieldAttributes xsi:type="ddf:Set">
-              <value xsi:type="ddf:FileSet" fileName="&quot;C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
+              <value xsi:type="ddf:FileSet" fileName="&quot;/home/iridemo/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
             </fieldAttributes>
           </fields>
           <fields xsi:type="scl:AdvancedField">
@@ -3193,7 +3193,7 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
             <fieldAttributes xsi:type="ddf:LocationDef" defType="ODEF" string="LASTNAME"/>
             <fieldAttributes xsi:type="ddf:Set">
-              <value xsi:type="ddf:FileSet" fileName="&quot;C:/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
+              <value xsi:type="ddf:FileSet" fileName="&quot;/home/iridemo/git/workbench-demos/Database_Classification_Masking/sets/lnames.set&quot;"/>
             </fieldAttributes>
           </fields>
           <fields xsi:type="scl:AdvancedField">

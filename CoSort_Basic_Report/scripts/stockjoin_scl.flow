@@ -284,7 +284,7 @@
             <fieldAttributes xsi:type="ddf:Position" number1="1"/>
             <fieldAttributes xsi:type="ddf:Size" size="17"/>
             <fieldAttributes xsi:type="ddf:Set">
-              <value xsi:type="ddf:FileSet" fileName="&quot;C:/IRI/cosort100/sets/names/names_last.set&quot;">
+              <value xsi:type="ddf:FileSet" fileName="&quot;/home/iridemo/iri/cosort100/sets/names/names_last.set&quot;">
                 <setOption xsi:type="ddf:SetSelect"/>
               </value>
             </fieldAttributes>

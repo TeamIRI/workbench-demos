@@ -6,7 +6,7 @@
   </dataClasses>
   <dataClasses xsi:type="dataclass:DataClass" name="L(AST)?[_-]?NAME" description="Class for last names">
     <defaultRule href="iriLibrary.rules#FieldPseudonymRule"/>
-    <matchers type="FILE" details="C:/IRI/cosort100/sets/names/names_last.set"/>
+    <matchers type="FILE" details="/home/iridemo/iri/cosort100/sets/names/names_last.set"/>
   </dataClasses>
   <dataClasses xsi:type="dataclass:DataClass" name="EMAIL" description="Class for email">
     <defaultRule href="iriLibrary.rules#FieldEncryptionRule"/>

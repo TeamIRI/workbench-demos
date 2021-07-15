@@ -30,7 +30,7 @@
         <active>true</active>
         <description>Class for first names</description>
         <matchers>
-            <details>C:/IRI/cosort100/sets/names/names_first.set</details>
+            <details>/home/iridemo/iri/cosort100/sets/names/names_first.set</details>
             <type>FILE</type>
         </matchers>
         <name>FIRST_NAME</name>
@@ -41,7 +41,7 @@
         <active>true</active>
         <description>Class for last names</description>
         <matchers>
-            <details>C:/IRI/cosort100/sets/names/names_last.set</details>
+            <details>/home/iridemo/iri/cosort100/sets/names/names_last.set</details>
             <type>FILE</type>
         </matchers>
         <name>LAST_NAME</name>
@@ -52,11 +52,11 @@
         <active>true</active>
         <description>Class for full names</description>
         <matchers>
-            <details>C:/IRI/cosort100/sets/names/names_first_last.set</details>
+            <details>/home/iridemo/iri/cosort100/sets/names/names_first_last.set</details>
             <type>FILE</type>
         </matchers>
         <matchers>
-            <details>C:/IRI/cosort100/sets/names/names_last_comma_first.set</details>
+            <details>/home/iridemo/iri/cosort100/sets/names/names_last_comma_first.set</details>
             <type>FILE</type>
         </matchers>
         <name>FULL_NAME</name>
