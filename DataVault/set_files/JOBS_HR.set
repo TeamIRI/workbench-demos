@@ -1,0 +1,19 @@
+AC_ACCOUNT	Public Accountant
+AC_MGR	Accounting Manager
+AD_ASST	Administration Assistant
+AD_PRES	President
+AD_VP	Administration Vice President
+FI_ACCOUNT	Accountant
+FI_MGR	Finance Manager
+HR_REP	Human Resources Representative
+IT_PROG	Programmer
+MK_MAN	Marketing Manager
+MK_REP	Marketing Representative
+PR_REP	Public Relations Representative
+PU_CLERK	Purchasing Clerk
+PU_MAN	Purchasing Manager
+SA_MAN	Sales Manager
+SA_REP	Sales Representative
+SH_CLERK	Shipping Clerk
+ST_CLERK	Stock Clerk
+ST_MAN	Stock Manager

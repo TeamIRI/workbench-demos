@@ -1,0 +1,21 @@
+# Generated with IRI Workbench - Data Vault Generator
+#
+ # Author: iridemo
+ # Created: 2021-07-28 17:18:51
+ #
+
+/INFILES=uniqueseedgeneration
+	/PROCESS=RANDOM
+	/ALIAS=uniqueseedgeneration
+	/INCOLLECT=200
+	/FIELD=(DEPARTMENT_ID, TYPE=WHOLE_NUMBER, SIZE=4, POSITION=1, SEPARATOR="\t", ODEF="DEPARTMENT_ID", ROWID="10,10")
+
+/SORT
+	/KEY=(DEPARTMENT_ID)
+	/NODUPLICATES
+
+/OUTFILE=C:/git/workbench-demos/DataVault/saved_example/generated_data/DEPARTMENT_ID.sed
+	/PROCESS=RECORD
+	/OUTCOLLECT=100
+	/FIELD=(DEPARTMENT_ID, TYPE=WHOLE_NUMBER, POSITION=1, SEPARATOR="\t", ODEF="DEPARTMENT_ID")
+

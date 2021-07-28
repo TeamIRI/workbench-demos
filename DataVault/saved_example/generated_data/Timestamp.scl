@@ -1,0 +1,16 @@
+# Generated with IRI Workbench - Data Vault Generator
+#
+ # Author: iridemo
+ # Created: 2021-07-28 17:18:46
+ #
+
+/INFILES=Timestamp
+	/PROCESS=RANDOM
+	/INCOLLECT=1
+
+/REPORT
+
+/OUTFILE=Timestamp.out
+	/PROCESS=DELIMITED
+	/FIELD=(TIMESTAMP_CURRENT=current_iso_timestamp("%Y-%m-%d %H:%M:%S.0"), TYPE=ASCII, POSITION=1, SEPARATOR="\t")
+

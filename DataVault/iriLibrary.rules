@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rules:RuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0">
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-CountryID" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/COUNTRIES_HR.set&quot; SELECT=ROW[1]"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-CountryName" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/COUNTRIES_HR.set&quot; [COUNTRY_ID]"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-DeptName" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/DEPARTMENT_NAME.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-First" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/IRI/cosort105/sets/names/names_first.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-Last" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/IRI/cosort105/sets/names/names_last.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-Email" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/Email.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-Phone" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/Phone.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-JobID" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/JOBS_HR.set&quot; SELECT=ROW[1]"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-JobTitle" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/JOBS_HR.set&quot; [JOB_ID]"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-ComPct" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/ComPct.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-RegionName" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/REGION_NAME.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-LocationStreet" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/LOCATIONS_HR.set&quot; SELECT=ROW[1]"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-LocationPostal" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/LOCATIONS_HR.set&quot; SELECT=ROW[2]"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-LocationCity" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/LOCATIONS_HR.set&quot; SELECT=ROW[3]"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-LocationState" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/git/workbench-demos/DataVault/set_files/LOCATIONS_HR.set&quot; SELECT=ROW[4]"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldAssignmentRule-MaxSalary" editor="assignmentWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="MIN_SALARY + 10000"/>
+    <properties fieldRulePropertyType="NAME" value="EXPRESSION_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldRowRule-1" editor="rowIdWizard">
+    <properties fieldRulePropertyType="ROWID" value="1,1"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldRowRule-2" editor="rowIdWizard">
+    <properties fieldRulePropertyType="ROWID" value="10,10"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldRowRule-4" editor="rowIdWizard">
+    <properties fieldRulePropertyType="ROWID" value="1000,100"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldRowRule-3Single" editor="rowIdWizard">
+    <properties fieldRulePropertyType="ROWID" value="100,1"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-Range4-8" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="{[1200,30000]}"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule-RangeDate" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="{[1950-01-01,2019-03-31]}"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldStringRule-ChangeDate1000" editor="stringFunctionWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="change_dt(START_DATE, 1000, &quot;days&quot;)"/>
+    <properties fieldRulePropertyType="NAME" value="CHANGE_DT_${FIELDNAME}"/>
+  </rules>
+</rules:RuleLibrary>
