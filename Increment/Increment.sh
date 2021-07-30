@@ -4,11 +4,13 @@ sortcl /SPECIFICATION=Timestamp.scl
 sortcl /SPECIFICATION=Changes.scl
 if [ ! $? == 0  ]; then
 
+echo ERROR
 exit
- else
- 
+ else 
+
 cp LastTimeTemp.txt LastTime.txt
 echo Job Finished
 exit
 fi
 
+echo Job Ended

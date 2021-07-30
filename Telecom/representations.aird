@@ -22,7 +22,7 @@
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MA-CYG1VEeeMydmI8OdBow" name="Telecom" repPath="#_MA-CYW1VEeeMydmI8OdBow" changeId="91c88b16-f3e8-411a-8450-c9b6a09aa8e0">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
-        <target xmi:type="flow:FlowBatch" href="Telecom.flow#Telecom.bat"/>
+        <target xmi:type="flow:FlowBatch" href="Telecom.flow#Telecom.sh"/>
       </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_XDhJ0G1VEeeMydmI8OdBow" name="Sort_Trunk" repPath="#_XDnQcG1VEeeMydmI8OdBow" changeId="2dcaf186-8820-45a3-9bd8-aad93d135551">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='Transform%20Mapping%20Diagram']"/>
@@ -896,7 +896,7 @@
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_MA-pz21VEeeMydmI8OdBow"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer"/>
-    <target xmi:type="flow:FlowBatch" href="Telecom.flow#Telecom.bat"/>
+    <target xmi:type="flow:FlowBatch" href="Telecom.flow#Telecom.sh"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_XDnQcG1VEeeMydmI8OdBow">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_XDnQcW1VEeeMydmI8OdBow" source="DANNOTATION_CUSTOMIZATION_KEY">

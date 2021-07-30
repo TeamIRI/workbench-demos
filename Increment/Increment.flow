@@ -57,7 +57,7 @@
             <fieldAttributes xsi:type="ddf:Separator" sepValue="&#x9;"/>
           </fields>
         </dataInfo>
-        <sectionOptions xsi:type="ddf:Process" name="RECORD"/>
+        <sectionOptions xsi:type="ddf:Process"/>
       </outputDatas>
       <mappings name="LAST_TIME_To_LAST_TIME" sourceField="//@flowlets.0/@blocks.2/@inputDatas.0/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0"/>
       <mappings name="LAST_TIME_To_LAST_TIME" sourceField="//@flowlets.0/@blocks.2/@transformData/@dataInfo/@fields.0" targetField="//@flowlets.0/@blocks.2/@outputDatas.0/@dataInfo/@fields.0"/>
@@ -95,7 +95,7 @@
     </blocks>
     <blocks xsi:type="flow:EndBlock" name="End" inputConnections="Decision_To_End" return="echo ERROR"/>
     <blocks xsi:type="flow:CommandLine" name="Rename-LastTimeTemp" outputConnections="Rename-LastTimeTemp_To_End" inputConnections="Decision_To_Rename-LastTimeTemp" command="cp">
-      <parameters> LastTimeTemp.txt LastTime.txt</parameters>
+      <parameters>LastTimeTemp.txt LastTime.txt</parameters>
     </blocks>
     <blocks xsi:type="flow:Decision" name="Decision" outputConnections="Decision_To_End Decision_To_Rename-LastTimeTemp" inputConnections="test.client_To_Decision" trueConnection="Decision_To_End" falseConnection="Decision_To_Rename-LastTimeTemp">
       <criteria name="! $? == 0" condition="! $? == 0"/>
