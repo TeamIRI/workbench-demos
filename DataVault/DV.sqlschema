@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLConstraints="http:///com/iri/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///com/iri/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLSchema="http:///com/iri/datatools/modelbase/sql/schema.ecore" xmlns:SQLTables="http:///com/iri/datatools/modelbase/sql/tables.ecore">
+  <SQLSchema:Database name="XE" vendor="Oracle" version="11" schemas="/19"/>
+  <SQLTables:PersistentTable name="DV_COUNTRIES_HR" schema="/19">
+    <columns name="COUNTRY_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="2"/>
+    </columns>
+    <columns name="COUNTRY_NAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="40"/>
+    </columns>
+    <columns name="REGION_ID">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="38"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="DV_COUNTRY_C_ID_HR_PK" members="/1/COUNTRY_ID" ForeignKey="/17/DV_LOC_C_ID_HR_FK"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_COUNTR_REG_HR_FK" members="/1/REGION_ID" uniqueConstraint="/18/DV_REG_ID_HR_PK"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="DV_DEPT_LOCATION_HR_IX" Schema="/19" clustered="true" table="/3">
+    <members column="/3/LOCATION_ID"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="DV_DEPARTMENTS_HR" schema="/19" index="/2">
+    <columns name="DEPARTMENT_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="4"/>
+    </columns>
+    <columns name="DEPARTMENT_NAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <columns name="LOCATION_ID">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="4"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="DV_DEPT_ID_HR_PK" members="/3/DEPARTMENT_ID" ForeignKey="/9/DV_EMP_DEPT_HR_FK /12/DV_JHIST_DEPT_HR_FK"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_DEPT_LOC_HR_FK" members="/3/LOCATION_ID" uniqueConstraint="/17/DV_LOC_ID_HR_PK"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="DV_EMP_EMAIL_HR_UK" Schema="/19" clustered="true" unique="true" table="/9">
+    <members column="/9/EMAIL"/>
+  </SQLConstraints:Index>
+  <SQLConstraints:Index name="DV_EMP_DEPARTMENT_HR_IX" Schema="/19" clustered="true" table="/9">
+    <members column="/9/DEPARTMENT_ID"/>
+  </SQLConstraints:Index>
+  <SQLConstraints:Index name="DV_EMP_JOB_HR_IX" Schema="/19" clustered="true" table="/9">
+    <members column="/9/JOB_ID"/>
+  </SQLConstraints:Index>
+  <SQLConstraints:Index name="DV_EMP_MANAGER_HR_IX" Schema="/19" clustered="true" table="/9">
+    <members column="/9/MANAGER_ID"/>
+  </SQLConstraints:Index>
+  <SQLConstraints:Index name="DV_EMP_NAME_HR_IX" Schema="/19" clustered="true" table="/9">
+    <members column="/9/LAST_NAME"/>
+    <members column="/9/FIRST_NAME"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="DV_EMPLOYEES_HR" schema="/19" index="/4 /5 /6 /7 /8">
+    <columns name="EMPLOYEE_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <columns name="FIRST_NAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns name="LAST_NAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="25"/>
+    </columns>
+    <columns name="EMAIL" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="25"/>
+    </columns>
+    <columns name="PHONE_NUMBER">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns name="HIRE_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:DateDataType" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns name="JOB_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="10"/>
+    </columns>
+    <columns name="SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="8" scale="2"/>
+    </columns>
+    <columns name="COMMISSION_PCT">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="2" scale="2"/>
+    </columns>
+    <columns name="MANAGER_ID">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <columns name="DEPARTMENT_ID">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="4"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="DV_EMP_EMP_ID_HR_PK" members="/9/EMPLOYEE_ID" ForeignKey="/9/DV_EMP_MANAGER_HR_FK /12/DV_JHIST_EMP_HR_FK"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_EMP_DEPT_HR_FK" members="/9/DEPARTMENT_ID" uniqueConstraint="/3/DV_DEPT_ID_HR_PK"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_EMP_MANAGER_HR_FK" members="/9/MANAGER_ID" uniqueConstraint="/9/DV_EMP_EMP_ID_HR_PK"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_EMP_JOB_HR_FK" members="/9/JOB_ID" uniqueConstraint="/13/DV_JOB_ID_HR_PK"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="DV_JHIST_DEPARTMENT_HR_IX" Schema="/19" clustered="true" table="/12">
+    <members column="/12/DEPARTMENT_ID"/>
+  </SQLConstraints:Index>
+  <SQLConstraints:Index name="DV_JHIST_JOB_HR_IX" Schema="/19" clustered="true" table="/12">
+    <members column="/12/JOB_ID"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="DV_JOB_HISTORY_HR" schema="/19" index="/10 /11">
+    <columns name="EMPLOYEE_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <columns name="START_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:DateDataType" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns name="END_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:DateDataType" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns name="JOB_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="10"/>
+    </columns>
+    <columns name="DEPARTMENT_ID">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="4"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="DV_JHIST_EMP_ID_ST_DATE_HR_PK" members="/12/EMPLOYEE_ID /12/START_DATE"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_JHIST_DEPT_HR_FK" members="/12/DEPARTMENT_ID" uniqueConstraint="/3/DV_DEPT_ID_HR_PK"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_JHIST_EMP_HR_FK" members="/12/EMPLOYEE_ID" uniqueConstraint="/9/DV_EMP_EMP_ID_HR_PK"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_JHIST_JOB_HR_FK" members="/12/JOB_ID" uniqueConstraint="/13/DV_JOB_ID_HR_PK"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="DV_JOBS_HR" schema="/19">
+    <columns name="JOB_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="10"/>
+    </columns>
+    <columns name="JOB_TITLE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="35"/>
+    </columns>
+    <columns name="MIN_SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <columns name="MAX_SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="DV_JOB_ID_HR_PK" members="/13/JOB_ID" ForeignKey="/9/DV_EMP_JOB_HR_FK /12/DV_JHIST_JOB_HR_FK"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="DV_LOC_CITY_HR_IX" Schema="/19" clustered="true" table="/17">
+    <members column="/17/CITY"/>
+  </SQLConstraints:Index>
+  <SQLConstraints:Index name="DV_LOC_COUNTRY_HR_IX" Schema="/19" clustered="true" table="/17">
+    <members column="/17/COUNTRY_ID"/>
+  </SQLConstraints:Index>
+  <SQLConstraints:Index name="DV_LOC_STATE_PROVINCE_HR_IX" Schema="/19" clustered="true" table="/17">
+    <members column="/17/STATE_PROVINCE"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="DV_LOCATIONS_HR" schema="/19" index="/14 /15 /16">
+    <columns name="LOCATION_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="4"/>
+    </columns>
+    <columns name="STREET_ADDRESS">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="40"/>
+    </columns>
+    <columns name="POSTAL_CODE">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="12"/>
+    </columns>
+    <columns name="CITY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <columns name="STATE_PROVINCE">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="25"/>
+    </columns>
+    <columns name="COUNTRY_ID">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="2"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="DV_LOC_ID_HR_PK" members="/17/LOCATION_ID" ForeignKey="/3/DV_DEPT_LOC_HR_FK"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="DV_LOC_C_ID_HR_FK" members="/17/COUNTRY_ID" uniqueConstraint="/1/DV_COUNTRY_C_ID_HR_PK"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="DV_REGIONS_HR" schema="/19">
+    <columns name="REGION_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="38"/>
+    </columns>
+    <columns name="REGION_NAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="25"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="DV_REG_ID_HR_PK" members="/18/REGION_ID" ForeignKey="/1/DV_COUNTR_REG_HR_FK"/>
+  </SQLTables:PersistentTable>
+  <SQLSchema:Schema name="SCOTT" indices="/2 /4 /5 /6 /7 /8 /10 /11 /14 /15 /16" tables="/1 /3 /9 /12 /13 /17 /18" database="/0"/>
+</xmi:XMI>

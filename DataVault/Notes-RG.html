@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2021. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Data Vault Generator with random data</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+
+  </style>
+</head>
+
+<body>
+  <h1>Data Vault Generator with random data</h1>
+
+  <p>This demonstrates the use of the Data Vault
+  wizard to create a data vault from existing tables
+  and loading with randomly generated data.
+
+  <p>This demo requires and uses the following resources:</p>
+
+  <ul>
+    <li>The DTP connection profile Oracle</li>
+
+    <li>The ODBC DSN Oracle</li>
+  </ul>
+
+  <p><strong>IMPORTANT:</strong> Before running this demo, 
+  expand the setup folder and 
+  right-click <em>reset_demo.bat</em>. Select 
+  <strong>Run As &gt; Batch Program</strong>.</p>
+
+  <p>Recommended steps to perform the demo in the Workbench:</p>
+
+  <h2>Steps</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Open the document
+    <em>DV.sqlschema</em> to see the existing table relations.</li>
+
+    <li style="margin-bottom: 10px;">Open the Oracle connection in
+    the Data Source Explorer.</li>
+
+    <li style="margin-bottom: 10px;">Navigate to the
+    <strong>XE &gt; Schemas &gt; SCOTT &gt; Tables</strong>.</li>
+
+    <li style="margin-bottom: 10px;">Select the seven tables for the
+    example: DV_COUNTRIES_HR, DV_DEPARTMENTS_HR, DV_EMPLOYEES_HR,
+    DV_JOBS_HR, DV_JOB_HISTORY_HR, DV_LOCATIONS_HR, and DV_REGIONS_HR.</li>
+
+    <li style="margin-bottom: 10px;">Right-click the tables and select
+    <strong> IRI &gt; Data Vault Generator</strong></li>
+
+    <li style="margin-bottom: 10px;">On the first page, make sure
+    that the main project folder is specified.</li>
+
+    <li style="margin-bottom: 10px;">Select <strong>Load randomly generated 
+    data</strong> as the Output. Leave the Hash type as <strong>MD5</strong>.
+    Select <strong>ODBC</strong> as the Loader. Enter <em>1000</em> in
+    <strong>Rows to generate</strong>.
+    Select <strong>Include
+    a last seen date column for hubs and links</strong>.
+    Select <strong>Include a has diff column for satellites</strong>.
+    Select <strong>Show summary page</strong>.
+    Click <strong>Next</strong></li>
+
+    <li style="margin-bottom: 10px;"> On the Table Selection page,
+	the seven tables should already be pre-selected.
+	Click <strong>Next</strong>.</li>
+
+    <li style="margin-bottom: 10px;">On the Hub Options page, 
+    in the <strong>Columns</strong> column, 
+    double-click the <em>COUNTRY_ID</em> row. On the details page,
+    unselect <em>COUNTRY_ID</em> and select <em>COUNTRY_NAME</em>.<br>
+    Double-click the <em>DEPARTMENT_ID</em> row. On the details page,
+    unselect <em>DEPARTMENT_ID</em> and select <em>DEPARTMENT_NAME</em>.<br>
+    Double-click the <em>JOB_ID</em> row. On the details page,
+    unselect <em>JOB_ID</em> and select <em>JOB_TITLE</em>.<br>
+    Double-click the <em>REGION_ID</em> row. On the details page,
+    unselect <em>REGION_ID</em> and select <em>REGION_NAME</em>.
+	Click <strong>Next</strong>.</li>
+
+    <li style="margin-bottom: 10px;">On the Link Options page,
+    leave the defaults.
+	Click <strong>Next</strong>.</li>
+
+    <li style="margin-bottom: 10px;">On the Satellite Options page,
+    leave the defaults.
+	Click <strong>Next</strong>.</li>
+
+    <li style="margin-bottom: 10px;">On the Data
+    Loading Stage page, select the connection profile <em>Oracle</em>
+    and schema <em>SCOTT</em> for the target. If there is only one schema, the
+    wizard will auto-fill it.</li>
+
+    <li style="margin-bottom: 10px;">Leave APPEND in  
+    <strong>Output mode</strong>. 
+    
+    <li style="margin-bottom: 10px;">Select <strong>Include
+    a drop table script</strong>. 
+  	Click <strong>Next</strong>.</li>
+
+    <li style="margin-bottom: 10px;">On the rules page, 
+    select <strong>Include
+    rules associated with data classes</strong> at the bottom 
+    of the page.
+  	Click <strong>Next</strong>.</li>
+    
+    <li style="margin-bottom: 10px;">On the Summary page,
+    the list of the 20 new tables will be shown. 
+    Click <strong>Finish</strong>.</li>
+
+    <li style="margin-bottom: 10px;">A new folder, 
+    <em>new_dataVault</em>,
+    will be created.</li>
+
+  </ol>
+
+  <h2>Output</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">
+    An ER diagram showing the relationships of the new tables
+    will open.</li>
+
+    <li style="margin-bottom: 10px;">
+    Also included is a <em>new_dataVault.flow</em> file. Double-click
+    to open it and see the 27 transform mapping blocks that comprise
+    the job.</li>
+    
+    <li style="margin-bottom: 10px;">
+	Right-click the <em>new_dataVault.bat</em> file and select
+	<strong>Run As &gt; Batch Program</strong>.</li>
+
+  </ol>
+
+  <h2>Cleanup</h2>
+
+  <ol>
+    <li style="margin-bottom: 10px;">Delete the <em>new_dataVault</em>
+    folder.</li>
+
+    <li style="margin-bottom: 10px;">Execute
+    <em>reset_demo.bat</em> in the setup folder.</li>
+  </ol>
+</body>
+</html>

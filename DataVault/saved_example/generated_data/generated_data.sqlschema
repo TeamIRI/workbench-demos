@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLAccessControl="http:///com/iri/datatools/modelbase/sql/accesscontrol.ecore" xmlns:SQLConstraints="http:///com/iri/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///com/iri/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLSchema="http:///com/iri/datatools/modelbase/sql/schema.ecore" xmlns:SQLTables="http:///com/iri/datatools/modelbase/sql/tables.ecore">
+  <SQLAccessControl:Role ownedSchema="/3"/>
+  <SQLSchema:Catalog name="" Database="/2" schemas="/3"/>
+  <SQLSchema:Database name="XE" vendor="Oracle" version="11" schemas="/3" catalogs="/1"/>
+  <SQLSchema:Schema name="SCOTT" indices="/4 /6 /8 /10 /12 /14 /16 /18 /20 /22 /24 /26 /28" tables="/5 /7 /9 /11 /13 /15 /17 /19 /21 /23 /25 /27 /29 /30 /31 /32 /33 /34 /35 /36" database="/2" Catalog="/1" owner="/0"/>
+  <SQLConstraints:Index name="HUB_DV_JOBS_HR_IX" Schema="/3" unique="true" table="/5">
+    <members name="JOB_TITLE" column="/5/JOB_TITLE"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="HUB_DV_JOBS_HR" schema="/3" index="/4" referencingForeignKeys="/25/LNK_DV_EMPLOYEES_HR_INFO_FK3 /27/LNK_DV_JOB_HISTORY_HR_INFO_FK4 /30/SAT_DV_JOBS_HR_FK1">
+    <columns name="HUB_DV_JOBS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="JOB_TITLE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="35"/>
+    </columns>
+    <columns name="HUB_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="HUB_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HUB_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="HUB_DV_JOBS_HR_PK" members="/5/HUB_DV_JOBS_HR_KEY" ForeignKey="/25/LNK_DV_EMPLOYEES_HR_INFO_FK3 /27/LNK_DV_JOB_HISTORY_HR_INFO_FK4 /30/SAT_DV_JOBS_HR_FK1"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="HUB_DV_REGIONS_HR_IX" Schema="/3" unique="true" table="/7">
+    <members name="REGION_NAME" column="/7/REGION_NAME"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="HUB_DV_REGIONS_HR" schema="/3" index="/6" referencingForeignKeys="/19/LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_FK2 /31/SAT_DV_REGIONS_HR_FK1">
+    <columns name="HUB_DV_REGIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="REGION_NAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="25"/>
+    </columns>
+    <columns name="HUB_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="HUB_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HUB_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="HUB_DV_REGIONS_HR_PK" members="/7/HUB_DV_REGIONS_HR_KEY" ForeignKey="/19/LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_FK2 /31/SAT_DV_REGIONS_HR_FK1"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="HUB_DV_COUNTRIES_HR_IX" Schema="/3" unique="true" table="/9">
+    <members name="COUNTRY_NAME" column="/9/COUNTRY_NAME"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="HUB_DV_COUNTRIES_HR" schema="/3" index="/8" referencingForeignKeys="/19/LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_FK1 /29/LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_FK2">
+    <columns name="HUB_DV_COUNTRIES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="COUNTRY_NAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="40"/>
+    </columns>
+    <columns name="HUB_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="HUB_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HUB_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="HUB_DV_COUNTRIES_HR_PK" members="/9/HUB_DV_COUNTRIES_HR_KEY" ForeignKey="/19/LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_FK1 /29/LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_FK2"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="HUB_DV_LOCATIONS_HR_IX" Schema="/3" unique="true" table="/11">
+    <members name="LOCATION_ID" column="/11/LOCATION_ID"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="HUB_DV_LOCATIONS_HR" schema="/3" index="/10" referencingForeignKeys="/21/LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_FK2 /29/LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_FK1">
+    <columns name="HUB_DV_LOCATIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="LOCATION_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="4"/>
+    </columns>
+    <columns name="HUB_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="HUB_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HUB_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="HUB_DV_LOCATIONS_HR_PK" members="/11/HUB_DV_LOCATIONS_HR_KEY" ForeignKey="/21/LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_FK2 /29/LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_FK1"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="HUB_DV_DEPARTMENTS_HR_IX" Schema="/3" unique="true" table="/13">
+    <members name="DEPARTMENT_NAME" column="/13/DEPARTMENT_NAME"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="HUB_DV_DEPARTMENTS_HR" schema="/3" index="/12" referencingForeignKeys="/21/LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_FK1 /25/LNK_DV_EMPLOYEES_HR_INFO_FK2 /27/LNK_DV_JOB_HISTORY_HR_INFO_FK2">
+    <columns name="HUB_DV_DEPARTMENTS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="DEPARTMENT_NAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <columns name="HUB_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="HUB_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HUB_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="HUB_DV_DEPARTMENTS_HR_PK" members="/13/HUB_DV_DEPARTMENTS_HR_KEY" ForeignKey="/21/LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_FK1 /25/LNK_DV_EMPLOYEES_HR_INFO_FK2 /27/LNK_DV_JOB_HISTORY_HR_INFO_FK2"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="HUB_DV_EMPLOYEES_HR_IX" Schema="/3" unique="true" table="/15">
+    <members name="EMPLOYEE_ID" column="/15/EMPLOYEE_ID"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="HUB_DV_EMPLOYEES_HR" schema="/3" index="/14" referencingForeignKeys="/23/LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_FK1 /23/LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_FK2 /25/LNK_DV_EMPLOYEES_HR_INFO_FK1 /27/LNK_DV_JOB_HISTORY_HR_INFO_FK3">
+    <columns name="HUB_DV_EMPLOYEES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="EMPLOYEE_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <columns name="HUB_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="HUB_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HUB_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="HUB_DV_EMPLOYEES_HR_PK" members="/15/HUB_DV_EMPLOYEES_HR_KEY" ForeignKey="/23/LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_FK1 /23/LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_FK2 /25/LNK_DV_EMPLOYEES_HR_INFO_FK1 /27/LNK_DV_JOB_HISTORY_HR_INFO_FK3"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="HUB_DV_JOB_HISTORY_HR_IX" Schema="/3" unique="true" table="/17">
+    <members name="EMPLOYEE_ID" column="/17/EMPLOYEE_ID"/>
+    <members name="START_DATE" column="/17/START_DATE"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="HUB_DV_JOB_HISTORY_HR" schema="/3" index="/16" referencingForeignKeys="/27/LNK_DV_JOB_HISTORY_HR_INFO_FK1">
+    <columns name="HUB_DV_JOB_HISTORY_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="EMPLOYEE_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <columns name="START_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:DateDataType" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns name="HUB_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="HUB_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HUB_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="HUB_DV_JOB_HISTORY_HR_PK" members="/17/HUB_DV_JOB_HISTORY_HR_KEY" ForeignKey="/27/LNK_DV_JOB_HISTORY_HR_INFO_FK1"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_IX" Schema="/3" unique="true" table="/19">
+    <members name="HUB_DV_COUNTRIES_HR_KEY" column="/19/HUB_DV_COUNTRIES_HR_KEY"/>
+    <members name="HUB_DV_REGIONS_HR_KEY" column="/19/HUB_DV_REGIONS_HR_KEY"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="LNK_DV_COUNTRIES_HR_DV_REGIONS_HR" schema="/3" index="/18" referencingForeignKeys="/32/SAT_DV_COUNTRIES_HR_FK1">
+    <columns name="LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_COUNTRIES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_REGIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="LNK_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="LNK_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="LNK_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_PK" members="/19/LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_KEY" ForeignKey="/32/SAT_DV_COUNTRIES_HR_FK1"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_FK1" members="/19/HUB_DV_COUNTRIES_HR_KEY" uniqueConstraint="/9/HUB_DV_COUNTRIES_HR_PK" referencedTable="/9"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_FK2" members="/19/HUB_DV_REGIONS_HR_KEY" uniqueConstraint="/7/HUB_DV_REGIONS_HR_PK" referencedTable="/7"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_IX" Schema="/3" unique="true" table="/21">
+    <members name="HUB_DV_DEPARTMENTS_HR_KEY" column="/21/HUB_DV_DEPARTMENTS_HR_KEY"/>
+    <members name="HUB_DV_LOCATIONS_HR_KEY" column="/21/HUB_DV_LOCATIONS_HR_KEY"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR" schema="/3" index="/20" referencingForeignKeys="/34/SAT_DV_DEPARTMENTS_HR_FK1">
+    <columns name="LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_DEPARTMENTS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_LOCATIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="LNK_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="LNK_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="LNK_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_PK" members="/21/LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_KEY" ForeignKey="/34/SAT_DV_DEPARTMENTS_HR_FK1"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_FK1" members="/21/HUB_DV_DEPARTMENTS_HR_KEY" uniqueConstraint="/13/HUB_DV_DEPARTMENTS_HR_PK" referencedTable="/13"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_FK2" members="/21/HUB_DV_LOCATIONS_HR_KEY" uniqueConstraint="/11/HUB_DV_LOCATIONS_HR_PK" referencedTable="/11"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_IX" Schema="/3" unique="true" table="/23">
+    <members name="HUB_DV_EMPLOYEES_HR_KEY" column="/23/HUB_DV_EMPLOYEES_HR_KEY"/>
+    <members name="HUB_HUB_DV_EMPLOYEES_HR.MANAGER_ID_KEY" column="/23/HUB_HUB_DV_EMPLOYEES_HR.MANAGER_ID_KEY"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR" schema="/3" index="/22">
+    <columns name="LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_EMPLOYEES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_HUB_DV_EMPLOYEES_HR.MANAGER_ID_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="LNK_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="LNK_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="LNK_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_PK" members="/23/LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_KEY"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_FK1" members="/23/HUB_DV_EMPLOYEES_HR_KEY" uniqueConstraint="/15/HUB_DV_EMPLOYEES_HR_PK" referencedTable="/15"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_EMPLOYEES_HR_DV_EMPLOYEES_HR_FK2" members="/23/HUB_HUB_DV_EMPLOYEES_HR.MANAGER_ID_KEY" uniqueConstraint="/15/HUB_DV_EMPLOYEES_HR_PK" referencedTable="/15"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="LNK_DV_EMPLOYEES_HR_INFO_IX" Schema="/3" unique="true" table="/25">
+    <members name="HUB_DV_EMPLOYEES_HR_KEY" column="/25/HUB_DV_EMPLOYEES_HR_KEY"/>
+    <members name="HUB_DV_DEPARTMENTS_HR_KEY" column="/25/HUB_DV_DEPARTMENTS_HR_KEY"/>
+    <members name="HUB_DV_JOBS_HR_KEY" column="/25/HUB_DV_JOBS_HR_KEY"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="LNK_DV_EMPLOYEES_HR_INFO" schema="/3" index="/24" referencingForeignKeys="/35/SAT_DV_EMPLOYEES_HR_FK1">
+    <columns name="LNK_DV_EMPLOYEES_HR_INFO_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_EMPLOYEES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_DEPARTMENTS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_JOBS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="LNK_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="LNK_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="LNK_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="LNK_DV_EMPLOYEES_HR_INFO_PK" members="/25/LNK_DV_EMPLOYEES_HR_INFO_KEY" ForeignKey="/35/SAT_DV_EMPLOYEES_HR_FK1"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_EMPLOYEES_HR_INFO_FK1" members="/25/HUB_DV_EMPLOYEES_HR_KEY" uniqueConstraint="/15/HUB_DV_EMPLOYEES_HR_PK" referencedTable="/15"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_EMPLOYEES_HR_INFO_FK2" members="/25/HUB_DV_DEPARTMENTS_HR_KEY" uniqueConstraint="/13/HUB_DV_DEPARTMENTS_HR_PK" referencedTable="/13"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_EMPLOYEES_HR_INFO_FK3" members="/25/HUB_DV_JOBS_HR_KEY" uniqueConstraint="/5/HUB_DV_JOBS_HR_PK" referencedTable="/5"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="LNK_DV_JOB_HISTORY_HR_INFO_IX" Schema="/3" unique="true" table="/27">
+    <members name="HUB_DV_JOB_HISTORY_HR_KEY" column="/27/HUB_DV_JOB_HISTORY_HR_KEY"/>
+    <members name="HUB_DV_DEPARTMENTS_HR_KEY" column="/27/HUB_DV_DEPARTMENTS_HR_KEY"/>
+    <members name="HUB_DV_EMPLOYEES_HR_KEY" column="/27/HUB_DV_EMPLOYEES_HR_KEY"/>
+    <members name="HUB_DV_JOBS_HR_KEY" column="/27/HUB_DV_JOBS_HR_KEY"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="LNK_DV_JOB_HISTORY_HR_INFO" schema="/3" index="/26" referencingForeignKeys="/36/SAT_DV_JOB_HISTORY_HR_FK1">
+    <columns name="LNK_DV_JOB_HISTORY_HR_INFO_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_JOB_HISTORY_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_DEPARTMENTS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_EMPLOYEES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_JOBS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="LNK_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="LNK_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="LNK_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="LNK_DV_JOB_HISTORY_HR_INFO_PK" members="/27/LNK_DV_JOB_HISTORY_HR_INFO_KEY" ForeignKey="/36/SAT_DV_JOB_HISTORY_HR_FK1"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_JOB_HISTORY_HR_INFO_FK1" members="/27/HUB_DV_JOB_HISTORY_HR_KEY" uniqueConstraint="/17/HUB_DV_JOB_HISTORY_HR_PK" referencedTable="/17"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_JOB_HISTORY_HR_INFO_FK2" members="/27/HUB_DV_DEPARTMENTS_HR_KEY" uniqueConstraint="/13/HUB_DV_DEPARTMENTS_HR_PK" referencedTable="/13"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_JOB_HISTORY_HR_INFO_FK3" members="/27/HUB_DV_EMPLOYEES_HR_KEY" uniqueConstraint="/15/HUB_DV_EMPLOYEES_HR_PK" referencedTable="/15"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_JOB_HISTORY_HR_INFO_FK4" members="/27/HUB_DV_JOBS_HR_KEY" uniqueConstraint="/5/HUB_DV_JOBS_HR_PK" referencedTable="/5"/>
+  </SQLTables:PersistentTable>
+  <SQLConstraints:Index name="LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_IX" Schema="/3" unique="true" table="/29">
+    <members name="HUB_DV_LOCATIONS_HR_KEY" column="/29/HUB_DV_LOCATIONS_HR_KEY"/>
+    <members name="HUB_DV_COUNTRIES_HR_KEY" column="/29/HUB_DV_COUNTRIES_HR_KEY"/>
+  </SQLConstraints:Index>
+  <SQLTables:PersistentTable name="LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR" schema="/3" index="/28" referencingForeignKeys="/33/SAT_DV_LOCATIONS_HR_FK1">
+    <columns name="LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_LOCATIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="HUB_DV_COUNTRIES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="LNK_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="LNK_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="LNK_LAST_SEEN_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_PK" members="/29/LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_KEY" ForeignKey="/33/SAT_DV_LOCATIONS_HR_FK1"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_FK1" members="/29/HUB_DV_LOCATIONS_HR_KEY" uniqueConstraint="/11/HUB_DV_LOCATIONS_HR_PK" referencedTable="/11"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_FK2" members="/29/HUB_DV_COUNTRIES_HR_KEY" uniqueConstraint="/9/HUB_DV_COUNTRIES_HR_PK" referencedTable="/9"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="SAT_DV_JOBS_HR" schema="/3">
+    <columns name="HUB_DV_JOBS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="SAT_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_LOAD_END_DATE">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HASH_DIFF" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="JOB_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="10"/>
+    </columns>
+    <columns name="MIN_SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <columns name="MAX_SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="6"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="SAT_DV_JOBS_HR_PK" members="/30/HUB_DV_JOBS_HR_KEY /30/SAT_LOAD_DATE"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="SAT_DV_JOBS_HR_FK1" members="/30/HUB_DV_JOBS_HR_KEY" uniqueConstraint="/5/HUB_DV_JOBS_HR_PK" referencedTable="/5"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="SAT_DV_REGIONS_HR" schema="/3">
+    <columns name="HUB_DV_REGIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="SAT_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_LOAD_END_DATE">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HASH_DIFF" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="REGION_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="38"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="SAT_DV_REGIONS_HR_PK" members="/31/HUB_DV_REGIONS_HR_KEY /31/SAT_LOAD_DATE"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="SAT_DV_REGIONS_HR_FK1" members="/31/HUB_DV_REGIONS_HR_KEY" uniqueConstraint="/7/HUB_DV_REGIONS_HR_PK" referencedTable="/7"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="SAT_DV_COUNTRIES_HR" schema="/3">
+    <columns name="LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="SAT_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_LOAD_END_DATE">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HASH_DIFF" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="COUNTRY_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="2"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="SAT_DV_COUNTRIES_HR_PK" members="/32/LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_KEY /32/SAT_LOAD_DATE"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="SAT_DV_COUNTRIES_HR_FK1" members="/32/LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_KEY" uniqueConstraint="/19/LNK_DV_COUNTRIES_HR_DV_REGIONS_HR_PK" referencedTable="/19"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="SAT_DV_LOCATIONS_HR" schema="/3">
+    <columns name="LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="SAT_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_LOAD_END_DATE">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HASH_DIFF" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="STREET_ADDRESS">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="40"/>
+    </columns>
+    <columns name="POSTAL_CODE">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="12"/>
+    </columns>
+    <columns name="CITY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <columns name="STATE_PROVINCE">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="25"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="SAT_DV_LOCATIONS_HR_PK" members="/33/LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_KEY /33/SAT_LOAD_DATE"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="SAT_DV_LOCATIONS_HR_FK1" members="/33/LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_KEY" uniqueConstraint="/29/LNK_DV_LOCATIONS_HR_DV_COUNTRIES_HR_PK" referencedTable="/29"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="SAT_DV_DEPARTMENTS_HR" schema="/3">
+    <columns name="LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="SAT_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_LOAD_END_DATE">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HASH_DIFF" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="DEPARTMENT_ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="4"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="SAT_DV_DEPARTMENTS_HR_PK" members="/34/LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_KEY /34/SAT_LOAD_DATE"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="SAT_DV_DEPARTMENTS_HR_FK1" members="/34/LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_KEY" uniqueConstraint="/21/LNK_DV_DEPARTMENTS_HR_DV_LOCATIONS_HR_PK" referencedTable="/21"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="SAT_DV_EMPLOYEES_HR" schema="/3">
+    <columns name="LNK_DV_EMPLOYEES_HR_INFO_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="SAT_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_LOAD_END_DATE">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HASH_DIFF" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="FIRST_NAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns name="LAST_NAME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="25"/>
+    </columns>
+    <columns name="EMAIL" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="25"/>
+    </columns>
+    <columns name="PHONE_NUMBER">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="20"/>
+    </columns>
+    <columns name="HIRE_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:DateDataType" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <columns name="SALARY">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="8" scale="2"/>
+    </columns>
+    <columns name="COMMISSION_PCT">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" name="NUMBER" primitiveType="NUMERIC" precision="2" scale="2"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="SAT_DV_EMPLOYEES_HR_PK" members="/35/LNK_DV_EMPLOYEES_HR_INFO_KEY /35/SAT_LOAD_DATE"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="SAT_DV_EMPLOYEES_HR_FK1" members="/35/LNK_DV_EMPLOYEES_HR_INFO_KEY" uniqueConstraint="/25/LNK_DV_EMPLOYEES_HR_INFO_PK" referencedTable="/25"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable name="SAT_DV_JOB_HISTORY_HR" schema="/3">
+    <columns name="LNK_DV_JOB_HISTORY_HR_INFO_KEY" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="SAT_LOAD_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_LOAD_END_DATE">
+      <containedType xsi:type="SQLDataTypes:TimeDataType" name="TIMESTAMP" primitiveType="TIMESTAMP" fractionalSecondsPrecision="6"/>
+    </columns>
+    <columns name="SAT_REC_SRC" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="100"/>
+    </columns>
+    <columns name="HASH_DIFF" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" name="CHAR" length="32"/>
+    </columns>
+    <columns name="END_DATE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:DateDataType" name="DATE" primitiveType="DATE"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" name="SAT_DV_JOB_HISTORY_HR_PK" members="/36/LNK_DV_JOB_HISTORY_HR_INFO_KEY /36/SAT_LOAD_DATE"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" name="SAT_DV_JOB_HISTORY_HR_FK1" members="/36/LNK_DV_JOB_HISTORY_HR_INFO_KEY" uniqueConstraint="/27/LNK_DV_JOB_HISTORY_HR_INFO_PK" referencedTable="/27"/>
+  </SQLTables:PersistentTable>
+</xmi:XMI>
