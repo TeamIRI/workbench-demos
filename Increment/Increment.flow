@@ -441,7 +441,7 @@
         </sectionOptions>
       </inputDatas>
       <outputDatas name="test.CLIENT" outputConnections="test.client_To_Decision">
-        <dataInfo xsi:type="flow:DBDataInfo" name="MySQL.test.CLIENT" DSN="MySQL" DTPName="MySQL" providerName="MySQL" database="MySql" hostName="localhost" instanceName="test" userName="scott" password="tiger" schema="test" table="client" delimiter="&#x9;">
+        <dataInfo xsi:type="flow:DBDataInfo" name="MySQL.test.CLIENT" DSN="MySQL" DTPName="MySQL" providerName="MySQL" database="MySql" hostName="localhost" instanceName="test" userName="scott" password="tiger" schema="test" table="CLIENT" delimiter="&#x9;">
           <fields xsi:type="scl:AdvancedField">
             <fieldMathStatement>
               <compoundExpression>
