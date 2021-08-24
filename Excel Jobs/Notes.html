@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2021. Innovative Routines International (IRI), Inc.   -->
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+  <title>Jobs to demonstrate direct Excel (.xlsx and .xls) file support with sortcl</title>
+  <style type="text/css">
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+   body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;} 
+  </style>
+</head>
+<body>
+  <h1>Jobs to demonstrate direct Excel (.xlsx and .xls) file support with sortcl</h1>
+  <p>This project includes three different example folders that demonstrate various functionalities of SortCL in use with .xlsx or .xls sources or outputs.
+  <p>The <strong>Data Class Library Masking</strong> folder displays using a data class library created by IRI Workbench to classify and mask sensitive data in Excel files.</p>
+  <p>The <strong>Data Migration</strong> folder demonstrates aggregating and performing calculations on an input .xls file, and outputting to multiple targets.</p>
+  <p>The <strong>Test Data</strong> folder demonstrates generating realistic test data into a .xlsx file.</p>
+  <p>To run each job, open the respective sub-folder, right-click on the .scl, .rcl, or .fcl file, select Run As.. from the dropdown menu, and run as an IRI job.</p>
+<h2>Data Class Library Masking</h2>
+<p>The data class library masking demo involves creating a data class library first. To do this, click on the dropdown menu from the microscope icon. Select the directory
+data class search option. On the first page, select the include graphical report option to produce an HTML visualization. On the second page, select the <strong>Input</strong> directory. In the data class matchers, select the <strong>Sensitive</strong> data class group to match on.</p>
+<h2>Test Data</h2>
+<p>Select New Test Data Job from the RowGen menu, to the left of the FieldShield menu identified by the golden shield icon.
+Select the Field Layout option, add a field and apply test data generation rules to each field. 
+A record filter can be applied; in this demo the record filter is limiting a numeric field to be within a certain range. When a record filter is applied on input with /PROCESS=RANDOM, records will be generated until the number specified by /INCOLLECT is met.
+Keep this in mind when applying conditions with a very small chance of being met, as this will increase the run time of the job.
+In the action section, I have chosen to sort by one of the generated fields. Output is to a .xlsx spreadsheet file with a specified sheet name and header row.
+</p>
+<h2>Data Migration</h2>
+<p> Select New Sort Job from the CoSort menu. Add a new file data source. Select XLS as the file format.
+ Browse to select the .xls file from the Inputs folder. Specify the header option. Use the discover metadata wizard to get metadata (field layout) from the XLS file. 
+ For the action section, sort with a key of the Date field. Add outputs for a flat tab-delimited report file and an XML file into the Outputs folder. A headrec, or header record, may be added to the tab-delimited stockreport file from the edit target options menu. An include statement may be added from the record filter menu. All
+ of these options may be accessed later by right clicking on the script, going to the IRI context menu, and selecting the edit targets option.</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/INFILE="'Sheet1'!E1:K253,HEADER;Inputs/MSFTDisplacedmixed.xls" # Get data from a .xls spreadsheet that has columns out of order.
+/ALIAS=MDMIXXLS # The data is the yearly price history of Microsoft stock, with a daily interval.
+/PROCESS=XLS
+/FIELD=(Date, POSITION=1, SEPARATOR='\t',SDEF="=G") # rearrange columns into desired field order using SDEFs.
+/FIELD=(Open, POSITION=2, SEPARATOR='\t',SDEF="=E", TYPE=NUMERIC)
+/FIELD=(High, POSITION=3, SEPARATOR='\t',SDEF="=F", TYPE=NUMERIC)
+/FIELD=(Low, POSITION=4, SEPARATOR='\t',SDEF="=H", TYPE=NUMERIC)
+/FIELD=(Close, POSITION=5, SEPARATOR='\t',SDEF="=J", TYPE=NUMERIC)
+/FIELD=(Adj_Close, POSITION=6, SEPARATOR='\t',SDEF="=I", TYPE=NUMERIC)
+/FIELD=(Volume, POSITION=7, SEPARATOR='\t',SDEF="=K", TYPE=NUMERIC)
+/SORT
+/KEY=Date
+/OUTFILE=Outputs/stockreport # To outputs folder.
+/HEADREC="Date\tOpen\tHigh\tLow\tClose\tAdjusted Close\tVolume\tAverage Volume\tPercent Change\tVolume Ratio\n"
+/FIELD=(Date, POSITION=1, SEPARATOR='\t')
+/FIELD=(Open, POSITION=2, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(High, POSITION=3, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Low, POSITION=4, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Close, POSITION=5, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Adj_Close, POSITION=6, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Volume, POSITION=7, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Average_Volume, POSITION = 8, SEPARATOR ='\t', TYPE=NUMERIC)
+/FIELD=(Percent_Change = CLOSE / OPEN, POSITION=9, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Volume_Percent_Above_Average = (Volume / Average_Volume) * 100, POSITION=10, SEPARATOR='\t', TYPE=NUMERIC) # derived fields based on calculations.
+/AVERAGE=Average_Volume FROM Volume Running
+/INCLUDE WHERE High GT 160 AND PERCENT_CHANGE GT 1.01 # A report of days where the High price was greater than 160 USD, and the closing price was over one percent more than the opening price.
+/OUTFILE=Outputs/BigMoves.xml # Output a different report in XML format of the days where the price closed either 2 percent greater or 2 percent less than the opening price for the day.
+/PROCESS=XML
+/FIELD=(Date, POSITION=1, SEPARATOR='\t')
+/FIELD=(Open, POSITION=2, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(High, POSITION=3, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Low, POSITION=4, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Close, POSITION=5, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Adj_Close, POSITION=6, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Volume, POSITION=7, SEPARATOR='\t', TYPE=NUMERIC)
+/FIELD=(Percent_Change =  -1 + (CLOSE / OPEN) * 100, POSITION=8, SEPARATOR='\t', TYPE=NUMERIC)
+/INCLUDE WHERE PERCENT_CHANGE GT 2 OR PERCENT_CHANGE LT -2

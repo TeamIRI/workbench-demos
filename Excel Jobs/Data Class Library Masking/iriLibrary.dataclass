@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="ASCII"?>
+<dataclass:DataClassLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataclass="http://dataclass/1.0" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl">
+  <dataClasses xsi:type="dataclass:DataClass" name="PIN_US" description="Class for US Social Security Number" nameMatcher="PIN_US">
+    <matchers details="\b(\d{3}[-]?\d{2}[-]?\d{4})\b"/>
+  </dataClasses>
+  <dataClasses xsi:type="dataclass:DataClass" name="FIRST_NAME" description="Class for first names" nameMatcher="FIRST_NAME">
+    <matchers type="FILE" details="C:/Eclipse/7-23-21/com.iri.pelican.workbench-win32.win32.x86_64/sets/names/names_first.set"/>
+  </dataClasses>
+  <dataClasses xsi:type="dataclass:DataClass" name="POSTAL_CODE_US" description="Class for US Zip code" nameMatcher="POSTAL_CODE_US">
+    <matchers details="\b\d{5}(?:-\d{4})?\b"/>
+  </dataClasses>
+  <dataClasses xsi:type="dataclass:DataClass" name="CREDIT_CARD" description="Credit Card" nameMatcher="CREDIT_CARD">
+    <matchers details="\b(4\d{12}(\d{3})?)|(5[1-5]\d{14})|(3[47]\d{13})|(3(0[0-5]|[68]\d)\d{11})|(6(011|5\d{2})\d{12})|((2131|1800|35\d{3})\d{11})|(8\d{15})\b"/>
+  </dataClasses>
+  <dataInfos xsi:type="flow:FileDataInfo" name="sensitive.xlsx" fileName="&quot;'out'!A1:H10001,HEADER;sensitive.xlsx&quot;" type="XLSX">
+    <fields xsi:type="scl:AdvancedField">
+      <fieldMathStatement>
+        <compoundExpression>
+          <relationalExpression>
+            <lValue>
+              <lValue>
+                <lValue>
+                  <expr xsi:type="scl:Unary">
+                    <value xsi:type="ddf:FieldName" name="SSN"/>
+                  </expr>
+                </lValue>
+              </lValue>
+            </lValue>
+          </relationalExpression>
+        </compoundExpression>
+      </fieldMathStatement>
+      <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <fieldAttributes xsi:type="ddf:Position" number1="1"/>
+      <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+      <fieldAttributes xsi:type="ddf:LocationDef" defType="SDEF" string="SSN=A"/>
+    </fields>
+    <fields xsi:type="scl:AdvancedField">
+      <fieldMathStatement>
+        <compoundExpression>
+          <relationalExpression>
+            <lValue>
+              <lValue>
+                <lValue>
+                  <expr xsi:type="scl:Unary">
+                    <value xsi:type="ddf:FieldName" name="LASTNAME"/>
+                  </expr>
+                </lValue>
+              </lValue>
+            </lValue>
+          </relationalExpression>
+        </compoundExpression>
+      </fieldMathStatement>
+      <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <fieldAttributes xsi:type="ddf:Position" number1="2"/>
+      <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+      <fieldAttributes xsi:type="ddf:LocationDef" defType="SDEF" string="LASTNAME=B"/>
+    </fields>
+    <fields xsi:type="scl:AdvancedField">
+      <fieldMathStatement>
+        <compoundExpression>
+          <relationalExpression>
+            <lValue>
+              <lValue>
+                <lValue>
+                  <expr xsi:type="scl:Unary">
+                    <value xsi:type="ddf:FieldName" name="FIRSTNAME"/>
+                  </expr>
+                </lValue>
+              </lValue>
+            </lValue>
+          </relationalExpression>
+        </compoundExpression>
+      </fieldMathStatement>
+      <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <fieldAttributes xsi:type="ddf:Position" number1="3"/>
+      <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+      <fieldAttributes xsi:type="ddf:LocationDef" defType="SDEF" string="FIRSTNAME=C"/>
+    </fields>
+    <fields xsi:type="scl:AdvancedField">
+      <fieldMathStatement>
+        <compoundExpression>
+          <relationalExpression>
+            <lValue>
+              <lValue>
+                <lValue>
+                  <expr xsi:type="scl:Unary">
+                    <value xsi:type="ddf:FieldName" name="ADDRESS"/>
+                  </expr>
+                </lValue>
+              </lValue>
+            </lValue>
+          </relationalExpression>
+        </compoundExpression>
+      </fieldMathStatement>
+      <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <fieldAttributes xsi:type="ddf:Position" number1="4"/>
+      <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+      <fieldAttributes xsi:type="ddf:LocationDef" defType="SDEF" string="ADDRESS=D"/>
+    </fields>
+    <fields xsi:type="scl:AdvancedField">
+      <fieldMathStatement>
+        <compoundExpression>
+          <relationalExpression>
+            <lValue>
+              <lValue>
+                <lValue>
+                  <expr xsi:type="scl:Unary">
+                    <value xsi:type="ddf:FieldName" name="CITY"/>
+                  </expr>
+                </lValue>
+              </lValue>
+            </lValue>
+          </relationalExpression>
+        </compoundExpression>
+      </fieldMathStatement>
+      <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <fieldAttributes xsi:type="ddf:Position" number1="5"/>
+      <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+      <fieldAttributes xsi:type="ddf:LocationDef" defType="SDEF" string="CITY=E"/>
+    </fields>
+    <fields xsi:type="scl:AdvancedField">
+      <fieldMathStatement>
+        <compoundExpression>
+          <relationalExpression>
+            <lValue>
+              <lValue>
+                <lValue>
+                  <expr xsi:type="scl:Unary">
+                    <value xsi:type="ddf:FieldName" name="STATE"/>
+                  </expr>
+                </lValue>
+              </lValue>
+            </lValue>
+          </relationalExpression>
+        </compoundExpression>
+      </fieldMathStatement>
+      <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <fieldAttributes xsi:type="ddf:Position" number1="6"/>
+      <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+      <fieldAttributes xsi:type="ddf:LocationDef" defType="SDEF" string="STATE=F"/>
+    </fields>
+    <fields xsi:type="scl:AdvancedField">
+      <fieldMathStatement>
+        <compoundExpression>
+          <relationalExpression>
+            <lValue>
+              <lValue>
+                <lValue>
+                  <expr xsi:type="scl:Unary">
+                    <value xsi:type="ddf:FieldName" name="ZIP"/>
+                  </expr>
+                </lValue>
+              </lValue>
+            </lValue>
+          </relationalExpression>
+        </compoundExpression>
+      </fieldMathStatement>
+      <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <fieldAttributes xsi:type="ddf:Position" number1="7"/>
+      <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+      <fieldAttributes xsi:type="ddf:LocationDef" defType="SDEF" string="ZIP=G"/>
+    </fields>
+    <fields xsi:type="scl:AdvancedField">
+      <fieldMathStatement>
+        <compoundExpression>
+          <relationalExpression>
+            <lValue>
+              <lValue>
+                <lValue>
+                  <expr xsi:type="scl:Unary">
+                    <value xsi:type="ddf:FieldName" name="CREDIT_CARD"/>
+                  </expr>
+                </lValue>
+              </lValue>
+            </lValue>
+          </relationalExpression>
+        </compoundExpression>
+      </fieldMathStatement>
+      <fieldAttributes xsi:type="ddf:DataType" name="ASCII"/>
+      <fieldAttributes xsi:type="ddf:Position" number1="8"/>
+      <fieldAttributes xsi:type="ddf:Separator" sepValue=","/>
+      <fieldAttributes xsi:type="ddf:LocationDef" defType="SDEF" string="CREDIT_CARD=H"/>
+    </fields>
+  </dataInfos>
+  <dataClassMap source="//@dataInfos.0/@fields.0" dataClass="PIN_US" matching="100.0">
+    <rule href="iriLibrary.rules#FieldEncryptionRule"/>
+  </dataClassMap>
+  <dataClassMap source="//@dataInfos.0/@fields.2" dataClass="FIRST_NAME" matching="99.0">
+    <rule href="iriLibrary.rules#FieldPseudonymRule"/>
+  </dataClassMap>
+  <dataClassMap source="//@dataInfos.0/@fields.6" dataClass="POSTAL_CODE_US" matching="100.0">
+    <rule href="iriLibrary.rules#FieldEncryptionRule"/>
+  </dataClassMap>
+  <dataClassMap source="//@dataInfos.0/@fields.7" dataClass="CREDIT_CARD" matching="name">
+    <rule href="iriLibrary.rules#FieldEncryptionRule"/>
+  </dataClassMap>
+</dataclass:DataClassLibrary>
