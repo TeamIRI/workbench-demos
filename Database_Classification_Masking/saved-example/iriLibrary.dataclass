@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="ASCII"?>
 <dataclass:DataClassLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataclass="http://dataclass/1.0" xmlns:ddf="http://www.iri.com/lang/ddf/Ddf" xmlns:flow="http://flow/1.0" xmlns:scl="http://www.iri.com/lang/scl/Scl">
-  <dataClasses xsi:type="dataclass:DataClass" name="PIN_US" description="Class for US Social Security Number">
+  <dataClasses xsi:type="dataclass:DataClass" name="PIN_US" description="Class for US Social Security Number" nameMatcher="PIN_US">
     <defaultRule href="iriLibrary.rules#FieldRedactionRule"/>
     <matchers details="\b(\d{3}[-]?\d{2}[-]?\d{4})\b"/>
   </dataClasses>
-  <dataClasses xsi:type="dataclass:DataClass" name="L(AST)?[_-]?NAME" description="Class for last names">
+  <dataClasses xsi:type="dataclass:DataClass" name="L(AST)?[_-]?NAME" description="Class for last names" nameMatcher="L(AST)?[_-]?NAME">
     <defaultRule href="iriLibrary.rules#FieldPseudonymRule"/>
     <matchers type="FILE" details="C:/IRI/cosort100/sets/names/names_last.set"/>
   </dataClasses>
-  <dataClasses xsi:type="dataclass:DataClass" name="EMAIL" description="Class for email">
+  <dataClasses xsi:type="dataclass:DataClass" name="EMAIL" description="Class for email" nameMatcher="EMAIL">
     <defaultRule href="iriLibrary.rules#FieldEncryptionRule"/>
     <matchers details="\b[\w._%+-]+@[\w.-]+\.[A-Za-z]{2,4}\b"/>
   </dataClasses>
-  <dataClasses xsi:type="dataclass:DataClass" name="PHONE_US" description="Class for US Phone">
+  <dataClasses xsi:type="dataclass:DataClass" name="PHONE_US" description="Class for US Phone" nameMatcher="PHONE_US">
     <defaultRule href="iriLibrary.rules#FieldEncryptionRule"/>
     <matchers details="^(\+?1?([ .-]?)?)?(\(?([2-9]\d{2})\)?([ .-]?)?)([2-9]\d{2})([ .-]?)(\d{4})([ #eExXtT]*)(\d{2,6})?$"/>
   </dataClasses>
-  <dataClasses xsi:type="dataclass:DataClass" name="CREDIT_CARD" description="Credit Card">
+  <dataClasses xsi:type="dataclass:DataClass" name="CREDIT_CARD" description="Credit Card" nameMatcher="CREDIT_CARD">
     <defaultRule href="iriLibrary.rules#FieldEncryptionRule"/>
     <matchers details="\b((4\d{12}(\d{3})?))|(?:5[1-5][0-9]{2}|222[1-9]|22[3-9][0-9]|2[3-6][0-9]{2}|27[01][0-9]|2720)[0-9]{12}|(3[47]\d{13})|(3(0[0-5]|[68]\d)\d{11})|(6(011|5\d{2})\d{12})|((2131|1800|35\d{3})\d{11})|(8\d{15})\b"/>
   </dataClasses>
