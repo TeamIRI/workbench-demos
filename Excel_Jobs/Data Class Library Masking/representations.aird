@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:flow="http://flow/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_Jfr8MACXEeyPwKCqNJ2cQA" selectedViews="_JoLw4ACXEeyPwKCqNJ2cQA" version="14.5.1.202106111100">
+    <semanticResources>excel_sensitive_data_mask/excel_sensitive_data_mask.flow</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_JoLw4ACXEeyPwKCqNJ2cQA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Jph0sACXEeyPwKCqNJ2cQA" name="excel_sensitive_data_mask" repPath="#_JpFIwACXEeyPwKCqNJ2cQA" changeId="1dde4148-3bda-4aeb-843b-0f407ad15980">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
+        <target xmi:type="flow:FlowBatch" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#excel_sensitive_data_mask"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_JpFIwACXEeyPwKCqNJ2cQA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Jpq-oACXEeyPwKCqNJ2cQA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_Jpq-oQCXEeyPwKCqNJ2cQA" type="Sirius" element="_JpFIwACXEeyPwKCqNJ2cQA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_JxHqcACXEeyPwKCqNJ2cQA" type="2002" element="_Jp95kACXEeyPwKCqNJ2cQA">
+          <children xmi:type="notation:Node" xmi:id="_JxRbcACXEeyPwKCqNJ2cQA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_JxRbcQCXEeyPwKCqNJ2cQA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_JxRbdACXEeyPwKCqNJ2cQA" type="3008" element="_Jw0vgACXEeyPwKCqNJ2cQA">
+              <children xmi:type="notation:Node" xmi:id="_JxRbdwCXEeyPwKCqNJ2cQA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_JxRbeACXEeyPwKCqNJ2cQA" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_JxRbeQCXEeyPwKCqNJ2cQA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_JxRbegCXEeyPwKCqNJ2cQA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_JxalYQCXEeyPwKCqNJ2cQA" type="3012" element="_Jw0vgwCXEeyPwKCqNJ2cQA">
+                <children xmi:type="notation:Node" xmi:id="_JxalZACXEeyPwKCqNJ2cQA" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_JxalZQCXEeyPwKCqNJ2cQA" x="-68" y="-41"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_JxkWZQCXEeyPwKCqNJ2cQA" type="3005" element="_Jw0vhACXEeyPwKCqNJ2cQA">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_JxkWZgCXEeyPwKCqNJ2cQA" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxkWZwCXEeyPwKCqNJ2cQA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_JxalYgCXEeyPwKCqNJ2cQA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxalYwCXEeyPwKCqNJ2cQA" x="-8" width="16" height="16"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_JxkWYACXEeyPwKCqNJ2cQA" type="3012" element="_Jw0vhgCXEeyPwKCqNJ2cQA">
+                <children xmi:type="notation:Node" xmi:id="_JxkWYwCXEeyPwKCqNJ2cQA" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_JxkWZACXEeyPwKCqNJ2cQA" x="-50" y="1"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_JxkWaACXEeyPwKCqNJ2cQA" type="3005" element="_Jw0vhwCXEeyPwKCqNJ2cQA">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_JxkWaQCXEeyPwKCqNJ2cQA" fontName="Segoe UI"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxkWagCXEeyPwKCqNJ2cQA"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_JxkWYQCXEeyPwKCqNJ2cQA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxkWYgCXEeyPwKCqNJ2cQA" y="90" width="16" height="16"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_JxRbdQCXEeyPwKCqNJ2cQA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxRbdgCXEeyPwKCqNJ2cQA" x="140" y="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_JxRbewCXEeyPwKCqNJ2cQA" type="3007" element="_Jw0viQCXEeyPwKCqNJ2cQA">
+              <children xmi:type="notation:Node" xmi:id="_JxRbfgCXEeyPwKCqNJ2cQA" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_JxalYACXEeyPwKCqNJ2cQA" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_JxkWawCXEeyPwKCqNJ2cQA" type="3016" element="_Jw0vigCXEeyPwKCqNJ2cQA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_JxkWbACXEeyPwKCqNJ2cQA" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxkWbQCXEeyPwKCqNJ2cQA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_JxRbfACXEeyPwKCqNJ2cQA" fontColor="4539717" fontName="Segoe UI" fontHeight="8" bold="true"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxRbfQCXEeyPwKCqNJ2cQA" x="40" y="20" width="60" height="60"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_JxRbcgCXEeyPwKCqNJ2cQA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_JxRbcwCXEeyPwKCqNJ2cQA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_JxHqcQCXEeyPwKCqNJ2cQA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxHqcgCXEeyPwKCqNJ2cQA" height="200"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_Jpq-ogCXEeyPwKCqNJ2cQA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_JxuHYACXEeyPwKCqNJ2cQA" type="4001" element="_Jw-ggACXEeyPwKCqNJ2cQA" source="_JxRbewCXEeyPwKCqNJ2cQA" target="_JxalYQCXEeyPwKCqNJ2cQA">
+          <children xmi:type="notation:Node" xmi:id="_JxuHZACXEeyPwKCqNJ2cQA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxuHZQCXEeyPwKCqNJ2cQA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JxuHZgCXEeyPwKCqNJ2cQA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxuHZwCXEeyPwKCqNJ2cQA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JxuHaACXEeyPwKCqNJ2cQA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JxuHaQCXEeyPwKCqNJ2cQA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JxuHYQCXEeyPwKCqNJ2cQA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JxuHYgCXEeyPwKCqNJ2cQA" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JxuHYwCXEeyPwKCqNJ2cQA" points="[0, 0, -80, 42]$[80, 0, 0, 42]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Jx3RUACXEeyPwKCqNJ2cQA" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Jx3RUQCXEeyPwKCqNJ2cQA" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Jw-ghQCXEeyPwKCqNJ2cQA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_Jw-ghgCXEeyPwKCqNJ2cQA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Jp95kACXEeyPwKCqNJ2cQA" name="excel_sensitive_data_mask" height="20">
+      <target xmi:type="flow:Flowlet" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0"/>
+      <semanticElements xmi:type="flow:Flowlet" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Jp95kQCXEeyPwKCqNJ2cQA" showIcon="false" borderSize="2" borderSizeComputationExpression="2" borderColor="69,69,69" backgroundStyle="GradientTopToBottom">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Jw0vgACXEeyPwKCqNJ2cQA" name="sensitive_xlsx" width="15" height="10">
+        <target xmi:type="flow:TransformMappingBlock" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0/@blocks.1"/>
+        <semanticElements xmi:type="flow:TransformMappingBlock" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0/@blocks.1"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Jw0vgwCXEeyPwKCqNJ2cQA" name="sensitive_xlsx" incomingEdges="_Jw-ggACXEeyPwKCqNJ2cQA" width="-1" height="-1">
+          <target xmi:type="flow:DataContext" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0/@blocks.1/@inputDatas.0"/>
+          <semanticElements xmi:type="flow:DataContext" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0/@blocks.1/@inputDatas.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_Jw0vhACXEeyPwKCqNJ2cQA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-source_16.png">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']/@conditionnalStyles.1/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_SourceData']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Jw0vhgCXEeyPwKCqNJ2cQA" name="sensitive_xlsx" width="-1" height="-1">
+          <target xmi:type="flow:DataContext" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0/@blocks.1/@outputDatas.0"/>
+          <semanticElements xmi:type="flow:DataContext" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0/@blocks.1/@outputDatas.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_Jw0vhwCXEeyPwKCqNJ2cQA" showIcon="false" workspacePath="/com.iri.model.flow.design/icons/file-target_16.png">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']/@conditionnalStyles.1/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_BlockWithMapping']/@borderedNodeMappings[name='FD_TargetData']"/>
+        </ownedBorderedNodes>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Jw0vgQCXEeyPwKCqNJ2cQA" showIcon="false" borderSize="1" borderSizeComputationExpression="1" borderColor="157,113,94" backgroundStyle="GradientTopToBottom" foregroundColor="196,151,151">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subContainerMappings[name='FD_TransformWithMapping']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_Jw0viQCXEeyPwKCqNJ2cQA" name="Start" outgoingEdges="_Jw-ggACXEeyPwKCqNJ2cQA" width="6" height="6" resizeKind="NSEW">
+        <target xmi:type="flow:StartBlock" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0/@blocks.0"/>
+        <semanticElements xmi:type="flow:StartBlock" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#//@flowlets.0/@blocks.0"/>
+        <ownedStyle xmi:type="diagram:Ellipse" uid="_Jw0vigCXEeyPwKCqNJ2cQA" showIcon="false" labelColor="69,69,69" borderSize="1" borderSizeComputationExpression="1" borderColor="77,137,20" labelPosition="node" color="204,242,166">
+          <labelFormat>bold</labelFormat>
+          <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@containerMappings[name='FD_Flow']/@subNodeMappings[name='FD_Start']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Jw-ggACXEeyPwKCqNJ2cQA" sourceNode="_Jw0viQCXEeyPwKCqNJ2cQA" targetNode="_Jw0vgwCXEeyPwKCqNJ2cQA">
+      <target xmi:type="flow:Connection" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#Start_To_sensitive_xlsx"/>
+      <semanticElements xmi:type="flow:Connection" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#Start_To_sensitive_xlsx"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Jw-ggQCXEeyPwKCqNJ2cQA" size="2" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Jw-gggCXEeyPwKCqNJ2cQA" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer/@edgeMappings[name='FD_Connection']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_JpOSsACXEeyPwKCqNJ2cQA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/com.iri.model.flow.design/description/flow.odesign#//@ownedViewpoints[name='Flow']/@ownedRepresentations[name='FlowDiagram']/@defaultLayer"/>
+    <target xmi:type="flow:FlowBatch" href="excel_sensitive_data_mask/excel_sensitive_data_mask.flow#excel_sensitive_data_mask"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

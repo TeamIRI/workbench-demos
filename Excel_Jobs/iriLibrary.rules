@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rules:RuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0">
+  <catalogs name="FieldEditor">
+    <matchers name="FieldRowRule_2021-08-20 12:15:30">
+      <rule href="../Excel Jobs/iriLibrary.rules#FieldRowRule"/>
+      <matcherDetails details="FIELD1"/>
+    </matchers>
+    <matchers name="FieldSetRule_2021-08-20 12:16:59">
+      <rule href="../Excel Jobs/iriLibrary.rules#FieldSetRule"/>
+      <matcherDetails details="FNAME"/>
+    </matchers>
+    <matchers name="FieldSetRule2_2021-08-20 12:17:25">
+      <rule href="../Excel Jobs/iriLibrary.rules#FieldSetRule2"/>
+      <matcherDetails details="LNAME"/>
+    </matchers>
+    <matchers name="FieldEmailRule_2021-08-20 12:18:27">
+      <rule href="../Excel Jobs/iriLibrary.rules#FieldEmailRule"/>
+      <matcherDetails details="EMAIL"/>
+    </matchers>
+    <matchers name="FieldCreditRule_2021-08-20 12:19:22">
+      <rule href="../Excel Jobs/iriLibrary.rules#FieldCreditRule"/>
+      <matcherDetails details="FIELD6"/>
+    </matchers>
+    <matchers name="FieldDateRule_2021-08-20 12:20:27">
+      <rule href="../Excel Jobs/iriLibrary.rules#FieldDateRule"/>
+      <matcherDetails details="PURCHASEDATE"/>
+    </matchers>
+    <matchers name="FieldDistributionRule_2021-08-20 12:28:03">
+      <rule href="../Excel Jobs/iriLibrary.rules#FieldDistributionRule"/>
+      <matcherDetails details="AMOUNT"/>
+    </matchers>
+    <matchers name="FieldDateRule_2021-08-23 13:13:45">
+      <rule href="../Excel Jobs/iriLibrary.rules#FieldDateRule"/>
+      <matcherDetails details="TERM"/>
+    </matchers>
+  </catalogs>
+  <rules xsi:type="rules:FieldRule" name="FieldRowRule" editor="rowIdWizard">
+    <properties fieldRulePropertyType="ROWID" value="1,1"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;Sets/names_first.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule2" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;Sets/names_last.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldEmailRule" editor="emailGenWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;Test Data/Sets/newEmail.set&quot;"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldCreditRule" editor="ccGenWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="ccn_gen()"/>
+    <properties fieldRulePropertyType="NAME" value="CC_GEN_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldDateRule" editor="dateGenWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;Test Data/Sets/newDate.set&quot;"/>
+    <properties fieldRulePropertyType="NAME" value="set_${FIELDNAME}"/>
+    <properties fieldRulePropertyType="DATATYPE" value="ISO_DATE"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldDistributionRule" editor="distWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="linear(10.0,1000.0,2)"/>
+    <properties fieldRulePropertyType="NAME" value="DIST__${FIELDNAME}"/>
+  </rules>
+</rules:RuleLibrary>
+
