@@ -26,8 +26,7 @@
     <properties fieldRulePropertyType="NAME" value="BLUR_${FIELDNAME}"/>
   </rules>
   <rules xsi:type="rules:FieldRule" name="FieldGeneralizationRule-marital" editor="bucketingWizard">
-    <properties fieldRulePropertyType="SET" value="&quot;C:/Users/claudiai/git/workbench-demos/Riskscoring/saved-example/marital-saved.set&quot; [MARITAL_STATUS] DEFAULT=&quot;UNKNOWN&quot;"/>
+    <properties fieldRulePropertyType="SET" value="&quot;saved-example/marital-saved.set&quot; [MARITAL_STATUS] DEFAULT=&quot;UNKNOWN&quot;"/>
     <properties fieldRulePropertyType="NAME" value="SET__${FIELDNAME}"/>
   </rules>
 </rules:RuleLibrary>
-
