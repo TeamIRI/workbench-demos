@@ -1,0 +1,1240 @@
+    <!DOCTYPE html lang="en-US">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+
+        <title>IRI Re-ID Risk Scoring Report</title>
+    </head>
+
+    <body>
+        <style>
+            /* NORMALIZE CSS */
+
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            nav,
+            section,
+            summary {
+                display: block;
+            }
+
+            audio,
+            canvas,
+            video {
+                display: inline-block;
+            }
+
+            audio:not([controls]) {
+                display: none;
+                height: 0;
+            }
+
+            [hidden] {
+                display: none;
+            }
+
+            html {
+                font-family: sans-serif;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
+
+            a:focus {
+                outline: thin dotted;
+            }
+
+            a:active,
+            a:hover {
+                outline: 0;
+            }
+
+            h1 { 
+                font-size: 1.75em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                color: #444;
+            }
+
+            abbr[title] {
+                border-bottom: 1px dotted;
+            }
+
+            b,
+            strong {
+                font-weight: 700;
+            }
+
+            dfn {
+                font-style: italic;
+            }
+
+            mark {
+                background: #ff0;
+                color: #000;
+            }
+
+            code,
+            kbd,
+            pre,
+            samp {
+                font-family: monospace, serif;
+                font-size: 1em;
+            }
+
+            pre {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+
+            q {
+                quotes: \201C \201D \2018 \2019;
+            }
+
+            small {
+                font-size: 80%;
+            }
+
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+
+            sup {
+                top: -.5em;
+            }
+
+            sub {
+                bottom: -.25em;
+            }
+
+            img {
+                border: 0;
+            }
+
+            svg:not(:root) {
+                overflow: hidden;
+            }
+
+            fieldset {
+                border: 1px solid silver;
+                margin: 0 2px;
+                padding: .35em .625em .75em;
+            }
+
+            button,
+            input,
+            select,
+            textarea {
+                font-family: inherit;
+                font-size: 100%;
+                margin: 0;
+            }
+
+            button,
+            input {
+                line-height: normal;
+            }
+
+            button,
+            html input[type=button],
+            /* 1 */
+
+            input[type=reset],
+            input[type=submit] {
+                -webkit-appearance: button;
+                cursor: pointer;
+            }
+
+            button[disabled],
+            input[disabled] {
+                cursor: default;
+            }
+
+            input[type=checkbox],
+            input[type=radio] {
+                box-sizing: border-box;
+                padding: 0;
+            }
+
+            input[type=search] {
+                -webkit-appearance: textfield;
+                -moz-box-sizing: content-box;
+                -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+            }
+
+            input[type=search]::-webkit-search-cancel-button,
+            input[type=search]::-webkit-search-decoration {
+                -webkit-appearance: none;
+            }
+
+            textarea {
+                overflow: auto;
+                vertical-align: top;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            body,
+            figure {
+                margin: 0;
+            }
+
+            legend,
+            button::-moz-focus-inner,
+            input::-moz-focus-inner {
+                border: 0;
+                padding: 0;
+            }
+
+            /* REPORT CSS */
+
+            body {
+                position: relative;
+                width: 75vw;
+                margin: 0 auto;
+                color: #333;
+                line-height: 1.5em;
+                height: 100%;
+                font-size: 14px;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                line-height: 1.35em;
+            }
+
+            header {
+                padding-bottom: 25px;
+                border-bottom: 1px solid #777;
+                margin-bottom: 30px;
+            }
+
+            #content-panel-wrapper {
+                font-size: 0;
+                overflow: hidden;
+            }
+
+            #content-panel-menu-outer-wrapper {
+                display: inline-block;
+                width: 202px;
+                vertical-align: top;
+            }
+
+            #content-panel-menu {
+                display: inline-block;
+                position: sticky;
+                top: 10px;
+                width: 200px !important;
+                padding: 0;
+                font-size: 14px;
+                border: 1px solid #aaa;
+                text-align: right;
+                vertical-align: top;
+            }
+
+            #content-panel-menu li {
+                list-style-type: none;
+                border-bottom: 1px solid #aaa;
+                padding: 10px;
+                cursor: pointer;
+                /* Safari 3.1+ */
+                -webkit-user-select: none;
+                /* Firefox 2+ */
+                -moz-user-select: none;
+                /* IE 10+ */
+                -ms-user-select: none;
+                /* Standard syntax */
+                user-select: none;
+            }
+
+            #content-panel-menu li:hover {
+                background: #eee;
+            }
+
+            #content-panel-content-wrapper {
+                display: inline-block;
+                width: calc(100% - 205px);
+                position: relative;
+                font-size: 14px;
+            }
+
+            .content-panel-content {
+                position: absolute;
+                top: 200px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 75%;
+                visibility: hidden;
+                opacity: 0;
+                transition: 300ms;
+            }
+
+            .content-panel-content h2 {
+                margin-top: 0;
+            }
+
+            .active-menu-button {
+                background: #1666AE !important;
+                color: #FFF !important;
+            }
+
+            .active-content {
+                top: 0;
+                visibility: visible;
+                opacity: 1;
+            }
+
+            footer {
+                position: relative;
+                margin-top: 100px;
+                margin-bottom: 25px;
+            }
+
+            footer p {
+                display: inline-block;
+                width: calc(100% - 130px);
+            }
+
+
+            footer img {
+                display: inline-block;
+                width: 125px;
+                position: relative;
+                top: 25px;
+            }
+
+            /* NO JAVASCRIPT */
+
+            .no-js #content-panel-menu-outer-wrapper {
+                display: none;
+            }
+
+            .no-js #content-panel-wrapper {
+                display: block;
+                width: 100%;
+                height: auto !important;
+            }
+
+            .no-js #content-panel-menu-outer-wrapper,
+            .no-js #content-panel-menu {
+                display: none;
+            }
+
+            .no-js #content-panel-content-wrapper {
+                width: 100%;
+            }
+
+            .no-js .content-panel-content {
+                position: static;
+                visibility: visible;
+                opacity: 1;
+                width: 100%;
+                padding-bottom: 50px;
+                margin-bottom: 50px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .no-js .content-panel-content:last-of-type {
+                border-bottom: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+
+            /* PRINT MODE */
+
+            @media print {
+                div {
+                    page-break-inside: avoid;
+                }
+
+                #content-panel-wrapper {
+                    display: block;
+                    width: 100%;
+                    height: auto !important;
+                }
+
+                #content-panel-menu-outer-wrapper,
+                #content-panel-menu {
+                    display: none;
+                }
+
+                #content-panel-content-wrapper {
+                    width: 100%;
+                }
+
+                .content-panel-content {
+                    position: static;
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+            }
+
+            /* STICKY WRAPPER */
+
+            #content-panel-menu {
+                margin: 0;
+            }
+
+            #content-panel-menu-sticky-wrapper {
+                display: inline-block;
+            }
+        </style>
+
+        <header>
+            <h1>IRI Re-ID Risk Scoring Report</h1>
+
+            <p>The following report was automatically generated by the Data Re-Identification Risk Scoring Wizard in
+                <a href="http://www.iri.com/products/workbench" target="_blank">IRI Workbench</a>, built on Eclipse&trade;. The wizard is licensed to authorized users of the
+                <a href="http://www.iri.com/products/fieldshield" target="_blank">IRI FieldShield</a> data masking product or
+                <a href="http://www.iri.com/produts/voracity" target="_blank">IRI Voracity</a> data management platform.</p>
+
+            <p>This report contains certain peer-reviewed statistical measures from processing structured data sets containing
+                quasi-identifiers, and relies on algorithms and the Application Programming Interface (API) published by
+                <a href="http://arx.deidentifier.org/development/api/#a71" target="_blank">ARX</a>. While IRI has added various explanations for these scores, you should not rely up on them exclusively,
+                and instead consult with a qualified statistician to understand their applicability to your data sets and
+                privacy law requirements. Normally, this report would be used in the context of a HIPAA compliance test /
+                certification effort, to help determine the statistical likelihood that data in the set can be re-identified
+                based on which quasi-identifiers exist, along with their individual character and relationship to each other.
+                IRI and/or its expert partners can assist licensed users in the creation of this report, and in the use of
+                IRI de-identification and generalization functionality on your data set(s) that can help you anonymize your
+                data and/or improve the scores in this report.</p>
+
+            <h2>Disclaimers</h2>
+
+            <p>This report does NOT address key identifiers in a data set which uniquely identify an individual and must be
+                de-identified. In addition, this report cannot be used to assess the security or reversibility of de-identification
+                functions that are not used for generalization.</p>
+            <p style="text-transform: uppercase;">IRI expressly disclaims any warranty of fitness for the contents or use of this report, and any liability arising
+                from reliance upon it.</p>
+            <p>IRI can refer you to qualified statistical and legal service providers to help you interpret and make use of
+                this report, and recommends that in any event, you avail yourself of professional expertise if you do not
+                already have it.
+            </p>
+        </header>
+
+        <div id="analytics-top"></div>
+        <div id="content-panel-wrapper" class="no-js">
+            <div id="content-panel-menu-outer-wrapper">
+                <ul id="content-panel-menu">
+                    <li id="risks" class="active-menu-button">Attacker Risks</li>
+                    <li id="identifiers">Quasi-Identifiers</li>
+                    <li id="equivalence">Equivalence Classes</li>
+                    <li id="uniqueness">Uniqueness Estimates</li>
+                </ul>
+            </div>
+            <div id="content-panel-content-wrapper">
+                <div data-id="risks" class="content-panel-content active-content">
+                    <h2>Attacker Risks</h2>
+
+                    <p>The following scores represent the risk associated with 3 different attacker models:</p>
+                    <ol>
+                        <li>PROSECUTOR: an adversary who is trying to find a record for someone known to be in the dataset.</li>
+                        <li>JOURNALIST: an adversary who is searching to see if a record for a certain person is in the dataset.</li>
+                        <li>MARKETER: an adversary that wishes to re-identify as many records as possible.</li>
+                    </ol>
+
+                    <p>In the worst case, both the journalist and prosecutor have an estimated risk of 100% so long as even
+                        one unique record exists within the dataset. The marketer risk is the chance that a randomly selected
+                        record can be correctly re-identified.
+                    </p>
+
+                    <ul>
+                        <li>PROSECUTOR: 100.00%</li>
+                        <li>JOURNALIST: 100.00%</li>
+                        <li>MARKETER: 4.89%</li>
+                    </ul>
+
+                    <p>The following values represent the highest, lowest, and average chances that an arbitrary record within
+                        the dataset can be re-identified.
+                    </p>
+
+                    <ul>
+                        <li>Highest Risk: 100.00%</li>
+                        <li>Lowest Risk: 0.04%</li>
+                        <li>Average Risk: 100.00%</li>
+                    </ul>
+
+                    <p>The following values reflect the proportion of records with the highest and lowest risks of re-identification:</p>
+
+                    <ul>
+                        <li>Percentage of records with the highest risk: 2.45%</li>
+                        <li>Percentage of records with the lowest risk: 8.22%</li>
+                    </ul>
+                </div>
+
+                <div data-id="identifiers" class="content-panel-content">
+                    <h2>Quasi-Identifiers</h2>
+
+                    <p>Quasi-identifiers are attributes that, when used along with a set of other quasi-identifiers, may be
+                        used to re-identify a record. The following list contains the different combinations of quasi identifiers
+                        and their DISTINCTION and SEPARATION values. The higher their distinction and separation values,
+                        the more likely the combination can be used to re-identify a record.</p>
+
+                    <ul style="list-style-type:none">
+                        <li>DISTINCTION: a measure of uniqueness for the given set of quasi-identifiers relative to the total
+                            number of records in the entire dataset.</li>
+                        <li>SEPARATION: the ratio between pairs of records with at least one different value for their quasi-identifiers
+                            and the total number of ways that two different records can be paired.</li>
+                    </ul>
+
+                    <table border=1>
+                        <tr>
+                            <th>Quasi-Identifier</th>
+                            <th>Distinction</th>
+                            <th>Separation</th>
+                        </tr>
+                            <tr>
+                                <td>SEX</td>
+                                <td>0</td>
+                                <td>0.438</td>
+                            </tr>
+                            <tr>
+                                <td>RACE</td>
+                                <td>0</td>
+                                <td>0.251</td>
+                            </tr>
+                            <tr>
+                                <td>WORKCLASS</td>
+                                <td>0</td>
+                                <td>0.438</td>
+                            </tr>
+                            <tr>
+                                <td>OCCUPATION</td>
+                                <td>0</td>
+                                <td>0.895</td>
+                            </tr>
+                            <tr>
+                                <td>NATIVE-COUNTRY</td>
+                                <td>0.001</td>
+                                <td>0.168</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, RACE</td>
+                                <td>0</td>
+                                <td>0.569</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, WORKCLASS</td>
+                                <td>0</td>
+                                <td>0.69</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, OCCUPATION</td>
+                                <td>0.001</td>
+                                <td>0.934</td>
+                            </tr>
+                            <tr>
+                                <td>RACE, WORKCLASS</td>
+                                <td>0.001</td>
+                                <td>0.58</td>
+                            </tr>
+                            <tr>
+                                <td>RACE, OCCUPATION</td>
+                                <td>0.002</td>
+                                <td>0.92</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, NATIVE-COUNTRY</td>
+                                <td>0.003</td>
+                                <td>0.533</td>
+                            </tr>
+                            <tr>
+                                <td>WORKCLASS, OCCUPATION</td>
+                                <td>0.003</td>
+                                <td>0.939</td>
+                            </tr>
+                            <tr>
+                                <td>RACE, NATIVE-COUNTRY</td>
+                                <td>0.004</td>
+                                <td>0.347</td>
+                            </tr>
+                            <tr>
+                                <td>NATIVE-COUNTRY, WORKCLASS</td>
+                                <td>0.006</td>
+                                <td>0.54</td>
+                            </tr>
+                            <tr>
+                                <td>NATIVE-COUNTRY, OCCUPATION</td>
+                                <td>0.013</td>
+                                <td>0.912</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, RACE, WORKCLASS</td>
+                                <td>0.002</td>
+                                <td>0.763</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, RACE, OCCUPATION</td>
+                                <td>0.004</td>
+                                <td>0.948</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, WORKCLASS, OCCUPATION</td>
+                                <td>0.005</td>
+                                <td>0.962</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, RACE, NATIVE-COUNTRY</td>
+                                <td>0.006</td>
+                                <td>0.624</td>
+                            </tr>
+                            <tr>
+                                <td>RACE, WORKCLASS, OCCUPATION</td>
+                                <td>0.009</td>
+                                <td>0.954</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, NATIVE-COUNTRY, WORKCLASS</td>
+                                <td>0.01</td>
+                                <td>0.746</td>
+                            </tr>
+                            <tr>
+                                <td>RACE, NATIVE-COUNTRY, WORKCLASS</td>
+                                <td>0.01</td>
+                                <td>0.639</td>
+                            </tr>
+                            <tr>
+                                <td>RACE, NATIVE-COUNTRY, OCCUPATION</td>
+                                <td>0.02</td>
+                                <td>0.929</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, NATIVE-COUNTRY, OCCUPATION</td>
+                                <td>0.02</td>
+                                <td>0.944</td>
+                            </tr>
+                            <tr>
+                                <td>NATIVE-COUNTRY, WORKCLASS, OCCUPATION</td>
+                                <td>0.025</td>
+                                <td>0.95</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, RACE, NATIVE-COUNTRY, WORKCLASS</td>
+                                <td>0.015</td>
+                                <td>0.797</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, RACE, WORKCLASS, OCCUPATION</td>
+                                <td>0.015</td>
+                                <td>0.97</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, RACE, NATIVE-COUNTRY, OCCUPATION</td>
+                                <td>0.029</td>
+                                <td>0.954</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, NATIVE-COUNTRY, WORKCLASS, OCCUPATION</td>
+                                <td>0.035</td>
+                                <td>0.968</td>
+                            </tr>
+                            <tr>
+                                <td>RACE, NATIVE-COUNTRY, WORKCLASS, OCCUPATION</td>
+                                <td>0.037</td>
+                                <td>0.96</td>
+                            </tr>
+                            <tr>
+                                <td>SEX, RACE, NATIVE-COUNTRY, WORKCLASS, OCCUPATION</td>
+                                <td>0.049</td>
+                                <td>0.974</td>
+                            </tr>
+                    </table>
+                </div>
+
+                <div data-id="equivalence" class="content-panel-content">
+                    <h2>Equivalence Classes</h2>
+                    <p>An equivalence class of K (where K is any positive integer) is a set of records that share the same set
+                        of quasi-identifiers with K-1 other records. The risk score, or 1/K, is the chance of a record in
+                        the Kth equivalence class being re-identified. Although no standard exists for what the lowest equivalence
+                        class in a dataset can be, peer-reviewed research suggests that all records should belong to an equivalence
+                        class greater than or equal to 5 (that is, a 20% or lower risk of re-identification by chance).</p>
+
+                    <table border=1>
+                        <tr>
+                            <th>Equivalence Class</th>
+                            <th>Number of Records</th>
+                        </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>739</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>230</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>116</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>61</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>19</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>37</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>41</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>47</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>49</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>51</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>57</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>58</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>59</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>62</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>66</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>70</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>72</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>73</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>75</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>77</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>79</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>83</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>86</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>88</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>89</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>90</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>91</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>93</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>101</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>103</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>107</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>110</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>111</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>115</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>116</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>120</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>122</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>128</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>129</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>137</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>147</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>153</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>157</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>218</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>220</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>224</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>228</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>229</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>240</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>245</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>271</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>273</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>279</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>281</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>298</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>316</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>385</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>390</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>451</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>673</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>694</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>703</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>781</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>826</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>915</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>984</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1,034</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1,043</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1,226</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1,534</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1,549</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1,599</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2,480</td>
+                                <td>1</td>
+                            </tr>
+                    </table>
+                </div>
+
+                <div data-id="uniqueness" class="content-panel-content">
+                    <h2>Uniqueness Estimates</h2>
+
+                    <p>The uniqueness of individuals in a population is often used as a measure of re-identification risk. Another
+                        convenient way to assess the uniqueness of records in a dataset is to assess their uniqueness relative
+                        to a statistical sample of the superset to which the dataset conforms. Four different statistical
+                        methods have been identified as the best measures of relative uniqueness, and their scores follow.
+                        The percentage represents the conditional probability that a record in the superset is unique if
+                        it is unique in the original data set.
+                    </p>
+
+                    <ul style="list-style-type:none">
+                        <li>Number of uniques in sample: 0</li>
+                        <li>Percentage of uniques relative to the USA superset:
+                            <li>
+                                <li>Dankar: 0.03%</li>
+                                <li>Pitman: 0.03%</li>
+                                <li>slide negative binomial (SNB): 0.00%</li>
+                                <li>Zayatz: 0.06%</li>
+                    </ul>
+
+                    <p>Note that unique records within the dataset are at the highest risk of being re-identified. However,
+                        a unique record within the dataset may not automatically be at risk unless it can joined to a unique
+                        record within the superset that contains the record's identity. Conversely, a record with a higher
+                        equivalence class (lower re-identification risk relative to this dataset) can still be unique relative
+                        to the superset, and therefore still be re-identifiable.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p> Copyright 2018, Innovative Routines International (IRI), Inc., The CoSort Company.</p>
+            <img src="https://www.iri.com/assets/uploads/editor/logos/iri-logo-total-data-management.png" alt="IRI Logo" />
+        </footer>
+
+        <script type="text/javascript" src="https://www.iri.com/assets/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="https://www.iri.com/assets/js/jquery.sticky.js"></script>
+
+        <script>
+
+            // REMOVE NO-JS CLASS
+            document.querySelector("#content-panel-wrapper").classList.remove("no-js");
+
+            window.onload = function () {
+                var ContentPanel = (function () {
+                    $("#content-panel-menu").sticky({ topSpacing: 25 });
+
+                    var contentPanel = document.querySelector("#content-panel-wrapper");
+                    var contentPanelMenu = document.querySelector("#content-panel-menu");
+                    var contentPanelMenuItems = document.querySelectorAll("#content-panel-menu li");
+                    var contentPanelContent = document.querySelectorAll(".content-panel-content");
+                    var contentPanelContentWrapper = document.querySelector("#content-panel-content-wrapper");
+                    var contentPanelMenuStickyWrapper = document.querySelector("#content-panel-menu-sticky-wrapper");
+                    var contentPanelMenuWrapper = document.querySelector("#content-panel-menu-outer-wrapper");
+                    var buttonPressCounter = false;
+
+                    for (let i = 0; i < contentPanelMenuItems.length; i++) {
+                        contentPanelMenuItems[i].addEventListener("click", function () {
+
+                            if (buttonPressCounter === true) {
+                                $('html, body').animate({
+                                    scrollTop: $("#analytics-top").offset().top
+                                }, 500);
+                            }
+                            buttonPressCounter = true;
+
+                            for (let j = 0; j < contentPanelMenuItems.length; j++) {
+                                if (contentPanelMenuItems[j].classList.contains("active-menu-button")) {
+                                    contentPanelMenuItems[j].classList.remove("active-menu-button");
+                                }
+
+                                this.classList.add("active-menu-button");
+                            }
+
+                            for (let j = 0; j < contentPanelContent.length; j++) {
+                                if (contentPanelContent[j].classList.contains("active-content")) {
+                                    contentPanelContent[j].classList.remove("active-content");
+                                }
+
+                                if (this.id === contentPanelContent[j].getAttribute("data-id")) {
+                                    contentPanelContent[j].classList.add("active-content");
+                                }
+
+                            }
+
+
+                            var activeContentHeight = document.querySelector(".active-content").clientHeight;
+                            activeContentHeight += 50;
+
+                            contentPanel.style.height = activeContentHeight + "px";
+                            contentPanelMenuWrapper.style.height = activeContentHeight + "px";
+
+
+                        })
+                    }
+
+
+                    function panelResize() {
+                        var activeContentHeight = document.querySelector(".active-content").clientHeight;
+                        activeContentHeight += 50;
+
+                        contentPanel.style.height = activeContentHeight + "px";
+                        contentPanelMenuWrapper.style.height = activeContentHeight + "px";
+                    }
+
+                    panelResize();
+
+                    var resizeTimer;
+
+                    window.addEventListener("resize", function () {
+                        clearTimeout(resizeTimer);
+                        resizeTimer = setTimeout(function () {
+                            panelResize();
+
+                        }, 250);
+                    });
+
+                })();
+            }
+
+        </script>
+    </body>
+
+    </html>

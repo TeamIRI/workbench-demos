@@ -8,9 +8,25 @@
       <rule href="#EducationBucketingRule"/>
       <matcherDetails details="EDUCATION"/>
     </matchers>
+    <matchers name="FieldBlurRule-age_2021-09-15 12:36:45">
+      <rule href="#FieldBlurRule-age"/>
+      <matcherDetails details="AGE"/>
+    </matchers>
+    <matchers name="FieldGeneralizationRule-marital_2021-09-15 12:38:38">
+      <rule href="#FieldGeneralizationRule-marital"/>
+      <matcherDetails details="MARITAL_STATUS"/>
+    </matchers>
   </catalogs>
   <rules xsi:type="rules:FieldRule" name="EducationBucketingRule" editor="bucketingWizard">
     <properties fieldRulePropertyType="SET" value="&quot;education_bucket.set&quot; [EDUCATION] DEFAULT=&quot;UNKNOWN&quot;"/>
+    <properties fieldRulePropertyType="NAME" value="SET__${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldBlurRule-age" editor="blurWizard">
+    <properties fieldRulePropertyType="EXPRESSION" value="blur_age(${FIELDNAME}, 18, 90, 10)"/>
+    <properties fieldRulePropertyType="NAME" value="BLUR_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldGeneralizationRule-marital" editor="bucketingWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/Users/claudiai/git/workbench-demos/Riskscoring/saved-example/marital-saved.set&quot; [MARITAL_STATUS] DEFAULT=&quot;UNKNOWN&quot;"/>
     <properties fieldRulePropertyType="NAME" value="SET__${FIELDNAME}"/>
   </rules>
 </rules:RuleLibrary>
