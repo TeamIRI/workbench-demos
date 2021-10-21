@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2021. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>Finding and Masking PII in MongoDB</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;}
+  li {margin-bottom: 10px;}
+  </style>
+</head>
+
+<body>
+  <h1>Finding and Masking PII in MongoDB using DarkShield</h1>
+
+  <p>This project demonstrates DarkShield's capabilities by taking you through the
+  steps of creating and modifying a new Dark NoSQL Search/Masking job to search for and
+  remediate emails, phone numbers, and names in MongoDB using regular
+  expression pattern matching and Named Entity Recognition (NER).
+
+  <p>To use the DarkShield remediation capabilities, this demo requires a
+  licensed installation of CoSort/SortCL.</p>
+  
+  <p>An interface with MongoDB is highly recommended for  setup and result viewing 
+  will be difficult with out it. If this Demo is being use in one of our VMs, that will be covered 
+  as mongosh is pre installed.</p>
+
+  <p>Recommended steps to perform the demo in IRI Workbench:</p>
+
+  <h2>NER Model:</h2>
+
+  <p>For the following example, you will use a NER model downloaded from the
+  OpenNLP website.</p>
+
+  <ol>
+    <li>Navigate to the <a href="http://opennlp.sourceforge.net/models-1.5/">
+    OpenNLP models</a> website in your browser.</li>
+
+    <li>Different NER models can be downloaded and used,
+    including ones for persons, organizations, and locations, and for different
+    languages. Valid NER models have the <em>Name Finder</em> Component listed
+    next to them.</li>
+
+    <li>IRI provides additional means of training your own NER
+    models if the pre-trained models provided on the OpenNLP website are not
+    accurate for the documents.</li>
+
+    <li>Download the <em>en-ner-person.bin</em> English Person Name Finder, and
+    save it in a location where it can be easily found.</li>
+  </ol>
+
+  <h2>Optional Step</h2>
+  
+  <ol>
+     <li> As a prerequisite step, you can register the connections to your 
+     online data sources (and targets) in the URL Connection Registry, which is 
+     located in the Preferences > IRI > URL Connection Registry dialog in IRI Workbench. </li>
+	 
+	 <li>All URL Connections, including URI connection strings for MongoDB, 
+	 Cassandra, and Elasticsearch can be saved. This allows for the URLs, 
+	 authentication credentials, and any additional parameters to be saved 
+	 and stored by IRI Workbench for future use.</li>
+  </ol>
+  
+  <h2>NoSQL Search/Masking Wizard</h2>
+  
+  <ol>
+    <li>Open the <strong>New NoSQL Search/Masking Job</strong> wizard from the
+    DarkShield menu.</li>
+  </ol>
+  
+  <h2>Define Destination Page</h2>
+  <ol>
+    <li>In the <strong>Folder</strong> field, make sure DarkShield_Mongo_Masking is the selected
+    project folder.</li>
+
+    <li>Select the check box to create a new folder using the name in the next
+    field. The output files will be placed into this folder.</li>
+
+	<li>In the <strong>Name</strong> field, leave the default name of
+	<em>new_nosql_search</em> for this example.</li>
+
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Source Selector Page</h2>
+  <ol>
+    <li>In the <strong>Source URI</strong> field, click <strong>Add</strong> to open the
+	URL Connection Details.</li>
+	
+	<li>If there is already a Mongo database saved from the connection register, that can be 
+	selected removing the need to create a new connection.</li>
+
+	<li>In the URL Connection Details page, type <strong>MongoDB</strong> in the <strong>Name</strong> field</li>
+	
+	<li>Select <strong>MONGODB</strong> from the drop menu in the <strong>Scheme</strong> field.</li>
+	
+	<li>Type <strong>localhost</strong> in the <strong>Host</strong> field.</li>
+	
+	<li>The <strong>Port</strong> field can be left empty but the number is <strong>27017</strong>.</li>
+	
+	<li>Type <strong>darkshield</strong> in the <strong>Database</strong> field.</li>
+	
+	<li>Click <strong>OK</strong> to finish the URL Connection Details.</li>
+	
+	<li>Type "data" in the <strong>Collection</strong> field and click <strong>Next</strong> to go to the Target Selector Page.</li>
+  </ol>
+  
+  <h2>Target Selector Page</h2>
+  <ol>
+    <li>In the <strong>Target URI</strong> field, the drop menu and select the option 
+	<strong>Mongo</strong> crated in the last step.</li>
+	
+	<li>In the <strong>Collection</strong> field, type "masked" for the
+	target collection.</li>
+	
+	<li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Emails Matcher</h2>
+  <ol>
+  	<li>Click <strong>Add</strong> to open the <strong>Search Matcher
+    </strong> dialog.</li>
+    
+    <li>In the <strong>Matcher Name</strong> field, type "EmailsMatcher".</li>
+    
+    <li>In the <strong>Data Class Name</strong> field, click <strong>Browse</strong>
+    to open the <strong>Data Class Selection</strong> dialog.</li>
+    
+    <li>In the <strong>Data Class</strong> field, select the <strong>EMAIL</strong>
+    Data Class and click <strong>OK</strong>.</li>
+    
+    <li>In the <strong>Rule Name</strong> field, click <strong>Browse</strong> and
+    select the <em>HashEmailsRule</em> from the list.</li>
+    
+    <li>Click <strong>OK</strong> to add the <em>EmailsMatcher</em> to the list of
+    Search Matchers.</li>
+
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Phone Matcher</h2>
+  <ol>
+  	<li>Click <strong>Add</strong> to open the <strong>Search Matcher
+    </strong> dialog.</li>
+    
+    <li>In the <strong>Matcher Name</strong> field, type "PhoneMatcher".</li>
+    
+    <li>In the <strong>Data Class Name</strong> field, click <strong>Browse</strong>
+    to open the <strong>Data Class Selection</strong> dialog.</li>
+    
+    <li>In the <strong>Data Class</strong> field, select the <strong>PHONE_US</strong>
+    Data Class and click <strong>OK</strong>.</li>
+    
+    <li>In the <strong>Rule Name</strong> field, click <strong>Browse</strong> and
+    select the <em>DataEncryptionRule</em> from the list.</li>
+    
+    <li>Click <strong>OK</strong> to add the <em>PhoneMatcher</em> to the list of
+    Search Matchers.</li>
+
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+  </ol>
+  
+  <h2>Name Matcher</h2>
+  <ol>
+    <li>Click <strong>Add</strong> to open the <strong>Search Matcher
+    </strong> dialog.</li>
+
+    <li>In the <strong>Matcher Name</strong> field, type "NameMatcher".</li>
+    
+    <li>In the <strong>Data Class Name</strong> row, click <strong>Create</strong>
+    to open the <strong>Data Class or Group</strong> dialog.</li>
+    
+    <li>In the <strong>Name</strong> field, type "NAMES_NLP".</li>
+    
+    <li>In the <strong>Matchers</strong> field, click <strong>Add</strong> to
+    open the <strong>Data Class Matcher</strong> dialog.</li>
+    
+    <li>In the <strong>Type</strong> field, select <strong>NER model</strong>.</li>
+    
+    <li>Click <strong>Browse</strong> to navigate to the downloaded NER model file
+    and click <strong>OK</strong>.</li>
+    
+    <li>Click <strong>OK</strong> to add the Data Class Matcher to the <em>NAMES_NLP</em>
+    Data Class.</li>
+    
+    <li>In the <strong>Rule Name</strong> row, click <strong>Browse</strong> and
+    select the <em>DataEncryptionRule</em> from the list.</li>
+
+    <li>Click <strong>OK</strong> to add the <em>NamesMatcher</em> to the list of
+    Search Matchers.</li>
+  </ol>
+  
+  <h2>Results:</h2>
+  <ol>
+    <li>The wizard will generate a new file called <strong>new_search.search
+    </strong> in the <strong>new_search</strong> folder of the DarkShield
+    project.</li>
+
+    <li>To run the search and masking, right click on new_search.search
+    and select <strong>run as &gt; IRI Search and Masking Job</strong>.</li>
+
+    <li>In the <strong>Project Explorer</strong> view, navigate to the
+    <strong>DarkShield &gt; new_nosql_search</strong> folder.</li>
+
+    <li>Double-click on the <em>new_nosql_search.darkdata</em> file to open the
+    DarkData form editor. You can click on individual clusters to expand the
+    list of search results found in each cluster.</li>
+	
+	<li>To view the masked results, you need to leave workbench and use an interface
+	to query the collection.</li>
+	
+	<li>For this demo, mongosh is recomented. Start mongosh and connect to the darkshield 
+	database by typing <strong>use darkshield</strong>.</li>
+	
+	<li>When connected, <strong>type db.masked.find().pretty();</strong> to see 
+	the masked results.</li>
+
+  </ol>
+</body>
+</html>

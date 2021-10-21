@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+   - Copyright (c) 2018. Innovative Routines International (IRI), Inc.   -->
+
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii">
+
+  <title>DarkShield NER Model Trainer</title>
+  <style type="text/css">
+
+  h1 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:12pt;text-align:left; font-weight:bold;}
+  h2 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;}
+  h3 {font-family:Arial,Helvetica,sans-serif; color:#0F2B5B;font-size:10pt;text-align:left; font-weight:bold;font-style:oblique;}
+  body {font-family:Arial,Helvetica,sans-serif; color:#000000;font-size:9pt;text-align:left; font-weight:normal;}
+  li {margin-bottom: 10px;}
+  </style>
+</head>
+
+<body>
+  <h1>DarkShield NER Model Trainer</h1>
+
+  <p>This demo file demonstrates how to train a custom Named Entity Recognition
+  (NER) model. Once you have completed this demo, you can see the new model's
+  capabilities.</p>
+
+  <h2>New NER Model Wizard:</h2>
+
+  <p>In this wizard, you will train a custom NER model by searching through a
+  collection of documents using a pre-trained model, correctly tagging
+  the entities that were found in the search, and subsequently training a new
+  model using the annotated documents as the training data. This process can
+  be repeated multiple times.</p>
+
+  <ol>
+    <li>Open the <strong>New NER Model</strong> wizard from the <strong>
+    DarkShield</strong> menu.</li>
+
+    <li>From the list of options, select <strong>NER Model from supervised
+    training</strong>.
+
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+
+    <li>In the <strong>Folder</strong> field, make sure DarkShield is the selected
+    project folder.</li>
+
+    <li>Select the check box to create a new folder using the name in the next
+    field. The output files will be placed into this folder.</li>
+
+    <li>In the <strong>Language</strong> field, leave the default <em>en</em>
+    selected.</li>
+
+    <li>In the <strong>Annotation Label</strong> field, leave the default name.
+    This annotation label will be used when annotating entities in the
+    training data.</li>
+
+    <li>You can select the model that will be used to perform the
+    initial search for the named entities. The default model that is used
+    will annotate persons names.</li>
+
+    <li>Keep the <strong>Save Training Data</strong> checkbox selected.</li>
+
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+
+    <li>Click <strong>Add</strong> to open the file browser dialog. Navigate to
+    the DarkShield demo project and select <em>data\FieldShield41_manual.pdf</em>.
+    </li>
+
+    <li>The sentence count is below the recommended 15,000
+    sentences, and more documents should be loaded and trained on for
+    better models.</li>
+
+    <li>Click <strong>Next</strong> to continue to the next page.</li>
+
+    <li>Repeat the following steps until no more new entities are found.
+
+    <li>Click <strong>Search</strong> to begin searching through the documents
+    using the pre-trained person Name Finder model.</li>
+
+    <li>Repeat the following steps to train a new custom model:
+  		<ul type="disc">
+	      <li>Move entities that are not persons from the <strong>Accepted Entities
+	      </strong> list to the <strong>Blacklisted Entities</strong>, and vice
+	      versa. You can move entities from one list to the other by double-
+	      clicking on the individual entities. You can also move one or more selected
+	      entities by using the arrow buttons. You can select multiple entities
+	      by holding the <em>ctrl</em> key and clicking on individual entities, or
+	      by selecting a range of entities by holding the <em>shift</em> key and
+	      selecting two entities.</li>
+
+	      <li>If an entity is partially correct or contains multiple entities, select
+	      the entity and click <strong>Edit</strong> to open up the <strong>Entity
+	      Selection</strong> dialog. You can then modify the spans of existing entities,
+	      add new entities, or remove non-entities (note that this action does not move
+	      the non-entity into the blacklist, so it may appear in the Accepted Entities List
+	      on subsequent searches).</li>
+
+	      <li>Once you have moved all the entities to the appropriate lists, click
+	      <strong>Train</strong> to train a new model.</li>
+
+	      <li>Click <strong>Search</strong> to search for new entities with the newly
+	      trained model. New entities will be added to the ends of the lists and
+	      selected for the user's convenience.</li>
+
+	      <li>If no new entities were found, click <strong>Finish</strong> to generate
+	      the model and its training data.</li>
+	    </ul>
+	</li>
+  </ol>
+
+  <h2>Results:</h2>
+
+  <p>Depending on your progress through the previous <a href="Notes.html">demo
+  notes</a>, you can use the custom model in place of the pre-trained OpenNLP
+  model. You must have already created the <em>NAMES_NLP</em> Data Class
+  from the previous demo notes.</p>
+
+  <ol>
+     <li>Open the <strong>Data Classes and Groups</strong> dialog by clicking on
+    <strong>IRI Menu &gt; IRI Preferences</strong> from the dropdown menu and
+    selecting the <strong>Data Classes and Groups</strong> tab from the
+    sidebar.</li>
+
+    <li>Double-click on the <em>NAMES_NLP</em> Data Class to open the <em>
+    Data Class or Group</em> dialog.</li>
+
+    <li>Select the matcher and click <strong>Remove</strong>.</li>
+
+    <li>Click <strong>Add</strong> to open the <em>Data Class Matcher</em>
+    dialog.</li>
+
+    <li>In the <strong>Type</strong> field, select <em>MODEL</em>.
+
+    <li>Click <strong>Browse</strong> to navigate to DarkShield demo and
+    select <em>new_model\new_model.bin</em>.</li>
+
+    <li>Click <strong>OK</strong> to create the matcher.</li>
+
+    <li>Click <strong>OK</strong> to update the <em>NAMES_NLP</em> Data Class.</li>
+
+    <li>If you have previously run a search and masking job, you can
+    delete the <em>new-search_remediated</em> folder, the <em>new_search.darkdata
+    </em> and the <em>new_search.txt</em> files from the <em>new_search</em>
+    folder in the <em>DarkShield</em> demo object.</li>
+
+    <li>Right click on new_search.search and select <strong>Run As &gt; IRI
+    Search and Masking Job</strong>.</li>
+
+    <li>The newly trained model is more suited for identifying
+    named entities in files with the same structure as the document that it
+    was trained on, but now maybe less suited for identifying named entities
+    in the other files that the pre-trained OpenNLP model.</li>
+  </ol>
+</body>
+</html>

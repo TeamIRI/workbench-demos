@@ -32,7 +32,7 @@
   <ol>
     <li>In the <strong>data</strong> folder, open <strong>data.csv</strong> and observe its contents.
     Note that the data represents a realistic but non-real data set of people's information
-    and their salary. The <strong>age</strong> field does not contain ages over 90, which complies with
+    and their salary. The <strong>AGE</strong> field does not contain ages over 90, which complies with
     HIPAA's Safe Harbor provision.</li>
   </ol>
 
@@ -73,7 +73,7 @@
     
     <li>In the <strong>Superset region</strong> field, select <strong>USA</strong>.</li>
 	
-	<li>In the <strong>Separator</strong> field, enter <strong>;</strong>.</li>
+	<li>In the <strong>Separator</strong> field, enter <strong>,</strong>.</li>
 	
 	<li>Click <strong>Next</strong> to continue to the next page.</li>
   </ol>
@@ -89,12 +89,12 @@
   <h2>Attributes Page</h2>
   <ol>
     <li>In the <strong>Type</strong> column, select <strong>Quasi-Identifying</strong>
-    for the following attributes: sex, age, race, marital-status, education, 
-    native-country, workclass, occupation.</li>
+    for the following attributes: SEX, AGE, RACE, MARITAL-STATUS, EDUCATION, 
+    NATIVE-COUNTRY, WORKCLASS, and OCCUPATION.</li>
 
-    <li>Select <strong>Sensitive</strong> for the <strong>salary-class</strong> attribute.</li>
+    <li>Select <strong>Sensitive</strong> for the <strong>SALARY</strong> attribute.</li>
     
-    <li>Select <strong>Identifying</strong> for the <strong>ldl</strong> attribute.</li>
+    <li>Select <strong>Identifying</strong> for the <strong>ID</strong> attribute.</li>
     
     <li>Click <strong>Finish</strong>.</li>
   </ol>
@@ -257,14 +257,14 @@
   
   <h2>Education Bucketing</h2>
   <ol>
-    <li>In the <strong>Targets</strong> table, right-click on <strong>MARITAL_STATUS</strong>
+    <li>In the <strong>Targets</strong> table, right-click on <strong>EDUCATION</strong>
     and select <strong>Apply Rule &gt; Browse Rule</strong>.</li>
     
     <li>Select <strong>BucketEducationRule</strong> and click <strong>OK</strong>.</li>
     
     <li>Note that if you don't see the rule in the list, you can re-create it using
     the process described in <a href="#marital-status">Marital Status Bucketing</a> or
-    skip this rule entirely.></li>
+    skip this rule entirely.</li>
     
     <li>Click <strong>OK</strong> and then click </strong>Finish</strong>.</li>
   </ol>
@@ -283,9 +283,10 @@
   <ol>
     <li>Follow the steps outlined in the <a href="#wizard">Risk Scoring Wizard</a> section,
     this time using <strong>riskscorer_output2</strong> as the name and <strong>masked.csv</strong> 
-    as the source. Instead of setting <strong> age</strong> as a <strong>Quasi-Identifying</strong> 
-    attribute, it should now be left as <strong>Insensitive</strong> since it no longer represents 
-    the original value due to the addition of random noise.</li>
+    as the source. Instead of setting <strong>AGE</strong>, <strong>MARITAL-STATUS</strong>, and 
+	<strong>EDUCATION</strong> as a <strong>Quasi-Identifying</strong> 
+    attribute, they should now be left as <strong>Insensitive</strong> since it no longer represents 
+    the original value due to anonmization.</li>
     
     <li>Double-click on the <strong>Risk Score</strong> tab to maximize it. If no tab
   	is present, right-click on <strong>riskscorer_output2.riskscorer</strong> file

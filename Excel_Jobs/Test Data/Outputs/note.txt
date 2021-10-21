@@ -1,0 +1,1 @@
+Current output from the job will be put into here. The reference directory contains output from a pre-ran run of the job.

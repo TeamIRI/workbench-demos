@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<riskscorer:ArxData xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:riskscorer="http://riskscorer/1.0" name="riskscorer_output" supersetRegion="USA">
+  <attributes name="SEX" attributeType="Quasi-Identifying"/>
+  <attributes name="AGE" attributeType="Quasi-Identifying"/>
+  <attributes name="RACE" attributeType="Quasi-Identifying"/>
+  <attributes name="MARITAL-STATUS" attributeType="Quasi-Identifying"/>
+  <attributes name="EDUCATION" attributeType="Quasi-Identifying"/>
+  <attributes name="NATIVE-COUNTRY" attributeType="Quasi-Identifying"/>
+  <attributes name="WORKCLASS" attributeType="Quasi-Identifying"/>
+  <attributes name="OCCUPATION" attributeType="Quasi-Identifying"/>
+  <attributes name="SALARY" attributeType="Sensitive"/>
+  <attributes name="ID" attributeType="Identifying"/>
+  <importConfig xsi:type="riskscorer:ArxImportConfigCsv" source="CSV" fileName="C:/Users/claudiai/git/workbench-demos/Riskscoring/data/data.csv" charset="UTF-8" delimiter="44" quote="34" containsHeader="true"/>
+</riskscorer:ArxData>
+

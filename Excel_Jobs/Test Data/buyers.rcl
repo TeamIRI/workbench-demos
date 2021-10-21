@@ -1,0 +1,31 @@
+# Generated with IRI Workbench - New Test Data Job
+#
+ # Author: Devon
+ # Created: 2021-08-20 12:21:22
+ #
+
+/INFILES=random_file_placeholder
+	/PROCESS=RANDOM
+	/INCOLLECT=100
+	/FIELD=(FNAME, TYPE=ALPHA_DIGIT, POSITION=1, SEPARATOR=",", SET="../Sets/names_first.set" SELECT=ANY)
+	/FIELD=(LNAME, TYPE=ALPHA_DIGIT, POSITION=2, SEPARATOR=",", SET="../Sets/names_last.set" SELECT=ANY)
+	/FIELD=(PURCHASEDATE, TYPE=ISO_DATE, POSITION=3, SEPARATOR=",", SET="Sets/newDate.set")
+	/FIELD=(CCN=ccn_gen(), TYPE=ALPHA_DIGIT, POSITION=4, SEPARATOR=",")
+	/FIELD=(EMAIL, TYPE=ALPHA_DIGIT, POSITION=5, SEPARATOR=",", SET="Sets/newEmail.set")
+	/FIELD=(AMOUNT, TYPE=NUMERIC, PRECISION=2, POSITION=6, SEPARATOR=",")
+	/INCLUDE WHERE AMOUNT LT 1000 AND AMOUNT GT 10
+	# generating data, limiting purchase amount to a certain range and sorting by the purchase date.
+/SORT
+/KEY=PURCHASEDATE
+
+# Specify Sheet Name; SDEFs on output with the column header to the left of the equals sign, in combination with the HEADER option, 
+# allow for header labels that differ from the field name.
+/OUTFILE="'2021 Customers',HEADER;Outputs/Customers.xlsx" 
+	/PROCESS=XLSX
+	/FIELD=(FNAME, TYPE=ALPHA_DIGIT, POSITION=1, SEPARATOR=",", SDEF="First Name=A")
+	/FIELD=(LNAME, TYPE=ALPHA_DIGIT, POSITION=2, SEPARATOR=",",  SDEF="Last Name=B")
+	/FIELD=(PURCHASEDATE, TYPE=ISO_DATE, POSITION=3, SEPARATOR=",", SDEF="Purchase Date=C")
+	/FIELD=(CCN, TYPE=ALPHA_DIGIT, POSITION=4, SEPARATOR=",", SDEF="Credit Card=D")
+	/FIELD=(EMAIL, TYPE=ALPHA_DIGIT, POSITION=5, SEPARATOR=",", SDEF="Email=E")
+	/FIELD=(AMOUNT, TYPE=NUMERIC, PRECISION=2, POSITION=6, SEPARATOR=",", SDEF="Amount=F")
+
