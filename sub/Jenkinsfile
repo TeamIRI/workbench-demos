@@ -1,0 +1,11 @@
+pipeline {
+	agent any
+	stages {
+   		stage('build') {
+  			steps {
+  			    bat "C:\\IRI\\workbench-demos\\sub\\new_subset\\new_subset.bat"
+  			}
+
+		} 
+	}
+}
