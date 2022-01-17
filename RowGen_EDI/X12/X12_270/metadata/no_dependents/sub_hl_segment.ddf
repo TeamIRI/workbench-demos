@@ -1,0 +1,14 @@
+# Generated with IRI Workbench - Export Fields to DDF
+#
+ # Author: adaml
+ # Created: 2021-12-23 13:46:50
+ #
+ # /PROCESS=RANDOM
+ #
+
+#/FIELD=(EL_TYPE, TYPE=ALPHA_DIGIT, POSITION=1, SEPARATOR="*", SET={"HL"})
+/FIELD=(SUB_HIERARCH_ID, TYPE=DIGIT, SET={"3"})
+/FIELD=(SUB_HIERARCH_PARENT_ID, TYPE=DIGIT, SET={"2"})
+/FIELD=(SUB_HIERARCH_LVL, TYPE=DIGIT, SET={"22"})#22 means at Subscriber level
+/FIELD=(SUB_HIERARCH_CHILD, TYPE=DIGIT, SET={"0"})#0 means there are no more HL child segments
+

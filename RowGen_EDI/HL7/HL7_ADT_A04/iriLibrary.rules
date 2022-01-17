@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rules:RuleLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rules="http://rules/1.0">
+  <catalogs name="FieldEditor">
+    <matchers name="FieldSetRule_2021-12-14 09:30:31">
+      <rule href="#FieldSetRule"/>
+      <matcherDetails details="FIELD4"/>
+    </matchers>
+    <matchers name="FieldSetRule2_2021-12-14 09:32:00">
+      <rule href="#FieldSetRule2"/>
+      <matcherDetails details="FIELD5"/>
+    </matchers>
+    <matchers name="FieldDateRule_2021-12-14 09:33:19">
+      <rule href="#FieldDateRule"/>
+      <matcherDetails details="FIELD6"/>
+    </matchers>
+    <matchers name="FieldSetRuleAddress_2021-12-14 09:36:09">
+      <rule href="#FieldSetRuleAddress"/>
+      <matcherDetails details="FIELD12"/>
+    </matchers>
+    <matchers name="FieldRandomizationRule_2021-12-14 10:52:57">
+      <rule href="#FieldRandomizationRule"/>
+      <matcherDetails details="PAT_ID"/>
+    </matchers>
+  </catalogs>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/IRI/cosort105/sets/names/names_last_comma_first.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRule2" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/IRI/cosort105/sets/names/names_female_last_comma_first.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldDateRule" editor="dateGenWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/Users/adaml/runtime-New_configuration/HL7/BirthDate.set&quot;"/>
+    <properties fieldRulePropertyType="NAME" value="set_${FIELDNAME}"/>
+    <properties fieldRulePropertyType="DATATYPE" value="ISO_TIMESTAMP"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldSetRuleAddress" editor="setFileWizard">
+    <properties fieldRulePropertyType="SET" value="&quot;C:/IRI/cosort105/sets/addresses.set&quot; SELECT=ANY"/>
+    <properties fieldRulePropertyType="NAME" value="SET_${FIELDNAME}"/>
+  </rules>
+  <rules xsi:type="rules:FieldRule" name="FieldRandomizationRule" editor="randomWizard">
+    <properties fieldRulePropertyType="NAME" value="randomWizard_${FIELDNAME}"/>
+    <properties fieldRulePropertyType="RANDOM" value="true"/>
+    <properties fieldRulePropertyType="DATATYPE" value="DIGIT"/>
+    <properties fieldRulePropertyType="MINSIZE" value="1"/>
+    <properties fieldRulePropertyType="MAXSIZE" value="6"/>
+  </rules>
+</rules:RuleLibrary>
+

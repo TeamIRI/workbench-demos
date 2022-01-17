@@ -1,0 +1,7 @@
+FAM
+SPC
+DEP
+ECH
+EMP
+ESP
+SPO

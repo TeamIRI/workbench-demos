@@ -1,0 +1,13 @@
+# Generated with IRI Workbench - Export Fields to DDF
+#
+ # Author: adaml
+ # Created: 2021-12-27 13:25:44
+ #
+ # /PROCESS=RECORD
+ #
+
+
+/FIELD=(ELIGIBILITY, TYPE=ALPHA_DIGIT, SET={"1", "6"} SELECT = ANY)
+/FIELD=(BENEFIT_COV_LVL, TYPE=ALPHA_DIGIT, SET="sets/benefits_cov_lvl_codes.txt" SELECT=ANY)
+/FIELD=(SERVICE_TYPE, TYPE=ALPHA_DIGIT, SET="sets/service_type_codes.txt" SELECT=ANY)
+

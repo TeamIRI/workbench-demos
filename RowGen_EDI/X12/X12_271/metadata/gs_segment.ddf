@@ -1,0 +1,19 @@
+# Generated with IRI Workbench - Export Fields to DDF
+#
+ # Author: adaml
+ # Created: 2021-12-23 09:44:04
+ #
+ # /PROCESS=RANDOM
+ #
+
+#/FIELD=(FIELD1, TYPE=ALPHA_DIGIT, POSITION=1, SEPARATOR="*", SET={"GS"})
+/FIELD=(FUNCT_ID, TYPE=ALPHA_DIGIT, SET={"HS"})#Functional id code 270 = HS, 271 = HB
+/FIELD=(SENDER_ID, TYPE=DIGIT, SET={$ISA_S})#Has to be same as ISA field 7
+/FIELD=(RECEIVER_ID, TYPE=DIGIT, SET={$ISA_R})#Has to be same as ISA field 9
+/FIELD=(DATE, TYPE=ISO_DATE, SIZE=8, SET="sets/dates")#size set to 8 to only include YYYYMMDD
+/FIELD=(TIME, TYPE=ISO_TIME, SET="sets/TIME")
+/FIELD=(GRP_CTRL_NUM, TYPE=DIGIT, SET={$GS_CTRL})#Group control number must be the same in field GE3
+/FIELD=(RESPONSIBLE_AGENCY, TYPE=ALPHA_DIGIT, SET={"X"})#Accredited Standards Committee X12
+/FIELD=(VER_RELEASE_ID, TYPE=ALPHA_DIGIT, SET={"005010X279A1"})
+
+

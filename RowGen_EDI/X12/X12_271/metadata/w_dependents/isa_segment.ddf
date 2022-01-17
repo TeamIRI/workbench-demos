@@ -1,0 +1,26 @@
+# Generated with IRI Workbench - Export Fields to DDF
+#
+ # Author: adaml
+ # Created: 2021-12-23 09:43:32
+ #
+ # /PROCESS=RANDOM
+ #
+
+/FIELD=(EL_TYPE, TYPE=ALPHA_DIGIT, POSITION=1, SEPARATOR="*", SET={"ISA", "GS", "ST", "BHT", "HL_SOURCE", "NM1_SOURCE", "HL_RECEIVER", "NM1_RECEIVER", "HL_SUBSCRIBER", "NM1_SUBSCRIBER", "HL_DEPENDENT", "TRN", "NM1_DEPENDENT", "DMG", "EB", "SE", "GE", "IEA"} SELECT=ALL)
+/FIELD=(AUTH_INFO_QUAL, TYPE=ALPHA_DIGIT, SET={"00"})#Hardly ever used so leave 00
+/FIELD=(AUTH_INFO, TYPE=ALPHA_DIGIT, SIZE=10, SET={"          "})#Hardly ever used so fill 10 blank spaces
+/FIELD=(SEC_INFO_QUAL, TYPE=ALPHA_DIGIT, SET={"00"})#Hardly ever used so leave 00
+/FIELD=(SEC_INFO, TYPE=ALPHA_DIGIT, SIZE=10, SET={"          "})#Hardly ever used so fill 10 blank spaces
+/FIELD=(INTERCHANGE_ID_QUAL, TYPE=ALPHA_DIGIT, SET={"ZZ"})#ZZ Stands for mutually defined
+/FIELD=(SENDER_ID, TYPE=ALPHA_DIGIT, SIZE=15, SET={$ISA_S})#Receiver ID is 9-digit left justified and padded so field will be 15 length
+/FIELD=(INTERCHANGE_ID_QUAL, TYPE=ALPHA_DIGIT, SET={"ZZ"})#ZZ Stands for mutually defined
+/FIELD=(RECEIVER_ID, TYPE=ALPHA_DIGIT,SIZE=15, SET={$ISA_R})#Sender ID field must be 15 in length left justified and padded
+/FIELD=(ISA_DATE, SIZE=6, TYPE=ISO_DATE, SET="sets/dates")
+/FIELD=(ISA_TIME, SIZE=4, TYPE=ISO_TIME, SET="sets/TIME")
+/FIELD=(REPETITION, SIZE=1, TYPE=ALPHA_DIGIT, SET={"^"})
+/FIELD=(CTRL_VER_NUM, TYPE=DIGIT, SIZE=5, SET={"00501"})#version control number for 270/271
+/FIELD=(CTRL_NUM, TYPE=DIGIT, SIZE=9, SET={$ISA_CTRL})#IEA field 3 has to be the same value
+/FIELD=(ACK_REQUEST, TYPE=ALPHA_DIGIT, SET={"0"})#0 stands for no interchange acknowledgment requested
+/FIELD=(USAGE, TYPE=ALPHA_DIGIT, SET={"P", "T" , "I"})
+/FIELD=(COMPOSITE_EL, TYPE=ALPHA_DIGIT, SET={":"})
+

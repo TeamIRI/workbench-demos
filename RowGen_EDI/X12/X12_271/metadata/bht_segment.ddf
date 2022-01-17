@@ -1,0 +1,15 @@
+# Generated with IRI Workbench - Export Fields to DDF
+#
+ # Author: adaml
+ # Created: 2021-12-23 12:12:42
+ #
+ # /PROCESS=RANDOM
+ #
+
+#/FIELD=(EL_TYPE, TYPE=ALPHA_DIGIT, POSITION=1, SEPARATOR="*", SET={"BHT"})
+/FIELD=(HIERARCH_STRUCT, TYPE=ALPHA_DIGIT, SET={"0022"})
+/FIELD=(TRANS_SET_PURPOSE, TYPE=ALPHA_DIGIT, SET={"06"})#06 is code for confirmation. An alternative pull a code from "sets/transaction_set_purpose.txt"
+/FIELD=(TRANS_REF_ID, TYPE=DIGIT, RANDOM, MIN_SIZE=1, MAX_SIZE=8)
+/FIELD=(CREATION_DATE, TYPE=ISO_DATE, SIZE=8, SET="sets/dates")#size set to 8 to only include YYYYMMDD
+/FIELD=(CREATION_TIME, TYPE=ISO_TIME, SET="sets/TIME")
+

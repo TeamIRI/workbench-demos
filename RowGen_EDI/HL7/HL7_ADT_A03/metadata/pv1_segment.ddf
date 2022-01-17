@@ -1,0 +1,20 @@
+# Generated with IRI Workbench - Export Fields to DDF
+#
+ # Author: adaml
+ # Created: 2021-12-15 09:23:32
+ #
+ # /PROCESS=RECORD
+ #
+
+#/FIELD=(EL_TYPE, TYPE=ALPHA_DIGIT, SET={"PV1"})
+/FIELD=(PAT_CLASS, TYPE=ALPHA_DIGIT,  SET="sets/patient_class_codes.txt" SELECT=ANY)
+/FIELD=(PAT_LOCATION, TYPE=ALPHA_DIGIT, SET="sets/addresses.set" SELECT=ANY)
+/FIELD=(ADM_TYPE, TYPE=ALPHA_DIGIT, SET="sets/admit_type_codes.txt" SELECT=ANY)
+/FIELD=(ATTEND_DOC, TYPE=ALPHA_DIGIT, SET="sets/names_last_first_dr.set" SELECT=ANY)
+/FIELD=(HOSP_SERV, TYPE=ALPHA_DIGIT, SET="sets/hospital_service_codes.txt" SELECT=ANY)
+/FIELD=(ADMIT_DOC, TYPE=ALPHA_DIGIT, SET="sets/names_last_first_dr.set" SELECT=ANY)
+/FIELD=(PAT_TYPE, TYPE=ALPHA_DIGIT, SET="sets/patient_type_codes.txt" SELECT=ANY)
+/FIELD=(VISIT_NUM, TYPE=DIGIT, RANDOM, MIN_SIZE=1, MAX_SIZE=15)
+/FIELD=(ADT_TIME, TYPE=ISO_TIMESTAMP, SET="sets/evn_dates" SELECT=ANY)
+/FIELD=(DISCHARGE_TIME, TYPE=ISO_TIMESTAMP, SET="sets/msh_dates" SELECT=ANY)
+
