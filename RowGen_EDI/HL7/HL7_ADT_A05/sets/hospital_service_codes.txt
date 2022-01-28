@@ -1,5 +1,0 @@
-CAR
-MED
-PUL
-SUR
-URO
