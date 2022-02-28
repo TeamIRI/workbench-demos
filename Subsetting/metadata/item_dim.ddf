@@ -1,0 +1,12 @@
+# Generated with IRI Workbench - Generate DDF
+# 
+ # Author: iridemo
+ # Created: 2019-03-07 09:24:52
+ # 
+ # /TABLE="SCOTT.ITEM_DIM"
+ # /PROCESS=ODBC
+ # 
+
+/FIELD=(ITEM_ID, TYPE=NUMERIC, POSITION=1, PRECISION=0, SEPARATOR="\t", ODEF="ITEM_ID")
+/FIELD=(ITEM_NAME, TYPE=ASCII, POSITION=2, SEPARATOR="\t", ODEF="ITEM_NAME")
+
